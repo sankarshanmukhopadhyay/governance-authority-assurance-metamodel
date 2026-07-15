@@ -1,0 +1,158 @@
+requirement_id,section,requirement_text,source_line
+GAAM-CORE-001,2.1 Governed entity,A governance framework MUST identify the classes of governed entities within its scope.,102
+GAAM-CORE-002,2.1 Governed entity,"Where a governed entity is a machine, software component or agent, the framework MUST identify one or more accountable persons or organisations and the basis of their accountability.",104
+GAAM-CORE-003,2.2 Actor,"A framework MUST define each governed actor role, including its responsibilities, eligibility, authority limits, obligations and lifecycle.",112
+GAAM-CORE-004,2.4 Agent,"A framework permitting agent participation MUST state which agent classes are permitted and which effects each class may request, recommend, approve or perform.",135
+GAAM-CORE-005,2.5 Role,"A role definition MUST specify the conditions under which the role is assigned, activated, suspended, transferred and terminated.",143
+GAAM-AUTH-001,2.6 Authority,Every authority recognised by a framework MUST identify its source.,151
+GAAM-AUTH-002,2.6 Authority,Authority MUST be bounded by sufficient scope information to determine whether a proposed effect falls within it.,153
+GAAM-AUTH-003,2.6 Authority,"Identification, authentication, possession of a credential, registry inclusion or technical capability MUST NOT be treated as sufficient proof of authority unless the framework explicitly defines and validates the authority semantics represented by that artifact or state.",155
+GAAM-AUTH-004,2.7 Capability,A framework MUST distinguish capability from authority.,161
+GAAM-AUTH-005,2.7 Capability,Systems enforcing a framework MUST NOT admit a consequential effect solely because an actor possesses the technical means to cause it.,163
+GAAM-DEL-001,2.8 Delegation,"A delegation MUST identify the delegator, delegate, delegated authority, effective period and termination conditions.",186
+GAAM-DEL-002,2.8 Delegation,Redelegation MUST be expressly authorised.,188
+GAAM-DEL-003,2.8 Delegation,Each delegation hop MUST NOT enlarge the authority available at the parent hop unless an independently valid authority source authorises the enlargement.,190
+GAAM-DEL-004,2.8 Delegation,"Delegated authority MUST remain traceable to its authority source and, where applicable, to the originating principal.",192
+GAAM-DEL-005,2.8 Delegation,"Suspension, revocation or expiry of parent authority MUST affect descendant authority according to explicit propagation rules.",194
+GAAM-DEL-006,2.8 Delegation,"Delegation MUST NOT extinguish the accountability of a delegator, principal, operator, provider or other party whose accountability is established by law, agreement or framework policy.",196
+GAAM-POL-001,"2.9 Permission, prohibition, obligation and constraint","A framework MUST define how conflicts among permissions, prohibitions, obligations and constraints are resolved.",202
+GAAM-POL-002,"2.9 Permission, prohibition, obligation and constraint","A framework MUST identify the authority under which a permission, prohibition, obligation or constraint is established.",204
+GAAM-POL-003,"2.10 Policy, rule and control",Machine-actionable rules MUST be traceable to their normative policy source and the authority that approved that source.,210
+GAAM-POL-004,"2.10 Policy, rule and control",A governance framework MUST define precedence when human-readable normative text and machine-actionable representations conflict.,212
+GAAM-POL-005,"2.10 Policy, rule and control","Unless the framework explicitly designates a machine-actionable representation as co-normative and defines equivalence tests, the human-readable normative text MUST prevail.",214
+GAAM-EVID-001,2.11 Claim and assertion,"A framework MUST define the classes of claims that may be relied upon and the evidence, provenance, status and assurance needed for each class.",222
+GAAM-EVID-002,2.12 Evidence,Evidence relied upon for a consequential decision MUST have sufficient provenance to identify its origin and relevant transformations.,242
+GAAM-EVID-003,2.12 Evidence,A framework MUST define freshness requirements for evidence whose relevance may change over time.,244
+GAAM-EVID-004,2.12 Evidence,"An inability to validate required evidence MUST result in denial, restriction, suspension or human review according to framework policy; it MUST NOT silently result in acceptance.",246
+GAAM-ASSUR-001,2.13 Verification and assessment,A framework MUST distinguish verification results from broader assurance conclusions.,252
+GAAM-ASSUR-002,2.13 Verification and assessment,"Verification and assessment results MUST identify the criteria, evaluator, time, scope, limitations and evidence used.",254
+GAAM-ASSUR-003,2.14 Assurance,"Assurance MUST NOT be represented as permanent where the underlying conditions, evidence or system state may change.",262
+GAAM-ASSUR-004,2.14 Assurance,"A framework MUST define the validity, renewal, suspension, withdrawal and review conditions of each assurance conclusion it recognises.",264
+GAAM-DEC-001,2.15 Trust decision,A trust decision MUST be attributable to a decision-maker or accountable decision service.,285
+GAAM-DEC-002,2.15 Trust decision,"A trust path, credential, registry entry, reputation value or assurance mark MUST NOT by itself constitute a trust decision.",287
+GAAM-DEC-003,2.15 Trust decision,"A decision MUST be evaluated in the context of the relying party’s applicable policy, purpose and risk tolerance.",289
+GAAM-EFF-001,2.16 Effect,A framework MUST identify the consequential effect classes within its scope.,297
+GAAM-EFF-002,2.16 Effect,"A consequential effect MUST NOT be admitted unless the applicable authority, policy, evidence and runtime conditions have been evaluated to the level required by the framework.",299
+GAAM-CTX-001,2.17 Governance context,A framework MUST identify the governance contexts in which its requirements apply.,305
+GAAM-CTX-002,2.17 Governance context,"Cross-context reliance MUST be governed by explicit recognition, mapping or conflict-resolution rules.",307
+GAAM-EVT-001,2.18 Governance event,"A framework MUST define the governance events that materially affect authority, assurance, status, eligibility, policy or accountability.",313
+GAAM-EVT-002,2.18 Governance event,"Material governance events MUST be attributable, time-stamped and reconstructable.",315
+GAAM-ACC-001,2.19 Accountability,Every consequential effect MUST have at least one identifiable accountable party.,321
+GAAM-ACC-002,2.19 Accountability,Machine actors and agents MUST NOT be treated as the terminal point of accountability.,323
+GAAM-ACC-003,2.19 Accountability,"A framework MUST define how accountability is allocated when multiple actors, agents, services, registries or authorities contribute to an effect.",325
+GAAM-HARM-001,2.20 Harm and remedy,"A framework MUST identify material harms that may arise from governed effects, including cumulative and systemic harms where applicable.",331
+GAAM-HARM-002,2.20 Harm and remedy,"A framework governing consequential effects MUST define accessible challenge, review and remedy mechanisms.",333
+GAAM-REL-001,3.1 Required relationship properties,A relationship used in an automated trust decision MUST have an unambiguous type and declared semantics.,360
+GAAM-REL-002,3.1 Required relationship properties,A relationship MUST NOT imply broader authority or recognition than its declared scope.,362
+GAAM-REL-003,3.3 Relationship invariants,Recognition MUST NOT be treated as delegation unless the relationship explicitly grants authority.,392
+GAAM-REL-004,3.3 Relationship invariants,Accreditation MUST NOT be treated as a guarantee of every output produced by the accredited actor.,394
+GAAM-REL-005,3.3 Relationship invariants,Registry inclusion MUST NOT be treated as universal trustworthiness.,396
+GAAM-REL-006,3.3 Relationship invariants,"Revocation and suspension semantics MUST identify the affected relationship, effective time, authority and propagation consequences.",398
+GAAM-GF-001,4.1 Governance framework,A conforming governance framework MUST include a Primary Document and an authoritative Schedule of Controlled Documents.,408
+GAAM-GF-002,4.1 Governance framework,The Primary Document MUST identify the exact framework version using a persistent identifier.,410
+GAAM-GF-003,4.1 Governance framework,The framework MUST publish a conformance statement identifying the profiles and conformance targets claimed.,412
+GAAM-GF-004,4.2.3 Localisation,The framework MUST identify its official language or languages and SHOULD use BCP 47 language tags.,428
+GAAM-GF-005,4.2.3 Localisation,"Where multiple official versions exist, the framework MUST define how inconsistencies are resolved.",430
+GAAM-GF-006,4.2.5 Governance topology,"The framework MUST identify where decision rights, enforcement powers, revision powers and emergency powers reside.",440
+GAAM-GF-007,4.2.6 Governing authority,"Where no single governing authority exists, the framework MUST identify the authority topology and the process by which valid governance decisions are formed.",446
+GAAM-GF-008,4.2.10 Agentic applicability declaration,"Every framework MUST declare whether agents may participate and, if so, whether they may recommend, decide, transact, delegate, use tools, create sub-agents or produce binding effects.",462
+GAAM-GF-009,4.2.12 Governance-state publication,"Governance state required for a runtime decision MUST be discoverable, authenticated and sufficiently current for the decision context.",472
+GAAM-GF-010,4.2.15 Revisions,"The framework MUST define how revisions are proposed, reviewed, approved, versioned, published, deprecated and withdrawn.",484
+GAAM-GF-011,4.2.15 Revisions,A publicly available framework SHOULD include a public review period for substantive revisions.,486
+GAAM-GF-012,4.2.15 Revisions,Material policy changes affecting active authority or runtime decisions MUST define transition and notification rules.,488
+GAAM-AUTH-006,5.1 Authority topology patterns,A framework MUST identify conflicts that may arise among authorities and the procedure for resolving or containing them.,516
+GAAM-AUTH-007,5.1 Authority topology patterns,"Where authorities overlap, the framework MUST define precedence, coordination, refusal or escalation semantics.",518
+GAAM-DEL-007,5.2 Delegation lifecycle,"A delegation MUST NOT become active before required acceptance, registration, verification or other activation conditions are met.",524
+GAAM-DEL-008,5.2 Delegation lifecycle,The framework MUST define whether delegation is transferable and whether an agent or actor may substitute another delegate.,526
+GAAM-DEL-009,5.2 Delegation lifecycle,"Material substitution of an agent, model, operator, toolchain or execution environment MUST trigger reassessment where it may affect authority, assurance or risk.",528
+GAAM-DEL-010,5.3 Multi-hop delegation,"A multi-hop delegation decision MUST validate each active hop, parent-child scope compatibility, originating-principal continuity, redelegation permission and revocation state.",532
+GAAM-DEL-011,5.3 Multi-hop delegation,A framework MUST define maximum delegation depth or the policy by which depth is determined.,534
+GAAM-DEL-012,5.4 Fan-out and convergence,"Where authority is divided among multiple delegates, the framework MUST define whether branches are independent, cumulative, mutually exclusive or jointly controlled.",538
+GAAM-DEL-013,5.4 Fan-out and convergence,"Where delegated branches converge on one effect, the aggregate effect MUST be evaluated against the originating authority and applicable aggregate limits.",540
+GAAM-AUTH-008,5.5 Emergency authority,"Emergency authority MUST be narrowly scoped, time-limited, attributable, reviewable and subject to post-event accountability.",546
+GAAM-RUN-001,6.1 Runtime governance envelope,A framework governing consequential effects MUST define the minimum runtime governance envelope required for each effect class.,571
+GAAM-RUN-002,6.1 Runtime governance envelope,"A runtime decision MUST fail safely when required authority, policy, evidence, status or context cannot be validated.",573
+GAAM-RUN-003,6.1 Runtime governance envelope,Runtime governance MUST evaluate current revocation and suspension state to the freshness required by the effect’s risk.,575
+GAAM-RUN-004,6.2 Decision outcomes,Outcome semantics MUST be unambiguous to the enforcement point.,591
+GAAM-RUN-005,6.3 Decision receipt,Each consequential effect MUST produce or reference a decision receipt proportionate to the effect’s risk and accountability requirements.,613
+GAAM-RUN-006,6.3 Decision receipt,"A receipt MUST NOT expose confidential evidence beyond what is necessary for authorised audit, review or challenge.",615
+GAAM-RUN-007,6.3 Decision receipt,"The framework MUST define retention, access, disclosure, correction and deletion rules for receipts.",617
+GAAM-RUN-008,6.4 Ongoing evaluation,"Where authority, risk or evidence may materially change during execution, the framework MUST define conditions for re-evaluation, interruption or containment.",623
+GAAM-RUN-009,6.4 Ongoing evaluation,Runtime revocation MUST be capable of stopping or constraining ongoing activity where technically and legally feasible.,625
+GAAM-AGT-001,7.1 Agent identity and continuity,A framework MUST define the attributes needed to identify an agent for governance purposes.,635
+GAAM-AGT-002,7.1 Agent identity and continuity,"A framework MUST define when changes to model, instructions, memory, tools, operator, provider, execution environment or policy configuration constitute a material change of agent state or identity.",637
+GAAM-AGT-003,7.1 Agent identity and continuity,"Material changes MUST trigger re-registration, renewed assurance, restricted operation or another declared lifecycle response where necessary.",639
+GAAM-AGT-004,7.2 Agent principals and accountable parties,An agent performing an effect on behalf of a principal MUST carry or reference verifiable authority for that effect.,643
+GAAM-AGT-005,7.2 Agent principals and accountable parties,"The framework MUST identify the principal, operator, provider, deployer and supervisor roles applicable to each agent class and allocate accountability among them.",645
+GAAM-AGT-006,7.3 Task-bound authority,"Agent authority SHOULD be bound to a task, purpose or effect class wherever practical.",649
+GAAM-AGT-007,7.3 Task-bound authority,Tool access SHOULD be limited to what is necessary for the authorised task.,651
+GAAM-AGT-008,7.3 Task-bound authority,"An agent MUST NOT infer authority from mere access to accounts, credentials, data, APIs or tools.",653
+GAAM-AGT-009,7.4 Planning and policy evaluation,An agent or supervising service MUST evaluate applicable governance constraints before executing a consequential plan step.,657
+GAAM-AGT-010,7.4 Planning and policy evaluation,"Where an agent cannot determine whether a planned effect is authorised, it MUST deny, restrict or escalate rather than assume permission.",659
+GAAM-AGT-011,7.5 Redelegation and sub-agents,"An agent MUST NOT create a sub-agent, substitute another agent or redelegate authority unless explicitly permitted.",663
+GAAM-AGT-012,7.5 Redelegation and sub-agents,A sub-agent MUST receive no more authority than the delegating agent is authorised to redelegate.,665
+GAAM-AGT-013,7.5 Redelegation and sub-agents,The originating principal and accountable-party chain MUST remain discoverable across sub-agent relationships.,667
+GAAM-AGT-014,7.6 Multi-agent coordination,"A framework permitting multi-agent coordination MUST define how authority, task state, evidence, obligations and accountability are partitioned and reconciled.",671
+GAAM-AGT-015,7.6 Multi-agent coordination,Coordination protocols MUST NOT be assumed to provide governance semantics unless those semantics are explicitly defined and validated.,673
+GAAM-AGT-016,7.6 Multi-agent coordination,"Where multiple agents contribute to one effect, the decision receipt MUST identify the material contributions and accountable parties.",675
+GAAM-AGT-017,7.7 Tool governance,Tools capable of producing consequential effects MUST enforce or receive sufficient authority and policy context to prevent unauthorised invocation.,679
+GAAM-AGT-018,7.7 Tool governance,Tool outputs used as evidence MUST carry provenance and integrity appropriate to the decision.,681
+GAAM-AGT-019,7.8 Human oversight and guardianship,"A framework requiring human oversight MUST specify who performs it, when it occurs, what information is available, and what intervention powers exist.",687
+GAAM-AGT-020,7.8 Human oversight and guardianship,"A guardian or supervisory agent MUST itself be governed by explicit authority, constraints and accountability.",689
+GAAM-AGT-021,7.9 Agent suspension and termination,"A framework MUST define mechanisms to suspend, isolate, contain or terminate an agent when authority, assurance or safety conditions fail.",693
+GAAM-AGT-022,7.9 Agent suspension and termination,"Termination MUST address outstanding tasks, delegated authority, retained data, tools, obligations and evidence preservation.",695
+GAAM-GRAPH-001,8.1 Trust graph,"Graph relationships used for automated decisions MUST be typed, scoped, attributable, time-bounded where applicable and linked to status or revocation semantics.",707
+GAAM-GRAPH-002,8.1 Trust graph,"A graph path MUST be treated as evidence for a decision, not as the decision itself.",709
+GAAM-GRAPH-003,8.4 Graph provenance and integrity,Each material graph assertion MUST identify the asserting party and authority basis.,735
+GAAM-GRAPH-004,8.4 Graph provenance and integrity,A graph implementation MUST provide integrity and provenance sufficient to detect unauthorised alteration of relied-upon assertions.,737
+GAAM-GRAPH-005,8.4 Graph provenance and integrity,"Derived edges or computed trust values MUST identify their derivation method, input sources and applicable policy.",739
+GAAM-GRAPH-006,8.5 Graph traversal,"A framework MUST define permitted traversal depth, relationship types, path constraints and evidence thresholds for each automated decision class.",743
+GAAM-GRAPH-007,8.5 Graph traversal,A relying party MUST apply its own policy to determine whether a discovered path is sufficient.,745
+GAAM-GRAPH-008,8.6 Conflicting claims,"A framework MUST define how conflicting, stale, superseded or contested graph assertions are represented and evaluated.",749
+GAAM-GRAPH-009,8.6 Conflicting claims,Absence of a negative assertion MUST NOT automatically be interpreted as positive trust unless the framework explicitly justifies that inference.,751
+GAAM-REG-001,8.7 Registry governance,Registry inclusion MUST have explicit semantics and MUST NOT be represented as general trustworthiness.,757
+GAAM-REG-002,8.7 Registry governance,"A registry framework MUST define who may create, update, suspend, revoke, correct and archive each record class.",759
+GAAM-REG-003,8.7 Registry governance,"Registry records used for decisions MUST expose sufficient status, provenance, authority and version information.",761
+GAAM-REG-004,8.7 Registry governance,A registry MUST provide a correction and dispute path for materially incorrect or unauthorised records.,763
+GAAM-REG-005,8.8 Registry federation and recognition,"Federation MUST distinguish data replication, technical interoperability, recognition of authority and reliance upon determinations.",767
+GAAM-REG-006,8.8 Registry federation and recognition,"Recognition of another registry MUST state the accepted record classes, purposes, assurance thresholds, jurisdictional limits and withdrawal conditions.",769
+GAAM-ASSUR-005,9.1 Assurance forms,The framework MUST define what each assurance form establishes and what it does not establish.,804
+GAAM-ASSUR-006,9.2 Assurance providers,Assurance providers MUST disclose material conflicts of interest and the basis of their competence and authority.,810
+GAAM-ASSUR-007,9.2 Assurance providers,Assurance results MUST be challengeable and correctable when materially wrong.,812
+GAAM-ASSUR-008,9.3 Continuous assurance,"A Continuous Assurance Profile framework MUST define monitored controls, evidence sources, sampling or event frequency, thresholds, drift conditions, escalation and suspension actions.",818
+GAAM-ASSUR-009,9.3 Continuous assurance,"A continuous assurance service MUST identify data gaps, blind spots and periods during which assurance could not be maintained.",820
+GAAM-OBS-001,9.4 Observability,"Observability requirements MUST be proportionate and MUST account for privacy, confidentiality, minimisation and security.",826
+GAAM-OBS-002,9.4 Observability,The absence of observable data MUST NOT be presented as evidence of compliant behaviour.,828
+GAAM-ASSUR-010,9.5 Trust marks,"A trust mark MUST identify or resolve to its issuer, scope, criteria, validity, status and limitations.",832
+GAAM-ASSUR-011,9.5 Trust marks,A trust mark MUST NOT imply broader assurance than the underlying assessment supports.,834
+GAAM-RISK-001,10.1 Risk model,"Risk assessment MUST examine authority paths, evidence paths, dependencies, graph edges, delegated capabilities and affected parties, not only roles and processes.",860
+GAAM-RISK-002,10.2 Impact thresholds,"A framework MUST define effect classes or thresholds that require enhanced evidence, approval, assurance, monitoring or human review.",864
+GAAM-HARM-003,10.3 Cumulative and systemic harm,A framework MUST consider harms arising cumulatively across repeated low-level decisions where such harms are reasonably foreseeable.,868
+GAAM-HARM-004,10.3 Cumulative and systemic harm,"A framework SHOULD identify concentration, lock-in, exclusion, manipulation and market-power risks created by trust infrastructure.",870
+GAAM-RISK-003,10.4 Safety controls,Controls relied upon to prevent high-impact effects MUST be testable or auditable and linked to accountable owners.,876
+GAAM-RED-001,11.1 Affected parties,"A framework MUST identify affected-party classes, including persons who are not members of the trust community.",886
+GAAM-RED-002,11.2 Notice and explanation,Affected parties SHOULD receive notice of consequential decisions where lawful and practicable.,890
+GAAM-RED-003,11.2 Notice and explanation,"A framework MUST define the explanation information available for consequential decisions, including reason codes, applicable policy and review route.",892
+GAAM-RED-004,11.3 Challenge and review,"A challenge mechanism MUST permit submission of corrections, contrary evidence and claims of unauthorised action.",896
+GAAM-RED-005,11.3 Challenge and review,"Review MUST be performed by an actor or process with authority to confirm, modify, reverse or remedy the decision.",898
+GAAM-RED-006,11.3 Challenge and review,A framework MUST define response and resolution time expectations proportionate to the potential harm.,900
+GAAM-RED-007,11.4 Remedy,"A framework MUST identify which remedies are available, who may order them and how compliance is verified.",906
+GAAM-RED-008,11.5 Cross-framework disputes,"Where an effect depends on multiple governance frameworks, the frameworks SHOULD define coordination, evidence sharing, jurisdiction and fallback procedures for disputes.",910
+GAAM-MAG-001,13. Machine-actionable governance package,A machine-actionable package MUST be traceable to the authoritative human-readable framework.,1016
+GAAM-MAG-002,13. Machine-actionable governance package,"The package MUST identify its version, effective period, status and integrity mechanism.",1018
+GAAM-MAG-003,13. Machine-actionable governance package,A material package change MUST follow the framework’s revision and transition requirements.,1020
+GAAM-MAG-004,13. Machine-actionable governance package,A package MUST NOT silently broaden authority or reduce obligations relative to the authoritative framework.,1022
+GAAM-MAG-005,13. Machine-actionable governance package,"Conformance tests SHOULD include valid, invalid and boundary-condition examples.",1024
+GAAM-PROF-001,14.7 High-Impact Systems Profile,"A profile claim MUST identify the specification version, profile version, applicable conformance targets, exclusions and evidence location.",1115
+GAAM-PROF-002,14.7 High-Impact Systems Profile,A framework MUST NOT claim a profile when a mandatory category or requirement is omitted without an explicitly permitted exception.,1117
+GAAM-CONF-001,15.2 Conformance claim,Conformance claims MUST be scoped to an identified target and MUST NOT be generalised to related entities or transactions without evidence.,1158
+GAAM-CONF-002,15.2 Conformance claim,"Framework conformance MUST NOT be presented as proof that every governed actor, agent, decision or transaction conforms.",1160
+GAAM-CONF-003,15.2 Conformance claim,An agent conformance claim MUST NOT be presented as proof that every future action of that agent is authorised or safe.,1162
+GAAM-CONF-004,15.3 Evidence of conformance,Evidence MUST be sufficient to reproduce or independently evaluate the conformance conclusion to the degree required by the claimed profile.,1168
+GAAM-CONF-005,15.4 Exceptions and compensating controls,"Exceptions MUST identify the requirement, rationale, authority, duration, risk, compensating control and review date.",1174
+GAAM-CONF-006,15.5 Non-conformance,"A framework MUST define classification, notification, remediation, suspension and appeal procedures for non-conformance.",1178
+GAAM-SEC-001,"16. Security, privacy and resilience considerations",Governance-critical artifacts MUST be protected against unauthorised modification and rollback.,1200
+GAAM-SEC-002,"16. Security, privacy and resilience considerations",Frameworks MUST define recovery and continuity procedures for unavailable or compromised governance services.,1202
+GAAM-PRIV-001,"16. Security, privacy and resilience considerations","Evidence, receipts and observability data MUST be minimised to what is necessary for governance, assurance, accountability and lawful obligations.",1204
+GAAM-PRIV-002,"16. Security, privacy and resilience considerations","Access to sensitive governance records MUST be controlled, auditable and purpose-bound.",1206
+GAAM-RES-001,"16. Security, privacy and resilience considerations",A framework MUST identify critical dependencies and define safe behaviour when they are unavailable or untrustworthy.,1208

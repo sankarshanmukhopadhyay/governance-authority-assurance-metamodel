@@ -1,0 +1,14 @@
+title: Governance, Authority and Assurance Metamodel
+description: Protocol-neutral governance semantics for authority, delegation, evidence, assurance and accountable digital trust.
+theme: minima
+markdown: kramdown
+plugins:
+  - jekyll-seo-tag
+header_pages:
+  - specification/governance-authority-assurance-metamodel.md
+  - docs/architecture-overview.md
+  - docs/implementation-guide.md
+  - docs/glossary.md
+exclude:
+  - GH_META.md
+  - REPO_DESCRIPTION.txt

@@ -1,3 +1,10 @@
+---
+layout: page
+title: "Migration from GAAM v0.5.0 to v0.9.0"
+permalink: /docs/migration-v0.5.0-to-v0.9.0/
+artifact_type: "Migration guide"
+normative_status: "Informative"
+---
 # Migration from GAAM v0.5.0 to v0.9.0
 
 ## Required changes

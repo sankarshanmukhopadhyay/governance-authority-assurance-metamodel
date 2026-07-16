@@ -1,3 +1,10 @@
+---
+layout: page
+title: "Canonical schema identifiers"
+permalink: /decisions/0006-canonical-schema-identifiers/
+artifact_type: "Architectural decision record"
+normative_status: "Decision record"
+---
 # Canonical schema identifiers
 
 **Status:** Accepted for v0.9.0  

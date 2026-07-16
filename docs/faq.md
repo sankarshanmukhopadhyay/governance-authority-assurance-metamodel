@@ -1,3 +1,10 @@
+---
+layout: page
+title: "Frequently Asked Questions"
+permalink: /docs/faq/
+artifact_type: "FAQ"
+normative_status: "Informative"
+---
 # Frequently Asked Questions
 
 ## Is GAAM an identity specification?

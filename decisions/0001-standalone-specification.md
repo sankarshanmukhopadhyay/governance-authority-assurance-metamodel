@@ -1,3 +1,10 @@
+---
+layout: page
+title: "ADR 0001: 0001 Standalone Specification"
+permalink: /decisions/0001-standalone-specification/
+artifact_type: "Architectural decision record"
+normative_status: "Decision record"
+---
 # ADR 0001: 0001 Standalone Specification
 
 **Status:** Accepted for v0.5.0

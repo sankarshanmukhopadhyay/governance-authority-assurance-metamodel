@@ -1,3 +1,10 @@
+---
+layout: page
+title: "Glossary"
+permalink: /docs/glossary/
+artifact_type: "Terminology"
+normative_status: "Normative where referenced"
+---
 # Glossary
 
 **Accountability** — An obligation to explain, justify, answer for, correct or remedy an action, decision or failure.

@@ -1,3 +1,10 @@
+---
+layout: page
+title: "Contributing"
+permalink: /governance/contributing/
+artifact_type: "Contribution guide"
+normative_status: "Normative process"
+---
 # Contributing
 
 GAAM welcomes conceptual review, normative text, implementation evidence, threat analysis, diagrams and examples.

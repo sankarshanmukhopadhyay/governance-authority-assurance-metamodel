@@ -1,3 +1,10 @@
+---
+layout: page
+title: "Architecture Diagrams"
+permalink: /diagrams/
+artifact_type: "Architecture diagrams"
+normative_status: "Informative"
+---
 # Architecture Diagrams
 
 These diagrams are informative and use Mermaid syntax.

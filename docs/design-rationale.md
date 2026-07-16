@@ -1,3 +1,10 @@
+---
+layout: page
+title: "Design Rationale"
+permalink: /docs/design-rationale/
+artifact_type: "Design rationale"
+normative_status: "Informative"
+---
 # Design Rationale
 
 ## Why authority is first-class

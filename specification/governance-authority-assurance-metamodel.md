@@ -1,3 +1,10 @@
+---
+layout: page
+title: "Governance, Authority and Assurance Metamodel Specification"
+permalink: /specification/gaam-v0.9.0/
+artifact_type: "Normative specification"
+normative_status: "Normative"
+---
 # Governance, Authority and Assurance Metamodel Specification
 
 **Version:** 0.9.0  

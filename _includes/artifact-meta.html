@@ -1,0 +1,8 @@
+{% if page.artifact_type or page.normative_status %}
+<div class="artifact-meta">
+  {% if page.artifact_type %}<span><strong>Artifact:</strong> {{ page.artifact_type }}</span>{% endif %}
+  {% if page.normative_status %}<span><strong>Status:</strong> {{ page.normative_status }}</span>{% endif %}
+  <span><strong>Version:</strong> {{ page.version | default: site.version }}</span>
+  <a href="{{ site.repository | prepend: 'https://github.com/' }}/blob/main/{{ page.path }}">View source</a>
+</div>
+{% endif %}

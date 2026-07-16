@@ -1,3 +1,10 @@
+---
+layout: page
+title: "Changelog"
+permalink: /releases/changelog/
+artifact_type: "Changelog"
+normative_status: "Release record"
+---
 # Changelog
 
 ## [0.9.0] - 2026-07-16
@@ -52,3 +59,12 @@ All notable changes will be documented here. The project uses Semantic Versionin
 - Implementation, conformance and reviewer guidance.
 - Initial examples and architecture diagrams.
 - Repository governance, contribution, security and release hygiene.
+
+
+## v0.9.0 publication hardening
+
+- publish canonical schemas and controlled vocabularies through GitHub Pages
+- add stable permalinks, shared layouts, status metadata and full documentation navigation
+- add human-readable schema, vocabulary and traceability catalogues
+- add production-equivalent strict Jekyll build and rendered-site validation
+- add least-privilege GitHub Pages deployment workflow

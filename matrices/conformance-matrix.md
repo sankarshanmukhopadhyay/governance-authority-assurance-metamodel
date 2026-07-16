@@ -1,3 +1,10 @@
+---
+layout: page
+title: "Conformance Matrix"
+permalink: /matrices/conformance/
+artifact_type: "Conformance matrix"
+normative_status: "Normative supporting"
+---
 # Conformance Matrix
 
 ## Profile applicability

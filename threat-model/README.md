@@ -1,3 +1,10 @@
+---
+layout: page
+title: "GAAM Threat and Misuse-Case Model"
+permalink: /threat-model/
+artifact_type: "Threat model"
+normative_status: "Assurance supporting"
+---
 # GAAM Threat and Misuse-Case Model
 
 The v0.9.0 threat model treats governance failures as testable attack and misuse paths. The machine-readable [threat register](threat-register.json) maps threats to protected assets, requirements and executable checks.

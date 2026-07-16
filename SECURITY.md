@@ -1,3 +1,10 @@
+---
+layout: page
+title: "Security Policy"
+permalink: /governance/security/
+artifact_type: "Security policy"
+normative_status: "Normative process"
+---
 # Security Policy
 
 ## Scope

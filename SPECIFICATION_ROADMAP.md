@@ -1,3 +1,10 @@
+---
+layout: page
+title: "Specification Roadmap"
+permalink: /governance/specification-roadmap/
+artifact_type: "Specification roadmap"
+normative_status: "Informative"
+---
 # Specification Roadmap
 
 ## v0.9.0 completion state

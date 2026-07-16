@@ -1,3 +1,10 @@
+---
+layout: page
+title: "Candidate Stability and Change-Control Policy"
+permalink: /governance/candidate-stability/
+artifact_type: "Governance policy"
+normative_status: "Normative process"
+---
 # Candidate Stability and Change-Control Policy
 
 ## Status

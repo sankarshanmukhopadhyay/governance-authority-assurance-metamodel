@@ -1,3 +1,10 @@
+---
+layout: page
+title: "Design Principles"
+permalink: /docs/design-principles/
+artifact_type: "Design guidance"
+normative_status: "Informative"
+---
 # Design Principles
 
 1. **Authority before action.** Consequential effects require explicit authority evaluation.

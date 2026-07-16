@@ -1,3 +1,10 @@
+---
+layout: page
+title: "GAAM Release Roadmap"
+permalink: /governance/roadmap/
+artifact_type: "Roadmap"
+normative_status: "Informative"
+---
 # GAAM Release Roadmap
 
 - **v0.1.0 — Initial Public Draft:** normative baseline.

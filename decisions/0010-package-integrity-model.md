@@ -1,3 +1,10 @@
+---
+layout: page
+title: "Governance-package integrity"
+permalink: /decisions/0010-package-integrity-model/
+artifact_type: "Architectural decision record"
+normative_status: "Decision record"
+---
 # Governance-package integrity
 
 **Status:** Accepted for v0.9.0  

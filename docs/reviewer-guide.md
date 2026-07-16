@@ -1,3 +1,10 @@
+---
+layout: page
+title: "Reviewer Guide"
+permalink: /docs/reviewer-guide/
+artifact_type: "Review guide"
+normative_status: "Informative"
+---
 # Reviewer Guide
 
 ## Review priorities

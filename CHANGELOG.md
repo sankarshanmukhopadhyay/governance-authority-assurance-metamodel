@@ -1,5 +1,15 @@
 # Changelog
 
+## Unreleased
+
+### Documentation
+
+- Replace oblique references to an external governance metamodel with explicit attribution to the ToIP Governance Metamodel Specification v1.0 and Companion Guide v1.0.
+- Reframe the TSMM crosswalk as a GAAM source-adoption and architectural-differentiation record.
+- Remove residual language implying that GAAM is a successor “v2” of the ToIP specification.
+- Add repository-level source attribution and a GitHub Pages landing page for mappings.
+
+
 ## [0.5.0] - 2026-07-16
 
 ### Added

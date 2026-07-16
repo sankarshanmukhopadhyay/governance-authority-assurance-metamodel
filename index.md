@@ -30,3 +30,9 @@ GAAM treats governance as an executable system of authority, delegation, evidenc
 - [Architectural decisions](decisions/)
 - [AI/LLM usage disclosure](AI_USAGE.md)
 - [v0.5.0 release notes](releases/v0.5.0.md)
+
+
+## Provenance and mappings
+
+- [Source attributions](ATTRIBUTIONS.md)
+- [Mappings and source crosswalks](mappings/index.md)

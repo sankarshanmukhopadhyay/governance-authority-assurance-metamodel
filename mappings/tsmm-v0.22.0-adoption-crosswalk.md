@@ -1,10 +1,27 @@
-# TSMM v0.22.0 Adoption Crosswalk
-## Adoption Crosswalk and Drafting Recommendation
+# GAAM Source Adoption and Architectural Differentiation Crosswalk
+## ToIP Governance Metamodel v1.0, Companion Guide v1.0, and TSMM v0.22.0
 
-**Status:** Completed prerequisite design assessment  
+**Status:** Informative provenance and architectural differentiation record  
 **TSMM baseline:** `trust-systems-meta-model` v0.22.0 archive  
-**Governance baseline:** external governance Governance Metamodel Specification v1.0, 21 December 2021  
-**Purpose:** Determine which TSMM concepts, relationships, artifacts and conformance mechanisms should inform a fully formed first draft of the external governance Governance Metamodel Specification v2.
+**Governance sources:** ToIP Governance Metamodel Specification v1.0 and ToIP Governance Metamodel Specification Companion Guide v1.0, 21 December 2021  
+**Purpose:** Document how the ToIP governance-framework architecture and TSMM operational semantics informed GAAM, while preserving GAAM as an independent specification.
+
+---
+
+## Source status, attribution and independence
+
+This crosswalk records source materials and design inputs considered during the development of GAAM. GAAM is an independent specification. It is not a revision, extension, profile or implementation of the ToIP Governance Metamodel Specification, and it does not claim Trust Over IP Foundation endorsement or ToIP conformance. References to ToIP and TSMM materials are informative unless an individual GAAM provision expressly states otherwise. GAAM requirements, profiles, schemas, conformance claims and versioning are governed solely by the GAAM repository.
+
+The following source identifiers are used throughout this document:
+
+| Source identifier | Source | Function in this crosswalk |
+|---|---|---|
+| `TOIP-GMS-1.0` | Trust Over IP Foundation, *ToIP Governance Metamodel Specification*, Version 1.0, 21 December 2021 | Institutional and documentary governance-framework source model |
+| `TOIP-GMCG-1.0` | Trust Over IP Foundation, *ToIP Governance Metamodel Specification Companion Guide*, Version 1.0, 21 December 2021 | Explanatory guidance for modular documents, terminology, drafting and publication |
+| `TSMM-0.22.0` | *Trust Systems Meta-Model*, Version 0.22.0 | Operational semantics for authority, delegation, evidence, assurance, effects and runtime governance |
+| `GAAM` | Governance, Authority and Assurance Metamodel | Independent synthesis, extension and normative treatment |
+
+The two ToIP documents are published under the Creative Commons Attribution 4.0 International licence. GAAM adaptations, classifications and conclusions are the responsibility of the GAAM maintainers. See [`ATTRIBUTIONS.md`](../ATTRIBUTIONS.md).
 
 ---
 
@@ -14,11 +31,11 @@ The TSMM v0.22.0 archive should be treated as a major source model for the GAAM,
 
 The two models address different architectural layers:
 
-| Model | Primary concern | Appropriate v2 role |
+| Model | Primary concern | Role in GAAM development |
 |---|---|---|
-| external governance Governance Metamodel v1.0 | How a governance framework is constituted, documented, administered and revised | Institutional and documentary foundation |
+| ToIP Governance Metamodel Specification v1.0 | How a governance framework is constituted, documented, administered and revised | Institutional and documentary foundation |
 | TSMM v0.22.0 | How authority, policy, evidence, verification and context combine to govern operational effects | Operational semantic foundation |
-| Proposed GAAM | How institutions and technical systems govern authority, delegation, decisions, effects, assurance and accountability across human, agentic and decentralised environments | Integrated governance, authority and assurance metamodel |
+| GAAM | How institutions and technical systems govern authority, delegation, decisions, effects, assurance and accountability across human, agentic and decentralised environments | Integrated governance, authority and assurance metamodel |
 
 The core drafting rule should be:
 
@@ -27,14 +44,11 @@ The core drafting rule should be:
 The crosswalk reaches five principal conclusions:
 
 1. **Adopt the effect-centred operating thesis.** Governance should ultimately control whether a defined effect may occur, not merely whether an actor or document is compliant.
-2. **Adopt authority, delegation, evidence, trust decision, effect and lifecycle event as first-class concepts.** These fill major gaps in v1.0.
+2. **Adopt authority, delegation, evidence, trust decision, effect and lifecycle event as first-class concepts.** These extend areas that are not developed in the ToIP v1.0 source model.
 3. **Adopt runtime governance envelopes and decision receipts with modification.** They provide the bridge from framework policy to transaction-level execution and accountability.
 4. **Adopt typed graph relationships, delegation lineage and lifecycle semantics.** These are essential for decentralised trust graphs and multi-agent systems.
 5. **Retain institutional legitimacy, legal authority, affected-party protection, redress and framework constitution in GAAM.** TSMM does not sufficiently cover these matters.
 
-
-# external governance Governance Metamodel Specification v2.0
-### A metamodel for authority, delegation, assurance and decentralised trust ecosystems
 
 ---
 
@@ -57,7 +71,7 @@ The review covered the TSMM v0.22.0 repository structure, including:
 - JSON Schemas, YAML models, examples and test vectors;
 - protocol and ecosystem bindings.
 
-The external governance Governance Metamodel v1.0 was used as the institutional and documentary baseline. Its existing strengths include the primary-document model, governing and administering authority sections, controlled-document architecture, separation of human-auditable policies from machine-testable rules, risk and assurance categories, legal agreements and revision governance.
+The ToIP Governance Metamodel Specification v1.0 was used as an informative institutional and documentary source model. The Companion Guide was used to interpret its modular document architecture, terminology discipline, drafting conventions and publication model. Their relevant strengths include the primary-document model, governing and administering authority sections, controlled-document architecture, separation of human-auditable policies from machine-testable rules, risk and assurance categories, legal agreements and revision governance.
 
 ### 2.2 Validation results
 
@@ -80,15 +94,15 @@ Two release-freshness inconsistencies were also found:
 - the root `VERSION` file and v0.22.0 release notes identify the release as v0.22.0;
 - portions of the README still display v0.21.0 badges, version text and release posture.
 
-These issues do not invalidate TSMM as the conceptual baseline, but they demonstrate why GAAM should distinguish **semantic adoption** from **normative external dependency**. The first v2 draft should adopt stable semantics from the v0.22.0 snapshot rather than normatively importing the repository as an undifferentiated whole.
+These issues do not invalidate TSMM as the conceptual baseline, but they demonstrate why GAAM should distinguish **semantic adoption** from **normative external dependency**. GAAM should adopt stable semantics from the v0.22.0 snapshot rather than normatively importing the repository as an undifferentiated whole.
 
 ### 2.3 Adoption classifications
 
 | Classification | Meaning in this crosswalk |
 |---|---|
-| **Adopt directly** | Carry the essential TSMM concept and semantics into the v2 core with only standards-language normalization |
+| **Adopt directly** | Carry the essential TSMM concept and semantics into the GAAM core with only standards-language normalization |
 | **Adopt with modification** | Preserve the concept but broaden, constrain or reposition it for governance use |
-| **Normative compatibility reference** | Keep detailed expression outside v2 but require compatible semantics or artifacts |
+| **Normative compatibility reference** | Keep detailed expression outside GAAM but require compatible semantics or artifacts |
 | **Informative reference** | Cite or explain as implementation guidance without creating conformance dependency |
 | **Retain in TSMM** | Useful operational or protocol-level detail that should not become part of the governance metamodel |
 | **Reject or replace** | Do not carry the concept as currently framed |
@@ -100,7 +114,7 @@ These issues do not invalidate TSMM as the conceptual baseline, but they demonst
 
 ### 3.1 What GAAM should own
 
-The v2 specification should be authoritative for:
+The GAAM specification should be authoritative for:
 
 - constitution and legitimacy of governing arrangements;
 - authority topology and institutional mandates;
@@ -126,7 +140,7 @@ TSMM should remain the portable semantic and implementation-facing reference mod
 - executable schemas and examples;
 - implementation walkthroughs;
 - interoperability comparison artifacts;
-- detailed runtime payloads where v2 only specifies required semantics.
+- detailed runtime payloads where GAAM only specifies required semantics.
 
 ### 3.3 What should be jointly aligned
 
@@ -155,7 +169,7 @@ The definitions need not be textually identical. They must, however, avoid seman
 
 ### 4.1 Foundational entities
 
-| TSMM concept | TSMM meaning | v1.0 position | Adoption decision | v2 treatment |
+| TSMM concept | TSMM meaning | ToIP v1.0 treatment | Adoption decision | GAAM treatment |
 |---|---|---|---|---|
 | Entity | Any actor, component or participant in a trust system | Implicit through actor and governed party | **Adopt with modification** | Define **governed entity** as the broad superclass; avoid allowing the abstraction to obscure legal or accountable persons |
 | Actor | Person, organization, software agent or system component capable of participating | Actor may be human or machine, but is minimally developed | **Adopt directly** | Make actor a first-class participant capable of requesting, performing, approving, denying or being affected by an action |
@@ -164,11 +178,11 @@ The definitions need not be textually identical. They must, however, avoid seman
 | Resource | Object or service against which an action is attempted | Not explicit | **Adopt with modification** | Include as an optional core concept where access, modification, transfer or control is governed |
 | Artifact | Structured object carrying trust-relevant information | Controlled documents and governed artifacts exist, but the term is not generalized | **Adopt directly** | Use for credentials, registry records, policies, receipts, evidence bundles, status records and other governed objects |
 
-**Recommendation:** v2 should retain the broad actor model but require accountable-party mappings whenever the actor is a machine, component or agent. “The agent acted” must never be allowed to terminate the accountability chain.
+**Recommendation:** GAAM should retain the broad actor model but require accountable-party mappings whenever the actor is a machine, component or agent. “The agent acted” must never be allowed to terminate the accountability chain.
 
 ### 4.2 Authority and delegation
 
-| TSMM concept | Adoption decision | Required v2 refinement |
+| TSMM concept | Adoption decision | Required GAAM refinement |
 |---|---|---|
 | Authority | **Adopt directly** | Define as a bounded and recognized ability to permit, perform, approve, prohibit, delegate or constrain an effect |
 | Authority source | **Adopt directly** | Require the legal, contractual, technical, communal or policy basis from which authority originates |
@@ -183,7 +197,7 @@ The definitions need not be textually identical. They must, however, avoid seman
 | Authority graph | **Adopt with modification** | Expand the graph to include recognition, accreditation, dependency, accountability, prohibition and revocation relationships |
 | Capability | **Adopt with modification** | State the invariant: capability does not establish authority |
 
-#### Normative invariants recommended for v2
+#### Normative invariants recommended for GAAM
 
 1. An actor **MUST NOT** be treated as authorised merely because it has the technical capability or credentials needed to perform an effect.
 2. Delegated authority **MUST** remain traceable to an authority source and, where applicable, an originating principal.
@@ -195,12 +209,12 @@ The definitions need not be textually identical. They must, however, avoid seman
 
 ### 4.3 Claims, policy and controls
 
-| TSMM concept | Adoption decision | v2 treatment |
+| TSMM concept | Adoption decision | GAAM treatment |
 |---|---|---|
 | Claim | **Adopt directly** | A proposition subject to evaluation, not a fact merely because it is signed or registered |
-| Requirement | **Adopt with modification** | Align with v1.0’s RFC 2119-based requirement model; distinguish normative requirement from expectation |
-| Policy | **Adopt with modification** | Preserve v1.0’s human-auditable policy concept while also defining policy artifacts that guide or govern automated evaluation |
-| Rule | **Retain and strengthen from v1.0** | A machine-testable expression of a requirement; connect it explicitly to policy source and authority |
+| Requirement | **Adopt with modification** | Align with the ToIP v1.0 RFC 2119-based requirement model; distinguish normative requirement from expectation |
+| Policy | **Adopt with modification** | Preserve the ToIP v1.0 human-auditable policy concept while also defining policy artifacts that guide or govern automated evaluation |
+| Rule | **Retain and strengthen from ToIP v1.0** | A machine-testable expression of a requirement; connect it explicitly to policy source and authority |
 | Control | **Adopt directly** | Safeguard that reduces risk, constrains unsafe operation or provides evidence of governance implementation |
 | Threat | **Adopt with modification** | Broaden beyond technical threats to harms, abuse cases, institutional failure and market manipulation |
 | Profile | **Adopt directly** | A composable package of requirements, controls, evidence expectations, tests and permitted effects |
@@ -208,9 +222,9 @@ The definitions need not be textually identical. They must, however, avoid seman
 
 #### Terminology reconciliation
 
-TSMM currently describes a requirement as a condition a system or participant “should” satisfy. Governance Metamodel v1.0 defines requirements more rigorously through RFC 2119 keywords. V2 should preserve the v1.0 discipline. TSMM-compatible artifacts may describe expectations, but only provisions expressed according to the specification’s normative-language rules should be considered v2 requirements.
+TSMM currently describes a requirement as a condition a system or participant “should” satisfy. The ToIP Governance Metamodel Specification v1.0 defines requirements more rigorously through RFC 2119 keywords. GAAM should preserve the ToIP v1.0 discipline. TSMM-compatible artifacts may describe expectations, but only provisions expressed according to the specification’s normative-language rules should be considered GAAM requirements.
 
-The v2 specification should distinguish:
+The GAAM specification should distinguish:
 
 - **principle:** non-testable statement of intent or value;
 - **policy:** human-auditable normative requirement or coherent policy set;
@@ -222,7 +236,7 @@ The v2 specification should distinguish:
 
 ### 4.4 Evidence, assessment and verification
 
-| TSMM concept | Adoption decision | Required v2 refinement |
+| TSMM concept | Adoption decision | Required GAAM refinement |
 |---|---|---|
 | Evidence | **Adopt directly** | Require provenance, subject, producer, integrity, status, freshness, permitted use and confidentiality metadata where applicable |
 | Evidence Artifact | **Adopt directly** | Define a governed artifact capable of supporting a claim, requirement, control, decision or outcome |
@@ -234,7 +248,7 @@ The v2 specification should distinguish:
 | Validation Record | **Adopt directly** | Use as evidence of a specific validation or test operation |
 | Assurance Level | **Adopt with modification** | Require declared semantics; do not permit level labels to imply universal trustworthiness |
 
-#### Normative invariants recommended for v2
+#### Normative invariants recommended for GAAM
 
 1. Evidence **MUST** be distinguishable from the claim or conclusion it supports.
 2. Verification **MUST** identify the condition checked, method, inputs, time and result.
@@ -245,7 +259,7 @@ The v2 specification should distinguish:
 
 ### 4.5 Decision and effect
 
-| TSMM concept | Adoption decision | Required v2 refinement |
+| TSMM concept | Adoption decision | Required GAAM refinement |
 |---|---|---|
 | Trust Decision | **Adopt with modification** | Define as a contextual relying decision, not an assertion that an entity is intrinsically trustworthy |
 | Action | **Adopt directly from agentic extension** | Distinguish attempted or performed operation from its wider operational or legal effect |
@@ -254,15 +268,15 @@ The v2 specification should distinguish:
 | Effect evaluation | **Adopt directly** | Require pre-effect evaluation for governed consequential actions |
 | Decision-to-effect linkage | **Adopt directly** | Every consequential effect should be linked to the decision that admitted or denied it |
 
-#### Critical v2 principle
+#### Critical GAAM principle
 
 > A governance framework does not govern “trust” in the abstract. It governs the conditions under which actors, evidence and authority may produce defined effects.
 
-This principle should shape the entire v2 structure.
+This principle should shape the entire GAAM structure.
 
 ### 4.6 Lifecycle and state
 
-| TSMM concept | Adoption decision | v2 treatment |
+| TSMM concept | Adoption decision | GAAM treatment |
 |---|---|---|
 | Lifecycle Event | **Adopt directly** | A material event that changes governance or trust-relevant state |
 | Issuance/onboarding | **Adopt directly** | Establish entry into valid circulation or governed participation |
@@ -274,7 +288,7 @@ This principle should shape the entire v2 structure.
 | Remediation | **Adopt with modification** | Include correction, reassessment, restoration and affected-party remedy |
 | Archival | **Adopt directly** | Retain for evidence, audit and historical reconstruction without implying active validity |
 
-V2 should add further governance events:
+GAAM should add further governance events:
 
 - challenge;
 - appeal;
@@ -295,7 +309,7 @@ V2 should add further governance events:
 
 ### 5.1 TSMM relationships recommended for direct adoption
 
-| Source | Relationship | Target | v2 decision |
+| Source | Relationship | Target | GAAM decision |
 |---|---|---|---|
 | Actor | holds | Role | Adopt |
 | Role | carries | Authority | Adopt, but allow authority to be attached directly to an actor only when explicitly justified |
@@ -316,7 +330,7 @@ V2 should add further governance events:
 | Trust decision | permits, denies, degrades or routes | Effect | Adopt |
 | Lifecycle event | changes state of | Governed object or relationship | Adopt and broaden |
 
-### 5.2 Relationships v2 must add
+### 5.2 Relationships GAAM must add
 
 | Source | Relationship | Target | Purpose |
 |---|---|---|---|
@@ -340,7 +354,7 @@ V2 should add further governance events:
 
 ### 5.3 Trust-graph edge requirements
 
-A v2-compatible trust-graph relationship should carry, as applicable:
+A GAAM-compatible trust-graph relationship should carry, as applicable:
 
 - edge identifier and type;
 - source and target;
@@ -369,7 +383,7 @@ The specification should explicitly state:
 
 ### 6.1 Agentic AI extension
 
-| TSMM abstraction | Adoption decision | v2 recommendation |
+| TSMM abstraction | Adoption decision | GAAM recommendation |
 |---|---|---|
 | Agent | Adopt with modification | Include identity, operator, principal, agent class, lifecycle and change state |
 | Action | Adopt directly | Model requested, planned, attempted, performed, refused, reversed and contested states |
@@ -386,7 +400,7 @@ The specification should explicitly state:
 
 ### 6.2 Discovery governance
 
-TSMM treats discovery as a governed process rather than neutral lookup. V2 should adopt the following principles:
+TSMM treats discovery as a governed process rather than neutral lookup. GAAM should adopt the following principles:
 
 - discoverability does not imply authorisation;
 - registry inclusion does not imply suitability for a specific task;
@@ -399,7 +413,7 @@ Detailed discovery payloads and bindings should remain in TSMM or companion spec
 
 ### 6.3 Capability negotiation
 
-Capability negotiation should be adopted as a governed pre-task mechanism for agentic profiles. V2 should require that:
+Capability negotiation should be adopted as a governed pre-task mechanism for agentic profiles. GAAM should require that:
 
 - claimed capability be distinguishable from verified capability;
 - negotiated capability remain within delegated authority;
@@ -409,7 +423,7 @@ Capability negotiation should be adopted as a governed pre-task mechanism for ag
 
 ### 6.4 Interaction context and task evidence lifecycle
 
-TSMM’s interaction and task models should inform, but not overload, the v2 core. The specification should require agentic governance frameworks to define:
+TSMM’s interaction and task models should inform, but not overload, the GAAM core. The specification should require agentic governance frameworks to define:
 
 - task identifier and purpose;
 - originating principal;
@@ -425,7 +439,7 @@ TSMM’s interaction and task models should inform, but not overload, the v2 cor
 
 ### 6.5 Multi-agent coordination
 
-TSMM’s chained and fan-out delegation work is particularly important. V2 should make the following mandatory for multi-agent profiles:
+TSMM’s chained and fan-out delegation work is particularly important. GAAM should make the following mandatory for multi-agent profiles:
 
 - preservation of originating-principal identity;
 - monotonic scope attenuation;
@@ -438,7 +452,7 @@ TSMM’s chained and fan-out delegation work is particularly important. V2 shoul
 
 ### 6.6 Agent opacity and observability
 
-TSMM’s opacity-boundary and observability-mode concepts should be adopted with modification. V2 should not require disclosure of proprietary internal reasoning or unrestricted telemetry. Instead, it should require **governance-sufficient observability**, including the evidence needed to determine:
+TSMM’s opacity-boundary and observability-mode concepts should be adopted with modification. GAAM should not require disclosure of proprietary internal reasoning or unrestricted telemetry. Instead, it should require **governance-sufficient observability**, including the evidence needed to determine:
 
 - what authority was asserted;
 - what policy was applied;
@@ -476,7 +490,7 @@ The graph should support at least these node classes:
 
 ### 7.2 Typed trust relationships
 
-TSMM’s generic relationship grammar is useful, but v2 should explicitly distinguish:
+TSMM’s generic relationship grammar is useful, but GAAM should explicitly distinguish:
 
 - identity assertion;
 - authority grant;
@@ -497,7 +511,7 @@ This prevents a graph visualisation from collapsing legally and operationally di
 
 ### 7.3 Peer trust relation
 
-The peer-trust concept should be adopted with modification. Peer relationships should not imply symmetry. V2 should require each direction of recognition or reliance to be modelled independently, because:
+The peer-trust concept should be adopted with modification. Peer relationships should not imply symmetry. GAAM should require each direction of recognition or reliance to be modelled independently, because:
 
 - A may recognise B for one purpose while B does not recognise A;
 - assurance levels may differ by direction;
@@ -523,7 +537,7 @@ Frameworks should identify boundary-crossing effects and the additional policy, 
 
 The TSMM extension contributes useful concepts:
 
-| Concept | Decision | v2 use |
+| Concept | Decision | GAAM use |
 |---|---|---|
 | Community | Adopt with modification | A governed domain or association, not necessarily the full trust ecosystem |
 | Membership | Adopt | A status subject to lifecycle and policy |
@@ -534,11 +548,11 @@ The TSMM extension contributes useful concepts:
 | Sanction | Adopt | Operational consequence of non-conformance |
 | Remediation Path | Adopt and strengthen | Include restoration, appeal, correction and affected-party remedy |
 
-The TSMM extension correctly separates community assertion from local trust decision. This should become a v2 invariant.
+The TSMM extension correctly separates community assertion from local trust decision. This should become a GAAM invariant.
 
 ### 7.6 Registry governance
 
-TSMM registry concepts should be combined with stronger v2 requirements. Registry inclusion or lookup must not be represented as proof of universal trustworthiness. A v2 registry controlled document should specify:
+TSMM registry concepts should be combined with stronger GAAM requirements. Registry inclusion or lookup must not be represented as proof of universal trustworthiness. A GAAM registry controlled document should specify:
 
 - authority to create, modify, suspend and remove records;
 - semantics and provenance of each published field;
@@ -561,7 +575,7 @@ TSMM registry concepts should be combined with stronger v2 requirements. Registr
 
 The TSMM envelope answers the correct execution-time questions: requester, requested effect, trust boundary, authority basis, policy, evidence, revocation freshness and decision outcome.
 
-V2 should define a **Runtime Governance Evaluation Record** as a semantic artifact class. A conforming profile may serialise it using TSMM or another compatible schema.
+GAAM should define a **Runtime Governance Evaluation Record** as a semantic artifact class. A conforming profile may serialise it using TSMM or another compatible schema.
 
 Minimum fields should include:
 
@@ -582,7 +596,7 @@ Minimum fields should include:
 - receipt requirement;
 - review or escalation path.
 
-The v2 specification should preserve the TSMM principle that this is a **pre-effect admission surface**, not only an after-the-fact log.
+The GAAM specification should preserve the TSMM principle that this is a **pre-effect admission surface**, not only an after-the-fact log.
 
 ### 8.2 Decision Receipt
 
@@ -590,7 +604,7 @@ The v2 specification should preserve the TSMM principle that this is a **pre-eff
 
 The TSMM decision receipt is one of the strongest assets in the repository. It creates a reconstructable link between authority, policy, evidence, revocation state, boundary and admitted effect.
 
-V2 should require a decision receipt or equivalent evidence package for:
+GAAM should require a decision receipt or equivalent evidence package for:
 
 - high-impact effects;
 - denied or suspended delegated actions;
@@ -601,7 +615,7 @@ V2 should require a decision receipt or equivalent evidence package for:
 
 The receipt should be described as **commitment-grade evidence**, not merely a logging record.
 
-V2 should add:
+GAAM should add:
 
 - originating-principal reference;
 - accountable-party reference;
@@ -614,7 +628,7 @@ V2 should add:
 
 ### 8.3 Assurance extension
 
-TSMM’s assurance extension should substantially inform the v2 assurance model.
+TSMM’s assurance extension should substantially inform GAAM assurance model.
 
 Recommended adoption:
 
@@ -630,7 +644,7 @@ Recommended adoption:
 | Assurance Decision | Adopt with contextual and temporal limits |
 | Assurance Method | Adopt |
 
-V2 must preserve a strong separation among:
+GAAM must preserve a strong separation among:
 
 - raw evidence;
 - verification result;
@@ -667,7 +681,7 @@ The guiding invariant should be:
 
 ### 9.1 TSMM threat classes to adopt
 
-| TSMM threat class | Adoption decision | v2 expansion |
+| TSMM threat class | Adoption decision | GAAM expansion |
 |---|---|---|
 | Authority misuse | Adopt | Include authority laundering, over-delegation and principal substitution |
 | Policy bypass | Adopt | Include hidden alternate paths and emergency-mode abuse |
@@ -680,7 +694,7 @@ The guiding invariant should be:
 
 ### 9.2 Additional agentic failure modes from v0.22.0
 
-The delegation catalog identifies six highly relevant failure modes that should become explicit v2 risk considerations:
+The delegation catalog identifies six highly relevant failure modes that should become explicit GAAM risk considerations:
 
 - broken lineage;
 - scope expansion;
@@ -689,7 +703,7 @@ The delegation catalog identifies six highly relevant failure modes that should 
 - aggregation amplification;
 - partial revocation.
 
-V2 should also cover:
+GAAM should also cover:
 
 - confused-deputy execution;
 - tool misuse;
@@ -730,7 +744,7 @@ TSMM’s profile progression is useful:
 - Assured;
 - Agentic.
 
-These should not be copied as the sole v2 profile structure, because they mix maturity, operational posture and domain applicability. They should instead inform two orthogonal dimensions:
+These should not be copied as the sole GAAM profile structure, because they mix maturity, operational posture and domain applicability. They should instead inform two orthogonal dimensions:
 
 #### Governance maturity levels
 
@@ -756,7 +770,7 @@ A framework could therefore claim, for example:
 
 ### 10.2 Conformance targets
 
-V2 should define distinct targets rather than one blanket “external governance-compliant governance framework” claim.
+GAAM should define distinct targets rather than one blanket “GAAM-conformant governance framework” claim.
 
 | Conformance target | Required question |
 |---|---|
@@ -778,7 +792,7 @@ V2 should define distinct targets rather than one blanket “external governance
 
 The TSMM repository demonstrates a valuable implementation discipline: documentation, schema, examples, invalid vectors and validation scripts evolve together.
 
-V2 should require or strongly recommend that machine-actionable controlled documents include:
+GAAM should require or strongly recommend that machine-actionable controlled documents include:
 
 - normative schema or rule artifact;
 - at least one valid example;
@@ -796,7 +810,7 @@ However, repository-specific script layout and programming language should remai
 
 The following structure is recommended for GAAM.
 
-| Proposed controlled-document category | Existing v1.0 basis | TSMM contribution | Recommendation |
+| Proposed controlled-document category | Existing ToIP v1.0 basis | TSMM contribution | Recommendation |
 |---|---|---|---|
 | Glossary and Semantic Model | Glossary | Entity and relationship catalog | Expand and make core semantic model mandatory |
 | Governance Constitution and Authority | Governance Requirements; Governing Authority | Governance Context; Authority Source | Retain institutional focus and add authority topology |
@@ -833,7 +847,7 @@ The following are good candidates for a companion TSMM profile or future normati
 - TSMM task-evidence lifecycle schema;
 - TSMM graph and registry schemas.
 
-The first v2 draft should define required semantics without making conformance dependent on a pre-standard repository version.
+The GAAM draft should define required semantics without making conformance dependent on a pre-standard repository version.
 
 ### 12.2 Informative references
 
@@ -881,21 +895,21 @@ Labels such as “high assurance,” “trusted,” or “certified” should no
 
 ### 13.5 Replace a single linear lifecycle assumption
 
-Governed artifacts and relationships may branch, suspend, partially revoke, remediate and be recognised differently across domains. V2 should allow state machines and linked events rather than a simplistic universal sequence.
+Governed artifacts and relationships may branch, suspend, partially revoke, remediate and be recognised differently across domains. GAAM should allow state machines and linked events rather than a simplistic universal sequence.
 
 ### 13.6 Constrain effect-centred governance
 
-Effect-centred modeling should not exclude cumulative, diffuse or systemic harm. V2 must support both discrete effects and system-level outcomes.
+Effect-centred modeling should not exclude cumulative, diffuse or systemic harm. GAAM must support both discrete effects and system-level outcomes.
 
 ---
 
-## 14. Open design issues for the first v2 draft
+## 14. Design issues considered during GAAM development
 
-These issues should be identified in the draft but should not block preparation of a complete first version.
+These issues were treated as explicit design questions. Their recommended dispositions informed the GAAM architecture and remain useful for future review.
 
 ### OI-1: Normative dependency on TSMM
 
-**Recommended first-draft position:** adopt aligned concepts and include an informative TSMM mapping annex. Do not require a specific TSMM version for v2 conformance.
+**Recommended first-draft position:** adopt aligned concepts and include an informative TSMM mapping annex. Do not require a specific TSMM version for GAAM conformance.
 
 ### OI-2: Human-readable versus machine-readable precedence
 
@@ -903,7 +917,7 @@ These issues should be identified in the draft but should not block preparation 
 
 ### OI-3: DID requirement for every governance framework
 
-V1.0 mandates a DID and DID URLs for versions. V2 should reconsider whether a DID is the only acceptable persistent identifier.
+The ToIP v1.0 specification mandates a DID and DID URLs for versions. GAAM should reconsider whether a DID is the only acceptable persistent identifier.
 
 **Recommended position:** require a globally unique, persistent, resolvable and version-specific identifier; permit DIDs as one conforming method rather than the exclusive method.
 
@@ -937,9 +951,9 @@ V1.0 mandates a DID and DID URLs for versions. V2 should reconsider whether a DI
 
 ---
 
-## 15. Required changes to the v2 primary document
+## 15. Recommended GAAM primary-document structure
 
-The v1.0 primary document structure should be retained and expanded. The following sections are recommended:
+The ToIP v1.0 primary-document structure should be retained and expanded. The following sections are recommended:
 
 1. Introduction
 2. Terminology, notation and semantic model
@@ -982,7 +996,7 @@ The declaration should determine which controlled documents and profiles become 
 
 ---
 
-## 16. Recommended v2 normative principles derived from the crosswalk
+## 16. GAAM normative principles derived from the crosswalk
 
 The first draft should incorporate at least the following principles and convert them into detailed requirements where testable.
 
@@ -1011,7 +1025,7 @@ The first draft should incorporate at least the following principles and convert
 
 ## 17. Drafting adoption register
 
-### 17.1 Adopt directly into the v2 core
+### 17.1 Adopt directly into the GAAM core
 
 - actor;
 - role;
@@ -1075,7 +1089,7 @@ The first draft should incorporate at least the following principles and convert
 - interoperability matrix;
 - implementation scripts.
 
-### 17.5 Retain outside the v2 specification
+### 17.5 Retain outside the GAAM specification
 
 - TSMM repository governance mechanics;
 - binding catalog structure;
@@ -1121,13 +1135,13 @@ GAAM should extend this chain upward into institutional legitimacy and downward 
 
 ### 18.2 As the operational-artifact reference
 
-Use the runtime governance envelope, decision receipt, authority graph, delegation lineage, evidence bundle and lifecycle model as design references for v2 artifact classes. Specify the required semantics in v2 while leaving detailed serialisation to TSMM, TIS or other compatible implementation specifications.
+Use the runtime governance envelope, decision receipt, authority graph, delegation lineage, evidence bundle and lifecycle model as design references for GAAM artifact classes. Specify the required semantics in GAAM while leaving detailed serialisation to TSMM, TIS or other compatible implementation specifications.
 
 ### 18.3 As the validation-quality benchmark
 
 Adopt TSMM’s documentation-plus-schema-plus-example-plus-negative-test discipline as the expected quality model for machine-actionable governance artifacts. Do not bind the specification to the repository’s current scripts or unresolved catalog inconsistency.
 
-### 18.4 What v2 must add beyond TSMM
+### 18.4 What GAAM adds beyond TSMM
 
 The new specification must independently and comprehensively define:
 
@@ -1144,17 +1158,17 @@ The new specification must independently and comprehensively define:
 
 ### 18.5 Go/no-go decision
 
-**GO.** The TSMM prerequisite is complete. No further conceptual repository review is required before beginning the first v2 draft.
+**GO.** The TSMM prerequisite is complete. No further conceptual repository review is required before beginning the GAAM draft.
 
 The drafting process should use this crosswalk as a control document. Every adopted concept should be traceable to:
 
-- its v2 definition;
+- its GAAM definition;
 - its normative relationships and invariants;
 - the primary-document or controlled-document section in which it is governed;
 - its conformance target;
 - any machine-actionable artifact or evidence requirement.
 
-A final drafting validation should compare the completed v2 draft against this register to confirm that no adopted concept has been omitted, duplicated or semantically weakened.
+A final drafting validation should compare the completed GAAM draft against this register to confirm that no adopted concept has been omitted, duplicated or semantically weakened.
 
 ---
 
@@ -1235,7 +1249,7 @@ C. Runtime governance evaluation record
 D. Decision receipt  
 E. Authority and delegation graph  
 F. Conformance matrix  
-G. v1.0-to-v2 change mapping  
+G. ToIP v1.0-to-GAAM source mapping  
 H. TSMM alignment mapping  
 I. Open issues and reviewer questions
 
@@ -1250,20 +1264,20 @@ I. Open issues and reviewer questions
 | Example, YAML, test-vector, schema-coverage and docs checks pass | Positive | Demonstrates mature executable model | Use as quality benchmark |
 | DCAS binding lacks required `maturity` field | Moderate, localized | Full binding catalog validation fails | Treat binding catalog as informative, not normative dependency |
 | Core and v0.22.0 delegation documentation declare applicable version v0.22.0 | Positive | Confirms intended concept set | Use semantics from snapshot |
-| Repository is a draft reference model | Material | Concepts may evolve | Adopt semantics into v2 rather than normatively importing all files |
+| Repository is a draft reference model | Material | Concepts may evolve | Adopt semantics into GAAM rather than normatively importing all files |
 
 ---
 
 ## Annex C: Minimum traceability table for drafting
 
-The v2 drafting workspace should maintain the following fields for each adopted concept:
+GAAM drafting workspace should maintain the following fields for each adopted concept:
 
 | Field | Purpose |
 |---|---|
 | Concept identifier | Stable drafting reference |
 | TSMM source | Source document, schema or model |
 | Adoption class | Direct, modified, reference or retained |
-| v2 definition | Proposed normative definition |
+| GAAM definition | Proposed normative definition |
 | Relationships | Permitted source/target relationships |
 | Invariants | Mandatory semantic rules |
 | Controlled document | Location of governance requirements |

@@ -57,3 +57,9 @@ The command generates machine-readable and human-readable evidence in `validatio
 ## License and accountability
 
 Specification and documentation content are licensed under [CC BY 4.0](LICENSE). Contributions remain governed by [CONTRIBUTING.md](CONTRIBUTING.md), [GOVERNANCE.md](GOVERNANCE.md), and the [AI usage disclosure](AI_USAGE.md).
+
+
+## Provenance
+
+- [Source attributions](ATTRIBUTIONS.md)
+- [Mappings and source crosswalks](mappings/index.md)

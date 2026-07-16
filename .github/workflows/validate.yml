@@ -1,0 +1,59 @@
+name: Validate
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: gaam-validate-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install Python dependencies
+        run: python -m pip install -r requirements-dev.txt
+
+      - name: Run GAAM validation
+        run: python scripts/validate.py
+
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: "3.3"
+          bundler-cache: true
+
+      - name: Build GitHub Pages site
+        env:
+          JEKYLL_ENV: production
+        run: >
+          bundle exec jekyll build
+          --strict_front_matter
+          --trace
+
+      - name: Validate rendered publication
+        run: python scripts/validate_pages.py
+
+      - name: Upload validation evidence
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: gaam-validation-evidence
+          path: |
+            VALIDATION_REPORT.md
+            validation/
+            packages/gaam-v0.9.0/checksums.json
+            _site/

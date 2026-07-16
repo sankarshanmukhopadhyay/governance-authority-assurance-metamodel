@@ -5,7 +5,7 @@ baseurl: /governance-authority-assurance-metamodel
 repository: sankarshanmukhopadhyay/governance-authority-assurance-metamodel
 version: 0.9.0
 status: Candidate Specification
-theme: minima
+theme: jekyll-theme-minimal
 markdown: kramdown
 kramdown:
   input: GFM
@@ -18,23 +18,18 @@ plugins:
 relative_links:
   enabled: true
   collections: true
-header_pages:
-  - specification/index.md
-  - profiles/index.md
-  - schemas/index.md
-  - vocabularies/index.md
-  - docs/index.md
-  - conformance/index.md
-  - releases/index.md
 exclude:
   - requirements-dev.txt
   - scripts
   - tests
   - validation
   - packages
+  - artifacts
   - Gemfile.lock
   - vendor
   - .bundle
+  - Dockerfile
+  - docker-compose.yml
 defaults:
   - scope:
       path: ""

@@ -1,26 +1,52 @@
 ---
-layout: page
-title: GAAM v0.9.0
+layout: default
+title: Governance, Authority and Assurance Metamodel
 permalink: /
 artifact_type: Publication landing page
 normative_status: Candidate Specification
 ---
 
-# GAAM v0.9.0 — Candidate Specification
+# Governance, Authority and Assurance Metamodel
 
-GAAM defines executable governance semantics for authority, delegation, evidence, assurance, trust decisions, effects, accountability and remedy across distributed and agentic systems.
+GAAM defines protocol-neutral, executable governance semantics for authority, delegation, evidence, assurance, trust decisions, effects, accountability and remedy across distributed and agentic systems.
 
-<div class="artifact-grid">
-<div class="artifact-card"><h3><a href="{{ '/specification/' | relative_url }}">Specification</a></h3><p>The authoritative normative model and requirements.</p></div>
-<div class="artifact-card"><h3><a href="{{ '/profiles/' | relative_url }}">Profiles</a></h3><p>Composable implementation and conformance targets.</p></div>
-<div class="artifact-card"><h3><a href="{{ '/schemas/' | relative_url }}">Schemas</a></h3><p>Canonical JSON Schemas, directly dereferenceable through Pages.</p></div>
-<div class="artifact-card"><h3><a href="{{ '/vocabularies/' | relative_url }}">Vocabularies</a></h3><p>Governed machine-readable semantic values.</p></div>
-<div class="artifact-card"><h3><a href="{{ '/docs/' | relative_url }}">Documentation</a></h3><p>Architecture, implementation, lifecycle and review guidance.</p></div>
-<div class="artifact-card"><h3><a href="{{ '/conformance/' | relative_url }}">Conformance</a></h3><p>Evidence levels, matrices, validation and threat traceability.</p></div>
-<div class="artifact-card"><h3><a href="{{ '/examples/' | relative_url }}">Examples</a></h3><p>End-to-end valid and invalid governance patterns.</p></div>
-<div class="artifact-card"><h3><a href="{{ '/releases/' | relative_url }}">Releases</a></h3><p>Candidate notes, migration guidance and historical records.</p></div>
-</div>
+| Attribute | Value |
+|---|---|
+| Current release | v0.9.0 |
+| Status | Candidate Specification |
+| Primary artifact | Governance metamodel specification |
+| Validation | Automated schema, conformance and publication checks |
+| Assurance boundary | Repository validation is not certification or independent assessment |
 
-## Candidate assurance boundary
+## Start here
 
-GAAM v0.9.0 supports implementation, interoperability and review. Repository-generated validation does not constitute certification or independent assessment.
+- [Read the specification](specification/)
+- [Review the architecture and design guidance](docs/)
+- [Select an implementation profile](profiles/)
+- [Inspect the schemas](schemas/)
+- [Browse the controlled vocabularies](vocabularies/)
+- [Run or review conformance checks](conformance/)
+- [Explore examples](examples/)
+- [Review releases and migration guidance](releases/)
+
+## Publication structure
+
+### Specification
+
+The [authoritative Candidate Specification](specification/) defines the normative model, requirements, artifact precedence and conformance surface.
+
+### Implementation and architecture
+
+The [documentation set](docs/) provides architecture, implementation, lifecycle, migration and reviewer guidance. [Architecture decisions](decisions/) record the rationale behind major design and authority choices.
+
+### Machine-readable artifacts
+
+The [schemas](schemas/) and [controlled vocabularies](vocabularies/) are published directly from repository source. Rendering does not alter their normative meaning.
+
+### Conformance and evidence
+
+The [conformance surface](conformance/) connects requirements, tests, threat controls and evidence levels. The repository-generated reports demonstrate repeatable validation only; they do not constitute certification.
+
+## Repository relationships
+
+GAAM defines a protocol-neutral governance, authority and assurance layer. Repository mappings and adoption crosswalks explain how it can be applied alongside related trust-system models without transferring normative authority between projects.

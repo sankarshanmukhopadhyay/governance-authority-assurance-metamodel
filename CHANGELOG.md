@@ -25,6 +25,9 @@ normative_status: "Release record"
 
 ### Documentation
 
+- Align the GitHub Pages publication surface with the compact `jekyll-theme-minimal` scheme, explicit landing-page navigation and the supported Pages build action.
+- Replace theme-dependent header navigation with content-led entry points for the specification, implementation guidance, profiles, schemas, vocabularies, conformance and releases.
+
 - Replace oblique references to an external governance metamodel with explicit attribution to the ToIP Governance Metamodel Specification v1.0 and Companion Guide v1.0.
 - Reframe the TSMM crosswalk as a GAAM source-adoption and architectural-differentiation record.
 - Remove residual language implying that GAAM is a successor “v2” of the ToIP specification.

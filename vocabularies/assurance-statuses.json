@@ -1,0 +1,13 @@
+{
+  "id": "gaam:assurance-statuses:0.5.0",
+  "version": "0.5.0",
+  "values": [
+    "draft",
+    "active",
+    "suspended",
+    "withdrawn",
+    "expired",
+    "contested",
+    "superseded"
+  ]
+}

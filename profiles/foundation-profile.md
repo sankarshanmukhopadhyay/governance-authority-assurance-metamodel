@@ -1,16 +1,47 @@
+---
+layout: page
+title: Foundation Profile
+permalink: /profiles/foundation/
+---
 # Foundation Profile
 
-**Status:** Initial profile definition for GAAM v0.1.0  
-**Normative source:** [GAAM Specification](../specification/governance-authority-assurance-metamodel.md)
+**Version:** 0.5.0  
+**Status:** Feature Complete Draft
 
 ## Purpose
 
-Baseline governance concepts, framework structure, policy traceability, evidence, accountability and conformance required for every GAAM implementation.
+This profile defines the GAAM requirements for **foundation** conformance targets. It is a conformance package rather than a descriptive label.
 
-## Applicability
+## Applicability and targets
 
-An implementation claiming this profile MUST also claim the Foundation Profile. The conformance statement MUST identify the target, governance context, exclusions and evidence used.
+- `framework`
+- `document`
+- `package`
 
-## v0.1.0 review note
+## Dependencies
 
-This profile groups requirements already present in the core specification. A later release will publish a stable, exhaustive requirement mapping and machine-readable profile manifest.
+- None. This is the mandatory base profile.
+
+## Normative requirement mapping
+
+The machine-readable manifest is authoritative for the profile mapping: [`manifests/foundation.json`](manifests/foundation.json).
+
+This profile maps **39 normative requirements**. Implementations SHALL satisfy every mapped requirement unless a future profile version declares a specific permitted exclusion.
+
+## Required artifacts
+
+- Conformance claim identifying GAAM v0.5.0 and this profile version.
+- Requirement traceability evidence.
+- Reproducible validation results.
+- Governance artifacts applicable to the conformance target.
+
+## Required tests
+
+- Profile manifest schema validation.
+- Dependency closure.
+- Normative requirement identifier validity.
+- Applicable schema and governance-invariant tests.
+
+## Claim limitations
+
+A structurally valid artifact set does not by itself establish operational trustworthiness. Partial implementation MUST NOT be represented as full profile conformance.

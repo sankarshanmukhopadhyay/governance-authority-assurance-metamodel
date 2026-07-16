@@ -1,0 +1,49 @@
+{
+  "id": "urn:gaam:package:0.5.0",
+  "type": "gaam-governance-package",
+  "gaamVersion": "0.5.0",
+  "status": "active",
+  "profiles": [
+    "gaam:profile:foundation:0.5.0",
+    "gaam:profile:machine-actionable-governance:0.5.0",
+    "gaam:profile:delegated-authority:0.5.0",
+    "gaam:profile:runtime-governance:0.5.0",
+    "gaam:profile:agentic-systems:0.5.0",
+    "gaam:profile:trust-graph:0.5.0",
+    "gaam:profile:continuous-assurance:0.5.0",
+    "gaam:profile:high-impact-systems:0.5.0"
+  ],
+  "artifacts": [
+    {
+      "id": "gaam-specification",
+      "path": "specification/governance-authority-assurance-metamodel.md",
+      "mediaType": "text/markdown"
+    }
+  ],
+  "schemas": [
+    "agent-governance-identity.schema.json",
+    "appeal.schema.json",
+    "assurance.schema.json",
+    "authority.schema.json",
+    "conformance-claim.schema.json",
+    "decision-receipt.schema.json",
+    "delegation.schema.json",
+    "evidence.schema.json",
+    "gaam-package.schema.json",
+    "governance-event.schema.json",
+    "profile-manifest.schema.json",
+    "remedy.schema.json",
+    "runtime-envelope.schema.json"
+  ],
+  "vocabularies": [
+    "assurance-statuses.json",
+    "decision-outcomes.json",
+    "governance-event-types.json",
+    "lifecycle-states.json",
+    "relationship-types.json"
+  ],
+  "integrity": {
+    "algorithm": "sha-256",
+    "manifest": "checksums.json"
+  }
+}

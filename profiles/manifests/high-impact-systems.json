@@ -1,0 +1,49 @@
+{
+  "id": "gaam:profile:high-impact-systems:0.5.0",
+  "type": "gaam-profile-manifest",
+  "version": "0.5.0",
+  "conformanceTargets": [
+    "high-impact-system"
+  ],
+  "requirements": [
+    "GAAM-OUT-001",
+    "GAAM-OUT-002",
+    "GAAM-OUT-003",
+    "GAAM-SYS-001",
+    "GAAM-SYS-002",
+    "GAAM-HARM-003",
+    "GAAM-HARM-004",
+    "GAAM-APR-001",
+    "GAAM-APR-002",
+    "GAAM-APR-003",
+    "GAAM-RED-004",
+    "GAAM-RED-005",
+    "GAAM-RED-006",
+    "GAAM-RED-007",
+    "GAAM-RED-008",
+    "GAAM-DEC-004",
+    "GAAM-SAFE-001",
+    "GAAM-SAFE-002",
+    "GAAM-SAFE-003",
+    "GAAM-MKT-001",
+    "GAAM-MKT-002",
+    "GAAM-MKT-003"
+  ],
+  "requiredArtifacts": [
+    "conformance-claim",
+    "validation-report"
+  ],
+  "requiredEvidence": [
+    "requirement-traceability",
+    "test-results"
+  ],
+  "requiredTests": [
+    "profile-completeness",
+    "dependency-closure",
+    "schema-validation"
+  ],
+  "permittedExclusions": [],
+  "dependencies": [
+    "gaam:profile:foundation:0.5.0"
+  ]
+}

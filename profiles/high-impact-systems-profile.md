@@ -1,16 +1,45 @@
-# High-Impact Systems Profile
+---
+layout: page
+title: High Impact Systems Profile
+permalink: /profiles/high-impact-systems/
+---
+# High Impact Systems Profile
 
-**Status:** Initial profile definition for GAAM v0.1.0  
-**Normative source:** [GAAM Specification](../specification/governance-authority-assurance-metamodel.md)
+**Version:** 0.5.0  
+**Status:** Feature Complete Draft
 
 ## Purpose
 
-Additional requirements for human oversight, affected-party protection, heightened evidence, impact assessment, appeal, remediation and independent assurance.
+This profile defines the GAAM requirements for **high impact systems** conformance targets. It is a conformance package rather than a descriptive label.
 
-## Applicability
+## Applicability and targets
 
-An implementation claiming this profile MUST also claim the Foundation Profile. The conformance statement MUST identify the target, governance context, exclusions and evidence used.
+- `high-impact-system`
 
-## v0.1.0 review note
+## Dependencies
 
-This profile groups requirements already present in the core specification. A later release will publish a stable, exhaustive requirement mapping and machine-readable profile manifest.
+- [Foundation Profile](foundation-profile.md)
+
+## Normative requirement mapping
+
+The machine-readable manifest is authoritative for the profile mapping: [`manifests/high-impact-systems.json`](manifests/high-impact-systems.json).
+
+This profile maps **30 normative requirements**. Implementations SHALL satisfy every mapped requirement unless a future profile version declares a specific permitted exclusion.
+
+## Required artifacts
+
+- Conformance claim identifying GAAM v0.5.0 and this profile version.
+- Requirement traceability evidence.
+- Reproducible validation results.
+- Governance artifacts applicable to the conformance target.
+
+## Required tests
+
+- Profile manifest schema validation.
+- Dependency closure.
+- Normative requirement identifier validity.
+- Applicable schema and governance-invariant tests.
+
+## Claim limitations
+
+A structurally valid artifact set does not by itself establish operational trustworthiness. Partial implementation MUST NOT be represented as full profile conformance.

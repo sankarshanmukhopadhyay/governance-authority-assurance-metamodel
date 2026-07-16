@@ -1,0 +1,47 @@
+{
+  "id": "gaam:profile:continuous-assurance:0.5.0",
+  "type": "gaam-profile-manifest",
+  "version": "0.5.0",
+  "conformanceTargets": [
+    "assurance-service",
+    "governed-system"
+  ],
+  "requirements": [
+    "GAAM-ASSUR-001",
+    "GAAM-ASSUR-002",
+    "GAAM-ASSUR-003",
+    "GAAM-ASSUR-004",
+    "GAAM-ASSUR-005",
+    "GAAM-ASSUR-006",
+    "GAAM-ASSUR-007",
+    "GAAM-ASSUR-008",
+    "GAAM-ASSUR-009",
+    "GAAM-ASSUR-010",
+    "GAAM-ASSUR-011",
+    "GAAM-LIFE-001",
+    "GAAM-LIFE-002",
+    "GAAM-LIFE-003",
+    "GAAM-LIFE-004",
+    "GAAM-LIFE-005",
+    "GAAM-ASR-001",
+    "GAAM-ASR-002",
+    "GAAM-ASR-003"
+  ],
+  "requiredArtifacts": [
+    "conformance-claim",
+    "validation-report"
+  ],
+  "requiredEvidence": [
+    "requirement-traceability",
+    "test-results"
+  ],
+  "requiredTests": [
+    "profile-completeness",
+    "dependency-closure",
+    "schema-validation"
+  ],
+  "permittedExclusions": [],
+  "dependencies": [
+    "gaam:profile:foundation:0.5.0"
+  ]
+}

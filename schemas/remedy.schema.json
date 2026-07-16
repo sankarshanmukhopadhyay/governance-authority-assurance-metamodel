@@ -1,0 +1,92 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.org/gaam/v0.5.0/schemas/remedy.schema.json",
+  "title": "Remedy",
+  "type": "object",
+  "required": [
+    "id",
+    "type",
+    "appeal",
+    "originalDecision",
+    "remedyType",
+    "authority",
+    "status",
+    "completedAt",
+    "evidence"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "type": {
+      "type": "string",
+      "minLength": 1
+    },
+    "version": {
+      "type": "string",
+      "minLength": 1
+    },
+    "status": {
+      "enum": [
+        "draft",
+        "proposed",
+        "issued",
+        "accepted",
+        "active",
+        "restricted",
+        "suspended",
+        "revoked",
+        "expired",
+        "superseded",
+        "terminated",
+        "archived",
+        "contested",
+        "remediated"
+      ]
+    },
+    "effectiveFrom": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "effectiveUntil": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "appeal": {
+      "type": "string",
+      "minLength": 1
+    },
+    "originalDecision": {
+      "type": "string",
+      "minLength": 1
+    },
+    "remedyType": {
+      "enum": [
+        "stop",
+        "reverse",
+        "correct",
+        "restore",
+        "compensate",
+        "other"
+      ]
+    },
+    "authority": {
+      "type": "string",
+      "minLength": 1
+    },
+    "completedAt": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "evidence": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "minItems": 1
+    }
+  },
+  "additionalProperties": false
+}

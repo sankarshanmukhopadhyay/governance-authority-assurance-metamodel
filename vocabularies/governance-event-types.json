@@ -1,0 +1,17 @@
+{
+  "id": "gaam:governance-event-types:0.5.0",
+  "version": "0.5.0",
+  "values": [
+    "issued",
+    "accepted",
+    "activated",
+    "restricted",
+    "suspended",
+    "revoked",
+    "expired",
+    "superseded",
+    "terminated",
+    "contested",
+    "remediated"
+  ]
+}

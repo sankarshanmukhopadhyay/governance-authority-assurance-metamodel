@@ -1346,44 +1346,106 @@ Implementations should avoid representing trust as a single scalar score. Where 
 
 ---
 
-# Annex C. Open specification markers
 
-The following matters remain intentionally open for review:
+# 18. Feature-complete governance artifacts
 
-- whether the title should retain “Governance Metamodel” without the “Authority and Assurance” expansion;
-- whether persistent framework identifiers must be DIDs or may use other verifiable identifiers;
-- whether decision receipts should be mandatory for all agentic effects or only consequential effects;
-- whether assurance-level semantics belong in this specification or a companion specification;
-- whether a formal graph ontology should be normative or maintained externally;
-- whether machine-readable artifacts may be co-normative by default;
-- how high-impact systems should be defined across jurisdictions;
-- whether emergency authority requires an independent review body;
-- whether minimum data fields for authority and delegation records should appear in a normative annex.
+## 18.1 Canonical authority records
 
----
+**GAAM-ART-001:** A machine-actionable authority record **MUST** identify its authority source, issuer, subject, permitted effects, scope, effective period, status, revocation authority and accountable parties.
 
-# Annex D. Change posture relative to Version 1.0
+**GAAM-ART-002:** An authority record **MUST** distinguish permissions, prohibitions, obligations and constraints.
 
-Version 2 retains:
+**GAAM-ART-003:** A system **MUST NOT** treat an authority record as operative when its status, effective period, governing context or integrity cannot be validated.
 
-- the Primary Document;
-- the Schedule of Controlled Documents;
-- governing and administering authorities;
-- principles, policies and machine-testable rules;
-- governance revisions and extensions;
-- risk, assurance, governance, business, technical, information trust, inclusion and legal categories.
+## 18.2 Canonical delegation records
 
-Version 2 expands the metamodel by introducing:
+**GAAM-ART-004:** A delegation record **MUST** identify its parent authority, delegator, delegate, delegated scope, effective period, redelegation rule, status and propagation behaviour.
 
-- authority topology;
-- first-class delegation;
-- trust decisions and effects;
-- runtime governance envelopes;
-- decision receipts;
-- agent lifecycle and tool governance;
-- decentralised trust graphs and registry recognition;
-- continuous assurance;
-- accountability and redress;
-- machine-actionable governance packages;
-- composable profiles and multiple conformance targets.
+**GAAM-ART-005:** Effective child authority **MUST** be no broader than the intersection of valid parent authority, delegated scope, applicable policy, current context, active status, valid time and applicable constraints.
 
+**GAAM-ART-006:** A delegation transition **MUST** emit or preserve a governance event sufficient to reconstruct the transition authority, time, prior state, new state and supporting evidence.
+
+## 18.3 Governance artifact lifecycles
+
+**GAAM-LIFE-001:** A conformant implementation **MUST** apply declared lifecycle states and transitions to governance-critical artifacts.
+
+**GAAM-LIFE-002:** Lifecycle transition rules **MUST** identify the authority permitted to cause each transition and the evidence required for that transition.
+
+**GAAM-LIFE-003:** An invalid, unauthorised or out-of-sequence lifecycle transition **MUST** fail without activating the requested governance state.
+
+**GAAM-LIFE-004:** Suspension, revocation, expiry, supersession and termination **MUST** have explicit effects on dependent artifacts and active decisions.
+
+**GAAM-LIFE-005:** Archived governance artifacts **MUST** remain reconstructable but **MUST NOT** be treated as operative unless explicitly restored through an authorised transition.
+
+## 18.4 Assurance expressions
+
+**GAAM-ASR-001:** An assurance assertion **MUST** identify its subject, evaluated property, criteria, evaluator, method, evidence, scope, governance context, validity period, status, limitations and challenge route.
+
+**GAAM-ASR-002:** Assurance labels from different domains or profiles **MUST NOT** be treated as equivalent without an explicit mapping of criteria, scope, evidence, evaluator competence, context and validity.
+
+**GAAM-ASR-003:** Stale, suspended, withdrawn or contradicted assurance **MUST** trigger profile-defined safe behaviour.
+
+## 18.5 Profile composition
+
+**GAAM-PCOMP-001:** Every profile other than the Foundation Profile **MUST** declare the Foundation Profile as a dependency.
+
+**GAAM-PCOMP-002:** A profile **MUST** declare its conformance targets, normative requirement mappings, required artifacts, required evidence, required tests, permitted exclusions and dependencies.
+
+**GAAM-PROF-003:** A composite profile claim **MUST** satisfy dependency closure and **MUST NOT** suppress conflicting or additional requirements without an explicit resolution rule.
+
+**GAAM-PROF-004:** A partial implementation **MUST NOT** claim full profile conformance.
+
+## 18.6 Decision outcomes and receipts
+
+**GAAM-OUT-001:** A trust decision **MUST** use a declared outcome vocabulary and identify any conditions attached to the outcome.
+
+**GAAM-OUT-002:** The base outcome vocabulary **MUST** support permit, deny, permit-with-conditions, restrict, suspend, require-additional-evidence, require-additional-approval, route-for-review and terminate.
+
+**GAAM-OUT-003:** A decision receipt for a consequential effect **MUST** identify the decision, applicable authority, policy, evidence references, assurance references, outcome, conditions, decision time, enforcement point and accountable party.
+
+**GAAM-DEC-004:** A receipt **MUST** minimise disclosed information while preserving sufficient provenance for review and reconstruction.
+
+## 18.7 Privacy, safety and affected-party protections
+
+**GAAM-SAFE-001:** Governance evidence and receipts **MUST** be limited to information necessary for the declared purpose and review obligations.
+
+**GAAM-SAFE-002:** A high-impact system **MUST** define interruption authority, degraded operation, safe failure, recovery and post-event review.
+
+**GAAM-SAFE-003:** Emergency authority **MUST** be time-bounded, purpose-bounded, attributable and subject to independent or otherwise conflict-controlled review.
+
+**GAAM-APR-001:** A consequential effect **MUST** identify affected-party notice, explanation, challenge, review and remedy arrangements proportionate to the effect.
+
+**GAAM-APR-002:** A review mechanism **MUST** have practical authority to suspend, reverse, correct or remediate an outcome.
+
+**GAAM-APR-003:** Remedy completion **MUST** produce evidence linked to the original decision and effect.
+
+**GAAM-SYS-001:** A high-impact framework **MUST** define how individual effect records are aggregated to detect recurring, cohort-level or systemic harm.
+
+**GAAM-SYS-002:** Detection of a declared systemic-harm threshold **MUST** trigger a governed intervention and preserve evidence of the response.
+
+## 18.8 Market integrity and recognition
+
+**GAAM-MKT-001:** Registry inclusion, accreditation or recognition **MUST NOT** be represented as universal trustworthiness.
+
+**GAAM-MKT-002:** A framework **MUST** disclose material conflicts of interest affecting registry, accreditation or assurance decisions.
+
+**GAAM-MKT-003:** A high-impact recognition arrangement **MUST** address opaque exclusion, portability barriers, self-preferencing and unsupported equivalence claims.
+
+# Annex C. Resolved architectural decisions for v0.5.0
+
+The v0.5.0 Feature Complete Draft adopts the following decisions:
+
+1. GAAM remains a standalone, protocol-independent metamodel.
+2. Persistent identifiers may use any verifiable identifier method satisfying profile requirements; DIDs are not mandatory.
+3. Decision receipts are mandatory for consequential effects and profile-defined boundary events.
+4. Assurance expressions are contextual and are not universal trust scores.
+5. Machine-readable artifacts are normative for structure where explicitly designated; human-readable normative text governs substantive meaning.
+6. High-impact status is profile and context defined rather than jurisdictionally universal.
+7. Emergency authority requires conflict-controlled post-event review.
+8. Minimum authority and delegation fields are defined by the canonical schemas.
+9. Agent identity continuity depends upon declared changes to model, operator, memory, tools, policy and execution environment.
+10. Graph ontology extensions are permitted when their semantics, provenance and compatibility are declared.
+
+# Annex D. Architectural provenance and compatibility posture
+
+GAAM is an independent metamodel. Informative mappings may assist adoption from other governance models, but they do not create specification lineage, normative incorporation, semantic equivalence or dependency. Conformance claims apply only to the GAAM version and profiles explicitly identified by the claimant.

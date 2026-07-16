@@ -1,23 +1,28 @@
-# Relationship Matrix
+---
+layout: page
+title: Canonical Relationship Matrix
+permalink: /matrices/relationships/
+---
+# Canonical Relationship Matrix
 
-| Relationship | Permitted source | Permitted target | Required semantics | Common misuse to prevent |
-|---|---|---|---|---|
-| holds | Actor | Role | Eligibility, activation, status, time | Treating role as permanent identity |
-| governs | Authority / framework | Entity, process, artifact or framework | Mandate, scope, jurisdiction, powers | Assuming unlimited control |
-| delegates | Delegator | Delegate | Authority source, scope, purpose, period, redelegation, propagation | Treating access or credentials as delegation |
-| recognises | Relying authority / framework | External authority, framework, registry or determination | Accepted classes, purpose, limits, withdrawal | Confusing recognition with delegation |
-| accredits | Accrediting authority | Assessor or provider | Competence scope, criteria, validity, status | Treating accreditation as outcome guarantee |
-| asserts | Actor / artifact | Claim | Identity, authority to assert, time, context | Treating signed claim as established fact |
-| supports | Evidence | Claim, control, assessment or decision | Relevance, provenance, freshness | Reusing evidence outside permitted context |
-| verifies | Verifier | Condition or claim | Method, criteria, result, time | Confusing verification with full assurance |
-| assesses | Assessor | Entity, control, profile or system | Criteria, evidence, scope, limitations | Generalising beyond assessed scope |
-| permits | Authority / policy | Effect | Scope, conditions, validity | Assuming permission from capability |
-| prohibits | Authority / policy | Effect | Scope, priority, exception rules | Ignoring prohibition due to lower-level permission |
-| constrains | Authority / policy | Action, delegation or effect | Bound, threshold, condition | Silent broadening through implementation |
-| depends-on | Entity, service or decision | Component, source or authority | Dependency class, criticality, fallback | Hiding concentration and cascading risk |
-| accounts-for | Accountable party | Decision, action or effect | Duty to explain, remedy and bear consequence | Ending accountability at an agent |
-| revokes | Authorised actor | Authority, delegation, status or relationship | Effective time, reason, scope, propagation | Ambiguous or delayed revocation |
-| suspends | Authorised actor | Authority, delegation, status or relationship | Temporary effect, review, restoration | Treating suspension as deletion |
-| supersedes | Artifact / state | Earlier artifact / state | Version order, transition, compatibility | Rollback or stale-state reliance |
-| appeals | Affected / authorised party | Decision or effect | Grounds, evidence, route, time | Review without power to alter outcome |
-| remedies | Authorised actor / process | Harm, error or non-conformance | Remedy type, authority, completion evidence | Symbolic remediation without restoration |
+| Relationship | Source | Target | Source cardinality | Target cardinality | Propagation/transitivity | Required semantic boundary |
+|---|---|---|---:|---:|---|---|
+| holds | actor | authority | 0..* | 1 | no | Authority possession is contextual |
+| governs | framework | entity | 1..* | 0..* | no | Governance scope must be explicit |
+| delegates | delegator | delegate | 0..* | 0..* | bounded | Cannot enlarge parent authority |
+| recognises | framework | external assertion | 0..* | 0..* | no | Does not imply delegation or universal trust |
+| accredits | authority | evaluator | 0..* | 0..* | no | Does not guarantee every output |
+| asserts | actor | claim | 0..* | 1..* | no | Requires attributable provenance |
+| supports | evidence | claim | 0..* | 0..* | no | Does not establish truth alone |
+| verifies | verifier | claim | 0..* | 0..* | no | Bounded by method and context |
+| assesses | evaluator | subject | 0..* | 0..* | no | Produces contextual assurance |
+| permits | policy | effect | 0..* | 0..* | no | Subject to constraints |
+| prohibits | policy | effect | 0..* | 0..* | no | Conflict resolution required |
+| constrains | policy | authority/effect | 0..* | 0..* | no | Narrows operation |
+| depends-on | artifact | artifact | 0..* | 0..* | yes | Dependency state may affect operation |
+| accounts-for | party | effect | 1..* | 1..* | no | Machine actor cannot be terminal |
+| revokes | authority | artifact | 0..* | 0..* | propagates | Requires effective time and authority |
+| suspends | authority | artifact | 0..* | 0..* | propagates | Temporary non-operative state |
+| supersedes | artifact | artifact | 0..1 | 0..1 | no | Prior artifact becomes non-current |
+| appeals | party | decision | 0..* | 0..* | no | Review body must change outcomes |
+| remedies | remedy | effect | 0..* | 1..* | no | Evidence linked to original decision |

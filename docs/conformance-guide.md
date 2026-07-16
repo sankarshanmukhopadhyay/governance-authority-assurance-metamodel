@@ -1,37 +1,28 @@
-# Conformance Guide
+---
+layout: page
+title: Conformance and Assurance Guide
+permalink: /docs/conformance/
+---
+# Conformance and Assurance Guide
 
-## Conformance targets
+GAAM conformance applies to declared targets and profiles. It does not certify universal trustworthiness.
 
-GAAM supports claims for:
+| Level | Evidence meaning |
+|---|---|
+| L0 — Documented | Required governance statements and artifacts exist |
+| L1 — Structurally Valid | Machine-readable artifacts validate against GAAM schemas |
+| L2 — Behaviourally Tested | Required lifecycle and governance invariants pass |
+| L3 — Evidence Supported | Claims have traceable execution or assessment evidence |
+| L4 — Independently Assessed | An independent party assessed the declared scope |
 
-- governance frameworks;
-- governed organisations;
-- authority and delegation services;
-- agents and agent platforms;
-- registries and trust-graph services;
-- runtime decision services;
-- evidence packages and decision receipts;
-- assurance services;
-- transactions or effect executions.
+## Claim requirements
 
-## Minimum statement
+A claim identifies GAAM version, profiles, target, evidence level, evidence references, issuer, issue time and limitations. Profile dependency closure is mandatory. Partial implementations must not claim full profile conformance.
 
-A conformance statement must identify:
+## Validation layers
 
-1. GAAM version;
-2. implementation and operator;
-3. conformance target;
-4. claimed profiles;
-5. applicable governance context;
-6. excluded optional features;
-7. evidence and test method;
-8. known limitations;
-9. statement date and validity.
-
-## Draft-status qualification
-
-Claims against v0.1.0 must state: “Conforms to the GAAM v0.1.0 Initial Public Draft for the identified target and profiles.” Such a claim does not imply compatibility with later releases.
-
-## Evidence expectations
-
-Document conformance may be shown through traceability matrices and review. Runtime conformance requires execution evidence. Agent and delegation claims require lifecycle, authority and revocation tests. Trust-graph claims require typed-edge, provenance, conflict and traversal-policy tests.
+1. Repository and publication integrity.
+2. Normative requirement traceability.
+3. Schema and fixture validation.
+4. Governance invariants and lifecycle behaviour.
+5. Profile composition and evidence completeness.

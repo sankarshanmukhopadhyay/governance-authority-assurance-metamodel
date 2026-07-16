@@ -1,38 +1,14 @@
-# Specification Development Roadmap
+# Specification Roadmap
 
-## Foundational topics fixed at v0.1.0
+## v0.5.0 completion state
 
-The following propositions are treated as architectural anchors:
+The Feature Complete Draft includes the planned normative concept surface, relationship cardinalities, lifecycle models, profile composition, machine-actionable package schemas, contextual assurance expressions, privacy/safety/market-integrity protections, three end-to-end patterns, threat modelling and executable validation evidence.
 
-1. Capability and authority are distinct.
-2. Authority is sourced, scoped, contextual and revocable.
-3. Delegation preserves provenance and cannot silently amplify scope.
-4. Trust decisions are contextual outcomes, not intrinsic properties.
-5. Evidence and assurance require provenance and freshness.
-6. Consequential effects require decision accountability and reconstructable records.
-7. Agentic execution does not eliminate principal, operator or provider accountability.
-8. Graph paths and registry entries are inputs to reliance decisions, not automatic trust.
+## Validation priorities before v0.9.0
 
-## Target for v0.5.0
-
-- Finalised core vocabulary and relationship cardinalities.
-- Complete lifecycle model for authority, delegation, agents, evidence and assurance.
-- Mature profiles and explicit profile composition rules.
-- Defined machine-actionable governance package and example schemas.
-- Expanded privacy, safety, market-integrity and affected-party requirements.
-- At least three end-to-end implementation patterns.
-
-## Target for v0.9.0
-
-- Stable normative identifiers.
-- No unresolved critical architectural issues.
-- Conformance test plan and implementation-report template.
-- Evidence from at least two independent application domains.
-- Security and privacy review complete.
-
-## Target for v1.0.0
-
-- Stable normative text and glossary.
-- Demonstrated implementability.
-- Published conformance artifacts.
-- Documented disposition of all release-blocking issues.
+1. Independent implementation reports.
+2. Cross-implementation package exchange.
+3. Adversarial authority and revocation testing.
+4. Privacy analysis of graph and receipt implementations.
+5. High-impact affected-party and systemic-harm trials.
+6. Schema and vocabulary compatibility refinement.

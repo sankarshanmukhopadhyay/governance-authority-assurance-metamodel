@@ -1,0 +1,98 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.org/gaam/v0.5.0/schemas/agent-governance-identity.schema.json",
+  "title": "Agent Governance Identity",
+  "type": "object",
+  "required": [
+    "id",
+    "type",
+    "principal",
+    "operator",
+    "provider",
+    "model",
+    "tools",
+    "policyVersion",
+    "executionEnvironment",
+    "status"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "type": {
+      "type": "string",
+      "minLength": 1
+    },
+    "version": {
+      "type": "string",
+      "minLength": 1
+    },
+    "status": {
+      "enum": [
+        "draft",
+        "proposed",
+        "issued",
+        "accepted",
+        "active",
+        "restricted",
+        "suspended",
+        "revoked",
+        "expired",
+        "superseded",
+        "terminated",
+        "archived",
+        "contested",
+        "remediated"
+      ]
+    },
+    "effectiveFrom": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "effectiveUntil": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "principal": {
+      "type": "string",
+      "minLength": 1
+    },
+    "operator": {
+      "type": "string",
+      "minLength": 1
+    },
+    "provider": {
+      "type": "string",
+      "minLength": 1
+    },
+    "model": {
+      "type": "string",
+      "minLength": 1
+    },
+    "memoryConfiguration": {
+      "type": "string",
+      "minLength": 1
+    },
+    "tools": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "policyVersion": {
+      "type": "string",
+      "minLength": 1
+    },
+    "executionEnvironment": {
+      "type": "string",
+      "minLength": 1
+    },
+    "continuityFrom": {
+      "type": "string",
+      "minLength": 1
+    }
+  },
+  "additionalProperties": false
+}

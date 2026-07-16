@@ -1,0 +1,21 @@
+{
+  "id": "urn:gaam:example:delegated-agent-purchase:receipt",
+  "type": "decision-receipt",
+  "decision": "urn:gaam:example:delegated-agent-purchase:decision",
+  "authority": [
+    "urn:gaam:example:delegated-agent-purchase:authority"
+  ],
+  "policy": [
+    "urn:gaam:policy:example"
+  ],
+  "evidence": [],
+  "assurance": [],
+  "outcome": "permit-with-conditions",
+  "conditions": [
+    "remain within declared scope"
+  ],
+  "decisionTime": "2026-07-16T00:01:00Z",
+  "enforcementPoint": "urn:example:enforcement",
+  "accountableParty": "urn:example:operator",
+  "reviewRoute": "urn:example:review"
+}

@@ -31,3 +31,6 @@ A normative proposal should include:
 ## Pull requests
 
 Pull requests must pass Markdown and internal-link checks. A pull request that changes normative text must update the requirement index and, where applicable, the conformance and relationship matrices.
+## Machine-verifiable contributions
+
+Changes to schemas, profiles, vocabularies or examples must include positive and negative fixtures, update affected documentation and pass `python scripts/validate.py`. Normative changes must use a unique requirement identifier and update generated traceability evidence.

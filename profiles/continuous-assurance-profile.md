@@ -1,16 +1,46 @@
+---
+layout: page
+title: Continuous Assurance Profile
+permalink: /profiles/continuous-assurance/
+---
 # Continuous Assurance Profile
 
-**Status:** Initial profile definition for GAAM v0.1.0  
-**Normative source:** [GAAM Specification](../specification/governance-authority-assurance-metamodel.md)
+**Version:** 0.5.0  
+**Status:** Feature Complete Draft
 
 ## Purpose
 
-Additional requirements for telemetry, drift, evidence freshness, event-triggered reassessment, suspension and assurance-state publication.
+This profile defines the GAAM requirements for **continuous assurance** conformance targets. It is a conformance package rather than a descriptive label.
 
-## Applicability
+## Applicability and targets
 
-An implementation claiming this profile MUST also claim the Foundation Profile. The conformance statement MUST identify the target, governance context, exclusions and evidence used.
+- `assurance-service`
+- `governed-system`
 
-## v0.1.0 review note
+## Dependencies
 
-This profile groups requirements already present in the core specification. A later release will publish a stable, exhaustive requirement mapping and machine-readable profile manifest.
+- [Foundation Profile](foundation-profile.md)
+
+## Normative requirement mapping
+
+The machine-readable manifest is authoritative for the profile mapping: [`manifests/continuous-assurance.json`](manifests/continuous-assurance.json).
+
+This profile maps **19 normative requirements**. Implementations SHALL satisfy every mapped requirement unless a future profile version declares a specific permitted exclusion.
+
+## Required artifacts
+
+- Conformance claim identifying GAAM v0.5.0 and this profile version.
+- Requirement traceability evidence.
+- Reproducible validation results.
+- Governance artifacts applicable to the conformance target.
+
+## Required tests
+
+- Profile manifest schema validation.
+- Dependency closure.
+- Normative requirement identifier validity.
+- Applicable schema and governance-invariant tests.
+
+## Claim limitations
+
+A structurally valid artifact set does not by itself establish operational trustworthiness. Partial implementation MUST NOT be represented as full profile conformance.

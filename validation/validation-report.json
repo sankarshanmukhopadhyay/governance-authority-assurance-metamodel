@@ -1,0 +1,189 @@
+{
+  "gaamVersion": "0.5.0",
+  "status": "pass",
+  "checks": 36,
+  "passed": 36,
+  "failed": 0,
+  "results": [
+    {
+      "check": "requirement-uniqueness",
+      "status": "pass",
+      "detail": "190 requirements"
+    },
+    {
+      "check": "requirement-index",
+      "status": "pass",
+      "detail": "190 indexed requirements"
+    },
+    {
+      "check": "schema:authority",
+      "status": "pass",
+      "detail": "valid Draft 2020-12 schema"
+    },
+    {
+      "check": "schema:delegation",
+      "status": "pass",
+      "detail": "valid Draft 2020-12 schema"
+    },
+    {
+      "check": "schema:evidence",
+      "status": "pass",
+      "detail": "valid Draft 2020-12 schema"
+    },
+    {
+      "check": "schema:assurance",
+      "status": "pass",
+      "detail": "valid Draft 2020-12 schema"
+    },
+    {
+      "check": "schema:decision-receipt",
+      "status": "pass",
+      "detail": "valid Draft 2020-12 schema"
+    },
+    {
+      "check": "schema:governance-event",
+      "status": "pass",
+      "detail": "valid Draft 2020-12 schema"
+    },
+    {
+      "check": "schema:appeal",
+      "status": "pass",
+      "detail": "valid Draft 2020-12 schema"
+    },
+    {
+      "check": "schema:remedy",
+      "status": "pass",
+      "detail": "valid Draft 2020-12 schema"
+    },
+    {
+      "check": "schema:agent-governance-identity",
+      "status": "pass",
+      "detail": "valid Draft 2020-12 schema"
+    },
+    {
+      "check": "schema:runtime-envelope",
+      "status": "pass",
+      "detail": "valid Draft 2020-12 schema"
+    },
+    {
+      "check": "schema:profile-manifest",
+      "status": "pass",
+      "detail": "valid Draft 2020-12 schema"
+    },
+    {
+      "check": "schema:conformance-claim",
+      "status": "pass",
+      "detail": "valid Draft 2020-12 schema"
+    },
+    {
+      "check": "schema:gaam-package",
+      "status": "pass",
+      "detail": "valid Draft 2020-12 schema"
+    },
+    {
+      "check": "profile:foundation",
+      "status": "pass",
+      "detail": "36 requirements; dependency closure=True"
+    },
+    {
+      "check": "profile:machine-actionable-governance",
+      "status": "pass",
+      "detail": "26 requirements; dependency closure=True"
+    },
+    {
+      "check": "profile:delegated-authority",
+      "status": "pass",
+      "detail": "32 requirements; dependency closure=True"
+    },
+    {
+      "check": "profile:runtime-governance",
+      "status": "pass",
+      "detail": "21 requirements; dependency closure=True"
+    },
+    {
+      "check": "profile:agentic-systems",
+      "status": "pass",
+      "detail": "51 requirements; dependency closure=True"
+    },
+    {
+      "check": "profile:trust-graph",
+      "status": "pass",
+      "detail": "9 requirements; dependency closure=True"
+    },
+    {
+      "check": "profile:continuous-assurance",
+      "status": "pass",
+      "detail": "19 requirements; dependency closure=True"
+    },
+    {
+      "check": "profile:high-impact-systems",
+      "status": "pass",
+      "detail": "22 requirements; dependency closure=True"
+    },
+    {
+      "check": "valid-fixture:cross-registry-recognition/authority.valid.json",
+      "status": "pass",
+      "detail": "accepted as expected"
+    },
+    {
+      "check": "valid-fixture:cross-registry-recognition/decision-receipt.valid.json",
+      "status": "pass",
+      "detail": "accepted as expected"
+    },
+    {
+      "check": "invalid-fixture:cross-registry-recognition/authority.invalid.json",
+      "status": "pass",
+      "detail": "rejected as expected"
+    },
+    {
+      "check": "claim:cross-registry-recognition",
+      "status": "pass",
+      "detail": "valid conformance claim"
+    },
+    {
+      "check": "valid-fixture:delegated-agent-purchase/authority.valid.json",
+      "status": "pass",
+      "detail": "accepted as expected"
+    },
+    {
+      "check": "valid-fixture:delegated-agent-purchase/decision-receipt.valid.json",
+      "status": "pass",
+      "detail": "accepted as expected"
+    },
+    {
+      "check": "invalid-fixture:delegated-agent-purchase/authority.invalid.json",
+      "status": "pass",
+      "detail": "rejected as expected"
+    },
+    {
+      "check": "claim:delegated-agent-purchase",
+      "status": "pass",
+      "detail": "valid conformance claim"
+    },
+    {
+      "check": "valid-fixture:high-impact-multi-agent-service/authority.valid.json",
+      "status": "pass",
+      "detail": "accepted as expected"
+    },
+    {
+      "check": "valid-fixture:high-impact-multi-agent-service/decision-receipt.valid.json",
+      "status": "pass",
+      "detail": "accepted as expected"
+    },
+    {
+      "check": "invalid-fixture:high-impact-multi-agent-service/authority.invalid.json",
+      "status": "pass",
+      "detail": "rejected as expected"
+    },
+    {
+      "check": "claim:high-impact-multi-agent-service",
+      "status": "pass",
+      "detail": "valid conformance claim"
+    },
+    {
+      "check": "local-links",
+      "status": "pass",
+      "detail": "all local links resolve"
+    }
+  ]
+}

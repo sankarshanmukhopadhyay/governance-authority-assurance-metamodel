@@ -1,0 +1,60 @@
+{
+  "id": "gaam:profile:delegated-authority:0.5.0",
+  "type": "gaam-profile-manifest",
+  "version": "0.5.0",
+  "conformanceTargets": [
+    "authority-service",
+    "delegation-service"
+  ],
+  "requirements": [
+    "GAAM-AUTH-001",
+    "GAAM-AUTH-002",
+    "GAAM-AUTH-003",
+    "GAAM-AUTH-004",
+    "GAAM-AUTH-005",
+    "GAAM-DEL-001",
+    "GAAM-DEL-002",
+    "GAAM-DEL-003",
+    "GAAM-DEL-004",
+    "GAAM-DEL-005",
+    "GAAM-DEL-006",
+    "GAAM-AUTH-006",
+    "GAAM-AUTH-007",
+    "GAAM-DEL-007",
+    "GAAM-DEL-008",
+    "GAAM-DEL-009",
+    "GAAM-DEL-010",
+    "GAAM-DEL-011",
+    "GAAM-DEL-012",
+    "GAAM-DEL-013",
+    "GAAM-AUTH-008",
+    "GAAM-ART-001",
+    "GAAM-ART-002",
+    "GAAM-ART-003",
+    "GAAM-ART-004",
+    "GAAM-ART-005",
+    "GAAM-ART-006",
+    "GAAM-LIFE-001",
+    "GAAM-LIFE-002",
+    "GAAM-LIFE-003",
+    "GAAM-LIFE-004",
+    "GAAM-LIFE-005"
+  ],
+  "requiredArtifacts": [
+    "conformance-claim",
+    "validation-report"
+  ],
+  "requiredEvidence": [
+    "requirement-traceability",
+    "test-results"
+  ],
+  "requiredTests": [
+    "profile-completeness",
+    "dependency-closure",
+    "schema-validation"
+  ],
+  "permittedExclusions": [],
+  "dependencies": [
+    "gaam:profile:foundation:0.5.0"
+  ]
+}

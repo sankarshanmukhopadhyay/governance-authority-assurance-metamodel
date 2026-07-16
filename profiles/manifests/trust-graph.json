@@ -1,0 +1,37 @@
+{
+  "id": "gaam:profile:trust-graph:0.5.0",
+  "type": "gaam-profile-manifest",
+  "version": "0.5.0",
+  "conformanceTargets": [
+    "registry",
+    "trust-graph-service"
+  ],
+  "requirements": [
+    "GAAM-REG-001",
+    "GAAM-REG-002",
+    "GAAM-REG-003",
+    "GAAM-REG-004",
+    "GAAM-REG-005",
+    "GAAM-REG-006",
+    "GAAM-MKT-001",
+    "GAAM-MKT-002",
+    "GAAM-MKT-003"
+  ],
+  "requiredArtifacts": [
+    "conformance-claim",
+    "validation-report"
+  ],
+  "requiredEvidence": [
+    "requirement-traceability",
+    "test-results"
+  ],
+  "requiredTests": [
+    "profile-completeness",
+    "dependency-closure",
+    "schema-validation"
+  ],
+  "permittedExclusions": [],
+  "dependencies": [
+    "gaam:profile:foundation:0.5.0"
+  ]
+}

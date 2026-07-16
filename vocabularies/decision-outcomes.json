@@ -1,0 +1,15 @@
+{
+  "id": "gaam:decision-outcomes:0.5.0",
+  "version": "0.5.0",
+  "values": [
+    "permit",
+    "deny",
+    "permit-with-conditions",
+    "restrict",
+    "suspend",
+    "require-additional-evidence",
+    "require-additional-approval",
+    "route-for-review",
+    "terminate"
+  ]
+}

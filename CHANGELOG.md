@@ -1,5 +1,19 @@
 # Changelog
 
+## [0.5.0] - 2026-07-16
+
+### Added
+- Feature-complete normative requirements for canonical artifacts, lifecycle, assurance, profiles, decisions, safety, remedy, systemic harm and market integrity.
+- Eight exhaustive profile manifests, canonical JSON Schemas and controlled vocabularies.
+- Three end-to-end implementation patterns with positive and negative fixtures.
+- Executable validation, generated evidence, threat model, ADRs and GitHub workflows.
+- Full GitHub Pages navigation and `AI_USAGE.md` disclosure.
+
+### Changed
+- Replaced open markers with v0.5.0 decision dispositions.
+- Reframed unexplained predecessor-version language as independent architectural provenance.
+- Expanded conformance, implementation and lifecycle guidance.
+
 All notable changes will be documented here. The project uses Semantic Versioning adapted for an evolving specification.
 
 ## [0.1.0] - 2026-07-15

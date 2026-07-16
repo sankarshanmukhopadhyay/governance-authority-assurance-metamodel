@@ -1,0 +1,79 @@
+{
+  "id": "gaam:profile:agentic-systems:0.5.0",
+  "type": "gaam-profile-manifest",
+  "version": "0.5.0",
+  "conformanceTargets": [
+    "agent",
+    "agent-platform"
+  ],
+  "requirements": [
+    "GAAM-DEL-001",
+    "GAAM-DEL-002",
+    "GAAM-DEL-003",
+    "GAAM-DEL-004",
+    "GAAM-DEL-005",
+    "GAAM-DEL-006",
+    "GAAM-OUT-001",
+    "GAAM-OUT-002",
+    "GAAM-OUT-003",
+    "GAAM-DEL-007",
+    "GAAM-DEL-008",
+    "GAAM-DEL-009",
+    "GAAM-DEL-010",
+    "GAAM-DEL-011",
+    "GAAM-DEL-012",
+    "GAAM-DEL-013",
+    "GAAM-RUN-001",
+    "GAAM-RUN-002",
+    "GAAM-RUN-003",
+    "GAAM-RUN-004",
+    "GAAM-RUN-005",
+    "GAAM-RUN-006",
+    "GAAM-RUN-007",
+    "GAAM-RUN-008",
+    "GAAM-RUN-009",
+    "GAAM-AGT-001",
+    "GAAM-AGT-002",
+    "GAAM-AGT-003",
+    "GAAM-AGT-004",
+    "GAAM-AGT-005",
+    "GAAM-AGT-006",
+    "GAAM-AGT-007",
+    "GAAM-AGT-008",
+    "GAAM-AGT-009",
+    "GAAM-AGT-010",
+    "GAAM-AGT-011",
+    "GAAM-AGT-012",
+    "GAAM-AGT-013",
+    "GAAM-AGT-014",
+    "GAAM-AGT-015",
+    "GAAM-AGT-016",
+    "GAAM-AGT-017",
+    "GAAM-AGT-018",
+    "GAAM-AGT-019",
+    "GAAM-AGT-020",
+    "GAAM-AGT-021",
+    "GAAM-AGT-022",
+    "GAAM-DEC-004",
+    "GAAM-SAFE-001",
+    "GAAM-SAFE-002",
+    "GAAM-SAFE-003"
+  ],
+  "requiredArtifacts": [
+    "conformance-claim",
+    "validation-report"
+  ],
+  "requiredEvidence": [
+    "requirement-traceability",
+    "test-results"
+  ],
+  "requiredTests": [
+    "profile-completeness",
+    "dependency-closure",
+    "schema-validation"
+  ],
+  "permittedExclusions": [],
+  "dependencies": [
+    "gaam:profile:foundation:0.5.0"
+  ]
+}

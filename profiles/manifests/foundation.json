@@ -1,0 +1,63 @@
+{
+  "id": "gaam:profile:foundation:0.5.0",
+  "type": "gaam-profile-manifest",
+  "version": "0.5.0",
+  "conformanceTargets": [
+    "framework",
+    "document",
+    "package"
+  ],
+  "requirements": [
+    "GAAM-CORE-001",
+    "GAAM-CORE-002",
+    "GAAM-CORE-003",
+    "GAAM-CORE-004",
+    "GAAM-CORE-005",
+    "GAAM-AUTH-001",
+    "GAAM-AUTH-002",
+    "GAAM-AUTH-003",
+    "GAAM-AUTH-004",
+    "GAAM-AUTH-005",
+    "GAAM-POL-001",
+    "GAAM-POL-002",
+    "GAAM-POL-003",
+    "GAAM-POL-004",
+    "GAAM-POL-005",
+    "GAAM-OUT-001",
+    "GAAM-OUT-002",
+    "GAAM-OUT-003",
+    "GAAM-ACC-001",
+    "GAAM-ACC-002",
+    "GAAM-ACC-003",
+    "GAAM-AUTH-006",
+    "GAAM-AUTH-007",
+    "GAAM-AUTH-008",
+    "GAAM-ART-001",
+    "GAAM-ART-002",
+    "GAAM-ART-003",
+    "GAAM-ART-004",
+    "GAAM-ART-005",
+    "GAAM-ART-006",
+    "GAAM-LIFE-001",
+    "GAAM-LIFE-002",
+    "GAAM-LIFE-003",
+    "GAAM-LIFE-004",
+    "GAAM-LIFE-005",
+    "GAAM-DEC-004"
+  ],
+  "requiredArtifacts": [
+    "conformance-claim",
+    "validation-report"
+  ],
+  "requiredEvidence": [
+    "requirement-traceability",
+    "test-results"
+  ],
+  "requiredTests": [
+    "profile-completeness",
+    "dependency-closure",
+    "schema-validation"
+  ],
+  "permittedExclusions": [],
+  "dependencies": []
+}

@@ -2,15 +2,31 @@
 layout: home
 title: Governance, Authority and Assurance Metamodel
 ---
+# GAAM v0.5.0 — Feature Complete Draft
 
-GAAM is a vendor-neutral, protocol-independent metamodel for authority, delegation, evidence, assurance, trust decisions, agentic execution and decentralised trust relationships.
+GAAM treats governance as an executable system of authority, delegation, evidence, assurance, enforcement, accountability and remedy.
 
-## Current release
+## Specification and architecture
 
-**v0.1.0 — Initial Public Draft**
+- [Normative specification](specification/governance-authority-assurance-metamodel.md)
+- [Architecture overview](docs/architecture-overview.md)
+- [Lifecycle model](docs/lifecycle-model.md)
+- [Design rationale](docs/design-rationale.md)
+- [Glossary](docs/glossary.md)
 
-- [Read the specification](specification/governance-authority-assurance-metamodel.html)
-- [Architecture overview](docs/architecture-overview.html)
-- [Implementation guide](docs/implementation-guide.html)
-- [Conformance guide](docs/conformance-guide.html)
-- [Glossary](docs/glossary.html)
+## Implement and test
+
+- [Implementation guide](docs/implementation-guide.md)
+- [Conformance guide](docs/conformance-guide.md)
+- [Profiles](profiles/)
+- [Implementation patterns](examples/)
+- [Relationship matrix](matrices/relationship-matrix.md)
+- [Validation report](VALIDATION_REPORT.md)
+
+## Assurance and governance
+
+- [Threat model](threat-model/README.md)
+- [Decision disposition](docs/open-questions.md)
+- [Architectural decisions](decisions/)
+- [AI/LLM usage disclosure](AI_USAGE.md)
+- [v0.5.0 release notes](releases/v0.5.0.md)

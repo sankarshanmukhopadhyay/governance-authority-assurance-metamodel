@@ -1,0 +1,25 @@
+{
+  "id": "gaam:relationship-types:0.5.0",
+  "version": "0.5.0",
+  "values": [
+    "holds",
+    "governs",
+    "delegates",
+    "recognises",
+    "accredits",
+    "asserts",
+    "supports",
+    "verifies",
+    "assesses",
+    "permits",
+    "prohibits",
+    "constrains",
+    "depends-on",
+    "accounts-for",
+    "revokes",
+    "suspends",
+    "supersedes",
+    "appeals",
+    "remedies"
+  ]
+}

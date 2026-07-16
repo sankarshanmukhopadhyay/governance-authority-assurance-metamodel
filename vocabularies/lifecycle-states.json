@@ -1,0 +1,20 @@
+{
+  "id": "gaam:lifecycle-states:0.5.0",
+  "version": "0.5.0",
+  "values": [
+    "draft",
+    "proposed",
+    "issued",
+    "accepted",
+    "active",
+    "restricted",
+    "suspended",
+    "revoked",
+    "expired",
+    "superseded",
+    "terminated",
+    "archived",
+    "contested",
+    "remediated"
+  ]
+}

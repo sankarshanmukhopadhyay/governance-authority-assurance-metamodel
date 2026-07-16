@@ -8,7 +8,16 @@ header_pages:
   - specification/governance-authority-assurance-metamodel.md
   - docs/architecture-overview.md
   - docs/implementation-guide.md
+  - docs/conformance-guide.md
+  - docs/lifecycle-model.md
   - docs/glossary.md
+  - releases/v0.5.0.md
 exclude:
-  - GH_META.md
-  - REPO_DESCRIPTION.txt
+  - requirements-dev.txt
+  - scripts
+  - tests
+  - validation
+  - packages
+  - schemas
+  - vocabularies
+  - Gemfile.lock

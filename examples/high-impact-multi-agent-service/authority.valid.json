@@ -1,0 +1,20 @@
+{
+  "id": "urn:gaam:example:high-impact-multi-agent-service:authority",
+  "type": "authority",
+  "authoritySource": "urn:gaam:authority-source:example",
+  "issuer": "urn:example:issuer",
+  "subject": "urn:example:actor",
+  "permittedEffects": [
+    "request-service"
+  ],
+  "scope": {
+    "domain": "high-impact-systems",
+    "limit": 1000
+  },
+  "status": "active",
+  "effectiveFrom": "2026-07-16T00:00:00Z",
+  "revocationAuthority": "urn:example:issuer",
+  "accountableParties": [
+    "urn:example:operator"
+  ]
+}

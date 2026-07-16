@@ -1,0 +1,13 @@
+{
+  "id": "decision-missing-evidence-rejected",
+  "expectedValid": false,
+  "input": {
+    "authorityId": "auth:1",
+    "policyId": "policy:1",
+    "evidenceIds": [],
+    "assuranceIds": [
+      "a:1"
+    ],
+    "accountableParty": "org:1"
+  }
+}

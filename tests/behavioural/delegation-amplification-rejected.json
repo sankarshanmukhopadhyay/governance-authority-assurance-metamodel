@@ -1,0 +1,16 @@
+{
+  "id": "delegation-amplification-rejected",
+  "expectedValid": false,
+  "input": {
+    "parentEffects": [
+      "read"
+    ],
+    "childEffects": [
+      "read",
+      "purchase"
+    ],
+    "delegationPermitted": true,
+    "depth": 1,
+    "maxDepth": 2
+  }
+}

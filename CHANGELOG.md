@@ -1,5 +1,19 @@
 # Changelog
 
+## [0.9.0] - 2026-07-16
+
+### Added
+- Candidate stability and artifact-precedence governance.
+- Canonical schema catalogue, behavioural vectors, threat register and traceability matrices.
+- Modular validation evidence, CI workflow and reproducible v0.9.0 governance package.
+
+### Changed
+- Corrected the normative specification identity from v0.1.0 to v0.9.0.
+- Updated active profiles, manifests, schemas, vocabularies, examples and claims to v0.9.0.
+- Corrected TSMM references to the canonical repository.
+- Operationalised L0–L4 conformance evidence and independence boundaries.
+
+
 ## Unreleased
 
 ### Documentation
@@ -10,7 +24,7 @@
 - Add repository-level source attribution and a GitHub Pages landing page for mappings.
 
 
-## [0.5.0] - 2026-07-16
+## [0.9.0] - 2026-07-16
 
 ### Added
 - Feature-complete normative requirements for canonical artifacts, lifecycle, assurance, profiles, decisions, safety, remedy, systemic harm and market integrity.
@@ -20,7 +34,7 @@
 - Full GitHub Pages navigation and `AI_USAGE.md` disclosure.
 
 ### Changed
-- Replaced open markers with v0.5.0 decision dispositions.
+- Replaced open markers with v0.9.0 decision dispositions.
 - Reframed unexplained predecessor-version language as independent architectural provenance.
 - Expanded conformance, implementation and lifecycle guidance.
 

@@ -1,0 +1,10 @@
+{
+  "id": "high-impact-remedy-valid",
+  "expectedValid": true,
+  "input": {
+    "highImpact": true,
+    "appealPath": true,
+    "remedyPath": true,
+    "affectedPartyAnalysis": true
+  }
+}

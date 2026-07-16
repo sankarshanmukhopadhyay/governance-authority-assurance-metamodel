@@ -31,6 +31,6 @@ Pre-1.0 minor releases may introduce normative changes. Patch releases are reser
 ## Appeals
 
 A contributor may request reconsideration by opening a governance issue that states the disputed decision, unaddressed evidence and proposed remedy. The final disposition must be documented.
-## v0.5.0 change control
+## v0.9.0 change control
 
 Normative, schema, profile and conformance changes require an identified authority, traceability impact, validation evidence and maintainer approval. Revocation or supersession of published artifacts must preserve reconstructable history.

@@ -1,7 +1,8 @@
-# GAAM Roadmap
+# GAAM Release Roadmap
 
 - **v0.1.0 — Initial Public Draft:** normative baseline.
-- **v0.5.0 — Feature Complete Draft:** complete architecture, eight profiles, canonical schemas, lifecycle semantics, implementation patterns, threat model and executable validation.
-- **v0.6.x–v0.8.x — Validation Cycle:** independent implementations, interoperability reports, adversarial review and field feedback.
-- **v0.9.0 — Candidate Specification:** stabilised normative surface and candidate conformance suite.
-- **v1.0.0 — Stable Initial Release:** governed stability and compatibility commitments.
+- **v0.5.0 — Feature Complete Draft:** planned architecture and profile surface.
+- **v0.9.0 — Candidate Specification:** stabilised normative surface, executable assurance, canonical artifacts and external review baseline.
+- **v1.0.0 — Stable Initial Release:** contingent on independent implementation reports, candidate issue closure and security readiness.
+
+See [Candidate Stability and Change-Control Policy](docs/candidate-stability-policy.md) for measurable exit criteria.

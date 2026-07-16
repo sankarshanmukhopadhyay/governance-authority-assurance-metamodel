@@ -1,0 +1,15 @@
+{
+  "id": "delegation-depth-rejected",
+  "expectedValid": false,
+  "input": {
+    "parentEffects": [
+      "read"
+    ],
+    "childEffects": [
+      "read"
+    ],
+    "delegationPermitted": true,
+    "depth": 3,
+    "maxDepth": 2
+  }
+}

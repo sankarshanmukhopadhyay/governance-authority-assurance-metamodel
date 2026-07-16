@@ -1,0 +1,100 @@
+{
+  "version": "0.9.0",
+  "status": "candidate",
+  "threats": [
+    {
+      "id": "GAAM-THR-001",
+      "name": "authority laundering",
+      "asset": "Authority",
+      "misusePath": "Misrepresented authority source",
+      "requirements": [
+        "GAAM-AUT-001"
+      ],
+      "tests": [
+        "authority-active-valid",
+        "authority-revoked-rejected"
+      ],
+      "residualRisk": "implementation-specific"
+    },
+    {
+      "id": "GAAM-THR-002",
+      "name": "delegation amplification",
+      "asset": "Delegation",
+      "misusePath": "Child grant exceeds parent authority",
+      "requirements": [
+        "GAAM-DEL-001"
+      ],
+      "tests": [
+        "delegation-attenuated-valid",
+        "delegation-amplification-rejected"
+      ],
+      "residualRisk": "implementation-specific"
+    },
+    {
+      "id": "GAAM-THR-003",
+      "name": "stale revocation",
+      "asset": "Lifecycle",
+      "misusePath": "Revoked authority remains executable",
+      "requirements": [
+        "GAAM-LIF-001"
+      ],
+      "tests": [
+        "authority-revoked-rejected"
+      ],
+      "residualRisk": "implementation-specific"
+    },
+    {
+      "id": "GAAM-THR-004",
+      "name": "assurance inflation",
+      "asset": "Assurance",
+      "misusePath": "Claim exceeds evidence or independence",
+      "requirements": [
+        "GAAM-ASS-001"
+      ],
+      "tests": [
+        "claim-level-evidence"
+      ],
+      "residualRisk": "implementation-specific"
+    },
+    {
+      "id": "GAAM-THR-005",
+      "name": "accountability fragmentation",
+      "asset": "Decision",
+      "misusePath": "Effect cannot be linked to accountable party",
+      "requirements": [
+        "GAAM-DEC-001"
+      ],
+      "tests": [
+        "decision-traceable-valid"
+      ],
+      "residualRisk": "implementation-specific"
+    },
+    {
+      "id": "GAAM-THR-006",
+      "name": "remedy obstruction",
+      "asset": "Affected party",
+      "misusePath": "High-impact effect lacks appeal or remedy",
+      "requirements": [
+        "GAAM-REM-001"
+      ],
+      "tests": [
+        "high-impact-remedy-valid",
+        "high-impact-no-remedy-rejected"
+      ],
+      "residualRisk": "implementation-specific"
+    },
+    {
+      "id": "GAAM-THR-007",
+      "name": "package substitution",
+      "asset": "Governance package",
+      "misusePath": "Artifacts or checksums are replaced",
+      "requirements": [
+        "GAAM-PKG-001"
+      ],
+      "tests": [
+        "package-integrity"
+      ],
+      "residualRisk": "implementation-specific"
+    }
+  ]
+}

@@ -1,12 +1,12 @@
 {
   "id": "urn:gaam:example:delegated-agent-purchase:claim",
   "type": "gaam-conformance-claim",
-  "gaamVersion": "0.5.0",
+  "gaamVersion": "0.9.0",
   "profiles": [
-    "gaam:profile:foundation:0.5.0",
-    "gaam:profile:delegated-authority:0.5.0",
-    "gaam:profile:runtime-governance:0.5.0",
-    "gaam:profile:agentic-systems:0.5.0"
+    "gaam:profile:foundation:0.9.0",
+    "gaam:profile:delegated-authority:0.9.0",
+    "gaam:profile:runtime-governance:0.9.0",
+    "gaam:profile:agentic-systems:0.9.0"
   ],
   "target": "urn:gaam:example:delegated-agent-purchase",
   "level": "L2",
@@ -16,6 +16,10 @@
   "issuedBy": "urn:gaam:maintainer",
   "issuedAt": "2026-07-16T00:02:00Z",
   "limitations": [
-    "Illustrative implementation pattern; not independent certification."
-  ]
+    "Reference example; not an independent implementation assessment."
+  ],
+  "testSuiteVersion": "0.9.0",
+  "assessmentIndependence": "self",
+  "status": "active",
+  "reviewBy": "2027-01-16T00:00:00Z"
 }

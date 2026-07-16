@@ -1,24 +1,7 @@
----
-layout: page
-title: Threat Model and Misuse Catalogue
-permalink: /threat-model/
----
-# Threat Model and Misuse Catalogue
+# GAAM Threat and Misuse-Case Model
 
-| Threat | Required control/evidence |
-|---|---|
-| Forged or laundered authority | authority-source validation, integrity and provenance |
-| Scope amplification | parent-child intersection and attenuation tests |
-| Delegation replay | status, nonce/event and effective-time validation |
-| Stale revocation | propagation and freshness controls |
-| Agent/operator substitution | governance identity continuity checks |
-| Policy downgrade or package rollback | version binding and checksums |
-| Evidence/assurance laundering | provenance, criteria and context validation |
-| Registry poisoning or graph manipulation | source authority, contradiction and recognition boundaries |
-| Accountability fragmentation | non-terminal accountable-party mapping |
-| Receipt over-disclosure | minimisation and redaction controls |
-| Denial of remedy | review authority and remedy completion evidence |
-| Emergency-authority abuse | time bounds and conflict-controlled review |
-| Hidden systemic harm | effect aggregation and intervention thresholds |
+The v0.9.0 threat model treats governance failures as testable attack and misuse paths. The machine-readable [threat register](threat-register.json) maps threats to protected assets, requirements and executable checks.
 
-Residual risk remains subject to implementation context and independent validation.
+Covered classes include authority laundering, delegation amplification, stale revocation, assurance inflation, accountability fragmentation, remedy obstruction and governance-package substitution. Implementations MUST extend this baseline for their actors, deployment boundaries, affected parties and residual risks.
+
+A threat is not considered dispositioned solely because a schema validates. Evidence should include preventive control behaviour, detection records, decision receipts, lifecycle events and remedy outcomes.

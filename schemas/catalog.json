@@ -1,0 +1,73 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "id": "urn:gaam:schema-catalog:0.9.0",
+  "version": "0.9.0",
+  "base": "https://sankarshanmukhopadhyay.github.io/governance-authority-assurance-metamodel/v0.9.0/schemas/",
+  "schemas": [
+    {
+      "name": "agent-governance-identity.schema.json",
+      "id": "https://sankarshanmukhopadhyay.github.io/governance-authority-assurance-metamodel/v0.9.0/schemas/agent-governance-identity.schema.json",
+      "title": "Agent Governance Identity"
+    },
+    {
+      "name": "appeal.schema.json",
+      "id": "https://sankarshanmukhopadhyay.github.io/governance-authority-assurance-metamodel/v0.9.0/schemas/appeal.schema.json",
+      "title": "Appeal"
+    },
+    {
+      "name": "assurance.schema.json",
+      "id": "https://sankarshanmukhopadhyay.github.io/governance-authority-assurance-metamodel/v0.9.0/schemas/assurance.schema.json",
+      "title": "Assurance"
+    },
+    {
+      "name": "authority.schema.json",
+      "id": "https://sankarshanmukhopadhyay.github.io/governance-authority-assurance-metamodel/v0.9.0/schemas/authority.schema.json",
+      "title": "Authority"
+    },
+    {
+      "name": "conformance-claim.schema.json",
+      "id": "https://sankarshanmukhopadhyay.github.io/governance-authority-assurance-metamodel/v0.9.0/schemas/conformance-claim.schema.json",
+      "title": "Conformance Claim"
+    },
+    {
+      "name": "decision-receipt.schema.json",
+      "id": "https://sankarshanmukhopadhyay.github.io/governance-authority-assurance-metamodel/v0.9.0/schemas/decision-receipt.schema.json",
+      "title": "Decision Receipt"
+    },
+    {
+      "name": "delegation.schema.json",
+      "id": "https://sankarshanmukhopadhyay.github.io/governance-authority-assurance-metamodel/v0.9.0/schemas/delegation.schema.json",
+      "title": "Delegation"
+    },
+    {
+      "name": "evidence.schema.json",
+      "id": "https://sankarshanmukhopadhyay.github.io/governance-authority-assurance-metamodel/v0.9.0/schemas/evidence.schema.json",
+      "title": "Evidence"
+    },
+    {
+      "name": "gaam-package.schema.json",
+      "id": "https://sankarshanmukhopadhyay.github.io/governance-authority-assurance-metamodel/v0.9.0/schemas/gaam-package.schema.json",
+      "title": "Gaam Package"
+    },
+    {
+      "name": "governance-event.schema.json",
+      "id": "https://sankarshanmukhopadhyay.github.io/governance-authority-assurance-metamodel/v0.9.0/schemas/governance-event.schema.json",
+      "title": "Governance Event"
+    },
+    {
+      "name": "profile-manifest.schema.json",
+      "id": "https://sankarshanmukhopadhyay.github.io/governance-authority-assurance-metamodel/v0.9.0/schemas/profile-manifest.schema.json",
+      "title": "Profile Manifest"
+    },
+    {
+      "name": "remedy.schema.json",
+      "id": "https://sankarshanmukhopadhyay.github.io/governance-authority-assurance-metamodel/v0.9.0/schemas/remedy.schema.json",
+      "title": "Remedy"
+    },
+    {
+      "name": "runtime-envelope.schema.json",
+      "id": "https://sankarshanmukhopadhyay.github.io/governance-authority-assurance-metamodel/v0.9.0/schemas/runtime-envelope.schema.json",
+      "title": "Runtime Envelope"
+    }
+  ]
+}

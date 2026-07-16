@@ -2,7 +2,10 @@
 ## ToIP Governance Metamodel v1.0, Companion Guide v1.0, and TSMM v0.22.0
 
 **Status:** Informative provenance and architectural differentiation record  
-**TSMM baseline:** `trust-systems-meta-model` v0.22.0 archive  
+**Canonical repository:** [Trust Systems Meta-Model](https://github.com/sankarshanmukhopadhyay/trust-systems-meta-model)  
+**Reviewed baseline:** v0.22.0 archive  
+**Reference status:** Informative; no normative dependency  
+**Immutable revision:** To be recorded from the source tag or reviewed archive digest before v1.0.0  
 **Governance sources:** ToIP Governance Metamodel Specification v1.0 and ToIP Governance Metamodel Specification Companion Guide v1.0, 21 December 2021  
 **Purpose:** Document how the ToIP governance-framework architecture and TSMM operational semantics informed GAAM, while preserving GAAM as an independent specification.
 

@@ -1,38 +1,20 @@
 ---
-layout: home
-title: Governance, Authority and Assurance Metamodel
+layout: default
+title: GAAM v0.9.0
 ---
-# GAAM v0.5.0 — Feature Complete Draft
+# GAAM v0.9.0 — Candidate Specification
 
-GAAM treats governance as an executable system of authority, delegation, evidence, assurance, enforcement, accountability and remedy.
+GAAM defines an executable governance model for authority, delegation, evidence, assurance, trust decisions, effects, accountability and remedy.
 
-## Specification and architecture
+## Publication surfaces
 
 - [Normative specification](specification/governance-authority-assurance-metamodel.md)
-- [Architecture overview](docs/architecture-overview.md)
-- [Lifecycle model](docs/lifecycle-model.md)
-- [Design rationale](docs/design-rationale.md)
-- [Glossary](docs/glossary.md)
-
-## Implement and test
-
+- [Profiles](profiles/index.md)
+- [Schemas](schemas/index.md)
 - [Implementation guide](docs/implementation-guide.md)
 - [Conformance guide](docs/conformance-guide.md)
-- [Profiles](profiles/)
-- [Implementation patterns](examples/)
-- [Relationship matrix](matrices/relationship-matrix.md)
-- [Validation report](VALIDATION_REPORT.md)
-
-## Assurance and governance
-
 - [Threat model](threat-model/README.md)
-- [Decision disposition](docs/open-questions.md)
-- [Architectural decisions](decisions/)
-- [AI/LLM usage disclosure](AI_USAGE.md)
-- [v0.5.0 release notes](releases/v0.5.0.md)
+- [Validation report](VALIDATION_REPORT.md)
+- [v0.9.0 release notes](releases/v0.9.0.md)
 
-
-## Provenance and mappings
-
-- [Source attributions](ATTRIBUTIONS.md)
-- [Mappings and source crosswalks](mappings/index.md)
+> Candidate status supports implementation and review. It does not constitute certification or independent assessment.

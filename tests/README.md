@@ -1,5 +1,5 @@
-# Conformance Test Surface
+# GAAM Candidate Conformance Suite
 
-The executable release checks are implemented by `scripts/validate.py` and exercised by `.github/workflows/validate.yml`. The suite validates requirement traceability, profile dependency closure, JSON Schemas, positive and negative fixtures, conformance claims, package integrity and local documentation links.
+Run `python scripts/validate.py`. The suite evaluates publication coherence, normative traceability, schemas, governed vocabularies, profile dependency closure, fixture validity, conformance-claim evidence rules, behavioural invariants, threat traceability, local links and governance-package integrity.
 
-Future v0.6.x validation work should split behavioural invariants into independently addressable test modules as external implementations become available.
+The included behavioural vectors are reference tests, not evidence of independent interoperability. Test identifiers and results are emitted in the validation report.

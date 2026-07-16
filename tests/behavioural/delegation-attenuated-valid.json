@@ -1,0 +1,16 @@
+{
+  "id": "delegation-attenuated-valid",
+  "expectedValid": true,
+  "input": {
+    "parentEffects": [
+      "read",
+      "purchase"
+    ],
+    "childEffects": [
+      "read"
+    ],
+    "delegationPermitted": true,
+    "depth": 1,
+    "maxDepth": 2
+  }
+}

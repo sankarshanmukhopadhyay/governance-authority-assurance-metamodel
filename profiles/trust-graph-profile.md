@@ -5,8 +5,8 @@ permalink: /profiles/trust-graph/
 ---
 # Trust Graph Profile
 
-**Version:** 0.5.0  
-**Status:** Feature Complete Draft
+**Version:** 0.9.0  
+**Status:** Candidate Specification
 
 ## Purpose
 
@@ -29,7 +29,7 @@ This profile maps **9 normative requirements**. Implementations SHALL satisfy ev
 
 ## Required artifacts
 
-- Conformance claim identifying GAAM v0.5.0 and this profile version.
+- Conformance claim identifying GAAM v0.9.0 and this profile version.
 - Requirement traceability evidence.
 - Reproducible validation results.
 - Governance artifacts applicable to the conformance target.

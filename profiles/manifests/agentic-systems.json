@@ -1,7 +1,7 @@
 {
-  "id": "gaam:profile:agentic-systems:0.5.0",
+  "id": "gaam:profile:agentic-systems:0.9.0",
   "type": "gaam-profile-manifest",
-  "version": "0.5.0",
+  "version": "0.9.0",
   "conformanceTargets": [
     "agent",
     "agent-platform"
@@ -74,6 +74,6 @@
   ],
   "permittedExclusions": [],
   "dependencies": [
-    "gaam:profile:foundation:0.5.0"
+    "gaam:profile:foundation:0.9.0"
   ]
 }

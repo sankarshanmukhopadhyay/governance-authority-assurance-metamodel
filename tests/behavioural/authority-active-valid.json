@@ -1,0 +1,10 @@
+{
+  "id": "authority-active-valid",
+  "expectedValid": true,
+  "input": {
+    "status": "active",
+    "withinScope": true,
+    "withinTime": true,
+    "sourceValid": true
+  }
+}

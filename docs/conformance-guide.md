@@ -26,3 +26,16 @@ A claim identifies GAAM version, profiles, target, evidence level, evidence refe
 3. Schema and fixture validation.
 4. Governance invariants and lifecycle behaviour.
 5. Profile composition and evidence completeness.
+
+
+## Candidate assurance-level rules
+
+| Level | Meaning | Minimum evidence | Independence |
+|---|---|---|---|
+| L0 | Documented | Declared target, profiles and limitations | Self-asserted permitted |
+| L1 | Structurally Valid | Passing schemas, vocabularies and package checks | Self-asserted permitted |
+| L2 | Behaviourally Tested | Passing applicable invariant and scenario tests | Self-asserted permitted with disclosure |
+| L3 | Evidence Supported | Operational evidence, traceable receipts and lifecycle records | Assessor relationship disclosed |
+| L4 | Independently Assessed | Independent assessment report, scope, method, exceptions and validity period | Independent assessor required |
+
+A claim MUST NOT exceed the lowest level supported by its evidence. L4 MUST NOT be issued by the implementation operator or an entity under its control.

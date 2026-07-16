@@ -1,0 +1,178 @@
+{
+  "algorithm": "sha-256",
+  "scope": "declared source artifacts excluding this checksum file",
+  "files": [
+    {
+      "path": "matrices/normative-requirements-index.csv",
+      "sha256": "c1abcac2b6414ff20b4e8a84d9faa48578a75a29654fe143c86fdae46eb54363"
+    },
+    {
+      "path": "matrices/requirement-test-coverage.csv",
+      "sha256": "8b5bc8714fa8a1dd6e879ebaae2be01087b39506bc33472d33417b5210ae2cd5"
+    },
+    {
+      "path": "matrices/threat-control-test-matrix.csv",
+      "sha256": "daec4cff709b67a87b0bf945a8ccedf8b7795d846dd33ad1f7a4b3513d3d91c9"
+    },
+    {
+      "path": "packages/gaam-v0.9.0/manifest.json",
+      "sha256": "54886e8b4cc670d138410733bffdc9cc5322adbb0d4fa32b5c99cc64b0172ce4"
+    },
+    {
+      "path": "profiles/manifests/agentic-systems.json",
+      "sha256": "f1576c254dee5a16bc378df36dea84ebad98411701c410761133d1ed0d1f3544"
+    },
+    {
+      "path": "profiles/manifests/continuous-assurance.json",
+      "sha256": "c86baa9cb7768db6dd02a993213521f1c52a34601ac5cf25769db8242f078cf8"
+    },
+    {
+      "path": "profiles/manifests/delegated-authority.json",
+      "sha256": "42f760ef8cec2e6f9470ede9d6923c923b094910dd20de8cc1aed6c361cfef79"
+    },
+    {
+      "path": "profiles/manifests/foundation.json",
+      "sha256": "c7c03ca95e3df61409b175692f2edff9dfe031d592da2b8084bb34376fcd4120"
+    },
+    {
+      "path": "profiles/manifests/high-impact-systems.json",
+      "sha256": "a71133d538aeb2407e407c9b6c25ec4e761b3560dc95452f9c870c0b4f400af8"
+    },
+    {
+      "path": "profiles/manifests/machine-actionable-governance.json",
+      "sha256": "e529a004eb14343c500af12208865ff389803455b437eb8c4f65a3b0a99bf91b"
+    },
+    {
+      "path": "profiles/manifests/runtime-governance.json",
+      "sha256": "c2ebdad5fdabdf3549387b8ced74e2c730c6b6d1ca557ab41bbbd82adc4be85a"
+    },
+    {
+      "path": "profiles/manifests/trust-graph.json",
+      "sha256": "7f824ac5e05096a1d6f83ddfca92882e0a5b631f78e0118c7719bf33a68e16ce"
+    },
+    {
+      "path": "release.json",
+      "sha256": "665a6afd7090bad9372531379ac241ff6cb08bc8cd6e8b3c977fc1263b258d05"
+    },
+    {
+      "path": "schemas/agent-governance-identity.schema.json",
+      "sha256": "6120fc1b75b10c2c8f86a4ddde06e2e4bf724c73eee3e4cabcea27a4e0e45e27"
+    },
+    {
+      "path": "schemas/appeal.schema.json",
+      "sha256": "f25c9db49d854e6ebeec380db7c835b7f0609bf9671e5b37b7f553d57d708302"
+    },
+    {
+      "path": "schemas/assurance.schema.json",
+      "sha256": "4c1c87eeccca5fd549712a572769c6a34c4b56a7245e2353a8f2c99f251cb283"
+    },
+    {
+      "path": "schemas/authority.schema.json",
+      "sha256": "ef7cb1aa8a097fb61e1638e410f57fcdcfb3946480c7b8286e48cb093ba9a7db"
+    },
+    {
+      "path": "schemas/catalog.json",
+      "sha256": "d54cdb3825e00cfef39177d6387b045035620a3f03bce05ade48573e1c6dd5bb"
+    },
+    {
+      "path": "schemas/conformance-claim.schema.json",
+      "sha256": "f185fab5745e8c72d86aab9ee5f9545586e7272b98efd26a1f2fd65877a894a9"
+    },
+    {
+      "path": "schemas/decision-receipt.schema.json",
+      "sha256": "2d8827a42df42f46f6914cb1123a04682133460c2e97d04f037a0a8f5be85984"
+    },
+    {
+      "path": "schemas/delegation.schema.json",
+      "sha256": "81c0ed7b975ca28c8f217fce9e42e74eeffc4e70f95a60cf45a9848731d60a9f"
+    },
+    {
+      "path": "schemas/evidence.schema.json",
+      "sha256": "76b246fc6b55674279d8efeef50e211bdda20a932e43db85f729b1720fc3f399"
+    },
+    {
+      "path": "schemas/gaam-package.schema.json",
+      "sha256": "ff851a41c3e142d0ef5edccb6241c64646c7a58b39164b39b221a8401aea2bc6"
+    },
+    {
+      "path": "schemas/governance-event.schema.json",
+      "sha256": "5c0b2e5a413d174b0e4a9af0bad1b4d9eb627d8c7439df839cfbc191db870f77"
+    },
+    {
+      "path": "schemas/profile-manifest.schema.json",
+      "sha256": "a2cccfb6c330f8e1f40a02d8fdc73db5e27785123465a2263081cb5af7b5724b"
+    },
+    {
+      "path": "schemas/remedy.schema.json",
+      "sha256": "90849bcbf3273f8a14609001ac4e01c41c8cffc7b48ab73f3aa8749a12138794"
+    },
+    {
+      "path": "schemas/runtime-envelope.schema.json",
+      "sha256": "9049946c231319f5fa72d9cbeca88b69225431d6538d5019729c92369b71ca89"
+    },
+    {
+      "path": "specification/governance-authority-assurance-metamodel.md",
+      "sha256": "a1067100cab9afdd8e44d121190c0e15ac16d7e027d5d057f7c928923e5cc100"
+    },
+    {
+      "path": "tests/behavioural/authority-active-valid.json",
+      "sha256": "b4b8ff5c9644d97abb3cd968605ed410d578c3c4a9d28b46774bc59dfc55f4c7"
+    },
+    {
+      "path": "tests/behavioural/authority-revoked-rejected.json",
+      "sha256": "61df5f3625a0b1c31015aba4433f3e4db1b388e4b621fce160102cb70128b75e"
+    },
+    {
+      "path": "tests/behavioural/decision-missing-evidence-rejected.json",
+      "sha256": "43ccba8bbe3a9efedbcff25be23fd3f6fb6c9f2cd328c25dbdde7de0bf7fa800"
+    },
+    {
+      "path": "tests/behavioural/decision-traceable-valid.json",
+      "sha256": "a735d0d6e1ed2589fbdd9df6ad181d401792999707870610c8caaed0adb4f818"
+    },
+    {
+      "path": "tests/behavioural/delegation-amplification-rejected.json",
+      "sha256": "08d29bacb7a158a0cf08f8a19a74f9eb76f872298da29498bc4cf72dd79b8139"
+    },
+    {
+      "path": "tests/behavioural/delegation-attenuated-valid.json",
+      "sha256": "af29dfabe6df289198d9a656e49d5e2944f526f6db5daace225c21041ef60ba1"
+    },
+    {
+      "path": "tests/behavioural/delegation-depth-rejected.json",
+      "sha256": "e8c8bf136bd3af3f826a2c545d169af8c3591afc26ed17dc68e68f928087e9a4"
+    },
+    {
+      "path": "tests/behavioural/high-impact-no-remedy-rejected.json",
+      "sha256": "cf31cca1424f8fd23d6bac223a649c57919d6230ea292ba68a5ce6273fa782d1"
+    },
+    {
+      "path": "tests/behavioural/high-impact-remedy-valid.json",
+      "sha256": "963308667b2abd1ebad21502e9b26b5501bebabc654c1a76f66978c5cc70b6d5"
+    },
+    {
+      "path": "threat-model/threat-register.json",
+      "sha256": "6730c280126139f2f9551fa6535f3db3ef7ab3372b9a43bf3395e964deaa908a"
+    },
+    {
+      "path": "vocabularies/assurance-statuses.json",
+      "sha256": "1c3a31bc467b216ae644b937a6be063e3b6b92c94a8d1a01784653fb1ba69577"
+    },
+    {
+      "path": "vocabularies/decision-outcomes.json",
+      "sha256": "bc5ba4e52332624248dc0c4823b08be32ee18098cdb806156fbc70fc657eac95"
+    },
+    {
+      "path": "vocabularies/governance-event-types.json",
+      "sha256": "7c3a40cad5959b88a1fa084e390f878afaa9953dc940f546db2d15ebab477e7c"
+    },
+    {
+      "path": "vocabularies/lifecycle-states.json",
+      "sha256": "c7f39087ed37bc529de8d723d80a15f3fc7ccf9610888eff8a2557a65def5082"
+    },
+    {
+      "path": "vocabularies/relationship-types.json",
+      "sha256": "9542098c92638e4cb89c41e175ed388414483c4f981f0c07a8a8f5bdb636284c"
+    }
+  ]
+}

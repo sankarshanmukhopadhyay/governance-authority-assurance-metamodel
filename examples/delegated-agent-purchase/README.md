@@ -5,7 +5,7 @@ permalink: /examples/delegated-agent-purchase/
 ---
 # Delegated Agent Purchasing
 
-This implementation pattern demonstrates a complete governance chain using GAAM v0.5.0. It includes valid and invalid fixtures, expected outcomes, a conformance claim and validation evidence.
+This implementation pattern demonstrates a complete governance chain using GAAM v0.9.0. It includes valid and invalid fixtures, expected outcomes, a conformance claim and validation evidence.
 
 ## Profiles
 

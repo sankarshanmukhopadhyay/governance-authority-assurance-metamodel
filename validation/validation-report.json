@@ -1,189 +1,382 @@
 {
-  "gaamVersion": "0.5.0",
+  "gaamVersion": "0.9.0",
+  "testSuiteVersion": "0.9.0",
   "status": "pass",
-  "checks": 36,
-  "passed": 36,
+  "checks": 62,
+  "passed": 62,
   "failed": 0,
   "results": [
     {
-      "check": "requirement-uniqueness",
+      "id": "PUB-001-version-source",
+      "kind": "publication",
       "status": "pass",
-      "detail": "190 requirements"
+      "evidence": "authoritative version=0.9.0"
     },
     {
-      "check": "requirement-index",
+      "id": "PUB-002-active-version-coherence",
+      "kind": "publication",
       "status": "pass",
-      "detail": "190 indexed requirements"
+      "evidence": "no stale active v0.5.0 references"
     },
     {
-      "check": "schema:authority",
+      "id": "PUB-003-specification-identity",
+      "kind": "publication",
       "status": "pass",
-      "detail": "valid Draft 2020-12 schema"
+      "evidence": "normative specification identifies candidate release"
     },
     {
-      "check": "schema:delegation",
+      "id": "REQ-001-unique",
+      "kind": "normative",
       "status": "pass",
-      "detail": "valid Draft 2020-12 schema"
+      "evidence": "190 identifiers"
     },
     {
-      "check": "schema:evidence",
+      "id": "REQ-002-index-exact",
+      "kind": "normative",
       "status": "pass",
-      "detail": "valid Draft 2020-12 schema"
+      "evidence": "190 indexed requirements"
     },
     {
-      "check": "schema:assurance",
+      "id": "REQ-003-normative-language",
+      "kind": "normative",
       "status": "pass",
-      "detail": "valid Draft 2020-12 schema"
+      "evidence": "190 indexed statements classified"
     },
     {
-      "check": "schema:decision-receipt",
+      "id": "SCH-agent-governance-identity",
+      "kind": "schema",
       "status": "pass",
-      "detail": "valid Draft 2020-12 schema"
+      "evidence": "valid Draft 2020-12 schema"
     },
     {
-      "check": "schema:governance-event",
+      "id": "SCH-appeal",
+      "kind": "schema",
       "status": "pass",
-      "detail": "valid Draft 2020-12 schema"
+      "evidence": "valid Draft 2020-12 schema"
     },
     {
-      "check": "schema:appeal",
+      "id": "SCH-assurance",
+      "kind": "schema",
       "status": "pass",
-      "detail": "valid Draft 2020-12 schema"
+      "evidence": "valid Draft 2020-12 schema"
     },
     {
-      "check": "schema:remedy",
+      "id": "SCH-authority",
+      "kind": "schema",
       "status": "pass",
-      "detail": "valid Draft 2020-12 schema"
+      "evidence": "valid Draft 2020-12 schema"
     },
     {
-      "check": "schema:agent-governance-identity",
+      "id": "SCH-conformance-claim",
+      "kind": "schema",
       "status": "pass",
-      "detail": "valid Draft 2020-12 schema"
+      "evidence": "valid Draft 2020-12 schema"
     },
     {
-      "check": "schema:runtime-envelope",
+      "id": "SCH-decision-receipt",
+      "kind": "schema",
       "status": "pass",
-      "detail": "valid Draft 2020-12 schema"
+      "evidence": "valid Draft 2020-12 schema"
     },
     {
-      "check": "schema:profile-manifest",
+      "id": "SCH-delegation",
+      "kind": "schema",
       "status": "pass",
-      "detail": "valid Draft 2020-12 schema"
+      "evidence": "valid Draft 2020-12 schema"
     },
     {
-      "check": "schema:conformance-claim",
+      "id": "SCH-evidence",
+      "kind": "schema",
       "status": "pass",
-      "detail": "valid Draft 2020-12 schema"
+      "evidence": "valid Draft 2020-12 schema"
     },
     {
-      "check": "schema:gaam-package",
+      "id": "SCH-gaam-package",
+      "kind": "schema",
       "status": "pass",
-      "detail": "valid Draft 2020-12 schema"
+      "evidence": "valid Draft 2020-12 schema"
     },
     {
-      "check": "profile:foundation",
+      "id": "SCH-governance-event",
+      "kind": "schema",
       "status": "pass",
-      "detail": "36 requirements; dependency closure=True"
+      "evidence": "valid Draft 2020-12 schema"
     },
     {
-      "check": "profile:machine-actionable-governance",
+      "id": "SCH-profile-manifest",
+      "kind": "schema",
       "status": "pass",
-      "detail": "26 requirements; dependency closure=True"
+      "evidence": "valid Draft 2020-12 schema"
     },
     {
-      "check": "profile:delegated-authority",
+      "id": "SCH-remedy",
+      "kind": "schema",
       "status": "pass",
-      "detail": "32 requirements; dependency closure=True"
+      "evidence": "valid Draft 2020-12 schema"
     },
     {
-      "check": "profile:runtime-governance",
+      "id": "SCH-runtime-envelope",
+      "kind": "schema",
       "status": "pass",
-      "detail": "21 requirements; dependency closure=True"
+      "evidence": "valid Draft 2020-12 schema"
     },
     {
-      "check": "profile:agentic-systems",
+      "id": "SCH-IDS",
+      "kind": "schema",
       "status": "pass",
-      "detail": "51 requirements; dependency closure=True"
+      "evidence": "13 unique canonical identifiers"
     },
     {
-      "check": "profile:trust-graph",
+      "id": "SCH-CATALOG",
+      "kind": "schema",
       "status": "pass",
-      "detail": "9 requirements; dependency closure=True"
+      "evidence": "catalog covers all schemas"
     },
     {
-      "check": "profile:continuous-assurance",
+      "id": "VOC-assurance-statuses",
+      "kind": "vocabulary",
       "status": "pass",
-      "detail": "19 requirements; dependency closure=True"
+      "evidence": "7 governed values"
     },
     {
-      "check": "profile:high-impact-systems",
+      "id": "VOC-decision-outcomes",
+      "kind": "vocabulary",
       "status": "pass",
-      "detail": "22 requirements; dependency closure=True"
+      "evidence": "9 governed values"
     },
     {
-      "check": "valid-fixture:cross-registry-recognition/authority.valid.json",
+      "id": "VOC-governance-event-types",
+      "kind": "vocabulary",
       "status": "pass",
-      "detail": "accepted as expected"
+      "evidence": "11 governed values"
     },
     {
-      "check": "valid-fixture:cross-registry-recognition/decision-receipt.valid.json",
+      "id": "VOC-lifecycle-states",
+      "kind": "vocabulary",
       "status": "pass",
-      "detail": "accepted as expected"
+      "evidence": "14 governed values"
     },
     {
-      "check": "invalid-fixture:cross-registry-recognition/authority.invalid.json",
+      "id": "VOC-relationship-types",
+      "kind": "vocabulary",
       "status": "pass",
-      "detail": "rejected as expected"
+      "evidence": "19 governed values"
     },
     {
-      "check": "claim:cross-registry-recognition",
+      "id": "PRO-agentic-systems",
+      "kind": "profile",
       "status": "pass",
-      "detail": "valid conformance claim"
+      "evidence": "51 requirements; dependencies=True; document=True"
     },
     {
-      "check": "valid-fixture:delegated-agent-purchase/authority.valid.json",
+      "id": "PRO-continuous-assurance",
+      "kind": "profile",
       "status": "pass",
-      "detail": "accepted as expected"
+      "evidence": "19 requirements; dependencies=True; document=True"
     },
     {
-      "check": "valid-fixture:delegated-agent-purchase/decision-receipt.valid.json",
+      "id": "PRO-delegated-authority",
+      "kind": "profile",
       "status": "pass",
-      "detail": "accepted as expected"
+      "evidence": "32 requirements; dependencies=True; document=True"
     },
     {
-      "check": "invalid-fixture:delegated-agent-purchase/authority.invalid.json",
+      "id": "PRO-foundation",
+      "kind": "profile",
       "status": "pass",
-      "detail": "rejected as expected"
+      "evidence": "36 requirements; dependencies=True; document=True"
     },
     {
-      "check": "claim:delegated-agent-purchase",
+      "id": "PRO-high-impact-systems",
+      "kind": "profile",
       "status": "pass",
-      "detail": "valid conformance claim"
+      "evidence": "22 requirements; dependencies=True; document=True"
     },
     {
-      "check": "valid-fixture:high-impact-multi-agent-service/authority.valid.json",
+      "id": "PRO-machine-actionable-governance",
+      "kind": "profile",
       "status": "pass",
-      "detail": "accepted as expected"
+      "evidence": "26 requirements; dependencies=True; document=True"
     },
     {
-      "check": "valid-fixture:high-impact-multi-agent-service/decision-receipt.valid.json",
+      "id": "PRO-runtime-governance",
+      "kind": "profile",
       "status": "pass",
-      "detail": "accepted as expected"
+      "evidence": "21 requirements; dependencies=True; document=True"
     },
     {
-      "check": "invalid-fixture:high-impact-multi-agent-service/authority.invalid.json",
+      "id": "PRO-trust-graph",
+      "kind": "profile",
       "status": "pass",
-      "detail": "rejected as expected"
+      "evidence": "9 requirements; dependencies=True; document=True"
     },
     {
-      "check": "claim:high-impact-multi-agent-service",
+      "id": "PRO-DEPENDENCIES",
+      "kind": "profile",
       "status": "pass",
-      "detail": "valid conformance claim"
+      "evidence": "all profile dependencies resolve"
     },
     {
-      "check": "local-links",
+      "id": "FIX-cross-registry-recognition-authority.valid",
+      "kind": "fixture",
       "status": "pass",
-      "detail": "all local links resolve"
+      "evidence": "accepted as expected"
+    },
+    {
+      "id": "FIX-cross-registry-recognition-decision-receipt.valid",
+      "kind": "fixture",
+      "status": "pass",
+      "evidence": "accepted as expected"
+    },
+    {
+      "id": "FIX-cross-registry-recognition-authority.invalid",
+      "kind": "fixture",
+      "status": "pass",
+      "evidence": "rejected as expected"
+    },
+    {
+      "id": "CLM-cross-registry-recognition",
+      "kind": "conformance",
+      "status": "pass",
+      "evidence": "schema, evidence and independence rules satisfied"
+    },
+    {
+      "id": "FIX-delegated-agent-purchase-authority.valid",
+      "kind": "fixture",
+      "status": "pass",
+      "evidence": "accepted as expected"
+    },
+    {
+      "id": "FIX-delegated-agent-purchase-decision-receipt.valid",
+      "kind": "fixture",
+      "status": "pass",
+      "evidence": "accepted as expected"
+    },
+    {
+      "id": "FIX-delegated-agent-purchase-authority.invalid",
+      "kind": "fixture",
+      "status": "pass",
+      "evidence": "rejected as expected"
+    },
+    {
+      "id": "CLM-delegated-agent-purchase",
+      "kind": "conformance",
+      "status": "pass",
+      "evidence": "schema, evidence and independence rules satisfied"
+    },
+    {
+      "id": "FIX-high-impact-multi-agent-service-authority.valid",
+      "kind": "fixture",
+      "status": "pass",
+      "evidence": "accepted as expected"
+    },
+    {
+      "id": "FIX-high-impact-multi-agent-service-decision-receipt.valid",
+      "kind": "fixture",
+      "status": "pass",
+      "evidence": "accepted as expected"
+    },
+    {
+      "id": "FIX-high-impact-multi-agent-service-authority.invalid",
+      "kind": "fixture",
+      "status": "pass",
+      "evidence": "rejected as expected"
+    },
+    {
+      "id": "CLM-high-impact-multi-agent-service",
+      "kind": "conformance",
+      "status": "pass",
+      "evidence": "schema, evidence and independence rules satisfied"
+    },
+    {
+      "id": "BEH-authority-active-valid",
+      "kind": "behavioural",
+      "status": "pass",
+      "evidence": "expected=True; actual=True"
+    },
+    {
+      "id": "BEH-authority-revoked-rejected",
+      "kind": "behavioural",
+      "status": "pass",
+      "evidence": "expected=False; actual=False"
+    },
+    {
+      "id": "BEH-decision-missing-evidence-rejected",
+      "kind": "behavioural",
+      "status": "pass",
+      "evidence": "expected=False; actual=False"
+    },
+    {
+      "id": "BEH-decision-traceable-valid",
+      "kind": "behavioural",
+      "status": "pass",
+      "evidence": "expected=True; actual=True"
+    },
+    {
+      "id": "BEH-delegation-amplification-rejected",
+      "kind": "behavioural",
+      "status": "pass",
+      "evidence": "expected=False; actual=False"
+    },
+    {
+      "id": "BEH-delegation-attenuated-valid",
+      "kind": "behavioural",
+      "status": "pass",
+      "evidence": "expected=True; actual=True"
+    },
+    {
+      "id": "BEH-delegation-depth-rejected",
+      "kind": "behavioural",
+      "status": "pass",
+      "evidence": "expected=False; actual=False"
+    },
+    {
+      "id": "BEH-high-impact-no-remedy-rejected",
+      "kind": "behavioural",
+      "status": "pass",
+      "evidence": "expected=False; actual=False"
+    },
+    {
+      "id": "BEH-high-impact-remedy-valid",
+      "kind": "behavioural",
+      "status": "pass",
+      "evidence": "expected=True; actual=True"
+    },
+    {
+      "id": "THR-TRACE",
+      "kind": "threat",
+      "status": "pass",
+      "evidence": "7 threats mapped to requirements and tests"
+    },
+    {
+      "id": "DOC-LOCAL-LINKS",
+      "kind": "documentation",
+      "status": "pass",
+      "evidence": "all local links resolve"
+    },
+    {
+      "id": "DOC-TSMM-CANONICAL",
+      "kind": "provenance",
+      "status": "pass",
+      "evidence": "canonical TSMM repository link present"
+    },
+    {
+      "id": "CI-WORKFLOW",
+      "kind": "automation",
+      "status": "pass",
+      "evidence": "validation workflow present"
+    },
+    {
+      "id": "PKG-MANIFEST",
+      "kind": "package",
+      "status": "pass",
+      "evidence": "package manifest conforms"
+    },
+    {
+      "id": "PKG-INTEGRITY",
+      "kind": "package",
+      "status": "pass",
+      "evidence": "43 checksums verified"
     }
   ]
 }

@@ -18,7 +18,7 @@ GAAM references and, where explicitly identified, adapts concepts from these wor
 
 ## Trust Systems Meta-Model
 
-The `trust-systems-meta-model` v0.22.0 repository snapshot informed operational-semantic analysis involving authority, delegation, evidence, assurance, trust decisions, effects, lifecycle events and runtime governance artifacts. Its use is documented in the source-adoption crosswalk. GAAM does not create a normative dependency on that repository or its release-specific implementation artifacts.
+The [Trust Systems Meta-Model](https://github.com/sankarshanmukhopadhyay/trust-systems-meta-model) v0.22.0 repository snapshot informed operational-semantic analysis involving authority, delegation, evidence, assurance, trust decisions, effects, lifecycle events and runtime governance artifacts. Its use is documented in the source-adoption crosswalk. GAAM does not create a normative dependency on that repository or its release-specific implementation artifacts.
 
 ## Attribution governance
 

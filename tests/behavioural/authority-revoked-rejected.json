@@ -1,0 +1,10 @@
+{
+  "id": "authority-revoked-rejected",
+  "expectedValid": false,
+  "input": {
+    "status": "revoked",
+    "withinScope": true,
+    "withinTime": true,
+    "sourceValid": true
+  }
+}

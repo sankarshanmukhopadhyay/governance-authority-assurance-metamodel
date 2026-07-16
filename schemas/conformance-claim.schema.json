@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://example.org/gaam/v0.5.0/schemas/conformance-claim.schema.json",
+  "$id": "https://sankarshanmukhopadhyay.github.io/governance-authority-assurance-metamodel/v0.9.0/schemas/conformance-claim.schema.json",
   "title": "Conformance Claim",
   "type": "object",
   "required": [
@@ -23,7 +23,7 @@
       "const": "gaam-conformance-claim"
     },
     "gaamVersion": {
-      "const": "0.5.0"
+      "const": "0.9.0"
     },
     "profiles": {
       "type": "array",
@@ -64,6 +64,37 @@
       "format": "date-time"
     },
     "limitations": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "testSuiteVersion": {
+      "type": "string",
+      "minLength": 1
+    },
+    "assessmentIndependence": {
+      "enum": [
+        "self",
+        "second-party",
+        "independent"
+      ]
+    },
+    "status": {
+      "enum": [
+        "active",
+        "expired",
+        "withdrawn",
+        "superseded",
+        "invalidated"
+      ]
+    },
+    "reviewBy": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "exceptions": {
       "type": "array",
       "items": {
         "type": "string",

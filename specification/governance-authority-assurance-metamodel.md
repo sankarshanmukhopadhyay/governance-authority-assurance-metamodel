@@ -1,8 +1,8 @@
 # Governance, Authority and Assurance Metamodel Specification
 
-**Version:** 0.1.0  
-**Status:** Initial Public Draft  
-**Release date:** 15 July 2026  
+**Version:** 0.9.0  
+**Status:** Candidate Specification  
+**Release date:** 16 July 2026  
 **Repository:** `governance-authority-assurance-metamodel`  
 **Intended audience:** Governance designers, standards developers, ecosystem architects, assurance providers, registry operators, agent-system implementers, regulators, auditors and reviewers.
 
@@ -10,9 +10,9 @@
 
 ## Document status
 
-This document is the Initial Public Draft of the Governance, Authority and Assurance Metamodel (GAAM). It establishes an independent, implementation-neutral specification for representing and governing authority, delegation, evidence, trust decisions, accountability, assurance, agentic execution and decentralised trust relationships.
+This document is the Candidate Specification of the Governance, Authority and Assurance Metamodel (GAAM). It establishes an independent, implementation-neutral specification for representing and governing authority, delegation, evidence, trust decisions, accountability, assurance, agentic execution and decentralised trust relationships.
 
-Version 0.1.0 is deliberately review-oriented. It presents a complete architectural baseline and an initial normative requirement set, while leaving selected questions open for implementation feedback and public discussion. Conformance claims against this release MUST identify the applicable profile and MUST state that the claim targets an Initial Public Draft.
+Version 0.9.0 stabilises the intended normative surface for implementation, interoperability and assurance review. A conformance claim against this release MUST identify the applicable profile set, conformance target, assurance level, test-suite version, evidence, limitations and assessment independence. Candidate status does not constitute certification, universal trustworthiness or independent interoperability. Breaking normative changes remain possible only through the candidate change-control process defined by this repository.
 
 The specification is protocol-neutral, vendor-neutral and ecosystem-neutral. It does not require any particular identifier, credential, registry, agent communication, policy, transport or cryptographic technology.
 
@@ -1431,9 +1431,25 @@ Implementations should avoid representing trust as a single scalar score. Where 
 
 **GAAM-MKT-003:** A high-impact recognition arrangement **MUST** address opaque exclusion, portability barriers, self-preferencing and unsupported equivalence claims.
 
-# Annex C. Resolved architectural decisions for v0.5.0
 
-The v0.5.0 Feature Complete Draft adopts the following decisions:
+# Annex B.1. Normative artifact precedence and candidate invariants
+
+When GAAM artifacts conflict, the normative specification governs substantive meaning; normative JSON Schemas govern machine-readable structure; controlled vocabularies govern enumerated terms; profile manifests govern declared profile composition; and conformance tests provide evidence without redefining the specification. An implementation MUST disclose any unresolved conflict rather than selecting the least restrictive interpretation.
+
+The following candidate invariants apply across profiles where the relevant capability is present:
+
+1. Authority MUST originate from an identifiable authority source and MUST remain within its declared scope and effective period.
+2. Delegation MUST NOT enlarge authority, bypass a prohibition, exceed redelegation permission or obscure the originating principal.
+3. Suspension, expiry and revocation MUST be evaluated before an effect is authorised and MUST propagate to dependent authority where the governing policy requires it.
+4. A trust decision MUST identify the authority, policy, evidence and assurance state used to reach the outcome.
+5. A consequential effect MUST be traceable to a decision receipt and an accountable party.
+6. High-impact operation MUST provide an appeal path, remedy path and affected-party evidence appropriate to the claimed profile.
+7. A conformance claim MUST NOT represent structural validation as behavioural assurance or self-assessment as independent assessment.
+8. A governance package MUST be rejected when required artifacts, integrity evidence or profile dependencies are absent or inconsistent.
+
+# Annex C. Resolved architectural decisions for v0.9.0
+
+The v0.9.0 Candidate Specification adopts the following decisions:
 
 1. GAAM remains a standalone, protocol-independent metamodel.
 2. Persistent identifiers may use any verifiable identifier method satisfying profile requirements; DIDs are not mandatory.

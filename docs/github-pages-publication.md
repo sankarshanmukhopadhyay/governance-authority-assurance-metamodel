@@ -13,6 +13,8 @@ The GitHub Pages site is a versioned publication surface for both human-readable
 
 The site uses [Just the Docs](https://just-the-docs.com), a documentation-focused Jekyll theme with built-in search, nested sidebar navigation and breadcrumbs. GAAM adds one small extension point on top of the theme -- `_includes/gaam-meta.html`, which renders `artifact_type`, `normative_status`, `version` and a source link from a page's front matter -- included explicitly from the body of pages that declare that front matter. Everything else (page structure, the single `h1` derived from `title`, navigation, search, breadcrumbs) is owned by the theme; GAAM does not override any of the theme's own layouts or includes. Custom styling lives entirely in `_sass/custom/custom.scss`, the theme's documented extension point for adding rules without ejecting or forking it.
 
+Just the Docs' own bundled templates unconditionally reference several `_includes/*_custom.html` files (`head_custom.html`, `header_custom.html`, `footer_custom.html`, `nav_footer_custom.html`) as customization hooks, and the theme gem does not ship default/empty versions of them -- the build fails with a Liquid "could not locate the included file" error until the site provides them. GAAM's repo provides all four as empty (comment-only) stubs, since none currently need custom content.
+
 The repository root is the Pages source. GitHub Actions builds the complete site into `_site` with GitHub's supported Jekyll build action, mirrors `schemas/*.json` into the versioned path declared by each schema's `$id` (`scripts/publish_versioned_schemas.py`; see Canonical identifier publication below), and deploys the resulting Pages artifact.
 
 ## Navigation

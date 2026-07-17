@@ -13,6 +13,8 @@ All notable changes will be documented here. The project uses Semantic Versionin
 
 ### Fixed
 
+- Add empty `_includes/head_custom.html`, `header_custom.html`, `footer_custom.html` and `nav_footer_custom.html` stubs. Just the Docs' own bundled templates include these unconditionally and the gem does not ship default versions of them, so the Jekyll build failed with "could not locate the included file" until the site provided them.
+
 - Remove duplicate body-level H1 headings from page-layout documents and establish front matter as the authoritative title source.
 - Refactor the GAAM page header and artifact metadata to prevent overlapping or floating titles across responsive layouts.
 - Declare `kramdown-parser-gfm` explicitly so strict Jekyll builds do not depend on transitive gem resolution.

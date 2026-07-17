@@ -1,10 +1,13 @@
 ---
-layout: page
 title: "Normative Specification"
 permalink: /specification/
+nav_order: 2
+has_children: true
 artifact_type: Specification index
 normative_status: Normative
 ---
+{% include gaam-meta.html %}
+
 
 The [Governance, Authority and Assurance Metamodel v0.9.0](governance-authority-assurance-metamodel.md) is the authoritative human-readable specification.
 

@@ -1,7 +1,7 @@
 ---
-layout: page
 title: "Continuous Assurance Profile"
 permalink: /profiles/continuous-assurance/
+parent: "Conformance Profiles"
 ---
 **Version:** 0.9.0  
 **Status:** Candidate Specification

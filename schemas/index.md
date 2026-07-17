@@ -1,10 +1,13 @@
 ---
-layout: page
 title: "Canonical Schemas"
 permalink: /schemas/
+nav_order: 5
+has_children: true
 artifact_type: Schema catalogue
 normative_status: Normative for artifact structure
 ---
+{% include gaam-meta.html %}
+
 
 Each canonical identifier resolves to the published JSON artifact. Human-readable semantics remain governed by the normative specification.
 

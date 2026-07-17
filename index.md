@@ -1,10 +1,12 @@
 ---
-layout: page
 title: "Governance, Authority and Assurance Metamodel"
 permalink: /
+nav_order: 1
 artifact_type: "Publication landing page"
 normative_status: "Candidate Specification"
 ---
+{% include gaam-meta.html %}
+
 
 GAAM defines protocol-neutral, executable governance semantics for authority, delegation, evidence, assurance, trust decisions, effects, accountability and remedy across distributed and agentic systems.
 

@@ -1,10 +1,12 @@
 ---
-layout: page
 title: "Architecture Overview"
 permalink: /docs/architecture/
+parent: "Documentation"
 artifact_type: "Architecture documentation"
 normative_status: "Informative"
 ---
+{% include gaam-meta.html %}
+
 GAAM is an effect-centred governance metamodel. It models how authority, policy, evidence and assurance combine to determine whether a proposed effect may occur and who remains accountable for the result.
 
 ## Architectural layers

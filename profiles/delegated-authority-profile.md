@@ -1,7 +1,7 @@
 ---
-layout: page
 title: "Delegated Authority Profile"
 permalink: /profiles/delegated-authority/
+parent: "Conformance Profiles"
 ---
 **Version:** 0.9.0  
 **Status:** Candidate Specification

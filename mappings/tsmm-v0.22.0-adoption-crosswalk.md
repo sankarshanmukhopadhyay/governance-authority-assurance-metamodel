@@ -1,10 +1,12 @@
 ---
-layout: page
 title: "GAAM Source Adoption and Architectural Differentiation Crosswalk"
 permalink: /mappings/tsmm-v0.22.0/
+parent: "Mappings and Source Crosswalks"
 artifact_type: "Source adoption crosswalk"
 normative_status: "Informative"
 ---
+{% include gaam-meta.html %}
+
 ## ToIP Governance Metamodel v1.0, Companion Guide v1.0, and TSMM v0.22.0
 
 **Status:** Informative provenance and architectural differentiation record  

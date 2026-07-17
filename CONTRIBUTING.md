@@ -1,10 +1,12 @@
 ---
-layout: page
 title: "Contributing"
 permalink: /governance/contributing/
+parent: "Project Governance"
 artifact_type: "Contribution guide"
 normative_status: "Normative process"
 ---
+{% include gaam-meta.html %}
+
 GAAM welcomes conceptual review, normative text, implementation evidence, threat analysis, diagrams and examples.
 
 ## Before contributing

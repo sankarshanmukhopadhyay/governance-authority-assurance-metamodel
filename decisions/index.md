@@ -1,7 +1,8 @@
 ---
-layout: page
 title: "Architectural Decisions"
 permalink: /decisions/
+nav_order: 10
+has_children: true
 ---
 - [Standalone specification](0001-standalone-specification.md)
 - [Structural normativity](0002-structural-normativity.md)

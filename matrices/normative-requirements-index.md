@@ -1,10 +1,12 @@
 ---
-layout: page
 title: "Normative Requirements Index"
 permalink: /matrices/normative-requirements-index/
+parent: "Matrices"
 artifact_type: Traceability matrix
 normative_status: Assurance supporting
 ---
+{% include gaam-meta.html %}
+
 
 [Download CSV](normative-requirements-index.csv)
 

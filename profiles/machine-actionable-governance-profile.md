@@ -1,7 +1,7 @@
 ---
-layout: page
 title: "Machine Actionable Governance Profile"
 permalink: /profiles/machine-actionable-governance/
+parent: "Conformance Profiles"
 ---
 **Version:** 0.9.0  
 **Status:** Candidate Specification

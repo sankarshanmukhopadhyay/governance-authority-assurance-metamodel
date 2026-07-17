@@ -1,10 +1,13 @@
 ---
-layout: page
 title: "Controlled Vocabularies"
 permalink: /vocabularies/
+nav_order: 6
+has_children: true
 artifact_type: Vocabulary catalogue
 normative_status: Normative where referenced
 ---
+{% include gaam-meta.html %}
+
 
 The following machine-readable vocabularies are published directly through GitHub Pages.
 

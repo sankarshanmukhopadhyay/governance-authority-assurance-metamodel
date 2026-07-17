@@ -1,10 +1,12 @@
 ---
-layout: page
 title: "Source Attributions"
 permalink: /governance/attributions/
+parent: "Project Governance"
 artifact_type: "Attribution record"
 normative_status: "Informative"
 ---
+{% include gaam-meta.html %}
+
 GAAM is an independent open specification. This file records external works that materially informed repository mappings, design analysis or explanatory documentation.
 
 ## Trust Over IP governance materials

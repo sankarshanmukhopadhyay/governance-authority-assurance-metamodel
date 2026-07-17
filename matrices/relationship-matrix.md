@@ -1,7 +1,7 @@
 ---
-layout: page
 title: "Canonical Relationship Matrix"
 permalink: /matrices/relationships/
+parent: "Matrices"
 ---
 | Relationship | Source | Target | Source cardinality | Target cardinality | Propagation/transitivity | Required semantic boundary |
 |---|---|---|---:|---:|---|---|

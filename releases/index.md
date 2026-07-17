@@ -1,7 +1,8 @@
 ---
-layout: page
 title: "Releases"
 permalink: /releases/
+nav_order: 12
+has_children: true
 ---
 
 - [v0.9.0 — Candidate Specification](v0.9.0.md)

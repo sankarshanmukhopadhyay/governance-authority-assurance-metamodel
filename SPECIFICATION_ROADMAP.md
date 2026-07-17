@@ -1,10 +1,12 @@
 ---
-layout: page
 title: "Specification Roadmap"
 permalink: /governance/specification-roadmap/
+parent: "Project Governance"
 artifact_type: "Specification roadmap"
 normative_status: "Informative"
 ---
+{% include gaam-meta.html %}
+
 ## v0.9.0 completion state
 
 The candidate normative surface, eight profiles, canonical schemas, governed vocabularies, behavioural vectors, threat traceability, CI validation and reproducible package are present.

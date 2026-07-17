@@ -1,4 +1,16 @@
 #!/usr/bin/env python3
+"""Validate the rendered Just the Docs site in _site/.
+
+Theme-specific structural checks (status banner / breadcrumb / artifact-meta
+region ordering) that this script used to perform were tied to GAAM's old
+hand-built jekyll-theme-minimal page template and no longer apply now that
+the site uses Just the Docs, which owns its own page structure. What remains
+theme-independent -- and still worth checking on every build -- is: the
+required section pages actually render, every page has exactly one H1 (GAAM's
+own page-title contract, unchanged), the site loads a stylesheet and ships a
+search index, and every schema's canonical $id resolves to a real published
+artifact.
+"""
 from html.parser import HTMLParser
 from pathlib import Path
 import json
@@ -6,77 +18,49 @@ import sys
 
 ROOT = Path(__file__).resolve().parents[1]
 SITE = ROOT / "_site"
-# Pages listed here are exempt from the shared page-template structural contract
-# (status banner, breadcrumbs, artifact-meta, one-H1 rule) checked below. This set
-# is intentionally empty: every published page is expected to use `layout: page`
-# and carry the `gaam-page` marker. Add a page here only with an explicit,
-# documented rationale in docs/github-pages-publication.md -- do not let this
-# check silently skip pages that fall through to a bare theme layout.
-STRUCTURAL_CONTRACT_EXEMPT = set()
 
 REQUIRED = [
     "index.html", "specification/index.html", "profiles/index.html", "schemas/index.html",
-    "vocabularies/index.html", "docs/index.html", "conformance/index.html", "releases/index.html",
-    "threat-model/index.html", "validation-report/index.html",
+    "vocabularies/index.html", "matrices/index.html", "docs/index.html", "conformance/index.html",
+    "releases/index.html", "threat-model/index.html", "validation-report/index.html",
 ]
+
 
 class PageStructureParser(HTMLParser):
     def __init__(self):
         super().__init__()
         self.h1_count = 0
         self.stylesheet = False
-        self.positions = {}
-        self._sequence = 0
 
     def handle_starttag(self, tag, attrs):
-        self._sequence += 1
         attrs = dict(attrs)
-        classes = set(attrs.get("class", "").split())
         if tag == "h1":
             self.h1_count += 1
-        for name, marker in (
-            ("status", "status-banner"),
-            ("breadcrumbs", "breadcrumbs"),
-            ("header", "gaam-page-header"),
-            ("title", "gaam-page-title"),
-            ("metadata", "artifact-meta"),
-            ("content", "gaam-page-content"),
-        ):
-            if marker in classes and name not in self.positions:
-                self.positions[name] = self._sequence
-        if tag == "link" and attrs.get("rel") == "stylesheet" and "assets/css/gaam.css" in attrs.get("href", ""):
+        if tag == "link" and attrs.get("rel") == "stylesheet":
             self.stylesheet = True
+
 
 errors = []
 for rel in REQUIRED:
     if not (SITE / rel).is_file():
         errors.append(f"missing rendered page: {rel}")
 
-for page in SITE.rglob("*.html"):
+html_pages = list(SITE.rglob("*.html"))
+for page in html_pages:
     rel = str(page.relative_to(SITE))
     parser = PageStructureParser()
-    text = page.read_text(errors="ignore")
-    parser.feed(text)
-    if "gaam-page" not in text:
-        if rel not in STRUCTURAL_CONTRACT_EXEMPT:
-            errors.append(
-                f"{rel} does not use the shared page template (no gaam-page marker) "
-                "and is not in STRUCTURAL_CONTRACT_EXEMPT"
-            )
-        continue
+    parser.feed(page.read_text(errors="ignore"))
     if parser.h1_count != 1:
-        errors.append(f"{page.relative_to(SITE)} has {parser.h1_count} H1 elements; expected exactly one")
+        errors.append(f"{rel} has {parser.h1_count} H1 elements; expected exactly one")
     if not parser.stylesheet:
-        errors.append(f"{page.relative_to(SITE)} does not load assets/css/gaam.css")
-    ordered = [parser.positions.get(k) for k in ("status", "breadcrumbs", "header", "title", "content")]
-    if any(v is None for v in ordered) or ordered != sorted(ordered):
-        errors.append(f"{page.relative_to(SITE)} has invalid publication-region ordering")
-    if "artifact-meta" in page.read_text(errors="ignore"):
-        title = parser.positions.get("title", 0)
-        metadata = parser.positions.get("metadata", 0)
-        content = parser.positions.get("content", 0)
-        if not (title < metadata < content):
-            errors.append(f"{page.relative_to(SITE)} has invalid title/metadata/content ordering")
+        errors.append(f"{rel} does not load a stylesheet")
+
+if not html_pages:
+    errors.append("no rendered HTML pages found under _site/")
+
+search_index = list((SITE / "assets" / "js").glob("*search-data*.json")) if (SITE / "assets" / "js").is_dir() else []
+if not search_index:
+    errors.append("no Just the Docs search index found under _site/assets/js/*search-data*.json")
 
 for srcdir in ("schemas", "vocabularies"):
     for src in (ROOT / srcdir).glob("*.json"):
@@ -104,4 +88,4 @@ if errors:
         print("-", error)
     sys.exit(1)
 
-print(f"Pages validation: PASS ({len(REQUIRED)} required pages; one-H1 and publication-region contracts verified)")
+print(f"Pages validation: PASS ({len(REQUIRED)} required pages; {len(html_pages)} pages checked for one-H1 and stylesheet; search index present)")

@@ -1,10 +1,12 @@
 ---
-layout: page
 title: "Requirement Test Coverage"
 permalink: /matrices/requirement-test-coverage/
+parent: "Matrices"
 artifact_type: Traceability matrix
 normative_status: Assurance supporting
 ---
+{% include gaam-meta.html %}
+
 
 [Download CSV](requirement-test-coverage.csv)
 

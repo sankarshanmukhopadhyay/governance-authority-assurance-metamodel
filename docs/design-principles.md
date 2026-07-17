@@ -1,10 +1,12 @@
 ---
-layout: page
 title: "Design Principles"
 permalink: /docs/design-principles/
+parent: "Documentation"
 artifact_type: "Design guidance"
 normative_status: "Informative"
 ---
+{% include gaam-meta.html %}
+
 1. **Authority before action.** Consequential effects require explicit authority evaluation.
 2. **Context before trust.** Reliance conclusions depend on purpose, policy, risk and time.
 3. **Evidence before assurance.** Assurance conclusions must identify supporting evidence and limitations.

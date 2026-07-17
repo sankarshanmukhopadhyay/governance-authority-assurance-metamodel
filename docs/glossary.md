@@ -1,10 +1,12 @@
 ---
-layout: page
 title: "Glossary"
 permalink: /docs/glossary/
+parent: "Documentation"
 artifact_type: "Terminology"
 normative_status: "Normative where referenced"
 ---
+{% include gaam-meta.html %}
+
 **Accountability** — An obligation to explain, justify, answer for, correct or remedy an action, decision or failure.
 
 **Actor** — A governed entity capable of requesting, approving, denying, performing, supervising, recording or being affected by an action.

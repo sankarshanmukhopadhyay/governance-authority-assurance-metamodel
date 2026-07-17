@@ -1,7 +1,7 @@
 ---
-layout: page
 title: "Agentic Systems Profile"
 permalink: /profiles/agentic-systems/
+parent: "Conformance Profiles"
 ---
 **Version:** 0.9.0  
 **Status:** Candidate Specification

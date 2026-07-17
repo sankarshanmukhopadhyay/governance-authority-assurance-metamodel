@@ -1,10 +1,11 @@
 ---
-layout: page
 title: GAAM v0.9.0 Validation Report
 permalink: /validation-report/
+nav_exclude: true
 artifact_type: Validation evidence
 normative_status: Repository generated
 ---
+{% include gaam-meta.html %}
 
 **Status:** PASS  
 **Checks:** 63  

@@ -1,7 +1,7 @@
 ---
-layout: page
 title: "Implementation Guide"
 permalink: /docs/implementation/
+parent: "Documentation"
 ---
 ## Implementation sequence
 

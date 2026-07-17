@@ -1,10 +1,12 @@
 ---
-layout: page
 title: "Threat Control Test Matrix"
 permalink: /matrices/threat-control-test-matrix/
+parent: "Matrices"
 artifact_type: Traceability matrix
 normative_status: Assurance supporting
 ---
+{% include gaam-meta.html %}
+
 
 [Download CSV](threat-control-test-matrix.csv)
 

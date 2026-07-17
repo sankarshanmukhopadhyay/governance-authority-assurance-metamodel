@@ -1,10 +1,12 @@
 ---
-layout: page
 title: "Conformance Matrix"
 permalink: /matrices/conformance/
+parent: "Matrices"
 artifact_type: "Conformance matrix"
 normative_status: "Normative supporting"
 ---
+{% include gaam-meta.html %}
+
 ## Profile applicability
 
 | Requirement domain | Foundation | Machine-Actionable | Delegated Authority | Agentic Systems | Trust Graph | Continuous Assurance | High-Impact |

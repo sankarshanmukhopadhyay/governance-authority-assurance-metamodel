@@ -1,7 +1,8 @@
 ---
-layout: page
 title: "Implementation Patterns"
 permalink: /examples/
+nav_order: 11
+has_children: true
 ---
 - [Delegated agent purchasing](delegated-agent-purchase/README.md)
 - [Cross-registry recognition](cross-registry-recognition/README.md)

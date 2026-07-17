@@ -1,7 +1,8 @@
 ---
-layout: page
 title: "Documentation"
 permalink: /docs/
+nav_order: 3
+has_children: true
 ---
 
 <div class="artifact-grid">

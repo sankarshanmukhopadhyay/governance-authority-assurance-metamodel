@@ -5,7 +5,12 @@ baseurl: /governance-authority-assurance-metamodel
 repository: sankarshanmukhopadhyay/governance-authority-assurance-metamodel
 version: 0.9.0
 status: Candidate Specification
-theme: jekyll-theme-minimal
+theme: just-the-docs
+color_scheme: light
+search_enabled: true
+heading_anchors: true
+back_to_top: true
+back_to_top_text: "Back to top"
 markdown: kramdown
 kramdown:
   input: GFM
@@ -18,7 +23,22 @@ plugins:
 relative_links:
   enabled: true
   collections: true
+aux_links:
+  "GAAM on GitHub":
+    - "https://github.com/sankarshanmukhopadhyay/governance-authority-assurance-metamodel"
+aux_links_new_tab: true
+callouts:
+  candidate:
+    title: Candidate Specification
+    color: purple
+  normative:
+    title: Normative
+    color: blue
+  informative:
+    title: Informative
+    color: grey-dk
 exclude:
+  - README.md
   - requirements-dev.txt
   - scripts
   - tests
@@ -34,6 +54,6 @@ defaults:
   - scope:
       path: ""
     values:
-      layout: page
+      layout: default
       version: "0.9.0"
       release_status: "Candidate Specification"

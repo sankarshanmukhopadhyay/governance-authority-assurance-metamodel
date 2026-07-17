@@ -1,10 +1,12 @@
 ---
-layout: page
 title: "Security Policy"
 permalink: /governance/security/
+parent: "Project Governance"
 artifact_type: "Security policy"
 normative_status: "Normative process"
 ---
+{% include gaam-meta.html %}
+
 ## Scope
 
 Security reports may concern repository automation, published schemas, examples, or specification defects that could predictably enable unsafe authority, delegation, evidence, registry or agent behaviour.

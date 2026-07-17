@@ -1,0 +1,52 @@
+// GAAM-specific styling, layered on top of Just the Docs via its documented
+// _sass/custom/custom.scss extension point. Nothing here overrides theme
+// internals; it only adds a small number of GAAM-specific components.
+
+.gaam-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem 1rem;
+  margin: 0 0 1.4rem;
+  padding: 0.6rem 0.9rem;
+  border-left: 4px solid $purple-000;
+  background: $grey-lt-000;
+  font-size: 0.85rem;
+}
+
+.gaam-meta dt {
+  display: inline;
+  font-weight: 700;
+  margin-right: 0.3rem;
+}
+
+.gaam-meta dd {
+  display: inline;
+  margin: 0 0 0;
+}
+
+.gaam-meta > div + div::before {
+  content: "\00b7";
+  margin-right: 1rem;
+  color: $grey-dk-000;
+}
+
+.artifact-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.artifact-card {
+  padding: 1rem;
+  border: 1px solid $border-color;
+  border-radius: 6px;
+}
+
+.artifact-card h3 {
+  margin-top: 0;
+}
+
+.table-wrap {
+  overflow-x: auto;
+}

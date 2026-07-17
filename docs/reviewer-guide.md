@@ -1,10 +1,12 @@
 ---
-layout: page
 title: "Reviewer Guide"
 permalink: /docs/reviewer-guide/
+parent: "Documentation"
 artifact_type: "Review guide"
 normative_status: "Informative"
 ---
+{% include gaam-meta.html %}
+
 ## Review priorities
 
 Reviewers should focus first on architecture rather than wording:

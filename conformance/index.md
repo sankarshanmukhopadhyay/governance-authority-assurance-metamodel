@@ -1,7 +1,8 @@
 ---
-layout: page
 title: "Conformance and Assurance"
 permalink: /conformance/
+nav_order: 9
+has_children: true
 ---
 
 - [Conformance guide](../docs/conformance-guide.md)

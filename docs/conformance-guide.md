@@ -1,7 +1,7 @@
 ---
-layout: page
 title: "Conformance and Assurance Guide"
 permalink: /docs/conformance/
+parent: "Documentation"
 ---
 GAAM conformance applies to declared targets and profiles. It does not certify universal trustworthiness.
 

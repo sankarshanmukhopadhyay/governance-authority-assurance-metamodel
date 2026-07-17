@@ -1,10 +1,12 @@
 ---
-layout: page
 title: "Design Rationale"
 permalink: /docs/design-rationale/
+parent: "Documentation"
 artifact_type: "Design rationale"
 normative_status: "Informative"
 ---
+{% include gaam-meta.html %}
+
 ## Why authority is first-class
 
 Many digital systems authenticate actors without proving that those actors possess authority for the proposed effect. GAAM separates identity, capability and authority so implementations can prevent technically possible but unauthorised actions.

@@ -1,10 +1,12 @@
 ---
-layout: page
 title: "Architecture Diagrams"
 permalink: /diagrams/
+parent: "Documentation"
 artifact_type: "Architecture diagrams"
 normative_status: "Informative"
 ---
+{% include gaam-meta.html %}
+
 These diagrams are informative and use Mermaid syntax.
 
 ## 1. Core decision chain

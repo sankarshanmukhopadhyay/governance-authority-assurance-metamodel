@@ -1,10 +1,12 @@
 ---
-layout: page
 title: "Governance-package integrity"
 permalink: /decisions/0010-package-integrity-model/
+parent: "Architectural Decisions"
 artifact_type: "Architectural decision record"
 normative_status: "Decision record"
 ---
+{% include gaam-meta.html %}
+
 **Status:** Accepted for v0.9.0  
 **Date:** 2026-07-16
 

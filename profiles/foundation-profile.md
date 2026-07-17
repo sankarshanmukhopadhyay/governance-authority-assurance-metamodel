@@ -1,7 +1,7 @@
 ---
-layout: page
 title: "Foundation Profile"
 permalink: /profiles/foundation/
+parent: "Conformance Profiles"
 ---
 **Version:** 0.9.0  
 **Status:** Candidate Specification

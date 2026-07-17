@@ -1,5 +1,9 @@
-# GAAM Implementation Report
-
+---
+title: "GAAM Implementation Report"
+permalink: /implementation-reports/template/
+parent: "Documentation"
+nav_exclude: true
+---
 ## Implementation identity
 
 - Implementer:

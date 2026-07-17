@@ -1,10 +1,12 @@
 ---
-layout: page
 title: "Governance, Authority and Assurance Metamodel Specification"
 permalink: /specification/gaam-v0.9.0/
+parent: "Normative Specification"
 artifact_type: "Normative specification"
 normative_status: "Normative"
 ---
+{% include gaam-meta.html %}
+
 **Version:** 0.9.0  
 **Status:** Candidate Specification  
 **Release date:** 16 July 2026  

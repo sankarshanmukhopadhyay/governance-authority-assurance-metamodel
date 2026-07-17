@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Normative Specification
+title: "Normative Specification"
 permalink: /specification/
 artifact_type: Specification index
 normative_status: Normative

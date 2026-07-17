@@ -1,6 +1,6 @@
 ---
 layout: page
-title: High Impact Systems Profile
+title: "High Impact Systems Profile"
 permalink: /profiles/high-impact-systems/
 ---
 **Version:** 0.9.0  

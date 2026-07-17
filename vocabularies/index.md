@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Controlled Vocabularies
+title: "Controlled Vocabularies"
 permalink: /vocabularies/
 artifact_type: Vocabulary catalogue
 normative_status: Normative where referenced

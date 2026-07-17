@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Delegated Authority Profile
+title: "Delegated Authority Profile"
 permalink: /profiles/delegated-authority/
 ---
 **Version:** 0.9.0  

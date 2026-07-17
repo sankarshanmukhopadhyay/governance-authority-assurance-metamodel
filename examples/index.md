@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Implementation Patterns
+title: "Implementation Patterns"
 permalink: /examples/
 ---
 - [Delegated agent purchasing](delegated-agent-purchase/README.md)

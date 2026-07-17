@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Conformance and Assurance
+title: "Conformance and Assurance"
 permalink: /conformance/
 ---
 

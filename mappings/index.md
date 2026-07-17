@@ -1,10 +1,10 @@
 ---
-layout: default
-title: Mappings and Source Crosswalks
+layout: page
+title: "Mappings and Source Crosswalks"
 permalink: /mappings/
+artifact_type: "Mappings index"
+normative_status: "Informative"
 ---
-
-# Mappings and Source Crosswalks
 
 GAAM mapping documents are informative artifacts. They explain source provenance, architectural differentiation and potential semantic alignment without importing external conformance obligations into GAAM.
 

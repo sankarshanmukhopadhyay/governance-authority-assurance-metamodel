@@ -6,6 +6,14 @@ import sys
 
 ROOT = Path(__file__).resolve().parents[1]
 SITE = ROOT / "_site"
+# Pages listed here are exempt from the shared page-template structural contract
+# (status banner, breadcrumbs, artifact-meta, one-H1 rule) checked below. This set
+# is intentionally empty: every published page is expected to use `layout: page`
+# and carry the `gaam-page` marker. Add a page here only with an explicit,
+# documented rationale in docs/github-pages-publication.md -- do not let this
+# check silently skip pages that fall through to a bare theme layout.
+STRUCTURAL_CONTRACT_EXEMPT = set()
+
 REQUIRED = [
     "index.html", "specification/index.html", "profiles/index.html", "schemas/index.html",
     "vocabularies/index.html", "docs/index.html", "conformance/index.html", "releases/index.html",
@@ -45,9 +53,16 @@ for rel in REQUIRED:
         errors.append(f"missing rendered page: {rel}")
 
 for page in SITE.rglob("*.html"):
+    rel = str(page.relative_to(SITE))
     parser = PageStructureParser()
-    parser.feed(page.read_text(errors="ignore"))
-    if "gaam-page" not in page.read_text(errors="ignore"):
+    text = page.read_text(errors="ignore")
+    parser.feed(text)
+    if "gaam-page" not in text:
+        if rel not in STRUCTURAL_CONTRACT_EXEMPT:
+            errors.append(
+                f"{rel} does not use the shared page template (no gaam-page marker) "
+                "and is not in STRUCTURAL_CONTRACT_EXEMPT"
+            )
         continue
     if parser.h1_count != 1:
         errors.append(f"{page.relative_to(SITE)} has {parser.h1_count} H1 elements; expected exactly one")

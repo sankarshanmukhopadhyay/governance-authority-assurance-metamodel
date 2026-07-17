@@ -43,31 +43,25 @@
       "evidence": "190 indexed statements classified"
     },
     {
-      "id": "SCH-agent-governance-identity",
+      "id": "SCH-gaam-package",
       "kind": "schema",
       "status": "pass",
       "evidence": "valid Draft 2020-12 schema"
     },
     {
-      "id": "SCH-appeal",
-      "kind": "schema",
-      "status": "pass",
-      "evidence": "valid Draft 2020-12 schema"
-    },
-    {
-      "id": "SCH-assurance",
-      "kind": "schema",
-      "status": "pass",
-      "evidence": "valid Draft 2020-12 schema"
-    },
-    {
-      "id": "SCH-authority",
+      "id": "SCH-evidence",
       "kind": "schema",
       "status": "pass",
       "evidence": "valid Draft 2020-12 schema"
     },
     {
       "id": "SCH-conformance-claim",
+      "kind": "schema",
+      "status": "pass",
+      "evidence": "valid Draft 2020-12 schema"
+    },
+    {
+      "id": "SCH-remedy",
       "kind": "schema",
       "status": "pass",
       "evidence": "valid Draft 2020-12 schema"
@@ -85,19 +79,31 @@
       "evidence": "valid Draft 2020-12 schema"
     },
     {
-      "id": "SCH-evidence",
-      "kind": "schema",
-      "status": "pass",
-      "evidence": "valid Draft 2020-12 schema"
-    },
-    {
-      "id": "SCH-gaam-package",
-      "kind": "schema",
-      "status": "pass",
-      "evidence": "valid Draft 2020-12 schema"
-    },
-    {
       "id": "SCH-governance-event",
+      "kind": "schema",
+      "status": "pass",
+      "evidence": "valid Draft 2020-12 schema"
+    },
+    {
+      "id": "SCH-assurance",
+      "kind": "schema",
+      "status": "pass",
+      "evidence": "valid Draft 2020-12 schema"
+    },
+    {
+      "id": "SCH-agent-governance-identity",
+      "kind": "schema",
+      "status": "pass",
+      "evidence": "valid Draft 2020-12 schema"
+    },
+    {
+      "id": "SCH-appeal",
+      "kind": "schema",
+      "status": "pass",
+      "evidence": "valid Draft 2020-12 schema"
+    },
+    {
+      "id": "SCH-runtime-envelope",
       "kind": "schema",
       "status": "pass",
       "evidence": "valid Draft 2020-12 schema"
@@ -109,13 +115,7 @@
       "evidence": "valid Draft 2020-12 schema"
     },
     {
-      "id": "SCH-remedy",
-      "kind": "schema",
-      "status": "pass",
-      "evidence": "valid Draft 2020-12 schema"
-    },
-    {
-      "id": "SCH-runtime-envelope",
+      "id": "SCH-authority",
       "kind": "schema",
       "status": "pass",
       "evidence": "valid Draft 2020-12 schema"

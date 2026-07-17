@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Machine Actionable Governance Profile
+title: "Machine Actionable Governance Profile"
 permalink: /profiles/machine-actionable-governance/
 ---
 **Version:** 0.9.0  

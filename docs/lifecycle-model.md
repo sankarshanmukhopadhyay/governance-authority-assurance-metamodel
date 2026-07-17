@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Governance Artifact Lifecycle Model
+title: "Governance Artifact Lifecycle Model"
 permalink: /docs/lifecycle-model/
 ---
 GAAM uses explicit state machines for authority, delegation, role assignment, agent identity, evidence, assurance, recognition, packages, decisions, receipts, incidents, appeals and remedies.

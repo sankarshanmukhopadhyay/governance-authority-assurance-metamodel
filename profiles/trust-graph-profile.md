@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Trust Graph Profile
+title: "Trust Graph Profile"
 permalink: /profiles/trust-graph/
 ---
 **Version:** 0.9.0  

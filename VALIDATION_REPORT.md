@@ -21,19 +21,19 @@ This report evidences repository publication, structural and included behavioura
 | `REQ-001-unique` | normative | PASS | 190 identifiers |
 | `REQ-002-index-exact` | normative | PASS | 190 indexed requirements |
 | `REQ-003-normative-language` | normative | PASS | 190 indexed statements classified |
-| `SCH-agent-governance-identity` | schema | PASS | valid Draft 2020-12 schema |
-| `SCH-appeal` | schema | PASS | valid Draft 2020-12 schema |
-| `SCH-assurance` | schema | PASS | valid Draft 2020-12 schema |
-| `SCH-authority` | schema | PASS | valid Draft 2020-12 schema |
+| `SCH-gaam-package` | schema | PASS | valid Draft 2020-12 schema |
+| `SCH-evidence` | schema | PASS | valid Draft 2020-12 schema |
 | `SCH-conformance-claim` | schema | PASS | valid Draft 2020-12 schema |
+| `SCH-remedy` | schema | PASS | valid Draft 2020-12 schema |
 | `SCH-decision-receipt` | schema | PASS | valid Draft 2020-12 schema |
 | `SCH-delegation` | schema | PASS | valid Draft 2020-12 schema |
-| `SCH-evidence` | schema | PASS | valid Draft 2020-12 schema |
-| `SCH-gaam-package` | schema | PASS | valid Draft 2020-12 schema |
 | `SCH-governance-event` | schema | PASS | valid Draft 2020-12 schema |
-| `SCH-profile-manifest` | schema | PASS | valid Draft 2020-12 schema |
-| `SCH-remedy` | schema | PASS | valid Draft 2020-12 schema |
+| `SCH-assurance` | schema | PASS | valid Draft 2020-12 schema |
+| `SCH-agent-governance-identity` | schema | PASS | valid Draft 2020-12 schema |
+| `SCH-appeal` | schema | PASS | valid Draft 2020-12 schema |
 | `SCH-runtime-envelope` | schema | PASS | valid Draft 2020-12 schema |
+| `SCH-profile-manifest` | schema | PASS | valid Draft 2020-12 schema |
+| `SCH-authority` | schema | PASS | valid Draft 2020-12 schema |
 | `SCH-IDS` | schema | PASS | 13 unique canonical identifiers |
 | `SCH-CATALOG` | schema | PASS | catalog covers all schemas |
 | `VOC-assurance-statuses` | vocabulary | PASS | 7 governed values |

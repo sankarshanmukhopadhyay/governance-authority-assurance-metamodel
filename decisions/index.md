@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Architectural Decisions
+title: "Architectural Decisions"
 permalink: /decisions/
 ---
 - [Standalone specification](0001-standalone-specification.md)

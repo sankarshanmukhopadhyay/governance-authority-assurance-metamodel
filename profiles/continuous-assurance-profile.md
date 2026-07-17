@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Continuous Assurance Profile
+title: "Continuous Assurance Profile"
 permalink: /profiles/continuous-assurance/
 ---
 **Version:** 0.9.0  

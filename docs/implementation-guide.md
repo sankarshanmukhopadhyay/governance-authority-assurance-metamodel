@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Implementation Guide
+title: "Implementation Guide"
 permalink: /docs/implementation/
 ---
 ## Implementation sequence

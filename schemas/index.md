@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Canonical Schemas
+title: "Canonical Schemas"
 permalink: /schemas/
 artifact_type: Schema catalogue
 normative_status: Normative for artifact structure

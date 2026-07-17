@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Conformance Profiles
+title: "Conformance Profiles"
 permalink: /profiles/
 ---
 GAAM profiles are versioned conformance packages with machine-readable requirement mappings, dependencies, evidence expectations and tests.

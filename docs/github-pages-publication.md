@@ -1,6 +1,6 @@
 ---
 layout: page
-title: GitHub Pages Publication Model
+title: "GitHub Pages Publication Model"
 permalink: /docs/github-pages-publication/
 artifact_type: Publication architecture
 normative_status: Informative

@@ -193,11 +193,11 @@ The definitions need not be textually identical. They must, however, avoid seman
 
 | TSMM concept | Adoption decision | Required GAAM refinement |
 |---|---|---|
-| Authority | **Adopt directly** | Define as a bounded and recognized ability to permit, perform, approve, prohibit, delegate or constrain an effect |
+| Authority | **Adopt directly** | Define as a bounded and recognised ability to permit, perform, approve, prohibit, delegate or constrain an effect |
 | Authority source | **Adopt directly** | Require the legal, contractual, technical, communal or policy basis from which authority originates |
 | Scope | **Adopt directly** | Make scope multidimensional: action, resource, purpose, jurisdiction, time, value, risk, subject and delegation depth |
 | Delegation | **Adopt with modification** | Add delegator, delegate, originating principal, acceptance, obligations, redelegation, termination and accountability consequences |
-| Direct authority | **Adopt directly** | Use as a recognized authority topology pattern |
+| Direct authority | **Adopt directly** | Use as a recognised authority topology pattern |
 | Delegated authority | **Adopt directly** | Require parent-chain verification, attenuation and revocation propagation |
 | Federated authority | **Adopt with modification** | Separate mutual recognition from transfer of authority; local relying policy remains decisive |
 | Conditional authority | **Adopt directly** | Conditions must be re-evaluated at the point of effect where material |
@@ -1010,7 +1010,7 @@ The declaration should determine which controlled documents and profiles become 
 The first draft should incorporate at least the following principles and convert them into detailed requirements where testable.
 
 1. **Effect orientation:** governance requirements should identify the effects they permit, constrain, deny or make reviewable.
-2. **Bounded authority:** authority is always scoped and derived from a recognized source.
+2. **Bounded authority:** authority is always scoped and derived from a recognised source.
 3. **Capability-authority separation:** technical ability does not establish permission or legitimacy.
 4. **Delegation continuity:** delegated authority remains traceable to its source and originating principal.
 5. **Monotonic attenuation:** downstream delegation cannot silently expand authority.

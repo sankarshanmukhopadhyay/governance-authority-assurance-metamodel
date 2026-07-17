@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Agentic Systems Profile
+title: "Agentic Systems Profile"
 permalink: /profiles/agentic-systems/
 ---
 **Version:** 0.9.0  

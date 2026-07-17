@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Releases
+title: "Releases"
 permalink: /releases/
 ---
 

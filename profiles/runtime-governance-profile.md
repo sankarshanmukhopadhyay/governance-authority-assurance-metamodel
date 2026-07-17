@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Runtime Governance Profile
+title: "Runtime Governance Profile"
 permalink: /profiles/runtime-governance/
 ---
 **Version:** 0.9.0  

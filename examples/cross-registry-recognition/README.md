@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Cross-Registry Recognition
+title: "Cross-Registry Recognition"
 permalink: /examples/cross-registry-recognition/
 ---
 This implementation pattern demonstrates a complete governance chain using GAAM v0.9.0. It includes valid and invalid fixtures, expected outcomes, a conformance claim and validation evidence.

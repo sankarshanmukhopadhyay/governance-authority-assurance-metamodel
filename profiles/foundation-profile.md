@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Foundation Profile
+title: "Foundation Profile"
 permalink: /profiles/foundation/
 ---
 **Version:** 0.9.0  

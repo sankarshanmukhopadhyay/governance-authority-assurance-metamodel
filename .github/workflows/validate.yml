@@ -45,6 +45,9 @@ jobs:
           --strict_front_matter
           --trace
 
+      - name: Publish versioned schema mirror
+        run: python scripts/publish_versioned_schemas.py
+
       - name: Validate rendered publication
         run: python scripts/validate_pages.py
 

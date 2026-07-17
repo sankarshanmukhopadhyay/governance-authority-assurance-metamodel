@@ -1,3 +1,8 @@
+.site-header { margin: 0 0 1.5rem; padding-bottom: .75rem; border-bottom: 1px solid #ddd; }
+.site-title { margin: 0; font-size: 1rem; font-weight: 700; }
+.site-title a { text-decoration: none; }
+.site-footer { margin-top: 2rem; padding-top: .75rem; border-top: 1px solid #ddd; color: #555; font-size: .85rem; }
+
 .status-banner {
   display: flex;
   gap: .75rem;

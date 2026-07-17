@@ -16,6 +16,8 @@ All notable changes will be documented here. The project uses Semantic Versionin
 - Declare `kramdown-parser-gfm` explicitly so strict Jekyll builds do not depend on transitive gem resolution.
 - Bring the homepage (`index.md`) and mappings landing page (`mappings/index.md`) under the shared `layout: page` template; both previously used `layout: default` and rendered without the site stylesheet, status banner, breadcrumbs and artifact metadata.
 - Replace the implicit, silent `gaam-page`-marker skip in `scripts/validate_pages.py` with an explicit, empty exemption list, so any future page using `layout: default` fails the structural-contract check instead of being skipped unnoticed.
+- Add a local `_layouts/default.html` override so the theme's own site-title banner no longer renders as a second `h1` on every page alongside GAAM's page-specific title; every page now has exactly one `h1`, matching the page-title contract the site already claimed.
+- Add `scripts/publish_versioned_schemas.py`, run in both CI workflows after the Jekyll build, to mirror `schemas/*.json` into the versioned path (`_site/<version>/schemas/`) declared by every schema's `$id`. Previously no build step published anything at that path, so every canonical schema identifier pointed at a URL that did not exist on the live site.
 
 ### Changed
 

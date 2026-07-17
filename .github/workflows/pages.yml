@@ -40,6 +40,9 @@ jobs:
           --strict_front_matter
           --trace
 
+      - name: Publish versioned schema mirror
+        run: python3 scripts/publish_versioned_schemas.py
+
       - uses: actions/upload-pages-artifact@v5
         with:
           path: _site

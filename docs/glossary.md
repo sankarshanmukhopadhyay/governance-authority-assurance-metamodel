@@ -5,8 +5,6 @@ permalink: /docs/glossary/
 artifact_type: "Terminology"
 normative_status: "Normative where referenced"
 ---
-# Glossary
-
 **Accountability** — An obligation to explain, justify, answer for, correct or remedy an action, decision or failure.
 
 **Actor** — A governed entity capable of requesting, approving, denying, performing, supervising, recording or being affected by an action.

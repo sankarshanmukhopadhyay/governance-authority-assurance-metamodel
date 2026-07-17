@@ -3,8 +3,6 @@ layout: page
 title: Trust Graph Profile
 permalink: /profiles/trust-graph/
 ---
-# Trust Graph Profile
-
 **Version:** 0.9.0  
 **Status:** Candidate Specification
 

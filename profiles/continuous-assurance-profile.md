@@ -3,8 +3,6 @@ layout: page
 title: Continuous Assurance Profile
 permalink: /profiles/continuous-assurance/
 ---
-# Continuous Assurance Profile
-
 **Version:** 0.9.0  
 **Status:** Candidate Specification
 

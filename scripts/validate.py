@@ -76,6 +76,19 @@ for p in sorted((ROOT/'tests/behavioural').glob('*.json')):
 tr=load(ROOT/'threat-model/threat-register.json'); test_ids={r['id'].replace('BEH-','') for r in results if r['kind']=='behavioural'}|{'claim-level-evidence','package-integrity'}
 unmapped=[t['id'] for t in tr['threats'] if not t.get('requirements') or not t.get('tests') or any(x not in test_ids for x in t['tests'])]
 add('THR-TRACE',not unmapped,f'{len(tr["threats"])} threats mapped to requirements and tests' if not unmapped else str(unmapped),'threat')
+# Publication source contract
+heading_errors=[]
+for p in ROOT.rglob('*.md'):
+ if '.git' in p.parts or 'packages' in p.parts: continue
+ text=p.read_text(errors='ignore')
+ match=re.match(r'^---\n(.*?)\n---\n(.*)$',text,re.S)
+ if not match: continue
+ layout_match=re.search(r'^layout:\s*(\S+)\s*$',match.group(1),re.M)
+ if layout_match and layout_match.group(1) != 'page': continue
+ body=match.group(2)
+ h1s=re.findall(r'^#\s+.+$',body,re.M)
+ if h1s: heading_errors.append(f'{p.relative_to(ROOT)} contains body H1: {h1s[0]}')
+add('DOC-PAGE-TITLE-CONTRACT',not heading_errors,'all page-layout documents delegate H1 to front matter' if not heading_errors else '; '.join(heading_errors[:10]),'documentation')
 # Local links
 bad=[]
 for p in ROOT.rglob('*.md'):
@@ -105,7 +118,7 @@ add('PKG-INTEGRITY',verified,f'{len(checks)} checksums verified','package')
 out=ROOT/'validation'; out.mkdir(exist_ok=True)
 summary={'gaamVersion':VERSION,'testSuiteVersion':VERSION,'status':'pass' if all(r['status']=='pass' for r in results) else 'fail','checks':len(results),'passed':sum(r['status']=='pass' for r in results),'failed':sum(r['status']=='fail' for r in results),'results':results}
 (out/'validation-report.json').write_text(json.dumps(summary,indent=2)+'\n')
-md=['---','layout: page','title: GAAM v0.9.0 Validation Report','permalink: /validation-report/','artifact_type: Validation evidence','normative_status: Repository generated','---','',f'# GAAM v{VERSION} Validation Report','',f'**Status:** {summary["status"].upper()}  ',f'**Checks:** {summary["checks"]}  ',f'**Passed:** {summary["passed"]}  ',f'**Failed:** {summary["failed"]}  ','','This report evidences repository publication, structural and included behavioural checks. It is not an independent L4 assessment.','','| ID | Kind | Status | Evidence |','|---|---|---|---|']
+md=['---','layout: page','title: GAAM v0.9.0 Validation Report','permalink: /validation-report/','artifact_type: Validation evidence','normative_status: Repository generated','---','',f'**Status:** {summary["status"].upper()}  ',f'**Checks:** {summary["checks"]}  ',f'**Passed:** {summary["passed"]}  ',f'**Failed:** {summary["failed"]}  ','','This report evidences repository publication, structural and included behavioural checks. It is not an independent L4 assessment.','','| ID | Kind | Status | Evidence |','|---|---|---|---|']
 md += [f'| `{r["id"]}` | {r["kind"]} | {r["status"].upper()} | {r["evidence"].replace("|","/")} |' for r in results]
 (ROOT/'VALIDATION_REPORT.md').write_text('\n'.join(md)+'\n')
 print(json.dumps({k:summary[k] for k in ['status','checks','passed','failed']},indent=2)); sys.exit(0 if summary['status']=='pass' else 1)

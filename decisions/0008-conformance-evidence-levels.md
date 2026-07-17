@@ -5,8 +5,6 @@ permalink: /decisions/0008-conformance-evidence-levels/
 artifact_type: "Architectural decision record"
 normative_status: "Decision record"
 ---
-# Conformance evidence levels
-
 **Status:** Accepted for v0.9.0  
 **Date:** 2026-07-16
 

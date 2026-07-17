@@ -3,8 +3,6 @@ layout: page
 title: Agentic Systems Profile
 permalink: /profiles/agentic-systems/
 ---
-# Agentic Systems Profile
-
 **Version:** 0.9.0  
 **Status:** Candidate Specification
 

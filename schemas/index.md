@@ -6,8 +6,6 @@ artifact_type: Schema catalogue
 normative_status: Normative for artifact structure
 ---
 
-# Canonical Schemas
-
 Each canonical identifier resolves to the published JSON artifact. Human-readable semantics remain governed by the normative specification.
 
 <div class="artifact-grid">

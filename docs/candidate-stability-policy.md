@@ -5,8 +5,6 @@ permalink: /governance/candidate-stability/
 artifact_type: "Governance policy"
 normative_status: "Normative process"
 ---
-# Candidate Stability and Change-Control Policy
-
 ## Status
 
 This policy governs GAAM v0.9.x. Candidate status freezes requirement identifiers, profile identifiers and canonical schema identifiers except where a documented defect makes preservation unsafe or materially misleading.

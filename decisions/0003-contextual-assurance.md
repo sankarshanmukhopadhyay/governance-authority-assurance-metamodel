@@ -5,8 +5,6 @@ permalink: /decisions/0003-contextual-assurance/
 artifact_type: "Architectural decision record"
 normative_status: "Decision record"
 ---
-# ADR 0003: 0003 Contextual Assurance
-
 **Status:** Accepted for v0.5.0
 
 ## Decision

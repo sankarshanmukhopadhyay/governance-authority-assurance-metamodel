@@ -3,8 +3,6 @@ layout: page
 title: Implementation Guide
 permalink: /docs/implementation/
 ---
-# Implementation Guide
-
 ## Implementation sequence
 
 1. Declare the governed context, effects and accountable parties.

@@ -5,8 +5,6 @@ permalink: /docs/architecture/
 artifact_type: "Architecture documentation"
 normative_status: "Informative"
 ---
-# Architecture Overview
-
 GAAM is an effect-centred governance metamodel. It models how authority, policy, evidence and assurance combine to determine whether a proposed effect may occur and who remains accountable for the result.
 
 ## Architectural layers

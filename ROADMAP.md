@@ -5,8 +5,6 @@ permalink: /governance/roadmap/
 artifact_type: "Roadmap"
 normative_status: "Informative"
 ---
-# GAAM Release Roadmap
-
 - **v0.1.0 — Initial Public Draft:** normative baseline.
 - **v0.5.0 — Feature Complete Draft:** planned architecture and profile surface.
 - **v0.9.0 — Candidate Specification:** stabilised normative surface, executable assurance, canonical artifacts and external review baseline.

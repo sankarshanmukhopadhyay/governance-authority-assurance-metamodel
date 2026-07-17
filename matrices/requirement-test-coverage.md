@@ -6,8 +6,6 @@ artifact_type: Traceability matrix
 normative_status: Assurance supporting
 ---
 
-# Requirement Test Coverage
-
 [Download CSV](requirement-test-coverage.csv)
 
 <div class="table-wrap">

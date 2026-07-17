@@ -5,8 +5,6 @@ permalink: /governance/
 artifact_type: "Repository governance"
 normative_status: "Normative process"
 ---
-# Project Governance
-
 ## Purpose
 
 This document governs development of the GAAM specification and supporting materials. It does not govern implementations or ecosystems that use GAAM.

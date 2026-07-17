@@ -3,8 +3,6 @@ layout: page
 title: Foundation Profile
 permalink: /profiles/foundation/
 ---
-# Foundation Profile
-
 **Version:** 0.9.0  
 **Status:** Candidate Specification
 

@@ -6,8 +6,6 @@ artifact_type: Traceability matrix
 normative_status: Assurance supporting
 ---
 
-# Threat Control Test Matrix
-
 [Download CSV](threat-control-test-matrix.csv)
 
 <div class="table-wrap">

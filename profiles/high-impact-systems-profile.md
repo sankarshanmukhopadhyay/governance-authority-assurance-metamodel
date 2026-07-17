@@ -3,8 +3,6 @@ layout: page
 title: High Impact Systems Profile
 permalink: /profiles/high-impact-systems/
 ---
-# High Impact Systems Profile
-
 **Version:** 0.9.0  
 **Status:** Candidate Specification
 

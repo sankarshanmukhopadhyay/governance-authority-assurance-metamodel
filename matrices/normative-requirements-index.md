@@ -6,8 +6,6 @@ artifact_type: Traceability matrix
 normative_status: Assurance supporting
 ---
 
-# Normative Requirements Index
-
 [Download CSV](normative-requirements-index.csv)
 
 <div class="table-wrap">

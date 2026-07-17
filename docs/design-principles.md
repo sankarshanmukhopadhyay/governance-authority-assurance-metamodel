@@ -5,8 +5,6 @@ permalink: /docs/design-principles/
 artifact_type: "Design guidance"
 normative_status: "Informative"
 ---
-# Design Principles
-
 1. **Authority before action.** Consequential effects require explicit authority evaluation.
 2. **Context before trust.** Reliance conclusions depend on purpose, policy, risk and time.
 3. **Evidence before assurance.** Assurance conclusions must identify supporting evidence and limitations.

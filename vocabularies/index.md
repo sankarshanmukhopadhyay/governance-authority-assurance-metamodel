@@ -6,8 +6,6 @@ artifact_type: Vocabulary catalogue
 normative_status: Normative where referenced
 ---
 
-# Controlled Vocabularies
-
 The following machine-readable vocabularies are published directly through GitHub Pages.
 
 <div class="artifact-grid">

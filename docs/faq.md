@@ -5,8 +5,6 @@ permalink: /docs/faq/
 artifact_type: "FAQ"
 normative_status: "Informative"
 ---
-# Frequently Asked Questions
-
 ## Is GAAM an identity specification?
 
 No. Identity may support attribution, but GAAM focuses on authority, governance, evidence, decisions and accountability.

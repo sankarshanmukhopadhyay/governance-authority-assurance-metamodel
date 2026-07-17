@@ -5,8 +5,6 @@ permalink: /decisions/0005-profile-composition/
 artifact_type: "Architectural decision record"
 normative_status: "Decision record"
 ---
-# ADR 0005: 0005 Profile Composition
-
 **Status:** Accepted for v0.5.0
 
 ## Decision

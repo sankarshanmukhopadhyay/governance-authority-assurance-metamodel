@@ -6,8 +6,6 @@ artifact_type: Specification index
 normative_status: Normative
 ---
 
-# Normative Specification
-
 The [Governance, Authority and Assurance Metamodel v0.9.0](governance-authority-assurance-metamodel.md) is the authoritative human-readable specification.
 
 ## Publication model

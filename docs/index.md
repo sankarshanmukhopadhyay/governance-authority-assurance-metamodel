@@ -4,8 +4,6 @@ title: Documentation
 permalink: /docs/
 ---
 
-# Documentation
-
 <div class="artifact-grid">
 <div class="artifact-card"><h3><a href="architecture/">Architecture</a></h3><p>System boundaries, components and governance flows.</p></div>
 <div class="artifact-card"><h3><a href="implementation/">Implementation guide</a></h3><p>Implementation sequence, artifact handling and integration guidance.</p></div>

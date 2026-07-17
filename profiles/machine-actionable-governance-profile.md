@@ -3,8 +3,6 @@ layout: page
 title: Machine Actionable Governance Profile
 permalink: /profiles/machine-actionable-governance/
 ---
-# Machine Actionable Governance Profile
-
 **Version:** 0.9.0  
 **Status:** Candidate Specification
 

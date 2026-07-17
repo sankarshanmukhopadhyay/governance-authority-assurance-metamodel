@@ -5,8 +5,6 @@ permalink: /docs/migration-v0.5.0-to-v0.9.0/
 artifact_type: "Migration guide"
 normative_status: "Informative"
 ---
-# Migration from GAAM v0.5.0 to v0.9.0
-
 ## Required changes
 
 1. Bind implementations and claims to `0.9.0` and the exact profile identifiers used.

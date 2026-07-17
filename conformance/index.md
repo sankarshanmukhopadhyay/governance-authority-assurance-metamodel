@@ -4,8 +4,6 @@ title: Conformance and Assurance
 permalink: /conformance/
 ---
 
-# Conformance and Assurance
-
 - [Conformance guide](../docs/conformance-guide.md)
 - [Conformance matrix](../matrices/conformance-matrix.md)
 - [Profiles](../profiles/index.md)

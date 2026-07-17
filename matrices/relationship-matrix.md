@@ -3,8 +3,6 @@ layout: page
 title: Canonical Relationship Matrix
 permalink: /matrices/relationships/
 ---
-# Canonical Relationship Matrix
-
 | Relationship | Source | Target | Source cardinality | Target cardinality | Propagation/transitivity | Required semantic boundary |
 |---|---|---|---:|---:|---|---|
 | holds | actor | authority | 0..* | 1 | no | Authority possession is contextual |

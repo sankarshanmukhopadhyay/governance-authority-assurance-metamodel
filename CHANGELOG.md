@@ -5,8 +5,6 @@ permalink: /releases/changelog/
 artifact_type: "Changelog"
 normative_status: "Release record"
 ---
-# Changelog
-
 ## [0.9.0] - 2026-07-16
 
 ### Added
@@ -22,6 +20,18 @@ normative_status: "Release record"
 
 
 ## Unreleased
+
+### Fixed
+
+- Remove duplicate body-level H1 headings from page-layout documents and establish front matter as the authoritative title source.
+- Refactor the GAAM page header and artifact metadata to prevent overlapping or floating titles across responsive layouts.
+- Declare `kramdown-parser-gfm` explicitly so strict Jekyll builds do not depend on transitive gem resolution.
+
+### Changed
+
+- Upgrade supported first-party GitHub Actions to Node 24-compatible major releases.
+- Add source and rendered-publication checks for the one-H1 rule, publication-region ordering and stylesheet availability.
+
 
 ### Documentation
 

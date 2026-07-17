@@ -5,8 +5,6 @@ permalink: /diagrams/
 artifact_type: "Architecture diagrams"
 normative_status: "Informative"
 ---
-# Architecture Diagrams
-
 These diagrams are informative and use Mermaid syntax.
 
 ## 1. Core decision chain

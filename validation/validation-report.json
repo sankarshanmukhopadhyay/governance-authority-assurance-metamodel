@@ -2,8 +2,8 @@
   "gaamVersion": "0.9.0",
   "testSuiteVersion": "0.9.0",
   "status": "pass",
-  "checks": 62,
-  "passed": 62,
+  "checks": 63,
+  "passed": 63,
   "failed": 0,
   "results": [
     {
@@ -347,6 +347,12 @@
       "kind": "threat",
       "status": "pass",
       "evidence": "7 threats mapped to requirements and tests"
+    },
+    {
+      "id": "DOC-PAGE-TITLE-CONTRACT",
+      "kind": "documentation",
+      "status": "pass",
+      "evidence": "all page-layout documents delegate H1 to front matter"
     },
     {
       "id": "DOC-LOCAL-LINKS",

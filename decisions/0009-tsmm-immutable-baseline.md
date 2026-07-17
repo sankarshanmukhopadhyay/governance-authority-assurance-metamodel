@@ -5,8 +5,6 @@ permalink: /decisions/0009-tsmm-immutable-baseline/
 artifact_type: "Architectural decision record"
 normative_status: "Decision record"
 ---
-# TSMM immutable baseline
-
 **Status:** Accepted for v0.9.0  
 **Date:** 2026-07-16
 

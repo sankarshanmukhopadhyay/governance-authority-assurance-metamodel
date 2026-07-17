@@ -3,8 +3,6 @@ layout: page
 title: Runtime Governance Profile
 permalink: /profiles/runtime-governance/
 ---
-# Runtime Governance Profile
-
 **Version:** 0.9.0  
 **Status:** Candidate Specification
 

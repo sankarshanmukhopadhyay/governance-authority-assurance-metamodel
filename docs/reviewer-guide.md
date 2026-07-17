@@ -5,8 +5,6 @@ permalink: /docs/reviewer-guide/
 artifact_type: "Review guide"
 normative_status: "Informative"
 ---
-# Reviewer Guide
-
 ## Review priorities
 
 Reviewers should focus first on architecture rather than wording:

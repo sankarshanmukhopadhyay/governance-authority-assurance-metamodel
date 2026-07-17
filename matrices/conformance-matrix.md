@@ -5,8 +5,6 @@ permalink: /matrices/conformance/
 artifact_type: "Conformance matrix"
 normative_status: "Normative supporting"
 ---
-# Conformance Matrix
-
 ## Profile applicability
 
 | Requirement domain | Foundation | Machine-Actionable | Delegated Authority | Agentic Systems | Trust Graph | Continuous Assurance | High-Impact |

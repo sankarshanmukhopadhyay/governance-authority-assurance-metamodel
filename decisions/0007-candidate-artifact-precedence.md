@@ -5,8 +5,6 @@ permalink: /decisions/0007-candidate-artifact-precedence/
 artifact_type: "Architectural decision record"
 normative_status: "Decision record"
 ---
-# Candidate artifact precedence
-
 **Status:** Accepted for v0.9.0  
 **Date:** 2026-07-16
 

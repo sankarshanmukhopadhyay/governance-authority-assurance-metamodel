@@ -6,11 +6,9 @@ artifact_type: Validation evidence
 normative_status: Repository generated
 ---
 
-# GAAM v0.9.0 Validation Report
-
 **Status:** PASS  
-**Checks:** 62  
-**Passed:** 62  
+**Checks:** 63  
+**Passed:** 63  
 **Failed:** 0  
 
 This report evidences repository publication, structural and included behavioural checks. It is not an independent L4 assessment.
@@ -74,6 +72,7 @@ This report evidences repository publication, structural and included behavioura
 | `BEH-high-impact-no-remedy-rejected` | behavioural | PASS | expected=False; actual=False |
 | `BEH-high-impact-remedy-valid` | behavioural | PASS | expected=True; actual=True |
 | `THR-TRACE` | threat | PASS | 7 threats mapped to requirements and tests |
+| `DOC-PAGE-TITLE-CONTRACT` | documentation | PASS | all page-layout documents delegate H1 to front matter |
 | `DOC-LOCAL-LINKS` | documentation | PASS | all local links resolve |
 | `DOC-TSMM-CANONICAL` | provenance | PASS | canonical TSMM repository link present |
 | `CI-WORKFLOW` | automation | PASS | validation workflow present |

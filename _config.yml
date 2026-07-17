@@ -11,6 +11,11 @@ search_enabled: true
 heading_anchors: true
 back_to_top: true
 back_to_top_text: "Back to top"
+# Mermaid diagram rendering for ```mermaid fenced code blocks (docs/diagrams).
+# Disabled by default when consuming the theme as a gem; version pinned to
+# match the publication-grade version-pinning requirement for this repo.
+mermaid:
+  version: "11.16.0"
 markdown: kramdown
 kramdown:
   input: GFM

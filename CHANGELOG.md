@@ -13,6 +13,8 @@ All notable changes will be documented here. The project uses Semantic Versionin
 
 ### Fixed
 
+- Enable Just the Docs' Mermaid support (`mermaid: version: "11.16.0"` in `_config.yml`). Disabled by default when the theme is consumed as a gem, so the ```` ```mermaid ```` fenced diagrams in `diagrams/architecture-diagrams.md` were rendering as plain code blocks instead of diagrams.
+
 - Add empty `_includes/head_custom.html`, `header_custom.html`, `footer_custom.html` and `nav_footer_custom.html` stubs. Just the Docs' own bundled templates include these unconditionally and the gem does not ship default versions of them, so the Jekyll build failed with "could not locate the included file" until the site provided them.
 
 - Remove duplicate body-level H1 headings from page-layout documents and establish front matter as the authoritative title source.

@@ -3,6 +3,8 @@ title: "Runtime Governance Profile"
 permalink: /profiles/runtime-governance/
 parent: "Conformance Profiles"
 ---
+# Runtime Governance Profile
+
 **Version:** 0.9.0  
 **Status:** Candidate Specification
 

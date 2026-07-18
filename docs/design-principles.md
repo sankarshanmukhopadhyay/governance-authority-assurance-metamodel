@@ -5,6 +5,8 @@ parent: "Documentation"
 artifact_type: "Design guidance"
 normative_status: "Informative"
 ---
+# Design Principles
+
 {% include gaam-meta.html %}
 
 1. **Authority before action.** Consequential effects require explicit authority evaluation.

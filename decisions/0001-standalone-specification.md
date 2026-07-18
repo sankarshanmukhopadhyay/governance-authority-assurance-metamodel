@@ -1,10 +1,12 @@
 ---
-title: "ADR 0001: 0001 Standalone Specification"
+title: "ADR 0001: Standalone Specification"
 permalink: /decisions/0001-standalone-specification/
 parent: "Architectural Decisions"
 artifact_type: "Architectural decision record"
 normative_status: "Decision record"
 ---
+# ADR 0001: Standalone Specification
+
 {% include gaam-meta.html %}
 
 **Status:** Accepted for v0.5.0

@@ -5,6 +5,8 @@ parent: "Normative Specification"
 artifact_type: "Normative specification"
 normative_status: "Normative"
 ---
+# Governance, Authority and Assurance Metamodel Specification
+
 {% include gaam-meta.html %}
 
 **Version:** 0.9.0  

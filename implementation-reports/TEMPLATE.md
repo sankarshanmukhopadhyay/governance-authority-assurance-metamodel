@@ -4,6 +4,8 @@ permalink: /implementation-reports/template/
 parent: "Documentation"
 nav_exclude: true
 ---
+# GAAM Implementation Report
+
 ## Implementation identity
 
 - Implementer:

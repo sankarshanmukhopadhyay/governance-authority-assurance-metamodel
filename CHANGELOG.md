@@ -5,6 +5,8 @@ parent: "Project Governance"
 artifact_type: "Changelog"
 normative_status: "Release record"
 ---
+# Changelog
+
 {% include gaam-meta.html %}
 
 All notable changes will be documented here. The project uses Semantic Versioning adapted for an evolving specification.

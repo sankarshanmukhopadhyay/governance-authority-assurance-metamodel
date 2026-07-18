@@ -5,6 +5,8 @@ parent: "Documentation"
 artifact_type: "FAQ"
 normative_status: "Informative"
 ---
+# Frequently Asked Questions
+
 {% include gaam-meta.html %}
 
 ## Is GAAM an identity specification?

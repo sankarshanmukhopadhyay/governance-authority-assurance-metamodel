@@ -2,8 +2,8 @@
   "gaamVersion": "0.9.0",
   "testSuiteVersion": "0.9.0",
   "status": "pass",
-  "checks": 63,
-  "passed": 63,
+  "checks": 64,
+  "passed": 64,
   "failed": 0,
   "results": [
     {
@@ -43,25 +43,31 @@
       "evidence": "190 indexed statements classified"
     },
     {
-      "id": "SCH-gaam-package",
+      "id": "SCH-agent-governance-identity",
       "kind": "schema",
       "status": "pass",
       "evidence": "valid Draft 2020-12 schema"
     },
     {
-      "id": "SCH-evidence",
+      "id": "SCH-appeal",
+      "kind": "schema",
+      "status": "pass",
+      "evidence": "valid Draft 2020-12 schema"
+    },
+    {
+      "id": "SCH-assurance",
+      "kind": "schema",
+      "status": "pass",
+      "evidence": "valid Draft 2020-12 schema"
+    },
+    {
+      "id": "SCH-authority",
       "kind": "schema",
       "status": "pass",
       "evidence": "valid Draft 2020-12 schema"
     },
     {
       "id": "SCH-conformance-claim",
-      "kind": "schema",
-      "status": "pass",
-      "evidence": "valid Draft 2020-12 schema"
-    },
-    {
-      "id": "SCH-remedy",
       "kind": "schema",
       "status": "pass",
       "evidence": "valid Draft 2020-12 schema"
@@ -79,31 +85,19 @@
       "evidence": "valid Draft 2020-12 schema"
     },
     {
+      "id": "SCH-evidence",
+      "kind": "schema",
+      "status": "pass",
+      "evidence": "valid Draft 2020-12 schema"
+    },
+    {
+      "id": "SCH-gaam-package",
+      "kind": "schema",
+      "status": "pass",
+      "evidence": "valid Draft 2020-12 schema"
+    },
+    {
       "id": "SCH-governance-event",
-      "kind": "schema",
-      "status": "pass",
-      "evidence": "valid Draft 2020-12 schema"
-    },
-    {
-      "id": "SCH-assurance",
-      "kind": "schema",
-      "status": "pass",
-      "evidence": "valid Draft 2020-12 schema"
-    },
-    {
-      "id": "SCH-agent-governance-identity",
-      "kind": "schema",
-      "status": "pass",
-      "evidence": "valid Draft 2020-12 schema"
-    },
-    {
-      "id": "SCH-appeal",
-      "kind": "schema",
-      "status": "pass",
-      "evidence": "valid Draft 2020-12 schema"
-    },
-    {
-      "id": "SCH-runtime-envelope",
       "kind": "schema",
       "status": "pass",
       "evidence": "valid Draft 2020-12 schema"
@@ -115,7 +109,13 @@
       "evidence": "valid Draft 2020-12 schema"
     },
     {
-      "id": "SCH-authority",
+      "id": "SCH-remedy",
+      "kind": "schema",
+      "status": "pass",
+      "evidence": "valid Draft 2020-12 schema"
+    },
+    {
+      "id": "SCH-runtime-envelope",
       "kind": "schema",
       "status": "pass",
       "evidence": "valid Draft 2020-12 schema"
@@ -352,7 +352,13 @@
       "id": "DOC-PAGE-TITLE-CONTRACT",
       "kind": "documentation",
       "status": "pass",
-      "evidence": "all page-layout documents delegate H1 to front matter"
+      "evidence": "all rendered Markdown pages declare exactly one H1 matching front matter"
+    },
+    {
+      "id": "DOC-CTWG-GLOSSARY-ALIGNMENT",
+      "kind": "documentation",
+      "status": "pass",
+      "evidence": "26 glossary terms covered by CTWG alignment register"
     },
     {
       "id": "DOC-LOCAL-LINKS",

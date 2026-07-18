@@ -6,6 +6,8 @@ has_children: true
 artifact_type: "Repository governance"
 normative_status: "Normative process"
 ---
+# Project Governance
+
 {% include gaam-meta.html %}
 
 ## Purpose

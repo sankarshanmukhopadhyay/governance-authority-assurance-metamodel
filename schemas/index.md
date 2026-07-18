@@ -6,6 +6,8 @@ has_children: true
 artifact_type: Schema catalogue
 normative_status: Normative for artifact structure
 ---
+# Canonical Schemas
+
 {% include gaam-meta.html %}
 
 

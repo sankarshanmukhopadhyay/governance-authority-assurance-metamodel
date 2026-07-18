@@ -5,6 +5,8 @@ parent: "Documentation"
 artifact_type: "Architecture diagrams"
 normative_status: "Informative"
 ---
+# Architecture Diagrams
+
 {% include gaam-meta.html %}
 
 These diagrams are informative and use Mermaid syntax.

@@ -5,6 +5,8 @@ parent: "Architectural Decisions"
 artifact_type: "Architectural decision record"
 normative_status: "Decision record"
 ---
+# TSMM immutable baseline
+
 {% include gaam-meta.html %}
 
 **Status:** Accepted for v0.9.0  

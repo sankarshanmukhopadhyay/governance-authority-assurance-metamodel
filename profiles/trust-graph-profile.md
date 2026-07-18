@@ -3,6 +3,8 @@ title: "Trust Graph Profile"
 permalink: /profiles/trust-graph/
 parent: "Conformance Profiles"
 ---
+# Trust Graph Profile
+
 **Version:** 0.9.0  
 **Status:** Candidate Specification
 

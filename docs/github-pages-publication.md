@@ -5,6 +5,8 @@ parent: "Documentation"
 artifact_type: Publication architecture
 normative_status: Informative
 ---
+# GitHub Pages Publication Model
+
 {% include gaam-meta.html %}
 
 The GitHub Pages site is a versioned publication surface for both human-readable and machine-readable GAAM artifacts.
@@ -58,3 +60,15 @@ Section index pages remain the authoritative navigation surfaces for their respe
 ## Authority boundary
 
 Rendering does not alter normative meaning. Where presentation and source differ, the repository source and the artifact-precedence rules govern.
+
+## Publication integrity gates
+
+The Pages build is accepted only when:
+
+- every rendered Markdown page contains exactly one H1 matching its front-matter title;
+- required landing pages, stylesheets and the Just the Docs search index are present;
+- repository JSON artifacts are copied without semantic transformation;
+- every canonical schema `$id` resolves under the versioned `/v0.9.0/schemas/` path; and
+- internal documentation links resolve from repository source.
+
+The validation workflow builds the site, publishes the versioned schema mirror and then runs `scripts/validate_pages.py`. The deployment workflow performs the same build and mirror sequence before uploading the Pages artifact.

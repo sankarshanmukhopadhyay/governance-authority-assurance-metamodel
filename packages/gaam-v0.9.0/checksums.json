@@ -112,7 +112,7 @@
     },
     {
       "path": "specification/governance-authority-assurance-metamodel.md",
-      "sha256": "ccc753e2688aecc42a3e7b61d540dd067b0f9fe80380f1e978bde6dd4a6b48bd"
+      "sha256": "6af9ed2a222780e61fcce35ecd25f329485195a3c3ed7c9cee539b540c0c6011"
     },
     {
       "path": "tests/behavioural/authority-active-valid.json",

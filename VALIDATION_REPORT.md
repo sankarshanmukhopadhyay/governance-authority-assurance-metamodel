@@ -5,11 +5,13 @@ nav_exclude: true
 artifact_type: Validation evidence
 normative_status: Repository generated
 ---
+# GAAM v0.9.0 Validation Report
+
 {% include gaam-meta.html %}
 
 **Status:** PASS  
-**Checks:** 63  
-**Passed:** 63  
+**Checks:** 64  
+**Passed:** 64  
 **Failed:** 0  
 
 This report evidences repository publication, structural and included behavioural checks. It is not an independent L4 assessment.
@@ -22,19 +24,19 @@ This report evidences repository publication, structural and included behavioura
 | `REQ-001-unique` | normative | PASS | 190 identifiers |
 | `REQ-002-index-exact` | normative | PASS | 190 indexed requirements |
 | `REQ-003-normative-language` | normative | PASS | 190 indexed statements classified |
-| `SCH-gaam-package` | schema | PASS | valid Draft 2020-12 schema |
-| `SCH-evidence` | schema | PASS | valid Draft 2020-12 schema |
-| `SCH-conformance-claim` | schema | PASS | valid Draft 2020-12 schema |
-| `SCH-remedy` | schema | PASS | valid Draft 2020-12 schema |
-| `SCH-decision-receipt` | schema | PASS | valid Draft 2020-12 schema |
-| `SCH-delegation` | schema | PASS | valid Draft 2020-12 schema |
-| `SCH-governance-event` | schema | PASS | valid Draft 2020-12 schema |
-| `SCH-assurance` | schema | PASS | valid Draft 2020-12 schema |
 | `SCH-agent-governance-identity` | schema | PASS | valid Draft 2020-12 schema |
 | `SCH-appeal` | schema | PASS | valid Draft 2020-12 schema |
-| `SCH-runtime-envelope` | schema | PASS | valid Draft 2020-12 schema |
-| `SCH-profile-manifest` | schema | PASS | valid Draft 2020-12 schema |
+| `SCH-assurance` | schema | PASS | valid Draft 2020-12 schema |
 | `SCH-authority` | schema | PASS | valid Draft 2020-12 schema |
+| `SCH-conformance-claim` | schema | PASS | valid Draft 2020-12 schema |
+| `SCH-decision-receipt` | schema | PASS | valid Draft 2020-12 schema |
+| `SCH-delegation` | schema | PASS | valid Draft 2020-12 schema |
+| `SCH-evidence` | schema | PASS | valid Draft 2020-12 schema |
+| `SCH-gaam-package` | schema | PASS | valid Draft 2020-12 schema |
+| `SCH-governance-event` | schema | PASS | valid Draft 2020-12 schema |
+| `SCH-profile-manifest` | schema | PASS | valid Draft 2020-12 schema |
+| `SCH-remedy` | schema | PASS | valid Draft 2020-12 schema |
+| `SCH-runtime-envelope` | schema | PASS | valid Draft 2020-12 schema |
 | `SCH-IDS` | schema | PASS | 13 unique canonical identifiers |
 | `SCH-CATALOG` | schema | PASS | catalog covers all schemas |
 | `VOC-assurance-statuses` | vocabulary | PASS | 7 governed values |
@@ -73,7 +75,8 @@ This report evidences repository publication, structural and included behavioura
 | `BEH-high-impact-no-remedy-rejected` | behavioural | PASS | expected=False; actual=False |
 | `BEH-high-impact-remedy-valid` | behavioural | PASS | expected=True; actual=True |
 | `THR-TRACE` | threat | PASS | 7 threats mapped to requirements and tests |
-| `DOC-PAGE-TITLE-CONTRACT` | documentation | PASS | all page-layout documents delegate H1 to front matter |
+| `DOC-PAGE-TITLE-CONTRACT` | documentation | PASS | all rendered Markdown pages declare exactly one H1 matching front matter |
+| `DOC-CTWG-GLOSSARY-ALIGNMENT` | documentation | PASS | 26 glossary terms covered by CTWG alignment register |
 | `DOC-LOCAL-LINKS` | documentation | PASS | all local links resolve |
 | `DOC-TSMM-CANONICAL` | provenance | PASS | canonical TSMM repository link present |
 | `CI-WORKFLOW` | automation | PASS | validation workflow present |

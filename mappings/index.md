@@ -6,6 +6,8 @@ has_children: true
 artifact_type: "Mappings index"
 normative_status: "Informative"
 ---
+# Mappings and Source Crosswalks
+
 {% include gaam-meta.html %}
 
 
@@ -19,3 +21,7 @@ GAAM mapping documents are informative artifacts. They explain source provenance
 ## Interpretation rule
 
 A mapping or source citation does not make an external specification normative for GAAM. Only requirements and artifacts designated normative within the GAAM repository establish GAAM conformance obligations.
+
+## Terminology alignment
+
+- [CTWG v1.4.1 glossary alignment](ctwg-v1.4.1-glossary-alignment.md)

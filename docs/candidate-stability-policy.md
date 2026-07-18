@@ -5,6 +5,8 @@ parent: "Documentation"
 artifact_type: "Governance policy"
 normative_status: "Normative process"
 ---
+# Candidate Stability and Change-Control Policy
+
 {% include gaam-meta.html %}
 
 ## Status

@@ -5,6 +5,8 @@ parent: "Project Governance"
 artifact_type: "Roadmap"
 normative_status: "Informative"
 ---
+# GAAM Release Roadmap
+
 {% include gaam-meta.html %}
 
 - **v0.1.0 — Initial Public Draft:** normative baseline.

@@ -5,6 +5,8 @@ parent: "Documentation"
 artifact_type: "Migration guide"
 normative_status: "Informative"
 ---
+# Migration from GAAM v0.5.0 to v0.9.0
+
 {% include gaam-meta.html %}
 
 ## Required changes

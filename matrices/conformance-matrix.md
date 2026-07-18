@@ -5,6 +5,8 @@ parent: "Matrices"
 artifact_type: "Conformance matrix"
 normative_status: "Normative supporting"
 ---
+# Conformance Matrix
+
 {% include gaam-meta.html %}
 
 ## Profile applicability

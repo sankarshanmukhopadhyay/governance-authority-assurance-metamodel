@@ -3,6 +3,8 @@ title: "High Impact Systems Profile"
 permalink: /profiles/high-impact-systems/
 parent: "Conformance Profiles"
 ---
+# High Impact Systems Profile
+
 **Version:** 0.9.0  
 **Status:** Candidate Specification
 

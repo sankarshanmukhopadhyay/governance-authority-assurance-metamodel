@@ -3,6 +3,8 @@ title: "Agentic Systems Profile"
 permalink: /profiles/agentic-systems/
 parent: "Conformance Profiles"
 ---
+# Agentic Systems Profile
+
 **Version:** 0.9.0  
 **Status:** Candidate Specification
 

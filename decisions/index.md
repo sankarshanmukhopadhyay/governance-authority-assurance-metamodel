@@ -4,6 +4,8 @@ permalink: /decisions/
 nav_order: 10
 has_children: true
 ---
+# Architectural Decisions
+
 - [Standalone specification](0001-standalone-specification.md)
 - [Structural normativity](0002-structural-normativity.md)
 - [Contextual assurance](0003-contextual-assurance.md)

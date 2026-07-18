@@ -5,6 +5,8 @@ parent: "Project Governance"
 artifact_type: "Security policy"
 normative_status: "Normative process"
 ---
+# Security Policy
+
 {% include gaam-meta.html %}
 
 ## Scope

@@ -3,6 +3,8 @@ title: "Foundation Profile"
 permalink: /profiles/foundation/
 parent: "Conformance Profiles"
 ---
+# Foundation Profile
+
 **Version:** 0.9.0  
 **Status:** Candidate Specification
 

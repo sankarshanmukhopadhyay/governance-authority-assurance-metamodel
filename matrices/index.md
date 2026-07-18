@@ -4,6 +4,8 @@ permalink: /matrices/
 nav_order: 7
 has_children: true
 ---
+# Matrices
+
 GAAM traceability matrices link normative requirements, threats, controls, tests and cross-artifact relationships. Each matrix is available as a human-readable table and as a machine-readable CSV.
 
 - [Normative Requirements Index](normative-requirements-index.md)

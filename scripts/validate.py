@@ -84,11 +84,29 @@ for p in ROOT.rglob('*.md'):
  match=re.match(r'^---\n(.*?)\n---\n(.*)$',text,re.S)
  if not match: continue
  layout_match=re.search(r'^layout:\s*(\S+)\s*$',match.group(1),re.M)
- if layout_match and layout_match.group(1) != 'page': continue
+ if layout_match and layout_match.group(1) not in ('page', 'default'): continue
+ title_match=re.search(r'^title:\s*["\']?(.*?)["\']?\s*$',match.group(1),re.M)
  body=match.group(2)
- h1s=re.findall(r'^#\s+.+$',body,re.M)
- if h1s: heading_errors.append(f'{p.relative_to(ROOT)} contains body H1: {h1s[0]}')
-add('DOC-PAGE-TITLE-CONTRACT',not heading_errors,'all page-layout documents delegate H1 to front matter' if not heading_errors else '; '.join(heading_errors[:10]),'documentation')
+ h1s=re.findall(r'^#\s+(.+)$',body,re.M)
+ if len(h1s) != 1:
+  heading_errors.append(f'{p.relative_to(ROOT)} contains {len(h1s)} body H1 headings; expected exactly one')
+ elif title_match and h1s[0].strip() != title_match.group(1).strip():
+  heading_errors.append(f'{p.relative_to(ROOT)} H1 does not match front-matter title')
+add('DOC-PAGE-TITLE-CONTRACT',not heading_errors,'all rendered Markdown pages declare exactly one H1 matching front matter' if not heading_errors else '; '.join(heading_errors[:10]),'documentation')
+# CTWG glossary alignment contract
+glossary_text=(ROOT/'docs/glossary.md').read_text()
+glossary_terms=re.findall(r'^\*\*(.+?)\*\*\s+—\s+.+$',glossary_text,re.M)
+alignment=load(ROOT/'mappings/ctwg-v1.4.1-glossary-alignment.json')
+aligned_terms=[x.get('gaamTerm') for x in alignment.get('terms',[])]
+valid_statuses={'adopted','extended','local'}
+alignment_errors=[]
+if len(aligned_terms)!=len(set(aligned_terms)): alignment_errors.append('duplicate GAAM terms in alignment register')
+missing=sorted(set(glossary_terms)-set(aligned_terms)); extra=sorted(set(aligned_terms)-set(glossary_terms))
+if missing: alignment_errors.append('missing terms: '+', '.join(missing))
+if extra: alignment_errors.append('unknown terms: '+', '.join(extra))
+invalid=[x.get('gaamTerm') for x in alignment.get('terms',[]) if x.get('status') not in valid_statuses]
+if invalid: alignment_errors.append('invalid statuses: '+', '.join(invalid))
+add('DOC-CTWG-GLOSSARY-ALIGNMENT',not alignment_errors,f'{len(glossary_terms)} glossary terms covered by CTWG alignment register' if not alignment_errors else '; '.join(alignment_errors),'documentation')
 # Local links
 bad=[]
 for p in ROOT.rglob('*.md'):
@@ -118,7 +136,7 @@ add('PKG-INTEGRITY',verified,f'{len(checks)} checksums verified','package')
 out=ROOT/'validation'; out.mkdir(exist_ok=True)
 summary={'gaamVersion':VERSION,'testSuiteVersion':VERSION,'status':'pass' if all(r['status']=='pass' for r in results) else 'fail','checks':len(results),'passed':sum(r['status']=='pass' for r in results),'failed':sum(r['status']=='fail' for r in results),'results':results}
 (out/'validation-report.json').write_text(json.dumps(summary,indent=2)+'\n')
-md=['---','title: GAAM v0.9.0 Validation Report','permalink: /validation-report/','nav_exclude: true','artifact_type: Validation evidence','normative_status: Repository generated','---','{% include gaam-meta.html %}','',f'**Status:** {summary["status"].upper()}  ',f'**Checks:** {summary["checks"]}  ',f'**Passed:** {summary["passed"]}  ',f'**Failed:** {summary["failed"]}  ','','This report evidences repository publication, structural and included behavioural checks. It is not an independent L4 assessment.','','| ID | Kind | Status | Evidence |','|---|---|---|---|']
+md=['---','title: GAAM v0.9.0 Validation Report','permalink: /validation-report/','nav_exclude: true','artifact_type: Validation evidence','normative_status: Repository generated','---','# GAAM v0.9.0 Validation Report','','{% include gaam-meta.html %}','',f'**Status:** {summary["status"].upper()}  ',f'**Checks:** {summary["checks"]}  ',f'**Passed:** {summary["passed"]}  ',f'**Failed:** {summary["failed"]}  ','','This report evidences repository publication, structural and included behavioural checks. It is not an independent L4 assessment.','','| ID | Kind | Status | Evidence |','|---|---|---|---|']
 md += [f'| `{r["id"]}` | {r["kind"]} | {r["status"].upper()} | {r["evidence"].replace("|","/")} |' for r in results]
 (ROOT/'VALIDATION_REPORT.md').write_text('\n'.join(md)+'\n')
 print(json.dumps({k:summary[k] for k in ['status','checks','passed','failed']},indent=2)); sys.exit(0 if summary['status']=='pass' else 1)

@@ -3,6 +3,8 @@ title: "Code of Conduct"
 permalink: /governance/code-of-conduct/
 parent: "Project Governance"
 ---
+# Code of Conduct
+
 ## Our commitment
 
 Contributors and maintainers commit to a respectful, inclusive and technically rigorous environment. Participation must remain free from harassment, personal attacks, discriminatory conduct and bad-faith disruption.

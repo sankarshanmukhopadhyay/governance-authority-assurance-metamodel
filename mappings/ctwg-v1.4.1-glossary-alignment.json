@@ -1,0 +1,165 @@
+{
+  "source": {
+    "name": "CTWG Main Glossary",
+    "version": "1.4.1"
+  },
+  "normativeAuthority": "GAAM glossary definitions remain controlling for GAAM conformance",
+  "terms": [
+    {
+      "gaamTerm": "Accountability",
+      "status": "local",
+      "ctwgTerm": null,
+      "note": "GAAM accountability includes explanation, correction and remedy."
+    },
+    {
+      "gaamTerm": "Actor",
+      "status": "extended",
+      "ctwgTerm": "actor",
+      "note": "CTWG baseline retained; GAAM permits organizational participation through authorized actors."
+    },
+    {
+      "gaamTerm": "Agent",
+      "status": "extended",
+      "ctwgTerm": "agent",
+      "note": "CTWG principal-agent relationship retained; GAAM adds policy- and evidence-driven software behavior."
+    },
+    {
+      "gaamTerm": "Assertion",
+      "status": "local",
+      "ctwgTerm": null,
+      "note": "GAAM term for attributable claims."
+    },
+    {
+      "gaamTerm": "Assurance",
+      "status": "local",
+      "ctwgTerm": "assurance-level",
+      "note": "GAAM defines the assurance process/conclusion; CTWG separately defines assurance level."
+    },
+    {
+      "gaamTerm": "Authority",
+      "status": "extended",
+      "ctwgTerm": "authority",
+      "note": "CTWG recognition concept retained; GAAM emphasizes bounded powers and effects."
+    },
+    {
+      "gaamTerm": "Capability",
+      "status": "adopted",
+      "ctwgTerm": "capability",
+      "note": "Definition aligned."
+    },
+    {
+      "gaamTerm": "Constraint",
+      "status": "local",
+      "ctwgTerm": null,
+      "note": "GAAM execution-bound limitation."
+    },
+    {
+      "gaamTerm": "Decision receipt",
+      "status": "extended",
+      "ctwgTerm": "decision-receipt",
+      "note": "CTWG structured receipt adopted; GAAM identifies it as a governance record."
+    },
+    {
+      "gaamTerm": "Delegation",
+      "status": "adopted",
+      "ctwgTerm": "delegation",
+      "note": "Definition aligned; GAAM uses delegate as the role label while CTWG uses delegatee."
+    },
+    {
+      "gaamTerm": "Effect",
+      "status": "local",
+      "ctwgTerm": null,
+      "note": "GAAM-specific material-change abstraction."
+    },
+    {
+      "gaamTerm": "Evidence",
+      "status": "extended",
+      "ctwgTerm": "evidence-artifact; evidence-bundle",
+      "note": "GAAM uses an umbrella definition across evidence forms."
+    },
+    {
+      "gaamTerm": "Governance context",
+      "status": "local",
+      "ctwgTerm": "governance",
+      "note": "GAAM-specific decision-context abstraction."
+    },
+    {
+      "gaamTerm": "Governance event",
+      "status": "local",
+      "ctwgTerm": "governance",
+      "note": "GAAM-specific attributable state-change abstraction."
+    },
+    {
+      "gaamTerm": "Obligation",
+      "status": "local",
+      "ctwgTerm": null,
+      "note": "GAAM decision-output requirement."
+    },
+    {
+      "gaamTerm": "Permission",
+      "status": "extended",
+      "ctwgTerm": "permission",
+      "note": "CTWG authorization baseline retained; GAAM adds effect and scope."
+    },
+    {
+      "gaamTerm": "Policy",
+      "status": "adopted",
+      "ctwgTerm": "policy",
+      "note": "Definition aligned."
+    },
+    {
+      "gaamTerm": "Principal",
+      "status": "adopted",
+      "ctwgTerm": "principal",
+      "note": "Definition aligned."
+    },
+    {
+      "gaamTerm": "Prohibition",
+      "status": "local",
+      "ctwgTerm": null,
+      "note": "GAAM normative decision constraint."
+    },
+    {
+      "gaamTerm": "Recognition",
+      "status": "local",
+      "ctwgTerm": null,
+      "note": "GAAM governed acceptance decision."
+    },
+    {
+      "gaamTerm": "Registry",
+      "status": "extended",
+      "ctwgTerm": "registry",
+      "note": "CTWG authoritative-source baseline retained; GAAM adds governance, assertions, status and relationships."
+    },
+    {
+      "gaamTerm": "Role",
+      "status": "extended",
+      "ctwgTerm": "role",
+      "note": "CTWG contextual role baseline retained and condensed."
+    },
+    {
+      "gaamTerm": "Rule",
+      "status": "extended",
+      "ctwgTerm": "rule",
+      "note": "CTWG baseline retained; GAAM requires machine-testability where the term is used normatively."
+    },
+    {
+      "gaamTerm": "Trust decision",
+      "status": "extended",
+      "ctwgTerm": "trust-decision",
+      "note": "CTWG risk-based interaction decision retained; GAAM adds effect constraints."
+    },
+    {
+      "gaamTerm": "Trust graph",
+      "status": "extended",
+      "ctwgTerm": "trust-graph",
+      "note": "CTWG relationship graph retained; GAAM adds typed attribution and bounded transitive reasoning."
+    },
+    {
+      "gaamTerm": "Verification",
+      "status": "extended",
+      "ctwgTerm": "verification",
+      "note": "CTWG authenticity baseline retained; GAAM also supports criteria and condition checks."
+    }
+  ]
+}

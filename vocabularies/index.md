@@ -6,6 +6,8 @@ has_children: true
 artifact_type: Vocabulary catalogue
 normative_status: Normative where referenced
 ---
+# Controlled Vocabularies
+
 {% include gaam-meta.html %}
 
 

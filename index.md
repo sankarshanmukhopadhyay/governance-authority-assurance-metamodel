@@ -5,6 +5,8 @@ nav_order: 1
 artifact_type: "Publication landing page"
 normative_status: "Candidate Specification"
 ---
+# Governance, Authority and Assurance Metamodel
+
 {% include gaam-meta.html %}
 
 
@@ -22,6 +24,7 @@ GAAM defines protocol-neutral, executable governance semantics for authority, de
 
 - [Read the specification](specification/)
 - [Review the architecture and design guidance](docs/)
+- [Assemble the governance control document schedule](docs/control-document-schedule.md)
 - [Select an implementation profile](profiles/)
 - [Inspect the schemas](schemas/)
 - [Browse the controlled vocabularies](vocabularies/)

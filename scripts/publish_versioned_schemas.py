@@ -26,12 +26,17 @@ def main() -> int:
     release = json.loads((ROOT / "release.json").read_text())
     version = release["version"]
     schema_base = release["schemaBase"]
+    canonical_prefix = "/governance-authority-assurance-metamodel/"
+    if canonical_prefix not in schema_base:
+        print(f"error: schemaBase does not contain expected repository path: {schema_base}", file=sys.stderr)
+        return 1
+    version_path = schema_base.split(canonical_prefix, 1)[1].strip("/").split("/schemas", 1)[0]
 
     if not SITE.is_dir():
         print(f"error: {SITE} does not exist; run jekyll build first", file=sys.stderr)
         return 1
 
-    dest = SITE / version / "schemas"
+    dest = SITE / version_path / "schemas"
     dest.mkdir(parents=True, exist_ok=True)
 
     # Matches scripts/validate.py's schema selection: *.schema.json only.
@@ -58,7 +63,7 @@ def main() -> int:
             print(f"error: {name} $id does not start with schemaBase: {sid}", file=sys.stderr)
         return 1
 
-    print(f"Mirrored {len(schemas)} schema(s) to {dest.relative_to(ROOT)} (version {version})")
+    print(f"Mirrored {len(schemas)} schema(s) to {dest.relative_to(ROOT)} (release {version}; canonical path {version_path})")
     return 0
 
 

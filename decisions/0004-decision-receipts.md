@@ -1,10 +1,12 @@
 ---
-title: "ADR 0004: 0004 Decision Receipts"
+title: "ADR 0004: Decision Receipts"
 permalink: /decisions/0004-decision-receipts/
 parent: "Architectural Decisions"
 artifact_type: "Architectural decision record"
 normative_status: "Decision record"
 ---
+# ADR 0004: Decision Receipts
+
 {% include gaam-meta.html %}
 
 **Status:** Accepted for v0.5.0

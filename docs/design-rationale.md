@@ -5,6 +5,8 @@ parent: "Documentation"
 artifact_type: "Design rationale"
 normative_status: "Informative"
 ---
+# Design Rationale
+
 {% include gaam-meta.html %}
 
 ## Why authority is first-class

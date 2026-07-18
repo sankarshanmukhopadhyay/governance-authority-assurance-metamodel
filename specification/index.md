@@ -6,6 +6,8 @@ has_children: true
 artifact_type: Specification index
 normative_status: Normative
 ---
+# Normative Specification
+
 {% include gaam-meta.html %}
 
 

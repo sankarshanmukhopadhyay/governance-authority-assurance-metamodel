@@ -3,6 +3,8 @@ title: "Notice"
 permalink: /governance/notice/
 parent: "Project Governance"
 ---
+# Notice
+
 Governance, Authority and Assurance Metamodel (GAAM) is an independent open specification project.
 
 The project incorporates concepts developed through analysis of public trust-system, governance, assurance, registry and agentic-system materials. Where an external source materially informs a mapping or design decision, the relevant document identifies that source. Repository-level attribution details are maintained in [`ATTRIBUTIONS.md`](ATTRIBUTIONS.md).

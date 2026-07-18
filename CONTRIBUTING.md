@@ -5,6 +5,8 @@ parent: "Project Governance"
 artifact_type: "Contribution guide"
 normative_status: "Normative process"
 ---
+# Contributing
+
 {% include gaam-meta.html %}
 
 GAAM welcomes conceptual review, normative text, implementation evidence, threat analysis, diagrams and examples.

@@ -45,6 +45,9 @@ callouts:
 exclude:
   - README.md
   - requirements-dev.txt
+  - package.json
+  - package-lock.json
+  - node_modules
   - scripts
   - tests
   - validation

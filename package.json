@@ -1,0 +1,13 @@
+{
+  "name": "governance-authority-assurance-metamodel",
+  "private": true,
+  "version": "0.9.0",
+  "description": "Publication validation tooling for GAAM.",
+  "scripts": {
+    "validate:mermaid": "node scripts/validate_mermaid.mjs"
+  },
+  "devDependencies": {
+    "jsdom": "^26.1.0",
+    "mermaid": "11.16.0"
+  }
+}

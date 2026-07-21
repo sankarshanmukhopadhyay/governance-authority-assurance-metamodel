@@ -79,7 +79,7 @@ add('THR-TRACE',not unmapped,f'{len(tr["threats"])} threats mapped to requiremen
 # Publication source contract
 heading_errors=[]
 for p in ROOT.rglob('*.md'):
- if '.git' in p.parts or 'packages' in p.parts: continue
+ if any(part in {'.git', 'packages', 'node_modules', '_site', 'vendor'} for part in p.parts): continue
  text=p.read_text(errors='ignore')
  match=re.match(r'^---\n(.*?)\n---\n(.*)$',text,re.S)
  if not match: continue
@@ -110,7 +110,7 @@ add('DOC-CTWG-GLOSSARY-ALIGNMENT',not alignment_errors,f'{len(glossary_terms)} g
 # Local links
 bad=[]
 for p in ROOT.rglob('*.md'):
- if '.git' in p.parts or 'packages' in p.parts: continue
+ if any(part in {'.git', 'packages', 'node_modules', '_site', 'vendor'} for part in p.parts): continue
  for target in re.findall(r'\[[^\]]+\]\(([^)]+)\)',p.read_text(errors='ignore')):
   if target.startswith(('http:','https:','mailto:','#')): continue
   clean=urllib.parse.unquote(target.split('#')[0]);

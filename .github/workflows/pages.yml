@@ -23,6 +23,17 @@ jobs:
     steps:
       - uses: actions/checkout@v5
 
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+
+      - name: Install diagram validation dependencies
+        run: npm ci
+
+      - name: Validate Mermaid diagrams
+        run: npm run validate:mermaid
+
       - uses: ruby/setup-ruby@v1
         with:
           ruby-version: "3.3"

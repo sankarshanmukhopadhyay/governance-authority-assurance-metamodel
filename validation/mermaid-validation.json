@@ -1,0 +1,100 @@
+{
+  "mermaidVersion": "11.16.0",
+  "status": "pass",
+  "markdownFilesChecked": 75,
+  "diagramsChecked": 15,
+  "passed": 15,
+  "failed": 0,
+  "results": [
+    {
+      "file": "diagrams/architecture-diagrams.md",
+      "block": 1,
+      "line": 16,
+      "status": "pass"
+    },
+    {
+      "file": "diagrams/architecture-diagrams.md",
+      "block": 2,
+      "line": 33,
+      "status": "pass"
+    },
+    {
+      "file": "diagrams/architecture-diagrams.md",
+      "block": 3,
+      "line": 51,
+      "status": "pass"
+    },
+    {
+      "file": "diagrams/architecture-diagrams.md",
+      "block": 4,
+      "line": 63,
+      "status": "pass"
+    },
+    {
+      "file": "diagrams/architecture-diagrams.md",
+      "block": 5,
+      "line": 87,
+      "status": "pass"
+    },
+    {
+      "file": "diagrams/architecture-diagrams.md",
+      "block": 6,
+      "line": 103,
+      "status": "pass"
+    },
+    {
+      "file": "diagrams/architecture-diagrams.md",
+      "block": 7,
+      "line": 121,
+      "status": "pass"
+    },
+    {
+      "file": "diagrams/architecture-diagrams.md",
+      "block": 8,
+      "line": 142,
+      "status": "pass"
+    },
+    {
+      "file": "diagrams/architecture-diagrams.md",
+      "block": 9,
+      "line": 166,
+      "status": "pass"
+    },
+    {
+      "file": "diagrams/architecture-diagrams.md",
+      "block": 10,
+      "line": 189,
+      "status": "pass"
+    },
+    {
+      "file": "docs/architecture-overview.md",
+      "block": 1,
+      "line": 38,
+      "status": "pass"
+    },
+    {
+      "file": "docs/control-document-schedule.md",
+      "block": 1,
+      "line": 52,
+      "status": "pass"
+    },
+    {
+      "file": "docs/control-document-schedule.md",
+      "block": 2,
+      "line": 84,
+      "status": "pass"
+    },
+    {
+      "file": "docs/implementation-guide.md",
+      "block": 1,
+      "line": 33,
+      "status": "pass"
+    },
+    {
+      "file": "docs/lifecycle-model.md",
+      "block": 1,
+      "line": 26,
+      "status": "pass"
+    }
+  ]
+}

@@ -37,6 +37,7 @@ Every file in `schemas/*.schema.json` declares a canonical `$id` under `release.
 - Every schema and controlled vocabulary remains available as its original JSON media type.
 - Canonical schema identifiers are tested against the generated `_site`.
 - Traceability CSV files remain downloadable and receive human-readable table views.
+- CI parses every Mermaid block with the pinned Mermaid 11.16.0 runtime before publication.
 - CI performs a production-equivalent strict Jekyll build before publication.
 - Built-in search indexes every page except those marked `search_exclude`.
 - The GFM parser is an explicit dependency, preventing dependency-resolution drift.
@@ -69,6 +70,7 @@ The Pages build is accepted only when:
 - required landing pages, stylesheets and the Just the Docs search index are present;
 - repository JSON artifacts are copied without semantic transformation;
 - every canonical schema `$id` resolves under the versioned `/v0.9.0/schemas/` path; and
-- internal documentation links resolve from repository source.
+- internal documentation links resolve from repository source; and
+- every Mermaid block parses successfully using the version pinned in `_config.yml`.
 
-The validation workflow builds the site, publishes the versioned schema mirror and then runs `scripts/validate_pages.py`. The deployment workflow performs the same build and mirror sequence before uploading the Pages artifact.
+Both workflows run `npm run validate:mermaid` before Jekyll. `scripts/validate_mermaid.mjs` recursively extracts fenced Mermaid blocks, parses them with Mermaid 11.16.0, fails on any syntax error and writes machine-readable evidence to `validation/mermaid-validation.json`. The validation workflow then builds the site, publishes the versioned schema mirror and runs `scripts/validate_pages.py`. The deployment workflow performs the same Mermaid gate, build and mirror sequence before uploading the Pages artifact.

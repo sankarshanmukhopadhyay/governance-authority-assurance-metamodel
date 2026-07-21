@@ -32,6 +32,9 @@ jobs:
       - name: Run GAAM validation
         run: python scripts/validate.py
 
+      - name: Validate guided learning paths
+        run: python scripts/validate_learning_paths.py
+
       - uses: actions/setup-node@v4
         with:
           node-version: "22"

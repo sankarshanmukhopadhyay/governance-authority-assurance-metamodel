@@ -7,6 +7,9 @@ normative_status: "Candidate Specification"
 ---
 # Governance, Authority and Assurance Metamodel
 
+{: .candidate }
+First-time readers should begin with the [guided learning paths](docs/guided-learning.md), which separate policy, implementation and assurance-review routes. The [documentation architecture](docs/documentation-architecture.md) distinguishes informative guidance, normative authority and conformance evidence.
+
 {% include gaam-meta.html %}
 
 

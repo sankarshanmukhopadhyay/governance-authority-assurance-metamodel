@@ -6,6 +6,8 @@ has_children: true
 ---
 # Documentation
 
+Begin with the **[guided learning paths](guided-learning.md)** to select a policy, implementation or reviewer route. The **[documentation architecture](documentation-architecture.md)** explains authority levels and how concepts progress into profiles, artifacts, enforcement and evidence.
+
 
 <div class="artifact-grid">
 <div class="artifact-card"><h3><a href="architecture/">Architecture</a></h3><p>System boundaries, components and governance flows.</p></div>

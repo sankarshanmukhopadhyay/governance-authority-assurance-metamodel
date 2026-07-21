@@ -1,0 +1,83 @@
+{
+  "schema_version": "1.0",
+  "architecture": "concept-to-conformance",
+  "paths": [
+    {
+      "id": "policy-governance",
+      "audience": "Policy owners, governance designers and decision-makers",
+      "goal": "Understand and apply the governance model",
+      "steps": [
+        {
+          "file": "docs/guided-learning.md",
+          "outcome": "Select a reading route and completion criteria"
+        },
+        {
+          "file": "docs/design-principles.md",
+          "outcome": "Understand the model's governing constraints"
+        },
+        {
+          "file": "docs/architecture-overview.md",
+          "outcome": "Relate governance, authority and assurance"
+        },
+        {
+          "file": "examples/index.md",
+          "outcome": "Apply the model to representative systems"
+        }
+      ]
+    },
+    {
+      "id": "specification-implementer",
+      "audience": "Architects, profile authors and implementers",
+      "goal": "Implement a conformant GAAM profile",
+      "steps": [
+        {
+          "file": "specification/index.md",
+          "outcome": "Identify normative specification structure"
+        },
+        {
+          "file": "profiles/foundation-profile.md",
+          "outcome": "Establish the mandatory baseline"
+        },
+        {
+          "file": "docs/implementation-guide.md",
+          "outcome": "Map concepts to implementation artifacts"
+        },
+        {
+          "file": "schemas/index.md",
+          "outcome": "Use canonical machine-verifiable structures"
+        },
+        {
+          "file": "conformance/index.md",
+          "outcome": "Produce conformance evidence"
+        }
+      ]
+    },
+    {
+      "id": "reviewer-assessor",
+      "audience": "Reviewers, auditors and assurance bodies",
+      "goal": "Evaluate claims and evidence",
+      "steps": [
+        {
+          "file": "docs/reviewer-guide.md",
+          "outcome": "Define review scope and method"
+        },
+        {
+          "file": "matrices/normative-requirements-index.md",
+          "outcome": "Enumerate applicable requirements"
+        },
+        {
+          "file": "matrices/requirement-test-coverage.md",
+          "outcome": "Inspect test coverage"
+        },
+        {
+          "file": "threat-model/README.md",
+          "outcome": "Evaluate misuse and control coverage"
+        },
+        {
+          "file": "matrices/threat-control-test-matrix.md",
+          "outcome": "Trace threats through controls to tests"
+        }
+      ]
+    }
+  ]
+}

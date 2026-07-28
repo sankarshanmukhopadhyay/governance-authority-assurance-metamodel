@@ -17,4 +17,5 @@ Begin with the **[guided learning paths](guided-learning.md)** to select a polic
 <div class="artifact-card"><h3><a href="control-document-schedule/">Control document schedule</a></h3><p>Authoritative package register, precedence, lifecycle and completeness requirements.</p></div>
 <div class="artifact-card"><h3><a href="glossary/">Glossary</a></h3><p>Canonical terminology and CTWG alignment used across the specification.</p></div>
 <div class="artifact-card"><h3><a href="reviewer-guide/">Reviewer guide</a></h3><p>Candidate review method and evidence expectations.</p></div>
+<div class="artifact-card"><h3><a href="../implementation-reports/">Implementation reports</a></h3><p>Profile selection, evidence quality, self-assessment and report preparation.</p></div>
 </div>

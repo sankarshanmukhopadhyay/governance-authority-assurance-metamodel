@@ -1,0 +1,21 @@
+{
+  "id": "lifecycle-event-order-valid",
+  "description": "lifecycle event order valid",
+  "input": {
+    "events": [
+      {
+        "sequence": 1,
+        "type": "issued"
+      },
+      {
+        "sequence": 2,
+        "type": "activated"
+      },
+      {
+        "sequence": 3,
+        "type": "revoked"
+      }
+    ]
+  },
+  "expectedValid": true
+}

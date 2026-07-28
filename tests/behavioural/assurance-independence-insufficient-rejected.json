@@ -1,0 +1,11 @@
+{
+  "id": "assurance-independence-insufficient-rejected",
+  "description": "assurance independence insufficient rejected",
+  "input": {
+    "evidencePresent": true,
+    "independence": "self",
+    "requiredIndependence": "independent",
+    "withinValidity": true
+  },
+  "expectedValid": false
+}

@@ -1,0 +1,15 @@
+{
+  "id": "profile-composition-missing-foundation-rejected",
+  "description": "profile composition missing foundation rejected",
+  "input": {
+    "selectedProfiles": [
+      "delegated-authority"
+    ],
+    "dependencies": {
+      "delegated-authority": [
+        "foundation"
+      ]
+    }
+  },
+  "expectedValid": false
+}

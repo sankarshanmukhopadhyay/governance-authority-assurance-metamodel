@@ -1,0 +1,16 @@
+{
+  "id": "profile-composition-foundation-delegated-valid",
+  "description": "profile composition foundation delegated valid",
+  "input": {
+    "selectedProfiles": [
+      "foundation",
+      "delegated-authority"
+    ],
+    "dependencies": {
+      "delegated-authority": [
+        "foundation"
+      ]
+    }
+  },
+  "expectedValid": true
+}

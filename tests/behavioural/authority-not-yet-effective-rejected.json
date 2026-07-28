@@ -1,0 +1,11 @@
+{
+  "id": "authority-not-yet-effective-rejected",
+  "description": "authority not yet effective rejected",
+  "input": {
+    "status": "active",
+    "withinScope": true,
+    "withinTime": false,
+    "sourceValid": true
+  },
+  "expectedValid": false
+}

@@ -13,3 +13,7 @@ GAAM traceability matrices link normative requirements, threats, controls, tests
 - [Relationship Matrix](relationship-matrix.md)
 - [Requirement Test Coverage](requirement-test-coverage.md)
 - [Threat/Control Test Matrix](threat-control-test-matrix.md)
+
+## Assurance traceability
+
+- [Requirement assurance traceability](requirement-assurance-traceability.md) connects all normative requirements to testability, evidence, schemas, profiles, and reference tests.

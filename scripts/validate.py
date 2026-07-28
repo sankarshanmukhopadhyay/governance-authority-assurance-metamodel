@@ -64,14 +64,55 @@ for d in sorted((ROOT/'examples').iterdir()):
 # Behavioural vectors
 def behaviour(o):
  x=o['input']; i=o['id']
- if i.startswith('authority-'): valid=x.get('status')=='active' and x.get('withinScope') and x.get('withinTime') and x.get('sourceValid')
- elif i.startswith('delegation-'): valid=x.get('delegationPermitted') and set(x.get('childEffects',[]))<=set(x.get('parentEffects',[])) and x.get('depth',0)<=x.get('maxDepth',0)
- elif i.startswith('decision-'): valid=all([x.get('authorityId'),x.get('policyId'),x.get('evidenceIds'),x.get('assuranceIds'),x.get('accountableParty')])
- elif i.startswith('high-impact-'): valid=(not x.get('highImpact')) or all([x.get('appealPath'),x.get('remedyPath'),x.get('affectedPartyAnalysis')])
+ if i.startswith('authority-'):
+  valid=x.get('status')=='active' and x.get('withinScope') and x.get('withinTime') and x.get('sourceValid')
+ elif i.startswith('delegation-'):
+  valid=(x.get('delegationPermitted') and set(x.get('childEffects',[]))<=set(x.get('parentEffects',[]))
+         and x.get('depth',0)<=x.get('maxDepth',0) and x.get('parentActive',True)
+         and x.get('childWithinParentTime',True))
+ elif i.startswith('decision-'):
+  valid=(all([x.get('authorityId'),x.get('policyId'),x.get('evidenceIds'),x.get('assuranceIds'),x.get('accountableParty')])
+         and x.get('evidenceFresh',True) and x.get('policyCurrent',True))
+ elif i.startswith('assurance-'):
+  ranks={'self':1,'reviewed':2,'independent':3}
+  valid=(x.get('evidencePresent') and x.get('withinValidity')
+         and ranks.get(x.get('independence'),0)>=ranks.get(x.get('requiredIndependence'),0))
+ elif i.startswith('high-impact-'):
+  valid=((not x.get('highImpact')) or all([x.get('appealPath'),x.get('remedyPath'),x.get('affectedPartyAnalysis')]))
+  valid=valid and x.get('noticeProvided',True) and x.get('reviewIndependent',True)
+ elif i.startswith('lifecycle-event-order-'):
+  seq=[e.get('sequence') for e in x.get('events',[])]
+  valid=bool(seq) and seq==sorted(seq) and len(seq)==len(set(seq)) and x['events'][0].get('type')=='issued'
+ elif i.startswith('runtime-'):
+  valid=(x.get('stateFresh') and x.get('authorityStatusKnown')) or (x.get('failurePolicy')=='fail-closed' and not x.get('effectAdmitted'))
+ elif i.startswith('profile-composition-'):
+  selected=set(x.get('selectedProfiles',[])); deps=x.get('dependencies',{})
+  valid=all(set(deps.get(profile,[]))<=selected for profile in selected)
  else: valid=False
  return bool(valid)
 for p in sorted((ROOT/'tests/behavioural').glob('*.json')):
  o=load(p); actual=behaviour(o); add('BEH-'+o['id'],actual==o['expectedValid'],f'expected={o["expectedValid"]}; actual={actual}','behavioural')
+# Requirement-level assurance traceability
+trace=list(csv.DictReader((ROOT/'matrices/requirement-assurance-traceability.csv').open()))
+trace_ids=[r['requirement_id'] for r in trace]
+valid_dispositions={'behavioural-testable','structural-testable','observable','reviewable','procedural','mixed'}
+evidence_catalogue=load(ROOT/'implementation-reports/evidence-catalogue.json')
+evidence_ids={x['id'] for x in evidence_catalogue['entries']}
+behaviour_ids={p.stem for p in (ROOT/'tests/behavioural').glob('*.json')}
+known_test_ids=behaviour_ids|{'claim-level-evidence','package-integrity'}
+trace_errors=[]
+if trace_ids!=idxids: trace_errors.append('traceability rows do not exactly match normative requirement index order')
+for row in trace:
+ if row['testability'] not in valid_dispositions: trace_errors.append(f"{row['requirement_id']}: invalid testability disposition")
+ refs={x for x in row['evidence_catalogue_ids'].split(';') if x}
+ if not refs or not refs<=evidence_ids: trace_errors.append(f"{row['requirement_id']}: unknown or missing evidence reference")
+ tests={x for x in row['test_ids'].split(';') if x}
+ if not tests<=known_test_ids: trace_errors.append(f"{row['requirement_id']}: unknown test identifiers {sorted(tests-known_test_ids)}")
+add('TRC-REQUIREMENTS',not trace_errors,f'{len(trace)} requirements have testability and evidence dispositions' if not trace_errors else '; '.join(trace_errors[:10]),'traceability')
+referenced_tests={x for row in trace for x in row['test_ids'].split(';') if x}
+orphan_behaviour=sorted(behaviour_ids-referenced_tests)
+add('TRC-TEST-ORPHANS',not orphan_behaviour,f'{len(behaviour_ids)} behavioural tests referenced by requirement traceability' if not orphan_behaviour else ', '.join(orphan_behaviour),'traceability')
+
 # Threat traceability
 tr=load(ROOT/'threat-model/threat-register.json'); test_ids={r['id'].replace('BEH-','') for r in results if r['kind']=='behavioural'}|{'claim-level-evidence','package-integrity'}
 unmapped=[t['id'] for t in tr['threats'] if not t.get('requirements') or not t.get('tests') or any(x not in test_ids for x in t['tests'])]
@@ -120,7 +161,7 @@ add('DOC-TSMM-CANONICAL','https://github.com/sankarshanmukhopadhyay/trust-system
 add('CI-WORKFLOW',(ROOT/'.github/workflows/validate.yml').exists(),'validation workflow present','automation')
 # Package manifest + integrity
 pkg=ROOT/'packages'/f'gaam-v{VERSION}'; pkg.mkdir(parents=True,exist_ok=True)
-artifact_paths=[REL['normativeSpecification'],'release.json','schemas/catalog.json','threat-model/threat-register.json','matrices/normative-requirements-index.csv','matrices/requirement-test-coverage.csv','matrices/threat-control-test-matrix.csv']
+artifact_paths=[REL['normativeSpecification'],'release.json','schemas/catalog.json','threat-model/threat-register.json','matrices/normative-requirements-index.csv','matrices/requirement-test-coverage.csv','matrices/requirement-assurance-traceability.csv','matrices/threat-control-test-matrix.csv']
 artifact_paths += [str(p.relative_to(ROOT)) for b in ['schemas','vocabularies','profiles/manifests','tests/behavioural'] for p in sorted((ROOT/b).glob('*.json'))]
 manifest={'id':f'urn:gaam:package:{VERSION}','type':'gaam-governance-package','gaamVersion':VERSION,'status':'active','profiles':sorted(manifests),'artifacts':[{'id':Path(x).stem,'path':x,'mediaType':'application/json' if x.endswith('.json') else 'text/markdown' if x.endswith('.md') else 'text/csv'} for x in artifact_paths if not x.startswith(('schemas/','vocabularies/'))], 'schemas':[p.name for p in sorted((ROOT/'schemas').glob('*.schema.json'))], 'vocabularies':[p.name for p in sorted((ROOT/'vocabularies').glob('*.json'))], 'integrity':{'algorithm':'sha-256','manifest':'checksums.json'}}
 (pkg/'manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')

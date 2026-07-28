@@ -1,0 +1,18 @@
+{
+  "id": "delegation-parent-revoked-rejected",
+  "description": "delegation parent revoked rejected",
+  "input": {
+    "delegationPermitted": true,
+    "childEffects": [
+      "read"
+    ],
+    "parentEffects": [
+      "read"
+    ],
+    "depth": 2,
+    "maxDepth": 3,
+    "parentActive": false,
+    "childWithinParentTime": true
+  },
+  "expectedValid": false
+}

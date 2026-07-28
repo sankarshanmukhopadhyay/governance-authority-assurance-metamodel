@@ -1,0 +1,18 @@
+{
+  "id": "decision-stale-evidence-rejected",
+  "description": "decision stale evidence rejected",
+  "input": {
+    "authorityId": "a",
+    "policyId": "p",
+    "evidenceIds": [
+      "e"
+    ],
+    "assuranceIds": [
+      "s"
+    ],
+    "accountableParty": "o",
+    "evidenceFresh": false,
+    "policyCurrent": true
+  },
+  "expectedValid": false
+}

@@ -1,0 +1,11 @@
+{
+  "id": "authority-expired-rejected",
+  "description": "authority expired rejected",
+  "input": {
+    "status": "expired",
+    "withinScope": true,
+    "withinTime": false,
+    "sourceValid": true
+  },
+  "expectedValid": false
+}

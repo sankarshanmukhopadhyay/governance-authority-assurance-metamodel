@@ -1,0 +1,13 @@
+{
+  "id": "high-impact-notice-missing-rejected",
+  "description": "high impact notice missing rejected",
+  "input": {
+    "highImpact": true,
+    "appealPath": "appeal",
+    "remedyPath": "remedy",
+    "affectedPartyAnalysis": "done",
+    "noticeProvided": false,
+    "reviewIndependent": true
+  },
+  "expectedValid": false
+}

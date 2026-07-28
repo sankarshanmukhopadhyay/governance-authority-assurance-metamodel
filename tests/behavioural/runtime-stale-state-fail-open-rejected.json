@@ -1,0 +1,11 @@
+{
+  "id": "runtime-stale-state-fail-open-rejected",
+  "description": "runtime stale state fail open rejected",
+  "input": {
+    "stateFresh": false,
+    "authorityStatusKnown": false,
+    "failurePolicy": "fail-open",
+    "effectAdmitted": true
+  },
+  "expectedValid": false
+}

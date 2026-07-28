@@ -2,8 +2,8 @@
   "gaamVersion": "0.9.0",
   "testSuiteVersion": "0.9.0",
   "status": "pass",
-  "checks": 64,
-  "passed": 64,
+  "checks": 84,
+  "passed": 84,
   "failed": 0,
   "results": [
     {
@@ -43,67 +43,13 @@
       "evidence": "190 indexed statements classified"
     },
     {
-      "id": "SCH-agent-governance-identity",
-      "kind": "schema",
-      "status": "pass",
-      "evidence": "valid Draft 2020-12 schema"
-    },
-    {
-      "id": "SCH-appeal",
-      "kind": "schema",
-      "status": "pass",
-      "evidence": "valid Draft 2020-12 schema"
-    },
-    {
-      "id": "SCH-assurance",
-      "kind": "schema",
-      "status": "pass",
-      "evidence": "valid Draft 2020-12 schema"
-    },
-    {
-      "id": "SCH-authority",
-      "kind": "schema",
-      "status": "pass",
-      "evidence": "valid Draft 2020-12 schema"
-    },
-    {
-      "id": "SCH-conformance-claim",
-      "kind": "schema",
-      "status": "pass",
-      "evidence": "valid Draft 2020-12 schema"
-    },
-    {
-      "id": "SCH-decision-receipt",
-      "kind": "schema",
-      "status": "pass",
-      "evidence": "valid Draft 2020-12 schema"
-    },
-    {
-      "id": "SCH-delegation",
-      "kind": "schema",
-      "status": "pass",
-      "evidence": "valid Draft 2020-12 schema"
-    },
-    {
-      "id": "SCH-evidence",
-      "kind": "schema",
-      "status": "pass",
-      "evidence": "valid Draft 2020-12 schema"
-    },
-    {
       "id": "SCH-gaam-package",
       "kind": "schema",
       "status": "pass",
       "evidence": "valid Draft 2020-12 schema"
     },
     {
-      "id": "SCH-governance-event",
-      "kind": "schema",
-      "status": "pass",
-      "evidence": "valid Draft 2020-12 schema"
-    },
-    {
-      "id": "SCH-profile-manifest",
+      "id": "SCH-runtime-envelope",
       "kind": "schema",
       "status": "pass",
       "evidence": "valid Draft 2020-12 schema"
@@ -115,7 +61,61 @@
       "evidence": "valid Draft 2020-12 schema"
     },
     {
-      "id": "SCH-runtime-envelope",
+      "id": "SCH-profile-manifest",
+      "kind": "schema",
+      "status": "pass",
+      "evidence": "valid Draft 2020-12 schema"
+    },
+    {
+      "id": "SCH-assurance",
+      "kind": "schema",
+      "status": "pass",
+      "evidence": "valid Draft 2020-12 schema"
+    },
+    {
+      "id": "SCH-agent-governance-identity",
+      "kind": "schema",
+      "status": "pass",
+      "evidence": "valid Draft 2020-12 schema"
+    },
+    {
+      "id": "SCH-conformance-claim",
+      "kind": "schema",
+      "status": "pass",
+      "evidence": "valid Draft 2020-12 schema"
+    },
+    {
+      "id": "SCH-evidence",
+      "kind": "schema",
+      "status": "pass",
+      "evidence": "valid Draft 2020-12 schema"
+    },
+    {
+      "id": "SCH-appeal",
+      "kind": "schema",
+      "status": "pass",
+      "evidence": "valid Draft 2020-12 schema"
+    },
+    {
+      "id": "SCH-decision-receipt",
+      "kind": "schema",
+      "status": "pass",
+      "evidence": "valid Draft 2020-12 schema"
+    },
+    {
+      "id": "SCH-authority",
+      "kind": "schema",
+      "status": "pass",
+      "evidence": "valid Draft 2020-12 schema"
+    },
+    {
+      "id": "SCH-governance-event",
+      "kind": "schema",
+      "status": "pass",
+      "evidence": "valid Draft 2020-12 schema"
+    },
+    {
+      "id": "SCH-delegation",
       "kind": "schema",
       "status": "pass",
       "evidence": "valid Draft 2020-12 schema"
@@ -289,10 +289,34 @@
       "evidence": "schema, evidence and independence rules satisfied"
     },
     {
+      "id": "BEH-assurance-expired-rejected",
+      "kind": "behavioural",
+      "status": "pass",
+      "evidence": "expected=False; actual=False"
+    },
+    {
+      "id": "BEH-assurance-independence-insufficient-rejected",
+      "kind": "behavioural",
+      "status": "pass",
+      "evidence": "expected=False; actual=False"
+    },
+    {
       "id": "BEH-authority-active-valid",
       "kind": "behavioural",
       "status": "pass",
       "evidence": "expected=True; actual=True"
+    },
+    {
+      "id": "BEH-authority-expired-rejected",
+      "kind": "behavioural",
+      "status": "pass",
+      "evidence": "expected=False; actual=False"
+    },
+    {
+      "id": "BEH-authority-not-yet-effective-rejected",
+      "kind": "behavioural",
+      "status": "pass",
+      "evidence": "expected=False; actual=False"
     },
     {
       "id": "BEH-authority-revoked-rejected",
@@ -301,7 +325,25 @@
       "evidence": "expected=False; actual=False"
     },
     {
+      "id": "BEH-authority-source-invalid-rejected",
+      "kind": "behavioural",
+      "status": "pass",
+      "evidence": "expected=False; actual=False"
+    },
+    {
       "id": "BEH-decision-missing-evidence-rejected",
+      "kind": "behavioural",
+      "status": "pass",
+      "evidence": "expected=False; actual=False"
+    },
+    {
+      "id": "BEH-decision-policy-superseded-rejected",
+      "kind": "behavioural",
+      "status": "pass",
+      "evidence": "expected=False; actual=False"
+    },
+    {
+      "id": "BEH-decision-stale-evidence-rejected",
       "kind": "behavioural",
       "status": "pass",
       "evidence": "expected=False; actual=False"
@@ -325,7 +367,25 @@
       "evidence": "expected=True; actual=True"
     },
     {
+      "id": "BEH-delegation-child-outlives-parent-rejected",
+      "kind": "behavioural",
+      "status": "pass",
+      "evidence": "expected=False; actual=False"
+    },
+    {
       "id": "BEH-delegation-depth-rejected",
+      "kind": "behavioural",
+      "status": "pass",
+      "evidence": "expected=False; actual=False"
+    },
+    {
+      "id": "BEH-delegation-parent-revoked-rejected",
+      "kind": "behavioural",
+      "status": "pass",
+      "evidence": "expected=False; actual=False"
+    },
+    {
+      "id": "BEH-delegation-redelegation-prohibited-rejected",
       "kind": "behavioural",
       "status": "pass",
       "evidence": "expected=False; actual=False"
@@ -337,10 +397,70 @@
       "evidence": "expected=False; actual=False"
     },
     {
+      "id": "BEH-high-impact-notice-missing-rejected",
+      "kind": "behavioural",
+      "status": "pass",
+      "evidence": "expected=False; actual=False"
+    },
+    {
       "id": "BEH-high-impact-remedy-valid",
       "kind": "behavioural",
       "status": "pass",
       "evidence": "expected=True; actual=True"
+    },
+    {
+      "id": "BEH-high-impact-review-not-independent-rejected",
+      "kind": "behavioural",
+      "status": "pass",
+      "evidence": "expected=False; actual=False"
+    },
+    {
+      "id": "BEH-lifecycle-event-order-invalid-rejected",
+      "kind": "behavioural",
+      "status": "pass",
+      "evidence": "expected=False; actual=False"
+    },
+    {
+      "id": "BEH-lifecycle-event-order-valid",
+      "kind": "behavioural",
+      "status": "pass",
+      "evidence": "expected=True; actual=True"
+    },
+    {
+      "id": "BEH-profile-composition-foundation-delegated-valid",
+      "kind": "behavioural",
+      "status": "pass",
+      "evidence": "expected=True; actual=True"
+    },
+    {
+      "id": "BEH-profile-composition-missing-foundation-rejected",
+      "kind": "behavioural",
+      "status": "pass",
+      "evidence": "expected=False; actual=False"
+    },
+    {
+      "id": "BEH-runtime-revocation-fail-closed-valid",
+      "kind": "behavioural",
+      "status": "pass",
+      "evidence": "expected=True; actual=True"
+    },
+    {
+      "id": "BEH-runtime-stale-state-fail-open-rejected",
+      "kind": "behavioural",
+      "status": "pass",
+      "evidence": "expected=False; actual=False"
+    },
+    {
+      "id": "TRC-REQUIREMENTS",
+      "kind": "traceability",
+      "status": "pass",
+      "evidence": "190 requirements have testability and evidence dispositions"
+    },
+    {
+      "id": "TRC-TEST-ORPHANS",
+      "kind": "traceability",
+      "status": "pass",
+      "evidence": "27 behavioural tests referenced by requirement traceability"
     },
     {
       "id": "THR-TRACE",
@@ -388,7 +508,7 @@
       "id": "PKG-INTEGRITY",
       "kind": "package",
       "status": "pass",
-      "evidence": "43 checksums verified"
+      "evidence": "62 checksums verified"
     }
   ]
 }

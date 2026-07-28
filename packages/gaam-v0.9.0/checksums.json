@@ -7,8 +7,12 @@
       "sha256": "c1abcac2b6414ff20b4e8a84d9faa48578a75a29654fe143c86fdae46eb54363"
     },
     {
+      "path": "matrices/requirement-assurance-traceability.csv",
+      "sha256": "2c031d5e73558af36cfd250459504e0276f0bd80e4d2b7322890fbc8f42d863b"
+    },
+    {
       "path": "matrices/requirement-test-coverage.csv",
-      "sha256": "8b5bc8714fa8a1dd6e879ebaae2be01087b39506bc33472d33417b5210ae2cd5"
+      "sha256": "fa78a3f870fa0d6441ce7a37fc2a0f1e50bd34d04bbe1db3797b233198833000"
     },
     {
       "path": "matrices/threat-control-test-matrix.csv",
@@ -16,7 +20,7 @@
     },
     {
       "path": "packages/gaam-v0.9.0/manifest.json",
-      "sha256": "54886e8b4cc670d138410733bffdc9cc5322adbb0d4fa32b5c99cc64b0172ce4"
+      "sha256": "a2d79ab9f2dcb12afc581d91843fc5ca8751fc6076e9fe565d9c89b9ead87019"
     },
     {
       "path": "profiles/manifests/agentic-systems.json",
@@ -115,16 +119,44 @@
       "sha256": "6af9ed2a222780e61fcce35ecd25f329485195a3c3ed7c9cee539b540c0c6011"
     },
     {
+      "path": "tests/behavioural/assurance-expired-rejected.json",
+      "sha256": "d4e9f56b41a86c7ea710855cb5145e370466647470bff6a364a73facb3d643a7"
+    },
+    {
+      "path": "tests/behavioural/assurance-independence-insufficient-rejected.json",
+      "sha256": "184873e9f8497e9d38553ae1c63fa0611cec4c9f2738e3cb2b5b772d9c0d9f98"
+    },
+    {
       "path": "tests/behavioural/authority-active-valid.json",
       "sha256": "b4b8ff5c9644d97abb3cd968605ed410d578c3c4a9d28b46774bc59dfc55f4c7"
+    },
+    {
+      "path": "tests/behavioural/authority-expired-rejected.json",
+      "sha256": "13cc3ef7c3bebfbd760562b760a92f25d35202049a13f8aa514d01dfed3a91ca"
+    },
+    {
+      "path": "tests/behavioural/authority-not-yet-effective-rejected.json",
+      "sha256": "9e6ebc21596e6355cd54dfc780963eab1206d4c7d154af8bbddf4c2cce65453d"
     },
     {
       "path": "tests/behavioural/authority-revoked-rejected.json",
       "sha256": "61df5f3625a0b1c31015aba4433f3e4db1b388e4b621fce160102cb70128b75e"
     },
     {
+      "path": "tests/behavioural/authority-source-invalid-rejected.json",
+      "sha256": "25cd855f5f93768b209e60bbd30dced4161a72110011ebf57e8562f93989e5ed"
+    },
+    {
       "path": "tests/behavioural/decision-missing-evidence-rejected.json",
       "sha256": "43ccba8bbe3a9efedbcff25be23fd3f6fb6c9f2cd328c25dbdde7de0bf7fa800"
+    },
+    {
+      "path": "tests/behavioural/decision-policy-superseded-rejected.json",
+      "sha256": "8b03ec7c7fa3cf338a9d022549c7b7059897151335c8b3f4164cf0bc4f60e0ca"
+    },
+    {
+      "path": "tests/behavioural/decision-stale-evidence-rejected.json",
+      "sha256": "ce7c2f2a436026a7e34fb6116ce755f6d96581be36b5553843b20144468af24c"
     },
     {
       "path": "tests/behavioural/decision-traceable-valid.json",
@@ -139,16 +171,60 @@
       "sha256": "af29dfabe6df289198d9a656e49d5e2944f526f6db5daace225c21041ef60ba1"
     },
     {
+      "path": "tests/behavioural/delegation-child-outlives-parent-rejected.json",
+      "sha256": "938a150ed49b1a3fac34a711f1c4afd774b2136898f5c7d6bd2f0ad8a2cabf74"
+    },
+    {
       "path": "tests/behavioural/delegation-depth-rejected.json",
       "sha256": "e8c8bf136bd3af3f826a2c545d169af8c3591afc26ed17dc68e68f928087e9a4"
+    },
+    {
+      "path": "tests/behavioural/delegation-parent-revoked-rejected.json",
+      "sha256": "0c3c4998125540f7ea2ef98fa4d49c8ccac32f43d1b987f403de09d8aa084093"
+    },
+    {
+      "path": "tests/behavioural/delegation-redelegation-prohibited-rejected.json",
+      "sha256": "778af84435a4d8f0ca2adf32354d36bf565220355cbd4802b939060730b6da90"
     },
     {
       "path": "tests/behavioural/high-impact-no-remedy-rejected.json",
       "sha256": "cf31cca1424f8fd23d6bac223a649c57919d6230ea292ba68a5ce6273fa782d1"
     },
     {
+      "path": "tests/behavioural/high-impact-notice-missing-rejected.json",
+      "sha256": "c6f6513831604994c7ddac171e9e6be5c77d66baff41aca46dd08876c37c5c7a"
+    },
+    {
       "path": "tests/behavioural/high-impact-remedy-valid.json",
       "sha256": "963308667b2abd1ebad21502e9b26b5501bebabc654c1a76f66978c5cc70b6d5"
+    },
+    {
+      "path": "tests/behavioural/high-impact-review-not-independent-rejected.json",
+      "sha256": "6e84c8266ed1345d7b4810e711791fcf58f0293885f571d29ffbf5927ea0febe"
+    },
+    {
+      "path": "tests/behavioural/lifecycle-event-order-invalid-rejected.json",
+      "sha256": "3274ebeb12bc038ea296af8c2d79f0d9feaa2c044c29b4898ca3759d85929990"
+    },
+    {
+      "path": "tests/behavioural/lifecycle-event-order-valid.json",
+      "sha256": "a39fa570bba471f33f2b19e02d85a897c9d83ed5433cdd85d5a7c848a19d448f"
+    },
+    {
+      "path": "tests/behavioural/profile-composition-foundation-delegated-valid.json",
+      "sha256": "0232860dc0114a22bf84ceef8bd722a4ee67618580a3ae058828957c6b375144"
+    },
+    {
+      "path": "tests/behavioural/profile-composition-missing-foundation-rejected.json",
+      "sha256": "d586a9ceccee845a7a1a6b43b35181b99cd4d7ee382d262b21db05f6c4e82efe"
+    },
+    {
+      "path": "tests/behavioural/runtime-revocation-fail-closed-valid.json",
+      "sha256": "a68965fc418c5b9058b03bb91c162db2f21d47c07c0fc7d978bac45ab9910561"
+    },
+    {
+      "path": "tests/behavioural/runtime-stale-state-fail-open-rejected.json",
+      "sha256": "45bf2da090e51bb60028cf5e6fcc0d2754293ad6d0fca6958e0fddb428eeb1ba"
     },
     {
       "path": "threat-model/threat-register.json",

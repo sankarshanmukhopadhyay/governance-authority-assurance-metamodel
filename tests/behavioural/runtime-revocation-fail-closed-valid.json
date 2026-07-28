@@ -1,0 +1,11 @@
+{
+  "id": "runtime-revocation-fail-closed-valid",
+  "description": "runtime revocation fail closed valid",
+  "input": {
+    "stateFresh": false,
+    "authorityStatusKnown": false,
+    "failurePolicy": "fail-closed",
+    "effectAdmitted": false
+  },
+  "expectedValid": true
+}

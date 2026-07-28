@@ -1,0 +1,18 @@
+{
+  "id": "delegation-child-outlives-parent-rejected",
+  "description": "delegation child outlives parent rejected",
+  "input": {
+    "delegationPermitted": true,
+    "childEffects": [
+      "read"
+    ],
+    "parentEffects": [
+      "read"
+    ],
+    "depth": 2,
+    "maxDepth": 3,
+    "parentActive": true,
+    "childWithinParentTime": false
+  },
+  "expectedValid": false
+}

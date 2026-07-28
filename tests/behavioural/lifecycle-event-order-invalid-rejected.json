@@ -1,0 +1,21 @@
+{
+  "id": "lifecycle-event-order-invalid-rejected",
+  "description": "lifecycle event order invalid rejected",
+  "input": {
+    "events": [
+      {
+        "sequence": 2,
+        "type": "activated"
+      },
+      {
+        "sequence": 1,
+        "type": "issued"
+      },
+      {
+        "sequence": 2,
+        "type": "revoked"
+      }
+    ]
+  },
+  "expectedValid": false
+}

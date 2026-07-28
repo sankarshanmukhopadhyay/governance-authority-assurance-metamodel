@@ -1,0 +1,13 @@
+{
+  "id": "high-impact-review-not-independent-rejected",
+  "description": "high impact review not independent rejected",
+  "input": {
+    "highImpact": true,
+    "appealPath": "appeal",
+    "remedyPath": "remedy",
+    "affectedPartyAnalysis": "done",
+    "noticeProvided": true,
+    "reviewIndependent": false
+  },
+  "expectedValid": false
+}

@@ -40,6 +40,11 @@
       "mediaType": "text/csv"
     },
     {
+      "id": "requirement-assurance-traceability",
+      "path": "matrices/requirement-assurance-traceability.csv",
+      "mediaType": "text/csv"
+    },
+    {
       "id": "threat-control-test-matrix",
       "path": "matrices/threat-control-test-matrix.csv",
       "mediaType": "text/csv"
@@ -85,8 +90,28 @@
       "mediaType": "application/json"
     },
     {
+      "id": "assurance-expired-rejected",
+      "path": "tests/behavioural/assurance-expired-rejected.json",
+      "mediaType": "application/json"
+    },
+    {
+      "id": "assurance-independence-insufficient-rejected",
+      "path": "tests/behavioural/assurance-independence-insufficient-rejected.json",
+      "mediaType": "application/json"
+    },
+    {
       "id": "authority-active-valid",
       "path": "tests/behavioural/authority-active-valid.json",
+      "mediaType": "application/json"
+    },
+    {
+      "id": "authority-expired-rejected",
+      "path": "tests/behavioural/authority-expired-rejected.json",
+      "mediaType": "application/json"
+    },
+    {
+      "id": "authority-not-yet-effective-rejected",
+      "path": "tests/behavioural/authority-not-yet-effective-rejected.json",
       "mediaType": "application/json"
     },
     {
@@ -95,8 +120,23 @@
       "mediaType": "application/json"
     },
     {
+      "id": "authority-source-invalid-rejected",
+      "path": "tests/behavioural/authority-source-invalid-rejected.json",
+      "mediaType": "application/json"
+    },
+    {
       "id": "decision-missing-evidence-rejected",
       "path": "tests/behavioural/decision-missing-evidence-rejected.json",
+      "mediaType": "application/json"
+    },
+    {
+      "id": "decision-policy-superseded-rejected",
+      "path": "tests/behavioural/decision-policy-superseded-rejected.json",
+      "mediaType": "application/json"
+    },
+    {
+      "id": "decision-stale-evidence-rejected",
+      "path": "tests/behavioural/decision-stale-evidence-rejected.json",
       "mediaType": "application/json"
     },
     {
@@ -115,8 +155,23 @@
       "mediaType": "application/json"
     },
     {
+      "id": "delegation-child-outlives-parent-rejected",
+      "path": "tests/behavioural/delegation-child-outlives-parent-rejected.json",
+      "mediaType": "application/json"
+    },
+    {
       "id": "delegation-depth-rejected",
       "path": "tests/behavioural/delegation-depth-rejected.json",
+      "mediaType": "application/json"
+    },
+    {
+      "id": "delegation-parent-revoked-rejected",
+      "path": "tests/behavioural/delegation-parent-revoked-rejected.json",
+      "mediaType": "application/json"
+    },
+    {
+      "id": "delegation-redelegation-prohibited-rejected",
+      "path": "tests/behavioural/delegation-redelegation-prohibited-rejected.json",
       "mediaType": "application/json"
     },
     {
@@ -125,8 +180,48 @@
       "mediaType": "application/json"
     },
     {
+      "id": "high-impact-notice-missing-rejected",
+      "path": "tests/behavioural/high-impact-notice-missing-rejected.json",
+      "mediaType": "application/json"
+    },
+    {
       "id": "high-impact-remedy-valid",
       "path": "tests/behavioural/high-impact-remedy-valid.json",
+      "mediaType": "application/json"
+    },
+    {
+      "id": "high-impact-review-not-independent-rejected",
+      "path": "tests/behavioural/high-impact-review-not-independent-rejected.json",
+      "mediaType": "application/json"
+    },
+    {
+      "id": "lifecycle-event-order-invalid-rejected",
+      "path": "tests/behavioural/lifecycle-event-order-invalid-rejected.json",
+      "mediaType": "application/json"
+    },
+    {
+      "id": "lifecycle-event-order-valid",
+      "path": "tests/behavioural/lifecycle-event-order-valid.json",
+      "mediaType": "application/json"
+    },
+    {
+      "id": "profile-composition-foundation-delegated-valid",
+      "path": "tests/behavioural/profile-composition-foundation-delegated-valid.json",
+      "mediaType": "application/json"
+    },
+    {
+      "id": "profile-composition-missing-foundation-rejected",
+      "path": "tests/behavioural/profile-composition-missing-foundation-rejected.json",
+      "mediaType": "application/json"
+    },
+    {
+      "id": "runtime-revocation-fail-closed-valid",
+      "path": "tests/behavioural/runtime-revocation-fail-closed-valid.json",
+      "mediaType": "application/json"
+    },
+    {
+      "id": "runtime-stale-state-fail-open-rejected",
+      "path": "tests/behavioural/runtime-stale-state-fail-open-rejected.json",
       "mediaType": "application/json"
     }
   ],

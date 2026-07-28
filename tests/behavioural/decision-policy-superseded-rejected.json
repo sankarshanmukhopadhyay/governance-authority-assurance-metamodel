@@ -1,0 +1,18 @@
+{
+  "id": "decision-policy-superseded-rejected",
+  "description": "decision policy superseded rejected",
+  "input": {
+    "authorityId": "a",
+    "policyId": "p",
+    "evidenceIds": [
+      "e"
+    ],
+    "assuranceIds": [
+      "s"
+    ],
+    "accountableParty": "o",
+    "evidenceFresh": true,
+    "policyCurrent": false
+  },
+  "expectedValid": false
+}

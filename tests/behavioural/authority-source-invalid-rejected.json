@@ -1,0 +1,11 @@
+{
+  "id": "authority-source-invalid-rejected",
+  "description": "authority source invalid rejected",
+  "input": {
+    "status": "active",
+    "withinScope": true,
+    "withinTime": true,
+    "sourceValid": false
+  },
+  "expectedValid": false
+}

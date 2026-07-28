@@ -1,0 +1,11 @@
+{
+  "id": "assurance-expired-rejected",
+  "description": "assurance expired rejected",
+  "input": {
+    "evidencePresent": true,
+    "independence": "independent",
+    "requiredIndependence": "independent",
+    "withinValidity": false
+  },
+  "expectedValid": false
+}

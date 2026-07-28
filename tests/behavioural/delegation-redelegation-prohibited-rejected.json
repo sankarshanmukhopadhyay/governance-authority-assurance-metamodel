@@ -1,0 +1,18 @@
+{
+  "id": "delegation-redelegation-prohibited-rejected",
+  "description": "delegation redelegation prohibited rejected",
+  "input": {
+    "delegationPermitted": false,
+    "childEffects": [
+      "read"
+    ],
+    "parentEffects": [
+      "read"
+    ],
+    "depth": 2,
+    "maxDepth": 3,
+    "parentActive": true,
+    "childWithinParentTime": true
+  },
+  "expectedValid": false
+}

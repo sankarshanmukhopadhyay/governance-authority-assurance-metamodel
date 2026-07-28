@@ -10,8 +10,8 @@ normative_status: Repository generated
 {% include gaam-meta.html %}
 
 **Status:** PASS  
-**Checks:** 84  
-**Passed:** 84  
+**Checks:** 89  
+**Passed:** 89  
 **Failed:** 0  
 
 This report evidences repository publication, structural and included behavioural checks. It is not an independent L4 assessment.
@@ -100,5 +100,10 @@ This report evidences repository publication, structural and included behavioura
 | `DOC-LOCAL-LINKS` | documentation | PASS | all local links resolve |
 | `DOC-TSMM-CANONICAL` | provenance | PASS | canonical TSMM repository link present |
 | `CI-WORKFLOW` | automation | PASS | validation workflow present |
+| `GOV-CANDIDATE-REGISTER` | governance | PASS | 5 candidate issues have valid authority, scope, evidence and disposition fields |
+| `GOV-CANDIDATE-IDS` | governance | PASS | 5 unique candidate issue identifiers |
+| `GOV-REVIEW-REGISTERS` | governance | PASS | 5 required review registers are structurally complete |
+| `GOV-CONTRIBUTION-CONTROLS` | governance | PASS | candidate issue forms and pull-request governance template present |
+| `GOV-V1-READINESS-STATE` | governance | PASS | 5 explicitly recorded open v1 blockers: GAAM-CR-001, GAAM-CR-002, GAAM-CR-003, GAAM-CR-004, GAAM-CR-005 |
 | `PKG-MANIFEST` | package | PASS | package manifest conforms |
-| `PKG-INTEGRITY` | package | PASS | 62 checksums verified |
+| `PKG-INTEGRITY` | package | PASS | 68 checksums verified |

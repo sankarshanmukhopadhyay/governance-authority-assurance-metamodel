@@ -1,0 +1,35 @@
+name: Candidate change proposal
+description: Propose an editorial, clarification, extension, normative, or security-related change.
+title: "[Candidate change]: "
+labels: ["candidate-review"]
+body:
+  - type: dropdown
+    id: class
+    attributes:
+      label: Change class
+      options: [Editorial, Clarification, Compatible extension, Breaking normative change, Security correction]
+    validations: {required: true}
+  - type: textarea
+    id: problem
+    attributes: {label: Problem statement, description: Describe the ambiguity, defect, or capability gap.}
+    validations: {required: true}
+  - type: input
+    id: requirements
+    attributes: {label: Affected requirement IDs, placeholder: "GAAM-AUTH-001, GAAM-DEL-002"}
+    validations: {required: true}
+  - type: textarea
+    id: profiles
+    attributes: {label: Affected profiles, description: Identify profiles and schema or vocabulary artifacts.}
+    validations: {required: true}
+  - type: textarea
+    id: authority
+    attributes: {label: Authority and delegation impact, description: Explain changes to decision rights, scope, enforcement, or revocation.}
+    validations: {required: true}
+  - type: textarea
+    id: compatibility
+    attributes: {label: Compatibility and migration impact}
+    validations: {required: true}
+  - type: textarea
+    id: evidence
+    attributes: {label: Evidence, threats, and tests, description: Identify evidence needed and tests to add or update.}
+    validations: {required: true}

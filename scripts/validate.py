@@ -159,10 +159,42 @@ for p in ROOT.rglob('*.md'):
 add('DOC-LOCAL-LINKS',not bad,'all local links resolve' if not bad else '; '.join(bad[:10]),'documentation')
 add('DOC-TSMM-CANONICAL','https://github.com/sankarshanmukhopadhyay/trust-systems-meta-model' in (ROOT/'mappings/tsmm-v0.22.0-adoption-crosswalk.md').read_text(),'canonical TSMM repository link present','provenance')
 add('CI-WORKFLOW',(ROOT/'.github/workflows/validate.yml').exists(),'validation workflow present','automation')
+# Candidate governance and v1 readiness controls
+register=load(ROOT/'governance/candidate-issues.json')
+review_files={p.stem:load(p) for p in sorted((ROOT/'governance/reviews').glob('*.json'))}
+classes={'editorial','clarification','compatible-extension','breaking-normative-change','security-correction'}
+statuses={'open','in-progress','closed','withdrawn'}; severities={'critical','high','medium','low','informational'}
+gov_errors=[]; issue_ids=[]
+for issue in register.get('issues',[]):
+ issue_ids.append(issue.get('id'))
+ if issue.get('status') not in statuses: gov_errors.append(f"{issue.get('id')}: invalid status")
+ if issue.get('severity') not in severities: gov_errors.append(f"{issue.get('id')}: invalid severity")
+ if issue.get('changeClass') not in classes: gov_errors.append(f"{issue.get('id')}: invalid change class")
+ if not issue.get('decisionAuthority') or not issue.get('requiredEvidence') or not issue.get('disposition'): gov_errors.append(f"{issue.get('id')}: incomplete governance fields")
+ badreq=[x for x in issue.get('affectedRequirements',[]) if x not in pids]
+ badpro=[x for x in issue.get('affectedProfiles',[]) if x not in all_profile_ids]
+ if badreq: gov_errors.append(f"{issue.get('id')}: unknown requirements {badreq}")
+ if badpro: gov_errors.append(f"{issue.get('id')}: unknown profiles {badpro}")
+add('GOV-CANDIDATE-REGISTER',not gov_errors,f'{len(issue_ids)} candidate issues have valid authority, scope, evidence and disposition fields' if not gov_errors else '; '.join(gov_errors[:10]),'governance')
+add('GOV-CANDIDATE-IDS',len(issue_ids)==len(set(issue_ids)) and all(re.fullmatch(r'GAAM-CR-\d{3}',x or '') for x in issue_ids),f'{len(issue_ids)} unique candidate issue identifiers','governance')
+required_reviews={'privacy-review','security-review','affected-party-review','interoperability-review','implementation-evidence'}
+review_errors=[]
+for name in required_reviews:
+ obj=review_files.get(name)
+ if not obj: review_errors.append(f'missing {name}'); continue
+ if obj.get('gaamVersion')!=VERSION: review_errors.append(f'{name}: version mismatch')
+ if obj.get('status') not in {'not-started','in-progress','complete','blocked'}: review_errors.append(f'{name}: invalid status')
+ if not obj.get('reviewAuthority'): review_errors.append(f'{name}: missing review authority')
+add('GOV-REVIEW-REGISTERS',not review_errors,f'{len(required_reviews)} required review registers are structurally complete' if not review_errors else '; '.join(review_errors),'governance')
+templates=['change-proposal.yml','implementation-report.yml','review-finding.yml']
+missing_templates=[x for x in templates if not (ROOT/'.github/ISSUE_TEMPLATE'/x).exists()]
+add('GOV-CONTRIBUTION-CONTROLS',not missing_templates and (ROOT/'.github/pull_request_template.md').exists(),'candidate issue forms and pull-request governance template present' if not missing_templates else str(missing_templates),'governance')
+open_blockers=[x['id'] for x in register.get('issues',[]) if x.get('blockingV1') and x.get('status')!='closed']
+add('GOV-V1-READINESS-STATE',True,f'{len(open_blockers)} explicitly recorded open v1 blockers: {", ".join(open_blockers)}','governance')
 # Package manifest + integrity
 pkg=ROOT/'packages'/f'gaam-v{VERSION}'; pkg.mkdir(parents=True,exist_ok=True)
-artifact_paths=[REL['normativeSpecification'],'release.json','schemas/catalog.json','threat-model/threat-register.json','matrices/normative-requirements-index.csv','matrices/requirement-test-coverage.csv','matrices/requirement-assurance-traceability.csv','matrices/threat-control-test-matrix.csv']
-artifact_paths += [str(p.relative_to(ROOT)) for b in ['schemas','vocabularies','profiles/manifests','tests/behavioural'] for p in sorted((ROOT/b).glob('*.json'))]
+artifact_paths=[REL['normativeSpecification'],'release.json','schemas/catalog.json','threat-model/threat-register.json','matrices/normative-requirements-index.csv','matrices/requirement-test-coverage.csv','matrices/requirement-assurance-traceability.csv','matrices/threat-control-test-matrix.csv','governance/candidate-issues.json']
+artifact_paths += [str(p.relative_to(ROOT)) for b in ['schemas','vocabularies','profiles/manifests','tests/behavioural','governance/reviews'] for p in sorted((ROOT/b).glob('*.json'))]
 manifest={'id':f'urn:gaam:package:{VERSION}','type':'gaam-governance-package','gaamVersion':VERSION,'status':'active','profiles':sorted(manifests),'artifacts':[{'id':Path(x).stem,'path':x,'mediaType':'application/json' if x.endswith('.json') else 'text/markdown' if x.endswith('.md') else 'text/csv'} for x in artifact_paths if not x.startswith(('schemas/','vocabularies/'))], 'schemas':[p.name for p in sorted((ROOT/'schemas').glob('*.schema.json'))], 'vocabularies':[p.name for p in sorted((ROOT/'vocabularies').glob('*.json'))], 'integrity':{'algorithm':'sha-256','manifest':'checksums.json'}}
 (pkg/'manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
 perrs=list(Draft202012Validator(schemas['gaam-package']).iter_errors(manifest)); add('PKG-MANIFEST',not perrs,'package manifest conforms','package')

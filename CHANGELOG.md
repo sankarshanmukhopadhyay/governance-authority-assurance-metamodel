@@ -36,6 +36,7 @@ All notable changes will be documented here. The project uses Semantic Versionin
 
 ### Documentation
 
+- Add machine-readable candidate issue and review registers, governed GitHub issue and pull-request templates, and a v1.0.0 readiness dashboard without changing the normative specification surface.
 - Add requirement-level assurance traceability, testability dispositions, and expanded negative and boundary fixtures for existing GAAM v0.9.0 obligations.
 - Add an informative implementation and evidence readiness toolkit covering profile selection, self-assessment, evidence organisation, quality, retention and report preparation. Include a machine-readable evidence catalogue and an explicitly non-conformant illustrative report without changing normative requirements, schemas, profiles or conformance semantics.
 - Align the GitHub Pages publication surface with the compact `jekyll-theme-minimal` scheme, explicit landing-page navigation and the supported Pages build action.

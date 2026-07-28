@@ -1,0 +1,73 @@
+{
+  "registerVersion": "1.0",
+  "gaamVersion": "0.9.0",
+  "status": "active",
+  "changeClasses": ["editorial", "clarification", "compatible-extension", "breaking-normative-change", "security-correction"],
+  "issues": [
+    {
+      "id": "GAAM-CR-001",
+      "title": "Independent implementation feasibility",
+      "status": "open",
+      "severity": "high",
+      "blockingV1": true,
+      "changeClass": "clarification",
+      "affectedRequirements": ["GAAM-CONF-001"],
+      "affectedProfiles": ["gaam:profile:foundation:0.9.0"],
+      "decisionAuthority": "maintainers",
+      "requiredEvidence": ["Two independent implementation reports", "Foundation Profile coverage", "At least one composed-profile implementation"],
+      "disposition": "Awaiting independent implementation evidence"
+    },
+    {
+      "id": "GAAM-CR-002",
+      "title": "Cross-implementation receipt and lifecycle interoperability",
+      "status": "open",
+      "severity": "high",
+      "blockingV1": true,
+      "changeClass": "clarification",
+      "affectedRequirements": ["GAAM-DEC-001", "GAAM-LIFE-001"],
+      "affectedProfiles": ["gaam:profile:runtime-governance:0.9.0"],
+      "decisionAuthority": "maintainers",
+      "requiredEvidence": ["Artifacts from two independent implementations", "Cross-validator results", "Documented semantic differences"],
+      "disposition": "Interoperability event not yet completed"
+    },
+    {
+      "id": "GAAM-CR-003",
+      "title": "Canonical identifier publication demonstration",
+      "status": "open",
+      "severity": "high",
+      "blockingV1": true,
+      "changeClass": "editorial",
+      "affectedRequirements": ["GAAM-ART-001"],
+      "affectedProfiles": ["gaam:profile:foundation:0.9.0"],
+      "decisionAuthority": "maintainers",
+      "requiredEvidence": ["Resolvable versioned schema identifiers", "Published checksum verification", "Historical-version retention check"],
+      "disposition": "Publication workflow exists; external durability evidence pending"
+    },
+    {
+      "id": "GAAM-CR-004",
+      "title": "Privacy and affected-party review",
+      "status": "open",
+      "severity": "high",
+      "blockingV1": true,
+      "changeClass": "clarification",
+      "affectedRequirements": ["GAAM-RED-001"],
+      "affectedProfiles": ["gaam:profile:high-impact-systems:0.9.0"],
+      "decisionAuthority": "maintainers",
+      "requiredEvidence": ["Completed privacy review", "Completed affected-party review", "Disposition of material findings"],
+      "disposition": "Structured reviews not yet completed"
+    },
+    {
+      "id": "GAAM-CR-005",
+      "title": "Security review and critical issue disposition",
+      "status": "open",
+      "severity": "critical",
+      "blockingV1": true,
+      "changeClass": "security-correction",
+      "affectedRequirements": ["GAAM-AUTH-001"],
+      "affectedProfiles": ["gaam:profile:foundation:0.9.0"],
+      "decisionAuthority": "maintainers",
+      "requiredEvidence": ["Completed security review", "Threat-register reconciliation", "No unresolved critical security finding"],
+      "disposition": "Formal candidate security review pending"
+    }
+  ]
+}

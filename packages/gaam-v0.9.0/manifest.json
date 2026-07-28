@@ -50,6 +50,11 @@
       "mediaType": "text/csv"
     },
     {
+      "id": "candidate-issues",
+      "path": "governance/candidate-issues.json",
+      "mediaType": "application/json"
+    },
+    {
       "id": "agentic-systems",
       "path": "profiles/manifests/agentic-systems.json",
       "mediaType": "application/json"
@@ -222,6 +227,31 @@
     {
       "id": "runtime-stale-state-fail-open-rejected",
       "path": "tests/behavioural/runtime-stale-state-fail-open-rejected.json",
+      "mediaType": "application/json"
+    },
+    {
+      "id": "affected-party-review",
+      "path": "governance/reviews/affected-party-review.json",
+      "mediaType": "application/json"
+    },
+    {
+      "id": "implementation-evidence",
+      "path": "governance/reviews/implementation-evidence.json",
+      "mediaType": "application/json"
+    },
+    {
+      "id": "interoperability-review",
+      "path": "governance/reviews/interoperability-review.json",
+      "mediaType": "application/json"
+    },
+    {
+      "id": "privacy-review",
+      "path": "governance/reviews/privacy-review.json",
+      "mediaType": "application/json"
+    },
+    {
+      "id": "security-review",
+      "path": "governance/reviews/security-review.json",
       "mediaType": "application/json"
     }
   ],

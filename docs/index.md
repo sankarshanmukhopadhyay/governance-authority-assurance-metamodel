@@ -10,7 +10,8 @@ Begin with the **[guided learning paths](guided-learning.md)** to select a polic
 
 
 <div class="artifact-grid">
-<div class="artifact-card"><h3><a href="architecture/">Architecture</a></h3><p>System boundaries, components and governance flows.</p></div>
+<div class="artifact-card"><h3><a href="architecture/">Architecture</a></h3><p>System boundaries, components and governance flows.</p><div class="artifact-card"><h3><a href="../governance/candidate-readiness/">Candidate readiness</a></h3><p>Machine-verifiable release blockers, review records and v1.0.0 evidence gates.</p></div>
+</div>
 <div class="artifact-card"><h3><a href="implementation/">Implementation guide</a></h3><p>Implementation sequence, artifact handling and integration guidance.</p></div>
 <div class="artifact-card"><h3><a href="conformance/">Conformance guide</a></h3><p>Conformance levels, evidence and claim boundaries.</p></div>
 <div class="artifact-card"><h3><a href="lifecycle-model/">Lifecycle model</a></h3><p>Lifecycle states, transitions, revocation and effect propagation.</p></div>

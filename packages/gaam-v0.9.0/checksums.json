@@ -3,6 +3,30 @@
   "scope": "declared source artifacts excluding this checksum file",
   "files": [
     {
+      "path": "governance/candidate-issues.json",
+      "sha256": "89bdb851d31c8b88a68dcdf29a9053e9854f707f326da51ca2a5bf9eb3ae2922"
+    },
+    {
+      "path": "governance/reviews/affected-party-review.json",
+      "sha256": "64b4b06a1c6c09b163ed82f004e9c3ed18bc3e46cd1c00d80b754311de487780"
+    },
+    {
+      "path": "governance/reviews/implementation-evidence.json",
+      "sha256": "d0db744997af55d075e0d878066c8db099a780ed1385da1f7ef364e6907f2d8c"
+    },
+    {
+      "path": "governance/reviews/interoperability-review.json",
+      "sha256": "435ca6977945282ba331a278697d3a05cce9630cd372f955a07503df4e9a079d"
+    },
+    {
+      "path": "governance/reviews/privacy-review.json",
+      "sha256": "7b4c20998caed39ec902b6a9a240ca1e27aae85019938cf8120f92f771ab3268"
+    },
+    {
+      "path": "governance/reviews/security-review.json",
+      "sha256": "086ae259f7a453689f66ee1c5f1844e84da8f714554f0788cb41889cfb7f08d5"
+    },
+    {
       "path": "matrices/normative-requirements-index.csv",
       "sha256": "c1abcac2b6414ff20b4e8a84d9faa48578a75a29654fe143c86fdae46eb54363"
     },
@@ -20,7 +44,7 @@
     },
     {
       "path": "packages/gaam-v0.9.0/manifest.json",
-      "sha256": "a2d79ab9f2dcb12afc581d91843fc5ca8751fc6076e9fe565d9c89b9ead87019"
+      "sha256": "7c8e2a9ba6dc1927db32c534b9bac5beb943b4d3000422cd6d6bc2b9937fb01e"
     },
     {
       "path": "profiles/manifests/agentic-systems.json",

@@ -1,0 +1,25 @@
+name: Implementation report submission
+description: Submit independently produced GAAM implementation evidence.
+title: "[Implementation report]: "
+labels: ["implementation-evidence"]
+body:
+  - type: input
+    id: implementer
+    attributes: {label: Implementing organisation or project}
+    validations: {required: true}
+  - type: textarea
+    id: scope
+    attributes: {label: Target of evaluation and profiles}
+    validations: {required: true}
+  - type: textarea
+    id: independence
+    attributes: {label: Independence statement, description: Disclose relationships with maintainers, assessors, and evidence producers.}
+    validations: {required: true}
+  - type: textarea
+    id: evidence
+    attributes: {label: Report and reproducible evidence links}
+    validations: {required: true}
+  - type: textarea
+    id: deviations
+    attributes: {label: Deviations, failures, and residual risks}
+    validations: {required: true}

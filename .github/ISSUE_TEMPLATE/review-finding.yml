@@ -1,0 +1,33 @@
+name: Candidate review finding
+description: Record a privacy, security, affected-party, or interoperability finding.
+title: "[Review finding]: "
+labels: ["candidate-review"]
+body:
+  - type: dropdown
+    id: review
+    attributes:
+      label: Review type
+      options: [Privacy, Security, Affected-party, Interoperability]
+    validations: {required: true}
+  - type: dropdown
+    id: severity
+    attributes:
+      label: Severity
+      options: [Critical, High, Medium, Low, Informational]
+    validations: {required: true}
+  - type: textarea
+    id: finding
+    attributes: {label: Finding and evidence}
+    validations: {required: true}
+  - type: input
+    id: requirements
+    attributes: {label: Affected requirement IDs}
+    validations: {required: true}
+  - type: textarea
+    id: impact
+    attributes: {label: Authority, affected-party, and interoperability impact}
+    validations: {required: true}
+  - type: textarea
+    id: disposition
+    attributes: {label: Proposed disposition and verification}
+    validations: {required: true}

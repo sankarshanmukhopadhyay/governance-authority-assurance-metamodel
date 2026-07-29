@@ -4,7 +4,7 @@
   "files": [
     {
       "path": "examples/README.md",
-      "sha256": "b58db95a18f98b84e0530984aac31bd51e6258fdbd0bd29123efcb17f5b913fe"
+      "sha256": "da62beece5c90dafe7196511591b7d355fabd4e00c27b516d9a6b270d2496d26"
     },
     {
       "path": "examples/authority-lifecycle-and-revocation/README.md",
@@ -931,8 +931,36 @@
       "sha256": "64b4b06a1c6c09b163ed82f004e9c3ed18bc3e46cd1c00d80b754311de487780"
     },
     {
+      "path": "governance/reviews/evidence/implementation/ecosystems/README.md",
+      "sha256": "9b38d93a118d44f7f0c721cafceb0f6c59907d341cc1a2d789583132e5f91c01"
+    },
+    {
+      "path": "governance/reviews/evidence/implementation/ecosystems/governed-ecosystem-capability-matrix.csv",
+      "sha256": "b9bbb1c9c759296e27fa4e2472f127406c35651f4e3c3afb71758fbb5f6c921c"
+    },
+    {
+      "path": "governance/reviews/evidence/implementation/ecosystems/governed-ecosystem-capability-matrix.md",
+      "sha256": "4fe6eff678b4d18813ee57554d75b0787dadb074c6a96ade6cb27b287973051e"
+    },
+    {
+      "path": "governance/reviews/evidence/implementation/ecosystems/governed-ecosystem-enhancement-register.json",
+      "sha256": "b3545ae82ef0ffd9e1486d05b07e2399bd984ca4907f02f375a3f58cd00d328d"
+    },
+    {
+      "path": "governance/reviews/evidence/implementation/ecosystems/governed-ecosystem-normative-impact-analysis.md",
+      "sha256": "eb91432408b004c90150d7674daf067a2a6a8cb52e92750ce78bd738a78d6373"
+    },
+    {
+      "path": "governance/reviews/evidence/implementation/ecosystems/reference-ecosystem-comparison.md",
+      "sha256": "8d48acd03e24346f4525bae4738583da732a7d737ee4af1270b0c540724600f1"
+    },
+    {
+      "path": "governance/reviews/evidence/implementation/ecosystems/reviewer-attestation.json",
+      "sha256": "71bd89206c1e9108ee037072d8bedb1f171ddcddac0f6e566b854ebfee6b202f"
+    },
+    {
       "path": "governance/reviews/implementation-evidence.json",
-      "sha256": "d0db744997af55d075e0d878066c8db099a780ed1385da1f7ef364e6907f2d8c"
+      "sha256": "6bd37760f146bd975f2d00c69f87b7ed8554cd0f823c84c0e91a316ec93f3a0f"
     },
     {
       "path": "governance/reviews/interoperability-review.json",
@@ -964,7 +992,7 @@
     },
     {
       "path": "packages/gaam-v0.9.0/manifest.json",
-      "sha256": "9cf3105f97f9a8f907e4b48c0d18355f36fefe7fbba5abe2c1c9650ec66ed181"
+      "sha256": "d1fd6935d01a4e5cbad2dbc8925cf38f55fe251a7170aeb53587accc498ce17f"
     },
     {
       "path": "profiles/manifests/agentic-systems.json",

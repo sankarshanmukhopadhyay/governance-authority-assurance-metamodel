@@ -1,6 +1,8 @@
 
 ### Added
 
+- Governed ecosystem applicability evidence, capability matrix, enhancement register and normative-impact analysis.
+- GitHub Pages fixes for duplicate implementation-pattern navigation and Markdown table rendering in the normative-requirements and threat-control matrices.
 - Five foundational executable governance patterns and a technology-neutral governed ecosystem operations pattern.
 - Guided learning from basic governed decisions through authority lifecycle, assurance, remedy, machine-actionable packages and ecosystem operations.
 - Machine-readable manifests, conformance claims, valid and invalid fixtures, behavioural references and evidence expectations for the new patterns.

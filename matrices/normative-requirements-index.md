@@ -12,7 +12,7 @@ normative_status: Assurance supporting
 
 [Download CSV](normative-requirements-index.csv)
 
-<div class="table-wrap">
+<div class="table-wrap" markdown="1">
 
 | requirement_id | section | requirement |
 | --- | --- | --- |

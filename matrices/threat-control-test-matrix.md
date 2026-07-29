@@ -12,7 +12,7 @@ normative_status: Assurance supporting
 
 [Download CSV](threat-control-test-matrix.csv)
 
-<div class="table-wrap">
+<div class="table-wrap" markdown="1">
 
 | threat_id | control_objective | test_ids |
 | --- | --- | --- |

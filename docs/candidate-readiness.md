@@ -22,6 +22,7 @@ This dashboard exposes the evidence currently available for progression from GAA
 | Security review | Not started | Completed review with no unresolved critical issue |
 | Affected-party review | Not started | Completed review of notice, standing, challenge and remedy execution |
 | Cross-implementation interoperability | Not started | Cross-validator evidence from independent implementations |
+| Governed ecosystem applicability | In progress | Independent review of the [capability matrix](../governance/reviews/evidence/implementation/ecosystems/governed-ecosystem-capability-matrix.md) and candidate enhancement dispositions |
 | Breaking candidate issues | No known open item | Continued register validation and explicit classification |
 
 ## Decision rule

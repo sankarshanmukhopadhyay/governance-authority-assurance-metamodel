@@ -10,8 +10,8 @@ normative_status: Repository generated
 {% include gaam-meta.html %}
 
 **Status:** PASS  
-**Checks:** 223  
-**Passed:** 223  
+**Checks:** 225  
+**Passed:** 225  
 **Failed:** 0  
 
 This report evidences repository publication, structural and included behavioural checks. It is not an independent L4 assessment.
@@ -237,7 +237,9 @@ This report evidences repository publication, structural and included behavioura
 | `GOV-CANDIDATE-REGISTER` | governance | PASS | 5 candidate issues have valid authority, scope, evidence and disposition fields |
 | `GOV-CANDIDATE-IDS` | governance | PASS | 5 unique candidate issue identifiers |
 | `GOV-REVIEW-REGISTERS` | governance | PASS | 5 required review registers are structurally complete |
+| `GOV-ECO-EVIDENCE` | governance | PASS | governed ecosystem evidence package complete |
+| `GOV-ECO-DISPOSITION` | governance | PASS | 12 ecosystem capabilities classified with controlled dispositions |
 | `GOV-CONTRIBUTION-CONTROLS` | governance | PASS | candidate issue forms and pull-request governance template present |
 | `GOV-V1-READINESS-STATE` | governance | PASS | 5 explicitly recorded open v1 blockers: GAAM-CR-001, GAAM-CR-002, GAAM-CR-003, GAAM-CR-004, GAAM-CR-005 |
 | `PKG-MANIFEST` | package | PASS | package manifest conforms |
-| `PKG-INTEGRITY` | package | PASS | 298 checksums verified |
+| `PKG-INTEGRITY` | package | PASS | 305 checksums verified |

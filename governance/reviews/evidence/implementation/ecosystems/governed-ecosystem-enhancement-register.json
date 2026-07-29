@@ -1,0 +1,251 @@
+{
+  "id": "gaam:ecosystem-enhancement-register:0.9.0",
+  "gaamVersion": "0.9.0",
+  "status": "draft-for-review",
+  "pattern": "gaam:pattern:governed-ecosystem-operations:0.9.0",
+  "principle": "Exhaust informative remedies and implementation evidence before proposing normative change.",
+  "entries": [
+    {
+      "id": "GAAM-ECO-001",
+      "capability": "Participant classes",
+      "requirements": [
+        "GAAM-CORE-001",
+        "GAAM-CORE-003",
+        "GAAM-GF-006"
+      ],
+      "currentCoverage": "covered-with-pattern",
+      "gapClassification": "guidance-gap",
+      "proposedDisposition": "implementation-guidance",
+      "normativeImpact": "none",
+      "candidateChangeProposalId": null,
+      "reviewStatus": "ready-for-review",
+      "evidence": [
+        "examples/governed-ecosystem-operations/requirement-mapping.md",
+        "governance/reviews/evidence/implementation/ecosystems/governed-ecosystem-capability-matrix.csv"
+      ]
+    },
+    {
+      "id": "GAAM-ECO-002",
+      "capability": "Qualification and recognition lifecycle",
+      "requirements": [
+        "GAAM-CORE-003",
+        "GAAM-CORE-005",
+        "GAAM-ASSUR-004",
+        "GAAM-EVT-001"
+      ],
+      "currentCoverage": "partially-covered",
+      "gapClassification": "pattern-gap",
+      "proposedDisposition": "documentation-clarification",
+      "normativeImpact": "none",
+      "candidateChangeProposalId": null,
+      "reviewStatus": "ready-for-review",
+      "evidence": [
+        "examples/governed-ecosystem-operations/requirement-mapping.md",
+        "governance/reviews/evidence/implementation/ecosystems/governed-ecosystem-capability-matrix.csv"
+      ]
+    },
+    {
+      "id": "GAAM-ECO-003",
+      "capability": "Governance-framework composition",
+      "requirements": [
+        "GAAM-GF-001",
+        "GAAM-GF-006",
+        "GAAM-GF-010",
+        "GAAM-POL-003",
+        "GAAM-POL-004"
+      ],
+      "currentCoverage": "partially-covered",
+      "gapClassification": "vocabulary-gap",
+      "proposedDisposition": "defer-pending-implementation",
+      "normativeImpact": "possible",
+      "candidateChangeProposalId": "GAAM-CP-ECO-001",
+      "reviewStatus": "candidate",
+      "evidence": [
+        "examples/governed-ecosystem-operations/requirement-mapping.md",
+        "governance/reviews/evidence/implementation/ecosystems/governed-ecosystem-capability-matrix.csv"
+      ]
+    },
+    {
+      "id": "GAAM-ECO-004",
+      "capability": "Governed credential or assertion frameworks",
+      "requirements": [
+        "GAAM-EVID-001",
+        "GAAM-EVID-002",
+        "GAAM-GF-001",
+        "GAAM-GF-003"
+      ],
+      "currentCoverage": "covered-with-pattern",
+      "gapClassification": "guidance-gap",
+      "proposedDisposition": "implementation-guidance",
+      "normativeImpact": "none",
+      "candidateChangeProposalId": null,
+      "reviewStatus": "ready-for-review",
+      "evidence": [
+        "examples/governed-ecosystem-operations/requirement-mapping.md",
+        "governance/reviews/evidence/implementation/ecosystems/governed-ecosystem-capability-matrix.csv"
+      ]
+    },
+    {
+      "id": "GAAM-ECO-005",
+      "capability": "Organisational authority chains",
+      "requirements": [
+        "GAAM-AUTH-001",
+        "GAAM-AUTH-002",
+        "GAAM-AUTH-003",
+        "GAAM-DEL-004",
+        "GAAM-AGT-004"
+      ],
+      "currentCoverage": "covered-with-pattern",
+      "gapClassification": "guidance-gap",
+      "proposedDisposition": "implementation-guidance",
+      "normativeImpact": "none",
+      "candidateChangeProposalId": null,
+      "reviewStatus": "ready-for-review",
+      "evidence": [
+        "examples/governed-ecosystem-operations/requirement-mapping.md",
+        "governance/reviews/evidence/implementation/ecosystems/governed-ecosystem-capability-matrix.csv"
+      ]
+    },
+    {
+      "id": "GAAM-ECO-006",
+      "capability": "Contract-to-authority traceability",
+      "requirements": [
+        "GAAM-AUTH-001",
+        "GAAM-POL-002",
+        "GAAM-POL-003",
+        "GAAM-GF-001"
+      ],
+      "currentCoverage": "partially-covered",
+      "gapClassification": "guidance-gap",
+      "proposedDisposition": "documentation-clarification",
+      "normativeImpact": "none",
+      "candidateChangeProposalId": null,
+      "reviewStatus": "ready-for-review",
+      "evidence": [
+        "examples/governed-ecosystem-operations/requirement-mapping.md",
+        "governance/reviews/evidence/implementation/ecosystems/governed-ecosystem-capability-matrix.csv"
+      ]
+    },
+    {
+      "id": "GAAM-ECO-007",
+      "capability": "Multi-object assurance",
+      "requirements": [
+        "GAAM-ASSUR-001",
+        "GAAM-ASSUR-002",
+        "GAAM-ASSUR-003",
+        "GAAM-ASSUR-004"
+      ],
+      "currentCoverage": "partially-covered",
+      "gapClassification": "pattern-gap",
+      "proposedDisposition": "implementation-guidance",
+      "normativeImpact": "none",
+      "candidateChangeProposalId": null,
+      "reviewStatus": "ready-for-review",
+      "evidence": [
+        "examples/governed-ecosystem-operations/requirement-mapping.md",
+        "governance/reviews/evidence/implementation/ecosystems/governed-ecosystem-capability-matrix.csv"
+      ]
+    },
+    {
+      "id": "GAAM-ECO-008",
+      "capability": "Third-party control flow-down",
+      "requirements": [
+        "GAAM-ACC-001",
+        "GAAM-ACC-003",
+        "GAAM-DEL-006",
+        "GAAM-GF-006"
+      ],
+      "currentCoverage": "partially-covered",
+      "gapClassification": "guidance-gap",
+      "proposedDisposition": "implementation-guidance",
+      "normativeImpact": "none",
+      "candidateChangeProposalId": null,
+      "reviewStatus": "ready-for-review",
+      "evidence": [
+        "examples/governed-ecosystem-operations/requirement-mapping.md",
+        "governance/reviews/evidence/implementation/ecosystems/governed-ecosystem-capability-matrix.csv"
+      ]
+    },
+    {
+      "id": "GAAM-ECO-009",
+      "capability": "Intermediary exit and continuity",
+      "requirements": [
+        "GAAM-REL-006",
+        "GAAM-GF-012",
+        "GAAM-RUN-008",
+        "GAAM-RUN-009",
+        "GAAM-AGT-022"
+      ],
+      "currentCoverage": "partially-covered",
+      "gapClassification": "pattern-gap",
+      "proposedDisposition": "implementation-guidance",
+      "normativeImpact": "none",
+      "candidateChangeProposalId": null,
+      "reviewStatus": "ready-for-review",
+      "evidence": [
+        "examples/governed-ecosystem-operations/requirement-mapping.md",
+        "governance/reviews/evidence/implementation/ecosystems/governed-ecosystem-capability-matrix.csv"
+      ]
+    },
+    {
+      "id": "GAAM-ECO-010",
+      "capability": "Residual-risk acceptance authority",
+      "requirements": [
+        "GAAM-ACC-001",
+        "GAAM-ACC-003",
+        "GAAM-HARM-001",
+        "GAAM-DEC-003"
+      ],
+      "currentCoverage": "partially-covered",
+      "gapClassification": "schema-gap",
+      "proposedDisposition": "defer-pending-implementation",
+      "normativeImpact": "possible",
+      "candidateChangeProposalId": "GAAM-CP-ECO-002",
+      "reviewStatus": "candidate",
+      "evidence": [
+        "examples/governed-ecosystem-operations/requirement-mapping.md",
+        "governance/reviews/evidence/implementation/ecosystems/governed-ecosystem-capability-matrix.csv"
+      ]
+    },
+    {
+      "id": "GAAM-ECO-011",
+      "capability": "Ecosystem status publication",
+      "requirements": [
+        "GAAM-GF-009",
+        "GAAM-EVT-001",
+        "GAAM-EVT-002",
+        "GAAM-RUN-003"
+      ],
+      "currentCoverage": "covered",
+      "gapClassification": "guidance-gap",
+      "proposedDisposition": "documentation-clarification",
+      "normativeImpact": "none",
+      "candidateChangeProposalId": null,
+      "reviewStatus": "ready-for-review",
+      "evidence": [
+        "examples/governed-ecosystem-operations/requirement-mapping.md",
+        "governance/reviews/evidence/implementation/ecosystems/governed-ecosystem-capability-matrix.csv"
+      ]
+    },
+    {
+      "id": "GAAM-ECO-012",
+      "capability": "Service-level governance",
+      "requirements": [
+        "GAAM-ASSUR-002",
+        "GAAM-ASSUR-004",
+        "GAAM-RUN-001",
+        "GAAM-RUN-008"
+      ],
+      "currentCoverage": "partially-covered",
+      "gapClassification": "pattern-gap",
+      "proposedDisposition": "implementation-guidance",
+      "normativeImpact": "none",
+      "candidateChangeProposalId": null,
+      "reviewStatus": "ready-for-review",
+      "evidence": [
+        "examples/governed-ecosystem-operations/requirement-mapping.md",
+        "governance/reviews/evidence/implementation/ecosystems/governed-ecosystem-capability-matrix.csv"
+      ]
+    }
+  ]
+}

@@ -226,6 +226,30 @@ for name in required_reviews:
  if obj.get('status') not in {'not-started','in-progress','complete','blocked'}: review_errors.append(f'{name}: invalid status')
  if not obj.get('reviewAuthority'): review_errors.append(f'{name}: missing review authority')
 add('GOV-REVIEW-REGISTERS',not review_errors,f'{len(required_reviews)} required review registers are structurally complete' if not review_errors else '; '.join(review_errors),'governance')
+# Governed ecosystem applicability evidence
+eco_dir=ROOT/'governance/reviews/evidence/implementation/ecosystems'
+eco_required={'README.md','governed-ecosystem-capability-matrix.csv','governed-ecosystem-capability-matrix.md','governed-ecosystem-enhancement-register.json','governed-ecosystem-normative-impact-analysis.md','reference-ecosystem-comparison.md','reviewer-attestation.json'}
+eco_missing=sorted(x for x in eco_required if not (eco_dir/x).exists())
+add('GOV-ECO-EVIDENCE',not eco_missing,'governed ecosystem evidence package complete' if not eco_missing else 'missing '+', '.join(eco_missing),'governance')
+eco_errors=[]
+if not eco_missing:
+ try:
+  with (eco_dir/'governed-ecosystem-capability-matrix.csv').open(newline='') as f:
+   eco_rows=list(csv.DictReader(f))
+  valid_gaps={'already-covered','guidance-gap','pattern-gap','schema-gap','vocabulary-gap','profile-gap','normative-semantics-gap','test-gap','evidence-gap'}
+  valid_disps={'no-change','documentation-clarification','implementation-guidance','new-informative-pattern','new-behavioural-test','schema-extension-proposal','vocabulary-extension-proposal','profile-proposal','normative-requirement-proposal','defer-pending-implementation'}
+  for row in eco_rows:
+   if row.get('gap_classification') not in valid_gaps: eco_errors.append(f"{row.get('ecosystem_capability')}: invalid gap classification")
+   if row.get('proposed_disposition') not in valid_disps: eco_errors.append(f"{row.get('ecosystem_capability')}: invalid disposition")
+   bad=[x for x in row.get('gaam_requirements','').split(';') if x and x not in pids]
+   if bad: eco_errors.append(f"{row.get('ecosystem_capability')}: unknown requirements {bad}")
+  reg=load(eco_dir/'governed-ecosystem-enhancement-register.json')
+  if len(reg.get('entries',[]))!=len(eco_rows): eco_errors.append('enhancement register and capability matrix differ in size')
+  if reg.get('gaamVersion')!=VERSION: eco_errors.append('enhancement register version mismatch')
+  att=load(eco_dir/'reviewer-attestation.json')
+  if att.get('independence')!='not-independent': eco_errors.append('maintainer-prepared assessment must not claim independence')
+ except Exception as e: eco_errors.append(str(e))
+add('GOV-ECO-DISPOSITION',not eco_errors,f'{len(eco_rows) if not eco_errors else 0} ecosystem capabilities classified with controlled dispositions' if not eco_errors else '; '.join(eco_errors[:10]),'governance')
 templates=['change-proposal.yml','implementation-report.yml','review-finding.yml']
 missing_templates=[x for x in templates if not (ROOT/'.github/ISSUE_TEMPLATE'/x).exists()]
 add('GOV-CONTRIBUTION-CONTROLS',not missing_templates and (ROOT/'.github/pull_request_template.md').exists(),'candidate issue forms and pull-request governance template present' if not missing_templates else str(missing_templates),'governance')
@@ -234,7 +258,8 @@ add('GOV-V1-READINESS-STATE',True,f'{len(open_blockers)} explicitly recorded ope
 # Package manifest + integrity
 pkg=ROOT/'packages'/f'gaam-v{VERSION}'; pkg.mkdir(parents=True,exist_ok=True)
 artifact_paths=[REL['normativeSpecification'],'release.json','schemas/catalog.json','threat-model/threat-register.json','matrices/normative-requirements-index.csv','matrices/requirement-test-coverage.csv','matrices/requirement-assurance-traceability.csv','matrices/threat-control-test-matrix.csv','governance/candidate-issues.json']
-artifact_paths += [str(p.relative_to(ROOT)) for b in ['schemas','vocabularies','profiles/manifests','tests/behavioural','governance/reviews'] for p in sorted((ROOT/b).glob('*.json'))]
+artifact_paths += [str(p.relative_to(ROOT)) for b in ['schemas','vocabularies','profiles/manifests','tests/behavioural'] for p in sorted((ROOT/b).glob('*.json'))]
+artifact_paths += [str(p.relative_to(ROOT)) for p in sorted((ROOT/'governance/reviews').rglob('*')) if p.is_file() and p.name not in {'.gitkeep'}]
 artifact_paths += [str(p.relative_to(ROOT)) for p in sorted((ROOT/'examples').rglob('*')) if p.is_file() and p.name not in {'.gitkeep'}]
 manifest={'id':f'urn:gaam:package:{VERSION}','type':'gaam-governance-package','gaamVersion':VERSION,'status':'active','profiles':sorted(manifests),'artifacts':[{'id':Path(x).stem,'path':x,'mediaType':'application/json' if x.endswith('.json') else 'text/markdown' if x.endswith('.md') else 'text/csv'} for x in artifact_paths if not x.startswith(('schemas/','vocabularies/'))], 'schemas':[p.name for p in sorted((ROOT/'schemas').glob('*.schema.json'))], 'vocabularies':[p.name for p in sorted((ROOT/'vocabularies').glob('*.json'))], 'integrity':{'algorithm':'sha-256','manifest':'checksums.json'}}
 (pkg/'manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')

@@ -2,8 +2,8 @@
   "gaamVersion": "0.9.0",
   "testSuiteVersion": "0.9.0",
   "status": "pass",
-  "checks": 223,
-  "passed": 223,
+  "checks": 225,
+  "passed": 225,
   "failed": 0,
   "results": [
     {
@@ -1321,6 +1321,18 @@
       "evidence": "5 required review registers are structurally complete"
     },
     {
+      "id": "GOV-ECO-EVIDENCE",
+      "kind": "governance",
+      "status": "pass",
+      "evidence": "governed ecosystem evidence package complete"
+    },
+    {
+      "id": "GOV-ECO-DISPOSITION",
+      "kind": "governance",
+      "status": "pass",
+      "evidence": "12 ecosystem capabilities classified with controlled dispositions"
+    },
+    {
       "id": "GOV-CONTRIBUTION-CONTROLS",
       "kind": "governance",
       "status": "pass",
@@ -1342,7 +1354,7 @@
       "id": "PKG-INTEGRITY",
       "kind": "package",
       "status": "pass",
-      "evidence": "298 checksums verified"
+      "evidence": "305 checksums verified"
     }
   ]
 }

@@ -1,0 +1,18 @@
+{
+  "id": "gaam:review-attestation:governed-ecosystem:0.9.0",
+  "gaamVersion": "0.9.0",
+  "status": "maintainer-prepared",
+  "assessmentType": "implementation applicability assessment",
+  "reviewerRole": "repository implementation contributor",
+  "independence": "not-independent",
+  "scope": [
+    "examples/governed-ecosystem-operations",
+    "governance/reviews/evidence/implementation/ecosystems"
+  ],
+  "attestation": "The pattern provides a reasonable technology-neutral stress test, but its findings require independent review before normative disposition.",
+  "completedAt": "2026-07-29",
+  "limitations": [
+    "No independent implementation was evaluated.",
+    "No external ecosystem conformity claim is made."
+  ]
+}

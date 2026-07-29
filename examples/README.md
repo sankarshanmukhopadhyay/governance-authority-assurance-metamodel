@@ -1,6 +1,8 @@
 ---
 title: "GAAM Implementation Patterns"
 artifact_type: Informative implementation pattern
+nav_exclude: true
+search_exclude: true
 normative_status: Informative
 ---
 # GAAM Implementation Patterns

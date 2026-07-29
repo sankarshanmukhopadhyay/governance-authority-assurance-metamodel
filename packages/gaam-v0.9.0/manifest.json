@@ -235,6 +235,41 @@
       "mediaType": "application/json"
     },
     {
+      "id": "README",
+      "path": "governance/reviews/evidence/implementation/ecosystems/README.md",
+      "mediaType": "text/markdown"
+    },
+    {
+      "id": "governed-ecosystem-capability-matrix",
+      "path": "governance/reviews/evidence/implementation/ecosystems/governed-ecosystem-capability-matrix.csv",
+      "mediaType": "text/csv"
+    },
+    {
+      "id": "governed-ecosystem-capability-matrix",
+      "path": "governance/reviews/evidence/implementation/ecosystems/governed-ecosystem-capability-matrix.md",
+      "mediaType": "text/markdown"
+    },
+    {
+      "id": "governed-ecosystem-enhancement-register",
+      "path": "governance/reviews/evidence/implementation/ecosystems/governed-ecosystem-enhancement-register.json",
+      "mediaType": "application/json"
+    },
+    {
+      "id": "governed-ecosystem-normative-impact-analysis",
+      "path": "governance/reviews/evidence/implementation/ecosystems/governed-ecosystem-normative-impact-analysis.md",
+      "mediaType": "text/markdown"
+    },
+    {
+      "id": "reference-ecosystem-comparison",
+      "path": "governance/reviews/evidence/implementation/ecosystems/reference-ecosystem-comparison.md",
+      "mediaType": "text/markdown"
+    },
+    {
+      "id": "reviewer-attestation",
+      "path": "governance/reviews/evidence/implementation/ecosystems/reviewer-attestation.json",
+      "mediaType": "application/json"
+    },
+    {
       "id": "implementation-evidence",
       "path": "governance/reviews/implementation-evidence.json",
       "mediaType": "application/json"

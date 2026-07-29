@@ -1,1 +1,58 @@
-{"reviewType":"implementation-evidence","gaamVersion":"0.9.0","status":"not-started","reviewAuthority":"unassigned","requiredIndependentImplementations":2,"acceptedReports":[],"foundationCoverage":false,"composedProfileCoverage":false,"completedAt":null}
+{
+  "reviewType": "implementation-evidence",
+  "gaamVersion": "0.9.0",
+  "status": "in-progress",
+  "reviewAuthority": "GAAM maintainers pending independent implementation review",
+  "requiredIndependentImplementations": 2,
+  "acceptedReports": [],
+  "foundationCoverage": false,
+  "composedProfileCoverage": false,
+  "completedAt": null,
+  "implementationDomains": [
+    "governed ecosystem operations"
+  ],
+  "patternsUnderAssessment": [
+    "gaam:pattern:governed-ecosystem-operations:0.9.0"
+  ],
+  "referenceEcosystems": [
+    {
+      "name": "vLEI Ecosystem Governance Framework",
+      "purpose": "structural comparison only",
+      "endorsementOrConformanceClaim": false
+    }
+  ],
+  "technologyNeutralityStatement": "The pattern abstracts governance structures and does not require a specific identifier, credential, cryptographic or trust-root technology.",
+  "capabilitiesDemonstrated": [
+    "Participant classes",
+    "Qualification and recognition lifecycle",
+    "Governance-framework composition",
+    "Governed credential or assertion frameworks",
+    "Organisational authority chains",
+    "Contract-to-authority traceability",
+    "Multi-object assurance",
+    "Third-party control flow-down",
+    "Intermediary exit and continuity",
+    "Residual-risk acceptance authority",
+    "Ecosystem status publication",
+    "Service-level governance"
+  ],
+  "gapsObserved": [
+    "governance-framework composition vocabulary candidate",
+    "residual-risk acceptance record candidate"
+  ],
+  "independentImplementationStatus": "not-started",
+  "interoperabilityStatus": "not-tested",
+  "evidenceReferences": [
+    "governance/reviews/evidence/implementation/ecosystems/README.md",
+    "governance/reviews/evidence/implementation/ecosystems/governed-ecosystem-capability-matrix.csv",
+    "governance/reviews/evidence/implementation/ecosystems/governed-ecosystem-capability-matrix.md",
+    "governance/reviews/evidence/implementation/ecosystems/governed-ecosystem-enhancement-register.json",
+    "governance/reviews/evidence/implementation/ecosystems/governed-ecosystem-normative-impact-analysis.md",
+    "governance/reviews/evidence/implementation/ecosystems/reference-ecosystem-comparison.md",
+    "governance/reviews/evidence/implementation/ecosystems/reviewer-attestation.json"
+  ],
+  "candidateChangeProposals": [
+    "GAAM-CP-ECO-001",
+    "GAAM-CP-ECO-002"
+  ]
+}

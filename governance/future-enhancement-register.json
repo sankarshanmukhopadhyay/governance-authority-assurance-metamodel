@@ -35,10 +35,15 @@
         "independent terminology review"
       ],
       "normativeImpact": "none",
-      "promotionStatus": "not-assessed",
+      "promotionStatus": "retain-as-guidance",
       "researchAssets": [
         "profiles-draft/governed-ecosystem-operations/",
         "experimental/schemas/qualification-record.schema.json"
+      ],
+      "assessmentEvidence": [
+        "governance/reviews/evidence/future-evolution/normative-impact-analysis.md",
+        "governance/reviews/evidence/future-evolution/implementation-findings.json",
+        "governance/reviews/evidence/future-evolution/interoperability-findings.json"
       ]
     },
     {
@@ -61,10 +66,15 @@
         "conflict-precedence tests"
       ],
       "normativeImpact": "potential",
-      "promotionStatus": "not-assessed",
+      "promotionStatus": "retain-as-experimental",
       "researchAssets": [
         "profiles-draft/governed-ecosystem-operations/",
         "experimental/schemas/framework-composition.schema.json"
+      ],
+      "assessmentEvidence": [
+        "governance/reviews/evidence/future-evolution/normative-impact-analysis.md",
+        "governance/reviews/evidence/future-evolution/implementation-findings.json",
+        "governance/reviews/evidence/future-evolution/interoperability-findings.json"
       ]
     },
     {
@@ -88,12 +98,17 @@
         "continuity review"
       ],
       "normativeImpact": "none",
-      "promotionStatus": "not-assessed",
+      "promotionStatus": "promote-to-profile",
       "researchAssets": [
         "profiles-draft/governed-ecosystem-operations/",
         "profiles-draft/institutional-continuity/",
         "experimental/schemas/institutional-transition.schema.json",
         "examples/institutional-authority-succession/"
+      ],
+      "assessmentEvidence": [
+        "governance/reviews/evidence/future-evolution/normative-impact-analysis.md",
+        "governance/reviews/evidence/future-evolution/implementation-findings.json",
+        "governance/reviews/evidence/future-evolution/interoperability-findings.json"
       ]
     },
     {
@@ -114,9 +129,14 @@
         "interoperability tests"
       ],
       "normativeImpact": "potential",
-      "promotionStatus": "not-assessed",
+      "promotionStatus": "retain-as-experimental",
       "researchAssets": [
         "experimental/schemas/authority-scope.schema.json"
+      ],
+      "assessmentEvidence": [
+        "governance/reviews/evidence/future-evolution/normative-impact-analysis.md",
+        "governance/reviews/evidence/future-evolution/implementation-findings.json",
+        "governance/reviews/evidence/future-evolution/interoperability-findings.json"
       ]
     },
     {
@@ -137,9 +157,14 @@
         "remedy propagation tests"
       ],
       "normativeImpact": "none",
-      "promotionStatus": "not-assessed",
+      "promotionStatus": "retain-as-experimental",
       "researchAssets": [
         "profiles-draft/organisational-authority/"
+      ],
+      "assessmentEvidence": [
+        "governance/reviews/evidence/future-evolution/normative-impact-analysis.md",
+        "governance/reviews/evidence/future-evolution/implementation-findings.json",
+        "governance/reviews/evidence/future-evolution/interoperability-findings.json"
       ]
     },
     {
@@ -159,10 +184,15 @@
         "clock uncertainty scenarios"
       ],
       "normativeImpact": "none",
-      "promotionStatus": "not-assessed",
+      "promotionStatus": "retain-as-experimental",
       "researchAssets": [
         "experimental/schemas/obligation.schema.json",
         "examples/post-decision-obligation-lifecycle/"
+      ],
+      "assessmentEvidence": [
+        "governance/reviews/evidence/future-evolution/normative-impact-analysis.md",
+        "governance/reviews/evidence/future-evolution/implementation-findings.json",
+        "governance/reviews/evidence/future-evolution/interoperability-findings.json"
       ]
     },
     {
@@ -181,10 +211,15 @@
         "reviewer agreement study"
       ],
       "normativeImpact": "none",
-      "promotionStatus": "not-assessed",
+      "promotionStatus": "retain-as-guidance",
       "researchAssets": [
         "experimental/schemas/agent-state-lineage.schema.json",
         "examples/agent-state-change-control/"
+      ],
+      "assessmentEvidence": [
+        "governance/reviews/evidence/future-evolution/normative-impact-analysis.md",
+        "governance/reviews/evidence/future-evolution/implementation-findings.json",
+        "governance/reviews/evidence/future-evolution/interoperability-findings.json"
       ]
     },
     {
@@ -206,7 +241,12 @@
         "uncertainty interpretation tests"
       ],
       "normativeImpact": "none",
-      "promotionStatus": "not-assessed"
+      "promotionStatus": "retain-as-guidance",
+      "assessmentEvidence": [
+        "governance/reviews/evidence/future-evolution/normative-impact-analysis.md",
+        "governance/reviews/evidence/future-evolution/implementation-findings.json",
+        "governance/reviews/evidence/future-evolution/interoperability-findings.json"
+      ]
     },
     {
       "id": "FE-009",
@@ -228,9 +268,14 @@
         "relationship interoperability review"
       ],
       "normativeImpact": "none",
-      "promotionStatus": "not-assessed",
+      "promotionStatus": "promote-to-profile",
       "researchAssets": [
         "profiles-draft/organisational-authority/"
+      ],
+      "assessmentEvidence": [
+        "governance/reviews/evidence/future-evolution/normative-impact-analysis.md",
+        "governance/reviews/evidence/future-evolution/implementation-findings.json",
+        "governance/reviews/evidence/future-evolution/interoperability-findings.json"
       ]
     },
     {
@@ -254,9 +299,14 @@
         "state invalidation tests"
       ],
       "normativeImpact": "none",
-      "promotionStatus": "not-assessed",
+      "promotionStatus": "retain-as-experimental",
       "researchAssets": [
         "profiles-draft/advanced-agent-orchestration/"
+      ],
+      "assessmentEvidence": [
+        "governance/reviews/evidence/future-evolution/normative-impact-analysis.md",
+        "governance/reviews/evidence/future-evolution/implementation-findings.json",
+        "governance/reviews/evidence/future-evolution/interoperability-findings.json"
       ]
     },
     {
@@ -278,9 +328,14 @@
         "supervision failure tests"
       ],
       "normativeImpact": "none",
-      "promotionStatus": "not-assessed",
+      "promotionStatus": "promote-to-profile",
       "researchAssets": [
         "profiles-draft/advanced-agent-orchestration/"
+      ],
+      "assessmentEvidence": [
+        "governance/reviews/evidence/future-evolution/normative-impact-analysis.md",
+        "governance/reviews/evidence/future-evolution/implementation-findings.json",
+        "governance/reviews/evidence/future-evolution/interoperability-findings.json"
       ]
     },
     {
@@ -304,10 +359,15 @@
         "step-authority tests"
       ],
       "normativeImpact": "none",
-      "promotionStatus": "not-assessed",
+      "promotionStatus": "promote-to-profile",
       "researchAssets": [
         "profiles-draft/privacy-and-inference-governance/",
         "examples/inferred-evidence-governance/"
+      ],
+      "assessmentEvidence": [
+        "governance/reviews/evidence/future-evolution/normative-impact-analysis.md",
+        "governance/reviews/evidence/future-evolution/implementation-findings.json",
+        "governance/reviews/evidence/future-evolution/interoperability-findings.json"
       ]
     },
     {
@@ -329,7 +389,12 @@
         "collusion and substitution tests"
       ],
       "normativeImpact": "none",
-      "promotionStatus": "not-assessed"
+      "promotionStatus": "defer",
+      "assessmentEvidence": [
+        "governance/reviews/evidence/future-evolution/normative-impact-analysis.md",
+        "governance/reviews/evidence/future-evolution/implementation-findings.json",
+        "governance/reviews/evidence/future-evolution/interoperability-findings.json"
+      ]
     },
     {
       "id": "FE-014",
@@ -351,9 +416,14 @@
         "privacy review"
       ],
       "normativeImpact": "none",
-      "promotionStatus": "not-assessed",
+      "promotionStatus": "retain-as-experimental",
       "researchAssets": [
         "experimental/schemas/assurance-dependency.schema.json"
+      ],
+      "assessmentEvidence": [
+        "governance/reviews/evidence/future-evolution/normative-impact-analysis.md",
+        "governance/reviews/evidence/future-evolution/implementation-findings.json",
+        "governance/reviews/evidence/future-evolution/interoperability-findings.json"
       ]
     },
     {
@@ -373,10 +443,15 @@
         "assessor review"
       ],
       "normativeImpact": "none",
-      "promotionStatus": "not-assessed",
+      "promotionStatus": "retain-as-guidance",
       "researchAssets": [
         "profiles-draft/governed-ecosystem-operations/",
         "examples/assurance-composition/"
+      ],
+      "assessmentEvidence": [
+        "governance/reviews/evidence/future-evolution/normative-impact-analysis.md",
+        "governance/reviews/evidence/future-evolution/implementation-findings.json",
+        "governance/reviews/evidence/future-evolution/interoperability-findings.json"
       ]
     },
     {
@@ -399,9 +474,14 @@
         "dependency invalidation tests"
       ],
       "normativeImpact": "none",
-      "promotionStatus": "not-assessed",
+      "promotionStatus": "retain-as-experimental",
       "researchAssets": [
         "profiles-draft/privacy-and-inference-governance/"
+      ],
+      "assessmentEvidence": [
+        "governance/reviews/evidence/future-evolution/normative-impact-analysis.md",
+        "governance/reviews/evidence/future-evolution/implementation-findings.json",
+        "governance/reviews/evidence/future-evolution/interoperability-findings.json"
       ]
     },
     {
@@ -424,10 +504,15 @@
         "privacy and security review"
       ],
       "normativeImpact": "none",
-      "promotionStatus": "not-assessed",
+      "promotionStatus": "retain-as-guidance",
       "researchAssets": [
         "profiles-draft/institutional-continuity/",
         "examples/revocation-propagation-boundaries/"
+      ],
+      "assessmentEvidence": [
+        "governance/reviews/evidence/future-evolution/normative-impact-analysis.md",
+        "governance/reviews/evidence/future-evolution/implementation-findings.json",
+        "governance/reviews/evidence/future-evolution/interoperability-findings.json"
       ]
     },
     {
@@ -451,12 +536,17 @@
         "partition and stale-cache tests"
       ],
       "normativeImpact": "none",
-      "promotionStatus": "not-assessed",
+      "promotionStatus": "retain-as-pattern",
       "researchAssets": [
         "profiles-draft/governed-ecosystem-operations/",
         "profiles-draft/institutional-continuity/",
         "experimental/schemas/governance-state.schema.json",
         "examples/degraded-trust-service-operation/"
+      ],
+      "assessmentEvidence": [
+        "governance/reviews/evidence/future-evolution/normative-impact-analysis.md",
+        "governance/reviews/evidence/future-evolution/implementation-findings.json",
+        "governance/reviews/evidence/future-evolution/interoperability-findings.json"
       ]
     },
     {
@@ -480,9 +570,14 @@
         "fail-safe tests"
       ],
       "normativeImpact": "none",
-      "promotionStatus": "not-assessed",
+      "promotionStatus": "retain-as-experimental",
       "researchAssets": [
         "profiles-draft/privacy-and-inference-governance/"
+      ],
+      "assessmentEvidence": [
+        "governance/reviews/evidence/future-evolution/normative-impact-analysis.md",
+        "governance/reviews/evidence/future-evolution/implementation-findings.json",
+        "governance/reviews/evidence/future-evolution/interoperability-findings.json"
       ]
     },
     {
@@ -505,7 +600,12 @@
         "affected-party review"
       ],
       "normativeImpact": "none",
-      "promotionStatus": "not-assessed"
+      "promotionStatus": "promote-to-profile",
+      "assessmentEvidence": [
+        "governance/reviews/evidence/future-evolution/normative-impact-analysis.md",
+        "governance/reviews/evidence/future-evolution/implementation-findings.json",
+        "governance/reviews/evidence/future-evolution/interoperability-findings.json"
+      ]
     },
     {
       "id": "FE-021",
@@ -524,10 +624,15 @@
         "representative action review"
       ],
       "normativeImpact": "none",
-      "promotionStatus": "not-assessed",
+      "promotionStatus": "retain-as-guidance",
       "researchAssets": [
         "experimental/schemas/remedy-execution.schema.json",
         "examples/downstream-remedy-propagation/"
+      ],
+      "assessmentEvidence": [
+        "governance/reviews/evidence/future-evolution/normative-impact-analysis.md",
+        "governance/reviews/evidence/future-evolution/implementation-findings.json",
+        "governance/reviews/evidence/future-evolution/interoperability-findings.json"
       ]
     },
     {
@@ -550,10 +655,15 @@
         "closure evidence tests"
       ],
       "normativeImpact": "none",
-      "promotionStatus": "not-assessed",
+      "promotionStatus": "retain-as-experimental",
       "researchAssets": [
         "profiles-draft/governed-ecosystem-operations/",
         "profiles-draft/market-and-infrastructure-governance/"
+      ],
+      "assessmentEvidence": [
+        "governance/reviews/evidence/future-evolution/normative-impact-analysis.md",
+        "governance/reviews/evidence/future-evolution/implementation-findings.json",
+        "governance/reviews/evidence/future-evolution/interoperability-findings.json"
       ]
     },
     {
@@ -573,10 +683,15 @@
         "competition and capture review"
       ],
       "normativeImpact": "none",
-      "promotionStatus": "not-assessed",
+      "promotionStatus": "promote-to-profile",
       "researchAssets": [
         "profiles-draft/cross-jurisdiction-governance/",
         "examples/cross-jurisdiction-policy-conflict/"
+      ],
+      "assessmentEvidence": [
+        "governance/reviews/evidence/future-evolution/normative-impact-analysis.md",
+        "governance/reviews/evidence/future-evolution/implementation-findings.json",
+        "governance/reviews/evidence/future-evolution/interoperability-findings.json"
       ]
     },
     {
@@ -596,10 +711,15 @@
         "legal review"
       ],
       "normativeImpact": "none",
-      "promotionStatus": "not-assessed",
+      "promotionStatus": "promote-to-profile",
       "researchAssets": [
         "profiles-draft/institutional-continuity/",
         "profiles-draft/cross-jurisdiction-governance/"
+      ],
+      "assessmentEvidence": [
+        "governance/reviews/evidence/future-evolution/normative-impact-analysis.md",
+        "governance/reviews/evidence/future-evolution/implementation-findings.json",
+        "governance/reviews/evidence/future-evolution/interoperability-findings.json"
       ]
     },
     {
@@ -622,10 +742,15 @@
         "rollback scenario"
       ],
       "normativeImpact": "none",
-      "promotionStatus": "not-assessed",
+      "promotionStatus": "retain-as-guidance",
       "researchAssets": [
         "profiles-draft/advanced-agent-orchestration/",
         "experimental/schemas/risk-acceptance.schema.json"
+      ],
+      "assessmentEvidence": [
+        "governance/reviews/evidence/future-evolution/normative-impact-analysis.md",
+        "governance/reviews/evidence/future-evolution/implementation-findings.json",
+        "governance/reviews/evidence/future-evolution/interoperability-findings.json"
       ]
     }
   ],
@@ -634,5 +759,6 @@
     "prototype-available",
     "under-evaluation",
     "closed"
-  ]
+  ],
+  "assessmentStatus": "maintainer-assessed-pending-independent-review"
 }

@@ -281,6 +281,46 @@
     },
     {
       "id": "README",
+      "path": "governance/reviews/evidence/future-evolution/README.md",
+      "mediaType": "text/markdown"
+    },
+    {
+      "id": "capability-matrix",
+      "path": "governance/reviews/evidence/future-evolution/capability-matrix.csv",
+      "mediaType": "text/csv"
+    },
+    {
+      "id": "capability-matrix",
+      "path": "governance/reviews/evidence/future-evolution/capability-matrix.md",
+      "mediaType": "text/markdown"
+    },
+    {
+      "id": "implementation-findings",
+      "path": "governance/reviews/evidence/future-evolution/implementation-findings.json",
+      "mediaType": "application/json"
+    },
+    {
+      "id": "interoperability-findings",
+      "path": "governance/reviews/evidence/future-evolution/interoperability-findings.json",
+      "mediaType": "application/json"
+    },
+    {
+      "id": "normative-impact-analysis",
+      "path": "governance/reviews/evidence/future-evolution/normative-impact-analysis.md",
+      "mediaType": "text/markdown"
+    },
+    {
+      "id": "promotion-candidates",
+      "path": "governance/reviews/evidence/future-evolution/promotion-candidates.json",
+      "mediaType": "application/json"
+    },
+    {
+      "id": "reviewer-attestation",
+      "path": "governance/reviews/evidence/future-evolution/reviewer-attestation.json",
+      "mediaType": "application/json"
+    },
+    {
+      "id": "README",
       "path": "governance/reviews/evidence/implementation/ecosystems/README.md",
       "mediaType": "text/markdown"
     },

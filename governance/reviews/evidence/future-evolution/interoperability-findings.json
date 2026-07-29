@@ -1,0 +1,337 @@
+{
+  "id": "urn:gaam:future-evolution:interoperability-findings:0.9.0",
+  "type": "future-evolution-interoperability-findings",
+  "gaamVersion": "0.9.0",
+  "status": "maintainer-assessment",
+  "normativeStatus": "informative",
+  "findings": [
+    {
+      "enhancementId": "FE-001",
+      "interoperabilityQuestions": [
+        "profile dependency and requirement interpretation"
+      ],
+      "evidenceAvailable": "single-repository prototypes and behavioural fixtures",
+      "evidenceMissing": [
+        "independent implementation",
+        "cross-implementation exchange",
+        "production compatibility evidence"
+      ],
+      "readiness": "insufficient-for-core-normativity"
+    },
+    {
+      "enhancementId": "FE-002",
+      "interoperabilityQuestions": [
+        "schema-shape and identifier convergence"
+      ],
+      "evidenceAvailable": "single-repository prototypes and behavioural fixtures",
+      "evidenceMissing": [
+        "independent implementation",
+        "cross-implementation exchange",
+        "production compatibility evidence"
+      ],
+      "readiness": "insufficient-for-core-normativity"
+    },
+    {
+      "enhancementId": "FE-003",
+      "interoperabilityQuestions": [
+        "profile dependency and requirement interpretation"
+      ],
+      "evidenceAvailable": "single-repository prototypes and behavioural fixtures",
+      "evidenceMissing": [
+        "independent implementation",
+        "cross-implementation exchange",
+        "production compatibility evidence"
+      ],
+      "readiness": "insufficient-for-core-normativity"
+    },
+    {
+      "enhancementId": "FE-004",
+      "interoperabilityQuestions": [
+        "schema-shape and identifier convergence"
+      ],
+      "evidenceAvailable": "single-repository prototypes and behavioural fixtures",
+      "evidenceMissing": [
+        "independent implementation",
+        "cross-implementation exchange",
+        "production compatibility evidence"
+      ],
+      "readiness": "insufficient-for-core-normativity"
+    },
+    {
+      "enhancementId": "FE-005",
+      "interoperabilityQuestions": [
+        "schema-shape and identifier convergence"
+      ],
+      "evidenceAvailable": "single-repository prototypes and behavioural fixtures",
+      "evidenceMissing": [
+        "independent implementation",
+        "cross-implementation exchange",
+        "production compatibility evidence"
+      ],
+      "readiness": "insufficient-for-core-normativity"
+    },
+    {
+      "enhancementId": "FE-006",
+      "interoperabilityQuestions": [
+        "schema-shape and identifier convergence"
+      ],
+      "evidenceAvailable": "single-repository prototypes and behavioural fixtures",
+      "evidenceMissing": [
+        "independent implementation",
+        "cross-implementation exchange",
+        "production compatibility evidence"
+      ],
+      "readiness": "insufficient-for-core-normativity"
+    },
+    {
+      "enhancementId": "FE-007",
+      "interoperabilityQuestions": [
+        "terminology and implementation interpretation"
+      ],
+      "evidenceAvailable": "single-repository prototypes and behavioural fixtures",
+      "evidenceMissing": [
+        "independent implementation",
+        "cross-implementation exchange",
+        "production compatibility evidence"
+      ],
+      "readiness": "insufficient-for-core-normativity"
+    },
+    {
+      "enhancementId": "FE-008",
+      "interoperabilityQuestions": [
+        "controlled-term convergence"
+      ],
+      "evidenceAvailable": "single-repository prototypes and behavioural fixtures",
+      "evidenceMissing": [
+        "independent implementation",
+        "cross-implementation exchange",
+        "production compatibility evidence"
+      ],
+      "readiness": "insufficient-for-core-normativity"
+    },
+    {
+      "enhancementId": "FE-009",
+      "interoperabilityQuestions": [
+        "profile dependency and requirement interpretation"
+      ],
+      "evidenceAvailable": "single-repository prototypes and behavioural fixtures",
+      "evidenceMissing": [
+        "independent implementation",
+        "cross-implementation exchange",
+        "production compatibility evidence"
+      ],
+      "readiness": "insufficient-for-core-normativity"
+    },
+    {
+      "enhancementId": "FE-010",
+      "interoperabilityQuestions": [
+        "schema-shape and identifier convergence",
+        "profile dependency and requirement interpretation"
+      ],
+      "evidenceAvailable": "single-repository prototypes and behavioural fixtures",
+      "evidenceMissing": [
+        "independent implementation",
+        "cross-implementation exchange",
+        "production compatibility evidence"
+      ],
+      "readiness": "insufficient-for-core-normativity"
+    },
+    {
+      "enhancementId": "FE-011",
+      "interoperabilityQuestions": [
+        "profile dependency and requirement interpretation",
+        "controlled-term convergence"
+      ],
+      "evidenceAvailable": "single-repository prototypes and behavioural fixtures",
+      "evidenceMissing": [
+        "independent implementation",
+        "cross-implementation exchange",
+        "production compatibility evidence"
+      ],
+      "readiness": "insufficient-for-core-normativity"
+    },
+    {
+      "enhancementId": "FE-012",
+      "interoperabilityQuestions": [
+        "profile dependency and requirement interpretation"
+      ],
+      "evidenceAvailable": "single-repository prototypes and behavioural fixtures",
+      "evidenceMissing": [
+        "independent implementation",
+        "cross-implementation exchange",
+        "production compatibility evidence"
+      ],
+      "readiness": "insufficient-for-core-normativity"
+    },
+    {
+      "enhancementId": "FE-013",
+      "interoperabilityQuestions": [
+        "profile dependency and requirement interpretation"
+      ],
+      "evidenceAvailable": "single-repository prototypes and behavioural fixtures",
+      "evidenceMissing": [
+        "independent implementation",
+        "cross-implementation exchange",
+        "production compatibility evidence"
+      ],
+      "readiness": "insufficient-for-core-normativity"
+    },
+    {
+      "enhancementId": "FE-014",
+      "interoperabilityQuestions": [
+        "profile dependency and requirement interpretation"
+      ],
+      "evidenceAvailable": "single-repository prototypes and behavioural fixtures",
+      "evidenceMissing": [
+        "independent implementation",
+        "cross-implementation exchange",
+        "production compatibility evidence"
+      ],
+      "readiness": "insufficient-for-core-normativity"
+    },
+    {
+      "enhancementId": "FE-015",
+      "interoperabilityQuestions": [
+        "profile dependency and requirement interpretation"
+      ],
+      "evidenceAvailable": "single-repository prototypes and behavioural fixtures",
+      "evidenceMissing": [
+        "independent implementation",
+        "cross-implementation exchange",
+        "production compatibility evidence"
+      ],
+      "readiness": "insufficient-for-core-normativity"
+    },
+    {
+      "enhancementId": "FE-016",
+      "interoperabilityQuestions": [
+        "schema-shape and identifier convergence"
+      ],
+      "evidenceAvailable": "single-repository prototypes and behavioural fixtures",
+      "evidenceMissing": [
+        "independent implementation",
+        "cross-implementation exchange",
+        "production compatibility evidence"
+      ],
+      "readiness": "insufficient-for-core-normativity"
+    },
+    {
+      "enhancementId": "FE-017",
+      "interoperabilityQuestions": [
+        "profile dependency and requirement interpretation"
+      ],
+      "evidenceAvailable": "single-repository prototypes and behavioural fixtures",
+      "evidenceMissing": [
+        "independent implementation",
+        "cross-implementation exchange",
+        "production compatibility evidence"
+      ],
+      "readiness": "insufficient-for-core-normativity"
+    },
+    {
+      "enhancementId": "FE-018",
+      "interoperabilityQuestions": [
+        "profile dependency and requirement interpretation"
+      ],
+      "evidenceAvailable": "single-repository prototypes and behavioural fixtures",
+      "evidenceMissing": [
+        "independent implementation",
+        "cross-implementation exchange",
+        "production compatibility evidence"
+      ],
+      "readiness": "insufficient-for-core-normativity"
+    },
+    {
+      "enhancementId": "FE-019",
+      "interoperabilityQuestions": [
+        "profile dependency and requirement interpretation",
+        "controlled-term convergence"
+      ],
+      "evidenceAvailable": "single-repository prototypes and behavioural fixtures",
+      "evidenceMissing": [
+        "independent implementation",
+        "cross-implementation exchange",
+        "production compatibility evidence"
+      ],
+      "readiness": "insufficient-for-core-normativity"
+    },
+    {
+      "enhancementId": "FE-020",
+      "interoperabilityQuestions": [
+        "profile dependency and requirement interpretation"
+      ],
+      "evidenceAvailable": "single-repository prototypes and behavioural fixtures",
+      "evidenceMissing": [
+        "independent implementation",
+        "cross-implementation exchange",
+        "production compatibility evidence"
+      ],
+      "readiness": "insufficient-for-core-normativity"
+    },
+    {
+      "enhancementId": "FE-021",
+      "interoperabilityQuestions": [
+        "profile dependency and requirement interpretation"
+      ],
+      "evidenceAvailable": "single-repository prototypes and behavioural fixtures",
+      "evidenceMissing": [
+        "independent implementation",
+        "cross-implementation exchange",
+        "production compatibility evidence"
+      ],
+      "readiness": "insufficient-for-core-normativity"
+    },
+    {
+      "enhancementId": "FE-022",
+      "interoperabilityQuestions": [
+        "schema-shape and identifier convergence"
+      ],
+      "evidenceAvailable": "single-repository prototypes and behavioural fixtures",
+      "evidenceMissing": [
+        "independent implementation",
+        "cross-implementation exchange",
+        "production compatibility evidence"
+      ],
+      "readiness": "insufficient-for-core-normativity"
+    },
+    {
+      "enhancementId": "FE-023",
+      "interoperabilityQuestions": [
+        "profile dependency and requirement interpretation"
+      ],
+      "evidenceAvailable": "single-repository prototypes and behavioural fixtures",
+      "evidenceMissing": [
+        "independent implementation",
+        "cross-implementation exchange",
+        "production compatibility evidence"
+      ],
+      "readiness": "insufficient-for-core-normativity"
+    },
+    {
+      "enhancementId": "FE-024",
+      "interoperabilityQuestions": [
+        "profile dependency and requirement interpretation"
+      ],
+      "evidenceAvailable": "single-repository prototypes and behavioural fixtures",
+      "evidenceMissing": [
+        "independent implementation",
+        "cross-implementation exchange",
+        "production compatibility evidence"
+      ],
+      "readiness": "insufficient-for-core-normativity"
+    },
+    {
+      "enhancementId": "FE-025",
+      "interoperabilityQuestions": [
+        "schema-shape and identifier convergence"
+      ],
+      "evidenceAvailable": "single-repository prototypes and behavioural fixtures",
+      "evidenceMissing": [
+        "independent implementation",
+        "cross-implementation exchange",
+        "production compatibility evidence"
+      ],
+      "readiness": "insufficient-for-core-normativity"
+    }
+  ]
+}

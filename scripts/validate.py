@@ -188,6 +188,26 @@ for pth in (future_root.rglob('*') if future_root.exists() else []):
   txt=pth.read_text(errors='ignore')
   if 'normative_status: Normative' in txt or 'normativeStatus": "normative"' in txt: future_boundary_errors.append(f'{pth.relative_to(ROOT)} claims normative status')
 add('GOV-FUTURE-BOUNDARY',not future_boundary_errors,'future-evolution assets cannot be mistaken for GAAM v0.9.0 conformance material' if not future_boundary_errors else '; '.join(future_boundary_errors),'governance')
+# Future-evolution readiness assessment
+readiness_root=ROOT/'governance/reviews/evidence/future-evolution'
+readiness_errors=[]
+required_readiness={'README.md','capability-matrix.csv','capability-matrix.md','implementation-findings.json','interoperability-findings.json','normative-impact-analysis.md','promotion-candidates.json','reviewer-attestation.json'}
+missing=sorted(x for x in required_readiness if not (readiness_root/x).exists())
+if missing: readiness_errors.append('missing: '+', '.join(missing))
+try:
+ rr=load(ROOT/'governance/future-enhancement-register.json')
+ if any(e.get('promotionStatus')=='not-assessed' for e in rr.get('entries',[])): readiness_errors.append('unassessed enhancement remains')
+ matrix=list(csv.DictReader((readiness_root/'capability-matrix.csv').open()))
+ if len(matrix)!=25 or {r.get('enhancement_id') for r in matrix}!={e.get('id') for e in rr.get('entries',[])}: readiness_errors.append('capability matrix does not cover register')
+ pf=load(readiness_root/'promotion-candidates.json')
+ if pf.get('corePromotions') or pf.get('normativeSchemaPromotions'): readiness_errors.append('assessment must not directly promote core or canonical schemas')
+ att=load(readiness_root/'reviewer-attestation.json')
+ if att.get('independence')!='not-independent': readiness_errors.append('maintainer assessment must not claim independence')
+ for name in ['implementation-findings.json','interoperability-findings.json']:
+  obj=load(readiness_root/name)
+  if len(obj.get('findings',[]))!=25 or obj.get('normativeStatus')!='informative': readiness_errors.append(name+' boundary or coverage invalid')
+except Exception as e: readiness_errors.append(str(e))
+add('GOV-FUTURE-READINESS',not readiness_errors,'25 candidates assessed with explicit non-normative dispositions and independent-review boundary' if not readiness_errors else '; '.join(readiness_errors[:10]),'governance')
 # Requirements
 ids=re.findall(r'\*\*(GAAM-[A-Z]+-\d{3}):\*\*',spec)
 idx=list(csv.DictReader((ROOT/'matrices/normative-requirements-index.csv').open())); idxids=[r['requirement_id'] for r in idx]

@@ -1,0 +1,23 @@
+{
+  "id": "urn:gaam:future-evolution:reviewer-attestation:0.9.0",
+  "type": "reviewer-attestation",
+  "gaamVersion": "0.9.0",
+  "assessment": "future-evolution normative-readiness",
+  "preparedBy": "repository maintainer workflow",
+  "independence": "not-independent",
+  "status": "complete-maintainer-assessment",
+  "normativeStatus": "informative",
+  "scope": [
+    "25 enhancement candidates",
+    "draft profiles",
+    "experimental schemas and vocabularies",
+    "implementation patterns",
+    "behavioural evidence"
+  ],
+  "limitations": [
+    "No independent reviewer participated in this assessment.",
+    "No production deployment was evaluated.",
+    "No normative promotion is authorised."
+  ],
+  "nextAction": "Submit profile promotion candidates and retained experimental artefacts to the planned independent reviews."
+}

@@ -2,8 +2,8 @@
   "gaamVersion": "0.9.0",
   "testSuiteVersion": "0.9.0",
   "status": "pass",
-  "checks": 303,
-  "passed": 303,
+  "checks": 304,
+  "passed": 304,
   "failed": 0,
   "results": [
     {
@@ -107,6 +107,12 @@
       "kind": "governance",
       "status": "pass",
       "evidence": "future-evolution assets cannot be mistaken for GAAM v0.9.0 conformance material"
+    },
+    {
+      "id": "GOV-FUTURE-READINESS",
+      "kind": "governance",
+      "status": "pass",
+      "evidence": "25 candidates assessed with explicit non-normative dispositions and independent-review boundary"
     },
     {
       "id": "REQ-001-unique",
@@ -1822,7 +1828,7 @@
       "id": "PKG-INTEGRITY",
       "kind": "package",
       "status": "pass",
-      "evidence": "431 checksums verified"
+      "evidence": "439 checksums verified"
     }
   ]
 }

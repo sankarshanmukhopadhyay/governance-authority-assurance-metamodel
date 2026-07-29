@@ -80,7 +80,7 @@
     },
     {
       "path": "docs/future-evolution/index.md",
-      "sha256": "0da22998cfe4d8034c1adc7332c2313f87523c569d7e10b3d83af7638d4154b4"
+      "sha256": "d6fbb019bad2563601849dbc7231856c5510bc696575743ccf4f9f458c3a63ff"
     },
     {
       "path": "docs/future-evolution/normative-boundary.md",
@@ -1332,11 +1332,43 @@
     },
     {
       "path": "governance/future-enhancement-register.json",
-      "sha256": "6e408f4c2c72a88c44d12e272d6957cd7b2933eb43415341276741e5b127088a"
+      "sha256": "8f7d7ef5063d97abb08032084a6cc244403fb2ab7416c256f1ecc3c51f4f0d40"
     },
     {
       "path": "governance/reviews/affected-party-review.json",
       "sha256": "64b4b06a1c6c09b163ed82f004e9c3ed18bc3e46cd1c00d80b754311de487780"
+    },
+    {
+      "path": "governance/reviews/evidence/future-evolution/README.md",
+      "sha256": "bdbb02d6187a0da5c6b6d49afd3423ef4142c90e32814ba99f9e4f5392949528"
+    },
+    {
+      "path": "governance/reviews/evidence/future-evolution/capability-matrix.csv",
+      "sha256": "68040d55e24860043e0460e3d4ee70f093a2813268109b7f0415999aff83912f"
+    },
+    {
+      "path": "governance/reviews/evidence/future-evolution/capability-matrix.md",
+      "sha256": "5176919900cd4f4b92cba861beeb4b0153f35efcd2ba301c385b0c20580e90a4"
+    },
+    {
+      "path": "governance/reviews/evidence/future-evolution/implementation-findings.json",
+      "sha256": "c472d51301a4662110653e6fe8ece285ea3a1c6df4794d2c38a385333b716163"
+    },
+    {
+      "path": "governance/reviews/evidence/future-evolution/interoperability-findings.json",
+      "sha256": "6dfd7685e5d4196a4524adc1fb8b8891cf5dfdaf5963c30c60eaa404bbc149fc"
+    },
+    {
+      "path": "governance/reviews/evidence/future-evolution/normative-impact-analysis.md",
+      "sha256": "84899db861fdd4580582785001fe9f9189baab88072f2fcba99fc96ad744699a"
+    },
+    {
+      "path": "governance/reviews/evidence/future-evolution/promotion-candidates.json",
+      "sha256": "489661d3fb9cf210794e92ffe4c73317665ab950681fd1c8d3ab6fd75b1b2591"
+    },
+    {
+      "path": "governance/reviews/evidence/future-evolution/reviewer-attestation.json",
+      "sha256": "8ac2fae0d5509410511912cf929a8272d59988d9fea99762835b36e1b04eccdb"
     },
     {
       "path": "governance/reviews/evidence/implementation/ecosystems/README.md",
@@ -1400,7 +1432,7 @@
     },
     {
       "path": "packages/gaam-v0.9.0/manifest.json",
-      "sha256": "3ab2c797501ef5cd9360e68e643f094001b4ccbc6b4852031e159acde1b85570"
+      "sha256": "e8e126b4f4d08942df7e72dc7d080ccd3e25f6badcd47a0ed29e33f20658b73a"
     },
     {
       "path": "profiles-draft/advanced-agent-orchestration/index.md",

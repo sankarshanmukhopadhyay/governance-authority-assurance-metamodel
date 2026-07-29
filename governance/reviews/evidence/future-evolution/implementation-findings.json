@@ -1,0 +1,346 @@
+{
+  "id": "urn:gaam:future-evolution:implementation-findings:0.9.0",
+  "type": "future-evolution-implementation-findings",
+  "gaamVersion": "0.9.0",
+  "status": "maintainer-assessment",
+  "normativeStatus": "informative",
+  "findings": [
+    {
+      "enhancementId": "FE-001",
+      "title": "Standing, qualification and recognition",
+      "evidenceState": "prototype-only",
+      "assets": [
+        "profiles-draft/governed-ecosystem-operations/",
+        "experimental/schemas/qualification-record.schema.json"
+      ],
+      "limitations": [
+        "No independent implementation evidence is asserted.",
+        "No production deployment evidence is asserted."
+      ],
+      "recommendedDisposition": "retain-as-guidance"
+    },
+    {
+      "enhancementId": "FE-002",
+      "title": "Governance-framework composition",
+      "evidenceState": "prototype-only",
+      "assets": [
+        "profiles-draft/governed-ecosystem-operations/",
+        "experimental/schemas/framework-composition.schema.json"
+      ],
+      "limitations": [
+        "No independent implementation evidence is asserted.",
+        "No production deployment evidence is asserted."
+      ],
+      "recommendedDisposition": "retain-as-experimental"
+    },
+    {
+      "enhancementId": "FE-003",
+      "title": "Institutional succession",
+      "evidenceState": "pattern-exercised",
+      "assets": [
+        "profiles-draft/governed-ecosystem-operations/",
+        "profiles-draft/institutional-continuity/",
+        "experimental/schemas/institutional-transition.schema.json",
+        "examples/institutional-authority-succession/"
+      ],
+      "limitations": [
+        "No independent implementation evidence is asserted.",
+        "No production deployment evidence is asserted."
+      ],
+      "recommendedDisposition": "promote-to-profile"
+    },
+    {
+      "enhancementId": "FE-004",
+      "title": "Authority-scope composition",
+      "evidenceState": "prototype-only",
+      "assets": [
+        "experimental/schemas/authority-scope.schema.json"
+      ],
+      "limitations": [
+        "No independent implementation evidence is asserted.",
+        "No production deployment evidence is asserted."
+      ],
+      "recommendedDisposition": "retain-as-experimental"
+    },
+    {
+      "enhancementId": "FE-005",
+      "title": "Obligation lifecycle",
+      "evidenceState": "prototype-only",
+      "assets": [
+        "profiles-draft/organisational-authority/"
+      ],
+      "limitations": [
+        "No independent implementation evidence is asserted.",
+        "No production deployment evidence is asserted."
+      ],
+      "recommendedDisposition": "retain-as-experimental"
+    },
+    {
+      "enhancementId": "FE-006",
+      "title": "Temporal governance",
+      "evidenceState": "pattern-exercised",
+      "assets": [
+        "experimental/schemas/obligation.schema.json",
+        "examples/post-decision-obligation-lifecycle/"
+      ],
+      "limitations": [
+        "No independent implementation evidence is asserted.",
+        "No production deployment evidence is asserted."
+      ],
+      "recommendedDisposition": "retain-as-experimental"
+    },
+    {
+      "enhancementId": "FE-007",
+      "title": "Evidence predicates",
+      "evidenceState": "pattern-exercised",
+      "assets": [
+        "experimental/schemas/agent-state-lineage.schema.json",
+        "examples/agent-state-change-control/"
+      ],
+      "limitations": [
+        "No independent implementation evidence is asserted.",
+        "No production deployment evidence is asserted."
+      ],
+      "recommendedDisposition": "retain-as-guidance"
+    },
+    {
+      "enhancementId": "FE-008",
+      "title": "Uncertainty and confidence",
+      "evidenceState": "concept-only",
+      "assets": [],
+      "limitations": [
+        "No independent implementation evidence is asserted.",
+        "No production deployment evidence is asserted."
+      ],
+      "recommendedDisposition": "retain-as-guidance"
+    },
+    {
+      "enhancementId": "FE-009",
+      "title": "Organisational authority chains",
+      "evidenceState": "prototype-only",
+      "assets": [
+        "profiles-draft/organisational-authority/"
+      ],
+      "limitations": [
+        "No independent implementation evidence is asserted.",
+        "No production deployment evidence is asserted."
+      ],
+      "recommendedDisposition": "promote-to-profile"
+    },
+    {
+      "enhancementId": "FE-010",
+      "title": "Agent-state lineage",
+      "evidenceState": "prototype-only",
+      "assets": [
+        "profiles-draft/advanced-agent-orchestration/"
+      ],
+      "limitations": [
+        "No independent implementation evidence is asserted.",
+        "No production deployment evidence is asserted."
+      ],
+      "recommendedDisposition": "retain-as-experimental"
+    },
+    {
+      "enhancementId": "FE-011",
+      "title": "Autonomy and control modes",
+      "evidenceState": "prototype-only",
+      "assets": [
+        "profiles-draft/advanced-agent-orchestration/"
+      ],
+      "limitations": [
+        "No independent implementation evidence is asserted.",
+        "No production deployment evidence is asserted."
+      ],
+      "recommendedDisposition": "promote-to-profile"
+    },
+    {
+      "enhancementId": "FE-012",
+      "title": "Plan, step and composite-effect governance",
+      "evidenceState": "pattern-exercised",
+      "assets": [
+        "profiles-draft/privacy-and-inference-governance/",
+        "examples/inferred-evidence-governance/"
+      ],
+      "limitations": [
+        "No independent implementation evidence is asserted.",
+        "No production deployment evidence is asserted."
+      ],
+      "recommendedDisposition": "promote-to-profile"
+    },
+    {
+      "enhancementId": "FE-013",
+      "title": "Multi-agent governance",
+      "evidenceState": "concept-only",
+      "assets": [],
+      "limitations": [
+        "No independent implementation evidence is asserted.",
+        "No production deployment evidence is asserted."
+      ],
+      "recommendedDisposition": "defer"
+    },
+    {
+      "enhancementId": "FE-014",
+      "title": "Derived evidence and inference",
+      "evidenceState": "prototype-only",
+      "assets": [
+        "experimental/schemas/assurance-dependency.schema.json"
+      ],
+      "limitations": [
+        "No independent implementation evidence is asserted.",
+        "No production deployment evidence is asserted."
+      ],
+      "recommendedDisposition": "retain-as-experimental"
+    },
+    {
+      "enhancementId": "FE-015",
+      "title": "Assurance object and method granularity",
+      "evidenceState": "pattern-exercised",
+      "assets": [
+        "profiles-draft/governed-ecosystem-operations/",
+        "examples/assurance-composition/"
+      ],
+      "limitations": [
+        "No independent implementation evidence is asserted.",
+        "No production deployment evidence is asserted."
+      ],
+      "recommendedDisposition": "retain-as-guidance"
+    },
+    {
+      "enhancementId": "FE-016",
+      "title": "Assurance composition and dependency",
+      "evidenceState": "prototype-only",
+      "assets": [
+        "profiles-draft/privacy-and-inference-governance/"
+      ],
+      "limitations": [
+        "No independent implementation evidence is asserted.",
+        "No production deployment evidence is asserted."
+      ],
+      "recommendedDisposition": "retain-as-experimental"
+    },
+    {
+      "enhancementId": "FE-017",
+      "title": "Governed observability",
+      "evidenceState": "pattern-exercised",
+      "assets": [
+        "profiles-draft/institutional-continuity/",
+        "examples/revocation-propagation-boundaries/"
+      ],
+      "limitations": [
+        "No independent implementation evidence is asserted.",
+        "No production deployment evidence is asserted."
+      ],
+      "recommendedDisposition": "retain-as-guidance"
+    },
+    {
+      "enhancementId": "FE-018",
+      "title": "Caching and revocation propagation",
+      "evidenceState": "pattern-exercised",
+      "assets": [
+        "profiles-draft/governed-ecosystem-operations/",
+        "profiles-draft/institutional-continuity/",
+        "experimental/schemas/governance-state.schema.json",
+        "examples/degraded-trust-service-operation/"
+      ],
+      "limitations": [
+        "No independent implementation evidence is asserted.",
+        "No production deployment evidence is asserted."
+      ],
+      "recommendedDisposition": "retain-as-pattern"
+    },
+    {
+      "enhancementId": "FE-019",
+      "title": "Controlled degradation and continuity states",
+      "evidenceState": "prototype-only",
+      "assets": [
+        "profiles-draft/privacy-and-inference-governance/"
+      ],
+      "limitations": [
+        "No independent implementation evidence is asserted.",
+        "No production deployment evidence is asserted."
+      ],
+      "recommendedDisposition": "retain-as-experimental"
+    },
+    {
+      "enhancementId": "FE-020",
+      "title": "Privacy and inference governance",
+      "evidenceState": "concept-only",
+      "assets": [],
+      "limitations": [
+        "No independent implementation evidence is asserted.",
+        "No production deployment evidence is asserted."
+      ],
+      "recommendedDisposition": "promote-to-profile"
+    },
+    {
+      "enhancementId": "FE-021",
+      "title": "Affected-party classes and collective standing",
+      "evidenceState": "pattern-exercised",
+      "assets": [
+        "experimental/schemas/remedy-execution.schema.json",
+        "examples/downstream-remedy-propagation/"
+      ],
+      "limitations": [
+        "No independent implementation evidence is asserted.",
+        "No production deployment evidence is asserted."
+      ],
+      "recommendedDisposition": "retain-as-guidance"
+    },
+    {
+      "enhancementId": "FE-022",
+      "title": "Machine-verifiable remedy execution",
+      "evidenceState": "prototype-only",
+      "assets": [
+        "profiles-draft/governed-ecosystem-operations/",
+        "profiles-draft/market-and-infrastructure-governance/"
+      ],
+      "limitations": [
+        "No independent implementation evidence is asserted.",
+        "No production deployment evidence is asserted."
+      ],
+      "recommendedDisposition": "retain-as-experimental"
+    },
+    {
+      "enhancementId": "FE-023",
+      "title": "Market and infrastructure governance",
+      "evidenceState": "pattern-exercised",
+      "assets": [
+        "profiles-draft/cross-jurisdiction-governance/",
+        "examples/cross-jurisdiction-policy-conflict/"
+      ],
+      "limitations": [
+        "No independent implementation evidence is asserted.",
+        "No production deployment evidence is asserted."
+      ],
+      "recommendedDisposition": "promote-to-profile"
+    },
+    {
+      "enhancementId": "FE-024",
+      "title": "Jurisdiction and conflict of law",
+      "evidenceState": "prototype-only",
+      "assets": [
+        "profiles-draft/institutional-continuity/",
+        "profiles-draft/cross-jurisdiction-governance/"
+      ],
+      "limitations": [
+        "No independent implementation evidence is asserted.",
+        "No production deployment evidence is asserted."
+      ],
+      "recommendedDisposition": "promote-to-profile"
+    },
+    {
+      "enhancementId": "FE-025",
+      "title": "Governance-change provenance",
+      "evidenceState": "prototype-only",
+      "assets": [
+        "profiles-draft/advanced-agent-orchestration/",
+        "experimental/schemas/risk-acceptance.schema.json"
+      ],
+      "limitations": [
+        "No independent implementation evidence is asserted.",
+        "No production deployment evidence is asserted."
+      ],
+      "recommendedDisposition": "retain-as-guidance"
+    }
+  ]
+}

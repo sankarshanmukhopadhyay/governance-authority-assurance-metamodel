@@ -25,3 +25,7 @@ The machine-readable [future enhancement register](../../governance/future-enhan
 
 - [Draft Profile Candidates](../../profiles-draft/) organise specialised future requirements without creating conformance targets.
 - [Experimental Machine-Readable Artefacts](../../experimental/) prototype schemas, records and vocabularies outside the canonical v0.9.0 surface.
+
+## Normative-readiness assessment
+
+The compressed research sequence concludes with a [maintainer-prepared normative-readiness analysis](../../governance/reviews/evidence/future-evolution/normative-impact-analysis.md). It is informative and pending independent review.

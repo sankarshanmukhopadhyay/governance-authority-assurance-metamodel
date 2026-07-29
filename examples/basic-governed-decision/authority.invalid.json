@@ -1,0 +1,34 @@
+{
+  "id": "urn:gaam:example:basic-governed-decision:authority",
+  "type": "authority",
+  "version": "0.9.0",
+  "status": "active",
+  "effectiveFrom": "2026-07-29T12:00:00Z",
+  "effectiveUntil": "2027-07-29T12:00:00Z",
+  "issuer": "urn:gaam:authority:governing",
+  "subject": "urn:gaam:actor:delegated-agent-purchase",
+  "permittedEffects": [
+    "evaluate",
+    "execute-within-scope"
+  ],
+  "prohibitedEffects": [
+    "execute-outside-scope"
+  ],
+  "obligations": [
+    "produce-decision-receipt"
+  ],
+  "constraints": [
+    "current-state-required"
+  ],
+  "scope": {
+    "pattern": "basic-governed-decision"
+  },
+  "delegationPermitted": true,
+  "revocationAuthority": "urn:gaam:authority:governing",
+  "accountableParties": [
+    "urn:gaam:operator:accountable"
+  ],
+  "evidence": [
+    "urn:gaam:evidence:authority-source"
+  ]
+}

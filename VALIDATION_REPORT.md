@@ -10,8 +10,8 @@ normative_status: Repository generated
 {% include gaam-meta.html %}
 
 **Status:** PASS  
-**Checks:** 127  
-**Passed:** 127  
+**Checks:** 223  
+**Passed:** 223  
 **Failed:** 0  
 
 This report evidences repository publication, structural and included behavioural checks. It is not an independent L4 assessment.
@@ -53,6 +53,38 @@ This report evidences repository publication, structural and included behavioura
 | `PRO-runtime-governance` | profile | PASS | 21 requirements; dependencies=True; document=True |
 | `PRO-trust-graph` | profile | PASS | 9 requirements; dependencies=True; document=True |
 | `PRO-DEPENDENCIES` | profile | PASS | all profile dependencies resolve |
+| `PAT-authority-lifecycle-and-revocation-CONTRACT` | pattern | PASS | required files present |
+| `PAT-authority-lifecycle-and-revocation-MANIFEST` | pattern | PASS | manifest conforms |
+| `PAT-authority-lifecycle-and-revocation-REFERENCES` | pattern | PASS | profile, requirement, artifact and behavioural references resolve |
+| `PAT-authority-lifecycle-and-revocation-MATURITY` | pattern | PASS | assurance-ready claim supported |
+| `PAT-authority-lifecycle-and-revocation-CATALOG` | pattern | PASS | catalogue entry present |
+| `FIX-authority-lifecycle-and-revocation-authority.invalid` | fixture | PASS | rejected as expected; manifest declaration matched |
+| `FIX-authority-lifecycle-and-revocation-authority.valid` | fixture | PASS | accepted as expected; manifest declaration matched |
+| `FIX-authority-lifecycle-and-revocation-decision-receipt.invalid` | fixture | PASS | rejected as expected; manifest declaration matched |
+| `FIX-authority-lifecycle-and-revocation-decision-receipt.valid` | fixture | PASS | accepted as expected; manifest declaration matched |
+| `FIX-authority-lifecycle-and-revocation-delegation.invalid` | fixture | PASS | rejected as expected; manifest declaration matched |
+| `FIX-authority-lifecycle-and-revocation-delegation.valid` | fixture | PASS | accepted as expected; manifest declaration matched |
+| `FIX-authority-lifecycle-and-revocation-governance-event.invalid` | fixture | PASS | rejected as expected; manifest declaration matched |
+| `FIX-authority-lifecycle-and-revocation-governance-event.valid` | fixture | PASS | accepted as expected; manifest declaration matched |
+| `FIX-authority-lifecycle-and-revocation-remedy.invalid` | fixture | PASS | rejected as expected; manifest declaration matched |
+| `FIX-authority-lifecycle-and-revocation-remedy.valid` | fixture | PASS | accepted as expected; manifest declaration matched |
+| `CLM-authority-lifecycle-and-revocation` | conformance | PASS | schema, evidence, limitations and independence rules satisfied |
+| `PAT-basic-governed-decision-CONTRACT` | pattern | PASS | required files present |
+| `PAT-basic-governed-decision-MANIFEST` | pattern | PASS | manifest conforms |
+| `PAT-basic-governed-decision-REFERENCES` | pattern | PASS | profile, requirement, artifact and behavioural references resolve |
+| `PAT-basic-governed-decision-MATURITY` | pattern | PASS | assurance-ready claim supported |
+| `PAT-basic-governed-decision-CATALOG` | pattern | PASS | catalogue entry present |
+| `FIX-basic-governed-decision-authority.invalid` | fixture | PASS | rejected as expected; manifest declaration matched |
+| `FIX-basic-governed-decision-authority.valid` | fixture | PASS | accepted as expected; manifest declaration matched |
+| `FIX-basic-governed-decision-decision-receipt.invalid` | fixture | PASS | rejected as expected; manifest declaration matched |
+| `FIX-basic-governed-decision-decision-receipt.valid` | fixture | PASS | accepted as expected; manifest declaration matched |
+| `FIX-basic-governed-decision-delegation.invalid` | fixture | PASS | rejected as expected; manifest declaration matched |
+| `FIX-basic-governed-decision-delegation.valid` | fixture | PASS | accepted as expected; manifest declaration matched |
+| `FIX-basic-governed-decision-governance-event.invalid` | fixture | PASS | rejected as expected; manifest declaration matched |
+| `FIX-basic-governed-decision-governance-event.valid` | fixture | PASS | accepted as expected; manifest declaration matched |
+| `FIX-basic-governed-decision-remedy.invalid` | fixture | PASS | rejected as expected; manifest declaration matched |
+| `FIX-basic-governed-decision-remedy.valid` | fixture | PASS | accepted as expected; manifest declaration matched |
+| `CLM-basic-governed-decision` | conformance | PASS | schema, evidence, limitations and independence rules satisfied |
 | `PAT-cross-registry-recognition-CONTRACT` | pattern | PASS | required files present |
 | `PAT-cross-registry-recognition-MANIFEST` | pattern | PASS | manifest conforms |
 | `PAT-cross-registry-recognition-REFERENCES` | pattern | PASS | profile, requirement, artifact and behavioural references resolve |
@@ -85,6 +117,22 @@ This report evidences repository publication, structural and included behavioura
 | `FIX-delegated-agent-purchase-remedy.invalid` | fixture | PASS | rejected as expected; manifest declaration matched |
 | `FIX-delegated-agent-purchase-remedy.valid` | fixture | PASS | accepted as expected; manifest declaration matched |
 | `CLM-delegated-agent-purchase` | conformance | PASS | schema, evidence, limitations and independence rules satisfied |
+| `PAT-governed-ecosystem-operations-CONTRACT` | pattern | PASS | required files present |
+| `PAT-governed-ecosystem-operations-MANIFEST` | pattern | PASS | manifest conforms |
+| `PAT-governed-ecosystem-operations-REFERENCES` | pattern | PASS | profile, requirement, artifact and behavioural references resolve |
+| `PAT-governed-ecosystem-operations-MATURITY` | pattern | PASS | assurance-ready claim supported |
+| `PAT-governed-ecosystem-operations-CATALOG` | pattern | PASS | catalogue entry present |
+| `FIX-governed-ecosystem-operations-authority.invalid` | fixture | PASS | rejected as expected; manifest declaration matched |
+| `FIX-governed-ecosystem-operations-authority.valid` | fixture | PASS | accepted as expected; manifest declaration matched |
+| `FIX-governed-ecosystem-operations-decision-receipt.invalid` | fixture | PASS | rejected as expected; manifest declaration matched |
+| `FIX-governed-ecosystem-operations-decision-receipt.valid` | fixture | PASS | accepted as expected; manifest declaration matched |
+| `FIX-governed-ecosystem-operations-delegation.invalid` | fixture | PASS | rejected as expected; manifest declaration matched |
+| `FIX-governed-ecosystem-operations-delegation.valid` | fixture | PASS | accepted as expected; manifest declaration matched |
+| `FIX-governed-ecosystem-operations-governance-event.invalid` | fixture | PASS | rejected as expected; manifest declaration matched |
+| `FIX-governed-ecosystem-operations-governance-event.valid` | fixture | PASS | accepted as expected; manifest declaration matched |
+| `FIX-governed-ecosystem-operations-remedy.invalid` | fixture | PASS | rejected as expected; manifest declaration matched |
+| `FIX-governed-ecosystem-operations-remedy.valid` | fixture | PASS | accepted as expected; manifest declaration matched |
+| `CLM-governed-ecosystem-operations` | conformance | PASS | schema, evidence, limitations and independence rules satisfied |
 | `PAT-high-impact-multi-agent-service-CONTRACT` | pattern | PASS | required files present |
 | `PAT-high-impact-multi-agent-service-MANIFEST` | pattern | PASS | manifest conforms |
 | `PAT-high-impact-multi-agent-service-REFERENCES` | pattern | PASS | profile, requirement, artifact and behavioural references resolve |
@@ -101,8 +149,56 @@ This report evidences repository publication, structural and included behavioura
 | `FIX-high-impact-multi-agent-service-remedy.invalid` | fixture | PASS | rejected as expected; manifest declaration matched |
 | `FIX-high-impact-multi-agent-service-remedy.valid` | fixture | PASS | accepted as expected; manifest declaration matched |
 | `CLM-high-impact-multi-agent-service` | conformance | PASS | schema, evidence, limitations and independence rules satisfied |
-| `PAT-IDS` | pattern | PASS | 3 unique pattern identifiers |
-| `PAT-CATALOG-COVERAGE` | pattern | PASS | 3 pattern directories catalogued |
+| `PAT-independent-assurance-assessment-CONTRACT` | pattern | PASS | required files present |
+| `PAT-independent-assurance-assessment-MANIFEST` | pattern | PASS | manifest conforms |
+| `PAT-independent-assurance-assessment-REFERENCES` | pattern | PASS | profile, requirement, artifact and behavioural references resolve |
+| `PAT-independent-assurance-assessment-MATURITY` | pattern | PASS | assurance-ready claim supported |
+| `PAT-independent-assurance-assessment-CATALOG` | pattern | PASS | catalogue entry present |
+| `FIX-independent-assurance-assessment-authority.invalid` | fixture | PASS | rejected as expected; manifest declaration matched |
+| `FIX-independent-assurance-assessment-authority.valid` | fixture | PASS | accepted as expected; manifest declaration matched |
+| `FIX-independent-assurance-assessment-decision-receipt.invalid` | fixture | PASS | rejected as expected; manifest declaration matched |
+| `FIX-independent-assurance-assessment-decision-receipt.valid` | fixture | PASS | accepted as expected; manifest declaration matched |
+| `FIX-independent-assurance-assessment-delegation.invalid` | fixture | PASS | rejected as expected; manifest declaration matched |
+| `FIX-independent-assurance-assessment-delegation.valid` | fixture | PASS | accepted as expected; manifest declaration matched |
+| `FIX-independent-assurance-assessment-governance-event.invalid` | fixture | PASS | rejected as expected; manifest declaration matched |
+| `FIX-independent-assurance-assessment-governance-event.valid` | fixture | PASS | accepted as expected; manifest declaration matched |
+| `FIX-independent-assurance-assessment-remedy.invalid` | fixture | PASS | rejected as expected; manifest declaration matched |
+| `FIX-independent-assurance-assessment-remedy.valid` | fixture | PASS | accepted as expected; manifest declaration matched |
+| `CLM-independent-assurance-assessment` | conformance | PASS | schema, evidence, limitations and independence rules satisfied |
+| `PAT-machine-actionable-governance-package-CONTRACT` | pattern | PASS | required files present |
+| `PAT-machine-actionable-governance-package-MANIFEST` | pattern | PASS | manifest conforms |
+| `PAT-machine-actionable-governance-package-REFERENCES` | pattern | PASS | profile, requirement, artifact and behavioural references resolve |
+| `PAT-machine-actionable-governance-package-MATURITY` | pattern | PASS | assurance-ready claim supported |
+| `PAT-machine-actionable-governance-package-CATALOG` | pattern | PASS | catalogue entry present |
+| `FIX-machine-actionable-governance-package-authority.invalid` | fixture | PASS | rejected as expected; manifest declaration matched |
+| `FIX-machine-actionable-governance-package-authority.valid` | fixture | PASS | accepted as expected; manifest declaration matched |
+| `FIX-machine-actionable-governance-package-decision-receipt.invalid` | fixture | PASS | rejected as expected; manifest declaration matched |
+| `FIX-machine-actionable-governance-package-decision-receipt.valid` | fixture | PASS | accepted as expected; manifest declaration matched |
+| `FIX-machine-actionable-governance-package-delegation.invalid` | fixture | PASS | rejected as expected; manifest declaration matched |
+| `FIX-machine-actionable-governance-package-delegation.valid` | fixture | PASS | accepted as expected; manifest declaration matched |
+| `FIX-machine-actionable-governance-package-governance-event.invalid` | fixture | PASS | rejected as expected; manifest declaration matched |
+| `FIX-machine-actionable-governance-package-governance-event.valid` | fixture | PASS | accepted as expected; manifest declaration matched |
+| `FIX-machine-actionable-governance-package-remedy.invalid` | fixture | PASS | rejected as expected; manifest declaration matched |
+| `FIX-machine-actionable-governance-package-remedy.valid` | fixture | PASS | accepted as expected; manifest declaration matched |
+| `CLM-machine-actionable-governance-package` | conformance | PASS | schema, evidence, limitations and independence rules satisfied |
+| `PAT-notice-challenge-and-remedy-CONTRACT` | pattern | PASS | required files present |
+| `PAT-notice-challenge-and-remedy-MANIFEST` | pattern | PASS | manifest conforms |
+| `PAT-notice-challenge-and-remedy-REFERENCES` | pattern | PASS | profile, requirement, artifact and behavioural references resolve |
+| `PAT-notice-challenge-and-remedy-MATURITY` | pattern | PASS | assurance-ready claim supported |
+| `PAT-notice-challenge-and-remedy-CATALOG` | pattern | PASS | catalogue entry present |
+| `FIX-notice-challenge-and-remedy-authority.invalid` | fixture | PASS | rejected as expected; manifest declaration matched |
+| `FIX-notice-challenge-and-remedy-authority.valid` | fixture | PASS | accepted as expected; manifest declaration matched |
+| `FIX-notice-challenge-and-remedy-decision-receipt.invalid` | fixture | PASS | rejected as expected; manifest declaration matched |
+| `FIX-notice-challenge-and-remedy-decision-receipt.valid` | fixture | PASS | accepted as expected; manifest declaration matched |
+| `FIX-notice-challenge-and-remedy-delegation.invalid` | fixture | PASS | rejected as expected; manifest declaration matched |
+| `FIX-notice-challenge-and-remedy-delegation.valid` | fixture | PASS | accepted as expected; manifest declaration matched |
+| `FIX-notice-challenge-and-remedy-governance-event.invalid` | fixture | PASS | rejected as expected; manifest declaration matched |
+| `FIX-notice-challenge-and-remedy-governance-event.valid` | fixture | PASS | accepted as expected; manifest declaration matched |
+| `FIX-notice-challenge-and-remedy-remedy.invalid` | fixture | PASS | rejected as expected; manifest declaration matched |
+| `FIX-notice-challenge-and-remedy-remedy.valid` | fixture | PASS | accepted as expected; manifest declaration matched |
+| `CLM-notice-challenge-and-remedy` | conformance | PASS | schema, evidence, limitations and independence rules satisfied |
+| `PAT-IDS` | pattern | PASS | 9 unique pattern identifiers |
+| `PAT-CATALOG-COVERAGE` | pattern | PASS | 9 pattern directories catalogued |
 | `BEH-assurance-expired-rejected` | behavioural | PASS | expected=False; actual=False |
 | `BEH-assurance-independence-insufficient-rejected` | behavioural | PASS | expected=False; actual=False |
 | `BEH-authority-active-valid` | behavioural | PASS | expected=True; actual=True |
@@ -144,4 +240,4 @@ This report evidences repository publication, structural and included behavioura
 | `GOV-CONTRIBUTION-CONTROLS` | governance | PASS | candidate issue forms and pull-request governance template present |
 | `GOV-V1-READINESS-STATE` | governance | PASS | 5 explicitly recorded open v1 blockers: GAAM-CR-001, GAAM-CR-002, GAAM-CR-003, GAAM-CR-004, GAAM-CR-005 |
 | `PKG-MANIFEST` | package | PASS | package manifest conforms |
-| `PKG-INTEGRITY` | package | PASS | 149 checksums verified |
+| `PKG-INTEGRITY` | package | PASS | 298 checksums verified |

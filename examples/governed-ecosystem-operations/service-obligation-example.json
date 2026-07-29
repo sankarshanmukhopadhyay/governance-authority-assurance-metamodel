@@ -1,0 +1,6 @@
+{
+  "type": "supporting-example",
+  "service": "status-resolution",
+  "availabilityTarget": "illustrative",
+  "escalation": "ecosystem-administrator"
+}

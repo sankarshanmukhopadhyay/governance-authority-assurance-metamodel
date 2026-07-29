@@ -260,6 +260,236 @@
       "mediaType": "text/markdown"
     },
     {
+      "id": "README",
+      "path": "examples/authority-lifecycle-and-revocation/README.md",
+      "mediaType": "text/markdown"
+    },
+    {
+      "id": "architecture",
+      "path": "examples/authority-lifecycle-and-revocation/architecture.md",
+      "mediaType": "text/markdown"
+    },
+    {
+      "id": "authority-model",
+      "path": "examples/authority-lifecycle-and-revocation/authority-model.md",
+      "mediaType": "text/markdown"
+    },
+    {
+      "id": "authority.invalid",
+      "path": "examples/authority-lifecycle-and-revocation/authority.invalid.json",
+      "mediaType": "application/json"
+    },
+    {
+      "id": "authority.valid",
+      "path": "examples/authority-lifecycle-and-revocation/authority.valid.json",
+      "mediaType": "application/json"
+    },
+    {
+      "id": "conformance-claim",
+      "path": "examples/authority-lifecycle-and-revocation/conformance-claim.json",
+      "mediaType": "application/json"
+    },
+    {
+      "id": "decision-input",
+      "path": "examples/authority-lifecycle-and-revocation/decision-input.json",
+      "mediaType": "application/json"
+    },
+    {
+      "id": "decision-receipt.invalid",
+      "path": "examples/authority-lifecycle-and-revocation/decision-receipt.invalid.json",
+      "mediaType": "application/json"
+    },
+    {
+      "id": "decision-receipt.valid",
+      "path": "examples/authority-lifecycle-and-revocation/decision-receipt.valid.json",
+      "mediaType": "application/json"
+    },
+    {
+      "id": "delegation.invalid",
+      "path": "examples/authority-lifecycle-and-revocation/delegation.invalid.json",
+      "mediaType": "application/json"
+    },
+    {
+      "id": "delegation.valid",
+      "path": "examples/authority-lifecycle-and-revocation/delegation.valid.json",
+      "mediaType": "application/json"
+    },
+    {
+      "id": "evidence-manifest",
+      "path": "examples/authority-lifecycle-and-revocation/evidence-manifest.json",
+      "mediaType": "application/json"
+    },
+    {
+      "id": "evidence-model",
+      "path": "examples/authority-lifecycle-and-revocation/evidence-model.md",
+      "mediaType": "text/markdown"
+    },
+    {
+      "id": "governance-event.invalid",
+      "path": "examples/authority-lifecycle-and-revocation/governance-event.invalid.json",
+      "mediaType": "application/json"
+    },
+    {
+      "id": "governance-event.valid",
+      "path": "examples/authority-lifecycle-and-revocation/governance-event.valid.json",
+      "mediaType": "application/json"
+    },
+    {
+      "id": "lifecycle-and-revocation",
+      "path": "examples/authority-lifecycle-and-revocation/lifecycle-and-revocation.md",
+      "mediaType": "text/markdown"
+    },
+    {
+      "id": "notice-review-remedy",
+      "path": "examples/authority-lifecycle-and-revocation/notice-review-remedy.md",
+      "mediaType": "text/markdown"
+    },
+    {
+      "id": "pattern",
+      "path": "examples/authority-lifecycle-and-revocation/pattern.json",
+      "mediaType": "application/json"
+    },
+    {
+      "id": "privacy-security-analysis",
+      "path": "examples/authority-lifecycle-and-revocation/privacy-security-analysis.md",
+      "mediaType": "text/markdown"
+    },
+    {
+      "id": "remedy.invalid",
+      "path": "examples/authority-lifecycle-and-revocation/remedy.invalid.json",
+      "mediaType": "application/json"
+    },
+    {
+      "id": "remedy.valid",
+      "path": "examples/authority-lifecycle-and-revocation/remedy.valid.json",
+      "mediaType": "application/json"
+    },
+    {
+      "id": "requirement-mapping",
+      "path": "examples/authority-lifecycle-and-revocation/requirement-mapping.md",
+      "mediaType": "text/markdown"
+    },
+    {
+      "id": "runtime-sequence",
+      "path": "examples/authority-lifecycle-and-revocation/runtime-sequence.md",
+      "mediaType": "text/markdown"
+    },
+    {
+      "id": "README",
+      "path": "examples/basic-governed-decision/README.md",
+      "mediaType": "text/markdown"
+    },
+    {
+      "id": "architecture",
+      "path": "examples/basic-governed-decision/architecture.md",
+      "mediaType": "text/markdown"
+    },
+    {
+      "id": "authority-model",
+      "path": "examples/basic-governed-decision/authority-model.md",
+      "mediaType": "text/markdown"
+    },
+    {
+      "id": "authority.invalid",
+      "path": "examples/basic-governed-decision/authority.invalid.json",
+      "mediaType": "application/json"
+    },
+    {
+      "id": "authority.valid",
+      "path": "examples/basic-governed-decision/authority.valid.json",
+      "mediaType": "application/json"
+    },
+    {
+      "id": "conformance-claim",
+      "path": "examples/basic-governed-decision/conformance-claim.json",
+      "mediaType": "application/json"
+    },
+    {
+      "id": "decision-input",
+      "path": "examples/basic-governed-decision/decision-input.json",
+      "mediaType": "application/json"
+    },
+    {
+      "id": "decision-receipt.invalid",
+      "path": "examples/basic-governed-decision/decision-receipt.invalid.json",
+      "mediaType": "application/json"
+    },
+    {
+      "id": "decision-receipt.valid",
+      "path": "examples/basic-governed-decision/decision-receipt.valid.json",
+      "mediaType": "application/json"
+    },
+    {
+      "id": "delegation.invalid",
+      "path": "examples/basic-governed-decision/delegation.invalid.json",
+      "mediaType": "application/json"
+    },
+    {
+      "id": "delegation.valid",
+      "path": "examples/basic-governed-decision/delegation.valid.json",
+      "mediaType": "application/json"
+    },
+    {
+      "id": "evidence-manifest",
+      "path": "examples/basic-governed-decision/evidence-manifest.json",
+      "mediaType": "application/json"
+    },
+    {
+      "id": "evidence-model",
+      "path": "examples/basic-governed-decision/evidence-model.md",
+      "mediaType": "text/markdown"
+    },
+    {
+      "id": "governance-event.invalid",
+      "path": "examples/basic-governed-decision/governance-event.invalid.json",
+      "mediaType": "application/json"
+    },
+    {
+      "id": "governance-event.valid",
+      "path": "examples/basic-governed-decision/governance-event.valid.json",
+      "mediaType": "application/json"
+    },
+    {
+      "id": "lifecycle-and-revocation",
+      "path": "examples/basic-governed-decision/lifecycle-and-revocation.md",
+      "mediaType": "text/markdown"
+    },
+    {
+      "id": "notice-review-remedy",
+      "path": "examples/basic-governed-decision/notice-review-remedy.md",
+      "mediaType": "text/markdown"
+    },
+    {
+      "id": "pattern",
+      "path": "examples/basic-governed-decision/pattern.json",
+      "mediaType": "application/json"
+    },
+    {
+      "id": "privacy-security-analysis",
+      "path": "examples/basic-governed-decision/privacy-security-analysis.md",
+      "mediaType": "text/markdown"
+    },
+    {
+      "id": "remedy.invalid",
+      "path": "examples/basic-governed-decision/remedy.invalid.json",
+      "mediaType": "application/json"
+    },
+    {
+      "id": "remedy.valid",
+      "path": "examples/basic-governed-decision/remedy.valid.json",
+      "mediaType": "application/json"
+    },
+    {
+      "id": "requirement-mapping",
+      "path": "examples/basic-governed-decision/requirement-mapping.md",
+      "mediaType": "text/markdown"
+    },
+    {
+      "id": "runtime-sequence",
+      "path": "examples/basic-governed-decision/runtime-sequence.md",
+      "mediaType": "text/markdown"
+    },
+    {
       "id": "catalog",
       "path": "examples/catalog.json",
       "mediaType": "application/json"
@@ -511,6 +741,176 @@
     },
     {
       "id": "README",
+      "path": "examples/governed-ecosystem-operations/README.md",
+      "mediaType": "text/markdown"
+    },
+    {
+      "id": "authority-chain",
+      "path": "examples/governed-ecosystem-operations/authority-chain.md",
+      "mediaType": "text/markdown"
+    },
+    {
+      "id": "authority.invalid",
+      "path": "examples/governed-ecosystem-operations/authority.invalid.json",
+      "mediaType": "application/json"
+    },
+    {
+      "id": "authority.valid",
+      "path": "examples/governed-ecosystem-operations/authority.valid.json",
+      "mediaType": "application/json"
+    },
+    {
+      "id": "conformance-claim",
+      "path": "examples/governed-ecosystem-operations/conformance-claim.json",
+      "mediaType": "application/json"
+    },
+    {
+      "id": "contractual-governance",
+      "path": "examples/governed-ecosystem-operations/contractual-governance.md",
+      "mediaType": "text/markdown"
+    },
+    {
+      "id": "decision-input",
+      "path": "examples/governed-ecosystem-operations/decision-input.json",
+      "mediaType": "application/json"
+    },
+    {
+      "id": "decision-receipt.invalid",
+      "path": "examples/governed-ecosystem-operations/decision-receipt.invalid.json",
+      "mediaType": "application/json"
+    },
+    {
+      "id": "decision-receipt.valid",
+      "path": "examples/governed-ecosystem-operations/decision-receipt.valid.json",
+      "mediaType": "application/json"
+    },
+    {
+      "id": "delegation.invalid",
+      "path": "examples/governed-ecosystem-operations/delegation.invalid.json",
+      "mediaType": "application/json"
+    },
+    {
+      "id": "delegation.valid",
+      "path": "examples/governed-ecosystem-operations/delegation.valid.json",
+      "mediaType": "application/json"
+    },
+    {
+      "id": "ecosystem-topology",
+      "path": "examples/governed-ecosystem-operations/ecosystem-topology.md",
+      "mediaType": "text/markdown"
+    },
+    {
+      "id": "evidence-manifest",
+      "path": "examples/governed-ecosystem-operations/evidence-manifest.json",
+      "mediaType": "application/json"
+    },
+    {
+      "id": "framework-composition-example",
+      "path": "examples/governed-ecosystem-operations/framework-composition-example.json",
+      "mediaType": "application/json"
+    },
+    {
+      "id": "framework-composition",
+      "path": "examples/governed-ecosystem-operations/framework-composition.md",
+      "mediaType": "text/markdown"
+    },
+    {
+      "id": "governance-event.invalid",
+      "path": "examples/governed-ecosystem-operations/governance-event.invalid.json",
+      "mediaType": "application/json"
+    },
+    {
+      "id": "governance-event.valid",
+      "path": "examples/governed-ecosystem-operations/governance-event.valid.json",
+      "mediaType": "application/json"
+    },
+    {
+      "id": "intermediary-exit-and-continuity",
+      "path": "examples/governed-ecosystem-operations/intermediary-exit-and-continuity.md",
+      "mediaType": "text/markdown"
+    },
+    {
+      "id": "notice-review-remedy",
+      "path": "examples/governed-ecosystem-operations/notice-review-remedy.md",
+      "mediaType": "text/markdown"
+    },
+    {
+      "id": "participant-model",
+      "path": "examples/governed-ecosystem-operations/participant-model.md",
+      "mediaType": "text/markdown"
+    },
+    {
+      "id": "pattern",
+      "path": "examples/governed-ecosystem-operations/pattern.json",
+      "mediaType": "application/json"
+    },
+    {
+      "id": "privacy-security-analysis",
+      "path": "examples/governed-ecosystem-operations/privacy-security-analysis.md",
+      "mediaType": "text/markdown"
+    },
+    {
+      "id": "qualification-lifecycle",
+      "path": "examples/governed-ecosystem-operations/qualification-lifecycle.md",
+      "mediaType": "text/markdown"
+    },
+    {
+      "id": "qualification-record-example",
+      "path": "examples/governed-ecosystem-operations/qualification-record-example.json",
+      "mediaType": "application/json"
+    },
+    {
+      "id": "remedy.invalid",
+      "path": "examples/governed-ecosystem-operations/remedy.invalid.json",
+      "mediaType": "application/json"
+    },
+    {
+      "id": "remedy.valid",
+      "path": "examples/governed-ecosystem-operations/remedy.valid.json",
+      "mediaType": "application/json"
+    },
+    {
+      "id": "requirement-mapping",
+      "path": "examples/governed-ecosystem-operations/requirement-mapping.md",
+      "mediaType": "text/markdown"
+    },
+    {
+      "id": "risk-acceptance-example",
+      "path": "examples/governed-ecosystem-operations/risk-acceptance-example.json",
+      "mediaType": "application/json"
+    },
+    {
+      "id": "risk-and-residual-risk",
+      "path": "examples/governed-ecosystem-operations/risk-and-residual-risk.md",
+      "mediaType": "text/markdown"
+    },
+    {
+      "id": "service-and-assurance-model",
+      "path": "examples/governed-ecosystem-operations/service-and-assurance-model.md",
+      "mediaType": "text/markdown"
+    },
+    {
+      "id": "service-obligation-example",
+      "path": "examples/governed-ecosystem-operations/service-obligation-example.json",
+      "mediaType": "application/json"
+    },
+    {
+      "id": "third-party-dependencies",
+      "path": "examples/governed-ecosystem-operations/third-party-dependencies.md",
+      "mediaType": "text/markdown"
+    },
+    {
+      "id": "third-party-dependency-example",
+      "path": "examples/governed-ecosystem-operations/third-party-dependency-example.json",
+      "mediaType": "application/json"
+    },
+    {
+      "id": "transition-plan-example",
+      "path": "examples/governed-ecosystem-operations/transition-plan-example.json",
+      "mediaType": "application/json"
+    },
+    {
+      "id": "README",
       "path": "examples/high-impact-multi-agent-service/README.md",
       "mediaType": "text/markdown"
     },
@@ -635,8 +1035,353 @@
       "mediaType": "text/markdown"
     },
     {
+      "id": "README",
+      "path": "examples/independent-assurance-assessment/README.md",
+      "mediaType": "text/markdown"
+    },
+    {
+      "id": "architecture",
+      "path": "examples/independent-assurance-assessment/architecture.md",
+      "mediaType": "text/markdown"
+    },
+    {
+      "id": "authority-model",
+      "path": "examples/independent-assurance-assessment/authority-model.md",
+      "mediaType": "text/markdown"
+    },
+    {
+      "id": "authority.invalid",
+      "path": "examples/independent-assurance-assessment/authority.invalid.json",
+      "mediaType": "application/json"
+    },
+    {
+      "id": "authority.valid",
+      "path": "examples/independent-assurance-assessment/authority.valid.json",
+      "mediaType": "application/json"
+    },
+    {
+      "id": "conformance-claim",
+      "path": "examples/independent-assurance-assessment/conformance-claim.json",
+      "mediaType": "application/json"
+    },
+    {
+      "id": "decision-input",
+      "path": "examples/independent-assurance-assessment/decision-input.json",
+      "mediaType": "application/json"
+    },
+    {
+      "id": "decision-receipt.invalid",
+      "path": "examples/independent-assurance-assessment/decision-receipt.invalid.json",
+      "mediaType": "application/json"
+    },
+    {
+      "id": "decision-receipt.valid",
+      "path": "examples/independent-assurance-assessment/decision-receipt.valid.json",
+      "mediaType": "application/json"
+    },
+    {
+      "id": "delegation.invalid",
+      "path": "examples/independent-assurance-assessment/delegation.invalid.json",
+      "mediaType": "application/json"
+    },
+    {
+      "id": "delegation.valid",
+      "path": "examples/independent-assurance-assessment/delegation.valid.json",
+      "mediaType": "application/json"
+    },
+    {
+      "id": "evidence-manifest",
+      "path": "examples/independent-assurance-assessment/evidence-manifest.json",
+      "mediaType": "application/json"
+    },
+    {
+      "id": "evidence-model",
+      "path": "examples/independent-assurance-assessment/evidence-model.md",
+      "mediaType": "text/markdown"
+    },
+    {
+      "id": "governance-event.invalid",
+      "path": "examples/independent-assurance-assessment/governance-event.invalid.json",
+      "mediaType": "application/json"
+    },
+    {
+      "id": "governance-event.valid",
+      "path": "examples/independent-assurance-assessment/governance-event.valid.json",
+      "mediaType": "application/json"
+    },
+    {
+      "id": "lifecycle-and-revocation",
+      "path": "examples/independent-assurance-assessment/lifecycle-and-revocation.md",
+      "mediaType": "text/markdown"
+    },
+    {
+      "id": "notice-review-remedy",
+      "path": "examples/independent-assurance-assessment/notice-review-remedy.md",
+      "mediaType": "text/markdown"
+    },
+    {
+      "id": "pattern",
+      "path": "examples/independent-assurance-assessment/pattern.json",
+      "mediaType": "application/json"
+    },
+    {
+      "id": "privacy-security-analysis",
+      "path": "examples/independent-assurance-assessment/privacy-security-analysis.md",
+      "mediaType": "text/markdown"
+    },
+    {
+      "id": "remedy.invalid",
+      "path": "examples/independent-assurance-assessment/remedy.invalid.json",
+      "mediaType": "application/json"
+    },
+    {
+      "id": "remedy.valid",
+      "path": "examples/independent-assurance-assessment/remedy.valid.json",
+      "mediaType": "application/json"
+    },
+    {
+      "id": "requirement-mapping",
+      "path": "examples/independent-assurance-assessment/requirement-mapping.md",
+      "mediaType": "text/markdown"
+    },
+    {
+      "id": "runtime-sequence",
+      "path": "examples/independent-assurance-assessment/runtime-sequence.md",
+      "mediaType": "text/markdown"
+    },
+    {
       "id": "index",
       "path": "examples/index.md",
+      "mediaType": "text/markdown"
+    },
+    {
+      "id": "README",
+      "path": "examples/machine-actionable-governance-package/README.md",
+      "mediaType": "text/markdown"
+    },
+    {
+      "id": "architecture",
+      "path": "examples/machine-actionable-governance-package/architecture.md",
+      "mediaType": "text/markdown"
+    },
+    {
+      "id": "authority-model",
+      "path": "examples/machine-actionable-governance-package/authority-model.md",
+      "mediaType": "text/markdown"
+    },
+    {
+      "id": "authority.invalid",
+      "path": "examples/machine-actionable-governance-package/authority.invalid.json",
+      "mediaType": "application/json"
+    },
+    {
+      "id": "authority.valid",
+      "path": "examples/machine-actionable-governance-package/authority.valid.json",
+      "mediaType": "application/json"
+    },
+    {
+      "id": "conformance-claim",
+      "path": "examples/machine-actionable-governance-package/conformance-claim.json",
+      "mediaType": "application/json"
+    },
+    {
+      "id": "decision-input",
+      "path": "examples/machine-actionable-governance-package/decision-input.json",
+      "mediaType": "application/json"
+    },
+    {
+      "id": "decision-receipt.invalid",
+      "path": "examples/machine-actionable-governance-package/decision-receipt.invalid.json",
+      "mediaType": "application/json"
+    },
+    {
+      "id": "decision-receipt.valid",
+      "path": "examples/machine-actionable-governance-package/decision-receipt.valid.json",
+      "mediaType": "application/json"
+    },
+    {
+      "id": "delegation.invalid",
+      "path": "examples/machine-actionable-governance-package/delegation.invalid.json",
+      "mediaType": "application/json"
+    },
+    {
+      "id": "delegation.valid",
+      "path": "examples/machine-actionable-governance-package/delegation.valid.json",
+      "mediaType": "application/json"
+    },
+    {
+      "id": "evidence-manifest",
+      "path": "examples/machine-actionable-governance-package/evidence-manifest.json",
+      "mediaType": "application/json"
+    },
+    {
+      "id": "evidence-model",
+      "path": "examples/machine-actionable-governance-package/evidence-model.md",
+      "mediaType": "text/markdown"
+    },
+    {
+      "id": "governance-event.invalid",
+      "path": "examples/machine-actionable-governance-package/governance-event.invalid.json",
+      "mediaType": "application/json"
+    },
+    {
+      "id": "governance-event.valid",
+      "path": "examples/machine-actionable-governance-package/governance-event.valid.json",
+      "mediaType": "application/json"
+    },
+    {
+      "id": "lifecycle-and-revocation",
+      "path": "examples/machine-actionable-governance-package/lifecycle-and-revocation.md",
+      "mediaType": "text/markdown"
+    },
+    {
+      "id": "notice-review-remedy",
+      "path": "examples/machine-actionable-governance-package/notice-review-remedy.md",
+      "mediaType": "text/markdown"
+    },
+    {
+      "id": "pattern",
+      "path": "examples/machine-actionable-governance-package/pattern.json",
+      "mediaType": "application/json"
+    },
+    {
+      "id": "privacy-security-analysis",
+      "path": "examples/machine-actionable-governance-package/privacy-security-analysis.md",
+      "mediaType": "text/markdown"
+    },
+    {
+      "id": "remedy.invalid",
+      "path": "examples/machine-actionable-governance-package/remedy.invalid.json",
+      "mediaType": "application/json"
+    },
+    {
+      "id": "remedy.valid",
+      "path": "examples/machine-actionable-governance-package/remedy.valid.json",
+      "mediaType": "application/json"
+    },
+    {
+      "id": "requirement-mapping",
+      "path": "examples/machine-actionable-governance-package/requirement-mapping.md",
+      "mediaType": "text/markdown"
+    },
+    {
+      "id": "runtime-sequence",
+      "path": "examples/machine-actionable-governance-package/runtime-sequence.md",
+      "mediaType": "text/markdown"
+    },
+    {
+      "id": "README",
+      "path": "examples/notice-challenge-and-remedy/README.md",
+      "mediaType": "text/markdown"
+    },
+    {
+      "id": "architecture",
+      "path": "examples/notice-challenge-and-remedy/architecture.md",
+      "mediaType": "text/markdown"
+    },
+    {
+      "id": "authority-model",
+      "path": "examples/notice-challenge-and-remedy/authority-model.md",
+      "mediaType": "text/markdown"
+    },
+    {
+      "id": "authority.invalid",
+      "path": "examples/notice-challenge-and-remedy/authority.invalid.json",
+      "mediaType": "application/json"
+    },
+    {
+      "id": "authority.valid",
+      "path": "examples/notice-challenge-and-remedy/authority.valid.json",
+      "mediaType": "application/json"
+    },
+    {
+      "id": "conformance-claim",
+      "path": "examples/notice-challenge-and-remedy/conformance-claim.json",
+      "mediaType": "application/json"
+    },
+    {
+      "id": "decision-input",
+      "path": "examples/notice-challenge-and-remedy/decision-input.json",
+      "mediaType": "application/json"
+    },
+    {
+      "id": "decision-receipt.invalid",
+      "path": "examples/notice-challenge-and-remedy/decision-receipt.invalid.json",
+      "mediaType": "application/json"
+    },
+    {
+      "id": "decision-receipt.valid",
+      "path": "examples/notice-challenge-and-remedy/decision-receipt.valid.json",
+      "mediaType": "application/json"
+    },
+    {
+      "id": "delegation.invalid",
+      "path": "examples/notice-challenge-and-remedy/delegation.invalid.json",
+      "mediaType": "application/json"
+    },
+    {
+      "id": "delegation.valid",
+      "path": "examples/notice-challenge-and-remedy/delegation.valid.json",
+      "mediaType": "application/json"
+    },
+    {
+      "id": "evidence-manifest",
+      "path": "examples/notice-challenge-and-remedy/evidence-manifest.json",
+      "mediaType": "application/json"
+    },
+    {
+      "id": "evidence-model",
+      "path": "examples/notice-challenge-and-remedy/evidence-model.md",
+      "mediaType": "text/markdown"
+    },
+    {
+      "id": "governance-event.invalid",
+      "path": "examples/notice-challenge-and-remedy/governance-event.invalid.json",
+      "mediaType": "application/json"
+    },
+    {
+      "id": "governance-event.valid",
+      "path": "examples/notice-challenge-and-remedy/governance-event.valid.json",
+      "mediaType": "application/json"
+    },
+    {
+      "id": "lifecycle-and-revocation",
+      "path": "examples/notice-challenge-and-remedy/lifecycle-and-revocation.md",
+      "mediaType": "text/markdown"
+    },
+    {
+      "id": "notice-review-remedy",
+      "path": "examples/notice-challenge-and-remedy/notice-review-remedy.md",
+      "mediaType": "text/markdown"
+    },
+    {
+      "id": "pattern",
+      "path": "examples/notice-challenge-and-remedy/pattern.json",
+      "mediaType": "application/json"
+    },
+    {
+      "id": "privacy-security-analysis",
+      "path": "examples/notice-challenge-and-remedy/privacy-security-analysis.md",
+      "mediaType": "text/markdown"
+    },
+    {
+      "id": "remedy.invalid",
+      "path": "examples/notice-challenge-and-remedy/remedy.invalid.json",
+      "mediaType": "application/json"
+    },
+    {
+      "id": "remedy.valid",
+      "path": "examples/notice-challenge-and-remedy/remedy.valid.json",
+      "mediaType": "application/json"
+    },
+    {
+      "id": "requirement-mapping",
+      "path": "examples/notice-challenge-and-remedy/requirement-mapping.md",
+      "mediaType": "text/markdown"
+    },
+    {
+      "id": "runtime-sequence",
+      "path": "examples/notice-challenge-and-remedy/runtime-sequence.md",
       "mediaType": "text/markdown"
     },
     {

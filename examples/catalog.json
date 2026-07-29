@@ -25,6 +25,54 @@
       "status": "candidate",
       "maturity": "assurance-ready",
       "implementationDomain": "high-impact composed agent service"
+    },
+    {
+      "id": "gaam:pattern:basic-governed-decision:0.9.0",
+      "title": "Basic Governed Decision",
+      "path": "basic-governed-decision",
+      "status": "candidate",
+      "maturity": "assurance-ready",
+      "implementationDomain": "governed decision evaluation"
+    },
+    {
+      "id": "gaam:pattern:authority-lifecycle-and-revocation:0.9.0",
+      "title": "Authority Lifecycle and Revocation",
+      "path": "authority-lifecycle-and-revocation",
+      "status": "candidate",
+      "maturity": "assurance-ready",
+      "implementationDomain": "authority lifecycle and revocation"
+    },
+    {
+      "id": "gaam:pattern:independent-assurance-assessment:0.9.0",
+      "title": "Independent Assurance Assessment",
+      "path": "independent-assurance-assessment",
+      "status": "candidate",
+      "maturity": "assurance-ready",
+      "implementationDomain": "independent assurance assessment"
+    },
+    {
+      "id": "gaam:pattern:notice-challenge-and-remedy:0.9.0",
+      "title": "Notice, Challenge, and Remedy",
+      "path": "notice-challenge-and-remedy",
+      "status": "candidate",
+      "maturity": "assurance-ready",
+      "implementationDomain": "notice challenge review and remedy"
+    },
+    {
+      "id": "gaam:pattern:machine-actionable-governance-package:0.9.0",
+      "title": "Machine-Actionable Governance Package",
+      "path": "machine-actionable-governance-package",
+      "status": "candidate",
+      "maturity": "assurance-ready",
+      "implementationDomain": "machine-actionable governance publication"
+    },
+    {
+      "id": "gaam:pattern:governed-ecosystem-operations:0.9.0",
+      "title": "Governed Ecosystem Operations",
+      "path": "governed-ecosystem-operations",
+      "status": "candidate",
+      "maturity": "assurance-ready",
+      "implementationDomain": "qualified intermediary ecosystem operations"
     }
   ]
 }

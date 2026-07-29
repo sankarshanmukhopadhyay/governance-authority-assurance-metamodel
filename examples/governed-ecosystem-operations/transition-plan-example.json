@@ -1,0 +1,9 @@
+{
+  "type": "supporting-example",
+  "trigger": "intermediary-termination",
+  "continuityControls": [
+    "status-service",
+    "record-custody",
+    "subject-transfer"
+  ]
+}

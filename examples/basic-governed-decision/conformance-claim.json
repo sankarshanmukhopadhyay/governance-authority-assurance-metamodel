@@ -1,0 +1,27 @@
+{
+  "id": "urn:gaam:example:basic-governed-decision:claim",
+  "type": "gaam-conformance-claim",
+  "gaamVersion": "0.9.0",
+  "profiles": [
+    "gaam:profile:foundation:0.9.0",
+    "gaam:profile:runtime-governance:0.9.0"
+  ],
+  "target": "urn:gaam:example:basic-governed-decision",
+  "level": "L2",
+  "evidence": [
+    "urn:gaam:pattern:basic-governed-decision:manifest",
+    "urn:gaam:pattern:basic-governed-decision:fixtures",
+    "urn:gaam:pattern:basic-governed-decision:behavioural-traceability"
+  ],
+  "issuedBy": "urn:gaam:maintainer",
+  "issuedAt": "2026-07-16T00:02:00Z",
+  "limitations": [
+    "Illustrative and technology-neutral.",
+    "No independent implementation or interoperability evidence is asserted.",
+    "Jurisdiction-specific obligations remain external."
+  ],
+  "testSuiteVersion": "0.9.0",
+  "assessmentIndependence": "self",
+  "status": "active",
+  "reviewBy": "2027-01-16T00:00:00Z"
+}

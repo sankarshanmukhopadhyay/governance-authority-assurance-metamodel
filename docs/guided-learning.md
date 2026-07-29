@@ -57,3 +57,15 @@ flowchart LR
 Informative guidance explains how to apply GAAM but does not replace the normative specification, profiles, schemas or conformance requirements. Record the exact version and profile used whenever making a conformance or assurance claim.
 
 [Continue to the documentation architecture →](documentation-architecture.md)
+
+## Foundational-to-ecosystem pattern path
+
+1. [Basic Governed Decision](../examples/basic-governed-decision/)
+2. [Authority Lifecycle and Revocation](../examples/authority-lifecycle-and-revocation/)
+3. [Independent Assurance Assessment](../examples/independent-assurance-assessment/)
+4. [Notice, Challenge, and Remedy](../examples/notice-challenge-and-remedy/)
+5. [Machine-Actionable Governance Package](../examples/machine-actionable-governance-package/)
+6. [Delegated Agent Purchasing](../examples/delegated-agent-purchase/)
+7. [Cross-Registry Recognition](../examples/cross-registry-recognition/)
+8. [High-Impact Multi-Agent Service](../examples/high-impact-multi-agent-service/)
+9. [Governed Ecosystem Operations](../examples/governed-ecosystem-operations/)

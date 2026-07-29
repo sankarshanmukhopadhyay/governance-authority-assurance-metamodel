@@ -1,0 +1,9 @@
+{
+  "type": "supporting-example",
+  "primary": "ecosystem-framework",
+  "relationships": [
+    "specialises",
+    "depends-on",
+    "imports-requirements-from"
+  ]
+}

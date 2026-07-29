@@ -1,0 +1,27 @@
+{
+  "id": "urn:gaam:example:notice-challenge-and-remedy:claim",
+  "type": "gaam-conformance-claim",
+  "gaamVersion": "0.9.0",
+  "profiles": [
+    "gaam:profile:foundation:0.9.0",
+    "gaam:profile:high-impact-systems:0.9.0"
+  ],
+  "target": "urn:gaam:example:notice-challenge-and-remedy",
+  "level": "L2",
+  "evidence": [
+    "urn:gaam:pattern:notice-challenge-and-remedy:manifest",
+    "urn:gaam:pattern:notice-challenge-and-remedy:fixtures",
+    "urn:gaam:pattern:notice-challenge-and-remedy:behavioural-traceability"
+  ],
+  "issuedBy": "urn:gaam:maintainer",
+  "issuedAt": "2026-07-16T00:02:00Z",
+  "limitations": [
+    "Illustrative and technology-neutral.",
+    "No independent implementation or interoperability evidence is asserted.",
+    "Jurisdiction-specific obligations remain external."
+  ],
+  "testSuiteVersion": "0.9.0",
+  "assessmentIndependence": "self",
+  "status": "active",
+  "reviewBy": "2027-01-16T00:00:00Z"
+}

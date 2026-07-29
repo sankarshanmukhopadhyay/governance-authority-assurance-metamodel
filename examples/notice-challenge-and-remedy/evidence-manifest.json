@@ -1,0 +1,22 @@
+{
+  "pattern": "delegated-agent-purchase",
+  "evidence": [
+    {
+      "id": "urn:gaam:evidence:delegated-agent-purchase:current",
+      "producer": "delegation registry",
+      "purpose": "runtime decision",
+      "freshness": "current"
+    },
+    {
+      "id": "urn:gaam:evidence:delegated-agent-purchase:downstream-correction",
+      "producer": "principal review authority",
+      "purpose": "remedy verification",
+      "freshness": "current"
+    }
+  ],
+  "limitations": [
+    "Example policies and identifiers are illustrative.",
+    "No independent implementation or interoperability evidence is asserted.",
+    "Payment-network, consumer-protection and jurisdiction-specific controls remain external."
+  ]
+}

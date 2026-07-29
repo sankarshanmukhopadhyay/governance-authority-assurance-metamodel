@@ -1,0 +1,27 @@
+{
+  "id": "urn:gaam:example:independent-assurance-assessment:claim",
+  "type": "gaam-conformance-claim",
+  "gaamVersion": "0.9.0",
+  "profiles": [
+    "gaam:profile:foundation:0.9.0",
+    "gaam:profile:continuous-assurance:0.9.0"
+  ],
+  "target": "urn:gaam:example:independent-assurance-assessment",
+  "level": "L2",
+  "evidence": [
+    "urn:gaam:pattern:independent-assurance-assessment:manifest",
+    "urn:gaam:pattern:independent-assurance-assessment:fixtures",
+    "urn:gaam:pattern:independent-assurance-assessment:behavioural-traceability"
+  ],
+  "issuedBy": "urn:gaam:maintainer",
+  "issuedAt": "2026-07-16T00:02:00Z",
+  "limitations": [
+    "Illustrative and technology-neutral.",
+    "No independent implementation or interoperability evidence is asserted.",
+    "Jurisdiction-specific obligations remain external."
+  ],
+  "testSuiteVersion": "0.9.0",
+  "assessmentIndependence": "self",
+  "status": "active",
+  "reviewBy": "2027-01-16T00:00:00Z"
+}

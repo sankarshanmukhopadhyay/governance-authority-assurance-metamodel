@@ -1,0 +1,10 @@
+{
+  "type": "supporting-example",
+  "riskOwner": "ecosystem-administrator",
+  "acceptanceAuthority": "governing-authority",
+  "reviewDate": "2027-01-29",
+  "affectedParties": [
+    "subjects",
+    "verifiers"
+  ]
+}

@@ -1,0 +1,154 @@
+{
+  "id": "gaam:pattern:independent-assurance-assessment:0.9.0",
+  "title": "Independent Assurance Assessment",
+  "status": "candidate",
+  "maturity": "assurance-ready",
+  "gaamVersion": "0.9.0",
+  "implementationDomain": "independent assurance assessment",
+  "profiles": [
+    "gaam:profile:foundation:0.9.0",
+    "gaam:profile:continuous-assurance:0.9.0"
+  ],
+  "requirements": [
+    "GAAM-ACC-001",
+    "GAAM-ACC-002",
+    "GAAM-ACC-003",
+    "GAAM-ASR-001",
+    "GAAM-ASR-002",
+    "GAAM-ASR-003"
+  ],
+  "actors": [
+    "assessed entity",
+    "independent assessor",
+    "assurance authority",
+    "evidence producer",
+    "relying party"
+  ],
+  "authoritySources": [
+    "primary governance framework",
+    "controlled authority record"
+  ],
+  "enforcementPoints": [
+    "admission or decision gateway",
+    "runtime effect boundary"
+  ],
+  "evidenceProducers": [
+    "governance authority",
+    "runtime enforcement service",
+    "assurance function"
+  ],
+  "reviewAuthorities": [
+    "independent review authority",
+    "accountable governing authority"
+  ],
+  "artifacts": [
+    "README.md",
+    "architecture.md",
+    "authority-model.md",
+    "lifecycle-and-revocation.md",
+    "runtime-sequence.md",
+    "evidence-model.md",
+    "notice-review-remedy.md",
+    "privacy-security-analysis.md",
+    "requirement-mapping.md",
+    "authority.valid.json",
+    "authority.invalid.json",
+    "delegation.valid.json",
+    "delegation.invalid.json",
+    "decision-receipt.valid.json",
+    "decision-receipt.invalid.json",
+    "governance-event.valid.json",
+    "governance-event.invalid.json",
+    "remedy.valid.json",
+    "remedy.invalid.json",
+    "decision-input.json",
+    "evidence-manifest.json"
+  ],
+  "schemaFixtures": [
+    {
+      "path": "authority.valid.json",
+      "type": "authority",
+      "expectedValid": true
+    },
+    {
+      "path": "authority.invalid.json",
+      "type": "authority",
+      "expectedValid": false
+    },
+    {
+      "path": "delegation.valid.json",
+      "type": "delegation",
+      "expectedValid": true
+    },
+    {
+      "path": "delegation.invalid.json",
+      "type": "delegation",
+      "expectedValid": false
+    },
+    {
+      "path": "decision-receipt.valid.json",
+      "type": "decision-receipt",
+      "expectedValid": true
+    },
+    {
+      "path": "decision-receipt.invalid.json",
+      "type": "decision-receipt",
+      "expectedValid": false
+    },
+    {
+      "path": "governance-event.valid.json",
+      "type": "governance-event",
+      "expectedValid": true
+    },
+    {
+      "path": "governance-event.invalid.json",
+      "type": "governance-event",
+      "expectedValid": false
+    },
+    {
+      "path": "remedy.valid.json",
+      "type": "remedy",
+      "expectedValid": true
+    },
+    {
+      "path": "remedy.invalid.json",
+      "type": "remedy",
+      "expectedValid": false
+    }
+  ],
+  "behaviouralVectors": [
+    "authority-active-valid",
+    "authority-expired-rejected",
+    "authority-revoked-rejected",
+    "delegation-attenuated-valid",
+    "delegation-amplification-rejected",
+    "decision-traceable-valid"
+  ],
+  "supportingExamples": [
+    "decision-input.json",
+    "evidence-manifest.json"
+  ],
+  "positiveScenarios": [
+    "current authority and evidence permit an in-scope effect",
+    "reviewable evidence is produced and retained"
+  ],
+  "negativeScenarios": [
+    "stale or revoked authority is rejected",
+    "missing accountability or remedy produces a controlled denial"
+  ],
+  "lifecycleStates": [
+    "planned",
+    "in-assessment",
+    "valid",
+    "review-due",
+    "suspended",
+    "withdrawn",
+    "expired"
+  ],
+  "limitations": [
+    "Illustrative and technology-neutral.",
+    "No independent implementation or interoperability evidence is asserted.",
+    "Jurisdiction-specific obligations remain external."
+  ],
+  "validationCommand": "python scripts/validate.py"
+}

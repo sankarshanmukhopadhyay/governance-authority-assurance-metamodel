@@ -1,3 +1,10 @@
+
+### Added
+
+- Five foundational executable governance patterns and a technology-neutral governed ecosystem operations pattern.
+- Guided learning from basic governed decisions through authority lifecycle, assurance, remedy, machine-actionable packages and ecosystem operations.
+- Machine-readable manifests, conformance claims, valid and invalid fixtures, behavioural references and evidence expectations for the new patterns.
+
 ---
 title: "Changelog"
 permalink: /releases/changelog/

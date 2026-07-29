@@ -1,0 +1,27 @@
+{
+  "id": "urn:gaam:example:basic-governed-decision:decision-receipt",
+  "type": "decision-receipt",
+  "decision": "urn:gaam:decision:delegated-agent-purchase:001",
+  "authority": [
+    "urn:gaam:example:delegated-agent-purchase:authority"
+  ],
+  "policy": [
+    "urn:gaam:policy:delegated-agent-purchase"
+  ],
+  "evidence": [
+    "urn:gaam:evidence:delegated-agent-purchase:current"
+  ],
+  "assurance": [
+    "urn:gaam:assurance:delegated-agent-purchase"
+  ],
+  "outcome": "permit-with-conditions",
+  "conditions": [
+    "scope-and-state-remain-valid"
+  ],
+  "decisionTime": "2026-07-29T12:00:00Z",
+  "enforcementPoint": "urn:gaam:enforcement:delegated-agent-purchase",
+  "reviewRoute": "urn:gaam:review:delegated-agent-purchase",
+  "redactions": [
+    "confidential-evidence-content"
+  ]
+}

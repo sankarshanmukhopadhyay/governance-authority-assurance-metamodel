@@ -2,8 +2,8 @@
   "gaamVersion": "0.9.0",
   "testSuiteVersion": "0.9.0",
   "status": "pass",
-  "checks": 127,
-  "passed": 127,
+  "checks": 223,
+  "passed": 223,
   "failed": 0,
   "results": [
     {
@@ -217,6 +217,198 @@
       "evidence": "all profile dependencies resolve"
     },
     {
+      "id": "PAT-authority-lifecycle-and-revocation-CONTRACT",
+      "kind": "pattern",
+      "status": "pass",
+      "evidence": "required files present"
+    },
+    {
+      "id": "PAT-authority-lifecycle-and-revocation-MANIFEST",
+      "kind": "pattern",
+      "status": "pass",
+      "evidence": "manifest conforms"
+    },
+    {
+      "id": "PAT-authority-lifecycle-and-revocation-REFERENCES",
+      "kind": "pattern",
+      "status": "pass",
+      "evidence": "profile, requirement, artifact and behavioural references resolve"
+    },
+    {
+      "id": "PAT-authority-lifecycle-and-revocation-MATURITY",
+      "kind": "pattern",
+      "status": "pass",
+      "evidence": "assurance-ready claim supported"
+    },
+    {
+      "id": "PAT-authority-lifecycle-and-revocation-CATALOG",
+      "kind": "pattern",
+      "status": "pass",
+      "evidence": "catalogue entry present"
+    },
+    {
+      "id": "FIX-authority-lifecycle-and-revocation-authority.invalid",
+      "kind": "fixture",
+      "status": "pass",
+      "evidence": "rejected as expected; manifest declaration matched"
+    },
+    {
+      "id": "FIX-authority-lifecycle-and-revocation-authority.valid",
+      "kind": "fixture",
+      "status": "pass",
+      "evidence": "accepted as expected; manifest declaration matched"
+    },
+    {
+      "id": "FIX-authority-lifecycle-and-revocation-decision-receipt.invalid",
+      "kind": "fixture",
+      "status": "pass",
+      "evidence": "rejected as expected; manifest declaration matched"
+    },
+    {
+      "id": "FIX-authority-lifecycle-and-revocation-decision-receipt.valid",
+      "kind": "fixture",
+      "status": "pass",
+      "evidence": "accepted as expected; manifest declaration matched"
+    },
+    {
+      "id": "FIX-authority-lifecycle-and-revocation-delegation.invalid",
+      "kind": "fixture",
+      "status": "pass",
+      "evidence": "rejected as expected; manifest declaration matched"
+    },
+    {
+      "id": "FIX-authority-lifecycle-and-revocation-delegation.valid",
+      "kind": "fixture",
+      "status": "pass",
+      "evidence": "accepted as expected; manifest declaration matched"
+    },
+    {
+      "id": "FIX-authority-lifecycle-and-revocation-governance-event.invalid",
+      "kind": "fixture",
+      "status": "pass",
+      "evidence": "rejected as expected; manifest declaration matched"
+    },
+    {
+      "id": "FIX-authority-lifecycle-and-revocation-governance-event.valid",
+      "kind": "fixture",
+      "status": "pass",
+      "evidence": "accepted as expected; manifest declaration matched"
+    },
+    {
+      "id": "FIX-authority-lifecycle-and-revocation-remedy.invalid",
+      "kind": "fixture",
+      "status": "pass",
+      "evidence": "rejected as expected; manifest declaration matched"
+    },
+    {
+      "id": "FIX-authority-lifecycle-and-revocation-remedy.valid",
+      "kind": "fixture",
+      "status": "pass",
+      "evidence": "accepted as expected; manifest declaration matched"
+    },
+    {
+      "id": "CLM-authority-lifecycle-and-revocation",
+      "kind": "conformance",
+      "status": "pass",
+      "evidence": "schema, evidence, limitations and independence rules satisfied"
+    },
+    {
+      "id": "PAT-basic-governed-decision-CONTRACT",
+      "kind": "pattern",
+      "status": "pass",
+      "evidence": "required files present"
+    },
+    {
+      "id": "PAT-basic-governed-decision-MANIFEST",
+      "kind": "pattern",
+      "status": "pass",
+      "evidence": "manifest conforms"
+    },
+    {
+      "id": "PAT-basic-governed-decision-REFERENCES",
+      "kind": "pattern",
+      "status": "pass",
+      "evidence": "profile, requirement, artifact and behavioural references resolve"
+    },
+    {
+      "id": "PAT-basic-governed-decision-MATURITY",
+      "kind": "pattern",
+      "status": "pass",
+      "evidence": "assurance-ready claim supported"
+    },
+    {
+      "id": "PAT-basic-governed-decision-CATALOG",
+      "kind": "pattern",
+      "status": "pass",
+      "evidence": "catalogue entry present"
+    },
+    {
+      "id": "FIX-basic-governed-decision-authority.invalid",
+      "kind": "fixture",
+      "status": "pass",
+      "evidence": "rejected as expected; manifest declaration matched"
+    },
+    {
+      "id": "FIX-basic-governed-decision-authority.valid",
+      "kind": "fixture",
+      "status": "pass",
+      "evidence": "accepted as expected; manifest declaration matched"
+    },
+    {
+      "id": "FIX-basic-governed-decision-decision-receipt.invalid",
+      "kind": "fixture",
+      "status": "pass",
+      "evidence": "rejected as expected; manifest declaration matched"
+    },
+    {
+      "id": "FIX-basic-governed-decision-decision-receipt.valid",
+      "kind": "fixture",
+      "status": "pass",
+      "evidence": "accepted as expected; manifest declaration matched"
+    },
+    {
+      "id": "FIX-basic-governed-decision-delegation.invalid",
+      "kind": "fixture",
+      "status": "pass",
+      "evidence": "rejected as expected; manifest declaration matched"
+    },
+    {
+      "id": "FIX-basic-governed-decision-delegation.valid",
+      "kind": "fixture",
+      "status": "pass",
+      "evidence": "accepted as expected; manifest declaration matched"
+    },
+    {
+      "id": "FIX-basic-governed-decision-governance-event.invalid",
+      "kind": "fixture",
+      "status": "pass",
+      "evidence": "rejected as expected; manifest declaration matched"
+    },
+    {
+      "id": "FIX-basic-governed-decision-governance-event.valid",
+      "kind": "fixture",
+      "status": "pass",
+      "evidence": "accepted as expected; manifest declaration matched"
+    },
+    {
+      "id": "FIX-basic-governed-decision-remedy.invalid",
+      "kind": "fixture",
+      "status": "pass",
+      "evidence": "rejected as expected; manifest declaration matched"
+    },
+    {
+      "id": "FIX-basic-governed-decision-remedy.valid",
+      "kind": "fixture",
+      "status": "pass",
+      "evidence": "accepted as expected; manifest declaration matched"
+    },
+    {
+      "id": "CLM-basic-governed-decision",
+      "kind": "conformance",
+      "status": "pass",
+      "evidence": "schema, evidence, limitations and independence rules satisfied"
+    },
+    {
       "id": "PAT-cross-registry-recognition-CONTRACT",
       "kind": "pattern",
       "status": "pass",
@@ -409,6 +601,102 @@
       "evidence": "schema, evidence, limitations and independence rules satisfied"
     },
     {
+      "id": "PAT-governed-ecosystem-operations-CONTRACT",
+      "kind": "pattern",
+      "status": "pass",
+      "evidence": "required files present"
+    },
+    {
+      "id": "PAT-governed-ecosystem-operations-MANIFEST",
+      "kind": "pattern",
+      "status": "pass",
+      "evidence": "manifest conforms"
+    },
+    {
+      "id": "PAT-governed-ecosystem-operations-REFERENCES",
+      "kind": "pattern",
+      "status": "pass",
+      "evidence": "profile, requirement, artifact and behavioural references resolve"
+    },
+    {
+      "id": "PAT-governed-ecosystem-operations-MATURITY",
+      "kind": "pattern",
+      "status": "pass",
+      "evidence": "assurance-ready claim supported"
+    },
+    {
+      "id": "PAT-governed-ecosystem-operations-CATALOG",
+      "kind": "pattern",
+      "status": "pass",
+      "evidence": "catalogue entry present"
+    },
+    {
+      "id": "FIX-governed-ecosystem-operations-authority.invalid",
+      "kind": "fixture",
+      "status": "pass",
+      "evidence": "rejected as expected; manifest declaration matched"
+    },
+    {
+      "id": "FIX-governed-ecosystem-operations-authority.valid",
+      "kind": "fixture",
+      "status": "pass",
+      "evidence": "accepted as expected; manifest declaration matched"
+    },
+    {
+      "id": "FIX-governed-ecosystem-operations-decision-receipt.invalid",
+      "kind": "fixture",
+      "status": "pass",
+      "evidence": "rejected as expected; manifest declaration matched"
+    },
+    {
+      "id": "FIX-governed-ecosystem-operations-decision-receipt.valid",
+      "kind": "fixture",
+      "status": "pass",
+      "evidence": "accepted as expected; manifest declaration matched"
+    },
+    {
+      "id": "FIX-governed-ecosystem-operations-delegation.invalid",
+      "kind": "fixture",
+      "status": "pass",
+      "evidence": "rejected as expected; manifest declaration matched"
+    },
+    {
+      "id": "FIX-governed-ecosystem-operations-delegation.valid",
+      "kind": "fixture",
+      "status": "pass",
+      "evidence": "accepted as expected; manifest declaration matched"
+    },
+    {
+      "id": "FIX-governed-ecosystem-operations-governance-event.invalid",
+      "kind": "fixture",
+      "status": "pass",
+      "evidence": "rejected as expected; manifest declaration matched"
+    },
+    {
+      "id": "FIX-governed-ecosystem-operations-governance-event.valid",
+      "kind": "fixture",
+      "status": "pass",
+      "evidence": "accepted as expected; manifest declaration matched"
+    },
+    {
+      "id": "FIX-governed-ecosystem-operations-remedy.invalid",
+      "kind": "fixture",
+      "status": "pass",
+      "evidence": "rejected as expected; manifest declaration matched"
+    },
+    {
+      "id": "FIX-governed-ecosystem-operations-remedy.valid",
+      "kind": "fixture",
+      "status": "pass",
+      "evidence": "accepted as expected; manifest declaration matched"
+    },
+    {
+      "id": "CLM-governed-ecosystem-operations",
+      "kind": "conformance",
+      "status": "pass",
+      "evidence": "schema, evidence, limitations and independence rules satisfied"
+    },
+    {
       "id": "PAT-high-impact-multi-agent-service-CONTRACT",
       "kind": "pattern",
       "status": "pass",
@@ -505,16 +793,304 @@
       "evidence": "schema, evidence, limitations and independence rules satisfied"
     },
     {
+      "id": "PAT-independent-assurance-assessment-CONTRACT",
+      "kind": "pattern",
+      "status": "pass",
+      "evidence": "required files present"
+    },
+    {
+      "id": "PAT-independent-assurance-assessment-MANIFEST",
+      "kind": "pattern",
+      "status": "pass",
+      "evidence": "manifest conforms"
+    },
+    {
+      "id": "PAT-independent-assurance-assessment-REFERENCES",
+      "kind": "pattern",
+      "status": "pass",
+      "evidence": "profile, requirement, artifact and behavioural references resolve"
+    },
+    {
+      "id": "PAT-independent-assurance-assessment-MATURITY",
+      "kind": "pattern",
+      "status": "pass",
+      "evidence": "assurance-ready claim supported"
+    },
+    {
+      "id": "PAT-independent-assurance-assessment-CATALOG",
+      "kind": "pattern",
+      "status": "pass",
+      "evidence": "catalogue entry present"
+    },
+    {
+      "id": "FIX-independent-assurance-assessment-authority.invalid",
+      "kind": "fixture",
+      "status": "pass",
+      "evidence": "rejected as expected; manifest declaration matched"
+    },
+    {
+      "id": "FIX-independent-assurance-assessment-authority.valid",
+      "kind": "fixture",
+      "status": "pass",
+      "evidence": "accepted as expected; manifest declaration matched"
+    },
+    {
+      "id": "FIX-independent-assurance-assessment-decision-receipt.invalid",
+      "kind": "fixture",
+      "status": "pass",
+      "evidence": "rejected as expected; manifest declaration matched"
+    },
+    {
+      "id": "FIX-independent-assurance-assessment-decision-receipt.valid",
+      "kind": "fixture",
+      "status": "pass",
+      "evidence": "accepted as expected; manifest declaration matched"
+    },
+    {
+      "id": "FIX-independent-assurance-assessment-delegation.invalid",
+      "kind": "fixture",
+      "status": "pass",
+      "evidence": "rejected as expected; manifest declaration matched"
+    },
+    {
+      "id": "FIX-independent-assurance-assessment-delegation.valid",
+      "kind": "fixture",
+      "status": "pass",
+      "evidence": "accepted as expected; manifest declaration matched"
+    },
+    {
+      "id": "FIX-independent-assurance-assessment-governance-event.invalid",
+      "kind": "fixture",
+      "status": "pass",
+      "evidence": "rejected as expected; manifest declaration matched"
+    },
+    {
+      "id": "FIX-independent-assurance-assessment-governance-event.valid",
+      "kind": "fixture",
+      "status": "pass",
+      "evidence": "accepted as expected; manifest declaration matched"
+    },
+    {
+      "id": "FIX-independent-assurance-assessment-remedy.invalid",
+      "kind": "fixture",
+      "status": "pass",
+      "evidence": "rejected as expected; manifest declaration matched"
+    },
+    {
+      "id": "FIX-independent-assurance-assessment-remedy.valid",
+      "kind": "fixture",
+      "status": "pass",
+      "evidence": "accepted as expected; manifest declaration matched"
+    },
+    {
+      "id": "CLM-independent-assurance-assessment",
+      "kind": "conformance",
+      "status": "pass",
+      "evidence": "schema, evidence, limitations and independence rules satisfied"
+    },
+    {
+      "id": "PAT-machine-actionable-governance-package-CONTRACT",
+      "kind": "pattern",
+      "status": "pass",
+      "evidence": "required files present"
+    },
+    {
+      "id": "PAT-machine-actionable-governance-package-MANIFEST",
+      "kind": "pattern",
+      "status": "pass",
+      "evidence": "manifest conforms"
+    },
+    {
+      "id": "PAT-machine-actionable-governance-package-REFERENCES",
+      "kind": "pattern",
+      "status": "pass",
+      "evidence": "profile, requirement, artifact and behavioural references resolve"
+    },
+    {
+      "id": "PAT-machine-actionable-governance-package-MATURITY",
+      "kind": "pattern",
+      "status": "pass",
+      "evidence": "assurance-ready claim supported"
+    },
+    {
+      "id": "PAT-machine-actionable-governance-package-CATALOG",
+      "kind": "pattern",
+      "status": "pass",
+      "evidence": "catalogue entry present"
+    },
+    {
+      "id": "FIX-machine-actionable-governance-package-authority.invalid",
+      "kind": "fixture",
+      "status": "pass",
+      "evidence": "rejected as expected; manifest declaration matched"
+    },
+    {
+      "id": "FIX-machine-actionable-governance-package-authority.valid",
+      "kind": "fixture",
+      "status": "pass",
+      "evidence": "accepted as expected; manifest declaration matched"
+    },
+    {
+      "id": "FIX-machine-actionable-governance-package-decision-receipt.invalid",
+      "kind": "fixture",
+      "status": "pass",
+      "evidence": "rejected as expected; manifest declaration matched"
+    },
+    {
+      "id": "FIX-machine-actionable-governance-package-decision-receipt.valid",
+      "kind": "fixture",
+      "status": "pass",
+      "evidence": "accepted as expected; manifest declaration matched"
+    },
+    {
+      "id": "FIX-machine-actionable-governance-package-delegation.invalid",
+      "kind": "fixture",
+      "status": "pass",
+      "evidence": "rejected as expected; manifest declaration matched"
+    },
+    {
+      "id": "FIX-machine-actionable-governance-package-delegation.valid",
+      "kind": "fixture",
+      "status": "pass",
+      "evidence": "accepted as expected; manifest declaration matched"
+    },
+    {
+      "id": "FIX-machine-actionable-governance-package-governance-event.invalid",
+      "kind": "fixture",
+      "status": "pass",
+      "evidence": "rejected as expected; manifest declaration matched"
+    },
+    {
+      "id": "FIX-machine-actionable-governance-package-governance-event.valid",
+      "kind": "fixture",
+      "status": "pass",
+      "evidence": "accepted as expected; manifest declaration matched"
+    },
+    {
+      "id": "FIX-machine-actionable-governance-package-remedy.invalid",
+      "kind": "fixture",
+      "status": "pass",
+      "evidence": "rejected as expected; manifest declaration matched"
+    },
+    {
+      "id": "FIX-machine-actionable-governance-package-remedy.valid",
+      "kind": "fixture",
+      "status": "pass",
+      "evidence": "accepted as expected; manifest declaration matched"
+    },
+    {
+      "id": "CLM-machine-actionable-governance-package",
+      "kind": "conformance",
+      "status": "pass",
+      "evidence": "schema, evidence, limitations and independence rules satisfied"
+    },
+    {
+      "id": "PAT-notice-challenge-and-remedy-CONTRACT",
+      "kind": "pattern",
+      "status": "pass",
+      "evidence": "required files present"
+    },
+    {
+      "id": "PAT-notice-challenge-and-remedy-MANIFEST",
+      "kind": "pattern",
+      "status": "pass",
+      "evidence": "manifest conforms"
+    },
+    {
+      "id": "PAT-notice-challenge-and-remedy-REFERENCES",
+      "kind": "pattern",
+      "status": "pass",
+      "evidence": "profile, requirement, artifact and behavioural references resolve"
+    },
+    {
+      "id": "PAT-notice-challenge-and-remedy-MATURITY",
+      "kind": "pattern",
+      "status": "pass",
+      "evidence": "assurance-ready claim supported"
+    },
+    {
+      "id": "PAT-notice-challenge-and-remedy-CATALOG",
+      "kind": "pattern",
+      "status": "pass",
+      "evidence": "catalogue entry present"
+    },
+    {
+      "id": "FIX-notice-challenge-and-remedy-authority.invalid",
+      "kind": "fixture",
+      "status": "pass",
+      "evidence": "rejected as expected; manifest declaration matched"
+    },
+    {
+      "id": "FIX-notice-challenge-and-remedy-authority.valid",
+      "kind": "fixture",
+      "status": "pass",
+      "evidence": "accepted as expected; manifest declaration matched"
+    },
+    {
+      "id": "FIX-notice-challenge-and-remedy-decision-receipt.invalid",
+      "kind": "fixture",
+      "status": "pass",
+      "evidence": "rejected as expected; manifest declaration matched"
+    },
+    {
+      "id": "FIX-notice-challenge-and-remedy-decision-receipt.valid",
+      "kind": "fixture",
+      "status": "pass",
+      "evidence": "accepted as expected; manifest declaration matched"
+    },
+    {
+      "id": "FIX-notice-challenge-and-remedy-delegation.invalid",
+      "kind": "fixture",
+      "status": "pass",
+      "evidence": "rejected as expected; manifest declaration matched"
+    },
+    {
+      "id": "FIX-notice-challenge-and-remedy-delegation.valid",
+      "kind": "fixture",
+      "status": "pass",
+      "evidence": "accepted as expected; manifest declaration matched"
+    },
+    {
+      "id": "FIX-notice-challenge-and-remedy-governance-event.invalid",
+      "kind": "fixture",
+      "status": "pass",
+      "evidence": "rejected as expected; manifest declaration matched"
+    },
+    {
+      "id": "FIX-notice-challenge-and-remedy-governance-event.valid",
+      "kind": "fixture",
+      "status": "pass",
+      "evidence": "accepted as expected; manifest declaration matched"
+    },
+    {
+      "id": "FIX-notice-challenge-and-remedy-remedy.invalid",
+      "kind": "fixture",
+      "status": "pass",
+      "evidence": "rejected as expected; manifest declaration matched"
+    },
+    {
+      "id": "FIX-notice-challenge-and-remedy-remedy.valid",
+      "kind": "fixture",
+      "status": "pass",
+      "evidence": "accepted as expected; manifest declaration matched"
+    },
+    {
+      "id": "CLM-notice-challenge-and-remedy",
+      "kind": "conformance",
+      "status": "pass",
+      "evidence": "schema, evidence, limitations and independence rules satisfied"
+    },
+    {
       "id": "PAT-IDS",
       "kind": "pattern",
       "status": "pass",
-      "evidence": "3 unique pattern identifiers"
+      "evidence": "9 unique pattern identifiers"
     },
     {
       "id": "PAT-CATALOG-COVERAGE",
       "kind": "pattern",
       "status": "pass",
-      "evidence": "3 pattern directories catalogued"
+      "evidence": "9 pattern directories catalogued"
     },
     {
       "id": "BEH-assurance-expired-rejected",
@@ -766,7 +1342,7 @@
       "id": "PKG-INTEGRITY",
       "kind": "package",
       "status": "pass",
-      "evidence": "149 checksums verified"
+      "evidence": "298 checksums verified"
     }
   ]
 }

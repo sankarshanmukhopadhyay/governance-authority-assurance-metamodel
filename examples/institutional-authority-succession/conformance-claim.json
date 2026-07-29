@@ -1,0 +1,26 @@
+{
+  "id": "urn:gaam:example:institutional-authority-succession:claim",
+  "type": "gaam-conformance-claim",
+  "gaamVersion": "0.9.0",
+  "profiles": [
+    "gaam:profile:foundation:0.9.0",
+    "gaam:profile:runtime-governance:0.9.0"
+  ],
+  "target": "urn:gaam:example:institutional-authority-succession",
+  "level": "L1",
+  "evidence": [
+    "urn:gaam:pattern:institutional-authority-succession:research-manifest",
+    "urn:gaam:pattern:institutional-authority-succession:behavioural-vector"
+  ],
+  "issuedBy": "urn:gaam:maintainer",
+  "issuedAt": "2026-07-29T00:00:00Z",
+  "limitations": [
+    "Claim applies only to current GAAM v0.9.0 anchors.",
+    "Future-evolution concepts and experimental records are non-normative.",
+    "No independent assessment is asserted."
+  ],
+  "testSuiteVersion": "0.9.0",
+  "assessmentIndependence": "self",
+  "status": "active",
+  "reviewBy": "2027-01-29T00:00:00Z"
+}

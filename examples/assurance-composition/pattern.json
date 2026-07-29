@@ -1,0 +1,66 @@
+{
+  "id": "gaam:pattern:assurance-composition:0.9.0-research",
+  "title": "Assurance Composition",
+  "status": "draft",
+  "maturity": "behavioural",
+  "gaamVersion": "0.9.0",
+  "implementationDomain": "bounded inheritance and dependency of assurance results",
+  "profiles": [
+    "gaam:profile:foundation:0.9.0",
+    "gaam:profile:runtime-governance:0.9.0"
+  ],
+  "requirements": [
+    "GAAM-ASR-003"
+  ],
+  "actors": [
+    "governance authority",
+    "implementation operator",
+    "review authority",
+    "affected party"
+  ],
+  "authoritySources": [
+    "current GAAM v0.9.0 governance framework"
+  ],
+  "enforcementPoints": [
+    "candidate-condition evaluation point",
+    "runtime effect boundary"
+  ],
+  "evidenceProducers": [
+    "implementation operator",
+    "runtime enforcement service"
+  ],
+  "reviewAuthorities": [
+    "authorised independent reviewer"
+  ],
+  "artifacts": [
+    "README.md",
+    "index.md",
+    "conformance-claim.json",
+    "experimental-assurance-dependency.example.json"
+  ],
+  "schemaFixtures": [],
+  "behaviouralVectors": [
+    "future-assurance-composition-bounded-valid"
+  ],
+  "supportingExamples": [
+    "experimental-assurance-dependency.example.json"
+  ],
+  "positiveScenarios": [
+    "bounded inheritance and dependency of assurance results remains bounded, traceable and reviewable"
+  ],
+  "negativeScenarios": [
+    "bounded inheritance and dependency of assurance results proceeds without required authority, evidence or escalation"
+  ],
+  "lifecycleStates": [
+    "research-draft",
+    "under-evaluation",
+    "evidence-collected",
+    "disposition-pending"
+  ],
+  "limitations": [
+    "Informative research pattern only.",
+    "No independent implementation or interoperability evidence is asserted.",
+    "Experimental artefacts do not extend GAAM v0.9.0 conformance."
+  ],
+  "validationCommand": "python scripts/validate.py"
+}

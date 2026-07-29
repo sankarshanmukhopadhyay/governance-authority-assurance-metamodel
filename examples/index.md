@@ -36,3 +36,17 @@ GAAM implementation patterns connect normative requirements to governance arrang
 - [Pattern Validation Guide](pattern-validation-guide.md)
 
 The machine-readable catalogue is available as `catalog.json`.
+
+## Future-evolution research patterns
+
+These patterns exercise experimental artefacts without changing GAAM v0.9.0 conformance.
+
+- [Institutional Authority Succession](institutional-authority-succession/)
+- [Cross-Jurisdiction Policy Conflict](cross-jurisdiction-policy-conflict/)
+- [Agent State Change Control](agent-state-change-control/)
+- [Post-Decision Obligation Lifecycle](post-decision-obligation-lifecycle/)
+- [Downstream Remedy Propagation](downstream-remedy-propagation/)
+- [Inferred Evidence Governance](inferred-evidence-governance/)
+- [Degraded Trust Service Operation](degraded-trust-service-operation/)
+- [Assurance Composition](assurance-composition/)
+- [Revocation Propagation Boundaries](revocation-propagation-boundaries/)

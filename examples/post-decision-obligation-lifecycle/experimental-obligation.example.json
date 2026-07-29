@@ -1,0 +1,11 @@
+{
+  "type": "obligation",
+  "gaamVersion": "0.9.0",
+  "status": "experimental",
+  "normativeStatus": "non-normative",
+  "obligationId": "obligation:001",
+  "responsibleParty": "org:example:alpha",
+  "trigger": "decision:001",
+  "dueAt": "2026-08-05T00:00:00Z",
+  "obligationStatus": "assigned"
+}

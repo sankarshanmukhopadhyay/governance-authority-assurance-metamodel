@@ -10,8 +10,8 @@ normative_status: Repository generated
 {% include gaam-meta.html %}
 
 **Status:** PASS  
-**Checks:** 239  
-**Passed:** 239  
+**Checks:** 303  
+**Passed:** 303  
 **Failed:** 0  
 
 This report evidences repository publication, structural and included behavioural checks. It is not an independent L4 assessment.
@@ -22,7 +22,7 @@ This report evidences repository publication, structural and included behavioura
 | `PUB-002-active-version-coherence` | publication | PASS | no stale active v0.5.0 references |
 | `PUB-003-specification-identity` | publication | PASS | normative specification identifies candidate release |
 | `PUB-HYG-README-EXCLUDE` | publication | PASS | all implementation-pattern README files excluded from Jekyll publication |
-| `PUB-HYG-LANDINGS` | publication | PASS | 9 canonical pattern landing pages use clean directory URLs |
+| `PUB-HYG-LANDINGS` | publication | PASS | 18 canonical pattern landing pages use clean directory URLs |
 | `PUB-HYG-SUPPORT-NAV` | publication | PASS | all supporting pattern pages excluded from primary navigation |
 | `PUB-HYG-CHANGELOG` | publication | PASS | changelog begins with valid canonical front matter |
 | `PUB-IA-DOCUMENTATION` | publication | PASS | Documentation is grouped into four validated reader routes |
@@ -67,6 +67,18 @@ This report evidences repository publication, structural and included behavioura
 | `PRO-runtime-governance` | profile | PASS | 21 requirements; dependencies=True; document=True |
 | `PRO-trust-graph` | profile | PASS | 9 requirements; dependencies=True; document=True |
 | `PRO-DEPENDENCIES` | profile | PASS | all profile dependencies resolve |
+| `PAT-agent-state-change-control-CONTRACT` | pattern | PASS | required files present |
+| `PAT-agent-state-change-control-MANIFEST` | pattern | PASS | manifest conforms |
+| `PAT-agent-state-change-control-REFERENCES` | pattern | PASS | profile, requirement, artifact and behavioural references resolve |
+| `PAT-agent-state-change-control-MATURITY` | pattern | PASS | behavioural claim supported |
+| `PAT-agent-state-change-control-CATALOG` | pattern | PASS | catalogue entry present |
+| `CLM-agent-state-change-control` | conformance | PASS | schema, evidence, limitations and independence rules satisfied |
+| `PAT-assurance-composition-CONTRACT` | pattern | PASS | required files present |
+| `PAT-assurance-composition-MANIFEST` | pattern | PASS | manifest conforms |
+| `PAT-assurance-composition-REFERENCES` | pattern | PASS | profile, requirement, artifact and behavioural references resolve |
+| `PAT-assurance-composition-MATURITY` | pattern | PASS | behavioural claim supported |
+| `PAT-assurance-composition-CATALOG` | pattern | PASS | catalogue entry present |
+| `CLM-assurance-composition` | conformance | PASS | schema, evidence, limitations and independence rules satisfied |
 | `PAT-authority-lifecycle-and-revocation-CONTRACT` | pattern | PASS | required files present |
 | `PAT-authority-lifecycle-and-revocation-MANIFEST` | pattern | PASS | manifest conforms |
 | `PAT-authority-lifecycle-and-revocation-REFERENCES` | pattern | PASS | profile, requirement, artifact and behavioural references resolve |
@@ -99,6 +111,12 @@ This report evidences repository publication, structural and included behavioura
 | `FIX-basic-governed-decision-remedy.invalid` | fixture | PASS | rejected as expected; manifest declaration matched |
 | `FIX-basic-governed-decision-remedy.valid` | fixture | PASS | accepted as expected; manifest declaration matched |
 | `CLM-basic-governed-decision` | conformance | PASS | schema, evidence, limitations and independence rules satisfied |
+| `PAT-cross-jurisdiction-policy-conflict-CONTRACT` | pattern | PASS | required files present |
+| `PAT-cross-jurisdiction-policy-conflict-MANIFEST` | pattern | PASS | manifest conforms |
+| `PAT-cross-jurisdiction-policy-conflict-REFERENCES` | pattern | PASS | profile, requirement, artifact and behavioural references resolve |
+| `PAT-cross-jurisdiction-policy-conflict-MATURITY` | pattern | PASS | behavioural claim supported |
+| `PAT-cross-jurisdiction-policy-conflict-CATALOG` | pattern | PASS | catalogue entry present |
+| `CLM-cross-jurisdiction-policy-conflict` | conformance | PASS | schema, evidence, limitations and independence rules satisfied |
 | `PAT-cross-registry-recognition-CONTRACT` | pattern | PASS | required files present |
 | `PAT-cross-registry-recognition-MANIFEST` | pattern | PASS | manifest conforms |
 | `PAT-cross-registry-recognition-REFERENCES` | pattern | PASS | profile, requirement, artifact and behavioural references resolve |
@@ -115,6 +133,12 @@ This report evidences repository publication, structural and included behavioura
 | `FIX-cross-registry-recognition-remedy.invalid` | fixture | PASS | rejected as expected; manifest declaration matched |
 | `FIX-cross-registry-recognition-remedy.valid` | fixture | PASS | accepted as expected; manifest declaration matched |
 | `CLM-cross-registry-recognition` | conformance | PASS | schema, evidence, limitations and independence rules satisfied |
+| `PAT-degraded-trust-service-operation-CONTRACT` | pattern | PASS | required files present |
+| `PAT-degraded-trust-service-operation-MANIFEST` | pattern | PASS | manifest conforms |
+| `PAT-degraded-trust-service-operation-REFERENCES` | pattern | PASS | profile, requirement, artifact and behavioural references resolve |
+| `PAT-degraded-trust-service-operation-MATURITY` | pattern | PASS | behavioural claim supported |
+| `PAT-degraded-trust-service-operation-CATALOG` | pattern | PASS | catalogue entry present |
+| `CLM-degraded-trust-service-operation` | conformance | PASS | schema, evidence, limitations and independence rules satisfied |
 | `PAT-delegated-agent-purchase-CONTRACT` | pattern | PASS | required files present |
 | `PAT-delegated-agent-purchase-MANIFEST` | pattern | PASS | manifest conforms |
 | `PAT-delegated-agent-purchase-REFERENCES` | pattern | PASS | profile, requirement, artifact and behavioural references resolve |
@@ -131,6 +155,12 @@ This report evidences repository publication, structural and included behavioura
 | `FIX-delegated-agent-purchase-remedy.invalid` | fixture | PASS | rejected as expected; manifest declaration matched |
 | `FIX-delegated-agent-purchase-remedy.valid` | fixture | PASS | accepted as expected; manifest declaration matched |
 | `CLM-delegated-agent-purchase` | conformance | PASS | schema, evidence, limitations and independence rules satisfied |
+| `PAT-downstream-remedy-propagation-CONTRACT` | pattern | PASS | required files present |
+| `PAT-downstream-remedy-propagation-MANIFEST` | pattern | PASS | manifest conforms |
+| `PAT-downstream-remedy-propagation-REFERENCES` | pattern | PASS | profile, requirement, artifact and behavioural references resolve |
+| `PAT-downstream-remedy-propagation-MATURITY` | pattern | PASS | behavioural claim supported |
+| `PAT-downstream-remedy-propagation-CATALOG` | pattern | PASS | catalogue entry present |
+| `CLM-downstream-remedy-propagation` | conformance | PASS | schema, evidence, limitations and independence rules satisfied |
 | `PAT-governed-ecosystem-operations-CONTRACT` | pattern | PASS | required files present |
 | `PAT-governed-ecosystem-operations-MANIFEST` | pattern | PASS | manifest conforms |
 | `PAT-governed-ecosystem-operations-REFERENCES` | pattern | PASS | profile, requirement, artifact and behavioural references resolve |
@@ -179,6 +209,18 @@ This report evidences repository publication, structural and included behavioura
 | `FIX-independent-assurance-assessment-remedy.invalid` | fixture | PASS | rejected as expected; manifest declaration matched |
 | `FIX-independent-assurance-assessment-remedy.valid` | fixture | PASS | accepted as expected; manifest declaration matched |
 | `CLM-independent-assurance-assessment` | conformance | PASS | schema, evidence, limitations and independence rules satisfied |
+| `PAT-inferred-evidence-governance-CONTRACT` | pattern | PASS | required files present |
+| `PAT-inferred-evidence-governance-MANIFEST` | pattern | PASS | manifest conforms |
+| `PAT-inferred-evidence-governance-REFERENCES` | pattern | PASS | profile, requirement, artifact and behavioural references resolve |
+| `PAT-inferred-evidence-governance-MATURITY` | pattern | PASS | behavioural claim supported |
+| `PAT-inferred-evidence-governance-CATALOG` | pattern | PASS | catalogue entry present |
+| `CLM-inferred-evidence-governance` | conformance | PASS | schema, evidence, limitations and independence rules satisfied |
+| `PAT-institutional-authority-succession-CONTRACT` | pattern | PASS | required files present |
+| `PAT-institutional-authority-succession-MANIFEST` | pattern | PASS | manifest conforms |
+| `PAT-institutional-authority-succession-REFERENCES` | pattern | PASS | profile, requirement, artifact and behavioural references resolve |
+| `PAT-institutional-authority-succession-MATURITY` | pattern | PASS | behavioural claim supported |
+| `PAT-institutional-authority-succession-CATALOG` | pattern | PASS | catalogue entry present |
+| `CLM-institutional-authority-succession` | conformance | PASS | schema, evidence, limitations and independence rules satisfied |
 | `PAT-machine-actionable-governance-package-CONTRACT` | pattern | PASS | required files present |
 | `PAT-machine-actionable-governance-package-MANIFEST` | pattern | PASS | manifest conforms |
 | `PAT-machine-actionable-governance-package-REFERENCES` | pattern | PASS | profile, requirement, artifact and behavioural references resolve |
@@ -211,8 +253,22 @@ This report evidences repository publication, structural and included behavioura
 | `FIX-notice-challenge-and-remedy-remedy.invalid` | fixture | PASS | rejected as expected; manifest declaration matched |
 | `FIX-notice-challenge-and-remedy-remedy.valid` | fixture | PASS | accepted as expected; manifest declaration matched |
 | `CLM-notice-challenge-and-remedy` | conformance | PASS | schema, evidence, limitations and independence rules satisfied |
-| `PAT-IDS` | pattern | PASS | 9 unique pattern identifiers |
-| `PAT-CATALOG-COVERAGE` | pattern | PASS | 9 pattern directories catalogued |
+| `PAT-post-decision-obligation-lifecycle-CONTRACT` | pattern | PASS | required files present |
+| `PAT-post-decision-obligation-lifecycle-MANIFEST` | pattern | PASS | manifest conforms |
+| `PAT-post-decision-obligation-lifecycle-REFERENCES` | pattern | PASS | profile, requirement, artifact and behavioural references resolve |
+| `PAT-post-decision-obligation-lifecycle-MATURITY` | pattern | PASS | behavioural claim supported |
+| `PAT-post-decision-obligation-lifecycle-CATALOG` | pattern | PASS | catalogue entry present |
+| `CLM-post-decision-obligation-lifecycle` | conformance | PASS | schema, evidence, limitations and independence rules satisfied |
+| `PAT-revocation-propagation-boundaries-CONTRACT` | pattern | PASS | required files present |
+| `PAT-revocation-propagation-boundaries-MANIFEST` | pattern | PASS | manifest conforms |
+| `PAT-revocation-propagation-boundaries-REFERENCES` | pattern | PASS | profile, requirement, artifact and behavioural references resolve |
+| `PAT-revocation-propagation-boundaries-MATURITY` | pattern | PASS | behavioural claim supported |
+| `PAT-revocation-propagation-boundaries-CATALOG` | pattern | PASS | catalogue entry present |
+| `CLM-revocation-propagation-boundaries` | conformance | PASS | schema, evidence, limitations and independence rules satisfied |
+| `PAT-IDS` | pattern | PASS | 18 unique pattern identifiers |
+| `PAT-CATALOG-COVERAGE` | pattern | PASS | 18 pattern directories catalogued |
+| `PAT-FUTURE-EVOLUTION` | pattern | PASS | 9 future-evolution patterns are behavioural, traceable and non-normative |
+| `BEH-agent-state-change-reauthorised-valid` | behavioural | PASS | expected=True; actual=True |
 | `BEH-assurance-expired-rejected` | behavioural | PASS | expected=False; actual=False |
 | `BEH-assurance-independence-insufficient-rejected` | behavioural | PASS | expected=False; actual=False |
 | `BEH-authority-active-valid` | behavioural | PASS | expected=True; actual=True |
@@ -224,24 +280,32 @@ This report evidences repository publication, structural and included behavioura
 | `BEH-decision-policy-superseded-rejected` | behavioural | PASS | expected=False; actual=False |
 | `BEH-decision-stale-evidence-rejected` | behavioural | PASS | expected=False; actual=False |
 | `BEH-decision-traceable-valid` | behavioural | PASS | expected=True; actual=True |
+| `BEH-degraded-operation-fail-safe-valid` | behavioural | PASS | expected=True; actual=True |
 | `BEH-delegation-amplification-rejected` | behavioural | PASS | expected=False; actual=False |
 | `BEH-delegation-attenuated-valid` | behavioural | PASS | expected=True; actual=True |
 | `BEH-delegation-child-outlives-parent-rejected` | behavioural | PASS | expected=False; actual=False |
 | `BEH-delegation-depth-rejected` | behavioural | PASS | expected=False; actual=False |
 | `BEH-delegation-parent-revoked-rejected` | behavioural | PASS | expected=False; actual=False |
 | `BEH-delegation-redelegation-prohibited-rejected` | behavioural | PASS | expected=False; actual=False |
+| `BEH-future-assurance-composition-bounded-valid` | behavioural | PASS | expected=True; actual=True |
 | `BEH-high-impact-no-remedy-rejected` | behavioural | PASS | expected=False; actual=False |
 | `BEH-high-impact-notice-missing-rejected` | behavioural | PASS | expected=False; actual=False |
 | `BEH-high-impact-remedy-valid` | behavioural | PASS | expected=True; actual=True |
 | `BEH-high-impact-review-not-independent-rejected` | behavioural | PASS | expected=False; actual=False |
+| `BEH-inferred-evidence-bounded-valid` | behavioural | PASS | expected=True; actual=True |
+| `BEH-institutional-succession-valid` | behavioural | PASS | expected=True; actual=True |
+| `BEH-jurisdiction-conflict-escalated-valid` | behavioural | PASS | expected=True; actual=True |
 | `BEH-lifecycle-event-order-invalid-rejected` | behavioural | PASS | expected=False; actual=False |
 | `BEH-lifecycle-event-order-valid` | behavioural | PASS | expected=True; actual=True |
+| `BEH-obligation-fulfilled-valid` | behavioural | PASS | expected=True; actual=True |
 | `BEH-profile-composition-foundation-delegated-valid` | behavioural | PASS | expected=True; actual=True |
 | `BEH-profile-composition-missing-foundation-rejected` | behavioural | PASS | expected=False; actual=False |
+| `BEH-remedy-propagation-verified-valid` | behavioural | PASS | expected=True; actual=True |
+| `BEH-revocation-propagation-bounded-valid` | behavioural | PASS | expected=True; actual=True |
 | `BEH-runtime-revocation-fail-closed-valid` | behavioural | PASS | expected=True; actual=True |
 | `BEH-runtime-stale-state-fail-open-rejected` | behavioural | PASS | expected=False; actual=False |
 | `TRC-REQUIREMENTS` | traceability | PASS | 190 requirements have testability and evidence dispositions |
-| `TRC-TEST-ORPHANS` | traceability | PASS | 27 behavioural tests referenced by requirement traceability |
+| `TRC-TEST-ORPHANS` | traceability | PASS | 36 behavioural tests referenced by requirement traceability |
 | `THR-TRACE` | threat | PASS | 7 threats mapped to requirements and tests |
 | `DOC-PAGE-TITLE-CONTRACT` | documentation | PASS | all rendered Markdown pages declare exactly one H1 matching front matter |
 | `DOC-CTWG-GLOSSARY-ALIGNMENT` | documentation | PASS | 26 glossary terms covered by CTWG alignment register |
@@ -256,4 +320,4 @@ This report evidences repository publication, structural and included behavioura
 | `GOV-CONTRIBUTION-CONTROLS` | governance | PASS | candidate issue forms and pull-request governance template present |
 | `GOV-V1-READINESS-STATE` | governance | PASS | 5 explicitly recorded open v1 blockers: GAAM-CR-001, GAAM-CR-002, GAAM-CR-003, GAAM-CR-004, GAAM-CR-005 |
 | `PKG-MANIFEST` | package | PASS | package manifest conforms |
-| `PKG-INTEGRITY` | package | PASS | 377 checksums verified |
+| `PKG-INTEGRITY` | package | PASS | 431 checksums verified |

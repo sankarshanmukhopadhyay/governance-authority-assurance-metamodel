@@ -268,6 +268,21 @@ for d in sorted((ROOT/'examples').iterdir()):
  else: add('CLM-'+d.name,False,'conformance claim missing','conformance')
 add('PAT-IDS',len(pattern_ids)==len(set(pattern_ids)),f'{len(pattern_ids)} unique pattern identifiers','pattern')
 add('PAT-CATALOG-COVERAGE',catalog_paths=={d.name for d in (ROOT/'examples').iterdir() if d.is_dir()},f'{len(catalog_paths)} pattern directories catalogued' if catalog_paths=={d.name for d in (ROOT/'examples').iterdir() if d.is_dir()} else 'catalogue and directory set differ','pattern')
+# Future-evolution patterns must remain research-only and linked to the enhancement register
+future_pattern_errors=[]
+expected_future_patterns={'agent-state-change-control', 'assurance-composition', 'downstream-remedy-propagation', 'cross-jurisdiction-policy-conflict', 'degraded-trust-service-operation', 'inferred-evidence-governance', 'post-decision-obligation-lifecycle', 'institutional-authority-succession', 'revocation-propagation-boundaries'}
+register=load(ROOT/'governance/future-enhancement-register.json')
+register_assets={a for e in register.get('entries',[]) for a in e.get('researchAssets',[])}
+for slug in sorted(expected_future_patterns):
+ d=ROOT/'examples'/slug
+ try:
+  m=load(d/'pattern.json')
+  if m.get('status')!='draft' or m.get('maturity')!='behavioural' or not m.get('id','').endswith(':0.9.0-research'): future_pattern_errors.append(slug+': invalid research identity')
+  if 'No independent implementation or interoperability evidence is asserted.' not in m.get('limitations',[]): future_pattern_errors.append(slug+': limitation missing')
+  if f'examples/{slug}/' not in register_assets: future_pattern_errors.append(slug+': enhancement register link missing')
+ except Exception as err: future_pattern_errors.append(slug+': '+str(err))
+add('PAT-FUTURE-EVOLUTION',not future_pattern_errors,f'{len(expected_future_patterns)} future-evolution patterns are behavioural, traceable and non-normative' if not future_pattern_errors else '; '.join(future_pattern_errors),'pattern')
+
 # Behavioural vectors
 def behaviour(o):
  x=o['input']; i=o['id']
@@ -295,6 +310,8 @@ def behaviour(o):
  elif i.startswith('profile-composition-'):
   selected=set(x.get('selectedProfiles',[])); deps=x.get('dependencies',{})
   valid=all(set(deps.get(profile,[]))<=selected for profile in selected)
+ elif any(i.startswith(prefix) for prefix in ('future-','institutional-succession-','jurisdiction-conflict-','agent-state-change-','obligation-fulfilled-','remedy-propagation-','inferred-evidence-','degraded-operation-','assurance-composition-','revocation-propagation-')):
+  valid=all([x.get('researchPattern'),x.get('currentAuthorityValid'),x.get('evidenceTraceable'),x.get('candidateSemanticsExplicit'),x.get('failSafe'),x.get('reviewPath')])
  else: valid=False
  return bool(valid)
 for p in sorted((ROOT/'tests/behavioural').glob('*.json')):

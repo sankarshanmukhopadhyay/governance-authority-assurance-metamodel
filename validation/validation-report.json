@@ -2,8 +2,8 @@
   "gaamVersion": "0.9.0",
   "testSuiteVersion": "0.9.0",
   "status": "pass",
-  "checks": 239,
-  "passed": 239,
+  "checks": 303,
+  "passed": 303,
   "failed": 0,
   "results": [
     {
@@ -34,7 +34,7 @@
       "id": "PUB-HYG-LANDINGS",
       "kind": "publication",
       "status": "pass",
-      "evidence": "9 canonical pattern landing pages use clean directory URLs"
+      "evidence": "18 canonical pattern landing pages use clean directory URLs"
     },
     {
       "id": "PUB-HYG-SUPPORT-NAV",
@@ -301,6 +301,78 @@
       "evidence": "all profile dependencies resolve"
     },
     {
+      "id": "PAT-agent-state-change-control-CONTRACT",
+      "kind": "pattern",
+      "status": "pass",
+      "evidence": "required files present"
+    },
+    {
+      "id": "PAT-agent-state-change-control-MANIFEST",
+      "kind": "pattern",
+      "status": "pass",
+      "evidence": "manifest conforms"
+    },
+    {
+      "id": "PAT-agent-state-change-control-REFERENCES",
+      "kind": "pattern",
+      "status": "pass",
+      "evidence": "profile, requirement, artifact and behavioural references resolve"
+    },
+    {
+      "id": "PAT-agent-state-change-control-MATURITY",
+      "kind": "pattern",
+      "status": "pass",
+      "evidence": "behavioural claim supported"
+    },
+    {
+      "id": "PAT-agent-state-change-control-CATALOG",
+      "kind": "pattern",
+      "status": "pass",
+      "evidence": "catalogue entry present"
+    },
+    {
+      "id": "CLM-agent-state-change-control",
+      "kind": "conformance",
+      "status": "pass",
+      "evidence": "schema, evidence, limitations and independence rules satisfied"
+    },
+    {
+      "id": "PAT-assurance-composition-CONTRACT",
+      "kind": "pattern",
+      "status": "pass",
+      "evidence": "required files present"
+    },
+    {
+      "id": "PAT-assurance-composition-MANIFEST",
+      "kind": "pattern",
+      "status": "pass",
+      "evidence": "manifest conforms"
+    },
+    {
+      "id": "PAT-assurance-composition-REFERENCES",
+      "kind": "pattern",
+      "status": "pass",
+      "evidence": "profile, requirement, artifact and behavioural references resolve"
+    },
+    {
+      "id": "PAT-assurance-composition-MATURITY",
+      "kind": "pattern",
+      "status": "pass",
+      "evidence": "behavioural claim supported"
+    },
+    {
+      "id": "PAT-assurance-composition-CATALOG",
+      "kind": "pattern",
+      "status": "pass",
+      "evidence": "catalogue entry present"
+    },
+    {
+      "id": "CLM-assurance-composition",
+      "kind": "conformance",
+      "status": "pass",
+      "evidence": "schema, evidence, limitations and independence rules satisfied"
+    },
+    {
       "id": "PAT-authority-lifecycle-and-revocation-CONTRACT",
       "kind": "pattern",
       "status": "pass",
@@ -493,6 +565,42 @@
       "evidence": "schema, evidence, limitations and independence rules satisfied"
     },
     {
+      "id": "PAT-cross-jurisdiction-policy-conflict-CONTRACT",
+      "kind": "pattern",
+      "status": "pass",
+      "evidence": "required files present"
+    },
+    {
+      "id": "PAT-cross-jurisdiction-policy-conflict-MANIFEST",
+      "kind": "pattern",
+      "status": "pass",
+      "evidence": "manifest conforms"
+    },
+    {
+      "id": "PAT-cross-jurisdiction-policy-conflict-REFERENCES",
+      "kind": "pattern",
+      "status": "pass",
+      "evidence": "profile, requirement, artifact and behavioural references resolve"
+    },
+    {
+      "id": "PAT-cross-jurisdiction-policy-conflict-MATURITY",
+      "kind": "pattern",
+      "status": "pass",
+      "evidence": "behavioural claim supported"
+    },
+    {
+      "id": "PAT-cross-jurisdiction-policy-conflict-CATALOG",
+      "kind": "pattern",
+      "status": "pass",
+      "evidence": "catalogue entry present"
+    },
+    {
+      "id": "CLM-cross-jurisdiction-policy-conflict",
+      "kind": "conformance",
+      "status": "pass",
+      "evidence": "schema, evidence, limitations and independence rules satisfied"
+    },
+    {
       "id": "PAT-cross-registry-recognition-CONTRACT",
       "kind": "pattern",
       "status": "pass",
@@ -589,6 +697,42 @@
       "evidence": "schema, evidence, limitations and independence rules satisfied"
     },
     {
+      "id": "PAT-degraded-trust-service-operation-CONTRACT",
+      "kind": "pattern",
+      "status": "pass",
+      "evidence": "required files present"
+    },
+    {
+      "id": "PAT-degraded-trust-service-operation-MANIFEST",
+      "kind": "pattern",
+      "status": "pass",
+      "evidence": "manifest conforms"
+    },
+    {
+      "id": "PAT-degraded-trust-service-operation-REFERENCES",
+      "kind": "pattern",
+      "status": "pass",
+      "evidence": "profile, requirement, artifact and behavioural references resolve"
+    },
+    {
+      "id": "PAT-degraded-trust-service-operation-MATURITY",
+      "kind": "pattern",
+      "status": "pass",
+      "evidence": "behavioural claim supported"
+    },
+    {
+      "id": "PAT-degraded-trust-service-operation-CATALOG",
+      "kind": "pattern",
+      "status": "pass",
+      "evidence": "catalogue entry present"
+    },
+    {
+      "id": "CLM-degraded-trust-service-operation",
+      "kind": "conformance",
+      "status": "pass",
+      "evidence": "schema, evidence, limitations and independence rules satisfied"
+    },
+    {
       "id": "PAT-delegated-agent-purchase-CONTRACT",
       "kind": "pattern",
       "status": "pass",
@@ -680,6 +824,42 @@
     },
     {
       "id": "CLM-delegated-agent-purchase",
+      "kind": "conformance",
+      "status": "pass",
+      "evidence": "schema, evidence, limitations and independence rules satisfied"
+    },
+    {
+      "id": "PAT-downstream-remedy-propagation-CONTRACT",
+      "kind": "pattern",
+      "status": "pass",
+      "evidence": "required files present"
+    },
+    {
+      "id": "PAT-downstream-remedy-propagation-MANIFEST",
+      "kind": "pattern",
+      "status": "pass",
+      "evidence": "manifest conforms"
+    },
+    {
+      "id": "PAT-downstream-remedy-propagation-REFERENCES",
+      "kind": "pattern",
+      "status": "pass",
+      "evidence": "profile, requirement, artifact and behavioural references resolve"
+    },
+    {
+      "id": "PAT-downstream-remedy-propagation-MATURITY",
+      "kind": "pattern",
+      "status": "pass",
+      "evidence": "behavioural claim supported"
+    },
+    {
+      "id": "PAT-downstream-remedy-propagation-CATALOG",
+      "kind": "pattern",
+      "status": "pass",
+      "evidence": "catalogue entry present"
+    },
+    {
+      "id": "CLM-downstream-remedy-propagation",
       "kind": "conformance",
       "status": "pass",
       "evidence": "schema, evidence, limitations and independence rules satisfied"
@@ -973,6 +1153,78 @@
       "evidence": "schema, evidence, limitations and independence rules satisfied"
     },
     {
+      "id": "PAT-inferred-evidence-governance-CONTRACT",
+      "kind": "pattern",
+      "status": "pass",
+      "evidence": "required files present"
+    },
+    {
+      "id": "PAT-inferred-evidence-governance-MANIFEST",
+      "kind": "pattern",
+      "status": "pass",
+      "evidence": "manifest conforms"
+    },
+    {
+      "id": "PAT-inferred-evidence-governance-REFERENCES",
+      "kind": "pattern",
+      "status": "pass",
+      "evidence": "profile, requirement, artifact and behavioural references resolve"
+    },
+    {
+      "id": "PAT-inferred-evidence-governance-MATURITY",
+      "kind": "pattern",
+      "status": "pass",
+      "evidence": "behavioural claim supported"
+    },
+    {
+      "id": "PAT-inferred-evidence-governance-CATALOG",
+      "kind": "pattern",
+      "status": "pass",
+      "evidence": "catalogue entry present"
+    },
+    {
+      "id": "CLM-inferred-evidence-governance",
+      "kind": "conformance",
+      "status": "pass",
+      "evidence": "schema, evidence, limitations and independence rules satisfied"
+    },
+    {
+      "id": "PAT-institutional-authority-succession-CONTRACT",
+      "kind": "pattern",
+      "status": "pass",
+      "evidence": "required files present"
+    },
+    {
+      "id": "PAT-institutional-authority-succession-MANIFEST",
+      "kind": "pattern",
+      "status": "pass",
+      "evidence": "manifest conforms"
+    },
+    {
+      "id": "PAT-institutional-authority-succession-REFERENCES",
+      "kind": "pattern",
+      "status": "pass",
+      "evidence": "profile, requirement, artifact and behavioural references resolve"
+    },
+    {
+      "id": "PAT-institutional-authority-succession-MATURITY",
+      "kind": "pattern",
+      "status": "pass",
+      "evidence": "behavioural claim supported"
+    },
+    {
+      "id": "PAT-institutional-authority-succession-CATALOG",
+      "kind": "pattern",
+      "status": "pass",
+      "evidence": "catalogue entry present"
+    },
+    {
+      "id": "CLM-institutional-authority-succession",
+      "kind": "conformance",
+      "status": "pass",
+      "evidence": "schema, evidence, limitations and independence rules satisfied"
+    },
+    {
       "id": "PAT-machine-actionable-governance-package-CONTRACT",
       "kind": "pattern",
       "status": "pass",
@@ -1165,16 +1417,100 @@
       "evidence": "schema, evidence, limitations and independence rules satisfied"
     },
     {
+      "id": "PAT-post-decision-obligation-lifecycle-CONTRACT",
+      "kind": "pattern",
+      "status": "pass",
+      "evidence": "required files present"
+    },
+    {
+      "id": "PAT-post-decision-obligation-lifecycle-MANIFEST",
+      "kind": "pattern",
+      "status": "pass",
+      "evidence": "manifest conforms"
+    },
+    {
+      "id": "PAT-post-decision-obligation-lifecycle-REFERENCES",
+      "kind": "pattern",
+      "status": "pass",
+      "evidence": "profile, requirement, artifact and behavioural references resolve"
+    },
+    {
+      "id": "PAT-post-decision-obligation-lifecycle-MATURITY",
+      "kind": "pattern",
+      "status": "pass",
+      "evidence": "behavioural claim supported"
+    },
+    {
+      "id": "PAT-post-decision-obligation-lifecycle-CATALOG",
+      "kind": "pattern",
+      "status": "pass",
+      "evidence": "catalogue entry present"
+    },
+    {
+      "id": "CLM-post-decision-obligation-lifecycle",
+      "kind": "conformance",
+      "status": "pass",
+      "evidence": "schema, evidence, limitations and independence rules satisfied"
+    },
+    {
+      "id": "PAT-revocation-propagation-boundaries-CONTRACT",
+      "kind": "pattern",
+      "status": "pass",
+      "evidence": "required files present"
+    },
+    {
+      "id": "PAT-revocation-propagation-boundaries-MANIFEST",
+      "kind": "pattern",
+      "status": "pass",
+      "evidence": "manifest conforms"
+    },
+    {
+      "id": "PAT-revocation-propagation-boundaries-REFERENCES",
+      "kind": "pattern",
+      "status": "pass",
+      "evidence": "profile, requirement, artifact and behavioural references resolve"
+    },
+    {
+      "id": "PAT-revocation-propagation-boundaries-MATURITY",
+      "kind": "pattern",
+      "status": "pass",
+      "evidence": "behavioural claim supported"
+    },
+    {
+      "id": "PAT-revocation-propagation-boundaries-CATALOG",
+      "kind": "pattern",
+      "status": "pass",
+      "evidence": "catalogue entry present"
+    },
+    {
+      "id": "CLM-revocation-propagation-boundaries",
+      "kind": "conformance",
+      "status": "pass",
+      "evidence": "schema, evidence, limitations and independence rules satisfied"
+    },
+    {
       "id": "PAT-IDS",
       "kind": "pattern",
       "status": "pass",
-      "evidence": "9 unique pattern identifiers"
+      "evidence": "18 unique pattern identifiers"
     },
     {
       "id": "PAT-CATALOG-COVERAGE",
       "kind": "pattern",
       "status": "pass",
-      "evidence": "9 pattern directories catalogued"
+      "evidence": "18 pattern directories catalogued"
+    },
+    {
+      "id": "PAT-FUTURE-EVOLUTION",
+      "kind": "pattern",
+      "status": "pass",
+      "evidence": "9 future-evolution patterns are behavioural, traceable and non-normative"
+    },
+    {
+      "id": "BEH-agent-state-change-reauthorised-valid",
+      "kind": "behavioural",
+      "status": "pass",
+      "evidence": "expected=True; actual=True"
     },
     {
       "id": "BEH-assurance-expired-rejected",
@@ -1243,6 +1579,12 @@
       "evidence": "expected=True; actual=True"
     },
     {
+      "id": "BEH-degraded-operation-fail-safe-valid",
+      "kind": "behavioural",
+      "status": "pass",
+      "evidence": "expected=True; actual=True"
+    },
+    {
       "id": "BEH-delegation-amplification-rejected",
       "kind": "behavioural",
       "status": "pass",
@@ -1279,6 +1621,12 @@
       "evidence": "expected=False; actual=False"
     },
     {
+      "id": "BEH-future-assurance-composition-bounded-valid",
+      "kind": "behavioural",
+      "status": "pass",
+      "evidence": "expected=True; actual=True"
+    },
+    {
       "id": "BEH-high-impact-no-remedy-rejected",
       "kind": "behavioural",
       "status": "pass",
@@ -1303,6 +1651,24 @@
       "evidence": "expected=False; actual=False"
     },
     {
+      "id": "BEH-inferred-evidence-bounded-valid",
+      "kind": "behavioural",
+      "status": "pass",
+      "evidence": "expected=True; actual=True"
+    },
+    {
+      "id": "BEH-institutional-succession-valid",
+      "kind": "behavioural",
+      "status": "pass",
+      "evidence": "expected=True; actual=True"
+    },
+    {
+      "id": "BEH-jurisdiction-conflict-escalated-valid",
+      "kind": "behavioural",
+      "status": "pass",
+      "evidence": "expected=True; actual=True"
+    },
+    {
       "id": "BEH-lifecycle-event-order-invalid-rejected",
       "kind": "behavioural",
       "status": "pass",
@@ -1310,6 +1676,12 @@
     },
     {
       "id": "BEH-lifecycle-event-order-valid",
+      "kind": "behavioural",
+      "status": "pass",
+      "evidence": "expected=True; actual=True"
+    },
+    {
+      "id": "BEH-obligation-fulfilled-valid",
       "kind": "behavioural",
       "status": "pass",
       "evidence": "expected=True; actual=True"
@@ -1325,6 +1697,18 @@
       "kind": "behavioural",
       "status": "pass",
       "evidence": "expected=False; actual=False"
+    },
+    {
+      "id": "BEH-remedy-propagation-verified-valid",
+      "kind": "behavioural",
+      "status": "pass",
+      "evidence": "expected=True; actual=True"
+    },
+    {
+      "id": "BEH-revocation-propagation-bounded-valid",
+      "kind": "behavioural",
+      "status": "pass",
+      "evidence": "expected=True; actual=True"
     },
     {
       "id": "BEH-runtime-revocation-fail-closed-valid",
@@ -1348,7 +1732,7 @@
       "id": "TRC-TEST-ORPHANS",
       "kind": "traceability",
       "status": "pass",
-      "evidence": "27 behavioural tests referenced by requirement traceability"
+      "evidence": "36 behavioural tests referenced by requirement traceability"
     },
     {
       "id": "THR-TRACE",
@@ -1438,7 +1822,7 @@
       "id": "PKG-INTEGRITY",
       "kind": "package",
       "status": "pass",
-      "evidence": "377 checksums verified"
+      "evidence": "431 checksums verified"
     }
   ]
 }

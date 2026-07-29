@@ -1,0 +1,12 @@
+{
+  "id": "jurisdiction-conflict-escalated-valid",
+  "expectedValid": true,
+  "input": {
+    "researchPattern": true,
+    "currentAuthorityValid": true,
+    "evidenceTraceable": true,
+    "candidateSemanticsExplicit": true,
+    "failSafe": true,
+    "reviewPath": true
+  }
+}

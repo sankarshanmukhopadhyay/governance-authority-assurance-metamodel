@@ -73,6 +73,78 @@
       "status": "candidate",
       "maturity": "assurance-ready",
       "implementationDomain": "qualified intermediary ecosystem operations"
+    },
+    {
+      "id": "gaam:pattern:institutional-authority-succession:0.9.0-research",
+      "title": "Institutional Authority Succession",
+      "path": "institutional-authority-succession",
+      "status": "draft",
+      "maturity": "behavioural",
+      "implementationDomain": "institutional authority transfer and continuity"
+    },
+    {
+      "id": "gaam:pattern:cross-jurisdiction-policy-conflict:0.9.0-research",
+      "title": "Cross-Jurisdiction Policy Conflict",
+      "path": "cross-jurisdiction-policy-conflict",
+      "status": "draft",
+      "maturity": "behavioural",
+      "implementationDomain": "conflicting legal and governance contexts"
+    },
+    {
+      "id": "gaam:pattern:agent-state-change-control:0.9.0-research",
+      "title": "Agent State Change Control",
+      "path": "agent-state-change-control",
+      "status": "draft",
+      "maturity": "behavioural",
+      "implementationDomain": "material agent-state change and authority invalidation"
+    },
+    {
+      "id": "gaam:pattern:post-decision-obligation-lifecycle:0.9.0-research",
+      "title": "Post-Decision Obligation Lifecycle",
+      "path": "post-decision-obligation-lifecycle",
+      "status": "draft",
+      "maturity": "behavioural",
+      "implementationDomain": "obligation tracking after execution"
+    },
+    {
+      "id": "gaam:pattern:downstream-remedy-propagation:0.9.0-research",
+      "title": "Downstream Remedy Propagation",
+      "path": "downstream-remedy-propagation",
+      "status": "draft",
+      "maturity": "behavioural",
+      "implementationDomain": "machine-verifiable correction across dependent systems"
+    },
+    {
+      "id": "gaam:pattern:inferred-evidence-governance:0.9.0-research",
+      "title": "Inferred Evidence Governance",
+      "path": "inferred-evidence-governance",
+      "status": "draft",
+      "maturity": "behavioural",
+      "implementationDomain": "derived evidence relevance uncertainty and permitted use"
+    },
+    {
+      "id": "gaam:pattern:degraded-trust-service-operation:0.9.0-research",
+      "title": "Degraded Trust Service Operation",
+      "path": "degraded-trust-service-operation",
+      "status": "draft",
+      "maturity": "behavioural",
+      "implementationDomain": "controlled continuity during stale or unavailable governance state"
+    },
+    {
+      "id": "gaam:pattern:assurance-composition:0.9.0-research",
+      "title": "Assurance Composition",
+      "path": "assurance-composition",
+      "status": "draft",
+      "maturity": "behavioural",
+      "implementationDomain": "bounded inheritance and dependency of assurance results"
+    },
+    {
+      "id": "gaam:pattern:revocation-propagation-boundaries:0.9.0-research",
+      "title": "Revocation Propagation Boundaries",
+      "path": "revocation-propagation-boundaries",
+      "status": "draft",
+      "maturity": "behavioural",
+      "implementationDomain": "revocation latency across registries caches and enforcement points"
     }
   ]
 }

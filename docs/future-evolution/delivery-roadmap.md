@@ -19,3 +19,7 @@ The compressed programme uses four reviewable commits while retaining GAAM v0.9.
 | 4 | Normative-readiness and promotion assessment |
 
 A candidate may advance only when the evidence required by its register entry exists. The final assessment may retain an item as guidance, keep it experimental, promote it through a later release, defer it, or reject it.
+
+## Commit 3 status
+
+Implementation patterns and behavioural evidence are now available for nine cross-cutting future-evolution scenarios. They remain informative and feed the final normative-readiness assessment.

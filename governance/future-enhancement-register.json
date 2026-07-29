@@ -70,7 +70,7 @@
     {
       "id": "FE-003",
       "title": "Institutional succession",
-      "status": "prototype-available",
+      "status": "under-evaluation",
       "problemStatement": "Revocation does not fully model institutional replacement and continuity.",
       "currentCoverage": "Lifecycle, emergency authority and transition controls provide partial coverage.",
       "gapClassification": "profile-gap",
@@ -92,7 +92,8 @@
       "researchAssets": [
         "profiles-draft/governed-ecosystem-operations/",
         "profiles-draft/institutional-continuity/",
-        "experimental/schemas/institutional-transition.schema.json"
+        "experimental/schemas/institutional-transition.schema.json",
+        "examples/institutional-authority-succession/"
       ]
     },
     {
@@ -144,7 +145,7 @@
     {
       "id": "FE-006",
       "title": "Temporal governance",
-      "status": "prototype-available",
+      "status": "under-evaluation",
       "problemStatement": "Time predicates are distributed and conflict resolution is implicit.",
       "currentCoverage": "Authority, evidence, lifecycle and assurance include time constraints.",
       "gapClassification": "guidance-gap",
@@ -160,13 +161,14 @@
       "normativeImpact": "none",
       "promotionStatus": "not-assessed",
       "researchAssets": [
-        "experimental/schemas/obligation.schema.json"
+        "experimental/schemas/obligation.schema.json",
+        "examples/post-decision-obligation-lifecycle/"
       ]
     },
     {
       "id": "FE-007",
       "title": "Evidence predicates",
-      "status": "prototype-available",
+      "status": "under-evaluation",
       "problemStatement": "Authenticity, relevance, sufficiency and permitted use need distinct treatment.",
       "currentCoverage": "Evidence provenance, validity and assurance provide strong partial coverage.",
       "gapClassification": "guidance-gap",
@@ -181,7 +183,8 @@
       "normativeImpact": "none",
       "promotionStatus": "not-assessed",
       "researchAssets": [
-        "experimental/schemas/agent-state-lineage.schema.json"
+        "experimental/schemas/agent-state-lineage.schema.json",
+        "examples/agent-state-change-control/"
       ]
     },
     {
@@ -283,7 +286,7 @@
     {
       "id": "FE-012",
       "title": "Plan, step and composite-effect governance",
-      "status": "prototype-available",
+      "status": "under-evaluation",
       "problemStatement": "Plans, tool calls, partial effects and rollback need explicit lineage.",
       "currentCoverage": "Runtime decision and agent orchestration requirements provide partial coverage.",
       "gapClassification": "test-gap",
@@ -303,7 +306,8 @@
       "normativeImpact": "none",
       "promotionStatus": "not-assessed",
       "researchAssets": [
-        "profiles-draft/privacy-and-inference-governance/"
+        "profiles-draft/privacy-and-inference-governance/",
+        "examples/inferred-evidence-governance/"
       ]
     },
     {
@@ -355,7 +359,7 @@
     {
       "id": "FE-015",
       "title": "Assurance object and method granularity",
-      "status": "prototype-available",
+      "status": "under-evaluation",
       "problemStatement": "Differently produced assurance results can appear equivalent.",
       "currentCoverage": "Assurance scope, independence and validity provide strong partial coverage.",
       "gapClassification": "guidance-gap",
@@ -371,7 +375,8 @@
       "normativeImpact": "none",
       "promotionStatus": "not-assessed",
       "researchAssets": [
-        "profiles-draft/governed-ecosystem-operations/"
+        "profiles-draft/governed-ecosystem-operations/",
+        "examples/assurance-composition/"
       ]
     },
     {
@@ -402,7 +407,7 @@
     {
       "id": "FE-017",
       "title": "Governed observability",
-      "status": "prototype-available",
+      "status": "under-evaluation",
       "problemStatement": "Telemetry is itself a governed power and attack surface.",
       "currentCoverage": "Observability, minimisation and evidence requirements provide partial coverage.",
       "gapClassification": "profile-gap",
@@ -421,13 +426,14 @@
       "normativeImpact": "none",
       "promotionStatus": "not-assessed",
       "researchAssets": [
-        "profiles-draft/institutional-continuity/"
+        "profiles-draft/institutional-continuity/",
+        "examples/revocation-propagation-boundaries/"
       ]
     },
     {
       "id": "FE-018",
       "title": "Caching and revocation propagation",
-      "status": "prototype-available",
+      "status": "under-evaluation",
       "problemStatement": "Stale state across boundaries creates a revocation lag gradient.",
       "currentCoverage": "Registry, lifecycle and runtime freshness requirements provide partial coverage.",
       "gapClassification": "test-gap",
@@ -449,7 +455,8 @@
       "researchAssets": [
         "profiles-draft/governed-ecosystem-operations/",
         "profiles-draft/institutional-continuity/",
-        "experimental/schemas/governance-state.schema.json"
+        "experimental/schemas/governance-state.schema.json",
+        "examples/degraded-trust-service-operation/"
       ]
     },
     {
@@ -503,7 +510,7 @@
     {
       "id": "FE-021",
       "title": "Affected-party classes and collective standing",
-      "status": "prototype-available",
+      "status": "under-evaluation",
       "problemStatement": "Indirect and collective harms need representation and challenge routes.",
       "currentCoverage": "Affected parties and remedy already include non-members.",
       "gapClassification": "guidance-gap",
@@ -519,7 +526,8 @@
       "normativeImpact": "none",
       "promotionStatus": "not-assessed",
       "researchAssets": [
-        "experimental/schemas/remedy-execution.schema.json"
+        "experimental/schemas/remedy-execution.schema.json",
+        "examples/downstream-remedy-propagation/"
       ]
     },
     {
@@ -551,7 +559,7 @@
     {
       "id": "FE-023",
       "title": "Market and infrastructure governance",
-      "status": "prototype-available",
+      "status": "under-evaluation",
       "problemStatement": "Trust infrastructure can create gatekeepers, lock-in and concentration.",
       "currentCoverage": "Systemic harm and market-integrity requirements provide a foundation.",
       "gapClassification": "profile-gap",
@@ -567,7 +575,8 @@
       "normativeImpact": "none",
       "promotionStatus": "not-assessed",
       "researchAssets": [
-        "profiles-draft/cross-jurisdiction-governance/"
+        "profiles-draft/cross-jurisdiction-governance/",
+        "examples/cross-jurisdiction-policy-conflict/"
       ]
     },
     {

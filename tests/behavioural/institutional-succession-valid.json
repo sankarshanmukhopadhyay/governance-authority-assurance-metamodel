@@ -1,0 +1,12 @@
+{
+  "id": "institutional-succession-valid",
+  "expectedValid": true,
+  "input": {
+    "researchPattern": true,
+    "currentAuthorityValid": true,
+    "evidenceTraceable": true,
+    "candidateSemanticsExplicit": true,
+    "failSafe": true,
+    "reviewPath": true
+  }
+}

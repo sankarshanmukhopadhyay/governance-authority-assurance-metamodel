@@ -1,0 +1,12 @@
+{
+  "type": "remedy-execution",
+  "gaamVersion": "0.9.0",
+  "status": "experimental",
+  "normativeStatus": "non-normative",
+  "remedyId": "remedy:001",
+  "affectedDecision": "decision:001",
+  "orderingAuthority": "role:reviewer",
+  "responsibleExecutor": "service:operator",
+  "dueAt": "2026-08-02T00:00:00Z",
+  "remedyStatus": "ordered"
+}

@@ -2,6 +2,7 @@
 title: "Authority and Delegation Model"
 permalink: /examples/cross-registry-recognition/authority-model/
 parent: "Cross-Registry Recognition"
+nav_exclude: true
 artifact_type: Informative implementation pattern
 normative_status: Informative
 ---

@@ -2,6 +2,7 @@
 title: "Architecture and Trust Boundaries"
 permalink: /examples/high-impact-multi-agent-service/architecture/
 parent: "High-Impact Multi-Agent Service"
+nav_exclude: true
 artifact_type: Informative implementation pattern
 normative_status: Informative
 ---

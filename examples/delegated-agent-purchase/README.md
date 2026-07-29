@@ -2,6 +2,9 @@
 title: "Delegated Agent Purchasing"
 permalink: /examples/delegated-agent-purchase/
 parent: "Implementation Patterns"
+nav_exclude: true
+search_exclude: true
+published: false
 artifact_type: Informative implementation pattern
 normative_status: Informative
 ---

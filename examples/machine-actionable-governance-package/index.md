@@ -1,8 +1,8 @@
 ---
 title: "Machine-Actionable Governance Package"
-nav_exclude: true
-search_exclude: true
-published: false
+permalink: /examples/machine-actionable-governance-package/
+parent: "Implementation Patterns"
+nav_order: 17
 artifact_type: Informative implementation pattern
 normative_status: Informative
 ---

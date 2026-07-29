@@ -2,6 +2,7 @@
 title: "Architecture and Trust Boundaries"
 permalink: /examples/delegated-agent-purchase/architecture/
 parent: "Delegated Agent Purchasing"
+nav_exclude: true
 artifact_type: Informative implementation pattern
 normative_status: Informative
 ---

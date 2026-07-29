@@ -1,5 +1,8 @@
 ---
 title: "Authority Lifecycle and Revocation"
+nav_exclude: true
+search_exclude: true
+published: false
 artifact_type: Informative implementation pattern
 normative_status: Informative
 ---

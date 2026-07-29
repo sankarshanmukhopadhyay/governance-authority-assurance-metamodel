@@ -58,6 +58,16 @@ exclude:
   - .bundle
   - Dockerfile
   - docker-compose.yml
+  - examples/README.md
+  - examples/authority-lifecycle-and-revocation/README.md
+  - examples/basic-governed-decision/README.md
+  - examples/cross-registry-recognition/README.md
+  - examples/delegated-agent-purchase/README.md
+  - examples/governed-ecosystem-operations/README.md
+  - examples/high-impact-multi-agent-service/README.md
+  - examples/independent-assurance-assessment/README.md
+  - examples/machine-actionable-governance-package/README.md
+  - examples/notice-challenge-and-remedy/README.md
 defaults:
   - scope:
       path: ""

@@ -21,6 +21,39 @@ add('PUB-001-version-source',(ROOT/'VERSION').read_text().strip()==VERSION,f'aut
 add('PUB-002-active-version-coherence',not stale,'no stale active v0.5.0 references' if not stale else ', '.join(stale),'publication')
 spec=(ROOT/REL['normativeSpecification']).read_text()
 add('PUB-003-specification-identity',f'**Version:** {VERSION}' in spec and '**Status:** Candidate Specification' in spec,'normative specification identifies candidate release','publication')
+# Publication hygiene: repository source files, published landing pages and sidebar entries
+
+def front_matter(path):
+ text=path.read_text(errors='ignore')
+ if not text.startswith('---\n'): return {},False
+ end=text.find('\n---\n',4)
+ if end<0: return {},False
+ data={}
+ for line in text[4:end].splitlines():
+  if ':' in line:
+   k,v=line.split(':',1); data[k.strip()]=v.strip().strip('"').strip("'")
+ return data,True
+cfg=(ROOT/'_config.yml').read_text()
+example_dirs=sorted(d for d in (ROOT/'examples').iterdir() if d.is_dir())
+excluded_readmes=[f'examples/{d.name}/README.md' for d in example_dirs]+['examples/README.md']
+missing_exclusions=[x for x in excluded_readmes if f'  - {x}' not in cfg]
+add('PUB-HYG-README-EXCLUDE',not missing_exclusions,'all implementation-pattern README files excluded from Jekyll publication' if not missing_exclusions else 'missing exclusions: '+', '.join(missing_exclusions),'publication')
+landing_errors=[]; support_errors=[]
+for d in example_dirs:
+ idx=d/'index.md'; readme=d/'README.md'
+ if not idx.exists(): landing_errors.append(f'{d.name}: index.md missing'); continue
+ fm,valid=front_matter(idx)
+ if not valid or fm.get('parent')!='Implementation Patterns' or fm.get('permalink')!=f'/examples/{d.name}/': landing_errors.append(f'{d.name}: invalid landing-page front matter')
+ rfm,rvalid=front_matter(readme) if readme.exists() else ({},False)
+ if not rvalid or rfm.get('published')!='false' or rfm.get('nav_exclude')!='true': landing_errors.append(f'{d.name}: README publication boundary missing')
+ for md in d.glob('*.md'):
+  if md.name in {'README.md','index.md'}: continue
+  sfm,svalid=front_matter(md)
+  if not svalid or sfm.get('nav_exclude')!='true': support_errors.append(str(md.relative_to(ROOT)))
+add('PUB-HYG-LANDINGS',not landing_errors,f'{len(example_dirs)} canonical pattern landing pages use clean directory URLs' if not landing_errors else '; '.join(landing_errors),'publication')
+add('PUB-HYG-SUPPORT-NAV',not support_errors,'all supporting pattern pages excluded from primary navigation' if not support_errors else ', '.join(support_errors),'publication')
+cfm,cvalid=front_matter(ROOT/'CHANGELOG.md')
+add('PUB-HYG-CHANGELOG',cvalid and cfm.get('title')=='Changelog' and cfm.get('permalink')=='/releases/changelog/','changelog begins with valid canonical front matter' if cvalid else 'changelog front matter malformed','publication')
 # Requirements
 ids=re.findall(r'\*\*(GAAM-[A-Z]+-\d{3}):\*\*',spec)
 idx=list(csv.DictReader((ROOT/'matrices/normative-requirements-index.csv').open())); idxids=[r['requirement_id'] for r in idx]

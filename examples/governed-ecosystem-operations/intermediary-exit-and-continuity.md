@@ -1,5 +1,6 @@
 ---
 title: "Intermediary Exit and Continuity"
+nav_exclude: true
 artifact_type: Informative implementation pattern
 normative_status: Informative
 ---

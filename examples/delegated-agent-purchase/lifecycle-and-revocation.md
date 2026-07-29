@@ -2,6 +2,7 @@
 title: "Lifecycle and Revocation"
 permalink: /examples/delegated-agent-purchase/lifecycle-and-revocation/
 parent: "Delegated Agent Purchasing"
+nav_exclude: true
 artifact_type: Informative implementation pattern
 normative_status: Informative
 ---

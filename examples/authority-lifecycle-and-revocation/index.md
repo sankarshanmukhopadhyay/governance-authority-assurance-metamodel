@@ -1,14 +1,14 @@
 ---
-title: "Machine-Actionable Governance Package"
-nav_exclude: true
-search_exclude: true
-published: false
+title: "Authority Lifecycle and Revocation"
+permalink: /examples/authority-lifecycle-and-revocation/
+parent: "Implementation Patterns"
+nav_order: 14
 artifact_type: Informative implementation pattern
 normative_status: Informative
 ---
-# Machine-Actionable Governance Package
+# Authority Lifecycle and Revocation
 
-This pattern demonstrates **machine-actionable governance publication** using GAAM concepts and existing candidate profiles. It is informative: identifiers, policies, actors and evidence are illustrative and do not establish conformance for a production deployment.
+This pattern demonstrates **authority lifecycle and revocation** using GAAM concepts and existing candidate profiles. It is informative: identifiers, policies, actors and evidence are illustrative and do not establish conformance for a production deployment.
 
 ## Governance problem
 
@@ -17,10 +17,11 @@ The implementation must make authority, accountability, lifecycle state, enforce
 ## Actors
 
 - governing authority
-- package publisher
-- schema operator
-- validator
-- relying implementer
+- authority holder
+- delegate
+- status service
+- enforcement point
+- review authority
 
 ## Pattern flow
 

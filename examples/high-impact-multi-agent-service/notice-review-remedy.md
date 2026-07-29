@@ -2,6 +2,7 @@
 title: "Notice, Review, and Remedy"
 permalink: /examples/high-impact-multi-agent-service/notice-review-remedy/
 parent: "High-Impact Multi-Agent Service"
+nav_exclude: true
 artifact_type: Informative implementation pattern
 normative_status: Informative
 ---

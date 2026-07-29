@@ -2,6 +2,7 @@
 title: "Privacy and Security Analysis"
 permalink: /examples/cross-registry-recognition/privacy-security-analysis/
 parent: "Cross-Registry Recognition"
+nav_exclude: true
 artifact_type: Informative implementation pattern
 normative_status: Informative
 ---

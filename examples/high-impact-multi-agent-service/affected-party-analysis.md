@@ -2,6 +2,7 @@
 title: "Affected-Party Analysis"
 permalink: /examples/high-impact-multi-agent-service/affected-party-analysis/
 parent: "High-Impact Multi-Agent Service"
+nav_exclude: true
 artifact_type: Informative implementation pattern
 normative_status: Informative
 ---

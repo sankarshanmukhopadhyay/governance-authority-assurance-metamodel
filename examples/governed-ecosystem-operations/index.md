@@ -1,8 +1,8 @@
 ---
 title: "Governed Ecosystem Operations"
-nav_exclude: true
-search_exclude: true
-published: false
+permalink: /examples/governed-ecosystem-operations/
+parent: "Implementation Patterns"
+nav_order: 18
 artifact_type: Informative implementation pattern
 normative_status: Informative
 ---

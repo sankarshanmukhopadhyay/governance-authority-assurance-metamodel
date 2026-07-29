@@ -2,6 +2,7 @@
 title: "Requirement Mapping"
 permalink: /examples/delegated-agent-purchase/requirement-mapping/
 parent: "Delegated Agent Purchasing"
+nav_exclude: true
 artifact_type: Informative implementation pattern
 normative_status: Informative
 ---

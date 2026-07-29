@@ -2,6 +2,7 @@
 title: "Trust Boundaries"
 permalink: /examples/cross-registry-recognition/trust-boundaries/
 parent: "Cross-Registry Recognition"
+nav_exclude: true
 artifact_type: Informative implementation pattern
 normative_status: Informative
 ---

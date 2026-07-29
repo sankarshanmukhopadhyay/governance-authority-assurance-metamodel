@@ -21,7 +21,7 @@ The repository root is the Pages source. GitHub Actions builds the complete site
 
 ## Navigation
 
-Section index pages (`profiles/index.md`, `schemas/index.md`, `docs/index.md`, `matrices/index.md`, and so on) declare `has_children: true` and a `nav_order`, and appear as top-level sidebar entries. Pages within a section declare `parent: "<Section Title>"`, matching that section's index-page title exactly, which nests them under it in the sidebar and in the theme's automatic breadcrumbs. `README.md` is excluded from the Jekyll build entirely (it remains a GitHub-rendered repository landing document); `index.md` is the site's actual homepage. A small number of pages (`VALIDATION_REPORT.md`, `implementation-reports/TEMPLATE.md`) declare `nav_exclude: true` -- reachable by direct link, but not cluttering primary navigation.
+Section index pages (`profiles/index.md`, `schemas/index.md`, `docs/index.md`, `matrices/index.md`, and so on) declare `has_children: true` and a `nav_order`, and appear as top-level sidebar entries. Pages within a section declare `parent: "<Section Title>"`, matching that section's index-page title exactly, which nests them under it in the sidebar and in the theme's automatic breadcrumbs. Repository `README.md` files are excluded from the Jekyll build and remain GitHub-rendered source documents. Published landing pages use `index.md`, including each implementation pattern, so GitHub Pages exposes one canonical directory URL per landing page. A small number of pages (`VALIDATION_REPORT.md`, `implementation-reports/TEMPLATE.md`) declare `nav_exclude: true` -- reachable by direct link, but not cluttering primary navigation.
 
 ## Page-title contract
 
@@ -74,3 +74,7 @@ The Pages build is accepted only when:
 - every Mermaid block parses successfully using the version pinned in `_config.yml`.
 
 Both workflows run `npm run validate:mermaid` before Jekyll. `scripts/validate_mermaid.mjs` recursively extracts fenced Mermaid blocks, parses them with Mermaid 11.16.0, fails on any syntax error and writes machine-readable evidence to `validation/mermaid-validation.json`. The validation workflow then builds the site, publishes the versioned schema mirror and runs `scripts/validate_pages.py`. The deployment workflow performs the same Mermaid gate, build and mirror sequence before uploading the Pages artifact.
+
+## Implementation-pattern publication boundary
+
+Each pattern uses `index.md` as its canonical published landing page. The corresponding `README.md` remains available in the repository but is excluded from Jekyll. Supporting pattern pages declare `nav_exclude: true`: they remain directly addressable and searchable without creating repetitive top-level sidebar entries.

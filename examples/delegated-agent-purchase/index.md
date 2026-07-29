@@ -1,15 +1,13 @@
 ---
-title: "Cross-Registry Recognition"
-permalink: /examples/cross-registry-recognition/
+title: "Delegated Agent Purchasing"
+permalink: /examples/delegated-agent-purchase/
 parent: "Implementation Patterns"
-nav_exclude: true
-search_exclude: true
-published: false
+nav_order: 10
 artifact_type: Informative implementation pattern
 normative_status: Informative
 ---
-# Cross-Registry Recognition
-This assurance-ready implementation pattern demonstrates **cross-registry reliance and recognition** using GAAM v0.9.0. It is informative and does not alter normative requirements or conformance semantics.
+# Delegated Agent Purchasing
+This assurance-ready implementation pattern demonstrates **bounded agent purchasing** using GAAM v0.9.0. It is informative and does not alter normative requirements or conformance semantics.
 
 ## Governance objective
 
@@ -17,24 +15,25 @@ The pattern makes authority, policy, runtime enforcement, evidence, assurance, l
 
 ## Actors
 
-- source registry
-- relying registry
-- registry operator
-- governance authority
-- recognition authority
-- assurance assessor
-- record subject
-- relying service
+- principal
+- delegated agent
+- agent operator
+- merchant
+- policy decision point
+- policy enforcement point
+- transaction system
+- assurance provider
 - review authority
+- affected principal
 
 ## Included documentation
 
-- [Recognition Model](recognition-model.md)
-- [Trust Boundaries](trust-boundaries.md)
+- [Architecture and Trust Boundaries](architecture.md)
 - [Authority and Delegation Model](authority-model.md)
-- [Recognition Lifecycle and Suspension](lifecycle-and-suspension.md)
+- [Runtime Decision Sequence](sequence.md)
 - [Evidence and Assurance Model](evidence-model.md)
-- [Review and Correction](review-and-correction.md)
+- [Lifecycle and Revocation](lifecycle-and-revocation.md)
+- [Notice, Review, and Remedy](notice-review-remedy.md)
 - [Privacy and Security Analysis](privacy-security-analysis.md)
 - [Affected-Party Analysis](affected-party-analysis.md)
 - [Requirement Mapping](requirement-mapping.md)

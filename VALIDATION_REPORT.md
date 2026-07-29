@@ -10,8 +10,8 @@ normative_status: Repository generated
 {% include gaam-meta.html %}
 
 **Status:** PASS  
-**Checks:** 225  
-**Passed:** 225  
+**Checks:** 229  
+**Passed:** 229  
 **Failed:** 0  
 
 This report evidences repository publication, structural and included behavioural checks. It is not an independent L4 assessment.
@@ -21,6 +21,10 @@ This report evidences repository publication, structural and included behavioura
 | `PUB-001-version-source` | publication | PASS | authoritative version=0.9.0 |
 | `PUB-002-active-version-coherence` | publication | PASS | no stale active v0.5.0 references |
 | `PUB-003-specification-identity` | publication | PASS | normative specification identifies candidate release |
+| `PUB-HYG-README-EXCLUDE` | publication | PASS | all implementation-pattern README files excluded from Jekyll publication |
+| `PUB-HYG-LANDINGS` | publication | PASS | 9 canonical pattern landing pages use clean directory URLs |
+| `PUB-HYG-SUPPORT-NAV` | publication | PASS | all supporting pattern pages excluded from primary navigation |
+| `PUB-HYG-CHANGELOG` | publication | PASS | changelog begins with valid canonical front matter |
 | `REQ-001-unique` | normative | PASS | 190 identifiers |
 | `REQ-002-index-exact` | normative | PASS | 190 indexed requirements |
 | `REQ-003-normative-language` | normative | PASS | 190 indexed statements classified |
@@ -242,4 +246,4 @@ This report evidences repository publication, structural and included behavioura
 | `GOV-CONTRIBUTION-CONTROLS` | governance | PASS | candidate issue forms and pull-request governance template present |
 | `GOV-V1-READINESS-STATE` | governance | PASS | 5 explicitly recorded open v1 blockers: GAAM-CR-001, GAAM-CR-002, GAAM-CR-003, GAAM-CR-004, GAAM-CR-005 |
 | `PKG-MANIFEST` | package | PASS | package manifest conforms |
-| `PKG-INTEGRITY` | package | PASS | 305 checksums verified |
+| `PKG-INTEGRITY` | package | PASS | 314 checksums verified |

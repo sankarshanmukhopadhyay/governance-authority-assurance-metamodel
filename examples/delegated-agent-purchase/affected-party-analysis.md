@@ -2,6 +2,7 @@
 title: "Affected-Party Analysis"
 permalink: /examples/delegated-agent-purchase/affected-party-analysis/
 parent: "Delegated Agent Purchasing"
+nav_exclude: true
 artifact_type: Informative implementation pattern
 normative_status: Informative
 ---

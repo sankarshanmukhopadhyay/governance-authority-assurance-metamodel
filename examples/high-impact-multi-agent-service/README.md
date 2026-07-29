@@ -2,6 +2,9 @@
 title: "High-Impact Multi-Agent Service"
 permalink: /examples/high-impact-multi-agent-service/
 parent: "Implementation Patterns"
+nav_exclude: true
+search_exclude: true
+published: false
 artifact_type: Informative implementation pattern
 normative_status: Informative
 ---

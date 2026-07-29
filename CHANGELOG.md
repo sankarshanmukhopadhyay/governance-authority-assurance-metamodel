@@ -1,12 +1,3 @@
-
-### Added
-
-- Governed ecosystem applicability evidence, capability matrix, enhancement register and normative-impact analysis.
-- GitHub Pages fixes for duplicate implementation-pattern navigation and Markdown table rendering in the normative-requirements and threat-control matrices.
-- Five foundational executable governance patterns and a technology-neutral governed ecosystem operations pattern.
-- Guided learning from basic governed decisions through authority lifecycle, assurance, remedy, machine-actionable packages and ecosystem operations.
-- Machine-readable manifests, conformance claims, valid and invalid fixtures, behavioural references and evidence expectations for the new patterns.
-
 ---
 title: "Changelog"
 permalink: /releases/changelog/
@@ -31,6 +22,11 @@ All notable changes will be documented here. The project uses Semantic Versionin
 ## Unreleased
 
 ### Fixed
+
+- Separate repository README files from GitHub Pages landing pages for all implementation patterns.
+- Publish each pattern at a clean directory URL through `index.md`.
+- Exclude supporting pattern pages from primary sidebar navigation while retaining direct-link and search access.
+- Add publication-hygiene validation for front matter, duplicate landing pages and unexpected navigable pattern-support pages.
 
 - Enable Just the Docs' Mermaid support (`mermaid: version: "11.16.0"` in `_config.yml`). Disabled by default when the theme is consumed as a gem, so the ```` ```mermaid ```` fenced diagrams in `diagrams/architecture-diagrams.md` were rendering as plain code blocks instead of diagrams.
 

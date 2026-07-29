@@ -2,6 +2,7 @@
 title: "Requirement Mapping"
 permalink: /examples/cross-registry-recognition/requirement-mapping/
 parent: "Cross-Registry Recognition"
+nav_exclude: true
 artifact_type: Informative implementation pattern
 normative_status: Informative
 ---

@@ -2,6 +2,7 @@
 title: "Authority and Delegation Model"
 permalink: /examples/delegated-agent-purchase/authority-model/
 parent: "Delegated Agent Purchasing"
+nav_exclude: true
 artifact_type: Informative implementation pattern
 normative_status: Informative
 ---

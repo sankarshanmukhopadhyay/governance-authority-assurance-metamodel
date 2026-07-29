@@ -370,6 +370,11 @@
       "mediaType": "application/json"
     },
     {
+      "id": "index",
+      "path": "examples/authority-lifecycle-and-revocation/index.md",
+      "mediaType": "text/markdown"
+    },
+    {
       "id": "lifecycle-and-revocation",
       "path": "examples/authority-lifecycle-and-revocation/lifecycle-and-revocation.md",
       "mediaType": "text/markdown"
@@ -483,6 +488,11 @@
       "id": "governance-event.valid",
       "path": "examples/basic-governed-decision/governance-event.valid.json",
       "mediaType": "application/json"
+    },
+    {
+      "id": "index",
+      "path": "examples/basic-governed-decision/index.md",
+      "mediaType": "text/markdown"
     },
     {
       "id": "lifecycle-and-revocation",
@@ -610,6 +620,11 @@
       "mediaType": "application/json"
     },
     {
+      "id": "index",
+      "path": "examples/cross-registry-recognition/index.md",
+      "mediaType": "text/markdown"
+    },
+    {
       "id": "lifecycle-and-suspension",
       "path": "examples/cross-registry-recognition/lifecycle-and-suspension.md",
       "mediaType": "text/markdown"
@@ -735,6 +750,11 @@
       "mediaType": "application/json"
     },
     {
+      "id": "index",
+      "path": "examples/delegated-agent-purchase/index.md",
+      "mediaType": "text/markdown"
+    },
+    {
       "id": "lifecycle-and-revocation",
       "path": "examples/delegated-agent-purchase/lifecycle-and-revocation.md",
       "mediaType": "text/markdown"
@@ -858,6 +878,11 @@
       "id": "governance-event.valid",
       "path": "examples/governed-ecosystem-operations/governance-event.valid.json",
       "mediaType": "application/json"
+    },
+    {
+      "id": "index",
+      "path": "examples/governed-ecosystem-operations/index.md",
+      "mediaType": "text/markdown"
     },
     {
       "id": "intermediary-exit-and-continuity",
@@ -1025,6 +1050,11 @@
       "mediaType": "application/json"
     },
     {
+      "id": "index",
+      "path": "examples/high-impact-multi-agent-service/index.md",
+      "mediaType": "text/markdown"
+    },
+    {
       "id": "lifecycle-and-interruption",
       "path": "examples/high-impact-multi-agent-service/lifecycle-and-interruption.md",
       "mediaType": "text/markdown"
@@ -1143,6 +1173,11 @@
       "id": "governance-event.valid",
       "path": "examples/independent-assurance-assessment/governance-event.valid.json",
       "mediaType": "application/json"
+    },
+    {
+      "id": "index",
+      "path": "examples/independent-assurance-assessment/index.md",
+      "mediaType": "text/markdown"
     },
     {
       "id": "lifecycle-and-revocation",
@@ -1265,6 +1300,11 @@
       "mediaType": "application/json"
     },
     {
+      "id": "index",
+      "path": "examples/machine-actionable-governance-package/index.md",
+      "mediaType": "text/markdown"
+    },
+    {
       "id": "lifecycle-and-revocation",
       "path": "examples/machine-actionable-governance-package/lifecycle-and-revocation.md",
       "mediaType": "text/markdown"
@@ -1378,6 +1418,11 @@
       "id": "governance-event.valid",
       "path": "examples/notice-challenge-and-remedy/governance-event.valid.json",
       "mediaType": "application/json"
+    },
+    {
+      "id": "index",
+      "path": "examples/notice-challenge-and-remedy/index.md",
+      "mediaType": "text/markdown"
     },
     {
       "id": "lifecycle-and-revocation",

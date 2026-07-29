@@ -1,14 +1,14 @@
 ---
-title: "Machine-Actionable Governance Package"
-nav_exclude: true
-search_exclude: true
-published: false
+title: "Basic Governed Decision"
+permalink: /examples/basic-governed-decision/
+parent: "Implementation Patterns"
+nav_order: 13
 artifact_type: Informative implementation pattern
 normative_status: Informative
 ---
-# Machine-Actionable Governance Package
+# Basic Governed Decision
 
-This pattern demonstrates **machine-actionable governance publication** using GAAM concepts and existing candidate profiles. It is informative: identifiers, policies, actors and evidence are illustrative and do not establish conformance for a production deployment.
+This pattern demonstrates **governed decision evaluation** using GAAM concepts and existing candidate profiles. It is informative: identifiers, policies, actors and evidence are illustrative and do not establish conformance for a production deployment.
 
 ## Governance problem
 
@@ -16,11 +16,11 @@ The implementation must make authority, accountability, lifecycle state, enforce
 
 ## Actors
 
-- governing authority
-- package publisher
-- schema operator
-- validator
-- relying implementer
+- policy authority
+- decision service
+- enforcement point
+- review authority
+- affected party
 
 ## Pattern flow
 

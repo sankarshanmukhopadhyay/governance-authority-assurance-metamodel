@@ -2,9 +2,7 @@
 title: "Cross-Registry Recognition"
 permalink: /examples/cross-registry-recognition/
 parent: "Implementation Patterns"
-nav_exclude: true
-search_exclude: true
-published: false
+nav_order: 11
 artifact_type: Informative implementation pattern
 normative_status: Informative
 ---

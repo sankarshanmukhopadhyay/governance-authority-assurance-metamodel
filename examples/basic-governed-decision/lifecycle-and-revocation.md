@@ -1,5 +1,6 @@
 ---
 title: "Lifecycle and Revocation"
+nav_exclude: true
 artifact_type: Informative implementation pattern
 normative_status: Informative
 ---

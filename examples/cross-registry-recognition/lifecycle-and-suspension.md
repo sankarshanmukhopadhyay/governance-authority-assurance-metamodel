@@ -2,6 +2,7 @@
 title: "Recognition Lifecycle and Suspension"
 permalink: /examples/cross-registry-recognition/lifecycle-and-suspension/
 parent: "Cross-Registry Recognition"
+nav_exclude: true
 artifact_type: Informative implementation pattern
 normative_status: Informative
 ---

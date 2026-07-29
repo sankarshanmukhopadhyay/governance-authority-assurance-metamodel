@@ -10,8 +10,8 @@ normative_status: Repository generated
 {% include gaam-meta.html %}
 
 **Status:** PASS  
-**Checks:** 229  
-**Passed:** 229  
+**Checks:** 233  
+**Passed:** 233  
 **Failed:** 0  
 
 This report evidences repository publication, structural and included behavioural checks. It is not an independent L4 assessment.
@@ -25,6 +25,10 @@ This report evidences repository publication, structural and included behavioura
 | `PUB-HYG-LANDINGS` | publication | PASS | 9 canonical pattern landing pages use clean directory URLs |
 | `PUB-HYG-SUPPORT-NAV` | publication | PASS | all supporting pattern pages excluded from primary navigation |
 | `PUB-HYG-CHANGELOG` | publication | PASS | changelog begins with valid canonical front matter |
+| `PUB-IA-DOCUMENTATION` | publication | PASS | Documentation is grouped into four validated reader routes |
+| `PUB-IA-APPENDICES` | publication | PASS | Appendices consolidates reference material without changing URLs |
+| `PUB-IA-REPORTS` | publication | PASS | Implementation Reports is a top-level workflow with intact children |
+| `PUB-IA-TOP-ORDER` | publication | PASS | top-level workflow order is deterministic |
 | `REQ-001-unique` | normative | PASS | 190 identifiers |
 | `REQ-002-index-exact` | normative | PASS | 190 indexed requirements |
 | `REQ-003-normative-language` | normative | PASS | 190 indexed statements classified |

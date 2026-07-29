@@ -2,8 +2,8 @@
   "gaamVersion": "0.9.0",
   "testSuiteVersion": "0.9.0",
   "status": "pass",
-  "checks": 229,
-  "passed": 229,
+  "checks": 233,
+  "passed": 233,
   "failed": 0,
   "results": [
     {
@@ -47,6 +47,30 @@
       "kind": "publication",
       "status": "pass",
       "evidence": "changelog begins with valid canonical front matter"
+    },
+    {
+      "id": "PUB-IA-DOCUMENTATION",
+      "kind": "publication",
+      "status": "pass",
+      "evidence": "Documentation is grouped into four validated reader routes"
+    },
+    {
+      "id": "PUB-IA-APPENDICES",
+      "kind": "publication",
+      "status": "pass",
+      "evidence": "Appendices consolidates reference material without changing URLs"
+    },
+    {
+      "id": "PUB-IA-REPORTS",
+      "kind": "publication",
+      "status": "pass",
+      "evidence": "Implementation Reports is a top-level workflow with intact children"
+    },
+    {
+      "id": "PUB-IA-TOP-ORDER",
+      "kind": "publication",
+      "status": "pass",
+      "evidence": "top-level workflow order is deterministic"
     },
     {
       "id": "REQ-001-unique",

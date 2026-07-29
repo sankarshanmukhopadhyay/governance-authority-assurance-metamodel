@@ -1,7 +1,8 @@
 ---
 title: "Editorial and Normative Style Guide"
 permalink: /docs/style-guide/
-parent: "Documentation"
+parent: Appendices
+nav_order: 6
 ---
 # Editorial and Normative Style Guide
 

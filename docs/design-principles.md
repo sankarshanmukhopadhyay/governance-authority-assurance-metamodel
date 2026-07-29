@@ -1,9 +1,11 @@
 ---
 title: "Design Principles"
 permalink: /docs/design-principles/
-parent: "Documentation"
+parent: Concepts and Design
 artifact_type: "Design guidance"
 normative_status: "Informative"
+grand_parent: Documentation
+nav_order: 3
 ---
 # Design Principles
 

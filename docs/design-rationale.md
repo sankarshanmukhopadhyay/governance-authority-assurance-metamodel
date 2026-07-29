@@ -1,9 +1,11 @@
 ---
 title: "Design Rationale"
 permalink: /docs/design-rationale/
-parent: "Documentation"
+parent: Concepts and Design
 artifact_type: "Design rationale"
 normative_status: "Informative"
+grand_parent: Documentation
+nav_order: 4
 ---
 # Design Rationale
 

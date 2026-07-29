@@ -1,8 +1,7 @@
 ---
 title: "Implementation Reports"
 permalink: /implementation-reports/
-parent: "Documentation"
-nav_order: 8
+nav_order: 5
 has_children: true
 artifact_type: "Implementation guidance"
 normative_status: "Informative"

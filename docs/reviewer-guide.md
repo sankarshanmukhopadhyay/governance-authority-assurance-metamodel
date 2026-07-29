@@ -1,9 +1,11 @@
 ---
 title: "Reviewer Guide"
 permalink: /docs/reviewer-guide/
-parent: "Documentation"
+parent: Implementation Guidance
 artifact_type: "Review guide"
 normative_status: "Informative"
+grand_parent: Documentation
+nav_order: 5
 ---
 # Reviewer Guide
 

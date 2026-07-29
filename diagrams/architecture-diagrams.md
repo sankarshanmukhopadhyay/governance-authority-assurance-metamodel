@@ -1,9 +1,11 @@
 ---
 title: "Architecture Diagrams"
 permalink: /diagrams/
-parent: "Documentation"
+parent: Concepts and Design
 artifact_type: "Architecture diagrams"
 normative_status: "Informative"
+grand_parent: Documentation
+nav_order: 2
 ---
 # Architecture Diagrams
 

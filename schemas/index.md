@@ -1,7 +1,7 @@
 ---
 title: "Canonical Schemas"
 permalink: /schemas/
-nav_order: 5
+nav_order: 6
 has_children: true
 artifact_type: Schema catalogue
 normative_status: Normative for artifact structure

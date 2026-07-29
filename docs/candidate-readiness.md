@@ -1,9 +1,11 @@
 ---
 title: "Candidate Readiness Dashboard"
 permalink: /governance/candidate-readiness/
-parent: "Documentation"
+parent: Assurance and Governance Tracking
 artifact_type: "Generated governance view"
 normative_status: "Informative"
+grand_parent: Documentation
+nav_order: 2
 ---
 # Candidate Readiness Dashboard
 

@@ -54,6 +54,49 @@ add('PUB-HYG-LANDINGS',not landing_errors,f'{len(example_dirs)} canonical patter
 add('PUB-HYG-SUPPORT-NAV',not support_errors,'all supporting pattern pages excluded from primary navigation' if not support_errors else ', '.join(support_errors),'publication')
 cfm,cvalid=front_matter(ROOT/'CHANGELOG.md')
 add('PUB-HYG-CHANGELOG',cvalid and cfm.get('title')=='Changelog' and cfm.get('permalink')=='/releases/changelog/','changelog begins with valid canonical front matter' if cvalid else 'changelog front matter malformed','publication')
+# Information architecture: grouped documentation, promoted workflow, and appendices
+ia_groups={
+ 'Orientation':['docs/guided-learning.md','docs/documentation-architecture.md'],
+ 'Concepts and Design':['docs/architecture-overview.md','diagrams/architecture-diagrams.md','docs/design-principles.md','docs/design-rationale.md'],
+ 'Implementation Guidance':['docs/implementation-guide.md','docs/lifecycle-model.md','docs/control-document-schedule.md','docs/migration-v0.5.0-to-v0.9.0.md','docs/reviewer-guide.md'],
+ 'Assurance and Governance Tracking':['docs/conformance-guide.md','docs/candidate-readiness.md','docs/open-questions.md','docs/candidate-stability-policy.md','governance/README.md'],
+}
+ia_errors=[]
+for order,(group,pages) in enumerate(ia_groups.items(),1):
+ group_file=ROOT/'docs'/({'Orientation':'orientation.md','Concepts and Design':'concepts-and-design.md','Implementation Guidance':'implementation-guidance.md','Assurance and Governance Tracking':'assurance-and-governance-tracking.md'}[group])
+ gfm,gvalid=front_matter(group_file) if group_file.exists() else ({},False)
+ if not gvalid or gfm.get('parent')!='Documentation' or gfm.get('has_children')!='true' or gfm.get('nav_order')!=str(order): ia_errors.append(f'{group}: invalid group index')
+ for page in pages:
+  fm,valid=front_matter(ROOT/page)
+  if not valid or fm.get('parent')!=group or fm.get('grand_parent')!='Documentation': ia_errors.append(f'{page}: invalid Documentation grouping')
+add('PUB-IA-DOCUMENTATION',not ia_errors,'Documentation is grouped into four validated reader routes' if not ia_errors else '; '.join(ia_errors),'publication')
+appendix_expected={'docs/glossary.md':'1','vocabularies/index.md':'2','matrices/index.md':'3','mappings/index.md':'4','docs/faq.md':'5','docs/style-guide.md':'6','docs/github-pages-publication.md':'7'}
+appendix_errors=[]
+afm,avalid=front_matter(ROOT/'appendices/index.md') if (ROOT/'appendices/index.md').exists() else ({},False)
+if not avalid or afm.get('title')!='Appendices' or afm.get('has_children')!='true' or afm.get('nav_order')!='11': appendix_errors.append('appendices/index.md invalid')
+for page,order in appendix_expected.items():
+ fm,valid=front_matter(ROOT/page)
+ if not valid or fm.get('parent')!='Appendices' or fm.get('nav_order')!=order: appendix_errors.append(f'{page}: invalid Appendix placement')
+for folder,parent in [('matrices','Matrices'),('mappings','Mappings and Source Crosswalks')]:
+ for md in (ROOT/folder).glob('*.md'):
+  if md.name=='index.md': continue
+  fm,valid=front_matter(md)
+  if not valid or fm.get('parent')!=parent or fm.get('grand_parent')!='Appendices': appendix_errors.append(f'{md.relative_to(ROOT)}: invalid nested Appendix placement')
+add('PUB-IA-APPENDICES',not appendix_errors,'Appendices consolidates reference material without changing URLs' if not appendix_errors else '; '.join(appendix_errors),'publication')
+ifm,ivalid=front_matter(ROOT/'implementation-reports/README.md')
+implementation_report_errors=[]
+if not ivalid or ifm.get('parent') or ifm.get('grand_parent') or ifm.get('nav_order')!='5' or ifm.get('has_children')!='true': implementation_report_errors.append('implementation-reports/README.md not promoted cleanly')
+for md in (ROOT/'implementation-reports').glob('*.md'):
+ if md.name=='README.md': continue
+ fm,valid=front_matter(md)
+ if not valid or fm.get('parent')!='Implementation Reports': implementation_report_errors.append(f'{md.relative_to(ROOT)}: invalid report parent')
+add('PUB-IA-REPORTS',not implementation_report_errors,'Implementation Reports is a top-level workflow with intact children' if not implementation_report_errors else '; '.join(implementation_report_errors),'publication')
+top_orders={'docs/index.md':'3','profiles/index.md':'4','implementation-reports/README.md':'5','schemas/index.md':'6','threat-model/README.md':'7','examples/index.md':'8','conformance/index.md':'9','decisions/index.md':'10','appendices/index.md':'11','releases/index.md':'12','GOVERNANCE.md':'13'}
+order_errors=[]
+for page,order in top_orders.items():
+ fm,valid=front_matter(ROOT/page)
+ if not valid or fm.get('nav_order')!=order: order_errors.append(f'{page}: expected nav_order {order}')
+add('PUB-IA-TOP-ORDER',not order_errors,'top-level workflow order is deterministic' if not order_errors else '; '.join(order_errors),'publication')
 # Requirements
 ids=re.findall(r'\*\*(GAAM-[A-Z]+-\d{3}):\*\*',spec)
 idx=list(csv.DictReader((ROOT/'matrices/normative-requirements-index.csv').open())); idxids=[r['requirement_id'] for r in idx]

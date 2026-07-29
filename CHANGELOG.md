@@ -7,6 +7,10 @@ normative_status: "Release record"
 ---
 # Changelog
 
+### Documentation
+
+- Reorganised site navigation with four grouped Documentation routes, a top-level Implementation Reports workflow, and an Appendices section for glossary, vocabularies, matrices, mappings, FAQ, style guidance, and publication documentation. Existing file paths and permalinks remain unchanged.
+
 ## Unreleased: assurance-ready composed patterns
 
 - Expanded the delegated agent purchasing, cross-registry recognition and high-impact multi-agent service examples into assurance-ready implementation patterns.

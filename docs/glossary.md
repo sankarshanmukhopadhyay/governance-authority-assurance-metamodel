@@ -1,9 +1,10 @@
 ---
 title: "Glossary"
 permalink: /docs/glossary/
-parent: "Documentation"
+parent: Appendices
 artifact_type: "Terminology"
 normative_status: "Normative where referenced"
+nav_order: 1
 ---
 # Glossary
 

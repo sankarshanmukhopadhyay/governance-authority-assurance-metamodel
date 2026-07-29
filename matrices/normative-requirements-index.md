@@ -1,9 +1,10 @@
 ---
 title: "Normative Requirements Index"
 permalink: /matrices/normative-requirements-index/
-parent: "Matrices"
+parent: Matrices
 artifact_type: Traceability matrix
 normative_status: Assurance supporting
+grand_parent: Appendices
 ---
 # Normative Requirements Index
 

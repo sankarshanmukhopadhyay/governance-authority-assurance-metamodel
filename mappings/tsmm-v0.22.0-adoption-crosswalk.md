@@ -1,9 +1,10 @@
 ---
 title: "GAAM Source Adoption and Architectural Differentiation Crosswalk"
 permalink: /mappings/tsmm-v0.22.0/
-parent: "Mappings and Source Crosswalks"
+parent: Mappings and Source Crosswalks
 artifact_type: "Source adoption crosswalk"
 normative_status: "Informative"
+grand_parent: Appendices
 ---
 # GAAM Source Adoption and Architectural Differentiation Crosswalk
 

@@ -1,9 +1,11 @@
 ---
 title: "Migration from GAAM v0.5.0 to v0.9.0"
 permalink: /docs/migration-v0.5.0-to-v0.9.0/
-parent: "Documentation"
+parent: Implementation Guidance
 artifact_type: "Migration guide"
 normative_status: "Informative"
+grand_parent: Documentation
+nav_order: 4
 ---
 # Migration from GAAM v0.5.0 to v0.9.0
 

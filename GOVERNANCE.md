@@ -1,7 +1,7 @@
 ---
 title: "Project Governance"
 permalink: /governance/
-nav_order: 14
+nav_order: 13
 has_children: true
 artifact_type: "Repository governance"
 normative_status: "Normative process"

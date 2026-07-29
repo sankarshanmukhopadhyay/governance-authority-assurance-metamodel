@@ -1,9 +1,10 @@
 ---
 title: "Threat Control Test Matrix"
 permalink: /matrices/threat-control-test-matrix/
-parent: "Matrices"
+parent: Matrices
 artifact_type: Traceability matrix
 normative_status: Assurance supporting
+grand_parent: Appendices
 ---
 # Threat Control Test Matrix
 

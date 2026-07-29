@@ -1,9 +1,11 @@
 ---
 title: "Architecture Overview"
 permalink: /docs/architecture/
-parent: "Documentation"
+parent: Concepts and Design
 artifact_type: "Architecture documentation"
 normative_status: "Informative"
+grand_parent: Documentation
+nav_order: 1
 ---
 # Architecture Overview
 

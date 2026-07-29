@@ -1,9 +1,11 @@
 ---
 title: "Candidate Governance Registers"
 permalink: /governance/registers/
-parent: "Documentation"
+parent: Assurance and Governance Tracking
 artifact_type: "Governance register guide"
 normative_status: "Informative"
+grand_parent: Documentation
+nav_order: 5
 ---
 # Candidate Governance Registers
 

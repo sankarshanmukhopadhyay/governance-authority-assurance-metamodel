@@ -4,6 +4,7 @@ parent: Matrices
 nav_order: 5
 artifact_type: Assurance matrix
 normative_status: Informative
+grand_parent: Appendices
 ---
 # Requirement Assurance Traceability
 

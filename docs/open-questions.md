@@ -1,7 +1,9 @@
 ---
 title: "Candidate Issue Disposition"
 permalink: /docs/open-questions/
-parent: "Documentation"
+parent: Assurance and Governance Tracking
+grand_parent: Documentation
+nav_order: 3
 ---
 # Candidate Issue Disposition
 

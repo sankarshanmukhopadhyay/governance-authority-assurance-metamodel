@@ -1,7 +1,9 @@
 ---
 title: "Governance Artifact Lifecycle Model"
 permalink: /docs/lifecycle-model/
-parent: "Documentation"
+parent: Implementation Guidance
+grand_parent: Documentation
+nav_order: 2
 ---
 # Governance Artifact Lifecycle Model
 

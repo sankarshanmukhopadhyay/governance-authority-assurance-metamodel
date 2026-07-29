@@ -1,7 +1,7 @@
 ---
 title: "GAAM Threat and Misuse-Case Model"
 permalink: /threat-model/
-nav_order: 8
+nav_order: 7
 has_children: false
 artifact_type: "Threat model"
 normative_status: "Assurance supporting"

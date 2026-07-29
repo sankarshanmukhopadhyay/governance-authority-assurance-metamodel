@@ -1,7 +1,8 @@
 ---
 title: "Canonical Relationship Matrix"
 permalink: /matrices/relationships/
-parent: "Matrices"
+parent: Matrices
+grand_parent: Appendices
 ---
 # Canonical Relationship Matrix
 

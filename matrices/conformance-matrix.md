@@ -1,9 +1,10 @@
 ---
 title: "Conformance Matrix"
 permalink: /matrices/conformance/
-parent: "Matrices"
+parent: Matrices
 artifact_type: "Conformance matrix"
 normative_status: "Normative supporting"
+grand_parent: Appendices
 ---
 # Conformance Matrix
 

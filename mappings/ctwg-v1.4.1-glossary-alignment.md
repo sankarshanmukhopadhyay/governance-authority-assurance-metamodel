@@ -1,9 +1,10 @@
 ---
 title: "CTWG v1.4.1 Glossary Alignment"
 permalink: /mappings/ctwg-v1.4.1-glossary-alignment/
-parent: "Mappings"
+parent: Mappings and Source Crosswalks
 artifact_type: "Terminology crosswalk"
 normative_status: "Informative; GAAM glossary remains normative"
+grand_parent: Appendices
 ---
 # CTWG v1.4.1 Glossary Alignment
 

@@ -1,0 +1,87 @@
+{
+  "id": "gaam:pattern:delegated-agent-purchase:0.9.0",
+  "title": "Delegated Agent Purchase",
+  "status": "candidate",
+  "maturity": "structural",
+  "gaamVersion": "0.9.0",
+  "implementationDomain": "governed digital systems",
+  "profiles": [
+    "gaam:profile:foundation:0.9.0",
+    "gaam:profile:delegated-authority:0.9.0",
+    "gaam:profile:runtime-governance:0.9.0",
+    "gaam:profile:agentic-systems:0.9.0"
+  ],
+  "requirements": [
+    "GAAM-CORE-001",
+    "GAAM-CORE-002",
+    "GAAM-CORE-003",
+    "GAAM-CORE-004",
+    "GAAM-CORE-005",
+    "GAAM-AUTH-001",
+    "GAAM-AUTH-002",
+    "GAAM-AUTH-003"
+  ],
+  "actors": [
+    "principal",
+    "delegated agent",
+    "merchant",
+    "policy decision point",
+    "review authority"
+  ],
+  "authoritySources": [
+    "controlled governance documents",
+    "active authority record"
+  ],
+  "enforcementPoints": [
+    "policy decision point",
+    "policy enforcement point"
+  ],
+  "evidenceProducers": [
+    "authority resolver",
+    "decision service"
+  ],
+  "reviewAuthorities": [
+    "accountable review authority"
+  ],
+  "artifacts": [
+    "README.md",
+    "pattern.json",
+    "conformance-claim.json",
+    "authority.valid.json",
+    "decision-receipt.valid.json",
+    "authority.invalid.json"
+  ],
+  "schemaFixtures": [
+    "authority.valid.json",
+    "decision-receipt.valid.json",
+    "authority.invalid.json"
+  ],
+  "behaviouralVectors": [
+    "authority-active-valid",
+    "delegation-attenuated-valid",
+    "delegation-amplification-rejected",
+    "runtime-revocation-fail-closed-valid",
+    "decision-traceable-valid",
+    "decision-missing-evidence-rejected"
+  ],
+  "supportingExamples": [],
+  "positiveScenarios": [
+    {
+      "id": "positive-001",
+      "description": "Valid authority and current evidence satisfy the selected governance controls.",
+      "expectedResult": "accepted"
+    }
+  ],
+  "negativeScenarios": [
+    {
+      "id": "negative-001",
+      "description": "Invalid, stale, or insufficient authority evidence is presented.",
+      "expectedResult": "rejected"
+    }
+  ],
+  "limitations": [
+    "Reference pattern only; not independently assessed.",
+    "The current commit establishes architecture and validation, not full assurance-ready scenario documentation."
+  ],
+  "validationCommand": "python scripts/validate.py"
+}

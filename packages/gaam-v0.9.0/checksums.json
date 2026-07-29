@@ -3,6 +3,106 @@
   "scope": "declared source artifacts excluding this checksum file",
   "files": [
     {
+      "path": "examples/README.md",
+      "sha256": "0c281cbd10511f151b6f8900e32a8c2e00683b1d8920ca28c0202fdbc04e88e3"
+    },
+    {
+      "path": "examples/catalog.json",
+      "sha256": "329b692ee8ff8aeba06f073604bf92c9b88402092eaef512ad01f39d1b450f08"
+    },
+    {
+      "path": "examples/cross-registry-recognition/README.md",
+      "sha256": "295a56132c58056d2a32ad54a58dc5939d2cc29666413afebe0d6e4b9e233b32"
+    },
+    {
+      "path": "examples/cross-registry-recognition/authority.invalid.json",
+      "sha256": "79531abae4d194255866aa7fa936982e46110b2f9d07d9f98f5b7dad2122ab98"
+    },
+    {
+      "path": "examples/cross-registry-recognition/authority.valid.json",
+      "sha256": "4a2bb989451effe27761b7b9efde4c792784d18f73faf19b7fee9d6e6b12b8fc"
+    },
+    {
+      "path": "examples/cross-registry-recognition/conformance-claim.json",
+      "sha256": "09120234c8cc6406a34bb4ad67ceb02ad936cbd0391b3c09f7462e82327601fc"
+    },
+    {
+      "path": "examples/cross-registry-recognition/decision-receipt.valid.json",
+      "sha256": "03ba738f997249d35af8e44f907c1112197045130e1dd641466d45ace8ae9bdd"
+    },
+    {
+      "path": "examples/cross-registry-recognition/pattern.json",
+      "sha256": "ba2481275894d55dc8d0ba178b16434127d883ab4dc380497fc50019eb2c6901"
+    },
+    {
+      "path": "examples/delegated-agent-purchase/README.md",
+      "sha256": "96b9ea50f07de621414596e01792b793beb287f02e1c5727bd36d5b6bc88c6b5"
+    },
+    {
+      "path": "examples/delegated-agent-purchase/authority.invalid.json",
+      "sha256": "554a9cce1281dec93887c25edd0fb611bbd856c3594fd1b64b5d2ad04fd2ad91"
+    },
+    {
+      "path": "examples/delegated-agent-purchase/authority.valid.json",
+      "sha256": "118144ec25aed8d43f8c907db30882c52093afe88c6f8ceb71a4286d66a8c18a"
+    },
+    {
+      "path": "examples/delegated-agent-purchase/conformance-claim.json",
+      "sha256": "10993207ea0d7410134669abb8fb255781f00a4e9b3e23436af3b31deb2d27eb"
+    },
+    {
+      "path": "examples/delegated-agent-purchase/decision-receipt.valid.json",
+      "sha256": "d24febdd26d06955b61cedc3776452feeb35249692b94ae4dede00408c24c850"
+    },
+    {
+      "path": "examples/delegated-agent-purchase/pattern.json",
+      "sha256": "a836c5fef832760eb028c87d7e03526b314cf80f897ec66138555009cd1828fc"
+    },
+    {
+      "path": "examples/high-impact-multi-agent-service/README.md",
+      "sha256": "392cca7a86bb203d8e155a23d0e2469e798dee91ef3fd187f19718ae0e26fac7"
+    },
+    {
+      "path": "examples/high-impact-multi-agent-service/authority.invalid.json",
+      "sha256": "fb3c625bffa07577a0c55637f0e99794f1c93b16440fbaacb70d693c253d667f"
+    },
+    {
+      "path": "examples/high-impact-multi-agent-service/authority.valid.json",
+      "sha256": "7a18bb7d48a2845641ed670953a31011a3e9fa88c4300fbe2a6e75d88afe30af"
+    },
+    {
+      "path": "examples/high-impact-multi-agent-service/conformance-claim.json",
+      "sha256": "22ce9aff41bf1e6e29df16d39b9e059158e35f25063bcd3039810827320c1be3"
+    },
+    {
+      "path": "examples/high-impact-multi-agent-service/decision-receipt.valid.json",
+      "sha256": "617a17147412023c1148d95b0b7cec35409a3360d9d984621e574d45422b9565"
+    },
+    {
+      "path": "examples/high-impact-multi-agent-service/pattern.json",
+      "sha256": "25c06d5784b4a063ec9db8e55e796a91ecc00fe11c6f1a8d3c9aa7d27010bcf8"
+    },
+    {
+      "path": "examples/index.md",
+      "sha256": "136919dbe56ae4ca44911ee7e921051f4aa18e5bb8a4671e588cfc4d38bcf753"
+    },
+    {
+      "path": "examples/pattern-manifest.schema.json",
+      "sha256": "5020014b56081c4521feb1c643df2e1db7ec606e3e1f5e1122ec548e6e3216ae"
+    },
+    {
+      "path": "examples/pattern-maturity-model.md",
+      "sha256": "c80012a7136fd7cf1b55bf9b0164e725f8390d65d3795b5c01fea91abd17a242"
+    },
+    {
+      "path": "examples/pattern-template.md",
+      "sha256": "cbdcbbbb64d33fd24b65be2611de631884d1489f057ff36e07dd8a637b59782d"
+    },
+    {
+      "path": "examples/pattern-validation-guide.md",
+      "sha256": "d3a8b8a3f13059a978a9d0e5f1f4fa8002e11c5be4acc7a73e1ed158dcbc8c9b"
+    },
+    {
       "path": "governance/candidate-issues.json",
       "sha256": "89bdb851d31c8b88a68dcdf29a9053e9854f707f326da51ca2a5bf9eb3ae2922"
     },
@@ -72,7 +172,7 @@
     },
     {
       "path": "packages/gaam-v0.9.0/manifest.json",
-      "sha256": "cc023e76c29820fc382f9dde99ad36003825299384977a38a92736bd6b5a85b5"
+      "sha256": "6a7e5d77ab1abcea37657e8068aa1ec25c8624e95fb1fcfc009ef653a9075b5e"
     },
     {
       "path": "profiles/manifests/agentic-systems.json",

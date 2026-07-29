@@ -92,3 +92,16 @@ All notable changes will be documented here. The project uses Semantic Versionin
 - Implementation, conformance and reviewer guidance.
 - Initial examples and architecture diagrams.
 - Repository governance, contribution, security and release hygiene.
+
+## Unreleased
+
+### Added
+
+- A common implementation-pattern architecture under `examples/`.
+- Machine-readable pattern manifests, catalogue, maturity model, template, and validation guide.
+- Controlled validator checks for pattern contracts, references, scenarios, maturity, catalogue coverage, and fixture classification.
+
+### Changed
+
+- Existing implementation examples now declare their profiles, requirements, actors, authority sources, enforcement points, evidence producers, behavioural vectors, scenarios, and limitations.
+- Package integrity collection now includes intended implementation-pattern artifacts recursively.

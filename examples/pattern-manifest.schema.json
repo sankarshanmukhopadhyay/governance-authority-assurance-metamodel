@@ -1,0 +1,195 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://sankarshanmukhopadhyay.github.io/governance-authority-assurance-metamodel/v0.9.0/examples/pattern-manifest.schema.json",
+  "title": "GAAM Implementation Pattern Manifest",
+  "type": "object",
+  "required": [
+    "id",
+    "title",
+    "status",
+    "maturity",
+    "gaamVersion",
+    "profiles",
+    "requirements",
+    "actors",
+    "authoritySources",
+    "enforcementPoints",
+    "evidenceProducers",
+    "reviewAuthorities",
+    "artifacts",
+    "schemaFixtures",
+    "behaviouralVectors",
+    "supportingExamples",
+    "positiveScenarios",
+    "negativeScenarios",
+    "limitations",
+    "validationCommand"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^gaam:pattern:[a-z0-9-]+:0\\.9\\.0$"
+    },
+    "title": {
+      "type": "string",
+      "minLength": 1
+    },
+    "status": {
+      "enum": [
+        "draft",
+        "candidate",
+        "stable",
+        "deprecated"
+      ]
+    },
+    "maturity": {
+      "enum": [
+        "conceptual",
+        "structural",
+        "behavioural",
+        "operational",
+        "assurance-ready",
+        "interoperability-tested"
+      ]
+    },
+    "gaamVersion": {
+      "const": "0.9.0"
+    },
+    "implementationDomain": {
+      "type": "string"
+    },
+    "profiles": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "type": "string"
+      }
+    },
+    "requirements": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "type": "string"
+      }
+    },
+    "actors": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "type": "string"
+      }
+    },
+    "authoritySources": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string"
+      }
+    },
+    "enforcementPoints": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string"
+      }
+    },
+    "evidenceProducers": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string"
+      }
+    },
+    "reviewAuthorities": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string"
+      }
+    },
+    "artifacts": {
+      "type": "array",
+      "minItems": 3,
+      "uniqueItems": true,
+      "items": {
+        "type": "string"
+      }
+    },
+    "schemaFixtures": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "behaviouralVectors": {
+      "type": "array",
+      "minItems": 2,
+      "uniqueItems": true,
+      "items": {
+        "type": "string"
+      }
+    },
+    "supportingExamples": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "positiveScenarios": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "#/$defs/scenario"
+      }
+    },
+    "negativeScenarios": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "#/$defs/scenario"
+      }
+    },
+    "limitations": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string"
+      }
+    },
+    "validationCommand": {
+      "type": "string",
+      "minLength": 1
+    }
+  },
+  "additionalProperties": false,
+  "$defs": {
+    "scenario": {
+      "type": "object",
+      "required": [
+        "id",
+        "description",
+        "expectedResult"
+      ],
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "expectedResult": {
+          "enum": [
+            "accepted",
+            "rejected",
+            "indeterminate",
+            "review-required"
+          ]
+        }
+      },
+      "additionalProperties": false
+    }
+  }
+}

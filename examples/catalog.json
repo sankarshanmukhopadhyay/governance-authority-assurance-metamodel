@@ -1,0 +1,21 @@
+{
+  "gaamVersion": "0.9.0",
+  "status": "candidate",
+  "patterns": [
+    {
+      "id": "gaam:pattern:cross-registry-recognition:0.9.0",
+      "path": "cross-registry-recognition/pattern.json",
+      "title": "Cross Registry Recognition"
+    },
+    {
+      "id": "gaam:pattern:delegated-agent-purchase:0.9.0",
+      "path": "delegated-agent-purchase/pattern.json",
+      "title": "Delegated Agent Purchase"
+    },
+    {
+      "id": "gaam:pattern:high-impact-multi-agent-service:0.9.0",
+      "path": "high-impact-multi-agent-service/pattern.json",
+      "title": "High Impact Multi Agent Service"
+    }
+  ]
+}

@@ -230,6 +230,131 @@
       "mediaType": "application/json"
     },
     {
+      "id": "examples-README",
+      "path": "examples/README.md",
+      "mediaType": "text/markdown"
+    },
+    {
+      "id": "examples-catalog",
+      "path": "examples/catalog.json",
+      "mediaType": "application/json"
+    },
+    {
+      "id": "examples-cross-registry-recognition-README",
+      "path": "examples/cross-registry-recognition/README.md",
+      "mediaType": "text/markdown"
+    },
+    {
+      "id": "examples-cross-registry-recognition-authority.invalid",
+      "path": "examples/cross-registry-recognition/authority.invalid.json",
+      "mediaType": "application/json"
+    },
+    {
+      "id": "examples-cross-registry-recognition-authority.valid",
+      "path": "examples/cross-registry-recognition/authority.valid.json",
+      "mediaType": "application/json"
+    },
+    {
+      "id": "examples-cross-registry-recognition-conformance-claim",
+      "path": "examples/cross-registry-recognition/conformance-claim.json",
+      "mediaType": "application/json"
+    },
+    {
+      "id": "examples-cross-registry-recognition-decision-receipt.valid",
+      "path": "examples/cross-registry-recognition/decision-receipt.valid.json",
+      "mediaType": "application/json"
+    },
+    {
+      "id": "examples-cross-registry-recognition-pattern",
+      "path": "examples/cross-registry-recognition/pattern.json",
+      "mediaType": "application/json"
+    },
+    {
+      "id": "examples-delegated-agent-purchase-README",
+      "path": "examples/delegated-agent-purchase/README.md",
+      "mediaType": "text/markdown"
+    },
+    {
+      "id": "examples-delegated-agent-purchase-authority.invalid",
+      "path": "examples/delegated-agent-purchase/authority.invalid.json",
+      "mediaType": "application/json"
+    },
+    {
+      "id": "examples-delegated-agent-purchase-authority.valid",
+      "path": "examples/delegated-agent-purchase/authority.valid.json",
+      "mediaType": "application/json"
+    },
+    {
+      "id": "examples-delegated-agent-purchase-conformance-claim",
+      "path": "examples/delegated-agent-purchase/conformance-claim.json",
+      "mediaType": "application/json"
+    },
+    {
+      "id": "examples-delegated-agent-purchase-decision-receipt.valid",
+      "path": "examples/delegated-agent-purchase/decision-receipt.valid.json",
+      "mediaType": "application/json"
+    },
+    {
+      "id": "examples-delegated-agent-purchase-pattern",
+      "path": "examples/delegated-agent-purchase/pattern.json",
+      "mediaType": "application/json"
+    },
+    {
+      "id": "examples-high-impact-multi-agent-service-README",
+      "path": "examples/high-impact-multi-agent-service/README.md",
+      "mediaType": "text/markdown"
+    },
+    {
+      "id": "examples-high-impact-multi-agent-service-authority.invalid",
+      "path": "examples/high-impact-multi-agent-service/authority.invalid.json",
+      "mediaType": "application/json"
+    },
+    {
+      "id": "examples-high-impact-multi-agent-service-authority.valid",
+      "path": "examples/high-impact-multi-agent-service/authority.valid.json",
+      "mediaType": "application/json"
+    },
+    {
+      "id": "examples-high-impact-multi-agent-service-conformance-claim",
+      "path": "examples/high-impact-multi-agent-service/conformance-claim.json",
+      "mediaType": "application/json"
+    },
+    {
+      "id": "examples-high-impact-multi-agent-service-decision-receipt.valid",
+      "path": "examples/high-impact-multi-agent-service/decision-receipt.valid.json",
+      "mediaType": "application/json"
+    },
+    {
+      "id": "examples-high-impact-multi-agent-service-pattern",
+      "path": "examples/high-impact-multi-agent-service/pattern.json",
+      "mediaType": "application/json"
+    },
+    {
+      "id": "examples-index",
+      "path": "examples/index.md",
+      "mediaType": "text/markdown"
+    },
+    {
+      "id": "examples-pattern-manifest.schema",
+      "path": "examples/pattern-manifest.schema.json",
+      "mediaType": "application/json"
+    },
+    {
+      "id": "examples-pattern-maturity-model",
+      "path": "examples/pattern-maturity-model.md",
+      "mediaType": "text/markdown"
+    },
+    {
+      "id": "examples-pattern-template",
+      "path": "examples/pattern-template.md",
+      "mediaType": "text/markdown"
+    },
+    {
+      "id": "examples-pattern-validation-guide",
+      "path": "examples/pattern-validation-guide.md",
+      "mediaType": "text/markdown"
+    },
+    {
       "id": "governance-reviews-README",
       "path": "governance/reviews/README.md",
       "mediaType": "text/markdown"

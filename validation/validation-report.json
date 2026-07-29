@@ -2,8 +2,8 @@
   "gaamVersion": "0.9.0",
   "testSuiteVersion": "0.9.0",
   "status": "pass",
-  "checks": 90,
-  "passed": 90,
+  "checks": 115,
+  "passed": 115,
   "failed": 0,
   "results": [
     {
@@ -217,6 +217,60 @@
       "evidence": "all profile dependencies resolve"
     },
     {
+      "id": "PAT-SCHEMA",
+      "kind": "pattern",
+      "status": "pass",
+      "evidence": "pattern manifest schema is valid Draft 2020-12"
+    },
+    {
+      "id": "PAT-CATALOGUE-STRUCTURE",
+      "kind": "pattern",
+      "status": "pass",
+      "evidence": "3 catalogue entries"
+    },
+    {
+      "id": "PAT-cross-registry-recognition-CONTRACT",
+      "kind": "pattern",
+      "status": "pass",
+      "evidence": "required files present"
+    },
+    {
+      "id": "PAT-cross-registry-recognition-MANIFEST",
+      "kind": "pattern",
+      "status": "pass",
+      "evidence": "manifest conforms"
+    },
+    {
+      "id": "PAT-cross-registry-recognition-REFERENCES",
+      "kind": "pattern",
+      "status": "pass",
+      "evidence": "profiles, requirements, artifacts and behavioural vectors resolve"
+    },
+    {
+      "id": "PAT-cross-registry-recognition-SCENARIOS",
+      "kind": "pattern",
+      "status": "pass",
+      "evidence": "positive and negative scenarios declare expected results"
+    },
+    {
+      "id": "PAT-cross-registry-recognition-LIMITATIONS",
+      "kind": "pattern",
+      "status": "pass",
+      "evidence": "conformance limitations declared"
+    },
+    {
+      "id": "PAT-cross-registry-recognition-MATURITY",
+      "kind": "pattern",
+      "status": "pass",
+      "evidence": "maturity claim structural supported by declared evidence"
+    },
+    {
+      "id": "PAT-cross-registry-recognition-CATALOGUE",
+      "kind": "pattern",
+      "status": "pass",
+      "evidence": "catalogue entry resolves"
+    },
+    {
       "id": "FIX-cross-registry-recognition-authority.valid",
       "kind": "fixture",
       "status": "pass",
@@ -239,6 +293,48 @@
       "kind": "conformance",
       "status": "pass",
       "evidence": "schema, evidence and independence rules satisfied"
+    },
+    {
+      "id": "PAT-delegated-agent-purchase-CONTRACT",
+      "kind": "pattern",
+      "status": "pass",
+      "evidence": "required files present"
+    },
+    {
+      "id": "PAT-delegated-agent-purchase-MANIFEST",
+      "kind": "pattern",
+      "status": "pass",
+      "evidence": "manifest conforms"
+    },
+    {
+      "id": "PAT-delegated-agent-purchase-REFERENCES",
+      "kind": "pattern",
+      "status": "pass",
+      "evidence": "profiles, requirements, artifacts and behavioural vectors resolve"
+    },
+    {
+      "id": "PAT-delegated-agent-purchase-SCENARIOS",
+      "kind": "pattern",
+      "status": "pass",
+      "evidence": "positive and negative scenarios declare expected results"
+    },
+    {
+      "id": "PAT-delegated-agent-purchase-LIMITATIONS",
+      "kind": "pattern",
+      "status": "pass",
+      "evidence": "conformance limitations declared"
+    },
+    {
+      "id": "PAT-delegated-agent-purchase-MATURITY",
+      "kind": "pattern",
+      "status": "pass",
+      "evidence": "maturity claim structural supported by declared evidence"
+    },
+    {
+      "id": "PAT-delegated-agent-purchase-CATALOGUE",
+      "kind": "pattern",
+      "status": "pass",
+      "evidence": "catalogue entry resolves"
     },
     {
       "id": "FIX-delegated-agent-purchase-authority.valid",
@@ -265,6 +361,48 @@
       "evidence": "schema, evidence and independence rules satisfied"
     },
     {
+      "id": "PAT-high-impact-multi-agent-service-CONTRACT",
+      "kind": "pattern",
+      "status": "pass",
+      "evidence": "required files present"
+    },
+    {
+      "id": "PAT-high-impact-multi-agent-service-MANIFEST",
+      "kind": "pattern",
+      "status": "pass",
+      "evidence": "manifest conforms"
+    },
+    {
+      "id": "PAT-high-impact-multi-agent-service-REFERENCES",
+      "kind": "pattern",
+      "status": "pass",
+      "evidence": "profiles, requirements, artifacts and behavioural vectors resolve"
+    },
+    {
+      "id": "PAT-high-impact-multi-agent-service-SCENARIOS",
+      "kind": "pattern",
+      "status": "pass",
+      "evidence": "positive and negative scenarios declare expected results"
+    },
+    {
+      "id": "PAT-high-impact-multi-agent-service-LIMITATIONS",
+      "kind": "pattern",
+      "status": "pass",
+      "evidence": "conformance limitations declared"
+    },
+    {
+      "id": "PAT-high-impact-multi-agent-service-MATURITY",
+      "kind": "pattern",
+      "status": "pass",
+      "evidence": "maturity claim structural supported by declared evidence"
+    },
+    {
+      "id": "PAT-high-impact-multi-agent-service-CATALOGUE",
+      "kind": "pattern",
+      "status": "pass",
+      "evidence": "catalogue entry resolves"
+    },
+    {
       "id": "FIX-high-impact-multi-agent-service-authority.valid",
       "kind": "fixture",
       "status": "pass",
@@ -287,6 +425,18 @@
       "kind": "conformance",
       "status": "pass",
       "evidence": "schema, evidence and independence rules satisfied"
+    },
+    {
+      "id": "PAT-IDS",
+      "kind": "pattern",
+      "status": "pass",
+      "evidence": "3 unique pattern identifiers"
+    },
+    {
+      "id": "PAT-CATALOGUE-COVERAGE",
+      "kind": "pattern",
+      "status": "pass",
+      "evidence": "catalogue covers 3 patterns"
     },
     {
       "id": "BEH-assurance-expired-rejected",
@@ -544,7 +694,7 @@
       "id": "PKG-INTEGRITY",
       "kind": "package",
       "status": "pass",
-      "evidence": "75 checksums verified"
+      "evidence": "100 checksums verified"
     }
   ]
 }

@@ -2,8 +2,8 @@
   "gaamVersion": "0.9.0",
   "testSuiteVersion": "0.9.0",
   "status": "pass",
-  "checks": 233,
-  "passed": 233,
+  "checks": 236,
+  "passed": 236,
   "failed": 0,
   "results": [
     {
@@ -71,6 +71,24 @@
       "kind": "publication",
       "status": "pass",
       "evidence": "top-level workflow order is deterministic"
+    },
+    {
+      "id": "PUB-FUTURE-EVOLUTION",
+      "kind": "publication",
+      "status": "pass",
+      "evidence": "future-evolution programme published as informative research"
+    },
+    {
+      "id": "GOV-FUTURE-REGISTER",
+      "kind": "governance",
+      "status": "pass",
+      "evidence": "25 future enhancements classified with controlled delivery and promotion states"
+    },
+    {
+      "id": "GOV-FUTURE-BOUNDARY",
+      "kind": "governance",
+      "status": "pass",
+      "evidence": "future-evolution assets cannot be mistaken for GAAM v0.9.0 conformance material"
     },
     {
       "id": "REQ-001-unique",
@@ -1402,7 +1420,7 @@
       "id": "PKG-INTEGRITY",
       "kind": "package",
       "status": "pass",
-      "evidence": "314 checksums verified"
+      "evidence": "336 checksums verified"
     }
   ]
 }

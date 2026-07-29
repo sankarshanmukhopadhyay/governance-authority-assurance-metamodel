@@ -3,6 +3,90 @@
   "scope": "declared source artifacts excluding this checksum file",
   "files": [
     {
+      "path": "docs/future-evolution/concept-classification.md",
+      "sha256": "7171e3fabf874f54387ced75fb1c1eb6cac82958d7e7c663e07b8b6c4c6149b5"
+    },
+    {
+      "path": "docs/future-evolution/concepts/affected-parties-and-remedy.md",
+      "sha256": "74383ee0a80b03df4d7cd823ad7c6511e4138f32223f48d24826cfe832e1383e"
+    },
+    {
+      "path": "docs/future-evolution/concepts/agent-and-composite-action-governance.md",
+      "sha256": "d42f04f097f2c57d8f530ba9792da9bb2edf64baa38e8f90a2cd852274074c6a"
+    },
+    {
+      "path": "docs/future-evolution/concepts/assurance-composition-and-dependency.md",
+      "sha256": "0fc241ee7a516417927fc15db3ab30a9d5c3d5cd2367c4cd274913e9923b46d8"
+    },
+    {
+      "path": "docs/future-evolution/concepts/authority-scope-composition.md",
+      "sha256": "1ec83900a2797edb35405417b573d1fa86c3089c2ccedcadfdee976797650f0f"
+    },
+    {
+      "path": "docs/future-evolution/concepts/continuity-caching-and-revocation.md",
+      "sha256": "6865954f15c47908755d1e81c947a16d3a6325c5639ce1691f8bb8e65af80454"
+    },
+    {
+      "path": "docs/future-evolution/concepts/evidence-predicates.md",
+      "sha256": "eb33670baf307b88c6171602d545a6d04fba38e25d73a92b7341dd07fa180f17"
+    },
+    {
+      "path": "docs/future-evolution/concepts/framework-composition.md",
+      "sha256": "46ccee600ddb1726fdf5a0624320bdf848578053e561776c0e5a7b2ce3d10ea8"
+    },
+    {
+      "path": "docs/future-evolution/concepts/index.md",
+      "sha256": "0d260e972bdd2d126f16d3729ddbc831df07775e1b91e6a4e7c4331aa84d2830"
+    },
+    {
+      "path": "docs/future-evolution/concepts/institutional-succession.md",
+      "sha256": "263a19ebf31af24e587ac8e016c89f3cbcb7aa59e3ee91347acf70d0508f21d5"
+    },
+    {
+      "path": "docs/future-evolution/concepts/jurisdiction-market-and-systemic-governance.md",
+      "sha256": "000a07460b71d61dc428a446eab259b3aa00ad581c0b85b027dbf7837751b053"
+    },
+    {
+      "path": "docs/future-evolution/concepts/obligation-lifecycle.md",
+      "sha256": "dc21dca5db3fa31c04f33c87be0f15101c0c3f00b1a75629041b768856e3499c"
+    },
+    {
+      "path": "docs/future-evolution/concepts/organisational-authority-chains.md",
+      "sha256": "243fec36973934ea87b7175f0899a91e660471868a72237a8747381d3c3250cd"
+    },
+    {
+      "path": "docs/future-evolution/concepts/privacy-inference-and-observability.md",
+      "sha256": "9ddd2102207c9df57472acaf0a51f4db546c35636236a947f52ba05bf8ad76f7"
+    },
+    {
+      "path": "docs/future-evolution/concepts/standing-qualification-and-recognition.md",
+      "sha256": "5f3591394ecd24eccc64e3c2c70edc2a9b207d2c63b8a04c70ff24d228289539"
+    },
+    {
+      "path": "docs/future-evolution/concepts/temporal-governance.md",
+      "sha256": "959b9439516350306d1a569ff0eedaf11adbe1ba29c4e626068b3124b34a17d4"
+    },
+    {
+      "path": "docs/future-evolution/concepts/uncertainty-and-confidence.md",
+      "sha256": "f8bd946aee1944731ed89496cd0c205c4ec8a618b601fb4bc075108bc4e18d66"
+    },
+    {
+      "path": "docs/future-evolution/delivery-roadmap.md",
+      "sha256": "232b20fd1b0a0e7188bd4001bd8994f863c151ea18c4a0b2de2f025edf5e21b0"
+    },
+    {
+      "path": "docs/future-evolution/expansion-principles.md",
+      "sha256": "3370068387188076cf255b5d4bb4bc33b155f8e1ee94b3ff4071266a1a850166"
+    },
+    {
+      "path": "docs/future-evolution/index.md",
+      "sha256": "1edd32fc27a741e211e6ecbbdd134666621cdbfb7450f891d1af9740d91651c6"
+    },
+    {
+      "path": "docs/future-evolution/normative-boundary.md",
+      "sha256": "585dec5b02fa2148986201d4ddf57bc59165307fe3c3d323a2b7a26503a55b4d"
+    },
+    {
       "path": "examples/README.md",
       "sha256": "da62beece5c90dafe7196511591b7d355fabd4e00c27b516d9a6b270d2496d26"
     },
@@ -963,6 +1047,10 @@
       "sha256": "89bdb851d31c8b88a68dcdf29a9053e9854f707f326da51ca2a5bf9eb3ae2922"
     },
     {
+      "path": "governance/future-enhancement-register.json",
+      "sha256": "9667dfe9ceaba166ac2edaaaf53ad1119c4ed66d2082e9cee5b6cb998c8c298b"
+    },
+    {
       "path": "governance/reviews/affected-party-review.json",
       "sha256": "64b4b06a1c6c09b163ed82f004e9c3ed18bc3e46cd1c00d80b754311de487780"
     },
@@ -1028,7 +1116,7 @@
     },
     {
       "path": "packages/gaam-v0.9.0/manifest.json",
-      "sha256": "b1a84517609e5ada09be96b2246f7cc968f87ecfc31113709e705ded72297240"
+      "sha256": "dea06e1ecfc8edaa1459c1c6b06a9586dfdf3aaabaf3af3a36daf80b17b12318"
     },
     {
       "path": "profiles/manifests/agentic-systems.json",

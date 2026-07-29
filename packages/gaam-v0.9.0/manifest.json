@@ -1483,6 +1483,116 @@
       "id": "pattern-validation-guide",
       "path": "examples/pattern-validation-guide.md",
       "mediaType": "text/markdown"
+    },
+    {
+      "id": "concept-classification",
+      "path": "docs/future-evolution/concept-classification.md",
+      "mediaType": "text/markdown"
+    },
+    {
+      "id": "affected-parties-and-remedy",
+      "path": "docs/future-evolution/concepts/affected-parties-and-remedy.md",
+      "mediaType": "text/markdown"
+    },
+    {
+      "id": "agent-and-composite-action-governance",
+      "path": "docs/future-evolution/concepts/agent-and-composite-action-governance.md",
+      "mediaType": "text/markdown"
+    },
+    {
+      "id": "assurance-composition-and-dependency",
+      "path": "docs/future-evolution/concepts/assurance-composition-and-dependency.md",
+      "mediaType": "text/markdown"
+    },
+    {
+      "id": "authority-scope-composition",
+      "path": "docs/future-evolution/concepts/authority-scope-composition.md",
+      "mediaType": "text/markdown"
+    },
+    {
+      "id": "continuity-caching-and-revocation",
+      "path": "docs/future-evolution/concepts/continuity-caching-and-revocation.md",
+      "mediaType": "text/markdown"
+    },
+    {
+      "id": "evidence-predicates",
+      "path": "docs/future-evolution/concepts/evidence-predicates.md",
+      "mediaType": "text/markdown"
+    },
+    {
+      "id": "framework-composition",
+      "path": "docs/future-evolution/concepts/framework-composition.md",
+      "mediaType": "text/markdown"
+    },
+    {
+      "id": "index",
+      "path": "docs/future-evolution/concepts/index.md",
+      "mediaType": "text/markdown"
+    },
+    {
+      "id": "institutional-succession",
+      "path": "docs/future-evolution/concepts/institutional-succession.md",
+      "mediaType": "text/markdown"
+    },
+    {
+      "id": "jurisdiction-market-and-systemic-governance",
+      "path": "docs/future-evolution/concepts/jurisdiction-market-and-systemic-governance.md",
+      "mediaType": "text/markdown"
+    },
+    {
+      "id": "obligation-lifecycle",
+      "path": "docs/future-evolution/concepts/obligation-lifecycle.md",
+      "mediaType": "text/markdown"
+    },
+    {
+      "id": "organisational-authority-chains",
+      "path": "docs/future-evolution/concepts/organisational-authority-chains.md",
+      "mediaType": "text/markdown"
+    },
+    {
+      "id": "privacy-inference-and-observability",
+      "path": "docs/future-evolution/concepts/privacy-inference-and-observability.md",
+      "mediaType": "text/markdown"
+    },
+    {
+      "id": "standing-qualification-and-recognition",
+      "path": "docs/future-evolution/concepts/standing-qualification-and-recognition.md",
+      "mediaType": "text/markdown"
+    },
+    {
+      "id": "temporal-governance",
+      "path": "docs/future-evolution/concepts/temporal-governance.md",
+      "mediaType": "text/markdown"
+    },
+    {
+      "id": "uncertainty-and-confidence",
+      "path": "docs/future-evolution/concepts/uncertainty-and-confidence.md",
+      "mediaType": "text/markdown"
+    },
+    {
+      "id": "delivery-roadmap",
+      "path": "docs/future-evolution/delivery-roadmap.md",
+      "mediaType": "text/markdown"
+    },
+    {
+      "id": "expansion-principles",
+      "path": "docs/future-evolution/expansion-principles.md",
+      "mediaType": "text/markdown"
+    },
+    {
+      "id": "index",
+      "path": "docs/future-evolution/index.md",
+      "mediaType": "text/markdown"
+    },
+    {
+      "id": "normative-boundary",
+      "path": "docs/future-evolution/normative-boundary.md",
+      "mediaType": "text/markdown"
+    },
+    {
+      "id": "future-enhancement-register",
+      "path": "governance/future-enhancement-register.json",
+      "mediaType": "application/json"
     }
   ],
   "schemas": [

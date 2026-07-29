@@ -21,6 +21,7 @@ GAAM documentation is arranged by authority level and implementation function. T
 | Implementation patterns | Informative | Demonstrate application without creating requirements | [Examples](../examples/index.md) |
 | Assurance and risk | Normative/informative as marked | Trace requirements, controls, tests and evidence | [Conformance](../conformance/index.md), [Appendices → Matrices](../matrices/index.md) |
 | Decision history | Governance evidence | Explain why architectural choices were made | [ADRs](../decisions/index.md) |
+| Future evolution | Informative research | Test candidate concepts before normative promotion | [Documentation → Future Evolution](future-evolution/index.md) |
 
 Reference and lookup material, including the glossary, controlled vocabularies, matrices, source crosswalks, frequently asked questions, and editorial guidance, is collected under [Appendices](../appendices/index.md). This navigation grouping does not change the authority of the underlying artifacts.
 

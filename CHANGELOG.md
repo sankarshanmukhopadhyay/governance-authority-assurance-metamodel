@@ -9,6 +9,7 @@ normative_status: "Release record"
 
 ### Documentation
 
+- Added a validator-controlled Future Evolution programme with expansion principles, concept classification, a normative boundary, a four-commit delivery roadmap, fifteen candidate concept pages, and a 25-entry machine-readable enhancement register. GAAM v0.9.0 normative requirements, schemas, profiles, vocabularies, conformance semantics, and threat-model content remain unchanged.
 - Reorganised site navigation with four grouped Documentation routes, a top-level Implementation Reports workflow, and an Appendices section for glossary, vocabularies, matrices, mappings, FAQ, style guidance, and publication documentation. Existing file paths and permalinks remain unchanged.
 
 ## Unreleased: assurance-ready composed patterns

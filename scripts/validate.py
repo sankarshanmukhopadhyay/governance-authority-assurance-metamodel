@@ -97,6 +97,57 @@ for page,order in top_orders.items():
  fm,valid=front_matter(ROOT/page)
  if not valid or fm.get('nav_order')!=order: order_errors.append(f'{page}: expected nav_order {order}')
 add('PUB-IA-TOP-ORDER',not order_errors,'top-level workflow order is deterministic' if not order_errors else '; '.join(order_errors),'publication')
+# Future-evolution programme: informative research boundary and controlled register
+future_root=ROOT/'docs/future-evolution'
+future_required={
+ 'index.md','expansion-principles.md','concept-classification.md','normative-boundary.md','delivery-roadmap.md','concepts/index.md',
+ 'concepts/standing-qualification-and-recognition.md','concepts/framework-composition.md','concepts/institutional-succession.md',
+ 'concepts/authority-scope-composition.md','concepts/obligation-lifecycle.md','concepts/temporal-governance.md',
+ 'concepts/evidence-predicates.md','concepts/uncertainty-and-confidence.md','concepts/organisational-authority-chains.md',
+ 'concepts/agent-and-composite-action-governance.md','concepts/assurance-composition-and-dependency.md',
+ 'concepts/continuity-caching-and-revocation.md','concepts/privacy-inference-and-observability.md',
+ 'concepts/affected-parties-and-remedy.md','concepts/jurisdiction-market-and-systemic-governance.md'
+}
+future_missing=sorted(x for x in future_required if not (future_root/x).exists())
+future_errors=[]
+ffm,fvalid=front_matter(future_root/'index.md') if (future_root/'index.md').exists() else ({},False)
+if not fvalid or ffm.get('parent')!='Documentation' or ffm.get('nav_order')!='5' or ffm.get('has_children')!='true' or ffm.get('normative_status')!='Informative': future_errors.append('future-evolution index has invalid publication boundary')
+for md in sorted((future_root/'concepts').glob('*.md')) if (future_root/'concepts').exists() else []:
+ if md.name=='index.md': continue
+ fm,valid=front_matter(md)
+ if not valid or fm.get('nav_exclude')!='true' or fm.get('normative_status')!='Informative': future_errors.append(f'{md.relative_to(ROOT)}: candidate concept publication boundary invalid')
+add('PUB-FUTURE-EVOLUTION',not future_missing and not future_errors,'future-evolution programme published as informative research' if not future_missing and not future_errors else '; '.join(future_missing+future_errors),'publication')
+future_register_path=ROOT/'governance/future-enhancement-register.json'
+future_register_errors=[]
+valid_future_gaps={'already-covered','guidance-gap','pattern-gap','schema-gap','vocabulary-gap','profile-gap','normative-semantics-gap','test-gap','evidence-gap'}
+valid_future_layers={'informative-concept','draft-profile','experimental-schema','experimental-fields','experimental-vocabulary','implementation-pattern','implementation-guidance','behavioural-test','core-candidate'}
+valid_future_statuses={'candidate','in-analysis','evidence-collection','review-ready','closed'}
+valid_promotion={'not-assessed','retain-as-guidance','retain-as-pattern','retain-as-experimental','promote-to-profile','promote-to-core','promote-to-normative-schema','defer','reject'}
+try:
+ fr=load(future_register_path)
+ if fr.get('gaamVersion')!=VERSION or fr.get('normativeStatus')!='informative' or fr.get('status')!='active-research': future_register_errors.append('register identity or normative boundary invalid')
+ entries=fr.get('entries',[]); feids=[x.get('id') for x in entries]
+ if len(entries)!=25 or len(feids)!=len(set(feids)): future_register_errors.append('register must contain 25 unique candidate enhancements')
+ for e in entries:
+  if e.get('status') not in valid_future_statuses: future_register_errors.append(f"{e.get('id')}: invalid status")
+  if e.get('gapClassification') not in valid_future_gaps: future_register_errors.append(f"{e.get('id')}: invalid gap classification")
+  layers=set(e.get('candidateDeliveryLayer',[]))
+  if not layers or not layers<=valid_future_layers: future_register_errors.append(f"{e.get('id')}: invalid delivery layer")
+  if e.get('promotionStatus') not in valid_promotion: future_register_errors.append(f"{e.get('id')}: invalid promotion status")
+  if not e.get('implementationEvidenceRequired'): future_register_errors.append(f"{e.get('id')}: evidence threshold missing")
+  baddeps=[x for x in e.get('dependencies',[]) if x not in feids]
+  if baddeps: future_register_errors.append(f"{e.get('id')}: unknown dependencies {baddeps}")
+except Exception as e: future_register_errors.append(str(e))
+add('GOV-FUTURE-REGISTER',not future_register_errors,'25 future enhancements classified with controlled delivery and promotion states' if not future_register_errors else '; '.join(future_register_errors[:10]),'governance')
+# Future evolution must not be represented as current conformance material
+future_boundary_errors=[]
+for pth in [ROOT/'docs/future-evolution', ROOT/'governance/future-enhancement-register.json']:
+ if not pth.exists(): future_boundary_errors.append(str(pth.relative_to(ROOT))+' missing')
+for pth in (future_root.rglob('*') if future_root.exists() else []):
+ if pth.is_file() and pth.suffix in {'.md','.json'}:
+  txt=pth.read_text(errors='ignore')
+  if 'normative_status: Normative' in txt or 'normativeStatus": "normative"' in txt: future_boundary_errors.append(f'{pth.relative_to(ROOT)} claims normative status')
+add('GOV-FUTURE-BOUNDARY',not future_boundary_errors,'future-evolution assets cannot be mistaken for GAAM v0.9.0 conformance material' if not future_boundary_errors else '; '.join(future_boundary_errors),'governance')
 # Requirements
 ids=re.findall(r'\*\*(GAAM-[A-Z]+-\d{3}):\*\*',spec)
 idx=list(csv.DictReader((ROOT/'matrices/normative-requirements-index.csv').open())); idxids=[r['requirement_id'] for r in idx]
@@ -337,6 +388,8 @@ artifact_paths=[REL['normativeSpecification'],'release.json','schemas/catalog.js
 artifact_paths += [str(p.relative_to(ROOT)) for b in ['schemas','vocabularies','profiles/manifests','tests/behavioural'] for p in sorted((ROOT/b).glob('*.json'))]
 artifact_paths += [str(p.relative_to(ROOT)) for p in sorted((ROOT/'governance/reviews').rglob('*')) if p.is_file() and p.name not in {'.gitkeep'}]
 artifact_paths += [str(p.relative_to(ROOT)) for p in sorted((ROOT/'examples').rglob('*')) if p.is_file() and p.name not in {'.gitkeep'}]
+artifact_paths += [str(p.relative_to(ROOT)) for p in sorted((ROOT/'docs/future-evolution').rglob('*')) if p.is_file() and p.name not in {'.gitkeep'}]
+artifact_paths += ['governance/future-enhancement-register.json']
 manifest={'id':f'urn:gaam:package:{VERSION}','type':'gaam-governance-package','gaamVersion':VERSION,'status':'active','profiles':sorted(manifests),'artifacts':[{'id':Path(x).stem,'path':x,'mediaType':'application/json' if x.endswith('.json') else 'text/markdown' if x.endswith('.md') else 'text/csv'} for x in artifact_paths if not x.startswith(('schemas/','vocabularies/'))], 'schemas':[p.name for p in sorted((ROOT/'schemas').glob('*.schema.json'))], 'vocabularies':[p.name for p in sorted((ROOT/'vocabularies').glob('*.json'))], 'integrity':{'algorithm':'sha-256','manifest':'checksums.json'}}
 (pkg/'manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
 perrs=list(Draft202012Validator(schemas['gaam-package']).iter_errors(manifest)); add('PKG-MANIFEST',not perrs,'package manifest conforms','package')

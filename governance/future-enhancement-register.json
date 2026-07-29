@@ -1,0 +1,548 @@
+{
+  "id": "urn:gaam:future-enhancement-register:0.9.0",
+  "type": "gaam-future-enhancement-register",
+  "gaamVersion": "0.9.0",
+  "status": "active-research",
+  "normativeStatus": "informative",
+  "programme": "GAAM future evolution",
+  "updatedAt": "2026-07-29",
+  "allowedPromotionStatuses": [
+    "not-assessed",
+    "retain-as-guidance",
+    "retain-as-pattern",
+    "retain-as-experimental",
+    "promote-to-profile",
+    "promote-to-core",
+    "promote-to-normative-schema",
+    "defer",
+    "reject"
+  ],
+  "entries": [
+    {
+      "id": "FE-001",
+      "title": "Standing, qualification and recognition",
+      "status": "candidate",
+      "problemStatement": "Participation predicates are often collapsed into one status.",
+      "currentCoverage": "Actors, roles, accreditation, authority and lifecycle already provide partial coverage.",
+      "gapClassification": "guidance-gap",
+      "candidateDeliveryLayer": [
+        "informative-concept",
+        "draft-profile"
+      ],
+      "dependencies": [],
+      "implementationEvidenceRequired": [
+        "two implementation patterns",
+        "independent terminology review"
+      ],
+      "normativeImpact": "none",
+      "promotionStatus": "not-assessed"
+    },
+    {
+      "id": "FE-002",
+      "title": "Governance-framework composition",
+      "status": "candidate",
+      "problemStatement": "Nested frameworks lack explicit inheritance, override and lifecycle dependency semantics.",
+      "currentCoverage": "Extensions, profiles and recognition provide partial coverage.",
+      "gapClassification": "normative-semantics-gap",
+      "candidateDeliveryLayer": [
+        "informative-concept",
+        "experimental-schema",
+        "core-candidate"
+      ],
+      "dependencies": [
+        "FE-001"
+      ],
+      "implementationEvidenceRequired": [
+        "two composed-framework implementations",
+        "conflict-precedence tests"
+      ],
+      "normativeImpact": "potential",
+      "promotionStatus": "not-assessed"
+    },
+    {
+      "id": "FE-003",
+      "title": "Institutional succession",
+      "status": "candidate",
+      "problemStatement": "Revocation does not fully model institutional replacement and continuity.",
+      "currentCoverage": "Lifecycle, emergency authority and transition controls provide partial coverage.",
+      "gapClassification": "profile-gap",
+      "candidateDeliveryLayer": [
+        "informative-concept",
+        "draft-profile",
+        "implementation-pattern"
+      ],
+      "dependencies": [
+        "FE-001",
+        "FE-002"
+      ],
+      "implementationEvidenceRequired": [
+        "succession pattern",
+        "continuity review"
+      ],
+      "normativeImpact": "none",
+      "promotionStatus": "not-assessed"
+    },
+    {
+      "id": "FE-004",
+      "title": "Authority-scope composition",
+      "status": "candidate",
+      "problemStatement": "Multidimensional authority constraints lack formal composition rules.",
+      "currentCoverage": "Authority constraints and delegation attenuation provide partial coverage.",
+      "gapClassification": "normative-semantics-gap",
+      "candidateDeliveryLayer": [
+        "informative-concept",
+        "experimental-schema",
+        "core-candidate"
+      ],
+      "dependencies": [],
+      "implementationEvidenceRequired": [
+        "scope algebra prototypes",
+        "interoperability tests"
+      ],
+      "normativeImpact": "potential",
+      "promotionStatus": "not-assessed"
+    },
+    {
+      "id": "FE-005",
+      "title": "Obligation lifecycle",
+      "status": "candidate",
+      "problemStatement": "Post-decision duties lack lifecycle granularity.",
+      "currentCoverage": "Obligations, remedies and evidence requirements provide partial coverage.",
+      "gapClassification": "schema-gap",
+      "candidateDeliveryLayer": [
+        "informative-concept",
+        "experimental-schema",
+        "implementation-pattern"
+      ],
+      "dependencies": [],
+      "implementationEvidenceRequired": [
+        "obligation fulfilment pattern",
+        "remedy propagation tests"
+      ],
+      "normativeImpact": "none",
+      "promotionStatus": "not-assessed"
+    },
+    {
+      "id": "FE-006",
+      "title": "Temporal governance",
+      "status": "candidate",
+      "problemStatement": "Time predicates are distributed and conflict resolution is implicit.",
+      "currentCoverage": "Authority, evidence, lifecycle and assurance include time constraints.",
+      "gapClassification": "guidance-gap",
+      "candidateDeliveryLayer": [
+        "informative-concept",
+        "experimental-fields"
+      ],
+      "dependencies": [],
+      "implementationEvidenceRequired": [
+        "event-order tests",
+        "clock uncertainty scenarios"
+      ],
+      "normativeImpact": "none",
+      "promotionStatus": "not-assessed"
+    },
+    {
+      "id": "FE-007",
+      "title": "Evidence predicates",
+      "status": "candidate",
+      "problemStatement": "Authenticity, relevance, sufficiency and permitted use need distinct treatment.",
+      "currentCoverage": "Evidence provenance, validity and assurance provide strong partial coverage.",
+      "gapClassification": "guidance-gap",
+      "candidateDeliveryLayer": [
+        "informative-concept"
+      ],
+      "dependencies": [],
+      "implementationEvidenceRequired": [
+        "evidence evaluation pattern",
+        "reviewer agreement study"
+      ],
+      "normativeImpact": "none",
+      "promotionStatus": "not-assessed"
+    },
+    {
+      "id": "FE-008",
+      "title": "Uncertainty and confidence",
+      "status": "candidate",
+      "problemStatement": "Scoped uncertainty is needed without universal trust scores.",
+      "currentCoverage": "Residual risk and assurance limitations provide partial coverage.",
+      "gapClassification": "vocabulary-gap",
+      "candidateDeliveryLayer": [
+        "informative-concept",
+        "experimental-vocabulary"
+      ],
+      "dependencies": [
+        "FE-007"
+      ],
+      "implementationEvidenceRequired": [
+        "decision examples",
+        "uncertainty interpretation tests"
+      ],
+      "normativeImpact": "none",
+      "promotionStatus": "not-assessed"
+    },
+    {
+      "id": "FE-009",
+      "title": "Organisational authority chains",
+      "status": "candidate",
+      "problemStatement": "Appointment, mandate, approval and instruction are not all delegation.",
+      "currentCoverage": "Roles, authority and delegation provide partial coverage.",
+      "gapClassification": "profile-gap",
+      "candidateDeliveryLayer": [
+        "informative-concept",
+        "draft-profile"
+      ],
+      "dependencies": [
+        "FE-001",
+        "FE-004"
+      ],
+      "implementationEvidenceRequired": [
+        "organisational authority pattern",
+        "relationship interoperability review"
+      ],
+      "normativeImpact": "none",
+      "promotionStatus": "not-assessed"
+    },
+    {
+      "id": "FE-010",
+      "title": "Agent-state lineage",
+      "status": "candidate",
+      "problemStatement": "Material changes to agent state need governed identity and assurance consequences.",
+      "currentCoverage": "Agent identity and state-change requirements provide a foundation.",
+      "gapClassification": "schema-gap",
+      "candidateDeliveryLayer": [
+        "draft-profile",
+        "experimental-schema",
+        "implementation-pattern"
+      ],
+      "dependencies": [
+        "FE-004",
+        "FE-006"
+      ],
+      "implementationEvidenceRequired": [
+        "agent change-control pattern",
+        "state invalidation tests"
+      ],
+      "normativeImpact": "none",
+      "promotionStatus": "not-assessed"
+    },
+    {
+      "id": "FE-011",
+      "title": "Autonomy and control modes",
+      "status": "candidate",
+      "problemStatement": "Human oversight and autonomy are not binary.",
+      "currentCoverage": "Agent classes, runtime controls and high-impact requirements provide partial coverage.",
+      "gapClassification": "profile-gap",
+      "candidateDeliveryLayer": [
+        "draft-profile",
+        "experimental-vocabulary"
+      ],
+      "dependencies": [
+        "FE-010"
+      ],
+      "implementationEvidenceRequired": [
+        "control-mode pattern",
+        "supervision failure tests"
+      ],
+      "normativeImpact": "none",
+      "promotionStatus": "not-assessed"
+    },
+    {
+      "id": "FE-012",
+      "title": "Plan, step and composite-effect governance",
+      "status": "candidate",
+      "problemStatement": "Plans, tool calls, partial effects and rollback need explicit lineage.",
+      "currentCoverage": "Runtime decision and agent orchestration requirements provide partial coverage.",
+      "gapClassification": "test-gap",
+      "candidateDeliveryLayer": [
+        "draft-profile",
+        "implementation-pattern",
+        "behavioural-test"
+      ],
+      "dependencies": [
+        "FE-010",
+        "FE-011"
+      ],
+      "implementationEvidenceRequired": [
+        "composite-action pattern",
+        "step-authority tests"
+      ],
+      "normativeImpact": "none",
+      "promotionStatus": "not-assessed"
+    },
+    {
+      "id": "FE-013",
+      "title": "Multi-agent governance",
+      "status": "candidate",
+      "problemStatement": "Coalitions, shared memory, quorum and composite accountability need finer treatment.",
+      "currentCoverage": "Multi-agent responsibility partitioning already exists.",
+      "gapClassification": "profile-gap",
+      "candidateDeliveryLayer": [
+        "draft-profile",
+        "implementation-pattern"
+      ],
+      "dependencies": [
+        "FE-012"
+      ],
+      "implementationEvidenceRequired": [
+        "multi-agent pattern",
+        "collusion and substitution tests"
+      ],
+      "normativeImpact": "none",
+      "promotionStatus": "not-assessed"
+    },
+    {
+      "id": "FE-014",
+      "title": "Derived evidence and inference",
+      "status": "candidate",
+      "problemStatement": "Inference provenance and permitted interpretation need governance.",
+      "currentCoverage": "Trust-graph derivation and evidence provenance provide partial coverage.",
+      "gapClassification": "profile-gap",
+      "candidateDeliveryLayer": [
+        "draft-profile",
+        "implementation-pattern"
+      ],
+      "dependencies": [
+        "FE-007",
+        "FE-008"
+      ],
+      "implementationEvidenceRequired": [
+        "inference pattern",
+        "privacy review"
+      ],
+      "normativeImpact": "none",
+      "promotionStatus": "not-assessed"
+    },
+    {
+      "id": "FE-015",
+      "title": "Assurance object and method granularity",
+      "status": "candidate",
+      "problemStatement": "Differently produced assurance results can appear equivalent.",
+      "currentCoverage": "Assurance scope, independence and validity provide strong partial coverage.",
+      "gapClassification": "guidance-gap",
+      "candidateDeliveryLayer": [
+        "informative-concept",
+        "draft-profile"
+      ],
+      "dependencies": [],
+      "implementationEvidenceRequired": [
+        "assurance comparison examples",
+        "assessor review"
+      ],
+      "normativeImpact": "none",
+      "promotionStatus": "not-assessed"
+    },
+    {
+      "id": "FE-016",
+      "title": "Assurance composition and dependency",
+      "status": "candidate",
+      "problemStatement": "Assurance inheritance and system composition need explicit constraints.",
+      "currentCoverage": "Accreditation and assurance limitations prohibit some unsafe inference.",
+      "gapClassification": "schema-gap",
+      "candidateDeliveryLayer": [
+        "informative-concept",
+        "experimental-schema",
+        "implementation-pattern"
+      ],
+      "dependencies": [
+        "FE-015"
+      ],
+      "implementationEvidenceRequired": [
+        "composition failure pattern",
+        "dependency invalidation tests"
+      ],
+      "normativeImpact": "none",
+      "promotionStatus": "not-assessed"
+    },
+    {
+      "id": "FE-017",
+      "title": "Governed observability",
+      "status": "candidate",
+      "problemStatement": "Telemetry is itself a governed power and attack surface.",
+      "currentCoverage": "Observability, minimisation and evidence requirements provide partial coverage.",
+      "gapClassification": "profile-gap",
+      "candidateDeliveryLayer": [
+        "draft-profile",
+        "implementation-guidance"
+      ],
+      "dependencies": [
+        "FE-007",
+        "FE-014"
+      ],
+      "implementationEvidenceRequired": [
+        "observability pattern",
+        "privacy and security review"
+      ],
+      "normativeImpact": "none",
+      "promotionStatus": "not-assessed"
+    },
+    {
+      "id": "FE-018",
+      "title": "Caching and revocation propagation",
+      "status": "candidate",
+      "problemStatement": "Stale state across boundaries creates a revocation lag gradient.",
+      "currentCoverage": "Registry, lifecycle and runtime freshness requirements provide partial coverage.",
+      "gapClassification": "test-gap",
+      "candidateDeliveryLayer": [
+        "draft-profile",
+        "implementation-pattern",
+        "behavioural-test"
+      ],
+      "dependencies": [
+        "FE-003",
+        "FE-006"
+      ],
+      "implementationEvidenceRequired": [
+        "propagation pattern",
+        "partition and stale-cache tests"
+      ],
+      "normativeImpact": "none",
+      "promotionStatus": "not-assessed"
+    },
+    {
+      "id": "FE-019",
+      "title": "Controlled degradation and continuity states",
+      "status": "candidate",
+      "problemStatement": "Operational fallback states need governed semantics.",
+      "currentCoverage": "Runtime outcomes and continuity patterns provide partial coverage.",
+      "gapClassification": "vocabulary-gap",
+      "candidateDeliveryLayer": [
+        "draft-profile",
+        "experimental-vocabulary",
+        "implementation-pattern"
+      ],
+      "dependencies": [
+        "FE-003",
+        "FE-018"
+      ],
+      "implementationEvidenceRequired": [
+        "degraded-operation pattern",
+        "fail-safe tests"
+      ],
+      "normativeImpact": "none",
+      "promotionStatus": "not-assessed"
+    },
+    {
+      "id": "FE-020",
+      "title": "Privacy and inference governance",
+      "status": "candidate",
+      "problemStatement": "Access, inference and decision-use authority must remain distinct.",
+      "currentCoverage": "Privacy controls are distributed across evidence and observability.",
+      "gapClassification": "profile-gap",
+      "candidateDeliveryLayer": [
+        "draft-profile",
+        "implementation-pattern"
+      ],
+      "dependencies": [
+        "FE-014",
+        "FE-017"
+      ],
+      "implementationEvidenceRequired": [
+        "privacy-inference pattern",
+        "affected-party review"
+      ],
+      "normativeImpact": "none",
+      "promotionStatus": "not-assessed"
+    },
+    {
+      "id": "FE-021",
+      "title": "Affected-party classes and collective standing",
+      "status": "candidate",
+      "problemStatement": "Indirect and collective harms need representation and challenge routes.",
+      "currentCoverage": "Affected parties and remedy already include non-members.",
+      "gapClassification": "guidance-gap",
+      "candidateDeliveryLayer": [
+        "informative-concept",
+        "draft-profile"
+      ],
+      "dependencies": [],
+      "implementationEvidenceRequired": [
+        "harm scenarios",
+        "representative action review"
+      ],
+      "normativeImpact": "none",
+      "promotionStatus": "not-assessed"
+    },
+    {
+      "id": "FE-022",
+      "title": "Machine-verifiable remedy execution",
+      "status": "candidate",
+      "problemStatement": "Appeal success does not prove downstream correction.",
+      "currentCoverage": "Remedy authority and completion evidence provide a foundation.",
+      "gapClassification": "schema-gap",
+      "candidateDeliveryLayer": [
+        "experimental-schema",
+        "implementation-pattern"
+      ],
+      "dependencies": [
+        "FE-005",
+        "FE-021"
+      ],
+      "implementationEvidenceRequired": [
+        "remedy propagation pattern",
+        "closure evidence tests"
+      ],
+      "normativeImpact": "none",
+      "promotionStatus": "not-assessed"
+    },
+    {
+      "id": "FE-023",
+      "title": "Market and infrastructure governance",
+      "status": "candidate",
+      "problemStatement": "Trust infrastructure can create gatekeepers, lock-in and concentration.",
+      "currentCoverage": "Systemic harm and market-integrity requirements provide a foundation.",
+      "gapClassification": "profile-gap",
+      "candidateDeliveryLayer": [
+        "draft-profile",
+        "implementation-pattern"
+      ],
+      "dependencies": [],
+      "implementationEvidenceRequired": [
+        "market governance pattern",
+        "competition and capture review"
+      ],
+      "normativeImpact": "none",
+      "promotionStatus": "not-assessed"
+    },
+    {
+      "id": "FE-024",
+      "title": "Jurisdiction and conflict of law",
+      "status": "candidate",
+      "problemStatement": "Cross-border decisions may face multiple competing legal contexts.",
+      "currentCoverage": "Governance context includes jurisdictional conditions.",
+      "gapClassification": "profile-gap",
+      "candidateDeliveryLayer": [
+        "informative-concept",
+        "draft-profile"
+      ],
+      "dependencies": [],
+      "implementationEvidenceRequired": [
+        "cross-jurisdiction pattern",
+        "legal review"
+      ],
+      "normativeImpact": "none",
+      "promotionStatus": "not-assessed"
+    },
+    {
+      "id": "FE-025",
+      "title": "Governance-change provenance",
+      "status": "candidate",
+      "problemStatement": "Policy evolution should be attributable and machine-diffable.",
+      "currentCoverage": "Controlled documents, ADRs, versions and change control provide partial coverage.",
+      "gapClassification": "schema-gap",
+      "candidateDeliveryLayer": [
+        "implementation-guidance",
+        "experimental-schema"
+      ],
+      "dependencies": [
+        "FE-002",
+        "FE-006"
+      ],
+      "implementationEvidenceRequired": [
+        "change provenance prototype",
+        "rollback scenario"
+      ],
+      "normativeImpact": "none",
+      "promotionStatus": "not-assessed"
+    }
+  ]
+}

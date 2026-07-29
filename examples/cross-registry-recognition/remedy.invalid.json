@@ -1,0 +1,13 @@
+{
+  "id": "urn:gaam:example:cross-registry-recognition:remedy",
+  "type": "remedy",
+  "version": "0.9.0",
+  "status": "remediated",
+  "effectiveFrom": "2026-07-29T12:00:00Z",
+  "appeal": "urn:gaam:appeal:cross-registry-recognition",
+  "originalDecision": "urn:gaam:decision:cross-registry-recognition:001",
+  "remedyType": "correct",
+  "authority": "urn:gaam:review:cross-registry-recognition",
+  "completedAt": "2026-07-29T12:00:00Z",
+  "evidence": []
+}

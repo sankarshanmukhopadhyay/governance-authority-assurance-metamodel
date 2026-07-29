@@ -2,8 +2,8 @@
   "gaamVersion": "0.9.0",
   "testSuiteVersion": "0.9.0",
   "status": "pass",
-  "checks": 115,
-  "passed": 115,
+  "checks": 127,
+  "passed": 127,
   "failed": 0,
   "results": [
     {
@@ -217,18 +217,6 @@
       "evidence": "all profile dependencies resolve"
     },
     {
-      "id": "PAT-SCHEMA",
-      "kind": "pattern",
-      "status": "pass",
-      "evidence": "pattern manifest schema is valid Draft 2020-12"
-    },
-    {
-      "id": "PAT-CATALOGUE-STRUCTURE",
-      "kind": "pattern",
-      "status": "pass",
-      "evidence": "3 catalogue entries"
-    },
-    {
       "id": "PAT-cross-registry-recognition-CONTRACT",
       "kind": "pattern",
       "status": "pass",
@@ -244,55 +232,85 @@
       "id": "PAT-cross-registry-recognition-REFERENCES",
       "kind": "pattern",
       "status": "pass",
-      "evidence": "profiles, requirements, artifacts and behavioural vectors resolve"
-    },
-    {
-      "id": "PAT-cross-registry-recognition-SCENARIOS",
-      "kind": "pattern",
-      "status": "pass",
-      "evidence": "positive and negative scenarios declare expected results"
-    },
-    {
-      "id": "PAT-cross-registry-recognition-LIMITATIONS",
-      "kind": "pattern",
-      "status": "pass",
-      "evidence": "conformance limitations declared"
+      "evidence": "profile, requirement, artifact and behavioural references resolve"
     },
     {
       "id": "PAT-cross-registry-recognition-MATURITY",
       "kind": "pattern",
       "status": "pass",
-      "evidence": "maturity claim structural supported by declared evidence"
+      "evidence": "assurance-ready claim supported"
     },
     {
-      "id": "PAT-cross-registry-recognition-CATALOGUE",
+      "id": "PAT-cross-registry-recognition-CATALOG",
       "kind": "pattern",
       "status": "pass",
-      "evidence": "catalogue entry resolves"
-    },
-    {
-      "id": "FIX-cross-registry-recognition-authority.valid",
-      "kind": "fixture",
-      "status": "pass",
-      "evidence": "accepted as expected"
-    },
-    {
-      "id": "FIX-cross-registry-recognition-decision-receipt.valid",
-      "kind": "fixture",
-      "status": "pass",
-      "evidence": "accepted as expected"
+      "evidence": "catalogue entry present"
     },
     {
       "id": "FIX-cross-registry-recognition-authority.invalid",
       "kind": "fixture",
       "status": "pass",
-      "evidence": "rejected as expected"
+      "evidence": "rejected as expected; manifest declaration matched"
+    },
+    {
+      "id": "FIX-cross-registry-recognition-authority.valid",
+      "kind": "fixture",
+      "status": "pass",
+      "evidence": "accepted as expected; manifest declaration matched"
+    },
+    {
+      "id": "FIX-cross-registry-recognition-decision-receipt.invalid",
+      "kind": "fixture",
+      "status": "pass",
+      "evidence": "rejected as expected; manifest declaration matched"
+    },
+    {
+      "id": "FIX-cross-registry-recognition-decision-receipt.valid",
+      "kind": "fixture",
+      "status": "pass",
+      "evidence": "accepted as expected; manifest declaration matched"
+    },
+    {
+      "id": "FIX-cross-registry-recognition-delegation.invalid",
+      "kind": "fixture",
+      "status": "pass",
+      "evidence": "rejected as expected; manifest declaration matched"
+    },
+    {
+      "id": "FIX-cross-registry-recognition-delegation.valid",
+      "kind": "fixture",
+      "status": "pass",
+      "evidence": "accepted as expected; manifest declaration matched"
+    },
+    {
+      "id": "FIX-cross-registry-recognition-governance-event.invalid",
+      "kind": "fixture",
+      "status": "pass",
+      "evidence": "rejected as expected; manifest declaration matched"
+    },
+    {
+      "id": "FIX-cross-registry-recognition-governance-event.valid",
+      "kind": "fixture",
+      "status": "pass",
+      "evidence": "accepted as expected; manifest declaration matched"
+    },
+    {
+      "id": "FIX-cross-registry-recognition-remedy.invalid",
+      "kind": "fixture",
+      "status": "pass",
+      "evidence": "rejected as expected; manifest declaration matched"
+    },
+    {
+      "id": "FIX-cross-registry-recognition-remedy.valid",
+      "kind": "fixture",
+      "status": "pass",
+      "evidence": "accepted as expected; manifest declaration matched"
     },
     {
       "id": "CLM-cross-registry-recognition",
       "kind": "conformance",
       "status": "pass",
-      "evidence": "schema, evidence and independence rules satisfied"
+      "evidence": "schema, evidence, limitations and independence rules satisfied"
     },
     {
       "id": "PAT-delegated-agent-purchase-CONTRACT",
@@ -310,55 +328,85 @@
       "id": "PAT-delegated-agent-purchase-REFERENCES",
       "kind": "pattern",
       "status": "pass",
-      "evidence": "profiles, requirements, artifacts and behavioural vectors resolve"
-    },
-    {
-      "id": "PAT-delegated-agent-purchase-SCENARIOS",
-      "kind": "pattern",
-      "status": "pass",
-      "evidence": "positive and negative scenarios declare expected results"
-    },
-    {
-      "id": "PAT-delegated-agent-purchase-LIMITATIONS",
-      "kind": "pattern",
-      "status": "pass",
-      "evidence": "conformance limitations declared"
+      "evidence": "profile, requirement, artifact and behavioural references resolve"
     },
     {
       "id": "PAT-delegated-agent-purchase-MATURITY",
       "kind": "pattern",
       "status": "pass",
-      "evidence": "maturity claim structural supported by declared evidence"
+      "evidence": "assurance-ready claim supported"
     },
     {
-      "id": "PAT-delegated-agent-purchase-CATALOGUE",
+      "id": "PAT-delegated-agent-purchase-CATALOG",
       "kind": "pattern",
       "status": "pass",
-      "evidence": "catalogue entry resolves"
-    },
-    {
-      "id": "FIX-delegated-agent-purchase-authority.valid",
-      "kind": "fixture",
-      "status": "pass",
-      "evidence": "accepted as expected"
-    },
-    {
-      "id": "FIX-delegated-agent-purchase-decision-receipt.valid",
-      "kind": "fixture",
-      "status": "pass",
-      "evidence": "accepted as expected"
+      "evidence": "catalogue entry present"
     },
     {
       "id": "FIX-delegated-agent-purchase-authority.invalid",
       "kind": "fixture",
       "status": "pass",
-      "evidence": "rejected as expected"
+      "evidence": "rejected as expected; manifest declaration matched"
+    },
+    {
+      "id": "FIX-delegated-agent-purchase-authority.valid",
+      "kind": "fixture",
+      "status": "pass",
+      "evidence": "accepted as expected; manifest declaration matched"
+    },
+    {
+      "id": "FIX-delegated-agent-purchase-decision-receipt.invalid",
+      "kind": "fixture",
+      "status": "pass",
+      "evidence": "rejected as expected; manifest declaration matched"
+    },
+    {
+      "id": "FIX-delegated-agent-purchase-decision-receipt.valid",
+      "kind": "fixture",
+      "status": "pass",
+      "evidence": "accepted as expected; manifest declaration matched"
+    },
+    {
+      "id": "FIX-delegated-agent-purchase-delegation.invalid",
+      "kind": "fixture",
+      "status": "pass",
+      "evidence": "rejected as expected; manifest declaration matched"
+    },
+    {
+      "id": "FIX-delegated-agent-purchase-delegation.valid",
+      "kind": "fixture",
+      "status": "pass",
+      "evidence": "accepted as expected; manifest declaration matched"
+    },
+    {
+      "id": "FIX-delegated-agent-purchase-governance-event.invalid",
+      "kind": "fixture",
+      "status": "pass",
+      "evidence": "rejected as expected; manifest declaration matched"
+    },
+    {
+      "id": "FIX-delegated-agent-purchase-governance-event.valid",
+      "kind": "fixture",
+      "status": "pass",
+      "evidence": "accepted as expected; manifest declaration matched"
+    },
+    {
+      "id": "FIX-delegated-agent-purchase-remedy.invalid",
+      "kind": "fixture",
+      "status": "pass",
+      "evidence": "rejected as expected; manifest declaration matched"
+    },
+    {
+      "id": "FIX-delegated-agent-purchase-remedy.valid",
+      "kind": "fixture",
+      "status": "pass",
+      "evidence": "accepted as expected; manifest declaration matched"
     },
     {
       "id": "CLM-delegated-agent-purchase",
       "kind": "conformance",
       "status": "pass",
-      "evidence": "schema, evidence and independence rules satisfied"
+      "evidence": "schema, evidence, limitations and independence rules satisfied"
     },
     {
       "id": "PAT-high-impact-multi-agent-service-CONTRACT",
@@ -376,55 +424,85 @@
       "id": "PAT-high-impact-multi-agent-service-REFERENCES",
       "kind": "pattern",
       "status": "pass",
-      "evidence": "profiles, requirements, artifacts and behavioural vectors resolve"
-    },
-    {
-      "id": "PAT-high-impact-multi-agent-service-SCENARIOS",
-      "kind": "pattern",
-      "status": "pass",
-      "evidence": "positive and negative scenarios declare expected results"
-    },
-    {
-      "id": "PAT-high-impact-multi-agent-service-LIMITATIONS",
-      "kind": "pattern",
-      "status": "pass",
-      "evidence": "conformance limitations declared"
+      "evidence": "profile, requirement, artifact and behavioural references resolve"
     },
     {
       "id": "PAT-high-impact-multi-agent-service-MATURITY",
       "kind": "pattern",
       "status": "pass",
-      "evidence": "maturity claim structural supported by declared evidence"
+      "evidence": "assurance-ready claim supported"
     },
     {
-      "id": "PAT-high-impact-multi-agent-service-CATALOGUE",
+      "id": "PAT-high-impact-multi-agent-service-CATALOG",
       "kind": "pattern",
       "status": "pass",
-      "evidence": "catalogue entry resolves"
-    },
-    {
-      "id": "FIX-high-impact-multi-agent-service-authority.valid",
-      "kind": "fixture",
-      "status": "pass",
-      "evidence": "accepted as expected"
-    },
-    {
-      "id": "FIX-high-impact-multi-agent-service-decision-receipt.valid",
-      "kind": "fixture",
-      "status": "pass",
-      "evidence": "accepted as expected"
+      "evidence": "catalogue entry present"
     },
     {
       "id": "FIX-high-impact-multi-agent-service-authority.invalid",
       "kind": "fixture",
       "status": "pass",
-      "evidence": "rejected as expected"
+      "evidence": "rejected as expected; manifest declaration matched"
+    },
+    {
+      "id": "FIX-high-impact-multi-agent-service-authority.valid",
+      "kind": "fixture",
+      "status": "pass",
+      "evidence": "accepted as expected; manifest declaration matched"
+    },
+    {
+      "id": "FIX-high-impact-multi-agent-service-decision-receipt.invalid",
+      "kind": "fixture",
+      "status": "pass",
+      "evidence": "rejected as expected; manifest declaration matched"
+    },
+    {
+      "id": "FIX-high-impact-multi-agent-service-decision-receipt.valid",
+      "kind": "fixture",
+      "status": "pass",
+      "evidence": "accepted as expected; manifest declaration matched"
+    },
+    {
+      "id": "FIX-high-impact-multi-agent-service-delegation.invalid",
+      "kind": "fixture",
+      "status": "pass",
+      "evidence": "rejected as expected; manifest declaration matched"
+    },
+    {
+      "id": "FIX-high-impact-multi-agent-service-delegation.valid",
+      "kind": "fixture",
+      "status": "pass",
+      "evidence": "accepted as expected; manifest declaration matched"
+    },
+    {
+      "id": "FIX-high-impact-multi-agent-service-governance-event.invalid",
+      "kind": "fixture",
+      "status": "pass",
+      "evidence": "rejected as expected; manifest declaration matched"
+    },
+    {
+      "id": "FIX-high-impact-multi-agent-service-governance-event.valid",
+      "kind": "fixture",
+      "status": "pass",
+      "evidence": "accepted as expected; manifest declaration matched"
+    },
+    {
+      "id": "FIX-high-impact-multi-agent-service-remedy.invalid",
+      "kind": "fixture",
+      "status": "pass",
+      "evidence": "rejected as expected; manifest declaration matched"
+    },
+    {
+      "id": "FIX-high-impact-multi-agent-service-remedy.valid",
+      "kind": "fixture",
+      "status": "pass",
+      "evidence": "accepted as expected; manifest declaration matched"
     },
     {
       "id": "CLM-high-impact-multi-agent-service",
       "kind": "conformance",
       "status": "pass",
-      "evidence": "schema, evidence and independence rules satisfied"
+      "evidence": "schema, evidence, limitations and independence rules satisfied"
     },
     {
       "id": "PAT-IDS",
@@ -433,10 +511,10 @@
       "evidence": "3 unique pattern identifiers"
     },
     {
-      "id": "PAT-CATALOGUE-COVERAGE",
+      "id": "PAT-CATALOG-COVERAGE",
       "kind": "pattern",
       "status": "pass",
-      "evidence": "catalogue covers 3 patterns"
+      "evidence": "3 pattern directories catalogued"
     },
     {
       "id": "BEH-assurance-expired-rejected",
@@ -664,13 +742,7 @@
       "id": "GOV-REVIEW-REGISTERS",
       "kind": "governance",
       "status": "pass",
-      "evidence": "5 review registers, baseline and lifecycle controls are valid"
-    },
-    {
-      "id": "GOV-REVIEW-FINDING-IDS",
-      "kind": "governance",
-      "status": "pass",
-      "evidence": "0 unique review finding identifiers"
+      "evidence": "5 required review registers are structurally complete"
     },
     {
       "id": "GOV-CONTRIBUTION-CONTROLS",
@@ -694,7 +766,7 @@
       "id": "PKG-INTEGRITY",
       "kind": "package",
       "status": "pass",
-      "evidence": "100 checksums verified"
+      "evidence": "149 checksums verified"
     }
   ]
 }

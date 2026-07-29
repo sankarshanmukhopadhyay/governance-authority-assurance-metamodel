@@ -1,19 +1,23 @@
 ---
 title: "Implementation Patterns"
 permalink: /examples/
-nav_order: 11
-has_children: true
+artifact_type: Informative implementation pattern
+normative_status: Informative
 ---
 # Implementation Patterns
+GAAM implementation patterns are informative, executable examples that connect normative requirements to governance arrangements, fixtures, behavioural vectors and evidence expectations.
 
-GAAM implementation patterns are governed, machine-verifiable examples. Each directory contains a `README.md`, `pattern.json`, and `conformance-claim.json`.
+## Composed patterns
 
-- [Delegated agent purchasing](delegated-agent-purchase/README.md)
-- [Cross-registry recognition](cross-registry-recognition/README.md)
-- [High-impact multi-agent service](high-impact-multi-agent-service/README.md)
+- [Delegated Agent Purchasing](delegated-agent-purchase/)
+- [Cross-Registry Recognition](cross-registry-recognition/)
+- [High-Impact Multi-Agent Service](high-impact-multi-agent-service/)
+- [Composed Pattern Comparison](composed-pattern-comparison.md)
 
-Supporting material:
+## Pattern infrastructure
 
-- [Pattern template](pattern-template.md)
-- [Maturity model](pattern-maturity-model.md)
-- [Validation guide](pattern-validation-guide.md)
+- [Pattern Template](pattern-template.md)
+- [Pattern Maturity Model](pattern-maturity-model.md)
+- [Pattern Validation Guide](pattern-validation-guide.md)
+
+The machine-readable catalogue is available as `catalog.json`.

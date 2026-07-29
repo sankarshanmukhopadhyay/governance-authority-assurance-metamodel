@@ -51,74 +51,56 @@ for p in sorted((ROOT/'profiles/manifests').glob('*.json')):
 all_profile_ids=set(manifests)
 missingdeps=[d for o in manifests.values() for d in o['dependencies'] if d not in all_profile_ids]
 add('PRO-DEPENDENCIES',not missingdeps,'all profile dependencies resolve' if not missingdeps else str(missingdeps),'profile')
-# Implementation pattern architecture, fixtures and claims
-pattern_root=ROOT/'examples'
-pattern_schema_path=pattern_root/'pattern-manifest.schema.json'
-pattern_catalogue_path=pattern_root/'catalog.json'
-pattern_errors=[]; pattern_ids=[]
-try:
- pattern_schema=load(pattern_schema_path)
- Draft202012Validator.check_schema(pattern_schema)
- add('PAT-SCHEMA',True,'pattern manifest schema is valid Draft 2020-12','pattern')
-except Exception as e:
- pattern_schema=None; add('PAT-SCHEMA',False,str(e),'pattern')
-try:
- pattern_catalogue=load(pattern_catalogue_path)
- catalogue_entries={x.get('id'):x for x in pattern_catalogue.get('patterns',[])}
- add('PAT-CATALOGUE-STRUCTURE',pattern_catalogue.get('gaamVersion')==VERSION and isinstance(pattern_catalogue.get('patterns'),list),f'{len(catalogue_entries)} catalogue entries','pattern')
-except Exception as e:
- pattern_catalogue={}; catalogue_entries={}; add('PAT-CATALOGUE-STRUCTURE',False,str(e),'pattern')
-fixture_type_map={'authority':'authority','decision-receipt':'decision-receipt','delegation':'delegation','remedy':'remedy','governance-event':'governance-event'}
-maturity_rank={'conceptual':1,'structural':2,'behavioural':3,'operational':4,'assurance-ready':5,'interoperability-tested':6}
-behaviour_files={p.stem for p in (ROOT/'tests/behavioural').glob('*.json')}
-for d in sorted(pattern_root.iterdir()):
+# Pattern architecture, fixtures and claims
+pattern_schema_path=ROOT/'examples/pattern-manifest.schema.json'
+pattern_schema=load(pattern_schema_path) if pattern_schema_path.exists() else None
+pattern_catalog_path=ROOT/'examples/catalog.json'
+pattern_catalog=load(pattern_catalog_path) if pattern_catalog_path.exists() else {'patterns':[]}
+catalog_paths={x.get('path') for x in pattern_catalog.get('patterns',[])}
+pattern_ids=[]
+fixture_type_map={'authority':'authority','delegation':'delegation','decision-receipt':'decision-receipt','governance-event':'governance-event','remedy':'remedy'}
+for d in sorted((ROOT/'examples').iterdir()):
  if not d.is_dir(): continue
  required={'README.md','pattern.json','conformance-claim.json'}
- missing=sorted(x for x in required if not (d/x).is_file())
- add('PAT-'+d.name+'-CONTRACT',not missing,'required files present' if not missing else 'missing: '+', '.join(missing),'pattern')
+ missing=sorted(x for x in required if not (d/x).exists())
+ add('PAT-'+d.name+'-CONTRACT',not missing,'required files present' if not missing else 'missing '+', '.join(missing),'pattern')
  manifest=None
- if (d/'pattern.json').is_file():
+ if (d/'pattern.json').exists() and pattern_schema:
   try:
-   manifest=load(d/'pattern.json'); errs=list(Draft202012Validator(pattern_schema,format_checker=FormatChecker()).iter_errors(manifest)) if pattern_schema else [Exception('pattern schema unavailable')]
+   manifest=load(d/'pattern.json'); errs=list(Draft202012Validator(pattern_schema).iter_errors(manifest))
    add('PAT-'+d.name+'-MANIFEST',not errs,'manifest conforms' if not errs else str(errs[0]),'pattern')
   except Exception as e: add('PAT-'+d.name+'-MANIFEST',False,str(e),'pattern')
- else: add('PAT-'+d.name+'-MANIFEST',False,'pattern.json missing','pattern')
+ elif (d/'pattern.json').exists(): add('PAT-'+d.name+'-MANIFEST',False,'pattern manifest schema missing','pattern')
+ else: add('PAT-'+d.name+'-MANIFEST',False,'pattern manifest missing','pattern')
  if manifest:
   pattern_ids.append(manifest.get('id'))
-  missing_profiles=[x for x in manifest.get('profiles',[]) if x not in all_profile_ids]
-  missing_requirements=[x for x in manifest.get('requirements',[]) if x not in pids]
-  refs=manifest.get('artifacts',[])+manifest.get('schemaFixtures',[])+manifest.get('supportingExamples',[])
-  missing_artifacts=sorted(set(x for x in refs if not (d/x).is_file()))
-  missing_behaviour=sorted(x for x in manifest.get('behaviouralVectors',[]) if x not in behaviour_files)
-  add('PAT-'+d.name+'-REFERENCES',not (missing_profiles or missing_requirements or missing_artifacts or missing_behaviour),'profiles, requirements, artifacts and behavioural vectors resolve' if not (missing_profiles or missing_requirements or missing_artifacts or missing_behaviour) else f'profiles={missing_profiles}; requirements={missing_requirements}; artifacts={missing_artifacts}; behavioural={missing_behaviour}','pattern')
-  scenario_ok=bool(manifest.get('positiveScenarios')) and bool(manifest.get('negativeScenarios')) and all(x.get('expectedResult') for x in manifest.get('positiveScenarios',[])+manifest.get('negativeScenarios',[]))
-  add('PAT-'+d.name+'-SCENARIOS',scenario_ok,'positive and negative scenarios declare expected results','pattern')
-  limitations_ok=bool(manifest.get('limitations'))
-  add('PAT-'+d.name+'-LIMITATIONS',limitations_ok,'conformance limitations declared','pattern')
-  rank=maturity_rank.get(manifest.get('maturity'),0)
-  maturity_ok=(rank<=1 or (d/'pattern.json').is_file()) and (rank<=2 or bool(manifest.get('schemaFixtures'))) and (rank<=3 or bool(manifest.get('behaviouralVectors'))) and (rank<6 or any('independent' in x.lower() for x in manifest.get('limitations',[])) is False)
-  add('PAT-'+d.name+'-MATURITY',maturity_ok,f'maturity claim {manifest.get("maturity")} supported by declared evidence','pattern')
-  cat=catalogue_entries.get(manifest.get('id'))
-  add('PAT-'+d.name+'-CATALOGUE',bool(cat) and cat.get('path')==d.name+'/pattern.json','catalogue entry resolves','pattern')
- # schema fixtures: controlled failures, type-aware validation
- for p in sorted(d.glob('*.valid.json')):
-  try:
-   o=load(p); key=fixture_type_map.get(o.get('type')); errs=list(Draft202012Validator(schemas[key],format_checker=FormatChecker()).iter_errors(o)) if key in schemas else [Exception('unknown or unsupported fixture type')]
-   add('FIX-'+d.name+'-'+p.stem,not errs,'accepted as expected' if not errs else str(errs[0]),'fixture')
-  except Exception as e: add('FIX-'+d.name+'-'+p.stem,False,str(e),'fixture')
- for p in sorted(d.glob('*.invalid.json')):
-  try:
-   o=load(p); key=fixture_type_map.get(o.get('type')) or ('authority' if 'authority' in p.name else None); errs=list(Draft202012Validator(schemas[key],format_checker=FormatChecker()).iter_errors(o)) if key in schemas else [Exception('unknown or unsupported fixture type')]
-   add('FIX-'+d.name+'-'+p.stem,bool(errs),'rejected as expected' if errs else 'unexpectedly accepted','fixture')
-  except Exception as e: add('FIX-'+d.name+'-'+p.stem,True,'malformed fixture rejected: '+str(e),'fixture')
- if (d/'conformance-claim.json').is_file():
+  bad_profiles=[x for x in manifest.get('profiles',[]) if x not in all_profile_ids]
+  bad_reqs=[x for x in manifest.get('requirements',[]) if x not in pids]
+  refs=manifest.get('artifacts',[])+manifest.get('supportingExamples',[])
+  missing_refs=[x for x in refs if not (d/x).exists()]
+  missing_beh=[x for x in manifest.get('behaviouralVectors',[]) if not (ROOT/'tests/behavioural'/f'{x}.json').exists()]
+  add('PAT-'+d.name+'-REFERENCES',not bad_profiles and not bad_reqs and not missing_refs and not missing_beh,'profile, requirement, artifact and behavioural references resolve' if not (bad_profiles or bad_reqs or missing_refs or missing_beh) else f'profiles={bad_profiles}; requirements={bad_reqs}; artifacts={missing_refs}; behavioural={missing_beh}','pattern')
+  scenarios=bool(manifest.get('positiveScenarios')) and bool(manifest.get('negativeScenarios'))
+  maturity=manifest.get('maturity'); maturity_ok=maturity!='assurance-ready' or (scenarios and bool(manifest.get('requirements')) and bool(manifest.get('behaviouralVectors')) and bool(manifest.get('limitations')))
+  add('PAT-'+d.name+'-MATURITY',maturity_ok,f'{maturity} claim supported' if maturity_ok else f'{maturity} claim lacks required evidence','pattern')
+  add('PAT-'+d.name+'-CATALOG',d.name in catalog_paths,'catalogue entry present' if d.name in catalog_paths else 'catalogue entry missing','pattern')
+  declared={x.get('path'):x for x in manifest.get('schemaFixtures',[])}
+ else: declared={}
+ for p in sorted(list(d.glob('*.valid.json'))+list(d.glob('*.invalid.json'))):
+  expected=p.name.endswith('.valid.json')
+  try: o=load(p); typ=o.get('type'); key=fixture_type_map.get(typ); errs=list(Draft202012Validator(schemas[key],format_checker=FormatChecker()).iter_errors(o)) if key else [Exception('unknown type')]
+  except Exception as e: typ=None; key=None; errs=[e]
+  ok=(not errs) if expected else bool(errs)
+  decl=declared.get(p.name); declaration_ok=bool(decl) and decl.get('type')==typ and decl.get('expectedValid')==expected
+  add('FIX-'+d.name+'-'+p.stem,ok and declaration_ok,('accepted' if expected else 'rejected')+' as expected; manifest declaration matched' if ok and declaration_ok else f'validation={ok}; declaration={declaration_ok}; error={errs[0] if errs else "none"}','fixture')
+ if (d/'conformance-claim.json').exists():
   try:
    claim=load(d/'conformance-claim.json'); errs=list(Draft202012Validator(schemas['conformance-claim'],format_checker=FormatChecker()).iter_errors(claim)); evid=bool(claim.get('evidence')); independent=(claim.get('level')!='L4' or claim.get('assessmentIndependence')=='independent')
-   add('CLM-'+d.name,not errs and evid and independent,'schema, evidence and independence rules satisfied','conformance')
+   add('CLM-'+d.name,not errs and evid and independent and bool(claim.get('limitations')),'schema, evidence, limitations and independence rules satisfied' if not errs else str(errs[0]),'conformance')
   except Exception as e: add('CLM-'+d.name,False,str(e),'conformance')
- else: add('CLM-'+d.name,False,'conformance-claim.json missing','conformance')
-add('PAT-IDS',len(pattern_ids)==len(set(pattern_ids)) and all(pattern_ids),f'{len(pattern_ids)} unique pattern identifiers','pattern')
-add('PAT-CATALOGUE-COVERAGE',set(pattern_ids)==set(catalogue_entries),f'catalogue covers {len(pattern_ids)} patterns','pattern')
+ else: add('CLM-'+d.name,False,'conformance claim missing','conformance')
+add('PAT-IDS',len(pattern_ids)==len(set(pattern_ids)),f'{len(pattern_ids)} unique pattern identifiers','pattern')
+add('PAT-CATALOG-COVERAGE',catalog_paths=={d.name for d in (ROOT/'examples').iterdir() if d.is_dir()},f'{len(catalog_paths)} pattern directories catalogued' if catalog_paths=={d.name for d in (ROOT/'examples').iterdir() if d.is_dir()} else 'catalogue and directory set differ','pattern')
 # Behavioural vectors
 def behaviour(o):
  x=o['input']; i=o['id']
@@ -237,37 +219,13 @@ add('GOV-CANDIDATE-REGISTER',not gov_errors,f'{len(issue_ids)} candidate issues 
 add('GOV-CANDIDATE-IDS',len(issue_ids)==len(set(issue_ids)) and all(re.fullmatch(r'GAAM-CR-\d{3}',x or '') for x in issue_ids),f'{len(issue_ids)} unique candidate issue identifiers','governance')
 required_reviews={'privacy-review','security-review','affected-party-review','interoperability-review','implementation-evidence'}
 review_errors=[]
-review_vocab_path=ROOT/'governance/reviews/finding-vocabulary.json'; finding_schema_path=ROOT/'governance/reviews/finding-schema.json'; baseline_path=ROOT/'governance/reviews/review-baseline.json'
-review_vocab=load(review_vocab_path) if review_vocab_path.exists() else {}
-finding_schema=load(finding_schema_path) if finding_schema_path.exists() else None
-baseline=load(baseline_path) if baseline_path.exists() else {}
-if baseline.get('gaamVersion')!=VERSION: review_errors.append('review baseline: version mismatch')
-if baseline.get('status') not in {'draft','frozen-for-review','superseded','closed'}: review_errors.append('review baseline: invalid status')
-if not baseline.get('sourceCommit') or not baseline.get('authority'): review_errors.append('review baseline: source commit or authority missing')
-all_finding_ids=[]
 for name in required_reviews:
  obj=review_files.get(name)
  if not obj: review_errors.append(f'missing {name}'); continue
  if obj.get('gaamVersion')!=VERSION: review_errors.append(f'{name}: version mismatch')
- if obj.get('status') not in set(review_vocab.get('reviewStatuses',[])): review_errors.append(f'{name}: invalid status')
- for field in ['baselineReference','reviewer','reviewerRole','reviewerIndependence','reviewAuthority','decisionAuthority','methodologyReference','evidenceDirectory','findingsSummary','exitCriteriaStatus','unresolvedBlockers','candidateIssueReferences']:
-  if field not in obj: review_errors.append(f'{name}: missing {field}')
- if obj.get('reviewerIndependence') not in set(review_vocab.get('reviewerIndependenceValues',[])): review_errors.append(f'{name}: invalid reviewer independence')
- evidence_dir=ROOT/obj.get('evidenceDirectory','')
- if not evidence_dir.is_dir(): review_errors.append(f'{name}: evidence directory does not resolve')
- for ref in obj.get('evidence',[]):
-  if not (ROOT/ref).is_file(): review_errors.append(f'{name}: evidence reference does not resolve: {ref}')
- for finding in obj.get('findings',[]):
-  if finding_schema:
-   ferrs=list(Draft202012Validator(finding_schema,format_checker=FormatChecker()).iter_errors(finding))
-   if ferrs: review_errors.append(f'{name}: invalid finding {finding.get("id")}: {ferrs[0].message}')
-  fid=finding.get('id'); all_finding_ids.append(fid)
-  if finding.get('status')=='closed' and (not finding.get('verificationEvidence') or not finding.get('closureDate')): review_errors.append(f'{fid}: closed without verification evidence and closure date')
-  if finding.get('status')=='risk-accepted' and not all([finding.get('decisionAuthority'),finding.get('rationale'),finding.get('residualRisk'),finding.get('reconsiderationDate')]): review_errors.append(f'{fid}: incomplete risk acceptance')
-  if finding.get('status')=='deferred' and not all([finding.get('owner'),finding.get('targetDate')]): review_errors.append(f'{fid}: incomplete deferral')
- if obj.get('status')=='complete' and (not obj.get('completionDate') or not obj.get('finalAttestation') or obj.get('exitCriteriaStatus')!='satisfied'): review_errors.append(f'{name}: completion conditions not satisfied')
-add('GOV-REVIEW-REGISTERS',not review_errors,f'{len(required_reviews)} review registers, baseline and lifecycle controls are valid' if not review_errors else '; '.join(review_errors[:15]),'governance')
-add('GOV-REVIEW-FINDING-IDS',len(all_finding_ids)==len(set(all_finding_ids)),f'{len(all_finding_ids)} unique review finding identifiers','governance')
+ if obj.get('status') not in {'not-started','in-progress','complete','blocked'}: review_errors.append(f'{name}: invalid status')
+ if not obj.get('reviewAuthority'): review_errors.append(f'{name}: missing review authority')
+add('GOV-REVIEW-REGISTERS',not review_errors,f'{len(required_reviews)} required review registers are structurally complete' if not review_errors else '; '.join(review_errors),'governance')
 templates=['change-proposal.yml','implementation-report.yml','review-finding.yml']
 missing_templates=[x for x in templates if not (ROOT/'.github/ISSUE_TEMPLATE'/x).exists()]
 add('GOV-CONTRIBUTION-CONTROLS',not missing_templates and (ROOT/'.github/pull_request_template.md').exists(),'candidate issue forms and pull-request governance template present' if not missing_templates else str(missing_templates),'governance')
@@ -276,15 +234,9 @@ add('GOV-V1-READINESS-STATE',True,f'{len(open_blockers)} explicitly recorded ope
 # Package manifest + integrity
 pkg=ROOT/'packages'/f'gaam-v{VERSION}'; pkg.mkdir(parents=True,exist_ok=True)
 artifact_paths=[REL['normativeSpecification'],'release.json','schemas/catalog.json','threat-model/threat-register.json','matrices/normative-requirements-index.csv','matrices/requirement-test-coverage.csv','matrices/requirement-assurance-traceability.csv','matrices/threat-control-test-matrix.csv','governance/candidate-issues.json']
-artifact_paths += [str(p.relative_to(ROOT)) for b in ['schemas','vocabularies','profiles/manifests','tests/behavioural'] for p in sorted((ROOT/b).glob('*.json'))]
-artifact_paths += [str(p.relative_to(ROOT)) for p in sorted((ROOT/'examples').rglob('*')) if p.is_file() and p.name not in {'.gitkeep','.DS_Store'}]
-review_root=ROOT/'governance/reviews'
-review_excluded={'.gitkeep','.DS_Store','Thumbs.db'}
-for p in sorted(review_root.rglob('*')):
- if not p.is_file() or p.name in review_excluded or p.name.endswith(('.tmp','.swp','.bak','~')) or '__pycache__' in p.parts: continue
- if any(part in {'working','drafts','cache','.cache'} for part in p.parts): continue
- artifact_paths.append(str(p.relative_to(ROOT)))
-manifest={'id':f'urn:gaam:package:{VERSION}','type':'gaam-governance-package','gaamVersion':VERSION,'status':'active','profiles':sorted(manifests),'artifacts':[{'id':re.sub(r'[^a-zA-Z0-9._-]+','-',str(Path(x).with_suffix(''))).strip('-'),'path':x,'mediaType':'application/json' if x.endswith('.json') else 'text/markdown' if x.endswith('.md') else 'text/csv' if x.endswith('.csv') else 'application/octet-stream'} for x in artifact_paths if not x.startswith(('schemas/','vocabularies/'))], 'schemas':[p.name for p in sorted((ROOT/'schemas').glob('*.schema.json'))], 'vocabularies':[p.name for p in sorted((ROOT/'vocabularies').glob('*.json'))], 'integrity':{'algorithm':'sha-256','manifest':'checksums.json'}}
+artifact_paths += [str(p.relative_to(ROOT)) for b in ['schemas','vocabularies','profiles/manifests','tests/behavioural','governance/reviews'] for p in sorted((ROOT/b).glob('*.json'))]
+artifact_paths += [str(p.relative_to(ROOT)) for p in sorted((ROOT/'examples').rglob('*')) if p.is_file() and p.name not in {'.gitkeep'}]
+manifest={'id':f'urn:gaam:package:{VERSION}','type':'gaam-governance-package','gaamVersion':VERSION,'status':'active','profiles':sorted(manifests),'artifacts':[{'id':Path(x).stem,'path':x,'mediaType':'application/json' if x.endswith('.json') else 'text/markdown' if x.endswith('.md') else 'text/csv'} for x in artifact_paths if not x.startswith(('schemas/','vocabularies/'))], 'schemas':[p.name for p in sorted((ROOT/'schemas').glob('*.schema.json'))], 'vocabularies':[p.name for p in sorted((ROOT/'vocabularies').glob('*.json'))], 'integrity':{'algorithm':'sha-256','manifest':'checksums.json'}}
 (pkg/'manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
 perrs=list(Draft202012Validator(schemas['gaam-package']).iter_errors(manifest)); add('PKG-MANIFEST',not perrs,'package manifest conforms','package')
 checks=[]

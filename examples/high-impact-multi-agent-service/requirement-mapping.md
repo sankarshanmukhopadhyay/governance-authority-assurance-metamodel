@@ -1,0 +1,22 @@
+---
+title: "Requirement Mapping"
+permalink: /examples/high-impact-multi-agent-service/requirement-mapping/
+parent: "High-Impact Multi-Agent Service"
+artifact_type: Informative implementation pattern
+normative_status: Informative
+---
+# Requirement Mapping
+The machine-readable `pattern.json` is the authoritative pattern-to-requirement index. Each listed requirement is demonstrated by one or more narrative sections, fixtures or behavioural vectors. The mapping is implementation evidence, not a claim that every deployment using the pattern conforms.
+
+## Requirements demonstrated
+
+- `GAAM-AUTH-001`
+- `GAAM-DEL-001`
+- `GAAM-DEL-003`
+- `GAAM-EVID-001`
+- `GAAM-EVID-004`
+- `GAAM-ASSUR-001`
+- `GAAM-DEC-001`
+- `GAAM-DEC-003`
+- `GAAM-EVT-001`
+- `GAAM-ACC-001`

@@ -9,7 +9,7 @@ normative_status: "Informative"
 
 {% include gaam-meta.html %}
 
-This dashboard exposes the evidence currently available for progression from GAAM v0.9.0 to v1.0.0. The machine-readable sources are [`governance/candidate-issues.json`](../governance/candidate-issues.json), the [review methodology](../governance/reviews/review-methodology.md), the [review baseline](../governance/reviews/review-baseline.json), and the five review registers under [`governance/reviews/`](../governance/reviews/).
+This dashboard exposes the evidence currently available for progression from GAAM v0.9.0 to v1.0.0. The machine-readable sources are [`governance/candidate-issues.json`](../governance/candidate-issues.json) and the review records under [`governance/reviews/`](../governance/reviews/).
 
 ## Current status
 
@@ -23,10 +23,6 @@ This dashboard exposes the evidence currently available for progression from GAA
 | Affected-party review | Not started | Completed review of notice, standing, challenge and remedy execution |
 | Cross-implementation interoperability | Not started | Cross-validator evidence from independent implementations |
 | Breaking candidate issues | No known open item | Continued register validation and explicit classification |
-
-## Review control state
-
-The review programme now has a shared baseline, finding schema, governed vocabulary, evidence directories, attribution model, and joint-disposition register. The baseline remains in `draft` until its `sourceCommit` is replaced with the exact commit SHA and the record is frozen for review.
 
 ## Decision rule
 

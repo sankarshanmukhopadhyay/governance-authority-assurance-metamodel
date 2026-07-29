@@ -1,0 +1,22 @@
+{
+  "id": "urn:gaam:example:high-impact-multi-agent-service:delegation",
+  "type": "delegation",
+  "version": "0.9.0",
+  "status": "active",
+  "effectiveFrom": "2026-07-29T12:00:00Z",
+  "effectiveUntil": "2027-07-29T12:00:00Z",
+  "parentAuthority": "urn:gaam:example:high-impact-multi-agent-service:authority",
+  "delegator": "urn:gaam:actor:principal",
+  "delegate": "urn:gaam:actor:high-impact-multi-agent-service",
+  "delegatedScope": {
+    "pattern": "high-impact-multi-agent-service",
+    "effects": [
+      "execute-within-scope"
+    ]
+  },
+  "redelegation": "unbounded",
+  "propagation": "immediate",
+  "constraints": [
+    "must-not-outlive-parent"
+  ]
+}

@@ -3,19 +3,28 @@
   "status": "candidate",
   "patterns": [
     {
-      "id": "gaam:pattern:cross-registry-recognition:0.9.0",
-      "path": "cross-registry-recognition/pattern.json",
-      "title": "Cross Registry Recognition"
+      "id": "gaam:pattern:delegated-agent-purchase:0.9.0",
+      "title": "Delegated Agent Purchasing",
+      "path": "delegated-agent-purchase",
+      "status": "candidate",
+      "maturity": "assurance-ready",
+      "implementationDomain": "bounded agent purchasing"
     },
     {
-      "id": "gaam:pattern:delegated-agent-purchase:0.9.0",
-      "path": "delegated-agent-purchase/pattern.json",
-      "title": "Delegated Agent Purchase"
+      "id": "gaam:pattern:cross-registry-recognition:0.9.0",
+      "title": "Cross-Registry Recognition",
+      "path": "cross-registry-recognition",
+      "status": "candidate",
+      "maturity": "assurance-ready",
+      "implementationDomain": "cross-registry reliance and recognition"
     },
     {
       "id": "gaam:pattern:high-impact-multi-agent-service:0.9.0",
-      "path": "high-impact-multi-agent-service/pattern.json",
-      "title": "High Impact Multi Agent Service"
+      "title": "High-Impact Multi-Agent Service",
+      "path": "high-impact-multi-agent-service",
+      "status": "candidate",
+      "maturity": "assurance-ready",
+      "implementationDomain": "high-impact composed agent service"
     }
   ]
 }

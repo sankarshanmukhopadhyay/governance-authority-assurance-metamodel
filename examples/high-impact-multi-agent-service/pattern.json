@@ -1,88 +1,184 @@
 {
   "id": "gaam:pattern:high-impact-multi-agent-service:0.9.0",
-  "title": "High Impact Multi Agent Service",
+  "title": "High-Impact Multi-Agent Service",
   "status": "candidate",
-  "maturity": "structural",
+  "maturity": "assurance-ready",
   "gaamVersion": "0.9.0",
-  "implementationDomain": "governed digital systems",
+  "implementationDomain": "high-impact composed agent service",
   "profiles": [
     "gaam:profile:foundation:0.9.0",
-    "gaam:profile:runtime-governance:0.9.0",
     "gaam:profile:agentic-systems:0.9.0",
-    "gaam:profile:continuous-assurance:0.9.0",
-    "gaam:profile:high-impact-systems:0.9.0"
+    "gaam:profile:high-impact-systems:0.9.0",
+    "gaam:profile:runtime-governance:0.9.0",
+    "gaam:profile:continuous-assurance:0.9.0"
   ],
   "requirements": [
-    "GAAM-CORE-001",
-    "GAAM-CORE-002",
-    "GAAM-CORE-003",
-    "GAAM-CORE-004",
-    "GAAM-CORE-005",
     "GAAM-AUTH-001",
-    "GAAM-AUTH-002",
-    "GAAM-AUTH-003"
+    "GAAM-DEL-001",
+    "GAAM-DEL-003",
+    "GAAM-EVID-001",
+    "GAAM-EVID-004",
+    "GAAM-ASSUR-001",
+    "GAAM-DEC-001",
+    "GAAM-DEC-003",
+    "GAAM-EVT-001",
+    "GAAM-ACC-001"
   ],
   "actors": [
     "service operator",
     "orchestration agent",
-    "specialist agent",
+    "specialist agents",
+    "data provider",
+    "policy authority",
+    "runtime enforcement point",
     "human reviewer",
-    "affected party"
+    "affected party",
+    "remedy authority",
+    "assurance function"
   ],
   "authoritySources": [
-    "controlled governance documents",
-    "active authority record"
+    "service operating mandate",
+    "agent-specific authority records",
+    "orchestration policy"
   ],
   "enforcementPoints": [
-    "policy decision point",
-    "policy enforcement point"
+    "orchestration runtime",
+    "effect execution gateway"
   ],
   "evidenceProducers": [
-    "authority resolver",
-    "decision service"
+    "component agents",
+    "data providers",
+    "orchestrator",
+    "human reviewer"
   ],
   "reviewAuthorities": [
-    "accountable review authority"
+    "independent human review function",
+    "remedy authority"
   ],
   "artifacts": [
     "README.md",
     "pattern.json",
     "conformance-claim.json",
+    "architecture.md",
+    "responsibility-model.md",
+    "authority-model.md",
+    "orchestration-sequence.md",
+    "evidence-lineage.md",
+    "lifecycle-and-interruption.md",
+    "notice-review-remedy.md",
+    "privacy-security-analysis.md",
+    "affected-party-analysis.md",
+    "requirement-mapping.md",
     "authority.valid.json",
+    "authority.invalid.json",
+    "delegation.valid.json",
+    "delegation.invalid.json",
     "decision-receipt.valid.json",
-    "authority.invalid.json"
+    "decision-receipt.invalid.json",
+    "governance-event.valid.json",
+    "governance-event.invalid.json",
+    "remedy.valid.json",
+    "remedy.invalid.json",
+    "decision-input.json",
+    "evidence-manifest.json"
   ],
   "schemaFixtures": [
-    "authority.valid.json",
-    "decision-receipt.valid.json",
-    "authority.invalid.json"
+    {
+      "path": "authority.valid.json",
+      "type": "authority",
+      "expectedValid": true
+    },
+    {
+      "path": "authority.invalid.json",
+      "type": "authority",
+      "expectedValid": false
+    },
+    {
+      "path": "delegation.valid.json",
+      "type": "delegation",
+      "expectedValid": true
+    },
+    {
+      "path": "delegation.invalid.json",
+      "type": "delegation",
+      "expectedValid": false
+    },
+    {
+      "path": "decision-receipt.valid.json",
+      "type": "decision-receipt",
+      "expectedValid": true
+    },
+    {
+      "path": "decision-receipt.invalid.json",
+      "type": "decision-receipt",
+      "expectedValid": false
+    },
+    {
+      "path": "governance-event.valid.json",
+      "type": "governance-event",
+      "expectedValid": true
+    },
+    {
+      "path": "governance-event.invalid.json",
+      "type": "governance-event",
+      "expectedValid": false
+    },
+    {
+      "path": "remedy.valid.json",
+      "type": "remedy",
+      "expectedValid": true
+    },
+    {
+      "path": "remedy.invalid.json",
+      "type": "remedy",
+      "expectedValid": false
+    }
   ],
   "behaviouralVectors": [
     "authority-active-valid",
+    "delegation-amplification-rejected",
     "delegation-parent-revoked-rejected",
+    "decision-traceable-valid",
+    "decision-missing-evidence-rejected",
     "decision-stale-evidence-rejected",
     "high-impact-remedy-valid",
     "high-impact-no-remedy-rejected",
-    "high-impact-review-not-independent-rejected"
+    "high-impact-notice-missing-rejected",
+    "high-impact-review-not-independent-rejected",
+    "runtime-revocation-fail-closed-valid"
   ],
-  "supportingExamples": [],
+  "supportingExamples": [
+    "decision-input.json",
+    "evidence-manifest.json"
+  ],
   "positiveScenarios": [
-    {
-      "id": "positive-001",
-      "description": "Valid authority and current evidence satisfy the selected governance controls.",
-      "expectedResult": "accepted"
-    }
+    "advisory and execution authority remain separated",
+    "conflicting agent outputs route to human review",
+    "interruption event prevents further effects and preserves evidence"
   ],
   "negativeScenarios": [
-    {
-      "id": "negative-001",
-      "description": "Invalid, stale, or insufficient authority evidence is presented.",
-      "expectedResult": "rejected"
-    }
+    "advisory agent attempts execution",
+    "orchestrator exceeds scope",
+    "stale component evidence",
+    "required review omitted",
+    "revoked agent remains in graph",
+    "no composite decision owner",
+    "remedy does not propagate",
+    "receipt exposes confidential evidence"
+  ],
+  "lifecycleStates": [
+    "proposed",
+    "active",
+    "restricted",
+    "suspended",
+    "revoked",
+    "contested",
+    "remediated"
   ],
   "limitations": [
-    "Reference pattern only; not independently assessed.",
-    "The current commit establishes architecture and validation, not full assurance-ready scenario documentation."
+    "The pattern is proof-system, model and orchestration-framework neutral.",
+    "Human review quality and sector-specific professional duties require separate controls.",
+    "No independent implementation or interoperability evidence is asserted."
   ],
   "validationCommand": "python scripts/validate.py"
 }

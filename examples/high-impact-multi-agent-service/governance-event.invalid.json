@@ -1,0 +1,12 @@
+{
+  "id": "urn:gaam:example:high-impact-multi-agent-service:event",
+  "type": "governance-event",
+  "artifact": "urn:gaam:example:high-impact-multi-agent-service:authority",
+  "eventType": "suspended",
+  "priorState": "active",
+  "newState": "suspended",
+  "authority": "urn:gaam:authority:governing",
+  "evidence": [
+    "urn:gaam:evidence:high-impact-multi-agent-service:suspension"
+  ]
+}

@@ -1,19 +1,34 @@
 {
   "id": "urn:gaam:example:cross-registry-recognition:authority",
   "type": "authority",
-  "issuer": "urn:example:issuer",
-  "subject": "urn:example:actor",
+  "version": "0.9.0",
+  "status": "active",
+  "effectiveFrom": "2026-07-29T12:00:00Z",
+  "effectiveUntil": "2027-07-29T12:00:00Z",
+  "issuer": "urn:gaam:authority:governing",
+  "subject": "urn:gaam:actor:cross-registry-recognition",
   "permittedEffects": [
-    "request-service"
+    "evaluate",
+    "execute-within-scope"
+  ],
+  "prohibitedEffects": [
+    "execute-outside-scope"
+  ],
+  "obligations": [
+    "produce-decision-receipt"
+  ],
+  "constraints": [
+    "current-state-required"
   ],
   "scope": {
-    "domain": "trust-graph",
-    "limit": 1000
+    "pattern": "cross-registry-recognition"
   },
-  "status": "active",
-  "effectiveFrom": "2026-07-16T00:00:00Z",
-  "revocationAuthority": "urn:example:issuer",
+  "delegationPermitted": true,
+  "revocationAuthority": "urn:gaam:authority:governing",
   "accountableParties": [
-    "urn:example:operator"
+    "urn:gaam:operator:accountable"
+  ],
+  "evidence": [
+    "urn:gaam:evidence:authority-source"
   ]
 }

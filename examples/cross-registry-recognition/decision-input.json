@@ -1,0 +1,8 @@
+{
+  "pattern": "cross-registry-recognition",
+  "purpose": "Illustrative decision input",
+  "authorityState": "active",
+  "policyState": "current",
+  "evidenceFresh": true,
+  "expectedDisposition": "evaluate under declared policy"
+}

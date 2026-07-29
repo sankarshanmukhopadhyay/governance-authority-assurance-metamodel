@@ -1,0 +1,27 @@
+{
+  "id": "urn:gaam:example:cross-registry-recognition:receipt",
+  "type": "decision-receipt",
+  "decision": "urn:gaam:decision:cross-registry-recognition:001",
+  "authority": [
+    "urn:gaam:example:cross-registry-recognition:authority"
+  ],
+  "policy": [
+    "urn:gaam:policy:cross-registry-recognition"
+  ],
+  "evidence": [
+    "urn:gaam:evidence:cross-registry-recognition:current"
+  ],
+  "assurance": [
+    "urn:gaam:assurance:cross-registry-recognition"
+  ],
+  "outcome": "permit-with-conditions",
+  "conditions": [
+    "scope-and-state-remain-valid"
+  ],
+  "decisionTime": "2026-07-29T12:00:00Z",
+  "enforcementPoint": "urn:gaam:enforcement:cross-registry-recognition",
+  "reviewRoute": "urn:gaam:review:cross-registry-recognition",
+  "redactions": [
+    "confidential-evidence-content"
+  ]
+}

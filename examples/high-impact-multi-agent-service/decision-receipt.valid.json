@@ -1,21 +1,28 @@
 {
   "id": "urn:gaam:example:high-impact-multi-agent-service:receipt",
   "type": "decision-receipt",
-  "decision": "urn:gaam:example:high-impact-multi-agent-service:decision",
+  "decision": "urn:gaam:decision:high-impact-multi-agent-service:001",
   "authority": [
     "urn:gaam:example:high-impact-multi-agent-service:authority"
   ],
   "policy": [
-    "urn:gaam:policy:example"
+    "urn:gaam:policy:high-impact-multi-agent-service"
   ],
-  "evidence": [],
-  "assurance": [],
+  "evidence": [
+    "urn:gaam:evidence:high-impact-multi-agent-service:current"
+  ],
+  "assurance": [
+    "urn:gaam:assurance:high-impact-multi-agent-service"
+  ],
   "outcome": "permit-with-conditions",
   "conditions": [
-    "remain within declared scope"
+    "scope-and-state-remain-valid"
   ],
-  "decisionTime": "2026-07-16T00:01:00Z",
-  "enforcementPoint": "urn:example:enforcement",
-  "accountableParty": "urn:example:operator",
-  "reviewRoute": "urn:example:review"
+  "decisionTime": "2026-07-29T12:00:00Z",
+  "enforcementPoint": "urn:gaam:enforcement:high-impact-multi-agent-service",
+  "accountableParty": "urn:gaam:operator:accountable",
+  "reviewRoute": "urn:gaam:review:high-impact-multi-agent-service",
+  "redactions": [
+    "confidential-evidence-content"
+  ]
 }

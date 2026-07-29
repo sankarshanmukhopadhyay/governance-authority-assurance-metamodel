@@ -10,8 +10,8 @@ normative_status: Repository generated
 {% include gaam-meta.html %}
 
 **Status:** PASS  
-**Checks:** 115  
-**Passed:** 115  
+**Checks:** 127  
+**Passed:** 127  
 **Failed:** 0  
 
 This report evidences repository publication, structural and included behavioural checks. It is not an independent L4 assessment.
@@ -53,43 +53,56 @@ This report evidences repository publication, structural and included behavioura
 | `PRO-runtime-governance` | profile | PASS | 21 requirements; dependencies=True; document=True |
 | `PRO-trust-graph` | profile | PASS | 9 requirements; dependencies=True; document=True |
 | `PRO-DEPENDENCIES` | profile | PASS | all profile dependencies resolve |
-| `PAT-SCHEMA` | pattern | PASS | pattern manifest schema is valid Draft 2020-12 |
-| `PAT-CATALOGUE-STRUCTURE` | pattern | PASS | 3 catalogue entries |
 | `PAT-cross-registry-recognition-CONTRACT` | pattern | PASS | required files present |
 | `PAT-cross-registry-recognition-MANIFEST` | pattern | PASS | manifest conforms |
-| `PAT-cross-registry-recognition-REFERENCES` | pattern | PASS | profiles, requirements, artifacts and behavioural vectors resolve |
-| `PAT-cross-registry-recognition-SCENARIOS` | pattern | PASS | positive and negative scenarios declare expected results |
-| `PAT-cross-registry-recognition-LIMITATIONS` | pattern | PASS | conformance limitations declared |
-| `PAT-cross-registry-recognition-MATURITY` | pattern | PASS | maturity claim structural supported by declared evidence |
-| `PAT-cross-registry-recognition-CATALOGUE` | pattern | PASS | catalogue entry resolves |
-| `FIX-cross-registry-recognition-authority.valid` | fixture | PASS | accepted as expected |
-| `FIX-cross-registry-recognition-decision-receipt.valid` | fixture | PASS | accepted as expected |
-| `FIX-cross-registry-recognition-authority.invalid` | fixture | PASS | rejected as expected |
-| `CLM-cross-registry-recognition` | conformance | PASS | schema, evidence and independence rules satisfied |
+| `PAT-cross-registry-recognition-REFERENCES` | pattern | PASS | profile, requirement, artifact and behavioural references resolve |
+| `PAT-cross-registry-recognition-MATURITY` | pattern | PASS | assurance-ready claim supported |
+| `PAT-cross-registry-recognition-CATALOG` | pattern | PASS | catalogue entry present |
+| `FIX-cross-registry-recognition-authority.invalid` | fixture | PASS | rejected as expected; manifest declaration matched |
+| `FIX-cross-registry-recognition-authority.valid` | fixture | PASS | accepted as expected; manifest declaration matched |
+| `FIX-cross-registry-recognition-decision-receipt.invalid` | fixture | PASS | rejected as expected; manifest declaration matched |
+| `FIX-cross-registry-recognition-decision-receipt.valid` | fixture | PASS | accepted as expected; manifest declaration matched |
+| `FIX-cross-registry-recognition-delegation.invalid` | fixture | PASS | rejected as expected; manifest declaration matched |
+| `FIX-cross-registry-recognition-delegation.valid` | fixture | PASS | accepted as expected; manifest declaration matched |
+| `FIX-cross-registry-recognition-governance-event.invalid` | fixture | PASS | rejected as expected; manifest declaration matched |
+| `FIX-cross-registry-recognition-governance-event.valid` | fixture | PASS | accepted as expected; manifest declaration matched |
+| `FIX-cross-registry-recognition-remedy.invalid` | fixture | PASS | rejected as expected; manifest declaration matched |
+| `FIX-cross-registry-recognition-remedy.valid` | fixture | PASS | accepted as expected; manifest declaration matched |
+| `CLM-cross-registry-recognition` | conformance | PASS | schema, evidence, limitations and independence rules satisfied |
 | `PAT-delegated-agent-purchase-CONTRACT` | pattern | PASS | required files present |
 | `PAT-delegated-agent-purchase-MANIFEST` | pattern | PASS | manifest conforms |
-| `PAT-delegated-agent-purchase-REFERENCES` | pattern | PASS | profiles, requirements, artifacts and behavioural vectors resolve |
-| `PAT-delegated-agent-purchase-SCENARIOS` | pattern | PASS | positive and negative scenarios declare expected results |
-| `PAT-delegated-agent-purchase-LIMITATIONS` | pattern | PASS | conformance limitations declared |
-| `PAT-delegated-agent-purchase-MATURITY` | pattern | PASS | maturity claim structural supported by declared evidence |
-| `PAT-delegated-agent-purchase-CATALOGUE` | pattern | PASS | catalogue entry resolves |
-| `FIX-delegated-agent-purchase-authority.valid` | fixture | PASS | accepted as expected |
-| `FIX-delegated-agent-purchase-decision-receipt.valid` | fixture | PASS | accepted as expected |
-| `FIX-delegated-agent-purchase-authority.invalid` | fixture | PASS | rejected as expected |
-| `CLM-delegated-agent-purchase` | conformance | PASS | schema, evidence and independence rules satisfied |
+| `PAT-delegated-agent-purchase-REFERENCES` | pattern | PASS | profile, requirement, artifact and behavioural references resolve |
+| `PAT-delegated-agent-purchase-MATURITY` | pattern | PASS | assurance-ready claim supported |
+| `PAT-delegated-agent-purchase-CATALOG` | pattern | PASS | catalogue entry present |
+| `FIX-delegated-agent-purchase-authority.invalid` | fixture | PASS | rejected as expected; manifest declaration matched |
+| `FIX-delegated-agent-purchase-authority.valid` | fixture | PASS | accepted as expected; manifest declaration matched |
+| `FIX-delegated-agent-purchase-decision-receipt.invalid` | fixture | PASS | rejected as expected; manifest declaration matched |
+| `FIX-delegated-agent-purchase-decision-receipt.valid` | fixture | PASS | accepted as expected; manifest declaration matched |
+| `FIX-delegated-agent-purchase-delegation.invalid` | fixture | PASS | rejected as expected; manifest declaration matched |
+| `FIX-delegated-agent-purchase-delegation.valid` | fixture | PASS | accepted as expected; manifest declaration matched |
+| `FIX-delegated-agent-purchase-governance-event.invalid` | fixture | PASS | rejected as expected; manifest declaration matched |
+| `FIX-delegated-agent-purchase-governance-event.valid` | fixture | PASS | accepted as expected; manifest declaration matched |
+| `FIX-delegated-agent-purchase-remedy.invalid` | fixture | PASS | rejected as expected; manifest declaration matched |
+| `FIX-delegated-agent-purchase-remedy.valid` | fixture | PASS | accepted as expected; manifest declaration matched |
+| `CLM-delegated-agent-purchase` | conformance | PASS | schema, evidence, limitations and independence rules satisfied |
 | `PAT-high-impact-multi-agent-service-CONTRACT` | pattern | PASS | required files present |
 | `PAT-high-impact-multi-agent-service-MANIFEST` | pattern | PASS | manifest conforms |
-| `PAT-high-impact-multi-agent-service-REFERENCES` | pattern | PASS | profiles, requirements, artifacts and behavioural vectors resolve |
-| `PAT-high-impact-multi-agent-service-SCENARIOS` | pattern | PASS | positive and negative scenarios declare expected results |
-| `PAT-high-impact-multi-agent-service-LIMITATIONS` | pattern | PASS | conformance limitations declared |
-| `PAT-high-impact-multi-agent-service-MATURITY` | pattern | PASS | maturity claim structural supported by declared evidence |
-| `PAT-high-impact-multi-agent-service-CATALOGUE` | pattern | PASS | catalogue entry resolves |
-| `FIX-high-impact-multi-agent-service-authority.valid` | fixture | PASS | accepted as expected |
-| `FIX-high-impact-multi-agent-service-decision-receipt.valid` | fixture | PASS | accepted as expected |
-| `FIX-high-impact-multi-agent-service-authority.invalid` | fixture | PASS | rejected as expected |
-| `CLM-high-impact-multi-agent-service` | conformance | PASS | schema, evidence and independence rules satisfied |
+| `PAT-high-impact-multi-agent-service-REFERENCES` | pattern | PASS | profile, requirement, artifact and behavioural references resolve |
+| `PAT-high-impact-multi-agent-service-MATURITY` | pattern | PASS | assurance-ready claim supported |
+| `PAT-high-impact-multi-agent-service-CATALOG` | pattern | PASS | catalogue entry present |
+| `FIX-high-impact-multi-agent-service-authority.invalid` | fixture | PASS | rejected as expected; manifest declaration matched |
+| `FIX-high-impact-multi-agent-service-authority.valid` | fixture | PASS | accepted as expected; manifest declaration matched |
+| `FIX-high-impact-multi-agent-service-decision-receipt.invalid` | fixture | PASS | rejected as expected; manifest declaration matched |
+| `FIX-high-impact-multi-agent-service-decision-receipt.valid` | fixture | PASS | accepted as expected; manifest declaration matched |
+| `FIX-high-impact-multi-agent-service-delegation.invalid` | fixture | PASS | rejected as expected; manifest declaration matched |
+| `FIX-high-impact-multi-agent-service-delegation.valid` | fixture | PASS | accepted as expected; manifest declaration matched |
+| `FIX-high-impact-multi-agent-service-governance-event.invalid` | fixture | PASS | rejected as expected; manifest declaration matched |
+| `FIX-high-impact-multi-agent-service-governance-event.valid` | fixture | PASS | accepted as expected; manifest declaration matched |
+| `FIX-high-impact-multi-agent-service-remedy.invalid` | fixture | PASS | rejected as expected; manifest declaration matched |
+| `FIX-high-impact-multi-agent-service-remedy.valid` | fixture | PASS | accepted as expected; manifest declaration matched |
+| `CLM-high-impact-multi-agent-service` | conformance | PASS | schema, evidence, limitations and independence rules satisfied |
 | `PAT-IDS` | pattern | PASS | 3 unique pattern identifiers |
-| `PAT-CATALOGUE-COVERAGE` | pattern | PASS | catalogue covers 3 patterns |
+| `PAT-CATALOG-COVERAGE` | pattern | PASS | 3 pattern directories catalogued |
 | `BEH-assurance-expired-rejected` | behavioural | PASS | expected=False; actual=False |
 | `BEH-assurance-independence-insufficient-rejected` | behavioural | PASS | expected=False; actual=False |
 | `BEH-authority-active-valid` | behavioural | PASS | expected=True; actual=True |
@@ -127,9 +140,8 @@ This report evidences repository publication, structural and included behavioura
 | `CI-WORKFLOW` | automation | PASS | validation workflow present |
 | `GOV-CANDIDATE-REGISTER` | governance | PASS | 5 candidate issues have valid authority, scope, evidence and disposition fields |
 | `GOV-CANDIDATE-IDS` | governance | PASS | 5 unique candidate issue identifiers |
-| `GOV-REVIEW-REGISTERS` | governance | PASS | 5 review registers, baseline and lifecycle controls are valid |
-| `GOV-REVIEW-FINDING-IDS` | governance | PASS | 0 unique review finding identifiers |
+| `GOV-REVIEW-REGISTERS` | governance | PASS | 5 required review registers are structurally complete |
 | `GOV-CONTRIBUTION-CONTROLS` | governance | PASS | candidate issue forms and pull-request governance template present |
 | `GOV-V1-READINESS-STATE` | governance | PASS | 5 explicitly recorded open v1 blockers: GAAM-CR-001, GAAM-CR-002, GAAM-CR-003, GAAM-CR-004, GAAM-CR-005 |
 | `PKG-MANIFEST` | package | PASS | package manifest conforms |
-| `PKG-INTEGRITY` | package | PASS | 100 checksums verified |
+| `PKG-INTEGRITY` | package | PASS | 149 checksums verified |

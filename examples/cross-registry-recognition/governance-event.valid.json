@@ -1,0 +1,13 @@
+{
+  "id": "urn:gaam:example:cross-registry-recognition:event",
+  "type": "governance-event",
+  "artifact": "urn:gaam:example:cross-registry-recognition:authority",
+  "eventType": "suspended",
+  "priorState": "active",
+  "newState": "suspended",
+  "authority": "urn:gaam:authority:governing",
+  "evidence": [
+    "urn:gaam:evidence:cross-registry-recognition:suspension"
+  ],
+  "eventTime": "2026-07-29T12:00:00Z"
+}

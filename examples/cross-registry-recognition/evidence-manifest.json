@@ -1,0 +1,22 @@
+{
+  "pattern": "cross-registry-recognition",
+  "evidence": [
+    {
+      "id": "urn:gaam:evidence:cross-registry-recognition:current",
+      "producer": "source registry",
+      "purpose": "runtime decision",
+      "freshness": "current"
+    },
+    {
+      "id": "urn:gaam:evidence:cross-registry-recognition:downstream-correction",
+      "producer": "recognition review authority",
+      "purpose": "remedy verification",
+      "freshness": "current"
+    }
+  ],
+  "limitations": [
+    "Recognition remains a relying-registry decision and is not transitive by default.",
+    "No universal registry semantics or cross-jurisdiction legal equivalence is asserted.",
+    "No independent interoperability evidence is asserted."
+  ]
+}

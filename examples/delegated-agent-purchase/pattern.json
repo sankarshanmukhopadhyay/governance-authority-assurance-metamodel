@@ -1,10 +1,10 @@
 {
   "id": "gaam:pattern:delegated-agent-purchase:0.9.0",
-  "title": "Delegated Agent Purchase",
+  "title": "Delegated Agent Purchasing",
   "status": "candidate",
-  "maturity": "structural",
+  "maturity": "assurance-ready",
   "gaamVersion": "0.9.0",
-  "implementationDomain": "governed digital systems",
+  "implementationDomain": "bounded agent purchasing",
   "profiles": [
     "gaam:profile:foundation:0.9.0",
     "gaam:profile:delegated-authority:0.9.0",
@@ -12,76 +12,167 @@
     "gaam:profile:agentic-systems:0.9.0"
   ],
   "requirements": [
-    "GAAM-CORE-001",
-    "GAAM-CORE-002",
-    "GAAM-CORE-003",
-    "GAAM-CORE-004",
-    "GAAM-CORE-005",
     "GAAM-AUTH-001",
-    "GAAM-AUTH-002",
-    "GAAM-AUTH-003"
+    "GAAM-AUTH-003",
+    "GAAM-DEL-001",
+    "GAAM-DEL-002",
+    "GAAM-DEL-004",
+    "GAAM-DEC-001",
+    "GAAM-DEC-003",
+    "GAAM-EVT-001",
+    "GAAM-ACC-001"
   ],
   "actors": [
     "principal",
     "delegated agent",
+    "agent operator",
     "merchant",
     "policy decision point",
-    "review authority"
+    "policy enforcement point",
+    "transaction system",
+    "assurance provider",
+    "review authority",
+    "affected principal"
   ],
   "authoritySources": [
-    "controlled governance documents",
-    "active authority record"
+    "principal purchasing mandate",
+    "delegation record",
+    "applicable purchasing policy"
   ],
   "enforcementPoints": [
-    "policy decision point",
-    "policy enforcement point"
+    "merchant transaction gateway",
+    "payment authorisation service"
   ],
   "evidenceProducers": [
-    "authority resolver",
-    "decision service"
+    "delegation registry",
+    "policy decision point",
+    "transaction system"
   ],
   "reviewAuthorities": [
-    "accountable review authority"
+    "principal review authority",
+    "independent dispute function"
   ],
   "artifacts": [
     "README.md",
     "pattern.json",
     "conformance-claim.json",
+    "architecture.md",
+    "authority-model.md",
+    "sequence.md",
+    "evidence-model.md",
+    "lifecycle-and-revocation.md",
+    "notice-review-remedy.md",
+    "privacy-security-analysis.md",
+    "affected-party-analysis.md",
+    "requirement-mapping.md",
     "authority.valid.json",
+    "authority.invalid.json",
+    "delegation.valid.json",
+    "delegation.invalid.json",
     "decision-receipt.valid.json",
-    "authority.invalid.json"
+    "decision-receipt.invalid.json",
+    "governance-event.valid.json",
+    "governance-event.invalid.json",
+    "remedy.valid.json",
+    "remedy.invalid.json",
+    "decision-input.json",
+    "evidence-manifest.json"
   ],
   "schemaFixtures": [
-    "authority.valid.json",
-    "decision-receipt.valid.json",
-    "authority.invalid.json"
+    {
+      "path": "authority.valid.json",
+      "type": "authority",
+      "expectedValid": true
+    },
+    {
+      "path": "authority.invalid.json",
+      "type": "authority",
+      "expectedValid": false
+    },
+    {
+      "path": "delegation.valid.json",
+      "type": "delegation",
+      "expectedValid": true
+    },
+    {
+      "path": "delegation.invalid.json",
+      "type": "delegation",
+      "expectedValid": false
+    },
+    {
+      "path": "decision-receipt.valid.json",
+      "type": "decision-receipt",
+      "expectedValid": true
+    },
+    {
+      "path": "decision-receipt.invalid.json",
+      "type": "decision-receipt",
+      "expectedValid": false
+    },
+    {
+      "path": "governance-event.valid.json",
+      "type": "governance-event",
+      "expectedValid": true
+    },
+    {
+      "path": "governance-event.invalid.json",
+      "type": "governance-event",
+      "expectedValid": false
+    },
+    {
+      "path": "remedy.valid.json",
+      "type": "remedy",
+      "expectedValid": true
+    },
+    {
+      "path": "remedy.invalid.json",
+      "type": "remedy",
+      "expectedValid": false
+    }
   ],
   "behaviouralVectors": [
     "authority-active-valid",
+    "authority-expired-rejected",
+    "authority-revoked-rejected",
     "delegation-attenuated-valid",
     "delegation-amplification-rejected",
-    "runtime-revocation-fail-closed-valid",
+    "delegation-child-outlives-parent-rejected",
+    "delegation-redelegation-prohibited-rejected",
     "decision-traceable-valid",
-    "decision-missing-evidence-rejected"
+    "decision-stale-evidence-rejected",
+    "runtime-revocation-fail-closed-valid",
+    "runtime-stale-state-fail-open-rejected",
+    "high-impact-remedy-valid"
   ],
-  "supportingExamples": [],
+  "supportingExamples": [
+    "decision-input.json",
+    "evidence-manifest.json"
+  ],
   "positiveScenarios": [
-    {
-      "id": "positive-001",
-      "description": "Valid authority and current evidence satisfy the selected governance controls.",
-      "expectedResult": "accepted"
-    }
+    "permitted purchase within delegated scope and value ceiling",
+    "traceable decision with current authority, policy and evidence",
+    "correction and remedy propagated after an incorrect transaction"
   ],
   "negativeScenarios": [
-    {
-      "id": "negative-001",
-      "description": "Invalid, stale, or insufficient authority evidence is presented.",
-      "expectedResult": "rejected"
-    }
+    "value ceiling exceeded",
+    "purpose outside scope",
+    "expired or revoked delegation",
+    "prohibited redelegation",
+    "child delegation outlives parent",
+    "revocation state unavailable and request fails closed"
+  ],
+  "lifecycleStates": [
+    "issued",
+    "active",
+    "suspended",
+    "revoked",
+    "expired",
+    "remediated"
   ],
   "limitations": [
-    "Reference pattern only; not independently assessed.",
-    "The current commit establishes architecture and validation, not full assurance-ready scenario documentation."
+    "Example policies and identifiers are illustrative.",
+    "No independent implementation or interoperability evidence is asserted.",
+    "Payment-network, consumer-protection and jurisdiction-specific controls remain external."
   ],
   "validationCommand": "python scripts/validate.py"
 }

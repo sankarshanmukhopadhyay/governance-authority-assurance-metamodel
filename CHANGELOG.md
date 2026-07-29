@@ -7,6 +7,14 @@ normative_status: "Release record"
 ---
 # Changelog
 
+## Unreleased: assurance-ready composed patterns
+
+- Expanded the delegated agent purchasing, cross-registry recognition and high-impact multi-agent service examples into assurance-ready implementation patterns.
+- Added pattern manifests, differentiated architecture and authority documentation, lifecycle, evidence, review, remedy, privacy, security and affected-party analysis.
+- Added valid and invalid authority, delegation, decision-receipt, governance-event and remedy fixtures.
+- Added a shared pattern catalogue, maturity model, template, validation guide and composed-pattern comparison.
+- Preserved normative GAAM requirements, schemas, profiles, vocabularies, threat-model content and conformance semantics.
+
 {% include gaam-meta.html %}
 
 All notable changes will be documented here. The project uses Semantic Versioning adapted for an evolving specification.
@@ -35,9 +43,6 @@ All notable changes will be documented here. The project uses Semantic Versionin
 - Add source and rendered-publication checks for the one-H1 rule, publication-region ordering and stylesheet availability.
 
 ### Documentation
-
-- Establish a common independent-review methodology, frozen-baseline model, finding schema and vocabulary, evidence conventions, and joint-disposition register across all five candidate-readiness workstreams.
-- Extend review validation and package integrity to cover attributable closure conditions and nested review evidence without changing the normative specification surface.
 
 - Add machine-readable candidate issue and review registers, governed GitHub issue and pull-request templates, and a v1.0.0 readiness dashboard without changing the normative specification surface.
 - Add requirement-level assurance traceability, testability dispositions, and expanded negative and boundary fixtures for existing GAAM v0.9.0 obligations.
@@ -92,16 +97,3 @@ All notable changes will be documented here. The project uses Semantic Versionin
 - Implementation, conformance and reviewer guidance.
 - Initial examples and architecture diagrams.
 - Repository governance, contribution, security and release hygiene.
-
-## Unreleased
-
-### Added
-
-- A common implementation-pattern architecture under `examples/`.
-- Machine-readable pattern manifests, catalogue, maturity model, template, and validation guide.
-- Controlled validator checks for pattern contracts, references, scenarios, maturity, catalogue coverage, and fixture classification.
-
-### Changed
-
-- Existing implementation examples now declare their profiles, requirements, actors, authority sources, enforcement points, evidence producers, behavioural vectors, scenarios, and limitations.
-- Package integrity collection now includes intended implementation-pattern artifacts recursively.

@@ -1,0 +1,22 @@
+{
+  "pattern": "high-impact-multi-agent-service",
+  "evidence": [
+    {
+      "id": "urn:gaam:evidence:high-impact-multi-agent-service:current",
+      "producer": "component agents",
+      "purpose": "runtime decision",
+      "freshness": "current"
+    },
+    {
+      "id": "urn:gaam:evidence:high-impact-multi-agent-service:downstream-correction",
+      "producer": "independent human review function",
+      "purpose": "remedy verification",
+      "freshness": "current"
+    }
+  ],
+  "limitations": [
+    "The pattern is proof-system, model and orchestration-framework neutral.",
+    "Human review quality and sector-specific professional duties require separate controls.",
+    "No independent implementation or interoperability evidence is asserted."
+  ]
+}

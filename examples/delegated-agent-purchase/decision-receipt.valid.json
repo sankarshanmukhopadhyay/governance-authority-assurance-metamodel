@@ -1,21 +1,28 @@
 {
   "id": "urn:gaam:example:delegated-agent-purchase:receipt",
   "type": "decision-receipt",
-  "decision": "urn:gaam:example:delegated-agent-purchase:decision",
+  "decision": "urn:gaam:decision:delegated-agent-purchase:001",
   "authority": [
     "urn:gaam:example:delegated-agent-purchase:authority"
   ],
   "policy": [
-    "urn:gaam:policy:example"
+    "urn:gaam:policy:delegated-agent-purchase"
   ],
-  "evidence": [],
-  "assurance": [],
+  "evidence": [
+    "urn:gaam:evidence:delegated-agent-purchase:current"
+  ],
+  "assurance": [
+    "urn:gaam:assurance:delegated-agent-purchase"
+  ],
   "outcome": "permit-with-conditions",
   "conditions": [
-    "remain within declared scope"
+    "scope-and-state-remain-valid"
   ],
-  "decisionTime": "2026-07-16T00:01:00Z",
-  "enforcementPoint": "urn:example:enforcement",
-  "accountableParty": "urn:example:operator",
-  "reviewRoute": "urn:example:review"
+  "decisionTime": "2026-07-29T12:00:00Z",
+  "enforcementPoint": "urn:gaam:enforcement:delegated-agent-purchase",
+  "accountableParty": "urn:gaam:operator:accountable",
+  "reviewRoute": "urn:gaam:review:delegated-agent-purchase",
+  "redactions": [
+    "confidential-evidence-content"
+  ]
 }

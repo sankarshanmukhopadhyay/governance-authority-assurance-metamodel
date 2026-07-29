@@ -12,12 +12,16 @@
   "target": "urn:gaam:example:high-impact-multi-agent-service",
   "level": "L2",
   "evidence": [
-    "urn:gaam:evidence:validation-results"
+    "urn:gaam:pattern:high-impact-multi-agent-service:manifest",
+    "urn:gaam:pattern:high-impact-multi-agent-service:fixtures",
+    "urn:gaam:pattern:high-impact-multi-agent-service:behavioural-traceability"
   ],
   "issuedBy": "urn:gaam:maintainer",
   "issuedAt": "2026-07-16T00:02:00Z",
   "limitations": [
-    "Reference example; not an independent implementation assessment."
+    "The pattern is proof-system, model and orchestration-framework neutral.",
+    "Human review quality and sector-specific professional duties require separate controls.",
+    "No independent implementation or interoperability evidence is asserted."
   ],
   "testSuiteVersion": "0.9.0",
   "assessmentIndependence": "self",

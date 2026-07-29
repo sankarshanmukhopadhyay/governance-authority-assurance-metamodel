@@ -1,0 +1,27 @@
+{
+  "id": "urn:gaam:profile-candidate:governed-ecosystem-operations:0.9.0-research",
+  "type": "gaam-profile-candidate",
+  "title": "Governed Ecosystem Operations",
+  "gaamVersion": "0.9.0",
+  "status": "research-draft",
+  "normativeStatus": "informative-non-conformant",
+  "conformanceClaimPermitted": false,
+  "futureEnhancements": [
+    "FE-001",
+    "FE-002",
+    "FE-003",
+    "FE-015",
+    "FE-018",
+    "FE-022"
+  ],
+  "dependencies": [
+    "gaam:profile:foundation:0.9.0"
+  ],
+  "promotionCriteria": [
+    "implementation evidence",
+    "behavioural evidence",
+    "independent review",
+    "approved normative-impact assessment",
+    "later versioned release"
+  ]
+}

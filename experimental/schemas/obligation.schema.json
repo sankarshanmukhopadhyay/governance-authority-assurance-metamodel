@@ -1,0 +1,69 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "additionalProperties": false,
+  "$id": "https://sankarshanmukhopadhyay.github.io/governance-authority-assurance-metamodel/experimental/0.9.0-research/schemas/obligation.schema.json",
+  "title": "Obligation (Experimental)",
+  "description": "Experimental GAAM v0.9.0 research artefact. Non-normative and non-conformant.",
+  "required": [
+    "type",
+    "gaamVersion",
+    "status",
+    "normativeStatus",
+    "dueAt",
+    "obligationId",
+    "responsibleParty",
+    "obligationStatus",
+    "trigger"
+  ],
+  "properties": {
+    "type": {
+      "const": "obligation"
+    },
+    "gaamVersion": {
+      "const": "0.9.0"
+    },
+    "status": {
+      "const": "experimental"
+    },
+    "normativeStatus": {
+      "const": "non-normative"
+    },
+    "obligationId": {
+      "type": "string"
+    },
+    "responsibleParty": {
+      "type": "string"
+    },
+    "trigger": {
+      "type": "string"
+    },
+    "dueAt": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "fulfilmentEvidence": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "relatedDecision": {
+      "type": "string"
+    },
+    "obligationStatus": {
+      "enum": [
+        "created",
+        "assigned",
+        "accepted",
+        "due",
+        "fulfilled",
+        "breached",
+        "waived",
+        "superseded",
+        "remedied",
+        "closed"
+      ]
+    }
+  }
+}

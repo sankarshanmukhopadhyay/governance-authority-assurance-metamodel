@@ -1593,6 +1593,211 @@
       "id": "future-enhancement-register",
       "path": "governance/future-enhancement-register.json",
       "mediaType": "application/json"
+    },
+    {
+      "id": "index",
+      "path": "profiles-draft/advanced-agent-orchestration/index.md",
+      "mediaType": "text/markdown"
+    },
+    {
+      "id": "profile-candidate",
+      "path": "profiles-draft/advanced-agent-orchestration/profile-candidate.json",
+      "mediaType": "application/json"
+    },
+    {
+      "id": "index",
+      "path": "profiles-draft/cross-jurisdiction-governance/index.md",
+      "mediaType": "text/markdown"
+    },
+    {
+      "id": "profile-candidate",
+      "path": "profiles-draft/cross-jurisdiction-governance/profile-candidate.json",
+      "mediaType": "application/json"
+    },
+    {
+      "id": "index",
+      "path": "profiles-draft/governed-ecosystem-operations/index.md",
+      "mediaType": "text/markdown"
+    },
+    {
+      "id": "profile-candidate",
+      "path": "profiles-draft/governed-ecosystem-operations/profile-candidate.json",
+      "mediaType": "application/json"
+    },
+    {
+      "id": "index",
+      "path": "profiles-draft/index.md",
+      "mediaType": "text/markdown"
+    },
+    {
+      "id": "index",
+      "path": "profiles-draft/institutional-continuity/index.md",
+      "mediaType": "text/markdown"
+    },
+    {
+      "id": "profile-candidate",
+      "path": "profiles-draft/institutional-continuity/profile-candidate.json",
+      "mediaType": "application/json"
+    },
+    {
+      "id": "index",
+      "path": "profiles-draft/market-and-infrastructure-governance/index.md",
+      "mediaType": "text/markdown"
+    },
+    {
+      "id": "profile-candidate",
+      "path": "profiles-draft/market-and-infrastructure-governance/profile-candidate.json",
+      "mediaType": "application/json"
+    },
+    {
+      "id": "index",
+      "path": "profiles-draft/organisational-authority/index.md",
+      "mediaType": "text/markdown"
+    },
+    {
+      "id": "profile-candidate",
+      "path": "profiles-draft/organisational-authority/profile-candidate.json",
+      "mediaType": "application/json"
+    },
+    {
+      "id": "index",
+      "path": "profiles-draft/privacy-and-inference-governance/index.md",
+      "mediaType": "text/markdown"
+    },
+    {
+      "id": "profile-candidate",
+      "path": "profiles-draft/privacy-and-inference-governance/profile-candidate.json",
+      "mediaType": "application/json"
+    },
+    {
+      "id": "README",
+      "path": "experimental/README.md",
+      "mediaType": "text/markdown"
+    },
+    {
+      "id": "catalog",
+      "path": "experimental/catalog.json",
+      "mediaType": "application/json"
+    },
+    {
+      "id": "agent-state-lineage.valid",
+      "path": "experimental/examples/agent-state-lineage.valid.json",
+      "mediaType": "application/json"
+    },
+    {
+      "id": "assurance-dependency.valid",
+      "path": "experimental/examples/assurance-dependency.valid.json",
+      "mediaType": "application/json"
+    },
+    {
+      "id": "authority-scope.valid",
+      "path": "experimental/examples/authority-scope.valid.json",
+      "mediaType": "application/json"
+    },
+    {
+      "id": "framework-composition.valid",
+      "path": "experimental/examples/framework-composition.valid.json",
+      "mediaType": "application/json"
+    },
+    {
+      "id": "governance-state.valid",
+      "path": "experimental/examples/governance-state.valid.json",
+      "mediaType": "application/json"
+    },
+    {
+      "id": "institutional-transition.valid",
+      "path": "experimental/examples/institutional-transition.valid.json",
+      "mediaType": "application/json"
+    },
+    {
+      "id": "obligation.valid",
+      "path": "experimental/examples/obligation.valid.json",
+      "mediaType": "application/json"
+    },
+    {
+      "id": "qualification-record.valid",
+      "path": "experimental/examples/qualification-record.valid.json",
+      "mediaType": "application/json"
+    },
+    {
+      "id": "remedy-execution.valid",
+      "path": "experimental/examples/remedy-execution.valid.json",
+      "mediaType": "application/json"
+    },
+    {
+      "id": "risk-acceptance.valid",
+      "path": "experimental/examples/risk-acceptance.valid.json",
+      "mediaType": "application/json"
+    },
+    {
+      "id": "agent-state-lineage.schema",
+      "path": "experimental/schemas/agent-state-lineage.schema.json",
+      "mediaType": "application/json"
+    },
+    {
+      "id": "assurance-dependency.schema",
+      "path": "experimental/schemas/assurance-dependency.schema.json",
+      "mediaType": "application/json"
+    },
+    {
+      "id": "authority-scope.schema",
+      "path": "experimental/schemas/authority-scope.schema.json",
+      "mediaType": "application/json"
+    },
+    {
+      "id": "framework-composition.schema",
+      "path": "experimental/schemas/framework-composition.schema.json",
+      "mediaType": "application/json"
+    },
+    {
+      "id": "governance-state.schema",
+      "path": "experimental/schemas/governance-state.schema.json",
+      "mediaType": "application/json"
+    },
+    {
+      "id": "institutional-transition.schema",
+      "path": "experimental/schemas/institutional-transition.schema.json",
+      "mediaType": "application/json"
+    },
+    {
+      "id": "obligation.schema",
+      "path": "experimental/schemas/obligation.schema.json",
+      "mediaType": "application/json"
+    },
+    {
+      "id": "qualification-record.schema",
+      "path": "experimental/schemas/qualification-record.schema.json",
+      "mediaType": "application/json"
+    },
+    {
+      "id": "remedy-execution.schema",
+      "path": "experimental/schemas/remedy-execution.schema.json",
+      "mediaType": "application/json"
+    },
+    {
+      "id": "risk-acceptance.schema",
+      "path": "experimental/schemas/risk-acceptance.schema.json",
+      "mediaType": "application/json"
+    },
+    {
+      "id": "agent-control-modes",
+      "path": "experimental/vocabularies/agent-control-modes.json",
+      "mediaType": "application/json"
+    },
+    {
+      "id": "confidence-dimensions",
+      "path": "experimental/vocabularies/confidence-dimensions.json",
+      "mediaType": "application/json"
+    },
+    {
+      "id": "continuity-states",
+      "path": "experimental/vocabularies/continuity-states.json",
+      "mediaType": "application/json"
+    },
+    {
+      "id": "framework-composition-relationships",
+      "path": "experimental/vocabularies/framework-composition-relationships.json",
+      "mediaType": "application/json"
     }
   ],
   "schemas": [

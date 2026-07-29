@@ -20,3 +20,8 @@ GAAM v0.9.0 is the unchanged candidate specification. This section records futur
 | [Candidate Concepts](concepts/index.md) | Detailed future-facing governance concepts for implementation testing |
 
 The machine-readable [future enhancement register](../../governance/future-enhancement-register.json) is the authoritative programme inventory. A listed item is not approved merely because it appears in the register.
+
+## Research artefacts
+
+- [Draft Profile Candidates](../../profiles-draft/) organise specialised future requirements without creating conformance targets.
+- [Experimental Machine-Readable Artefacts](../../experimental/) prototype schemas, records and vocabularies outside the canonical v0.9.0 surface.

@@ -1,0 +1,23 @@
+{
+  "id": "urn:gaam:profile-candidate:cross-jurisdiction-governance:0.9.0-research",
+  "type": "gaam-profile-candidate",
+  "title": "Cross-Jurisdiction Governance",
+  "gaamVersion": "0.9.0",
+  "status": "research-draft",
+  "normativeStatus": "informative-non-conformant",
+  "conformanceClaimPermitted": false,
+  "futureEnhancements": [
+    "FE-023",
+    "FE-024"
+  ],
+  "dependencies": [
+    "gaam:profile:foundation:0.9.0"
+  ],
+  "promotionCriteria": [
+    "implementation evidence",
+    "behavioural evidence",
+    "independent review",
+    "approved normative-impact assessment",
+    "later versioned release"
+  ]
+}

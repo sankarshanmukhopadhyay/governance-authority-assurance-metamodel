@@ -1,0 +1,73 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "additionalProperties": false,
+  "$id": "https://sankarshanmukhopadhyay.github.io/governance-authority-assurance-metamodel/experimental/0.9.0-research/schemas/risk-acceptance.schema.json",
+  "title": "Risk Acceptance (Experimental)",
+  "description": "Experimental GAAM v0.9.0 research artefact. Non-normative and non-conformant.",
+  "required": [
+    "type",
+    "gaamVersion",
+    "status",
+    "normativeStatus",
+    "acceptedAt",
+    "acceptingAuthority",
+    "rationale",
+    "reviewAt",
+    "riskId",
+    "acceptanceStatus"
+  ],
+  "properties": {
+    "type": {
+      "const": "risk-acceptance"
+    },
+    "gaamVersion": {
+      "const": "0.9.0"
+    },
+    "status": {
+      "const": "experimental"
+    },
+    "normativeStatus": {
+      "const": "non-normative"
+    },
+    "riskId": {
+      "type": "string"
+    },
+    "acceptingAuthority": {
+      "type": "string"
+    },
+    "rationale": {
+      "type": "string",
+      "minLength": 1
+    },
+    "acceptedAt": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "reviewAt": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "conditions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "affectedParties": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "acceptanceStatus": {
+      "enum": [
+        "proposed",
+        "accepted",
+        "expired",
+        "withdrawn",
+        "superseded"
+      ]
+    }
+  }
+}

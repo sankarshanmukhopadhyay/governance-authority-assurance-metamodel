@@ -10,8 +10,8 @@ normative_status: Repository generated
 {% include gaam-meta.html %}
 
 **Status:** PASS  
-**Checks:** 236  
-**Passed:** 236  
+**Checks:** 239  
+**Passed:** 239  
 **Failed:** 0  
 
 This report evidences repository publication, structural and included behavioural checks. It is not an independent L4 assessment.
@@ -31,6 +31,9 @@ This report evidences repository publication, structural and included behavioura
 | `PUB-IA-TOP-ORDER` | publication | PASS | top-level workflow order is deterministic |
 | `PUB-FUTURE-EVOLUTION` | publication | PASS | future-evolution programme published as informative research |
 | `GOV-FUTURE-REGISTER` | governance | PASS | 25 future enhancements classified with controlled delivery and promotion states |
+| `GOV-FUTURE-DRAFT-PROFILES` | governance | PASS | 7 draft profiles are explicitly non-conformant |
+| `SCH-EXPERIMENTAL` | schema | PASS | 10 experimental schemas and examples validated outside the canonical surface |
+| `GOV-FUTURE-NO-NORMATIVE-IMPORT` | governance | PASS | canonical v0.9.0 artifacts do not import experimental identifiers |
 | `GOV-FUTURE-BOUNDARY` | governance | PASS | future-evolution assets cannot be mistaken for GAAM v0.9.0 conformance material |
 | `REQ-001-unique` | normative | PASS | 190 identifiers |
 | `REQ-002-index-exact` | normative | PASS | 190 indexed requirements |
@@ -253,4 +256,4 @@ This report evidences repository publication, structural and included behavioura
 | `GOV-CONTRIBUTION-CONTROLS` | governance | PASS | candidate issue forms and pull-request governance template present |
 | `GOV-V1-READINESS-STATE` | governance | PASS | 5 explicitly recorded open v1 blockers: GAAM-CR-001, GAAM-CR-002, GAAM-CR-003, GAAM-CR-004, GAAM-CR-005 |
 | `PKG-MANIFEST` | package | PASS | package manifest conforms |
-| `PKG-INTEGRITY` | package | PASS | 336 checksums verified |
+| `PKG-INTEGRITY` | package | PASS | 377 checksums verified |

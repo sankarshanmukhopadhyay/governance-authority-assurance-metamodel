@@ -121,7 +121,7 @@ future_register_path=ROOT/'governance/future-enhancement-register.json'
 future_register_errors=[]
 valid_future_gaps={'already-covered','guidance-gap','pattern-gap','schema-gap','vocabulary-gap','profile-gap','normative-semantics-gap','test-gap','evidence-gap'}
 valid_future_layers={'informative-concept','draft-profile','experimental-schema','experimental-fields','experimental-vocabulary','implementation-pattern','implementation-guidance','behavioural-test','core-candidate'}
-valid_future_statuses={'candidate','in-analysis','evidence-collection','review-ready','closed'}
+valid_future_statuses={'candidate','prototype-available','under-evaluation','closed'}
 valid_promotion={'not-assessed','retain-as-guidance','retain-as-pattern','retain-as-experimental','promote-to-profile','promote-to-core','promote-to-normative-schema','defer','reject'}
 try:
  fr=load(future_register_path)
@@ -139,6 +139,46 @@ try:
   if baddeps: future_register_errors.append(f"{e.get('id')}: unknown dependencies {baddeps}")
 except Exception as e: future_register_errors.append(str(e))
 add('GOV-FUTURE-REGISTER',not future_register_errors,'25 future enhancements classified with controlled delivery and promotion states' if not future_register_errors else '; '.join(future_register_errors[:10]),'governance')
+# Draft profiles and experimental artefacts must remain outside v0.9.0 conformance
+research_errors=[]
+draft_root=ROOT/'profiles-draft'; exp_root=ROOT/'experimental'
+expected_drafts={'governed-ecosystem-operations','organisational-authority','institutional-continuity','privacy-and-inference-governance','cross-jurisdiction-governance','market-and-infrastructure-governance','advanced-agent-orchestration'}
+actual_drafts={d.name for d in draft_root.iterdir() if d.is_dir()} if draft_root.exists() else set()
+if actual_drafts!=expected_drafts: research_errors.append(f'draft profile set differs: {sorted(actual_drafts)}')
+for slug in sorted(expected_drafts):
+ p=draft_root/slug/'profile-candidate.json'
+ if not p.exists(): research_errors.append(f'{slug}: profile-candidate.json missing'); continue
+ try:
+  o=load(p)
+  if o.get('gaamVersion')!=VERSION or o.get('status')!='research-draft' or o.get('normativeStatus')!='informative-non-conformant' or o.get('conformanceClaimPermitted') is not False: research_errors.append(f'{slug}: invalid research boundary')
+ except Exception as e: research_errors.append(f'{slug}: {e}')
+add('GOV-FUTURE-DRAFT-PROFILES',not research_errors,f'{len(expected_drafts)} draft profiles are explicitly non-conformant' if not research_errors else '; '.join(research_errors[:10]),'governance')
+experimental_errors=[]
+try:
+ ec=load(exp_root/'catalog.json'); entries=ec.get('schemas',[])
+ if ec.get('gaamVersion')!=VERSION or ec.get('normativeStatus')!='non-normative': experimental_errors.append('catalog boundary invalid')
+ for e in entries:
+  sp=exp_root/e['schema']; xp=exp_root/e['example']
+  if not sp.exists() or not xp.exists(): experimental_errors.append(f"{e.get('id')}: missing schema/example"); continue
+  s=load(sp); x=load(xp)
+  try: Draft202012Validator.check_schema(s)
+  except Exception as err: experimental_errors.append(f"{e.get('id')}: invalid schema {err}"); continue
+  if '/experimental/0.9.0-research/' not in s.get('$id',''): experimental_errors.append(f"{e.get('id')}: identifier outside experimental namespace")
+  if x.get('status')!='experimental' or x.get('normativeStatus')!='non-normative': experimental_errors.append(f"{e.get('id')}: example boundary invalid")
+  errs=list(Draft202012Validator(s,format_checker=FormatChecker()).iter_errors(x))
+  if errs: experimental_errors.append(f"{e.get('id')}: example invalid {errs[0].message}")
+ canonical_ids={load(p).get('$id') for p in (ROOT/'schemas').glob('*.schema.json')}
+ exp_ids={load(exp_root/e['schema']).get('$id') for e in entries}
+ if canonical_ids & exp_ids: experimental_errors.append('experimental and canonical schema identifiers overlap')
+except Exception as e: experimental_errors.append(str(e))
+add('SCH-EXPERIMENTAL',not experimental_errors,f'{len(entries) if not experimental_errors else 0} experimental schemas and examples validated outside the canonical surface' if not experimental_errors else '; '.join(experimental_errors[:10]),'schema')
+# Canonical directories must not import experimental identifiers
+leaks=[]
+for base_dir in ['specification','schemas','profiles','vocabularies','conformance','threat-model']:
+ for p in (ROOT/base_dir).rglob('*'):
+  if p.is_file() and 'experimental/0.9.0-research' in p.read_text(errors='ignore'): leaks.append(str(p.relative_to(ROOT)))
+add('GOV-FUTURE-NO-NORMATIVE-IMPORT',not leaks,'canonical v0.9.0 artifacts do not import experimental identifiers' if not leaks else ', '.join(leaks),'governance')
+
 # Future evolution must not be represented as current conformance material
 future_boundary_errors=[]
 for pth in [ROOT/'docs/future-evolution', ROOT/'governance/future-enhancement-register.json']:
@@ -390,6 +430,7 @@ artifact_paths += [str(p.relative_to(ROOT)) for p in sorted((ROOT/'governance/re
 artifact_paths += [str(p.relative_to(ROOT)) for p in sorted((ROOT/'examples').rglob('*')) if p.is_file() and p.name not in {'.gitkeep'}]
 artifact_paths += [str(p.relative_to(ROOT)) for p in sorted((ROOT/'docs/future-evolution').rglob('*')) if p.is_file() and p.name not in {'.gitkeep'}]
 artifact_paths += ['governance/future-enhancement-register.json']
+artifact_paths += [str(p.relative_to(ROOT)) for b in ['profiles-draft','experimental'] for p in sorted((ROOT/b).rglob('*')) if p.is_file() and p.name not in {'.gitkeep'}]
 manifest={'id':f'urn:gaam:package:{VERSION}','type':'gaam-governance-package','gaamVersion':VERSION,'status':'active','profiles':sorted(manifests),'artifacts':[{'id':Path(x).stem,'path':x,'mediaType':'application/json' if x.endswith('.json') else 'text/markdown' if x.endswith('.md') else 'text/csv'} for x in artifact_paths if not x.startswith(('schemas/','vocabularies/'))], 'schemas':[p.name for p in sorted((ROOT/'schemas').glob('*.schema.json'))], 'vocabularies':[p.name for p in sorted((ROOT/'vocabularies').glob('*.json'))], 'integrity':{'algorithm':'sha-256','manifest':'checksums.json'}}
 (pkg/'manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
 perrs=list(Draft202012Validator(schemas['gaam-package']).iter_errors(manifest)); add('PKG-MANIFEST',not perrs,'package manifest conforms','package')

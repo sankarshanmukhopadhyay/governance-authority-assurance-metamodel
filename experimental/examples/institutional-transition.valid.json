@@ -1,0 +1,15 @@
+{
+  "type": "institutional-transition",
+  "gaamVersion": "0.9.0",
+  "status": "experimental",
+  "normativeStatus": "non-normative",
+  "predecessor": "org:old",
+  "successor": "org:new",
+  "trigger": "legal-succession",
+  "effectiveAt": "2026-08-01T00:00:00Z",
+  "continuityControls": [
+    "preserve-status-service"
+  ],
+  "recordsTransferred": true,
+  "statusServicesPreserved": true
+}

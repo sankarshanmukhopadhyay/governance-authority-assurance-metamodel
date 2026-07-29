@@ -1,0 +1,70 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "additionalProperties": false,
+  "$id": "https://sankarshanmukhopadhyay.github.io/governance-authority-assurance-metamodel/experimental/0.9.0-research/schemas/qualification-record.schema.json",
+  "title": "Qualification Record (Experimental)",
+  "description": "Experimental GAAM v0.9.0 research artefact. Non-normative and non-conformant.",
+  "required": [
+    "type",
+    "gaamVersion",
+    "status",
+    "normativeStatus",
+    "evidence",
+    "qualificationType",
+    "qualificationStatus",
+    "subjectId",
+    "validFrom"
+  ],
+  "properties": {
+    "type": {
+      "const": "qualification-record"
+    },
+    "gaamVersion": {
+      "const": "0.9.0"
+    },
+    "status": {
+      "const": "experimental"
+    },
+    "normativeStatus": {
+      "const": "non-normative"
+    },
+    "subjectId": {
+      "type": "string",
+      "minLength": 1
+    },
+    "qualificationType": {
+      "type": "string",
+      "minLength": 1
+    },
+    "validFrom": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "validUntil": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "evidence": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string"
+      }
+    },
+    "authoritySource": {
+      "type": "string"
+    },
+    "qualificationStatus": {
+      "enum": [
+        "candidate",
+        "qualified",
+        "under-surveillance",
+        "remediation-required",
+        "suspended",
+        "terminated",
+        "closed"
+      ]
+    }
+  }
+}

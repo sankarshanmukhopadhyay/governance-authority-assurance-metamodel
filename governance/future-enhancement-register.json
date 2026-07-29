@@ -21,7 +21,7 @@
     {
       "id": "FE-001",
       "title": "Standing, qualification and recognition",
-      "status": "candidate",
+      "status": "prototype-available",
       "problemStatement": "Participation predicates are often collapsed into one status.",
       "currentCoverage": "Actors, roles, accreditation, authority and lifecycle already provide partial coverage.",
       "gapClassification": "guidance-gap",
@@ -35,12 +35,16 @@
         "independent terminology review"
       ],
       "normativeImpact": "none",
-      "promotionStatus": "not-assessed"
+      "promotionStatus": "not-assessed",
+      "researchAssets": [
+        "profiles-draft/governed-ecosystem-operations/",
+        "experimental/schemas/qualification-record.schema.json"
+      ]
     },
     {
       "id": "FE-002",
       "title": "Governance-framework composition",
-      "status": "candidate",
+      "status": "prototype-available",
       "problemStatement": "Nested frameworks lack explicit inheritance, override and lifecycle dependency semantics.",
       "currentCoverage": "Extensions, profiles and recognition provide partial coverage.",
       "gapClassification": "normative-semantics-gap",
@@ -57,12 +61,16 @@
         "conflict-precedence tests"
       ],
       "normativeImpact": "potential",
-      "promotionStatus": "not-assessed"
+      "promotionStatus": "not-assessed",
+      "researchAssets": [
+        "profiles-draft/governed-ecosystem-operations/",
+        "experimental/schemas/framework-composition.schema.json"
+      ]
     },
     {
       "id": "FE-003",
       "title": "Institutional succession",
-      "status": "candidate",
+      "status": "prototype-available",
       "problemStatement": "Revocation does not fully model institutional replacement and continuity.",
       "currentCoverage": "Lifecycle, emergency authority and transition controls provide partial coverage.",
       "gapClassification": "profile-gap",
@@ -80,12 +88,17 @@
         "continuity review"
       ],
       "normativeImpact": "none",
-      "promotionStatus": "not-assessed"
+      "promotionStatus": "not-assessed",
+      "researchAssets": [
+        "profiles-draft/governed-ecosystem-operations/",
+        "profiles-draft/institutional-continuity/",
+        "experimental/schemas/institutional-transition.schema.json"
+      ]
     },
     {
       "id": "FE-004",
       "title": "Authority-scope composition",
-      "status": "candidate",
+      "status": "prototype-available",
       "problemStatement": "Multidimensional authority constraints lack formal composition rules.",
       "currentCoverage": "Authority constraints and delegation attenuation provide partial coverage.",
       "gapClassification": "normative-semantics-gap",
@@ -100,12 +113,15 @@
         "interoperability tests"
       ],
       "normativeImpact": "potential",
-      "promotionStatus": "not-assessed"
+      "promotionStatus": "not-assessed",
+      "researchAssets": [
+        "experimental/schemas/authority-scope.schema.json"
+      ]
     },
     {
       "id": "FE-005",
       "title": "Obligation lifecycle",
-      "status": "candidate",
+      "status": "prototype-available",
       "problemStatement": "Post-decision duties lack lifecycle granularity.",
       "currentCoverage": "Obligations, remedies and evidence requirements provide partial coverage.",
       "gapClassification": "schema-gap",
@@ -120,12 +136,15 @@
         "remedy propagation tests"
       ],
       "normativeImpact": "none",
-      "promotionStatus": "not-assessed"
+      "promotionStatus": "not-assessed",
+      "researchAssets": [
+        "profiles-draft/organisational-authority/"
+      ]
     },
     {
       "id": "FE-006",
       "title": "Temporal governance",
-      "status": "candidate",
+      "status": "prototype-available",
       "problemStatement": "Time predicates are distributed and conflict resolution is implicit.",
       "currentCoverage": "Authority, evidence, lifecycle and assurance include time constraints.",
       "gapClassification": "guidance-gap",
@@ -139,12 +158,15 @@
         "clock uncertainty scenarios"
       ],
       "normativeImpact": "none",
-      "promotionStatus": "not-assessed"
+      "promotionStatus": "not-assessed",
+      "researchAssets": [
+        "experimental/schemas/obligation.schema.json"
+      ]
     },
     {
       "id": "FE-007",
       "title": "Evidence predicates",
-      "status": "candidate",
+      "status": "prototype-available",
       "problemStatement": "Authenticity, relevance, sufficiency and permitted use need distinct treatment.",
       "currentCoverage": "Evidence provenance, validity and assurance provide strong partial coverage.",
       "gapClassification": "guidance-gap",
@@ -157,7 +179,10 @@
         "reviewer agreement study"
       ],
       "normativeImpact": "none",
-      "promotionStatus": "not-assessed"
+      "promotionStatus": "not-assessed",
+      "researchAssets": [
+        "experimental/schemas/agent-state-lineage.schema.json"
+      ]
     },
     {
       "id": "FE-008",
@@ -183,7 +208,7 @@
     {
       "id": "FE-009",
       "title": "Organisational authority chains",
-      "status": "candidate",
+      "status": "prototype-available",
       "problemStatement": "Appointment, mandate, approval and instruction are not all delegation.",
       "currentCoverage": "Roles, authority and delegation provide partial coverage.",
       "gapClassification": "profile-gap",
@@ -200,12 +225,15 @@
         "relationship interoperability review"
       ],
       "normativeImpact": "none",
-      "promotionStatus": "not-assessed"
+      "promotionStatus": "not-assessed",
+      "researchAssets": [
+        "profiles-draft/organisational-authority/"
+      ]
     },
     {
       "id": "FE-010",
       "title": "Agent-state lineage",
-      "status": "candidate",
+      "status": "prototype-available",
       "problemStatement": "Material changes to agent state need governed identity and assurance consequences.",
       "currentCoverage": "Agent identity and state-change requirements provide a foundation.",
       "gapClassification": "schema-gap",
@@ -223,12 +251,15 @@
         "state invalidation tests"
       ],
       "normativeImpact": "none",
-      "promotionStatus": "not-assessed"
+      "promotionStatus": "not-assessed",
+      "researchAssets": [
+        "profiles-draft/advanced-agent-orchestration/"
+      ]
     },
     {
       "id": "FE-011",
       "title": "Autonomy and control modes",
-      "status": "candidate",
+      "status": "prototype-available",
       "problemStatement": "Human oversight and autonomy are not binary.",
       "currentCoverage": "Agent classes, runtime controls and high-impact requirements provide partial coverage.",
       "gapClassification": "profile-gap",
@@ -244,12 +275,15 @@
         "supervision failure tests"
       ],
       "normativeImpact": "none",
-      "promotionStatus": "not-assessed"
+      "promotionStatus": "not-assessed",
+      "researchAssets": [
+        "profiles-draft/advanced-agent-orchestration/"
+      ]
     },
     {
       "id": "FE-012",
       "title": "Plan, step and composite-effect governance",
-      "status": "candidate",
+      "status": "prototype-available",
       "problemStatement": "Plans, tool calls, partial effects and rollback need explicit lineage.",
       "currentCoverage": "Runtime decision and agent orchestration requirements provide partial coverage.",
       "gapClassification": "test-gap",
@@ -267,7 +301,10 @@
         "step-authority tests"
       ],
       "normativeImpact": "none",
-      "promotionStatus": "not-assessed"
+      "promotionStatus": "not-assessed",
+      "researchAssets": [
+        "profiles-draft/privacy-and-inference-governance/"
+      ]
     },
     {
       "id": "FE-013",
@@ -293,7 +330,7 @@
     {
       "id": "FE-014",
       "title": "Derived evidence and inference",
-      "status": "candidate",
+      "status": "prototype-available",
       "problemStatement": "Inference provenance and permitted interpretation need governance.",
       "currentCoverage": "Trust-graph derivation and evidence provenance provide partial coverage.",
       "gapClassification": "profile-gap",
@@ -310,12 +347,15 @@
         "privacy review"
       ],
       "normativeImpact": "none",
-      "promotionStatus": "not-assessed"
+      "promotionStatus": "not-assessed",
+      "researchAssets": [
+        "experimental/schemas/assurance-dependency.schema.json"
+      ]
     },
     {
       "id": "FE-015",
       "title": "Assurance object and method granularity",
-      "status": "candidate",
+      "status": "prototype-available",
       "problemStatement": "Differently produced assurance results can appear equivalent.",
       "currentCoverage": "Assurance scope, independence and validity provide strong partial coverage.",
       "gapClassification": "guidance-gap",
@@ -329,12 +369,15 @@
         "assessor review"
       ],
       "normativeImpact": "none",
-      "promotionStatus": "not-assessed"
+      "promotionStatus": "not-assessed",
+      "researchAssets": [
+        "profiles-draft/governed-ecosystem-operations/"
+      ]
     },
     {
       "id": "FE-016",
       "title": "Assurance composition and dependency",
-      "status": "candidate",
+      "status": "prototype-available",
       "problemStatement": "Assurance inheritance and system composition need explicit constraints.",
       "currentCoverage": "Accreditation and assurance limitations prohibit some unsafe inference.",
       "gapClassification": "schema-gap",
@@ -351,12 +394,15 @@
         "dependency invalidation tests"
       ],
       "normativeImpact": "none",
-      "promotionStatus": "not-assessed"
+      "promotionStatus": "not-assessed",
+      "researchAssets": [
+        "profiles-draft/privacy-and-inference-governance/"
+      ]
     },
     {
       "id": "FE-017",
       "title": "Governed observability",
-      "status": "candidate",
+      "status": "prototype-available",
       "problemStatement": "Telemetry is itself a governed power and attack surface.",
       "currentCoverage": "Observability, minimisation and evidence requirements provide partial coverage.",
       "gapClassification": "profile-gap",
@@ -373,12 +419,15 @@
         "privacy and security review"
       ],
       "normativeImpact": "none",
-      "promotionStatus": "not-assessed"
+      "promotionStatus": "not-assessed",
+      "researchAssets": [
+        "profiles-draft/institutional-continuity/"
+      ]
     },
     {
       "id": "FE-018",
       "title": "Caching and revocation propagation",
-      "status": "candidate",
+      "status": "prototype-available",
       "problemStatement": "Stale state across boundaries creates a revocation lag gradient.",
       "currentCoverage": "Registry, lifecycle and runtime freshness requirements provide partial coverage.",
       "gapClassification": "test-gap",
@@ -396,12 +445,17 @@
         "partition and stale-cache tests"
       ],
       "normativeImpact": "none",
-      "promotionStatus": "not-assessed"
+      "promotionStatus": "not-assessed",
+      "researchAssets": [
+        "profiles-draft/governed-ecosystem-operations/",
+        "profiles-draft/institutional-continuity/",
+        "experimental/schemas/governance-state.schema.json"
+      ]
     },
     {
       "id": "FE-019",
       "title": "Controlled degradation and continuity states",
-      "status": "candidate",
+      "status": "prototype-available",
       "problemStatement": "Operational fallback states need governed semantics.",
       "currentCoverage": "Runtime outcomes and continuity patterns provide partial coverage.",
       "gapClassification": "vocabulary-gap",
@@ -419,7 +473,10 @@
         "fail-safe tests"
       ],
       "normativeImpact": "none",
-      "promotionStatus": "not-assessed"
+      "promotionStatus": "not-assessed",
+      "researchAssets": [
+        "profiles-draft/privacy-and-inference-governance/"
+      ]
     },
     {
       "id": "FE-020",
@@ -446,7 +503,7 @@
     {
       "id": "FE-021",
       "title": "Affected-party classes and collective standing",
-      "status": "candidate",
+      "status": "prototype-available",
       "problemStatement": "Indirect and collective harms need representation and challenge routes.",
       "currentCoverage": "Affected parties and remedy already include non-members.",
       "gapClassification": "guidance-gap",
@@ -460,12 +517,15 @@
         "representative action review"
       ],
       "normativeImpact": "none",
-      "promotionStatus": "not-assessed"
+      "promotionStatus": "not-assessed",
+      "researchAssets": [
+        "experimental/schemas/remedy-execution.schema.json"
+      ]
     },
     {
       "id": "FE-022",
       "title": "Machine-verifiable remedy execution",
-      "status": "candidate",
+      "status": "prototype-available",
       "problemStatement": "Appeal success does not prove downstream correction.",
       "currentCoverage": "Remedy authority and completion evidence provide a foundation.",
       "gapClassification": "schema-gap",
@@ -482,12 +542,16 @@
         "closure evidence tests"
       ],
       "normativeImpact": "none",
-      "promotionStatus": "not-assessed"
+      "promotionStatus": "not-assessed",
+      "researchAssets": [
+        "profiles-draft/governed-ecosystem-operations/",
+        "profiles-draft/market-and-infrastructure-governance/"
+      ]
     },
     {
       "id": "FE-023",
       "title": "Market and infrastructure governance",
-      "status": "candidate",
+      "status": "prototype-available",
       "problemStatement": "Trust infrastructure can create gatekeepers, lock-in and concentration.",
       "currentCoverage": "Systemic harm and market-integrity requirements provide a foundation.",
       "gapClassification": "profile-gap",
@@ -501,12 +565,15 @@
         "competition and capture review"
       ],
       "normativeImpact": "none",
-      "promotionStatus": "not-assessed"
+      "promotionStatus": "not-assessed",
+      "researchAssets": [
+        "profiles-draft/cross-jurisdiction-governance/"
+      ]
     },
     {
       "id": "FE-024",
       "title": "Jurisdiction and conflict of law",
-      "status": "candidate",
+      "status": "prototype-available",
       "problemStatement": "Cross-border decisions may face multiple competing legal contexts.",
       "currentCoverage": "Governance context includes jurisdictional conditions.",
       "gapClassification": "profile-gap",
@@ -520,12 +587,16 @@
         "legal review"
       ],
       "normativeImpact": "none",
-      "promotionStatus": "not-assessed"
+      "promotionStatus": "not-assessed",
+      "researchAssets": [
+        "profiles-draft/institutional-continuity/",
+        "profiles-draft/cross-jurisdiction-governance/"
+      ]
     },
     {
       "id": "FE-025",
       "title": "Governance-change provenance",
-      "status": "candidate",
+      "status": "prototype-available",
       "problemStatement": "Policy evolution should be attributable and machine-diffable.",
       "currentCoverage": "Controlled documents, ADRs, versions and change control provide partial coverage.",
       "gapClassification": "schema-gap",
@@ -542,7 +613,17 @@
         "rollback scenario"
       ],
       "normativeImpact": "none",
-      "promotionStatus": "not-assessed"
+      "promotionStatus": "not-assessed",
+      "researchAssets": [
+        "profiles-draft/advanced-agent-orchestration/",
+        "experimental/schemas/risk-acceptance.schema.json"
+      ]
     }
+  ],
+  "allowedStatuses": [
+    "candidate",
+    "prototype-available",
+    "under-evaluation",
+    "closed"
   ]
 }

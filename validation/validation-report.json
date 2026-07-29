@@ -2,8 +2,8 @@
   "gaamVersion": "0.9.0",
   "testSuiteVersion": "0.9.0",
   "status": "pass",
-  "checks": 236,
-  "passed": 236,
+  "checks": 239,
+  "passed": 239,
   "failed": 0,
   "results": [
     {
@@ -83,6 +83,24 @@
       "kind": "governance",
       "status": "pass",
       "evidence": "25 future enhancements classified with controlled delivery and promotion states"
+    },
+    {
+      "id": "GOV-FUTURE-DRAFT-PROFILES",
+      "kind": "governance",
+      "status": "pass",
+      "evidence": "7 draft profiles are explicitly non-conformant"
+    },
+    {
+      "id": "SCH-EXPERIMENTAL",
+      "kind": "schema",
+      "status": "pass",
+      "evidence": "10 experimental schemas and examples validated outside the canonical surface"
+    },
+    {
+      "id": "GOV-FUTURE-NO-NORMATIVE-IMPORT",
+      "kind": "governance",
+      "status": "pass",
+      "evidence": "canonical v0.9.0 artifacts do not import experimental identifiers"
     },
     {
       "id": "GOV-FUTURE-BOUNDARY",
@@ -1420,7 +1438,7 @@
       "id": "PKG-INTEGRITY",
       "kind": "package",
       "status": "pass",
-      "evidence": "336 checksums verified"
+      "evidence": "377 checksums verified"
     }
   ]
 }

@@ -1,0 +1,76 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "additionalProperties": false,
+  "$id": "https://sankarshanmukhopadhyay.github.io/governance-authority-assurance-metamodel/experimental/0.9.0-research/schemas/remedy-execution.schema.json",
+  "title": "Remedy Execution (Experimental)",
+  "description": "Experimental GAAM v0.9.0 research artefact. Non-normative and non-conformant.",
+  "required": [
+    "type",
+    "gaamVersion",
+    "status",
+    "normativeStatus",
+    "affectedDecision",
+    "dueAt",
+    "orderingAuthority",
+    "remedyId",
+    "responsibleExecutor",
+    "remedyStatus"
+  ],
+  "properties": {
+    "type": {
+      "const": "remedy-execution"
+    },
+    "gaamVersion": {
+      "const": "0.9.0"
+    },
+    "status": {
+      "const": "experimental"
+    },
+    "normativeStatus": {
+      "const": "non-normative"
+    },
+    "remedyId": {
+      "type": "string"
+    },
+    "affectedDecision": {
+      "type": "string"
+    },
+    "orderingAuthority": {
+      "type": "string"
+    },
+    "responsibleExecutor": {
+      "type": "string"
+    },
+    "dueAt": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "downstreamSystems": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "completionEvidence": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "residualHarm": {
+      "type": "string"
+    },
+    "remedyStatus": {
+      "enum": [
+        "ordered",
+        "in-progress",
+        "blocked",
+        "completed",
+        "verified",
+        "failed",
+        "closed"
+      ]
+    }
+  }
+}

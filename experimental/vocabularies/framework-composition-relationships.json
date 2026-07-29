@@ -1,0 +1,17 @@
+{
+  "id": "urn:gaam:experimental-vocabulary:framework-composition-relationships:0.9.0-research",
+  "type": "experimental-controlled-vocabulary",
+  "gaamVersion": "0.9.0",
+  "status": "experimental",
+  "normativeStatus": "non-normative",
+  "extensionPolicy": "research-only",
+  "values": [
+    "extends",
+    "specialises",
+    "profiles",
+    "depends-on",
+    "imports-requirements-from",
+    "overrides",
+    "recognises"
+  ]
+}

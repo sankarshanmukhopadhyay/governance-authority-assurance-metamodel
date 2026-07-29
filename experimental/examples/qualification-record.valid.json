@@ -1,0 +1,13 @@
+{
+  "type": "qualification-record",
+  "gaamVersion": "0.9.0",
+  "status": "experimental",
+  "normativeStatus": "non-normative",
+  "subjectId": "org:example:alpha",
+  "qualificationType": "trust-service-operator",
+  "validFrom": "2026-07-29T00:00:00Z",
+  "evidence": [
+    "evidence:assessment:001"
+  ],
+  "qualificationStatus": "qualified"
+}

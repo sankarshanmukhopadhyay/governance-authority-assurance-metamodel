@@ -1,0 +1,90 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "additionalProperties": false,
+  "$id": "https://sankarshanmukhopadhyay.github.io/governance-authority-assurance-metamodel/experimental/0.9.0-research/schemas/agent-state-lineage.schema.json",
+  "title": "Agent State Lineage (Experimental)",
+  "description": "Experimental GAAM v0.9.0 research artefact. Non-normative and non-conformant.",
+  "required": [
+    "type",
+    "gaamVersion",
+    "status",
+    "normativeStatus",
+    "agentId",
+    "components",
+    "effectiveAt",
+    "materiality",
+    "stateId"
+  ],
+  "properties": {
+    "type": {
+      "const": "agent-state-lineage"
+    },
+    "gaamVersion": {
+      "const": "0.9.0"
+    },
+    "status": {
+      "const": "experimental"
+    },
+    "normativeStatus": {
+      "const": "non-normative"
+    },
+    "agentId": {
+      "type": "string"
+    },
+    "stateId": {
+      "type": "string"
+    },
+    "previousStateId": {
+      "type": "string"
+    },
+    "effectiveAt": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "components": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "model",
+        "policy",
+        "tools",
+        "runtime"
+      ],
+      "properties": {
+        "model": {
+          "type": "string"
+        },
+        "policy": {
+          "type": "string"
+        },
+        "tools": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "runtime": {
+          "type": "string"
+        },
+        "memoryState": {
+          "type": "string"
+        },
+        "operator": {
+          "type": "string"
+        }
+      }
+    },
+    "materiality": {
+      "enum": [
+        "non-material",
+        "review-required",
+        "authority-suspending",
+        "re-registration-required"
+      ]
+    },
+    "assuranceInvalidated": {
+      "type": "boolean"
+    }
+  }
+}

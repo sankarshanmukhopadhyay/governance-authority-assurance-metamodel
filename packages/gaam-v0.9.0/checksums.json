@@ -80,7 +80,7 @@
     },
     {
       "path": "docs/future-evolution/index.md",
-      "sha256": "1edd32fc27a741e211e6ecbbdd134666621cdbfb7450f891d1af9740d91651c6"
+      "sha256": "0da22998cfe4d8034c1adc7332c2313f87523c569d7e10b3d83af7638d4154b4"
     },
     {
       "path": "docs/future-evolution/normative-boundary.md",
@@ -1043,12 +1043,116 @@
       "sha256": "a9c3e59c229a491b1c1792403b4d691097484fedcda3334a93f82fc5dd475cdb"
     },
     {
+      "path": "experimental/README.md",
+      "sha256": "42dbbdbe4869b9a7885a3321cea48cd857ac18cb850079e439f42b8be10805b7"
+    },
+    {
+      "path": "experimental/catalog.json",
+      "sha256": "daa788b0324862a3fd05b76438a27e8d71e9dec0fee45e1e3eed77b204913918"
+    },
+    {
+      "path": "experimental/examples/agent-state-lineage.valid.json",
+      "sha256": "7f9436c390da1fe841d703a7de797d9f0d99e53b2f33826c666ce30e3ce409ef"
+    },
+    {
+      "path": "experimental/examples/assurance-dependency.valid.json",
+      "sha256": "11edf2ee3b165e45065f802126728ccd0b6421102c094389841d790f2f313551"
+    },
+    {
+      "path": "experimental/examples/authority-scope.valid.json",
+      "sha256": "461b7ef0e7bb2a4b330a87e42088a72d9059588c24f5d8cd355a83d1328f7341"
+    },
+    {
+      "path": "experimental/examples/framework-composition.valid.json",
+      "sha256": "9abb4b96566780cf3ec0a249015ae435128262eedd5b883cad67b510048e75dc"
+    },
+    {
+      "path": "experimental/examples/governance-state.valid.json",
+      "sha256": "a3b4d3f00c01ca86a5d80edd56d3d6474b16217ab530f77abd60a932dcd8fc83"
+    },
+    {
+      "path": "experimental/examples/institutional-transition.valid.json",
+      "sha256": "0a4a0c58e108efd0ae79218400c1a01e8599d1388304e3cb0c9032927af49890"
+    },
+    {
+      "path": "experimental/examples/obligation.valid.json",
+      "sha256": "c29f2ec4b5d47bb717f3cfb72dee8f7823019931cdc8534086a32da8b4de7a67"
+    },
+    {
+      "path": "experimental/examples/qualification-record.valid.json",
+      "sha256": "fc9db36c053bbb978998f2fc23fc6afa09aeed64e60295743ed47331799337be"
+    },
+    {
+      "path": "experimental/examples/remedy-execution.valid.json",
+      "sha256": "359dfd59711ac396c3cd5af7c347dfb998b6f4fa55c0ad0f2f85a71aa66ff915"
+    },
+    {
+      "path": "experimental/examples/risk-acceptance.valid.json",
+      "sha256": "4dfea7b79f544984cab883b7caf4fdcf744ef288b13d07f5fb7838a04cea5941"
+    },
+    {
+      "path": "experimental/schemas/agent-state-lineage.schema.json",
+      "sha256": "a5e7ea9e3e95985b839a0a9303d4eee91cf51d530a185e1b42d302a9b2be1ccf"
+    },
+    {
+      "path": "experimental/schemas/assurance-dependency.schema.json",
+      "sha256": "bdce59170bba445adf95729135f5f3b676658cf4b8d73e6d7c87a2a1ccc7ae09"
+    },
+    {
+      "path": "experimental/schemas/authority-scope.schema.json",
+      "sha256": "9ebac698e5cbd240d1034eeecb2389be36b13b678b12a7c2187c6dc1e478f439"
+    },
+    {
+      "path": "experimental/schemas/framework-composition.schema.json",
+      "sha256": "d9053d60ecb901cff195fb9ea20af84d64357e46313eeb5b9c4623397c61f2a3"
+    },
+    {
+      "path": "experimental/schemas/governance-state.schema.json",
+      "sha256": "d35812319e49b315548aceebf280248a2844052c509008048cc74f3f559577d7"
+    },
+    {
+      "path": "experimental/schemas/institutional-transition.schema.json",
+      "sha256": "e5863e70037a6fab32035ea8a37f6277dcab541aac35b265732ba888ae5e6290"
+    },
+    {
+      "path": "experimental/schemas/obligation.schema.json",
+      "sha256": "83f7e3f670d461e50c0f47408e09dfb7068076ab6252a4e33335acc1aac88548"
+    },
+    {
+      "path": "experimental/schemas/qualification-record.schema.json",
+      "sha256": "57e6360c28a31a9326cd899b001e2afdde0f920858ed22c37776405f721c8ab9"
+    },
+    {
+      "path": "experimental/schemas/remedy-execution.schema.json",
+      "sha256": "19d35b82be0f5d8bc67d7409d2d4da599af28c2e3ac9fa5600a9363118a86780"
+    },
+    {
+      "path": "experimental/schemas/risk-acceptance.schema.json",
+      "sha256": "0f37201c5983ea8c7605ce807561b440109f42fce2b7051377b39cbc444e86fc"
+    },
+    {
+      "path": "experimental/vocabularies/agent-control-modes.json",
+      "sha256": "2c89efc55fa9db659302ac056bfa74fda4fc7d356cffa0c2082267e45955bbd6"
+    },
+    {
+      "path": "experimental/vocabularies/confidence-dimensions.json",
+      "sha256": "8aa1747adc5f8ce75332c769fb7613430fbde6152b566dc83c11122596b24721"
+    },
+    {
+      "path": "experimental/vocabularies/continuity-states.json",
+      "sha256": "6bafbe98400022a104fbfac7d1a7bb5c333a33401c600af6238149dbca9c99bb"
+    },
+    {
+      "path": "experimental/vocabularies/framework-composition-relationships.json",
+      "sha256": "526c66199fa803bc74704a80896b83bf49fbf80c15c82e184324bb2f6653b8c2"
+    },
+    {
       "path": "governance/candidate-issues.json",
       "sha256": "89bdb851d31c8b88a68dcdf29a9053e9854f707f326da51ca2a5bf9eb3ae2922"
     },
     {
       "path": "governance/future-enhancement-register.json",
-      "sha256": "9667dfe9ceaba166ac2edaaaf53ad1119c4ed66d2082e9cee5b6cb998c8c298b"
+      "sha256": "0c0ce226fdb6aeca5cb8d9298c8fa9f3ff035e2f2d98c795b47a23e70d73b905"
     },
     {
       "path": "governance/reviews/affected-party-review.json",
@@ -1116,7 +1220,67 @@
     },
     {
       "path": "packages/gaam-v0.9.0/manifest.json",
-      "sha256": "dea06e1ecfc8edaa1459c1c6b06a9586dfdf3aaabaf3af3a36daf80b17b12318"
+      "sha256": "6e051d9b0004daa6ec2ca40cc1a845d4bb3ed4d38a16a623d374a991b3e1ad72"
+    },
+    {
+      "path": "profiles-draft/advanced-agent-orchestration/index.md",
+      "sha256": "eeeb33324c70b63de51696979cafd00e21befdcfb1592a1ea548763d0962a20e"
+    },
+    {
+      "path": "profiles-draft/advanced-agent-orchestration/profile-candidate.json",
+      "sha256": "0f452ad2255659ff3bbebee1e68fd9910d09a035ecf263f2eb41f2159fb3243a"
+    },
+    {
+      "path": "profiles-draft/cross-jurisdiction-governance/index.md",
+      "sha256": "abac53a16192317d33141e9f5c70afd55061fc0a53a3d5bf79adab38cbe37dff"
+    },
+    {
+      "path": "profiles-draft/cross-jurisdiction-governance/profile-candidate.json",
+      "sha256": "46dc91907c097a776f19b16839879a8eb6f6eaf5925b018c83bb2b31a86cd433"
+    },
+    {
+      "path": "profiles-draft/governed-ecosystem-operations/index.md",
+      "sha256": "260df08f8aa8763189af54dee52486556f9cf973bcf67d520711cac3c06f16fa"
+    },
+    {
+      "path": "profiles-draft/governed-ecosystem-operations/profile-candidate.json",
+      "sha256": "240f2a0a4e7d07c4cc73fc92a3485504a240339e1fa283fb6a7ad758c84ccde7"
+    },
+    {
+      "path": "profiles-draft/index.md",
+      "sha256": "f506f87b4bf427710cdca787a3cd4520e21f5efab143ccdf1ecff1f494e8a214"
+    },
+    {
+      "path": "profiles-draft/institutional-continuity/index.md",
+      "sha256": "4542f13370853f8f2b388e5e95706e3de4834e566ced55c667343260d999bcc5"
+    },
+    {
+      "path": "profiles-draft/institutional-continuity/profile-candidate.json",
+      "sha256": "b7af2f4c8f18980845c3466c7b096651b73e5df7e101d210bc698b4491498785"
+    },
+    {
+      "path": "profiles-draft/market-and-infrastructure-governance/index.md",
+      "sha256": "e7de0a889194220e10f21797f2e54573763f90582ce275f71881cbd5748626f1"
+    },
+    {
+      "path": "profiles-draft/market-and-infrastructure-governance/profile-candidate.json",
+      "sha256": "4e0df7d361ab4c0b72aad6a51d21b7996063cb831e9bdbd0722f453767b67817"
+    },
+    {
+      "path": "profiles-draft/organisational-authority/index.md",
+      "sha256": "9095748dd8f89e96a9acd2098069f01d346d537d25601f26d4be6ab3a3300017"
+    },
+    {
+      "path": "profiles-draft/organisational-authority/profile-candidate.json",
+      "sha256": "38307123e902adf864735f60ce58a080eb22e8695eedf74d358805996a654fd3"
+    },
+    {
+      "path": "profiles-draft/privacy-and-inference-governance/index.md",
+      "sha256": "958ca8ba9df4fba66ed650c0de3e21a2b2934f40f9b530f56ecf4c4b6dfecc6d"
+    },
+    {
+      "path": "profiles-draft/privacy-and-inference-governance/profile-candidate.json",
+      "sha256": "59a85ba98f5595bcbdea3613d1071a1ee00b67711286d05466aa3466c91851ba"
     },
     {
       "path": "profiles/manifests/agentic-systems.json",

@@ -1,0 +1,97 @@
+{
+  "id": "urn:gaam:experimental-catalog:0.9.0-research",
+  "type": "gaam-experimental-catalog",
+  "gaamVersion": "0.9.0",
+  "status": "experimental",
+  "normativeStatus": "non-normative",
+  "schemas": [
+    {
+      "id": "qualification-record",
+      "schema": "schemas/qualification-record.schema.json",
+      "example": "examples/qualification-record.valid.json",
+      "status": "experimental",
+      "normativeStatus": "non-normative"
+    },
+    {
+      "id": "framework-composition",
+      "schema": "schemas/framework-composition.schema.json",
+      "example": "examples/framework-composition.valid.json",
+      "status": "experimental",
+      "normativeStatus": "non-normative"
+    },
+    {
+      "id": "authority-scope",
+      "schema": "schemas/authority-scope.schema.json",
+      "example": "examples/authority-scope.valid.json",
+      "status": "experimental",
+      "normativeStatus": "non-normative"
+    },
+    {
+      "id": "obligation",
+      "schema": "schemas/obligation.schema.json",
+      "example": "examples/obligation.valid.json",
+      "status": "experimental",
+      "normativeStatus": "non-normative"
+    },
+    {
+      "id": "institutional-transition",
+      "schema": "schemas/institutional-transition.schema.json",
+      "example": "examples/institutional-transition.valid.json",
+      "status": "experimental",
+      "normativeStatus": "non-normative"
+    },
+    {
+      "id": "assurance-dependency",
+      "schema": "schemas/assurance-dependency.schema.json",
+      "example": "examples/assurance-dependency.valid.json",
+      "status": "experimental",
+      "normativeStatus": "non-normative"
+    },
+    {
+      "id": "risk-acceptance",
+      "schema": "schemas/risk-acceptance.schema.json",
+      "example": "examples/risk-acceptance.valid.json",
+      "status": "experimental",
+      "normativeStatus": "non-normative"
+    },
+    {
+      "id": "remedy-execution",
+      "schema": "schemas/remedy-execution.schema.json",
+      "example": "examples/remedy-execution.valid.json",
+      "status": "experimental",
+      "normativeStatus": "non-normative"
+    },
+    {
+      "id": "agent-state-lineage",
+      "schema": "schemas/agent-state-lineage.schema.json",
+      "example": "examples/agent-state-lineage.valid.json",
+      "status": "experimental",
+      "normativeStatus": "non-normative"
+    },
+    {
+      "id": "governance-state",
+      "schema": "schemas/governance-state.schema.json",
+      "example": "examples/governance-state.valid.json",
+      "status": "experimental",
+      "normativeStatus": "non-normative"
+    }
+  ],
+  "vocabularies": [
+    {
+      "id": "framework-composition-relationships",
+      "path": "vocabularies/framework-composition-relationships.json"
+    },
+    {
+      "id": "agent-control-modes",
+      "path": "vocabularies/agent-control-modes.json"
+    },
+    {
+      "id": "confidence-dimensions",
+      "path": "vocabularies/confidence-dimensions.json"
+    },
+    {
+      "id": "continuity-states",
+      "path": "vocabularies/continuity-states.json"
+    }
+  ]
+}

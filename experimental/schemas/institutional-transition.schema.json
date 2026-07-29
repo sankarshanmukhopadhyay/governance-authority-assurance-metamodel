@@ -1,0 +1,71 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "additionalProperties": false,
+  "$id": "https://sankarshanmukhopadhyay.github.io/governance-authority-assurance-metamodel/experimental/0.9.0-research/schemas/institutional-transition.schema.json",
+  "title": "Institutional Transition (Experimental)",
+  "description": "Experimental GAAM v0.9.0 research artefact. Non-normative and non-conformant.",
+  "required": [
+    "type",
+    "gaamVersion",
+    "status",
+    "normativeStatus",
+    "continuityControls",
+    "effectiveAt",
+    "predecessor",
+    "successor",
+    "trigger"
+  ],
+  "properties": {
+    "type": {
+      "const": "institutional-transition"
+    },
+    "gaamVersion": {
+      "const": "0.9.0"
+    },
+    "status": {
+      "const": "experimental"
+    },
+    "normativeStatus": {
+      "const": "non-normative"
+    },
+    "predecessor": {
+      "type": "string"
+    },
+    "successor": {
+      "type": "string"
+    },
+    "interimCustodian": {
+      "type": "string"
+    },
+    "trigger": {
+      "enum": [
+        "merger",
+        "acquisition",
+        "dissolution",
+        "insolvency",
+        "legal-succession",
+        "key-compromise",
+        "operator-exit",
+        "emergency-transfer"
+      ]
+    },
+    "effectiveAt": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "continuityControls": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string"
+      }
+    },
+    "recordsTransferred": {
+      "type": "boolean"
+    },
+    "statusServicesPreserved": {
+      "type": "boolean"
+    }
+  }
+}

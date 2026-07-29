@@ -15,7 +15,7 @@
   ],
   "artifacts": [
     {
-      "id": "governance-authority-assurance-metamodel",
+      "id": "specification-governance-authority-assurance-metamodel",
       "path": "specification/governance-authority-assurance-metamodel.md",
       "mediaType": "text/markdown"
     },
@@ -25,232 +25,267 @@
       "mediaType": "application/json"
     },
     {
-      "id": "threat-register",
+      "id": "threat-model-threat-register",
       "path": "threat-model/threat-register.json",
       "mediaType": "application/json"
     },
     {
-      "id": "normative-requirements-index",
+      "id": "matrices-normative-requirements-index",
       "path": "matrices/normative-requirements-index.csv",
       "mediaType": "text/csv"
     },
     {
-      "id": "requirement-test-coverage",
+      "id": "matrices-requirement-test-coverage",
       "path": "matrices/requirement-test-coverage.csv",
       "mediaType": "text/csv"
     },
     {
-      "id": "requirement-assurance-traceability",
+      "id": "matrices-requirement-assurance-traceability",
       "path": "matrices/requirement-assurance-traceability.csv",
       "mediaType": "text/csv"
     },
     {
-      "id": "threat-control-test-matrix",
+      "id": "matrices-threat-control-test-matrix",
       "path": "matrices/threat-control-test-matrix.csv",
       "mediaType": "text/csv"
     },
     {
-      "id": "candidate-issues",
+      "id": "governance-candidate-issues",
       "path": "governance/candidate-issues.json",
       "mediaType": "application/json"
     },
     {
-      "id": "agentic-systems",
+      "id": "profiles-manifests-agentic-systems",
       "path": "profiles/manifests/agentic-systems.json",
       "mediaType": "application/json"
     },
     {
-      "id": "continuous-assurance",
+      "id": "profiles-manifests-continuous-assurance",
       "path": "profiles/manifests/continuous-assurance.json",
       "mediaType": "application/json"
     },
     {
-      "id": "delegated-authority",
+      "id": "profiles-manifests-delegated-authority",
       "path": "profiles/manifests/delegated-authority.json",
       "mediaType": "application/json"
     },
     {
-      "id": "foundation",
+      "id": "profiles-manifests-foundation",
       "path": "profiles/manifests/foundation.json",
       "mediaType": "application/json"
     },
     {
-      "id": "high-impact-systems",
+      "id": "profiles-manifests-high-impact-systems",
       "path": "profiles/manifests/high-impact-systems.json",
       "mediaType": "application/json"
     },
     {
-      "id": "machine-actionable-governance",
+      "id": "profiles-manifests-machine-actionable-governance",
       "path": "profiles/manifests/machine-actionable-governance.json",
       "mediaType": "application/json"
     },
     {
-      "id": "runtime-governance",
+      "id": "profiles-manifests-runtime-governance",
       "path": "profiles/manifests/runtime-governance.json",
       "mediaType": "application/json"
     },
     {
-      "id": "trust-graph",
+      "id": "profiles-manifests-trust-graph",
       "path": "profiles/manifests/trust-graph.json",
       "mediaType": "application/json"
     },
     {
-      "id": "assurance-expired-rejected",
+      "id": "tests-behavioural-assurance-expired-rejected",
       "path": "tests/behavioural/assurance-expired-rejected.json",
       "mediaType": "application/json"
     },
     {
-      "id": "assurance-independence-insufficient-rejected",
+      "id": "tests-behavioural-assurance-independence-insufficient-rejected",
       "path": "tests/behavioural/assurance-independence-insufficient-rejected.json",
       "mediaType": "application/json"
     },
     {
-      "id": "authority-active-valid",
+      "id": "tests-behavioural-authority-active-valid",
       "path": "tests/behavioural/authority-active-valid.json",
       "mediaType": "application/json"
     },
     {
-      "id": "authority-expired-rejected",
+      "id": "tests-behavioural-authority-expired-rejected",
       "path": "tests/behavioural/authority-expired-rejected.json",
       "mediaType": "application/json"
     },
     {
-      "id": "authority-not-yet-effective-rejected",
+      "id": "tests-behavioural-authority-not-yet-effective-rejected",
       "path": "tests/behavioural/authority-not-yet-effective-rejected.json",
       "mediaType": "application/json"
     },
     {
-      "id": "authority-revoked-rejected",
+      "id": "tests-behavioural-authority-revoked-rejected",
       "path": "tests/behavioural/authority-revoked-rejected.json",
       "mediaType": "application/json"
     },
     {
-      "id": "authority-source-invalid-rejected",
+      "id": "tests-behavioural-authority-source-invalid-rejected",
       "path": "tests/behavioural/authority-source-invalid-rejected.json",
       "mediaType": "application/json"
     },
     {
-      "id": "decision-missing-evidence-rejected",
+      "id": "tests-behavioural-decision-missing-evidence-rejected",
       "path": "tests/behavioural/decision-missing-evidence-rejected.json",
       "mediaType": "application/json"
     },
     {
-      "id": "decision-policy-superseded-rejected",
+      "id": "tests-behavioural-decision-policy-superseded-rejected",
       "path": "tests/behavioural/decision-policy-superseded-rejected.json",
       "mediaType": "application/json"
     },
     {
-      "id": "decision-stale-evidence-rejected",
+      "id": "tests-behavioural-decision-stale-evidence-rejected",
       "path": "tests/behavioural/decision-stale-evidence-rejected.json",
       "mediaType": "application/json"
     },
     {
-      "id": "decision-traceable-valid",
+      "id": "tests-behavioural-decision-traceable-valid",
       "path": "tests/behavioural/decision-traceable-valid.json",
       "mediaType": "application/json"
     },
     {
-      "id": "delegation-amplification-rejected",
+      "id": "tests-behavioural-delegation-amplification-rejected",
       "path": "tests/behavioural/delegation-amplification-rejected.json",
       "mediaType": "application/json"
     },
     {
-      "id": "delegation-attenuated-valid",
+      "id": "tests-behavioural-delegation-attenuated-valid",
       "path": "tests/behavioural/delegation-attenuated-valid.json",
       "mediaType": "application/json"
     },
     {
-      "id": "delegation-child-outlives-parent-rejected",
+      "id": "tests-behavioural-delegation-child-outlives-parent-rejected",
       "path": "tests/behavioural/delegation-child-outlives-parent-rejected.json",
       "mediaType": "application/json"
     },
     {
-      "id": "delegation-depth-rejected",
+      "id": "tests-behavioural-delegation-depth-rejected",
       "path": "tests/behavioural/delegation-depth-rejected.json",
       "mediaType": "application/json"
     },
     {
-      "id": "delegation-parent-revoked-rejected",
+      "id": "tests-behavioural-delegation-parent-revoked-rejected",
       "path": "tests/behavioural/delegation-parent-revoked-rejected.json",
       "mediaType": "application/json"
     },
     {
-      "id": "delegation-redelegation-prohibited-rejected",
+      "id": "tests-behavioural-delegation-redelegation-prohibited-rejected",
       "path": "tests/behavioural/delegation-redelegation-prohibited-rejected.json",
       "mediaType": "application/json"
     },
     {
-      "id": "high-impact-no-remedy-rejected",
+      "id": "tests-behavioural-high-impact-no-remedy-rejected",
       "path": "tests/behavioural/high-impact-no-remedy-rejected.json",
       "mediaType": "application/json"
     },
     {
-      "id": "high-impact-notice-missing-rejected",
+      "id": "tests-behavioural-high-impact-notice-missing-rejected",
       "path": "tests/behavioural/high-impact-notice-missing-rejected.json",
       "mediaType": "application/json"
     },
     {
-      "id": "high-impact-remedy-valid",
+      "id": "tests-behavioural-high-impact-remedy-valid",
       "path": "tests/behavioural/high-impact-remedy-valid.json",
       "mediaType": "application/json"
     },
     {
-      "id": "high-impact-review-not-independent-rejected",
+      "id": "tests-behavioural-high-impact-review-not-independent-rejected",
       "path": "tests/behavioural/high-impact-review-not-independent-rejected.json",
       "mediaType": "application/json"
     },
     {
-      "id": "lifecycle-event-order-invalid-rejected",
+      "id": "tests-behavioural-lifecycle-event-order-invalid-rejected",
       "path": "tests/behavioural/lifecycle-event-order-invalid-rejected.json",
       "mediaType": "application/json"
     },
     {
-      "id": "lifecycle-event-order-valid",
+      "id": "tests-behavioural-lifecycle-event-order-valid",
       "path": "tests/behavioural/lifecycle-event-order-valid.json",
       "mediaType": "application/json"
     },
     {
-      "id": "profile-composition-foundation-delegated-valid",
+      "id": "tests-behavioural-profile-composition-foundation-delegated-valid",
       "path": "tests/behavioural/profile-composition-foundation-delegated-valid.json",
       "mediaType": "application/json"
     },
     {
-      "id": "profile-composition-missing-foundation-rejected",
+      "id": "tests-behavioural-profile-composition-missing-foundation-rejected",
       "path": "tests/behavioural/profile-composition-missing-foundation-rejected.json",
       "mediaType": "application/json"
     },
     {
-      "id": "runtime-revocation-fail-closed-valid",
+      "id": "tests-behavioural-runtime-revocation-fail-closed-valid",
       "path": "tests/behavioural/runtime-revocation-fail-closed-valid.json",
       "mediaType": "application/json"
     },
     {
-      "id": "runtime-stale-state-fail-open-rejected",
+      "id": "tests-behavioural-runtime-stale-state-fail-open-rejected",
       "path": "tests/behavioural/runtime-stale-state-fail-open-rejected.json",
       "mediaType": "application/json"
     },
     {
-      "id": "affected-party-review",
+      "id": "governance-reviews-README",
+      "path": "governance/reviews/README.md",
+      "mediaType": "text/markdown"
+    },
+    {
+      "id": "governance-reviews-affected-party-review",
       "path": "governance/reviews/affected-party-review.json",
       "mediaType": "application/json"
     },
     {
-      "id": "implementation-evidence",
+      "id": "governance-reviews-evidence-README",
+      "path": "governance/reviews/evidence/README.md",
+      "mediaType": "text/markdown"
+    },
+    {
+      "id": "governance-reviews-finding-schema",
+      "path": "governance/reviews/finding-schema.json",
+      "mediaType": "application/json"
+    },
+    {
+      "id": "governance-reviews-finding-vocabulary",
+      "path": "governance/reviews/finding-vocabulary.json",
+      "mediaType": "application/json"
+    },
+    {
+      "id": "governance-reviews-implementation-evidence",
       "path": "governance/reviews/implementation-evidence.json",
       "mediaType": "application/json"
     },
     {
-      "id": "interoperability-review",
+      "id": "governance-reviews-interoperability-review",
       "path": "governance/reviews/interoperability-review.json",
       "mediaType": "application/json"
     },
     {
-      "id": "privacy-review",
+      "id": "governance-reviews-joint-disposition-register",
+      "path": "governance/reviews/joint-disposition-register.json",
+      "mediaType": "application/json"
+    },
+    {
+      "id": "governance-reviews-privacy-review",
       "path": "governance/reviews/privacy-review.json",
       "mediaType": "application/json"
     },
     {
-      "id": "security-review",
+      "id": "governance-reviews-review-baseline",
+      "path": "governance/reviews/review-baseline.json",
+      "mediaType": "application/json"
+    },
+    {
+      "id": "governance-reviews-review-methodology",
+      "path": "governance/reviews/review-methodology.md",
+      "mediaType": "text/markdown"
+    },
+    {
+      "id": "governance-reviews-security-review",
       "path": "governance/reviews/security-review.json",
       "mediaType": "application/json"
     }

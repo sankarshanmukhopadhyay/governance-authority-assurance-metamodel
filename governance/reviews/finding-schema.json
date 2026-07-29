@@ -1,0 +1,198 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "GAAM Candidate Review Finding",
+  "type": "object",
+  "required": [
+    "id",
+    "title",
+    "reviewType",
+    "severity",
+    "status",
+    "affectedRequirements",
+    "affectedProfiles",
+    "affectedArtifacts",
+    "scenario",
+    "impact",
+    "evidenceReferences",
+    "recommendedControl",
+    "changeClass",
+    "normativeImpact",
+    "blockingV1",
+    "reviewer",
+    "reviewerRole",
+    "reviewerIndependence",
+    "decisionAuthority",
+    "disposition",
+    "residualRisk",
+    "verificationEvidence",
+    "closureDate"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^GAAM-F-[A-Z]+-[0-9]{3}$"
+    },
+    "title": {
+      "type": "string",
+      "minLength": 1
+    },
+    "reviewType": {
+      "enum": [
+        "privacy",
+        "security",
+        "affected-party",
+        "interoperability",
+        "implementation-evidence"
+      ]
+    },
+    "severity": {
+      "enum": [
+        "critical",
+        "high",
+        "medium",
+        "low",
+        "informational"
+      ]
+    },
+    "status": {
+      "enum": [
+        "open",
+        "accepted",
+        "mitigated",
+        "risk-accepted",
+        "rejected-with-evidence",
+        "deferred",
+        "closed"
+      ]
+    },
+    "affectedRequirements": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true
+    },
+    "affectedProfiles": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true
+    },
+    "affectedArtifacts": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true
+    },
+    "scenario": {
+      "type": "string",
+      "minLength": 1
+    },
+    "impact": {
+      "type": "string",
+      "minLength": 1
+    },
+    "evidenceReferences": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "recommendedControl": {
+      "type": "string"
+    },
+    "changeClass": {
+      "enum": [
+        "editorial",
+        "clarification",
+        "compatible-extension",
+        "breaking-normative-change",
+        "security-correction"
+      ]
+    },
+    "normativeImpact": {
+      "enum": [
+        "none",
+        "informative-only",
+        "normative-compatible",
+        "normative-breaking",
+        "undetermined"
+      ]
+    },
+    "blockingV1": {
+      "type": "boolean"
+    },
+    "reviewer": {
+      "type": "string",
+      "minLength": 1
+    },
+    "reviewerRole": {
+      "type": "string",
+      "minLength": 1
+    },
+    "reviewerIndependence": {
+      "enum": [
+        "unassigned",
+        "self-review",
+        "internal-independent",
+        "external-independent",
+        "conflict-declared"
+      ]
+    },
+    "decisionAuthority": {
+      "type": "string",
+      "minLength": 1
+    },
+    "disposition": {
+      "type": "string"
+    },
+    "residualRisk": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "verificationEvidence": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "closureDate": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date"
+    },
+    "owner": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "targetDate": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date"
+    },
+    "reconsiderationDate": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date"
+    },
+    "rationale": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  },
+  "additionalProperties": false
+}

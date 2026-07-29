@@ -7,24 +7,52 @@
       "sha256": "89bdb851d31c8b88a68dcdf29a9053e9854f707f326da51ca2a5bf9eb3ae2922"
     },
     {
+      "path": "governance/reviews/README.md",
+      "sha256": "d0f1761009b130fe10477c72d4097e4b47c8a8025ca58c3c8f83f98ce7d14b6c"
+    },
+    {
       "path": "governance/reviews/affected-party-review.json",
-      "sha256": "64b4b06a1c6c09b163ed82f004e9c3ed18bc3e46cd1c00d80b754311de487780"
+      "sha256": "354427490478d9590b0acdae5967608c336d5a861b2182ad3a8bffcf27c85056"
+    },
+    {
+      "path": "governance/reviews/evidence/README.md",
+      "sha256": "c1e888e9d042f65b26fca5a93d519c9547889aee508af8887077ab879aa120bd"
+    },
+    {
+      "path": "governance/reviews/finding-schema.json",
+      "sha256": "f4624bac67c57f6c94cc1b3a8e0b6a209efc0ae45c59917c710bf9d571e96d34"
+    },
+    {
+      "path": "governance/reviews/finding-vocabulary.json",
+      "sha256": "da07e4d86638b17f3e3e0c5cb3acddfa565ede3d3ce976c27bcefd9063eae0dc"
     },
     {
       "path": "governance/reviews/implementation-evidence.json",
-      "sha256": "d0db744997af55d075e0d878066c8db099a780ed1385da1f7ef364e6907f2d8c"
+      "sha256": "f7b4cb8427956c40b7188d0ca4cc0991c70081ba4c66f473b2ea19a06268f3fc"
     },
     {
       "path": "governance/reviews/interoperability-review.json",
-      "sha256": "435ca6977945282ba331a278697d3a05cce9630cd372f955a07503df4e9a079d"
+      "sha256": "516b897291aeb9abd8a29338670886d81743571b141a1381d8d06ccb8e864ff4"
+    },
+    {
+      "path": "governance/reviews/joint-disposition-register.json",
+      "sha256": "b9d5f2fe79f4b4e07c51b157431c5d25389a9b3654d02ed52e4607a65aa61be6"
     },
     {
       "path": "governance/reviews/privacy-review.json",
-      "sha256": "7b4c20998caed39ec902b6a9a240ca1e27aae85019938cf8120f92f771ab3268"
+      "sha256": "4c9bbcaae1a13e098e5e86d2b5f47aeb3a07717df95ee58d74d186b6c792ee6f"
+    },
+    {
+      "path": "governance/reviews/review-baseline.json",
+      "sha256": "5d1a1093a1f5ddce501101aae6553e2578aa1ca40ff35302c8589da13b9b65eb"
+    },
+    {
+      "path": "governance/reviews/review-methodology.md",
+      "sha256": "3237660da8891c16cf5756771aef847817bb4c492dd7979a39ac24bf562b6fe0"
     },
     {
       "path": "governance/reviews/security-review.json",
-      "sha256": "086ae259f7a453689f66ee1c5f1844e84da8f714554f0788cb41889cfb7f08d5"
+      "sha256": "8f92f889e31bc268869e11466e0e3a653bb707f3cc2c6408e315ba8ee095c429"
     },
     {
       "path": "matrices/normative-requirements-index.csv",
@@ -44,7 +72,7 @@
     },
     {
       "path": "packages/gaam-v0.9.0/manifest.json",
-      "sha256": "7c8e2a9ba6dc1927db32c534b9bac5beb943b4d3000422cd6d6bc2b9937fb01e"
+      "sha256": "cc023e76c29820fc382f9dde99ad36003825299384977a38a92736bd6b5a85b5"
     },
     {
       "path": "profiles/manifests/agentic-systems.json",

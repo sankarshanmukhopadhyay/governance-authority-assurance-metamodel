@@ -2,8 +2,8 @@
   "gaamVersion": "0.9.0",
   "testSuiteVersion": "0.9.0",
   "status": "pass",
-  "checks": 89,
-  "passed": 89,
+  "checks": 90,
+  "passed": 90,
   "failed": 0,
   "results": [
     {
@@ -43,55 +43,7 @@
       "evidence": "190 indexed statements classified"
     },
     {
-      "id": "SCH-gaam-package",
-      "kind": "schema",
-      "status": "pass",
-      "evidence": "valid Draft 2020-12 schema"
-    },
-    {
-      "id": "SCH-runtime-envelope",
-      "kind": "schema",
-      "status": "pass",
-      "evidence": "valid Draft 2020-12 schema"
-    },
-    {
-      "id": "SCH-remedy",
-      "kind": "schema",
-      "status": "pass",
-      "evidence": "valid Draft 2020-12 schema"
-    },
-    {
-      "id": "SCH-profile-manifest",
-      "kind": "schema",
-      "status": "pass",
-      "evidence": "valid Draft 2020-12 schema"
-    },
-    {
-      "id": "SCH-assurance",
-      "kind": "schema",
-      "status": "pass",
-      "evidence": "valid Draft 2020-12 schema"
-    },
-    {
-      "id": "SCH-agent-governance-identity",
-      "kind": "schema",
-      "status": "pass",
-      "evidence": "valid Draft 2020-12 schema"
-    },
-    {
       "id": "SCH-conformance-claim",
-      "kind": "schema",
-      "status": "pass",
-      "evidence": "valid Draft 2020-12 schema"
-    },
-    {
-      "id": "SCH-evidence",
-      "kind": "schema",
-      "status": "pass",
-      "evidence": "valid Draft 2020-12 schema"
-    },
-    {
-      "id": "SCH-appeal",
       "kind": "schema",
       "status": "pass",
       "evidence": "valid Draft 2020-12 schema"
@@ -103,7 +55,55 @@
       "evidence": "valid Draft 2020-12 schema"
     },
     {
+      "id": "SCH-appeal",
+      "kind": "schema",
+      "status": "pass",
+      "evidence": "valid Draft 2020-12 schema"
+    },
+    {
+      "id": "SCH-remedy",
+      "kind": "schema",
+      "status": "pass",
+      "evidence": "valid Draft 2020-12 schema"
+    },
+    {
+      "id": "SCH-agent-governance-identity",
+      "kind": "schema",
+      "status": "pass",
+      "evidence": "valid Draft 2020-12 schema"
+    },
+    {
+      "id": "SCH-profile-manifest",
+      "kind": "schema",
+      "status": "pass",
+      "evidence": "valid Draft 2020-12 schema"
+    },
+    {
+      "id": "SCH-runtime-envelope",
+      "kind": "schema",
+      "status": "pass",
+      "evidence": "valid Draft 2020-12 schema"
+    },
+    {
       "id": "SCH-authority",
+      "kind": "schema",
+      "status": "pass",
+      "evidence": "valid Draft 2020-12 schema"
+    },
+    {
+      "id": "SCH-gaam-package",
+      "kind": "schema",
+      "status": "pass",
+      "evidence": "valid Draft 2020-12 schema"
+    },
+    {
+      "id": "SCH-assurance",
+      "kind": "schema",
+      "status": "pass",
+      "evidence": "valid Draft 2020-12 schema"
+    },
+    {
+      "id": "SCH-delegation",
       "kind": "schema",
       "status": "pass",
       "evidence": "valid Draft 2020-12 schema"
@@ -115,7 +115,7 @@
       "evidence": "valid Draft 2020-12 schema"
     },
     {
-      "id": "SCH-delegation",
+      "id": "SCH-evidence",
       "kind": "schema",
       "status": "pass",
       "evidence": "valid Draft 2020-12 schema"
@@ -514,7 +514,13 @@
       "id": "GOV-REVIEW-REGISTERS",
       "kind": "governance",
       "status": "pass",
-      "evidence": "5 required review registers are structurally complete"
+      "evidence": "5 review registers, baseline and lifecycle controls are valid"
+    },
+    {
+      "id": "GOV-REVIEW-FINDING-IDS",
+      "kind": "governance",
+      "status": "pass",
+      "evidence": "0 unique review finding identifiers"
     },
     {
       "id": "GOV-CONTRIBUTION-CONTROLS",
@@ -538,7 +544,7 @@
       "id": "PKG-INTEGRITY",
       "kind": "package",
       "status": "pass",
-      "evidence": "68 checksums verified"
+      "evidence": "75 checksums verified"
     }
   ]
 }

@@ -1,1 +1,38 @@
-{"reviewType":"interoperability","gaamVersion":"0.9.0","status":"not-started","reviewAuthority":"unassigned","scope":["decision receipts","lifecycle events","canonical identifiers","unknown extensions"],"implementations":[],"findings":[],"completedAt":null,"evidence":[]}
+{
+  "gaamVersion": "0.9.0",
+  "status": "not-started",
+  "baselineReference": "governance/reviews/review-baseline.json",
+  "reviewer": "unassigned",
+  "reviewerRole": "unassigned",
+  "reviewerIndependence": "unassigned",
+  "reviewAuthority": "unassigned",
+  "decisionAuthority": "GAAM maintainers",
+  "startDate": null,
+  "completionDate": null,
+  "methodologyReference": "governance/reviews/review-methodology.md",
+  "findingsSummary": {
+    "critical": 0,
+    "high": 0,
+    "medium": 0,
+    "low": 0,
+    "informational": 0
+  },
+  "exitCriteriaStatus": "not-assessed",
+  "unresolvedBlockers": [],
+  "finalAttestation": null,
+  "candidateIssueReferences": [
+    "GAAM-CR-002"
+  ],
+  "reviewType": "interoperability",
+  "scope": [
+    "decision receipts",
+    "lifecycle events",
+    "canonical identifiers",
+    "unknown extensions",
+    "cross-validator behaviour"
+  ],
+  "evidenceDirectory": "governance/reviews/evidence/interoperability",
+  "findings": [],
+  "evidence": [],
+  "implementations": []
+}

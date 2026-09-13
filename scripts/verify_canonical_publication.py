@@ -1,5 +1,12 @@
 #!/usr/bin/env python3
-"""Verify canonical GAAM schema publication locally or over HTTPS."""
+"""Verify retained GAAM schema bytes at the current publication location.
+
+The v0.9.0 schema $id values are retained normative identifiers and are not
+rewritten when repository stewardship or hosting changes. release.json may
+therefore declare a publicationBase distinct from schemaBase. Verification
+checks the published bytes at publicationBase while reporting the retained
+schema identity separately.
+"""
 from pathlib import Path
 import argparse
 import hashlib
@@ -10,6 +17,8 @@ import urllib.request
 
 ROOT = Path(__file__).resolve().parents[1]
 CATALOG = json.loads((ROOT / "schemas/catalog.json").read_text())
+RELEASE = json.loads((ROOT / "release.json").read_text())
+PUBLICATION_BASE = RELEASE.get("publicationBase", RELEASE["schemaBase"])
 
 
 def remote_bytes(url, attempts):
@@ -29,7 +38,7 @@ def remote_bytes(url, attempts):
 parser = argparse.ArgumentParser(description=__doc__)
 source = parser.add_mutually_exclusive_group(required=True)
 source.add_argument("--site-root", type=Path, help="rendered site directory")
-source.add_argument("--remote", action="store_true", help="retrieve canonical catalog URLs")
+source.add_argument("--remote", action="store_true", help="retrieve current publication URLs")
 parser.add_argument("--attempts", type=int, default=4)
 parser.add_argument("--output", type=Path)
 args = parser.parse_args()
@@ -38,25 +47,34 @@ checks = []
 for entry in CATALOG["schemas"]:
     expected_path = ROOT / "schemas" / entry["name"]
     expected = expected_path.read_bytes()
-    canonical = entry["id"]
+    declared_id = entry["id"]
+    publication_url = PUBLICATION_BASE.rstrip("/") + "/" + entry["name"]
     try:
         if args.site_root:
-            marker = "/governance-authority-assurance-metamodel/"
-            published_path = args.site_root / canonical.split(marker, 1)[1]
+            version = RELEASE["normativeVersion"]
+            published_path = args.site_root / f"v{version}" / "schemas" / entry["name"]
             actual = published_path.read_bytes()
             resolved = str(published_path)
+            ok = actual == expected
         else:
-            actual, resolved = remote_bytes(canonical, args.attempts)
-        ok = actual == expected and resolved == canonical if args.remote else actual == expected
-        detail = "canonical bytes match source" if ok else f"content or canonical URL mismatch; resolved={resolved}"
+            actual, resolved = remote_bytes(publication_url, args.attempts)
+            ok = actual == expected and resolved == publication_url
+        detail = "published bytes match retained source" if ok else f"content or publication URL mismatch; resolved={resolved}"
     except Exception as error:
         ok = False
         detail = str(error)
-    checks.append({"schema": entry["name"], "canonicalId": canonical, "status": "pass" if ok else "fail", "sourceSha256": hashlib.sha256(expected).hexdigest(), "detail": detail})
+    checks.append({
+        "schema": entry["name"],
+        "declaredId": declared_id,
+        "publicationUrl": publication_url,
+        "status": "pass" if ok else "fail",
+        "sourceSha256": hashlib.sha256(expected).hexdigest(),
+        "detail": detail,
+    })
 
 report = {
-    "releaseVersion": "0.9.1",
-    "normativeVersion": "0.9.0",
+    "releaseVersion": RELEASE["version"],
+    "normativeVersion": RELEASE["normativeVersion"],
     "mode": "remote" if args.remote else "rendered-site",
     "status": "pass" if all(check["status"] == "pass" for check in checks) else "fail",
     "checks": checks,

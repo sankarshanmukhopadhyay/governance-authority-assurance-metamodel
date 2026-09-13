@@ -1,15 +1,9 @@
 #!/usr/bin/env python3
-"""Mirror schemas/*.json into the versioned path their $id declares.
+"""Mirror retained schemas into their versioned GitHub Pages publication path.
 
-Every schema in schemas/*.json carries a canonical $id such as
-  https://sankarshanmukhopadhyay.github.io/governance-authority-assurance-metamodel/v0.9.0/schemas/authority.schema.json
-
-Jekyll publishes schemas/ verbatim to _site/schemas/, but nothing publishes
-a copy at _site/v0.9.0/schemas/, so every $id is a dead link on the built
-site. This script derives the version segment from release.json (the same
-source of truth scripts/validate.py uses) and copies each schema into
-_site/<version>/schemas/ after the Jekyll build, so the canonical URLs the
-schemas themselves declare actually resolve.
+Schema $id values are retained normative identifiers. They remain unchanged
+when stewardship or hosting moves. release.json therefore distinguishes the
+retained schemaBase from the current publicationBase.
 
 Run after `jekyll build` and before validating or uploading _site/.
 """
@@ -25,12 +19,14 @@ SITE = ROOT / "_site"
 def main() -> int:
     release = json.loads((ROOT / "release.json").read_text())
     version = release["version"]
+    normative_version = release["normativeVersion"]
     schema_base = release["schemaBase"]
-    canonical_prefix = "/governance-authority-assurance-metamodel/"
-    if canonical_prefix not in schema_base:
-        print(f"error: schemaBase does not contain expected repository path: {schema_base}", file=sys.stderr)
+    publication_base = release.get("publicationBase", schema_base)
+    version_path = f"v{normative_version}"
+
+    if not publication_base.rstrip("/").endswith(f"/{version_path}/schemas"):
+        print(f"error: publicationBase does not match normative version path {version_path}: {publication_base}", file=sys.stderr)
         return 1
-    version_path = schema_base.split(canonical_prefix, 1)[1].strip("/").split("/schemas", 1)[0]
 
     if not SITE.is_dir():
         print(f"error: {SITE} does not exist; run jekyll build first", file=sys.stderr)
@@ -39,9 +35,6 @@ def main() -> int:
     dest = SITE / version_path / "schemas"
     dest.mkdir(parents=True, exist_ok=True)
 
-    # Matches scripts/validate.py's schema selection: *.schema.json only.
-    # schemas/catalog.json is a catalog document (key "id", not "$id") and
-    # is intentionally excluded here, same as in validate.py.
     schemas = sorted((ROOT / "schemas").glob("*.schema.json"))
     if not schemas:
         print("error: no schema files found under schemas/", file=sys.stderr)
@@ -50,8 +43,9 @@ def main() -> int:
     for src in schemas:
         shutil.copy2(src, dest / src.name)
 
-    # Fail loudly if the mirror doesn't actually match what the $id values expect,
-    # rather than publishing a versioned path nobody's $id points at.
+    # Retained normative identities must continue to match schemaBase. Hosting
+    # migration changes publicationBase only; rewriting $id would mutate the
+    # retained v0.9.0 bytes and is therefore prohibited by this check.
     mismatched = []
     for src in schemas:
         data = json.loads(src.read_text())
@@ -60,10 +54,13 @@ def main() -> int:
             mismatched.append((src.name, sid))
     if mismatched:
         for name, sid in mismatched:
-            print(f"error: {name} $id does not start with schemaBase: {sid}", file=sys.stderr)
+            print(f"error: {name} retained $id does not start with schemaBase: {sid}", file=sys.stderr)
         return 1
 
-    print(f"Mirrored {len(schemas)} schema(s) to {dest.relative_to(ROOT)} (release {version}; canonical path {version_path})")
+    print(
+        f"Mirrored {len(schemas)} retained schema(s) to {dest.relative_to(ROOT)} "
+        f"(release {version}; publication base {publication_base})"
+    )
     return 0
 
 
